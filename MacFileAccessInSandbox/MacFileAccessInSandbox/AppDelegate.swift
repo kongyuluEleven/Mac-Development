@@ -24,3 +24,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    private func recoverFilePath() {
+        guard let path = UserDefaults.standard.value(forKey: LastSaveFilePathKey) as? String else {
+            return
+        }
+    }
+}
+

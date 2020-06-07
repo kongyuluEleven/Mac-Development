@@ -14,8 +14,8 @@
             filePath = "MacFileAccessInSandbox/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "saveFile()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,24 @@
             filePath = "MacFileAccessInSandbox/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "saveFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E98356F-F0C5-4C0F-B639-806B80765F8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MacFileAccessInSandbox/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "saveFile()"
             landmarkType = "7">
          </BreakpointContent>

@@ -22,6 +22,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initData()
     }
 
     override var representedObject: Any? {
@@ -42,6 +43,20 @@ class ViewController: NSViewController {
 }
 
 extension ViewController {
+    
+    fileprivate func initData() {
+        guard let path = UserDefaults.standard.value(forKey: LastSaveFilePathKey) as? String else {
+            return
+        }
+        filePathField.stringValue = path
+        let url = URL(fileURLWithPath: path)
+        do {
+            let text = try String(contentsOf: url)
+            textV.string = text
+        } catch {
+        }
+        
+    }
     
     /// 打开文件
     fileprivate func openFile() {
@@ -78,9 +93,13 @@ extension ViewController {
         }
         
         let text =  textV.string
-        
+        debugPrint("text=\(text)")
         let url = URL(fileURLWithPath: path)
-        try? text.write(to: url, atomically: true, encoding: .utf8)
+        do {
+            try text.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+            // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
+        }
         
     }
 }
