@@ -18,6 +18,7 @@
 		543D3936248CB51F00831DDD /* SandboxFileAccessPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 543D3935248CB51F00831DDD /* SandboxFileAccessPanelDelegate.m */; };
 		543D3939248CB53400831DDD /* SandboxFileAccessPersist.m in Sources */ = {isa = PBXBuildFile; fileRef = 543D3938248CB53400831DDD /* SandboxFileAccessPersist.m */; };
 		543D393C248CB54D00831DDD /* SandBoxAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 543D393B248CB54D00831DDD /* SandBoxAuthorize.m */; };
+		543D393E248CB71600831DDD /* SandboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D393D248CB71600831DDD /* SandboxManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		543D3938248CB53400831DDD /* SandboxFileAccessPersist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxFileAccessPersist.m; sourceTree = "<group>"; };
 		543D393A248CB54D00831DDD /* SandBoxAuthorize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandBoxAuthorize.h; sourceTree = "<group>"; };
 		543D393B248CB54D00831DDD /* SandBoxAuthorize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandBoxAuthorize.m; sourceTree = "<group>"; };
+		543D393D248CB71600831DDD /* SandboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,15 +154,16 @@
 		543D392F248CB47000831DDD /* sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				543D3930248CB4F100831DDD /* MacSandoxFileAccess-Bridging-Header.h */,
 				543D3931248CB4F200831DDD /* SandboxFileAccess.h */,
 				543D3932248CB4F200831DDD /* SandboxFileAccess.m */,
-				543D3930248CB4F100831DDD /* MacSandoxFileAccess-Bridging-Header.h */,
 				543D3934248CB51F00831DDD /* SandboxFileAccessPanelDelegate.h */,
 				543D3935248CB51F00831DDD /* SandboxFileAccessPanelDelegate.m */,
 				543D3937248CB53400831DDD /* SandboxFileAccessPersist.h */,
 				543D3938248CB53400831DDD /* SandboxFileAccessPersist.m */,
 				543D393A248CB54D00831DDD /* SandBoxAuthorize.h */,
 				543D393B248CB54D00831DDD /* SandBoxAuthorize.m */,
+				543D393D248CB71600831DDD /* SandboxManager.swift */,
 			);
 			path = sandbox;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543D393E248CB71600831DDD /* SandboxManager.swift in Sources */,
 				543D3903248CA3A800831DDD /* ContentView.swift in Sources */,
 				543D3939248CB53400831DDD /* SandboxFileAccessPersist.m in Sources */,
 				543D3933248CB4F200831DDD /* SandboxFileAccess.m in Sources */,
