@@ -111,6 +111,7 @@
 		543D394A248CB9A200831DDD /* MacFileAccessInSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				543D3996248CBE0D00831DDD /* UI */,
 				543D3977248CB9B500831DDD /* Tools */,
 				543D394B248CB9A200831DDD /* AppDelegate.swift */,
 				543D394D248CB9A200831DDD /* ViewController.swift */,
@@ -163,6 +164,13 @@
 				543D3979248CB9F900831DDD /* MacFileAccessInSandbox-Bridging-Header.h */,
 			);
 			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		543D3996248CBE0D00831DDD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
