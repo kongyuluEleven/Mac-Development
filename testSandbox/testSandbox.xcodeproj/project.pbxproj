@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5488A30E24B0523C00F9E4DB /* testM1.app in Resources */ = {isa = PBXBuildFile; fileRef = 5488A30D24B0523C00F9E4DB /* testM1.app */; };
+		5488A31124B062B600F9E4DB /* testM1.app in Resources */ = {isa = PBXBuildFile; fileRef = 5488A30F24B0629400F9E4DB /* testM1.app */; };
 		54AE854B24ACAA0B004B7D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */; };
 		54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854C24ACAA0D004B7D6C /* Assets.xcassets */; };
 		54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854E24ACAA0D004B7D6C /* MainMenu.xib */; };
@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5488A30D24B0523C00F9E4DB /* testM1.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = testM1.app; sourceTree = "<group>"; };
+		5488A30F24B0629400F9E4DB /* testM1.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = testM1.app; sourceTree = "<group>"; };
 		54AE854724ACAA0B004B7D6C /* testSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AE854C24ACAA0D004B7D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		54AE853E24ACAA0B004B7D6C = {
 			isa = PBXGroup;
 			children = (
-				5488A30D24B0523C00F9E4DB /* testM1.app */,
+				5488A30F24B0629400F9E4DB /* testM1.app */,
 				54AE854924ACAA0B004B7D6C /* testSandbox */,
 				54AE854824ACAA0B004B7D6C /* Products */,
 				54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */,
@@ -157,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5488A31124B062B600F9E4DB /* testM1.app in Resources */,
 				54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */,
 				54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */,
-				5488A30E24B0523C00F9E4DB /* testM1.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

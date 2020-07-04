@@ -15,7 +15,6 @@ typealias FilePermissionBlock = () -> Void
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var filePathField: NSTextField!
-    
     @IBOutlet weak var scrolTextView: NSScrollView!
     @IBOutlet weak var window: NSWindow!
     @IBOutlet var textView: NSTextView!
@@ -50,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 
-// MARK : - 测试沙盒权限
+// MARK: - 测试沙盒权限
 
 extension AppDelegate {
     func readFile() {
@@ -60,17 +59,19 @@ extension AppDelegate {
             print("读取kFilePathKey失败，没有获取到fileURL")
             return;
         }
-        
-        guard let url = URL(string: fileURL), let string = try? NSString.init(contentsOf: url, encoding: String.Encoding.utf8.rawValue) else {
+        guard let url = URL(string: fileURL) else {
             print("获取路径url失败")
             return
         }
-        
-        filePathURL = url
-        
-        filePathField.stringValue = fileURL
-        
-        textView.string = string as String
+        _ = accessFileURL(ofURL: url, withBlock: {
+             guard let string = try? NSString.init(contentsOf: url, encoding: String.Encoding.utf8.rawValue) else {
+                       print("获取路径url失败")
+                       return
+                   }
+                   filePathURL = url
+                   filePathField.stringValue = fileURL
+                   textView.string = string as String
+        })
         
     }
     
@@ -95,6 +96,9 @@ extension AppDelegate {
                     self?.filePathURL = url
                     
                     UserDefaults.standard.set(url.absoluteString, forKey: kFilePathKey)
+                    UserDefaults.standard.synchronize()
+                    
+                    self?.persistPermissionURL(url)
                 }
             }
         }
@@ -109,8 +113,43 @@ extension AppDelegate {
     }
 }
 
+// MARK: - 沙盒权限
+extension AppDelegate {
+    func persistPermissionURL(_ url:URL) {
+        //根据url生产bookmarkData
+        let bookmarkData =  try? url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+        print("persistPermissionURL bookmarkData\(url) \(String(describing: bookmarkData))")
+        //存储bookmarkData
+        if let bookmarkData = bookmarkData {
+            UserDefaults.standard.set(bookmarkData, forKey: url.path)
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
+    func accessFileURL(ofURL url:URL, withBlock block:FilePermissionBlock) -> Bool {
+        let defaults = UserDefaults.standard
+        guard let bookmarkData = defaults.value(forKey: url.path) as? Data else {
+            print("bookmakrData = nil")
+            return false
+        }
+        
+        var bookmarkDataIsStale = false
+        let allowedUrl = try? URL(resolvingBookmarkData: bookmarkData, options: [.withoutUI, .withSecurityScope], relativeTo: nil, bookmarkDataIsStale: &bookmarkDataIsStale)
+        //bookmarkDataIsStale == true 时，需要重新创建新的bookmarkData
+        if bookmarkDataIsStale {
+            persistPermissionURL(url)
+        }
+        if let allowedUrl = allowedUrl, allowedUrl.startAccessingSecurityScopedResource() {
+            block()
+            allowedUrl.stopAccessingSecurityScopedResource()
+            return true
+        }
+        return false
+    }
+}
 
-// MARK : - 测试NStask 调取子app
+
+// MARK: - 测试NStask 调取子app
 extension AppDelegate {
         
         
