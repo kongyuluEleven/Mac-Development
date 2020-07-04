@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-let kFilePathKey = "kFilePathKey"
+let kFilePathKey = "kFilePathKeyTestSandBox"
 typealias FilePermissionBlock = () -> Void
 
 @NSApplicationMain
@@ -56,7 +56,7 @@ extension AppDelegate {
         //从UserDefaults中获取文件路径
         let defaults = UserDefaults.standard;
         guard let fileURL = defaults.value(forKey: kFilePathKey) as? String else {
-            print("读取kFilePathKey失败，没有获取到fileURL")
+            print("读取kFilePathKey失败，没有获取到fileURL,kFilePathKey = \(kFilePathKey)")
             return;
         }
         guard let url = URL(string: fileURL) else {
@@ -160,6 +160,16 @@ extension AppDelegate {
             task.launch()
             task.waitUntilExit()
         }
+    
+        func showTask2() {
+            let task = Process()
+            let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testSandboxSub.app/Contents/MacOS/testSandboxSub"
+            debugPrint("path = \(pathStr)")
+            task.launchPath = pathStr
+            task.environment = ProcessInfo.processInfo.environment
+            task.launch()
+            task.waitUntilExit()
+        }
         
         
         func showTask3() {
@@ -189,8 +199,8 @@ extension AppDelegate {
 //            }
 //            debugPrint("path = \(path)")
             
-            let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testM1.app"
-            //let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testM1.app/Contents/MacOS/testM1"
+            //let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testM1.app"
+            let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testSandboxSub.app"
             debugPrint("pathStr = \(pathStr)")
             
             _ = try? NSWorkspace.shared.open(URL(fileURLWithPath: pathStr))

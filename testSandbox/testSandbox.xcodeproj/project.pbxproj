@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5488A31124B062B600F9E4DB /* testM1.app in Resources */ = {isa = PBXBuildFile; fileRef = 5488A30F24B0629400F9E4DB /* testM1.app */; };
+		5488A33924B0746000F9E4DB /* testSandboxSub.app in Resources */ = {isa = PBXBuildFile; fileRef = 5488A33824B0746000F9E4DB /* testSandboxSub.app */; };
 		54AE854B24ACAA0B004B7D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */; };
 		54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854C24ACAA0D004B7D6C /* Assets.xcassets */; };
 		54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854E24ACAA0D004B7D6C /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5488A33024B0703800F9E4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5488A32C24B0703700F9E4DB /* testSandboxSub.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5488A31B24B06FEB00F9E4DB;
+			remoteInfo = testSandboxSub;
+		};
 		54AE858D24ADB3CA004B7D6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */;
@@ -24,7 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5488A30F24B0629400F9E4DB /* testM1.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = testM1.app; sourceTree = "<group>"; };
+		5488A32C24B0703700F9E4DB /* testSandboxSub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testSandboxSub.xcodeproj; path = testSandboxSub/testSandboxSub.xcodeproj; sourceTree = "<group>"; };
+		5488A33824B0746000F9E4DB /* testSandboxSub.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = testSandboxSub.app; sourceTree = "<group>"; };
 		54AE854724ACAA0B004B7D6C /* testSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AE854C24ACAA0D004B7D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,12 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5488A32D24B0703700F9E4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5488A33124B0703800F9E4DB /* testSandboxSub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		54AE853E24ACAA0B004B7D6C = {
 			isa = PBXGroup;
 			children = (
-				5488A30F24B0629400F9E4DB /* testM1.app */,
 				54AE854924ACAA0B004B7D6C /* testSandbox */,
 				54AE854824ACAA0B004B7D6C /* Products */,
+				5488A32C24B0703700F9E4DB /* testSandboxSub.xcodeproj */,
 				54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +82,7 @@
 		54AE854924ACAA0B004B7D6C /* testSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				5488A33824B0746000F9E4DB /* testSandboxSub.app */,
 				54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */,
 				54AE854C24ACAA0D004B7D6C /* Assets.xcassets */,
 				54AE854E24ACAA0D004B7D6C /* MainMenu.xib */,
@@ -134,6 +151,10 @@
 					ProductGroup = 54AE858A24ADB3CA004B7D6C /* Products */;
 					ProjectRef = 54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */;
 				},
+				{
+					ProductGroup = 5488A32D24B0703700F9E4DB /* Products */;
+					ProjectRef = 5488A32C24B0703700F9E4DB /* testSandboxSub.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -143,6 +164,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		5488A33124B0703800F9E4DB /* testSandboxSub.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = testSandboxSub.app;
+			remoteRef = 5488A33024B0703800F9E4DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		54AE858E24ADB3CA004B7D6C /* testM1.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -157,9 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5488A31124B062B600F9E4DB /* testM1.app in Resources */,
 				54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */,
 				54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */,
+				5488A33924B0746000F9E4DB /* testSandboxSub.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +334,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testSandbox/testSandbox.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = testSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,8 +345,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..testSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.testSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -328,10 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testSandbox/testSandbox.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = testSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,8 +368,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..testSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.testSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
