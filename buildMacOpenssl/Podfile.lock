@@ -1,0 +1,16 @@
+PODS:
+  - openssl-apple-platform (1.0.2r)
+
+DEPENDENCIES:
+  - openssl-apple-platform (= 1.0.2r)
+
+SPEC REPOS:
+  trunk:
+    - openssl-apple-platform
+
+SPEC CHECKSUMS:
+  openssl-apple-platform: 500e6cbeb894980b06621533cd31584e1c34106a
+
+PODFILE CHECKSUM: df29ba3086f775a6c707fe366df25c0bec888671
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54E8EA1624A04EC700D7BCB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8EA1524A04EC700D7BCB0 /* AppDelegate.swift */; };
+		54E8EA1824A04ECA00D7BCB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E8EA1724A04ECA00D7BCB0 /* Assets.xcassets */; };
+		54E8EA1B24A04ECA00D7BCB0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E8EA1924A04ECA00D7BCB0 /* MainMenu.xib */; };
+		F27DC46652AB9E49C7CD0A0A /* Pods_buildMacOpenssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6656F823F58F1814B7D8C76 /* Pods_buildMacOpenssl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54E8EA1224A04EC700D7BCB0 /* buildMacOpenssl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildMacOpenssl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E8EA1524A04EC700D7BCB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54E8EA1724A04ECA00D7BCB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54E8EA1A24A04ECA00D7BCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		54E8EA1C24A04ECA00D7BCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E8EA1D24A04ECA00D7BCB0 /* buildMacOpenssl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = buildMacOpenssl.entitlements; sourceTree = "<group>"; };
+		6E0B90B896BBEFC97E9AF6D6 /* Pods-buildMacOpenssl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buildMacOpenssl.debug.xcconfig"; path = "Target Support Files/Pods-buildMacOpenssl/Pods-buildMacOpenssl.debug.xcconfig"; sourceTree = "<group>"; };
+		881088C0D93741CE1732BE81 /* Pods-buildMacOpenssl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buildMacOpenssl.release.xcconfig"; path = "Target Support Files/Pods-buildMacOpenssl/Pods-buildMacOpenssl.release.xcconfig"; sourceTree = "<group>"; };
+		D6656F823F58F1814B7D8C76 /* Pods_buildMacOpenssl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buildMacOpenssl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54E8EA0F24A04EC700D7BCB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27DC46652AB9E49C7CD0A0A /* Pods_buildMacOpenssl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54E8EA0924A04EC700D7BCB0 = {
+			isa = PBXGroup;
+			children = (
+				54E8EA1424A04EC700D7BCB0 /* buildMacOpenssl */,
+				54E8EA1324A04EC700D7BCB0 /* Products */,
+				6F2050A79D15C1A13C8BC9EA /* Pods */,
+				594D47E9D4AE5E9CDF2C1C8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54E8EA1324A04EC700D7BCB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54E8EA1224A04EC700D7BCB0 /* buildMacOpenssl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54E8EA1424A04EC700D7BCB0 /* buildMacOpenssl */ = {
+			isa = PBXGroup;
+			children = (
+				54E8EA1524A04EC700D7BCB0 /* AppDelegate.swift */,
+				54E8EA1724A04ECA00D7BCB0 /* Assets.xcassets */,
+				54E8EA1924A04ECA00D7BCB0 /* MainMenu.xib */,
+				54E8EA1C24A04ECA00D7BCB0 /* Info.plist */,
+				54E8EA1D24A04ECA00D7BCB0 /* buildMacOpenssl.entitlements */,
+			);
+			path = buildMacOpenssl;
+			sourceTree = "<group>";
+		};
+		594D47E9D4AE5E9CDF2C1C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6656F823F58F1814B7D8C76 /* Pods_buildMacOpenssl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F2050A79D15C1A13C8BC9EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E0B90B896BBEFC97E9AF6D6 /* Pods-buildMacOpenssl.debug.xcconfig */,
+				881088C0D93741CE1732BE81 /* Pods-buildMacOpenssl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54E8EA1124A04EC700D7BCB0 /* buildMacOpenssl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E8EA2024A04ECA00D7BCB0 /* Build configuration list for PBXNativeTarget "buildMacOpenssl" */;
+			buildPhases = (
+				F0033FDBB201FA4DB61B63D4 /* [CP] Check Pods Manifest.lock */,
+				54E8EA0E24A04EC700D7BCB0 /* Sources */,
+				54E8EA0F24A04EC700D7BCB0 /* Frameworks */,
+				54E8EA1024A04EC700D7BCB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = buildMacOpenssl;
+			productName = buildMacOpenssl;
+			productReference = 54E8EA1224A04EC700D7BCB0 /* buildMacOpenssl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54E8EA0A24A04EC700D7BCB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = wondershare;
+				TargetAttributes = {
+					54E8EA1124A04EC700D7BCB0 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 54E8EA0D24A04EC700D7BCB0 /* Build configuration list for PBXProject "buildMacOpenssl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54E8EA0924A04EC700D7BCB0;
+			productRefGroup = 54E8EA1324A04EC700D7BCB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54E8EA1124A04EC700D7BCB0 /* buildMacOpenssl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54E8EA1024A04EC700D7BCB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E8EA1824A04ECA00D7BCB0 /* Assets.xcassets in Resources */,
+				54E8EA1B24A04ECA00D7BCB0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0033FDBB201FA4DB61B63D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buildMacOpenssl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54E8EA0E24A04EC700D7BCB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E8EA1624A04EC700D7BCB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54E8EA1924A04ECA00D7BCB0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54E8EA1A24A04ECA00D7BCB0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54E8EA1E24A04ECA00D7BCB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54E8EA1F24A04ECA00D7BCB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54E8EA2124A04ECA00D7BCB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E0B90B896BBEFC97E9AF6D6 /* Pods-buildMacOpenssl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = buildMacOpenssl/buildMacOpenssl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = buildMacOpenssl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..buildMacOpenssl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54E8EA2224A04ECA00D7BCB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881088C0D93741CE1732BE81 /* Pods-buildMacOpenssl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = buildMacOpenssl/buildMacOpenssl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = buildMacOpenssl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..buildMacOpenssl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54E8EA0D24A04EC700D7BCB0 /* Build configuration list for PBXProject "buildMacOpenssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E8EA1E24A04ECA00D7BCB0 /* Debug */,
+				54E8EA1F24A04ECA00D7BCB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E8EA2024A04ECA00D7BCB0 /* Build configuration list for PBXNativeTarget "buildMacOpenssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E8EA2124A04ECA00D7BCB0 /* Debug */,
+				54E8EA2224A04ECA00D7BCB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54E8EA0A24A04EC700D7BCB0 /* Project object */;
+}
