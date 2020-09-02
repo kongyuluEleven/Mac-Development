@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5488A33924B0746000F9E4DB /* testSandboxSub.app in Resources */ = {isa = PBXBuildFile; fileRef = 5488A33824B0746000F9E4DB /* testSandboxSub.app */; };
 		54AE854B24ACAA0B004B7D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */; };
 		54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854C24ACAA0D004B7D6C /* Assets.xcassets */; };
 		54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854E24ACAA0D004B7D6C /* MainMenu.xib */; };
+		54ED06DB24DE5B3F00D0310F /* testSandboxSub.app in Resources */ = {isa = PBXBuildFile; fileRef = 54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		5488A32C24B0703700F9E4DB /* testSandboxSub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testSandboxSub.xcodeproj; path = testSandboxSub/testSandboxSub.xcodeproj; sourceTree = "<group>"; };
-		5488A33824B0746000F9E4DB /* testSandboxSub.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = testSandboxSub.app; sourceTree = "<group>"; };
 		54AE854724ACAA0B004B7D6C /* testSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AE854C24ACAA0D004B7D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		54AE855124ACAA0D004B7D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54AE855224ACAA0D004B7D6C /* testSandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testSandbox.entitlements; sourceTree = "<group>"; };
 		54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testM1.xcodeproj; path = testM1/testM1.xcodeproj; sourceTree = "<group>"; };
+		54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = testSandboxSub.app; path = "../../../../../../Library/Developer/Xcode/DerivedData/testSandboxW-gmszvobeybqslvaxkpnrfctqaxch/Build/Products/Release/testSandboxSub.app"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		54AE854924ACAA0B004B7D6C /* testSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				5488A33824B0746000F9E4DB /* testSandboxSub.app */,
+				54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */,
 				54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */,
 				54AE854C24ACAA0D004B7D6C /* Assets.xcassets */,
 				54AE854E24ACAA0D004B7D6C /* MainMenu.xib */,
@@ -187,7 +187,7 @@
 			files = (
 				54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */,
 				54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */,
-				5488A33924B0746000F9E4DB /* testSandboxSub.app in Resources */,
+				54ED06DB24DE5B3F00D0310F /* testSandboxSub.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,10 +334,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testSandbox/testSandbox.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = testSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,10 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testSandbox/testSandbox.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9PE8T9WWZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = testSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

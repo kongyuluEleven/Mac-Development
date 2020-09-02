@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import StoreKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -24,7 +25,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func btnStarClicked(_ sender: Any) {
+        print("\(#function)")
+        SKStoreReviewController.requestReview()
+    }
+    
 }
 
 extension AppDelegate {

@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54CE2EE724F10515007281D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EE624F10515007281D6 /* AppDelegate.swift */; };
+		54CE2EE924F10518007281D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CE2EE824F10518007281D6 /* Assets.xcassets */; };
+		54CE2EEC24F10518007281D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CE2EEA24F10518007281D6 /* MainMenu.xib */; };
+		54CE2EF524F10535007281D6 /* VideoCaptureMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EF424F10535007281D6 /* VideoCaptureMac.swift */; };
+		54CE2EF824F10EF3007281D6 /* LiveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EF624F10EF3007281D6 /* LiveImageViewController.swift */; };
+		54CE2EF924F10EF3007281D6 /* LiveImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CE2EF724F10EF3007281D6 /* LiveImageViewController.xib */; };
+		54CE2EFD24F1102A007281D6 /* HeatmapPostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EFA24F1102A007281D6 /* HeatmapPostProcessor.swift */; };
+		54CE2EFE24F1102A007281D6 /* SegmentationResultMLMultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EFB24F1102A007281D6 /* SegmentationResultMLMultiArray.swift */; };
+		54CE2EFF24F1102A007281D6 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2EFC24F1102A007281D6 /* Measure.swift */; };
+		54CE2F0124F1109B007281D6 /* DrawingSegmentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F0024F1109B007281D6 /* DrawingSegmentationView.swift */; };
+		54CE2F0424F112AA007281D6 /* StillImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F0224F112AA007281D6 /* StillImageViewController.swift */; };
+		54CE2F0524F112AA007281D6 /* StillImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CE2F0324F112AA007281D6 /* StillImageViewController.xib */; };
+		54CE2F0A24F11392007281D6 /* DeepLabV3FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F0724F11392007281D6 /* DeepLabV3FP16.mlmodel */; };
+		54CE2F0B24F11392007281D6 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F0824F11392007281D6 /* DeepLabV3.mlmodel */; };
+		54CE2F0C24F11392007281D6 /* DeepLabV3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F0924F11392007281D6 /* DeepLabV3Int8LUT.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54CE2EE324F10515007281D6 /* SemanticSegmentation-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SemanticSegmentation-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CE2EE624F10515007281D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54CE2EE824F10518007281D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54CE2EEB24F10518007281D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		54CE2EED24F10518007281D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CE2EEE24F10518007281D6 /* SemanticSegmentation_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SemanticSegmentation_Mac.entitlements; sourceTree = "<group>"; };
+		54CE2EF424F10535007281D6 /* VideoCaptureMac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCaptureMac.swift; sourceTree = SOURCE_ROOT; };
+		54CE2EF624F10EF3007281D6 /* LiveImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveImageViewController.swift; sourceTree = "<group>"; };
+		54CE2EF724F10EF3007281D6 /* LiveImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveImageViewController.xib; sourceTree = "<group>"; };
+		54CE2EFA24F1102A007281D6 /* HeatmapPostProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatmapPostProcessor.swift; sourceTree = "<group>"; };
+		54CE2EFB24F1102A007281D6 /* SegmentationResultMLMultiArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationResultMLMultiArray.swift; sourceTree = "<group>"; };
+		54CE2EFC24F1102A007281D6 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		54CE2F0024F1109B007281D6 /* DrawingSegmentationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingSegmentationView.swift; sourceTree = "<group>"; };
+		54CE2F0224F112AA007281D6 /* StillImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillImageViewController.swift; sourceTree = "<group>"; };
+		54CE2F0324F112AA007281D6 /* StillImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StillImageViewController.xib; sourceTree = "<group>"; };
+		54CE2F0724F11392007281D6 /* DeepLabV3FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DeepLabV3FP16.mlmodel; path = "../../../SemanticSegmentation-CoreML/mlmodel/DeepLabV3FP16.mlmodel"; sourceTree = "<group>"; };
+		54CE2F0824F11392007281D6 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DeepLabV3.mlmodel; path = "../../../SemanticSegmentation-CoreML/mlmodel/DeepLabV3.mlmodel"; sourceTree = "<group>"; };
+		54CE2F0924F11392007281D6 /* DeepLabV3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DeepLabV3Int8LUT.mlmodel; path = "../../../SemanticSegmentation-CoreML/mlmodel/DeepLabV3Int8LUT.mlmodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54CE2EE024F10515007281D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54CE2EDA24F10515007281D6 = {
+			isa = PBXGroup;
+			children = (
+				54CE2EE524F10515007281D6 /* SemanticSegmentation-Mac */,
+				54CE2EE424F10515007281D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54CE2EE424F10515007281D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54CE2EE324F10515007281D6 /* SemanticSegmentation-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54CE2EE524F10515007281D6 /* SemanticSegmentation-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				54CE2EE624F10515007281D6 /* AppDelegate.swift */,
+				54CE2EFA24F1102A007281D6 /* HeatmapPostProcessor.swift */,
+				54CE2F0024F1109B007281D6 /* DrawingSegmentationView.swift */,
+				54CE2EFC24F1102A007281D6 /* Measure.swift */,
+				54CE2EFB24F1102A007281D6 /* SegmentationResultMLMultiArray.swift */,
+				54CE2EF624F10EF3007281D6 /* LiveImageViewController.swift */,
+				54CE2EF724F10EF3007281D6 /* LiveImageViewController.xib */,
+				54CE2EF424F10535007281D6 /* VideoCaptureMac.swift */,
+				54CE2F0224F112AA007281D6 /* StillImageViewController.swift */,
+				54CE2F0324F112AA007281D6 /* StillImageViewController.xib */,
+				54CE2EE824F10518007281D6 /* Assets.xcassets */,
+				54CE2EEA24F10518007281D6 /* MainMenu.xib */,
+				54CE2EED24F10518007281D6 /* Info.plist */,
+				54CE2F0624F11386007281D6 /* mlmodel */,
+				54CE2EEE24F10518007281D6 /* SemanticSegmentation_Mac.entitlements */,
+			);
+			path = "SemanticSegmentation-Mac";
+			sourceTree = "<group>";
+		};
+		54CE2F0624F11386007281D6 /* mlmodel */ = {
+			isa = PBXGroup;
+			children = (
+				54CE2F0824F11392007281D6 /* DeepLabV3.mlmodel */,
+				54CE2F0724F11392007281D6 /* DeepLabV3FP16.mlmodel */,
+				54CE2F0924F11392007281D6 /* DeepLabV3Int8LUT.mlmodel */,
+			);
+			path = mlmodel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54CE2EE224F10515007281D6 /* SemanticSegmentation-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CE2EF124F10518007281D6 /* Build configuration list for PBXNativeTarget "SemanticSegmentation-Mac" */;
+			buildPhases = (
+				54CE2EDF24F10515007281D6 /* Sources */,
+				54CE2EE024F10515007281D6 /* Frameworks */,
+				54CE2EE124F10515007281D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SemanticSegmentation-Mac";
+			productName = "SemanticSegmentation-Mac";
+			productReference = 54CE2EE324F10515007281D6 /* SemanticSegmentation-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54CE2EDB24F10515007281D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Wondershare;
+				TargetAttributes = {
+					54CE2EE224F10515007281D6 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 54CE2EDE24F10515007281D6 /* Build configuration list for PBXProject "SemanticSegmentation-Mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54CE2EDA24F10515007281D6;
+			productRefGroup = 54CE2EE424F10515007281D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54CE2EE224F10515007281D6 /* SemanticSegmentation-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54CE2EE124F10515007281D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CE2EE924F10518007281D6 /* Assets.xcassets in Resources */,
+				54CE2EF924F10EF3007281D6 /* LiveImageViewController.xib in Resources */,
+				54CE2EEC24F10518007281D6 /* MainMenu.xib in Resources */,
+				54CE2F0524F112AA007281D6 /* StillImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54CE2EDF24F10515007281D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CE2F0A24F11392007281D6 /* DeepLabV3FP16.mlmodel in Sources */,
+				54CE2EF524F10535007281D6 /* VideoCaptureMac.swift in Sources */,
+				54CE2EFE24F1102A007281D6 /* SegmentationResultMLMultiArray.swift in Sources */,
+				54CE2F0B24F11392007281D6 /* DeepLabV3.mlmodel in Sources */,
+				54CE2EFF24F1102A007281D6 /* Measure.swift in Sources */,
+				54CE2F0424F112AA007281D6 /* StillImageViewController.swift in Sources */,
+				54CE2EF824F10EF3007281D6 /* LiveImageViewController.swift in Sources */,
+				54CE2EE724F10515007281D6 /* AppDelegate.swift in Sources */,
+				54CE2F0124F1109B007281D6 /* DrawingSegmentationView.swift in Sources */,
+				54CE2EFD24F1102A007281D6 /* HeatmapPostProcessor.swift in Sources */,
+				54CE2F0C24F11392007281D6 /* DeepLabV3Int8LUT.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54CE2EEA24F10518007281D6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54CE2EEB24F10518007281D6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54CE2EEF24F10518007281D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54CE2EF024F10518007281D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54CE2EF224F10518007281D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SemanticSegmentation-Mac/SemanticSegmentation_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SemanticSegmentation-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.SemanticSegmentation-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54CE2EF324F10518007281D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SemanticSegmentation-Mac/SemanticSegmentation_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SemanticSegmentation-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.SemanticSegmentation-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54CE2EDE24F10515007281D6 /* Build configuration list for PBXProject "SemanticSegmentation-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CE2EEF24F10518007281D6 /* Debug */,
+				54CE2EF024F10518007281D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CE2EF124F10518007281D6 /* Build configuration list for PBXNativeTarget "SemanticSegmentation-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CE2EF224F10518007281D6 /* Debug */,
+				54CE2EF324F10518007281D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54CE2EDB24F10515007281D6 /* Project object */;
+}

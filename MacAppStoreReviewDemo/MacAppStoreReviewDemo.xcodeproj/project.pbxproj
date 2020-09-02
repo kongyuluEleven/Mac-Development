@@ -14,6 +14,7 @@
 		5404950624B6A26200635F34 /* KReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404950524B6A26200635F34 /* KReviewModel.swift */; };
 		5404950924B6A53D00635F34 /* KReviewMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404950724B6A53D00635F34 /* KReviewMeVC.swift */; };
 		5404950A24B6A53D00635F34 /* KReviewMeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5404950824B6A53D00635F34 /* KReviewMeVC.xib */; };
+		5404950D24B6B6D200635F34 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5404950C24B6B6D100635F34 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5404950524B6A26200635F34 /* KReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KReviewModel.swift; sourceTree = "<group>"; };
 		5404950724B6A53D00635F34 /* KReviewMeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KReviewMeVC.swift; sourceTree = "<group>"; };
 		5404950824B6A53D00635F34 /* KReviewMeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KReviewMeVC.xib; sourceTree = "<group>"; };
+		5404950C24B6B6D100635F34 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5404950D24B6B6D200635F34 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 			children = (
 				540494F424B69FC000635F34 /* MacAppStoreReviewDemo */,
 				540494F324B69FC000635F34 /* Products */,
+				5404950B24B6B6D100635F34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +74,14 @@
 				5404950824B6A53D00635F34 /* KReviewMeVC.xib */,
 			);
 			path = MacAppStoreReviewDemo;
+			sourceTree = "<group>";
+		};
+		5404950B24B6B6D100635F34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5404950C24B6B6D100635F34 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacAppStoreReviewDemo/MacAppStoreReviewDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
 				INFOPLIST_FILE = MacAppStoreReviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,8 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacAppStoreReviewDemo/MacAppStoreReviewDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
 				INFOPLIST_FILE = MacAppStoreReviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

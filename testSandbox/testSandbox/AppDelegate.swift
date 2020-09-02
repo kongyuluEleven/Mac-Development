@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         readFile()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -33,6 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func show(_ sender: Any) {
         showTask5()
+        //showTask2()
     }
     
     @IBAction func open(_ sender: Any) {
