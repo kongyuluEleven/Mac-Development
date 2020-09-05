@@ -706,11 +706,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="KMacSpeechDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="377"/>
+                        <rect key="frame" x="0.0" y="0.0" width="584" height="377"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUy-Ej-JDI">
-                                <rect key="frame" x="25" y="338" width="107" height="32"/>
+                                <rect key="frame" x="248" y="339" width="107" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="语音转文字" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZBk-LK-oH5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -721,7 +721,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-8v-Mg6">
-                                <rect key="frame" x="132" y="339" width="107" height="32"/>
+                                <rect key="frame" x="345" y="338" width="107" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="文字转语音" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ilF-dk-CvT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -730,6 +730,17 @@
                                 <connections>
                                     <action selector="textToSpeakClicked:" target="XfG-lQ-9wD" id="piC-yR-Pod"/>
                                 </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfG-9T-Hiy">
+                                <rect key="frame" x="25" y="338" width="67" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="歌词" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h9P-bG-Bhn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <connections>
+                                        <action selector="lrcButtonClicked:" target="XfG-lQ-9wD" id="aeE-ZI-WaA"/>
+                                    </connections>
+                                </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-i7-sTO">
                                 <rect key="frame" x="442" y="339" width="40" height="32"/>
@@ -742,33 +753,6 @@
                                     <action selector="btnRecordClicked:" target="XfG-lQ-9wD" id="Njg-MQ-gj4"/>
                                 </connections>
                             </button>
-                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWr-6Q-eOh">
-                                <rect key="frame" x="4" y="12" width="472" height="278"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="goM-lO-nsr">
-                                    <rect key="frame" x="0.0" y="0.0" width="472" height="278"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="00O-wx-niJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="472" height="278"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="472" height="278"/>
-                                            <size key="maxSize" width="472" height="10000000"/>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </textView>
-                                    </subviews>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="fYB-ON-JjX">
-                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="O4W-rp-cLX">
-                                    <rect key="frame" x="456" y="0.0" width="16" height="278"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cr6-Ah-syn">
                                 <rect key="frame" x="25" y="290" width="381" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -780,10 +764,39 @@
                                     <action selector="recordButtonClicked:" target="XfG-lQ-9wD" id="ydz-NE-RwI"/>
                                 </connections>
                             </button>
+                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWr-6Q-eOh">
+                                <rect key="frame" x="-5" y="10" width="256" height="278"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="goM-lO-nsr">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="278"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="00O-wx-niJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="278"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="256" height="278"/>
+                                            <size key="maxSize" width="472" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="fYB-ON-JjX">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="O4W-rp-cLX">
+                                    <rect key="frame" x="240" y="0.0" width="16" height="278"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="btnRecord" destination="oaB-i7-sTO" id="Z1a-01-ZjZ"/>
+                        <outlet property="leftScrollView" destination="BWr-6Q-eOh" id="kTb-MM-CPT"/>
+                        <outlet property="lrcButton" destination="sfG-9T-Hiy" id="ST1-ab-Let"/>
                         <outlet property="microphoneButton" destination="oaB-i7-sTO" id="Mw0-nS-pWg"/>
                         <outlet property="recordButton" destination="Cr6-Ah-syn" id="J4Y-6p-pji"/>
                         <outlet property="speakToTextButton" destination="JUy-Ej-JDI" id="DjG-jj-IOR"/>
@@ -793,7 +806,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="708.5"/>
+            <point key="canvasLocation" x="127" y="708.5"/>
         </scene>
     </scenes>
     <resources>

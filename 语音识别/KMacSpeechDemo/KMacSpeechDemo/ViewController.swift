@@ -20,6 +20,13 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet weak var textToSpeakButton: NSButton!
     
+    @IBOutlet weak var lrcButton: NSButton!
+    
+    @IBOutlet weak var leftScrollView: NSScrollView!
+    // Is the app listening flag
+    var isListening = false
+    
+    
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -30,6 +37,12 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet weak var recordButton: NSButton!
     @IBOutlet var textView: NSTextView!
+    
+    
+    private lazy var lrcVC: KLrcController = {
+       let vc = KLrcController()
+       return vc
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +56,8 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         recordButton.title = "Start Recording"
         
         checkAuthor()
+        
+        setupUI()
     }
 
     override var representedObject: Any? {
@@ -74,8 +89,22 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         recordButtonTapped()
     }
     
+    @IBAction func lrcButtonClicked(_ sender: Any) {
+        lrcVC.reloadData()
+        lrcVC.play()
+        
+    }
     
 
+}
+
+extension ViewController {
+    
+    private func setupUI() {
+        let rect = leftScrollView.frame
+        lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
+        self.view.addSubview(lrcVC.view)
+    }
 }
 
 extension ViewController {
