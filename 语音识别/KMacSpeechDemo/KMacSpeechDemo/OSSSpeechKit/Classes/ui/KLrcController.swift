@@ -67,7 +67,7 @@ extension KLrcController {
 extension KLrcController {
     public func reloadData() {
         let analyzer = LrcAnalyzer()
-        guard let path = Bundle.main.url(forResource: SONE, withExtension: "txt")?.path else {return}
+        guard let path = Bundle.main.url(forResource: "test", withExtension: "txt")?.path else {return}
         guard let content = try? String(contentsOfFile: path, encoding: .utf8) else {return}
         lrcArray = analyzer.analyzerLrc(text: content)
         DispatchQueue.main.async {

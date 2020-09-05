@@ -26,15 +26,17 @@
 		54AA900024F3468000E47FD0 /* KAVSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */; };
 		54AA900224F34E3800E47FD0 /* KAVSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */; };
 		54AA900424F34ED100E47FD0 /* KSFRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA900324F34ED100E47FD0 /* KSFRecognizer.swift */; };
-		54E5B1F525033615000A36F4 /* 多幸运.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B1F025033615000A36F4 /* 多幸运.mp3 */; };
-		54E5B1F625033615000A36F4 /* screen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B1F125033615000A36F4 /* screen.jpeg */; };
-		54E5B1F725033615000A36F4 /* 多幸运.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B1F225033615000A36F4 /* 多幸运.txt */; };
-		54E5B1F825033615000A36F4 /* 父亲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B1F325033615000A36F4 /* 父亲.mp3 */; };
-		54E5B1F925033615000A36F4 /* 父亲.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B1F425033615000A36F4 /* 父亲.txt */; };
 		54E5B1FB2503362C000A36F4 /* LrcAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B1FA2503362C000A36F4 /* LrcAnalyzer.swift */; };
 		54E5B1FE2503364F000A36F4 /* KTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B1FD2503364F000A36F4 /* KTableView.swift */; };
 		54E5B203250337A3000A36F4 /* KLrcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B201250337A3000A36F4 /* KLrcController.swift */; };
 		54E5B204250337A3000A36F4 /* KLrcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B202250337A3000A36F4 /* KLrcController.xib */; };
+		54E5B21B2503884B000A36F4 /* 多幸运.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2142503884A000A36F4 /* 多幸运.txt */; };
+		54E5B21C2503884B000A36F4 /* 父亲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2152503884A000A36F4 /* 父亲.mp3 */; };
+		54E5B21D2503884B000A36F4 /* screen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2162503884A000A36F4 /* screen.jpeg */; };
+		54E5B21E2503884B000A36F4 /* 父亲.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2172503884A000A36F4 /* 父亲.txt */; };
+		54E5B21F2503884B000A36F4 /* backgroundImage5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2182503884A000A36F4 /* backgroundImage5.jpg */; };
+		54E5B2202503884B000A36F4 /* 多幸运.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B2192503884B000A36F4 /* 多幸运.mp3 */; };
+		54E5B2212503884B000A36F4 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B21A2503884B000A36F4 /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,15 +83,17 @@
 		54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeech.swift; sourceTree = "<group>"; };
 		54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeaker.swift; sourceTree = "<group>"; };
 		54AA900324F34ED100E47FD0 /* KSFRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSFRecognizer.swift; sourceTree = "<group>"; };
-		54E5B1F025033615000A36F4 /* 多幸运.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "多幸运.mp3"; path = "../../../../KLrcDemo/KLrcDemo/res/多幸运.mp3"; sourceTree = "<group>"; };
-		54E5B1F125033615000A36F4 /* screen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = screen.jpeg; path = ../../../../KLrcDemo/KLrcDemo/res/screen.jpeg; sourceTree = "<group>"; };
-		54E5B1F225033615000A36F4 /* 多幸运.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "多幸运.txt"; path = "../../../../KLrcDemo/KLrcDemo/res/多幸运.txt"; sourceTree = "<group>"; };
-		54E5B1F325033615000A36F4 /* 父亲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "父亲.mp3"; path = "../../../../KLrcDemo/KLrcDemo/res/父亲.mp3"; sourceTree = "<group>"; };
-		54E5B1F425033615000A36F4 /* 父亲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "父亲.txt"; path = "../../../../KLrcDemo/KLrcDemo/res/父亲.txt"; sourceTree = "<group>"; };
 		54E5B1FA2503362C000A36F4 /* LrcAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LrcAnalyzer.swift; path = ../../../../../KLrcDemo/KLrcDemo/model/LrcAnalyzer.swift; sourceTree = "<group>"; };
 		54E5B1FD2503364F000A36F4 /* KTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KTableView.swift; path = ../../../../../KLrcDemo/KLrcDemo/KTableView.swift; sourceTree = "<group>"; };
 		54E5B201250337A3000A36F4 /* KLrcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLrcController.swift; sourceTree = "<group>"; };
 		54E5B202250337A3000A36F4 /* KLrcController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KLrcController.xib; sourceTree = "<group>"; };
+		54E5B2142503884A000A36F4 /* 多幸运.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "多幸运.txt"; sourceTree = "<group>"; };
+		54E5B2152503884A000A36F4 /* 父亲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "父亲.mp3"; sourceTree = "<group>"; };
+		54E5B2162503884A000A36F4 /* screen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen.jpeg; sourceTree = "<group>"; };
+		54E5B2172503884A000A36F4 /* 父亲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "父亲.txt"; sourceTree = "<group>"; };
+		54E5B2182503884A000A36F4 /* backgroundImage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImage5.jpg; sourceTree = "<group>"; };
+		54E5B2192503884B000A36F4 /* 多幸运.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "多幸运.mp3"; sourceTree = "<group>"; };
+		54E5B21A2503884B000A36F4 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +202,7 @@
 		5482827324F0049E00531440 /* OSSSpeechKit */ = {
 			isa = PBXGroup;
 			children = (
-				54E5B1EF250335F8000A36F4 /* res */,
+				54E5B2132503884A000A36F4 /* res */,
 				5482827424F0049E00531440 /* Classes */,
 				5482827A24F0049E00531440 /* Assets */,
 			);
@@ -235,18 +239,6 @@
 			path = lrc;
 			sourceTree = "<group>";
 		};
-		54E5B1EF250335F8000A36F4 /* res */ = {
-			isa = PBXGroup;
-			children = (
-				54E5B1F025033615000A36F4 /* 多幸运.mp3 */,
-				54E5B1F225033615000A36F4 /* 多幸运.txt */,
-				54E5B1F325033615000A36F4 /* 父亲.mp3 */,
-				54E5B1F425033615000A36F4 /* 父亲.txt */,
-				54E5B1F125033615000A36F4 /* screen.jpeg */,
-			);
-			path = res;
-			sourceTree = "<group>";
-		};
 		54E5B1FC25033642000A36F4 /* com */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +269,20 @@
 				54E5B202250337A3000A36F4 /* KLrcController.xib */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		54E5B2132503884A000A36F4 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B2142503884A000A36F4 /* 多幸运.txt */,
+				54E5B2152503884A000A36F4 /* 父亲.mp3 */,
+				54E5B2162503884A000A36F4 /* screen.jpeg */,
+				54E5B2172503884A000A36F4 /* 父亲.txt */,
+				54E5B2182503884A000A36F4 /* backgroundImage5.jpg */,
+				54E5B2192503884B000A36F4 /* 多幸运.mp3 */,
+				54E5B21A2503884B000A36F4 /* test.txt */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,16 +389,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E5B1F925033615000A36F4 /* 父亲.txt in Resources */,
+				54E5B21E2503884B000A36F4 /* 父亲.txt in Resources */,
 				5482828424F0049E00531440 /* Localizable.strings in Resources */,
-				54E5B1F625033615000A36F4 /* screen.jpeg in Resources */,
-				54E5B1F725033615000A36F4 /* 多幸运.txt in Resources */,
 				5482824C24F0047F00531440 /* Assets.xcassets in Resources */,
 				54E5B204250337A3000A36F4 /* KLrcController.xib in Resources */,
-				54E5B1F825033615000A36F4 /* 父亲.mp3 in Resources */,
-				54E5B1F525033615000A36F4 /* 多幸运.mp3 in Resources */,
+				54E5B21B2503884B000A36F4 /* 多幸运.txt in Resources */,
 				5482828524F0049E00531440 /* Images.xcassets in Resources */,
+				54E5B21C2503884B000A36F4 /* 父亲.mp3 in Resources */,
+				54E5B21F2503884B000A36F4 /* backgroundImage5.jpg in Resources */,
+				54E5B2202503884B000A36F4 /* 多幸运.mp3 in Resources */,
 				5482824F24F0047F00531440 /* Main.storyboard in Resources */,
+				54E5B2212503884B000A36F4 /* test.txt in Resources */,
+				54E5B21D2503884B000A36F4 /* screen.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

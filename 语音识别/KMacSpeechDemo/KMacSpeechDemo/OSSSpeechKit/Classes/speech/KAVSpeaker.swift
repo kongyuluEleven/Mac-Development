@@ -59,9 +59,6 @@ class KAVSpeaker : NSObject {
         }
     }
     
-    
-
-
 }
 
 extension KAVSpeaker: AVSpeechSynthesizerDelegate {

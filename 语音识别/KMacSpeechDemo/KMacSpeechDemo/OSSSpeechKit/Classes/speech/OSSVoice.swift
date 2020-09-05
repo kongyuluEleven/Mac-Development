@@ -227,7 +227,10 @@ public enum OSSVoiceEnum: String, CaseIterable {
     ///
     /// If no image is found in the application bundle, the image from the SDK bundle will be provided.
     public var flag: NSImage? {
-       return NSImage(contentsOf: Bundle.main.bundleURL)
+        if let mainBundleImage = NSImage(named: NSImage.Name.init(rawValue)) {
+            return mainBundleImage
+        }
+        return NSImage(contentsOf: Bundle.main.bundleURL)
 //        if let mainBundleImage = NSImage(named: rawValue, in: Bundle.main, compatibleWith: nil) {
 //            return mainBundleImage
 //        }

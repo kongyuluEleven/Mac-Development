@@ -30,8 +30,8 @@
             filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "speakToTextClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
             landmarkName = "testAVSpeech()"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,65 +167,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "87F65A6E-973D-4E8D-87D1-1CC9A09392AA"
+            uuid = "142DF599-323C-4450-B5D4-EDA5F7D5E917"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KMacSpeechDemo/OSSSpeechKit/Classes/ui/KLrcController.swift"
+            filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "play()"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "tableView(_:didClick:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EFD24394-23BB-477B-A580-8434E84A0B0D"
+            uuid = "705F8B95-C168-4AD3-89D3-2A7F22BE482B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KMacSpeechDemo/OSSSpeechKit/Classes/ui/KLrcController.swift"
+            filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "reloadData()"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "clickLocateMissingFiles(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EFD24394-23BB-477B-A580-8434E84A0B0D - cbcf9fd1302cd425"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "KMacSpeechDemo.KLrcController.reloadData() -&gt; ()"
-                  moduleName = "KMacSpeechDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/KMacSpeechDemo/KMacSpeechDemo/OSSSpeechKit/Classes/ui/KLrcController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "1657">
-               </Location>
-               <Location
-                  uuid = "EFD24394-23BB-477B-A580-8434E84A0B0D - 28e08032828d11a9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in KMacSpeechDemo.KLrcController.reloadData() -&gt; ()"
-                  moduleName = "KMacSpeechDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/KMacSpeechDemo/KMacSpeechDemo/OSSSpeechKit/Classes/ui/KLrcController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D684E61-A396-4E5D-9710-3DD1F3299335"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KMacSpeechDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
+            landmarkName = "tableView(_:shouldSelectRow:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61254B40-8C0C-40D4-BDF0-719E3A76259A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KMacSpeechDemo/OSSSpeechKit/Classes/speech/OSSSpeech.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "446"
+            endingLineNumber = "446"
+            landmarkName = "recordAndRecognizeSpeech()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49EE5FD3-DDD3-40E0-AD99-A4C1962FF1B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KMacSpeechDemo/OSSSpeechKit/Classes/speech/OSSSpeech.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "447"
+            endingLineNumber = "447"
+            landmarkName = "recordAndRecognizeSpeech()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "996D4938-94AA-4268-8F6D-7DD6CE4EE271"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KMacSpeechDemo/OSSSpeechKit/Classes/speech/OSSSpeech.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
+            landmarkName = "getMicroPhoneAuthorization()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

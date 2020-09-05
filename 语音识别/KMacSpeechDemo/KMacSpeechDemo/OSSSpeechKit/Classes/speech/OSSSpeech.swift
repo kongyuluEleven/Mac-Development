@@ -398,6 +398,7 @@ public class OSSSpeech: NSObject {
         }
         weak var weakSelf = self
         input.installTap(onBus: bus, bufferSize: 8192, format: inputFormat) { (buffer, time) -> Void in
+            //print("buffer=\(buffer),time=\(time)")
             var newBufferAvailable = true
             let inputCallback: AVAudioConverterInputBlock = { inNumPackets, outStatus in
                 if newBufferAvailable {
@@ -487,6 +488,7 @@ extension OSSSpeech: SFSpeechRecognitionTaskDelegate, SFSpeechRecognizerDelegate
     
     /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
     public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishSuccessfully successfully: Bool) {
+        print("\(#function)")
         recognitionTask = nil
         delegate?.didFinishListening(withText: spokenText)
         setSession(isRecording: false)
@@ -494,21 +496,31 @@ extension OSSSpeech: SFSpeechRecognitionTaskDelegate, SFSpeechRecognizerDelegate
     
     /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
     public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didHypothesizeTranscription transcription: SFTranscription) {
+        print("\(#function)")
         delegate?.didCompleteTranslation(withText: transcription.formattedString)
+        print("\(#function), transcription=\(transcription.formattedString)")
     }
     
     /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
     public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishRecognition recognitionResult: SFSpeechRecognitionResult) {
+        print("\(#function)")
         spokenText = recognitionResult.bestTranscription.formattedString
+        print("\(#function), spokenText=\(spokenText)")
     }
     
-    public func speechRecognitionDidDetectSpeech(_ task: SFSpeechRecognitionTask) {}
+    public func speechRecognitionDidDetectSpeech(_ task: SFSpeechRecognitionTask) {
+        print("\(#function)")
+    }
     
-    public func speechRecognitionTaskFinishedReadingAudio(_ task: SFSpeechRecognitionTask) {}
+    public func speechRecognitionTaskFinishedReadingAudio(_ task: SFSpeechRecognitionTask) {
+        print("\(#function)")
+    }
     
     // MARK: - SFSpeechRecognizerDelegate Methods
     
     /// Docs available by Google searching for SFSpeechRecognizerDelegate
-    public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {}
+    public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+        print("\(#function)")
+    }
 
 }

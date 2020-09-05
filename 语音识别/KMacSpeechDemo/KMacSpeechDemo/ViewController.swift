@@ -26,6 +26,8 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     // Is the app listening flag
     var isListening = false
     
+    @IBOutlet weak var languageTableView: FMTableView!
+    private var currentRow:Int = 0
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     
@@ -47,7 +49,7 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
         recordButton.isEnabled = false
         microphoneButton.isEnabled = false
         speakToTextButton.isHidden = true
@@ -56,6 +58,9 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         recordButton.title = "Start Recording"
         
         checkAuthor()
+        
+        speechKit.delegate = self
+        speechRecognizer.delegate = self
         
         setupUI()
     }
@@ -90,8 +95,11 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     }
     
     @IBAction func lrcButtonClicked(_ sender: Any) {
-        lrcVC.reloadData()
-        lrcVC.play()
+        
+        speechKit.recordVoice()
+        
+//        lrcVC.reloadData()
+//        lrcVC.play()
         
     }
     
@@ -104,6 +112,36 @@ extension ViewController {
         let rect = leftScrollView.frame
         lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
         self.view.addSubview(lrcVC.view)
+        
+        setupLanguageTableView()
+    }
+    
+    private func setupLanguageTableView() {
+
+        languageTableView.delegate = self
+        languageTableView.dataSource = self
+        languageTableView.gridColor = fm_base_bk_color
+        languageTableView.doubleAction = #selector(clickLocateMissingFiles(_:))
+        
+        languageTableView.allowsColumnResizing = true
+        let columnsTiles: [String] = ["语言", "描述"]
+        for index in 0..<languageTableView.tableColumns.count {
+            languageTableView.tableColumns[index].isEditable = false
+            languageTableView.tableColumns[index].headerCell.stringValue = columnsTiles[index]
+            languageTableView.tableColumns[index].headerCell.backgroundColor = NSColor.init(rgb: 0x67DDCF)
+            let oldHeaderCell = languageTableView.tableColumns[index].headerCell
+            languageTableView.tableColumns[index].headerCell = FMTableHeaderCell.init(textCell: oldHeaderCell.stringValue)
+            languageTableView.tableColumns[index].headerCell.textColor = fm_base_bk_color
+            languageTableView.tableColumns[index].headerCell.drawsBackground = false
+        }
+        languageTableView.allowsColumnSelection = false
+    }
+    
+    @objc func clickLocateMissingFiles(_ sender: Any) {
+        if sender as? FSButton != nil {
+            languageTableView.selectRowIndexes(IndexSet.init(integer: (sender as! FSButton).tag), byExtendingSelection: false)
+        }
+        //self.clickLocate(sender)
     }
 }
 
@@ -170,14 +208,22 @@ extension ViewController {
            
            // Create a recognition task for the speech recognition session.
            // Keep a reference to the task so that it can be canceled.
+//        @NSCopying open var bestTranscription: SFTranscription { get }
+//        // Hypotheses for possible transcriptions, sorted in decending order of confidence (more likely first)
+//        open var transcriptions: [SFTranscription] { get }
+//        // True if the hypotheses will not change; speech processing is complete.
+//        open var isFinal: Bool { get }
            recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
                var isFinal = false
                
                if let result = result {
                    // Update the text view with the results.
                    self.textView.string = result.bestTranscription.formattedString
+                
                    isFinal = result.isFinal
                    print("Text \(result.bestTranscription.formattedString)")
+                
+                   
                }
                
                if error != nil || isFinal {
@@ -192,12 +238,13 @@ extension ViewController {
                    self.recordButton.title = "Start Recording"
                }
            }
+        
 
            // Configure the microphone input.
            let recordingFormat = inputNode.outputFormat(forBus: 0)
            inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
                self.recognitionRequest?.append(buffer)
-               print("*****buffer call back ")
+               //print("*****buffer call back ")
            }
            
            audioEngine.prepare()
@@ -244,11 +291,13 @@ extension ViewController {
     }
     
     private func speechToText() {
-        let text = "孔雨露";
-        let voiceType: VoiceType = .standardMale
-        KGoogleSpeechService.shared.speak(text: text, voiceType: voiceType) {
-
-        }
+//        let text = "孔雨露";
+//        let voiceType: VoiceType = .standardMale
+//        KGoogleSpeechService.shared.speak(text: text, voiceType: voiceType) {
+//
+//        }
+        
+        speechKit.recordVoice()
     }
     
     private func textToSpeakSiri() {
@@ -266,5 +315,180 @@ extension ViewController {
          speech.speakWords = "测试语音功能"
          speech.start()
     }
+}
+
+extension ViewController:NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, didClick tableColumn: NSTableColumn) {
+        
+    }
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        speechKit.voice = OSSVoice(quality: .enhanced, language: OSSVoiceEnum.allCases[row])
+        speechKit.utterance?.rate = 0.45
+        // Test attributed string vs normal string
+        if row % 2 == 0 {
+            speechKit.speakText(OSSVoiceEnum.allCases[row].demoMessage)
+        } else {
+            let attributedString = NSAttributedString(string: OSSVoiceEnum.allCases[row].demoMessage)
+            speechKit.speakAttributedText(attributedText: attributedString)
+        }
+        
+        currentRow = row
+        return true
+    }
+    
+}
+
+extension ViewController:NSTableViewDataSource {
+    public func numberOfRows(in tableView: NSTableView) -> Int {
+           let count = OSSVoiceEnum.allCases.count
+           return count
+       }
+       
+       func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+           
+           let cellView: MissFileCellView = MissFileCellView.init(frame: NSMakeRect(0, 0, tableView.frame.size.width, 40))
+           cellView.autoresizingMask = [NSView.AutoresizingMask.maxXMargin, NSView.AutoresizingMask.minXMargin, NSView.AutoresizingMask.width]
+           
+           guard let tableColumn = tableColumn else {
+               return cellView
+           }
+           
+           if let columnIndex = tableView.tableColumns.index(of: tableColumn) {
+               switch columnIndex {
+               case 0:
+                   cellView.labelView = FMIconTextField.init(frame: cellView.bounds)
+                   cellView.labelView?.stringValue = OSSVoiceEnum.allCases[row].title
+                   cellView.buttonView?.image = OSSVoiceEnum.allCases[row].flag
+                   
+                   cellView.labelView?.lineBreakMode = .byCharWrapping
+                   cellView.labelView?.alignment = .center
+                   if currentRow == row {
+                       cellView.labelView?.textColor = .green
+                   } else {
+                       cellView.labelView?.textColor = .white
+                   }
+                   
+               case 1:
+                   cellView.buttonView = FSButton.init(frame: cellView.bounds)
+                   cellView.buttonView?.tag = row
+                   //cellView.buttonView.
+                   cellView.labelView?.stringValue = OSSVoiceEnum.allCases[row].title
+                   //cellView.labelView?.stringValue = OSSVoiceEnum.allCases[row].demoMessage
+                   cellView.buttonView?.image = OSSVoiceEnum.allCases[row].flag
+                   cellView.buttonView?.isHidden = false
+                   cellView.labelView?.lineBreakMode = .byCharWrapping
+                   cellView.labelView?.alignment = .center
+                   if currentRow == row {
+                       cellView.labelView?.textColor = .green
+                   } else {
+                       cellView.labelView?.textColor = .white
+                   }
+                   
+               default:
+                   break
+               }
+           }
+           
+           return cellView
+       }
+       
+       func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+           let frame: NSRect = NSMakeRect(0, 0, tableView.frame.size.width, tableView.frame.size.height)
+           let rowView: FMTableRowView = FMTableRowView.init(frame:frame)
+
+           let evenColor = NSColor.init(rgb: 0x242B33)
+           let oddColor = NSColor.init(rgb: 0x2A313A)
+           rowView.bkColor = (0 == row % 2) ? evenColor : oddColor
+           return rowView
+       }
+       
+       func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+           return 40
+       }
+    
+    @objc func cellIconButtonClicked(sender:Any) {
+        
+    }
+}
+
+extension ViewController:OSSSpeechDelegate {
+    func didCompleteTranslation(withText text: String) {
+        print("Translation completed: \(text)")
+    }
+    
+    func didFailToProcessRequest(withError error: Error?) {
+        guard let err = error else {
+            print("Error with the request but the error returned is nil")
+            return
+        }
+        print("Error with the request: \(err)")
+    }
+    
+    func authorizationToMicrophone(withAuthentication type: OSSSpeechKitAuthorizationStatus) {
+        print("Authorization status has returned: \(type.message).")
+    }
+    
+    func didFailToCommenceSpeechRecording() {
+        print("Failed to record speech.")
+    }
+    
+    func didFinishListening(withText text: String) {
+        weak var weakSelf = self
+        OperationQueue.main.addOperation {
+            weakSelf?.speechKit.speakText(text)
+        }
+    }
+}
+
+
+//// Called when the task first detects speech in the source audio
+//- (void)speechRecognitionDidDetectSpeech:(SFSpeechRecognitionTask *)task;
+//
+//// Called for all recognitions, including non-final hypothesis
+//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didHypothesizeTranscription:(SFTranscription *)transcription;
+//
+//// Called only for final recognitions of utterances. No more about the utterance will be reported
+//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didFinishRecognition:(SFSpeechRecognitionResult *)recognitionResult;
+//
+//// Called when the task is no longer accepting new audio but may be finishing final processing
+//- (void)speechRecognitionTaskFinishedReadingAudio:(SFSpeechRecognitionTask *)task;
+//
+//// Called when the task has been cancelled, either by client app, the user, or the system
+//- (void)speechRecognitionTaskWasCancelled:(SFSpeechRecognitionTask *)task;
+//
+//// Called when recognition of all requested utterances is finished.
+//// If successfully is false, the error property of the task will contain error information
+//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didFinishSuccessfully:(BOOL)successfully;
+
+extension ViewController:SFSpeechRecognitionTaskDelegate {
+    // MARK: - SFSpeechRecognitionTaskDelegate Methods
+       
+       /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
+       public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishSuccessfully successfully: Bool) {
+           print("\(#function)")
+       }
+       
+       /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
+       public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didHypothesizeTranscription transcription: SFTranscription) {
+
+
+           print("\(#function), transcription=\(transcription.formattedString)")
+       }
+       
+       /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
+       public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishRecognition recognitionResult: SFSpeechRecognitionResult) {
+           print("\(#function)")
+       }
+       
+       public func speechRecognitionDidDetectSpeech(_ task: SFSpeechRecognitionTask) {
+           print("\(#function)")
+       }
+       
+       public func speechRecognitionTaskFinishedReadingAudio(_ task: SFSpeechRecognitionTask) {
+           print("\(#function)")
+       }
+       
 }
 
