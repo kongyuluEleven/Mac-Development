@@ -128,7 +128,7 @@ extension KLrcController:NSTableViewDataSource {
                 cellView.labelView = FMIconTextField.init(frame: cellView.bounds)
                 cellView.labelView?.stringValue = lrcArray[row].lrc
                 cellView.labelView?.lineBreakMode = .byCharWrapping
-                cellView.labelView?.alignment = .center
+                cellView.labelView?.alignment = .left
                 if currentRow == row {
                     cellView.labelView?.textColor = .green
                 } else {

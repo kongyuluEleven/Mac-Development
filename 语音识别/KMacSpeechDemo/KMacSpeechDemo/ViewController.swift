@@ -16,11 +16,13 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
 
     @IBOutlet weak var microphoneButton: NSButton!
     
-    @IBOutlet weak var speakToTextButton: NSButton!
-    
-    @IBOutlet weak var textToSpeakButton: NSButton!
     
     @IBOutlet weak var lrcButton: NSButton!
+    @IBOutlet weak var topScrollView: NSScrollView!
+    @IBOutlet var topTextView: NSTextView!
+    
+    @IBOutlet weak var middleScrollView: NSScrollView!
+    @IBOutlet var middleTextView: NSTextView!
     
     @IBOutlet weak var leftScrollView: NSScrollView!
     // Is the app listening flag
@@ -52,8 +54,7 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         
         recordButton.isEnabled = false
         microphoneButton.isEnabled = false
-        speakToTextButton.isHidden = true
-        textToSpeakButton.isHidden = true
+
         
         recordButton.title = "Start Recording"
         
@@ -61,6 +62,7 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         
         speechKit.delegate = self
         speechRecognizer.delegate = self
+        speechRecognizer.defaultTaskHint = .dictation
         
         setupUI()
     }
@@ -109,11 +111,14 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
 extension ViewController {
     
     private func setupUI() {
-        let rect = leftScrollView.frame
+        let rect = middleScrollView.frame
         lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
         self.view.addSubview(lrcVC.view)
         
         setupLanguageTableView()
+        
+        textView.isEditable = false
+        topTextView.isEditable = false
     }
     
     private func setupLanguageTableView() {
@@ -205,6 +210,8 @@ extension ViewController {
            if #available(iOS 13, *) {
                recognitionRequest.requiresOnDeviceRecognition = false
            }
+        
+           recognitionRequest.requiresOnDeviceRecognition = true
            
            // Create a recognition task for the speech recognition session.
            // Keep a reference to the task so that it can be canceled.
@@ -218,15 +225,35 @@ extension ViewController {
                
                if let result = result {
                    // Update the text view with the results.
-                   self.textView.string = result.bestTranscription.formattedString
+                   //self.textView.string = result.bestTranscription.formattedString
                 
                    isFinal = result.isFinal
-                   print("Text \(result.bestTranscription.formattedString)")
+                print("Text \(result.bestTranscription.formattedString), transcriptions = \(result.transcriptions.count)")
                 
-                   
+                self.textView.string = self.textView.string + "\n\n" + result.bestTranscription.formattedString
+                
+                
+                result.transcriptions.forEach { (trans) in
+                    
+                    print("-------\n \t trans = \(trans.segments.count), \(trans.averagePauseDuration)")
+                    trans.segments.forEach { (segment) in
+                        print("\n\t\t segment=\(segment.substring),confidence=\(segment.confidence), range=\(segment.substringRange), alternativeSubstrings=\(segment.alternativeSubstrings.count)")
+                        //self.textView.string = self.textView.string + "\(segment.substring) "
+                        segment.alternativeSubstrings.forEach { (str) in
+                            print("\n\t\t\t str = \(str)")
+                        }
+                    }
+                    let translate = trans.segments.map({ (item) -> String in
+                        return item.substring
+                    }).joined(separator: " ")
+                    print("\n**** \(translate)*****\n")
+                    //self.textView.string = self.textView.string + "\n\n" + translate
+                    
+                }
                }
                
-               if error != nil || isFinal {
+               //if error != nil || isFinal {
+               if error != nil  {
                    // Stop recognizing speech if there is a problem.
                    self.audioEngine.stop()
                    inputNode.removeTap(onBus: 0)

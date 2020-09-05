@@ -187,7 +187,7 @@ public class OSSSpeech: NSObject {
     
     /// The task type by default is undefined.
     /// Changing the task type will change how speech recognition performs.
-    public var recognitionTaskType = OSSSpeechRecognitionTaskType.undefined
+    public var recognitionTaskType = OSSSpeechRecognitionTaskType.dictation
     
     /// The object used to enable translation of strings to synthsized voice.
     public var utterance: OSSUtterance?
@@ -506,6 +506,7 @@ extension OSSSpeech: SFSpeechRecognitionTaskDelegate, SFSpeechRecognizerDelegate
         print("\(#function)")
         spokenText = recognitionResult.bestTranscription.formattedString
         print("\(#function), spokenText=\(spokenText)")
+        
     }
     
     public func speechRecognitionDidDetectSpeech(_ task: SFSpeechRecognitionTask) {
