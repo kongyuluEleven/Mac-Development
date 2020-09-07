@@ -8,6 +8,7 @@
 
 import Cocoa
 import AVFoundation
+import Speech
 
 let SONE = "多幸运"
 
@@ -16,6 +17,7 @@ class KLrcController: NSViewController {
     @IBOutlet weak var tableView: FMTableView!
     //歌词数组
     private var lrcArray:[LRC] = []
+    private var needMatchArr:[LRC] = []
     
     private var isDragging:Bool = false
     private var currentRow:Int = 0
@@ -70,6 +72,8 @@ extension KLrcController {
         guard let path = Bundle.main.url(forResource: "Passage55", withExtension: "txt")?.path else {return}
         guard let content = try? String(contentsOfFile: path, encoding: .utf8) else {return}
         lrcArray = analyzer.analyzerLrc(text: content)
+        needMatchArr.removeAll()
+        needMatchArr.append(contentsOf: lrcArray)
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -113,12 +117,63 @@ extension KLrcController {
                 return
             }
         }
-//        if let matchArr = kmp?.matches(in: TEXT_COPY) {
-//            print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
-//            if let first = matchArr.first {
-//
-//            }
-//        }
+    }
+    
+    public func match(recognitionRes:SFSpeechRecognitionResult) {
+        
+        let best = recognitionRes.bestTranscription
+        guard let kmp = GMatcherExpression(pattern: best.formattedString, option: .KMP) else {return}
+        
+        guard let firstRange = best.segments.first else {return}
+        
+        let firstWord = firstRange.substring
+        let firstWordRange = firstRange.substringRange
+        
+        let matchLines = lrcArray.filter { (item) -> Bool in
+            
+            guard let ranga = item.lrc.range(of: firstWord) else {return false}
+            
+            let ra = item.lrc.nsrange(fromRange: ranga)
+            
+            return ra == firstWordRange
+        }
+        
+        for i in 0 ... lrcArray.count-1  {
+            let lineStr = lrcArray[i].lrc
+            if let matchArr = kmp.matches(in: lineStr), let range = matchArr.first?.range, currentRow != i {
+                currentRow = i
+                self.tableView.scrollRowToVisible(i)
+                self.tableView.reloadData()
+                return
+            }
+        }
+        
+        var j = best.segments.count - 1
+        var list = [SFTranscriptionSegment]()
+        list.append(contentsOf: best.segments)
+        while j > 0 {
+            let translate = list.map({ (item) -> String in
+                return item.substring
+            }).joined(separator: " ")
+            
+            if let kmp = GMatcherExpression(pattern:translate, option: .KMP) {
+                if let index = lrcArray.firstIndex(where: { (item) -> Bool in
+                    if let match = kmp.firstMatch(in: item.lrc) {
+                        return true
+                    }
+                    return false
+                }) {
+                    currentRow = index
+                    self.tableView.scrollRowToVisible(currentRow)
+                    self.tableView.reloadData()
+                    return
+                }
+            }
+                
+            list.removeLast()
+            j = j - 1
+        }
+        
     }
 }
 
