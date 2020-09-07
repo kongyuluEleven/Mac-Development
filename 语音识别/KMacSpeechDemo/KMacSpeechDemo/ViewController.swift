@@ -10,7 +10,8 @@ import Cocoa
 import Speech
 import AVFoundation
 
-let TEST_URL = "https://developer.apple.com/videos/play/wwdc2020/10074/"
+//let TEST_URL = "https://developer.apple.com/videos/play/wwdc2020/10074/"
+let TEST_URL = "http://m.kekenet.com/menu/201207/188787.shtml###"
 
 let TEXT_COPY = """
   
@@ -25,38 +26,25 @@ let TEXT_COPY = """
 class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     private let speechKit = OSSSpeech.shared
-
     @IBOutlet weak var microphoneButton: NSButton!
-    
-    
     @IBOutlet weak var lrcButton: NSButton!
     @IBOutlet weak var topScrollView: NSScrollView!
     @IBOutlet var topTextView: NSTextView!
-    
     @IBOutlet weak var middleScrollView: NSScrollView!
     @IBOutlet var middleTextView: NSTextView!
-    
     @IBOutlet weak var leftScrollView: NSScrollView!
-    // Is the app listening flag
-    var isListening = false
-    
     @IBOutlet weak var languageTableView: FMTableView!
-    private var currentRow:Int = 0
-    
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
-    
-    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
-    
-    private var recognitionTask: SFSpeechRecognitionTask?
-    
-    private let audioEngine = AVAudioEngine()
-    
     @IBOutlet weak var recordButton: NSButton!
     @IBOutlet var textView: NSTextView!
     
-    private var beginPos:Int = 0
-    private var endPos:Int = 0
-    
+    private var matchRange:NSRange?
+    var isListening = false
+    private var currentRow:Int = 0
+
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var recognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
     
     private lazy var lrcVC: KLrcController = {
        let vc = KLrcController()
@@ -65,13 +53,6 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        recordButton.isEnabled = false
-        microphoneButton.isEnabled = false
-
-        
-        recordButton.title = "Start Recording"
         
         checkAuthor()
         
@@ -126,23 +107,21 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
 extension ViewController {
     
     private func setupUI() {
+        recordButton.isEnabled = false
+        microphoneButton.isEnabled = false
+        recordButton.title = "Start Recording"
+        
         let rect = middleScrollView.frame
         lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
         self.view.addSubview(lrcVC.view)
         
         setupLanguageTableView()
         setupTextView()
-
     }
     
     private func setupTextView() {
         textView.isEditable = false
-        //topTextView.isEditable = false
-        
-        //NSMutableAttributedString *attributedString = [[[NSMutableAttributedString alloc] initWithString:@"测试富文本显示"] autorelease];
-        endPos = 10
         updateTextRange()
-
     }
     
     private func updateTextRange() {
@@ -153,13 +132,10 @@ extension ViewController {
         //paraStyle.alignment = .center
         let range = NSMakeRange(0, attrTitle.length)
         //attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
-        attrTitle.addAttribute(.foregroundColor, value: Color.red, range: NSMakeRange(beginPos, endPos))
+        if let matchRange = matchRange {
+            attrTitle.addAttribute(.foregroundColor, value: Color.red, range: matchRange)
+        }
         topTextView.insertText(attrTitle, replacementRange: range)
-        
-        let start = Date().timeIntervalSince1970
-        let kmp = GMatcherExpression(pattern: "Hello", option: .KMP)
-        let matchArr = kmp?.matches(in: TEXT_COPY)
-        print("kmp time:\(Date(timeIntervalSinceReferenceDate: start))")
     }
     
     private func setupLanguageTableView() {
@@ -187,7 +163,6 @@ extension ViewController {
         if sender as? FSButton != nil {
             languageTableView.selectRowIndexes(IndexSet.init(integer: (sender as! FSButton).tag), byExtendingSelection: false)
         }
-        //self.clickLocate(sender)
     }
 }
 
@@ -260,56 +235,60 @@ extension ViewController {
             if let result = result {
                 //NotificationCenter.default.post(name: NSNotification.Name.init("ReconitionResultNotification"), object: result)
                 
-                self.lrcVC.match(recognitionRes: result)
+//                self.lrcVC.match(recognitionRes: result)
 
                 isFinal = result.isFinal
                 let best = result.bestTranscription
-                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
-                
-                best.segments.forEach { (seg) in
-                    print("\n\t\t\t sub=\(seg.substring), range=\(seg.substringRange)  \n")
-                    let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
-                    if let matchArr = kmp?.matches(in: TEXT_COPY) {
-                        print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
-                        //self.lrcVC.match(subString: seg.substring)
-                    }
-                }
-                
-                
-                let kmp = GMatcherExpression(pattern: result.bestTranscription.formattedString, option: .KMP)
-                if let matchArr = kmp?.matches(in: TEXT_COPY) {
-                    print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
-                    if let first = matchArr.first {
-                        
-                    }
-                }
+//                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
+//
+//                best.segments.forEach { (seg) in
+//                    print("\n\t\t\t sub=\(seg.substring), range=\(seg.substringRange)  \n")
+//                    let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
+//                    if let matchArr = kmp?.matches(in: TEXT_COPY) {
+//                        print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+//                        //self.lrcVC.match(subString: seg.substring)
+//                    }
+//                }
+//
+//
+//                let kmp = GMatcherExpression(pattern: result.bestTranscription.formattedString, option: .KMP)
+//                if let matchArr = kmp?.matches(in: TEXT_COPY) {
+//                    print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+//                    if let first = matchArr.first {
+//
+//                    }
+//                }
                 
                 self.textView.string = self.textView.string + "\n\n" + result.bestTranscription.formattedString
                 
                 
+                var j = best.segments.count - 1
+                var list = [SFTranscriptionSegment]()
+                list.append(contentsOf: best.segments)
                 
-//                result.transcriptions.forEach { (trans) in
-//
-//                    print("-------\n \t trans = \(trans.segments.count), \(trans.averagePauseDuration)")
-//                    trans.segments.forEach { (segment) in
-//                        print("\n\t\t segment=\(segment.substring),confidence=\(segment.confidence), range=\(segment.substringRange), alternativeSubstrings=\(segment.alternativeSubstrings.count)")
-//                        //self.textView.string = self.textView.string + "\(segment.substring) "
-//                        segment.alternativeSubstrings.forEach { (str) in
-//                            print("\n\t\t\t str = \(str)")
-//                        }
-//                    }
-//                    let translate = trans.segments.map({ (item) -> String in
-//                        return item.substring
-//                    }).joined(separator: " ")
-//                    print("\n**** \(translate)*****\n")
-//
-//                    let range = self.topTextView.string.range(of: translate)
-//                    print("---range:\(String(describing: range))")
-//                }
+                let compareStr = TEXT_COPY.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
+                
+                while j > 0 {
+                    let translate = list.map({ (item) -> String in
+                        return item.substring
+                    }).joined(separator: " ")
+                    print("j = \(j),translate = \(translate)")
+                    
+                    //let range1 = compareStr.ranges(of: translate)
+                    if let matchRange = compareStr.nsranges(of: translate).first {
+                        print("🍺 匹配到: range=\(matchRange), translate = \(translate)")
+                        self.matchRange = matchRange
+                        self.updateTextRange()
+                        return
+                    }
+                    
+                    list.removeFirst()
+                    j = j - 1
+                }
+                
             }
             
-            //if error != nil || isFinal {
-            if error != nil  {
+            if error != nil || isFinal {
                 // Stop recognizing speech if there is a problem.
                 self.audioEngine.stop()
                 inputNode.removeTap(onBus: 0)
@@ -525,26 +504,6 @@ extension ViewController:OSSSpeechDelegate {
     }
 }
 
-
-//// Called when the task first detects speech in the source audio
-//- (void)speechRecognitionDidDetectSpeech:(SFSpeechRecognitionTask *)task;
-//
-//// Called for all recognitions, including non-final hypothesis
-//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didHypothesizeTranscription:(SFTranscription *)transcription;
-//
-//// Called only for final recognitions of utterances. No more about the utterance will be reported
-//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didFinishRecognition:(SFSpeechRecognitionResult *)recognitionResult;
-//
-//// Called when the task is no longer accepting new audio but may be finishing final processing
-//- (void)speechRecognitionTaskFinishedReadingAudio:(SFSpeechRecognitionTask *)task;
-//
-//// Called when the task has been cancelled, either by client app, the user, or the system
-//- (void)speechRecognitionTaskWasCancelled:(SFSpeechRecognitionTask *)task;
-//
-//// Called when recognition of all requested utterances is finished.
-//// If successfully is false, the error property of the task will contain error information
-//- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)task didFinishSuccessfully:(BOOL)successfully;
-
 extension ViewController:SFSpeechRecognitionTaskDelegate {
     // MARK: - SFSpeechRecognitionTaskDelegate Methods
        
@@ -555,8 +514,6 @@ extension ViewController:SFSpeechRecognitionTaskDelegate {
        
        /// Docs available by Google searching for SFSpeechRecognitionTaskDelegate
        public func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didHypothesizeTranscription transcription: SFTranscription) {
-
-
            print("\(#function), transcription=\(transcription.formattedString)")
        }
        
