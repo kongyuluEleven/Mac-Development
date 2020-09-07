@@ -30,6 +30,7 @@
 		5489240E2505E7E90027983A /* GThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5489240A2505E7E80027983A /* GThreadSafeArray.m */; };
 		5489240F2505E7E90027983A /* GMatcherResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5489240B2505E7E90027983A /* GMatcherResult.m */; };
 		548924122505E7F40027983A /* GMatcherExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 548924112505E7F40027983A /* GMatcherExpression.m */; };
+		54892414250613DA0027983A /* Passage55.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54892413250613DA0027983A /* Passage55.txt */; };
 		54AA8FFE24F13B8B00E47FD0 /* KGoogleSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FFD24F13B8B00E47FD0 /* KGoogleSpeechService.swift */; };
 		54AA900024F3468000E47FD0 /* KAVSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */; };
 		54AA900224F34E3800E47FD0 /* KAVSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */; };
@@ -105,6 +106,7 @@
 		5489240C2505E7E90027983A /* GMatcherResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherResult.h; sourceTree = "<group>"; };
 		548924102505E7F40027983A /* GMatcherExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherExpression.h; sourceTree = "<group>"; };
 		548924112505E7F40027983A /* GMatcherExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherExpression.m; sourceTree = "<group>"; };
+		54892413250613DA0027983A /* Passage55.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Passage55.txt; sourceTree = "<group>"; };
 		54AA8FFD24F13B8B00E47FD0 /* KGoogleSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGoogleSpeechService.swift; sourceTree = "<group>"; };
 		54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeech.swift; sourceTree = "<group>"; };
 		54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeaker.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		54E5B2132503884A000A36F4 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				54892413250613DA0027983A /* Passage55.txt */,
 				54E5B2142503884A000A36F4 /* 多幸运.txt */,
 				54E5B2152503884A000A36F4 /* 父亲.mp3 */,
 				54E5B2162503884A000A36F4 /* screen.jpeg */,
@@ -460,6 +463,7 @@
 				54E5B21F2503884B000A36F4 /* backgroundImage5.jpg in Resources */,
 				54E5B2202503884B000A36F4 /* 多幸运.mp3 in Resources */,
 				5482824F24F0047F00531440 /* Main.storyboard in Resources */,
+				54892414250613DA0027983A /* Passage55.txt in Resources */,
 				54E5B2212503884B000A36F4 /* test.txt in Resources */,
 				54E5B21D2503884B000A36F4 /* screen.jpeg in Resources */,
 			);

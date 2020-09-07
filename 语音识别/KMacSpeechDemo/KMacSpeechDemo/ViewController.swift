@@ -258,6 +258,7 @@ extension ViewController {
             var isFinal = false
             
             if let result = result {
+                //NotificationCenter.default.post(name: NSNotification.Name.init("ReconitionResultNotification"), object: result)
 
                 isFinal = result.isFinal
                 let best = result.bestTranscription
@@ -268,6 +269,7 @@ extension ViewController {
                     let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
                     if let matchArr = kmp?.matches(in: TEXT_COPY) {
                         print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+                        self.lrcVC.match(subString: seg.substring)
                     }
                 }
                 

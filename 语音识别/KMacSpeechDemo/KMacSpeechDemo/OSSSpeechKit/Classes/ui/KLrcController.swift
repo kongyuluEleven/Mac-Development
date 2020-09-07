@@ -67,7 +67,7 @@ extension KLrcController {
 extension KLrcController {
     public func reloadData() {
         let analyzer = LrcAnalyzer()
-        guard let path = Bundle.main.url(forResource: "test", withExtension: "txt")?.path else {return}
+        guard let path = Bundle.main.url(forResource: "Passage55", withExtension: "txt")?.path else {return}
         guard let content = try? String(contentsOfFile: path, encoding: .utf8) else {return}
         lrcArray = analyzer.analyzerLrc(text: content)
         DispatchQueue.main.async {
@@ -99,6 +99,26 @@ extension KLrcController {
         }
         
         player.play()
+    }
+    
+    public func match(subString:String) {
+        guard let kmp = GMatcherExpression(pattern: subString, option: .KMP) else {return}
+        for i in 0 ... lrcArray.count-1  {
+            let lineStr = lrcArray[i].lrc
+            //let matchRange = kmp.rangeOfFirstMatch(in: lineStr)
+            if let matchArr = kmp.matches(in: lineStr), let range = matchArr.first?.range, currentRow != i {
+                currentRow = i
+                self.tableView.scrollRowToVisible(i)
+                self.tableView.reloadData()
+                return
+            }
+        }
+//        if let matchArr = kmp?.matches(in: TEXT_COPY) {
+//            print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+//            if let first = matchArr.first {
+//
+//            }
+//        }
     }
 }
 

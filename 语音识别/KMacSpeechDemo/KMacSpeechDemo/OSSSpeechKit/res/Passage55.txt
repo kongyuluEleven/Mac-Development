@@ -1,24 +1,82 @@
 
-[00:00.91] Hello and welcome to WWDC.
-[00:03.82] My name is Roman and I'm a Shortcuts Engineer at Apple.
-[00:07.03] Today, I'm going to share some tips on how to efficiently debug your Siri and Shortcuts support.
-[00:10.24] Let's start by taking a look at how you can automate Siri queries using the scheme editor in Xcode.
-[00:12.95] You can provide the Siri intent query from the get-go, so you don't actually have to trigger Siri and speak to it when you debug your extension.
-[00:19.68] When you're attaching to your intents extension, you have an option to choose between Siri and the Shortcuts app as the host process.
-[00:21.43] Sometimes, you might wonder why you don't keep breakpoints in your intents UI extension,
-[00:24.24] while you're being attached to an intents extension in Xcode. This is because both of these extensions are separate processes.
-[00:27.30] You can use the Xcode debug menu to attach to multiple processes at the same time.
-[00:30.26] So you implemented SiriKit support in your app,
-[00:32.77] but you're getting "Sorry there was a problem with the app," when you execute your intent in Siri.
-[00:35.42] Now what can you do about this?
-[00:39.34] First, make sure that you call your completion handlers of your intent handling protocol methods before the 10 second timeout.
-[00:43.60] You also need to make sure that you call the completion handlers only once,
-[00:48.17] otherwise an exception will be thrown in your process.
-[00:52.68] You should also verify that your process is not crashing in the middle of the request.
-[00:54.44] Open devices and similars in Xcode,
-[00:57.40] and click the view device logs button,
-[00:59.46] and scan it for crashes in your processes.
-[01:01.46] Using OS_log statements and the Console app can help you understand how multiple processes work together.
-[01:03.77] When composing your OS_log statements,
-[01:05.47] you can prefix them with an emoji or some other unique keyword and then use the Console app to filter by your unique keyword,
-[01:10.24] to get an accurate timeline of events in all processes involved.
+[00:00.91] Passage 55. Stress and Relaxation
+[00:03.82] It is commonly believed that only rich middle-aged businessmen suffer from stress.
+[00:07.03] In fact anyone may become ill as a result of stress if they experience a lot of worry over a long period and their health is not especially good.
+[00:10.24] Stress can be a friend or an enemy:
+[00:12.95] it can warn you that you are under too much pressure and should change your way of life.
+[00:19.68] It can kill you if you don’t notice the warning signals.
+[00:21.43] Doctors agree that it is probably the biggest single cause of illness in the Western world.
+[00:24.24] When we are very frightened and worried our bodies produce certain chemicals to help us fight what is troubling us.
+[00:27.30] Unfortunately, these chemicals produce the energy needed to run away fast from an object of fear,
+[00:30.26] and in modern life that’s often impossible. If we don’t use up these chemicals,
+[00:32.77] or if we produce too many of them, they may actually harm us.
+[00:35.42] The parts of the body that are most affected by stress are the stomach, heart,skin, head and back.
+[00:39.34] Stress can cause car accidents, heart attacks, and alcoholism,
+[00:43.60] and may even drive people to suicide.
+[00:48.17] Our living and working conditions may put us under stress.
+[00:52.68] Overcrowding in large cities, traffic jams,
+[00:54.44] competition for jobs, worry about the future,
+[00:57.40] any big changes in our lives, may cause stress.
+[00:59.46] Some British doctors have pointed out that one of Britain’s worst waves of influenza happened soon after the new coins came into use.
+[01:01.46] Also if you have changed jobs or moved house in recent months you are more likely to fall ill than if you haven’t.
+[01:03.77] And more people commit suicide in times of inflation.
+[01:05.47] As with all illnesses, prevention is better than cure.
+[01:10.24] If you find you can’t relax, it is a sign of danger.
+[01:12.20] “When you’re taking work home,
+[01:14.36] when you can’t enjoy an evening with friends,
+[01:16.16] when you haven’t time for outdoor exercise—
+[01:18.83] that is the time to stop and ask yourself whether your present life really suits you.”
+[01:20.63] Says one family doctor.
+[01:23.14] “ Then it’s time to join a relaxation class, or take up dancing, painting or gardening.”
+[01:28.41]多幸运 遇见了你
+[01:31.58]多幸运 爱上了你
+[01:33.43]多幸运 能在一起
+[01:35.79]多幸运 遇见了你
+[01:40.06]多幸运 爱上了你
+[01:42.41]多幸运 能在一起
+[01:45.17]我很幸运，遇见，爱上，能在一起的她 -- Doris
+[01:46.92]在亿万人海相遇
+[01:48.92]有同样默契
+[01:51.39]是多么不容易
+[01:53.34]你懂得我的固执
+[01:57.56]我懂你脾气
+[01:59.92]两颗心在靠近
+[02:02.68]等不及解释我的心情
+[02:06.54]怕错过爱上你的时机
+[02:11.05]浪漫已经 准备就绪
+[02:15.21]全新的旅行
+[02:20.12]多幸运
+[02:21.77]在最美的年纪
+[02:24.13]遇见你
+[02:26.19]没有遗憾和可惜
+[02:28.84]抱紧你
+[02:30.55]用尽全部力气
+[02:32.75]不让幸福逃离
+[02:37.57]多幸运
+[02:39.17]爱你这件事情
+[02:41.58]成为我
+[02:43.53]今生最对的决定
+[02:46.29]我相信
+[02:47.84]你就是那唯一
+[02:50.26]愿陪你到底
+[02:55.37]多幸运 遇见了你
+[02:58.43]多幸运 爱上了你
+[03:00.63]多幸运 能在一起
+[03:02.79]多幸运 遇见了你
+[03:06.91]多幸运 爱上了你
+[03:09.36]多幸运 能在一起
+[03:13.52]多幸运
+[03:14.48]在最美的年纪
+[03:16.43]遇见你
+[03:18.49]没有遗憾和可惜
+[03:20.85]抱紧你
+[03:22.75]用尽全部力气
+[03:24.86]不让幸福逃离
+[03:28.42]多幸运
+[03:31.43]爱你这件事情
+[03:33.78]成为我
+[03:35.89]今生最对的决定
+[03:38.29]我相信
+[03:40.20]你就是那唯一
+[03:42.68]愿陪你到底
+[03:47.04]这首歌送给我的唯一：Doris，i 💗 you 🌹
