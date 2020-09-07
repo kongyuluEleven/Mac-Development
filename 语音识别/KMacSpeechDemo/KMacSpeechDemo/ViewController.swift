@@ -38,6 +38,7 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     @IBOutlet var textView: NSTextView!
     
     private var matchRange:NSRange?
+    private var lastMatchRange:NSRange?
     var isListening = false
     private var currentRow:Int = 0
 
@@ -45,6 +46,7 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
+    private var lock = NSLock.init()
     
     private lazy var lrcVC: KLrcController = {
        let vc = KLrcController()
@@ -125,6 +127,7 @@ extension ViewController {
     }
     
     private func updateTextRange() {
+        
         let atrStr = NSAttributedString(string: TEXT_COPY)
         let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
         //let paraStyle = NSMutableParagraphStyle.init()
@@ -236,56 +239,12 @@ extension ViewController {
                 //NotificationCenter.default.post(name: NSNotification.Name.init("ReconitionResultNotification"), object: result)
                 
 //                self.lrcVC.match(recognitionRes: result)
-
-                isFinal = result.isFinal
-                let best = result.bestTranscription
-//                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
-//
-//                best.segments.forEach { (seg) in
-//                    print("\n\t\t\t sub=\(seg.substring), range=\(seg.substringRange)  \n")
-//                    let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
-//                    if let matchArr = kmp?.matches(in: TEXT_COPY) {
-//                        print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
-//                        //self.lrcVC.match(subString: seg.substring)
-//                    }
-//                }
-//
-//
-//                let kmp = GMatcherExpression(pattern: result.bestTranscription.formattedString, option: .KMP)
-//                if let matchArr = kmp?.matches(in: TEXT_COPY) {
-//                    print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
-//                    if let first = matchArr.first {
-//
-//                    }
-//                }
-                
                 self.textView.string = self.textView.string + "\n\n" + result.bestTranscription.formattedString
                 
-                
-                var j = best.segments.count - 1
-                var list = [SFTranscriptionSegment]()
-                list.append(contentsOf: best.segments)
-                
-                let compareStr = TEXT_COPY.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
-                
-                while j > 0 {
-                    let translate = list.map({ (item) -> String in
-                        return item.substring
-                    }).joined(separator: " ")
-                    print("j = \(j),translate = \(translate)")
-                    
-                    //let range1 = compareStr.ranges(of: translate)
-                    if let matchRange = compareStr.nsranges(of: translate).first {
-                        print("🍺 匹配到: range=\(matchRange), translate = \(translate)")
-                        self.matchRange = matchRange
-                        self.updateTextRange()
-                        return
-                    }
-                    
-                    list.removeFirst()
-                    j = j - 1
+                DispatchQueue.global().async {
+                    self.match(result: result)
                 }
-                
+
             }
             
             if error != nil || isFinal {
@@ -345,6 +304,83 @@ extension ViewController {
                }
            }
        }
+    
+    private func match(result:SFSpeechRecognitionResult) {
+
+        lock.lock()
+        defer { lock.unlock() }
+        
+        let best = result.bestTranscription
+        var j = best.segments.count - 1
+        var list = [SFTranscriptionSegment]()
+        list.append(contentsOf: best.segments)
+        
+        let compareStr = TEXT_COPY.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
+        
+        while j >= 0 {
+            let translate = list.map({ (item) -> String in
+                return item.substring
+            }).joined(separator: " ")
+            print("j = \(j),translate = \(translate)")
+            let ranges = compareStr.nsranges(of: translate)
+            if ranges.count > 0 {
+                
+                if ranges.count == 1 {
+                    
+                    self.matchRange = ranges.first
+                    if let last = self.lastMatchRange,  let current = ranges.first, let jiao = current.intersection(last) {
+                        self.matchRange = current.union(jiao)
+                    }
+                    print("🍺 匹配到: range=\(String(describing: self.matchRange)), translate = \(translate)")
+                    DispatchQueue.main.async {
+                        self.updateTextRange()
+                    }
+                    self.lastMatchRange = self.matchRange
+                    return
+                }
+                else {
+                    ranges.forEach { (item) in
+                        if let last = self.lastMatchRange,
+                            item.lowerBound >= last.lowerBound,
+                            let jiao = item.intersection(last),
+                            item.lowerBound - last.lowerBound < 20 {
+                            self.matchRange = item.union(jiao)
+                            print("🍺🍺🍺 匹配到: range=\(String(describing: self.matchRange)), translate = \(translate)")
+                            DispatchQueue.main.async {
+                                self.updateTextRange()
+                            }
+                            self.lastMatchRange = self.matchRange
+                            return
+                        }
+                    }
+                }
+            }
+            
+            list.removeFirst()
+            j = j - 1
+        }
+                       
+        //                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
+        //
+        //                best.segments.forEach { (seg) in
+        //                    print("\n\t\t\t sub=\(seg.substring), range=\(seg.substringRange)  \n")
+        //                    let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
+        //                    if let matchArr = kmp?.matches(in: TEXT_COPY) {
+        //                        print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+        //                        //self.lrcVC.match(subString: seg.substring)
+        //                    }
+        //                }
+        //
+        //
+        //                let kmp = GMatcherExpression(pattern: result.bestTranscription.formattedString, option: .KMP)
+        //                if let matchArr = kmp?.matches(in: TEXT_COPY) {
+        //                    print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+        //                    if let first = matchArr.first {
+        //
+        //                    }
+        //                }
+                        
+    }
 }
 
 extension ViewController {
