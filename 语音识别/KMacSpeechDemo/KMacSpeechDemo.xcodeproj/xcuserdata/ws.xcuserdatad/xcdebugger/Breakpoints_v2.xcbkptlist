@@ -46,8 +46,8 @@
             filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "411"
-            endingLineNumber = "411"
+            startingLineNumber = "435"
+            endingLineNumber = "435"
             landmarkName = "testAVSpeech()"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "445"
+            endingLineNumber = "445"
             landmarkName = "tableView(_:didClick:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "KMacSpeechDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
+            startingLineNumber = "460"
+            endingLineNumber = "460"
             landmarkName = "tableView(_:shouldSelectRow:)"
             landmarkType = "7">
          </BreakpointContent>
