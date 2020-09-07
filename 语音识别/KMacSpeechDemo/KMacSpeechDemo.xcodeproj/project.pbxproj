@@ -22,6 +22,14 @@
 		5482828224F0049E00531440 /* OSSSpeechUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482827924F0049E00531440 /* OSSSpeechUtility.swift */; };
 		5482828424F0049E00531440 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5482827C24F0049E00531440 /* Localizable.strings */; };
 		5482828524F0049E00531440 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5482827D24F0049E00531440 /* Images.xcassets */; };
+		548923F82505D9AB0027983A /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548923F72505D9AB0027983A /* String+Range.swift */; };
+		548924032505E7CB0027983A /* GACMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 548923FD2505E7CA0027983A /* GACMatcherProcessor.m */; };
+		548924042505E7CB0027983A /* GRegexMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 548923FF2505E7CA0027983A /* GRegexMatcherProcessor.m */; };
+		548924052505E7CB0027983A /* GKMPMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 548924012505E7CB0027983A /* GKMPMatcherProcessor.m */; };
+		5489240D2505E7E90027983A /* GThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 548924092505E7E80027983A /* GThreadSafeDictionary.m */; };
+		5489240E2505E7E90027983A /* GThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5489240A2505E7E80027983A /* GThreadSafeArray.m */; };
+		5489240F2505E7E90027983A /* GMatcherResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5489240B2505E7E90027983A /* GMatcherResult.m */; };
+		548924122505E7F40027983A /* GMatcherExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 548924112505E7F40027983A /* GMatcherExpression.m */; };
 		54AA8FFE24F13B8B00E47FD0 /* KGoogleSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FFD24F13B8B00E47FD0 /* KGoogleSpeechService.swift */; };
 		54AA900024F3468000E47FD0 /* KAVSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */; };
 		54AA900224F34E3800E47FD0 /* KAVSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */; };
@@ -79,6 +87,24 @@
 		5482827924F0049E00531440 /* OSSSpeechUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeechUtility.swift; sourceTree = "<group>"; };
 		5482827C24F0049E00531440 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5482827D24F0049E00531440 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		548923F72505D9AB0027983A /* String+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
+		548923FA2505E7CA0027983A /* KMacSpeechDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMacSpeechDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		548923FB2505E7CA0027983A /* GKMPMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMPMatcherProcessor.h; sourceTree = "<group>"; };
+		548923FC2505E7CA0027983A /* IMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMatcherProcessor.h; sourceTree = "<group>"; };
+		548923FD2505E7CA0027983A /* GACMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACMatcherProcessor.m; sourceTree = "<group>"; };
+		548923FE2505E7CA0027983A /* IMatcherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMatcherObject.h; sourceTree = "<group>"; };
+		548923FF2505E7CA0027983A /* GRegexMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRegexMatcherProcessor.m; sourceTree = "<group>"; };
+		548924002505E7CB0027983A /* GRegexMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRegexMatcherProcessor.h; sourceTree = "<group>"; };
+		548924012505E7CB0027983A /* GKMPMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMPMatcherProcessor.m; sourceTree = "<group>"; };
+		548924022505E7CB0027983A /* GACMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACMatcherProcessor.h; sourceTree = "<group>"; };
+		548924072505E7E80027983A /* GThreadSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GThreadSafeArray.h; sourceTree = "<group>"; };
+		548924082505E7E80027983A /* GThreadSafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GThreadSafeDictionary.h; sourceTree = "<group>"; };
+		548924092505E7E80027983A /* GThreadSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeDictionary.m; sourceTree = "<group>"; };
+		5489240A2505E7E80027983A /* GThreadSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeArray.m; sourceTree = "<group>"; };
+		5489240B2505E7E90027983A /* GMatcherResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherResult.m; sourceTree = "<group>"; };
+		5489240C2505E7E90027983A /* GMatcherResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherResult.h; sourceTree = "<group>"; };
+		548924102505E7F40027983A /* GMatcherExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherExpression.h; sourceTree = "<group>"; };
+		548924112505E7F40027983A /* GMatcherExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherExpression.m; sourceTree = "<group>"; };
 		54AA8FFD24F13B8B00E47FD0 /* KGoogleSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGoogleSpeechService.swift; sourceTree = "<group>"; };
 		54AA8FFF24F3468000E47FD0 /* KAVSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeech.swift; sourceTree = "<group>"; };
 		54AA900124F34E3800E47FD0 /* KAVSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAVSpeaker.swift; sourceTree = "<group>"; };
@@ -169,6 +195,8 @@
 		5482824324F0047C00531440 /* KMacSpeechDemo */ = {
 			isa = PBXGroup;
 			children = (
+				548923F92505E7A70027983A /* tools */,
+				548923F62505D9800027983A /* utils */,
 				5482827324F0049E00531440 /* OSSSpeechKit */,
 				5482824424F0047C00531440 /* AppDelegate.swift */,
 				5482824624F0047C00531440 /* ViewController.swift */,
@@ -229,6 +257,38 @@
 				5482827D24F0049E00531440 /* Images.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		548923F62505D9800027983A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				548923F72505D9AB0027983A /* String+Range.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		548923F92505E7A70027983A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				548924102505E7F40027983A /* GMatcherExpression.h */,
+				548924112505E7F40027983A /* GMatcherExpression.m */,
+				5489240C2505E7E90027983A /* GMatcherResult.h */,
+				5489240B2505E7E90027983A /* GMatcherResult.m */,
+				548924072505E7E80027983A /* GThreadSafeArray.h */,
+				5489240A2505E7E80027983A /* GThreadSafeArray.m */,
+				548924082505E7E80027983A /* GThreadSafeDictionary.h */,
+				548924092505E7E80027983A /* GThreadSafeDictionary.m */,
+				548924022505E7CB0027983A /* GACMatcherProcessor.h */,
+				548923FD2505E7CA0027983A /* GACMatcherProcessor.m */,
+				548923FB2505E7CA0027983A /* GKMPMatcherProcessor.h */,
+				548924012505E7CB0027983A /* GKMPMatcherProcessor.m */,
+				548924002505E7CB0027983A /* GRegexMatcherProcessor.h */,
+				548923FF2505E7CA0027983A /* GRegexMatcherProcessor.m */,
+				548923FE2505E7CA0027983A /* IMatcherObject.h */,
+				548923FC2505E7CA0027983A /* IMatcherProcessor.h */,
+				548923FA2505E7CA0027983A /* KMacSpeechDemo-Bridging-Header.h */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		54E5B1EE250335EA000A36F4 /* lrc */ = {
@@ -353,6 +413,7 @@
 				TargetAttributes = {
 					5482824024F0047C00531440 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					5482825524F0047F00531440 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -435,11 +496,19 @@
 				5482828124F0049E00531440 /* OSSVoice.swift in Sources */,
 				54AA900024F3468000E47FD0 /* KAVSpeech.swift in Sources */,
 				54E5B1FE2503364F000A36F4 /* KTableView.swift in Sources */,
+				5489240D2505E7E90027983A /* GThreadSafeDictionary.m in Sources */,
+				548924032505E7CB0027983A /* GACMatcherProcessor.m in Sources */,
+				5489240E2505E7E90027983A /* GThreadSafeArray.m in Sources */,
+				548924042505E7CB0027983A /* GRegexMatcherProcessor.m in Sources */,
 				54E5B1FB2503362C000A36F4 /* LrcAnalyzer.swift in Sources */,
 				54AA8FFE24F13B8B00E47FD0 /* KGoogleSpeechService.swift in Sources */,
+				548924122505E7F40027983A /* GMatcherExpression.m in Sources */,
+				548923F82505D9AB0027983A /* String+Range.swift in Sources */,
 				5482827E24F0049E00531440 /* OSSSpeech.swift in Sources */,
+				548924052505E7CB0027983A /* GKMPMatcherProcessor.m in Sources */,
 				54429C2525007F6D00AEA03B /* Pulsator.swift in Sources */,
 				54E5B203250337A3000A36F4 /* KLrcController.swift in Sources */,
+				5489240F2505E7E90027983A /* GMatcherResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KMacSpeechDemo/KMacSpeechDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -615,6 +685,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KMacSpeechDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KMacSpeechDemo/tools/KMacSpeechDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -623,6 +695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KMacSpeechDemo/KMacSpeechDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -635,6 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KMacSpeechDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KMacSpeechDemo/tools/KMacSpeechDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

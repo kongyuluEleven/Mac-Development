@@ -10,6 +10,18 @@ import Cocoa
 import Speech
 import AVFoundation
 
+let TEST_URL = "https://developer.apple.com/videos/play/wwdc2020/10074/"
+
+let TEXT_COPY = """
+  
+ Passage 55. Stress and Relaxation
+ It is commonly believed that only rich middle-aged businessmen suffer from stress. In fact anyone may become ill as a result of stress if they experience a lot of worry over a long period and their health is not especially good. Stress can be a friend or an enemy: it can warn you that you are under too much pressure and should change your way of life.
+ It can kill you if you don't notice the warning signals. Doctors agree that it is probably the biggest single cause of illness in the Western world. When we are very frightened and worried our bodies produce certain chemicals to help us fight what is troubling us.
+ Unfortunately, these chemicals produce the energy needed to run away fast from an object of fear, and in modern life that's often impossible. If we don't use up these chemicals, or if we produce too many of them, they may actually harm us. The parts of the body that are most affected by stress are the stomach, heart,skin, head and back.
+ Stress can cause car accidents, heart attacks, and alcoholism, and may even drive people to suicide. Our living and working conditions may put us under stress. Overcrowding in large cities, traffic jams, competition for jobs, worry about the future, any big changes in our lives, may cause stress. Some British doctors have pointed out that one of Britain's worst waves of influenza happened soon after the new coins came into use. Also if you have changed jobs or moved house in recent months you are more likely to fall ill than if you haven't. And more people commit suicide in times of inflation. As with all illnesses, prevention is better than cure. If you find you can't relax, it is a sign of danger. "When you're taking work home, when you can't enjoy an evening with friends, when you haven't time for outdoor exercise—that is the time to stop and ask yourself whether your present life really suits you." Says one family doctor. " Then it's time to join a relaxation class, or take up dancing, painting or gardening."
+
+"""
+
 class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     private let speechKit = OSSSpeech.shared
@@ -41,6 +53,9 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet weak var recordButton: NSButton!
     @IBOutlet var textView: NSTextView!
+    
+    private var beginPos:Int = 0
+    private var endPos:Int = 0
     
     
     private lazy var lrcVC: KLrcController = {
@@ -116,9 +131,35 @@ extension ViewController {
         self.view.addSubview(lrcVC.view)
         
         setupLanguageTableView()
-        
+        setupTextView()
+
+    }
+    
+    private func setupTextView() {
         textView.isEditable = false
-        topTextView.isEditable = false
+        //topTextView.isEditable = false
+        
+        //NSMutableAttributedString *attributedString = [[[NSMutableAttributedString alloc] initWithString:@"测试富文本显示"] autorelease];
+        endPos = 10
+        updateTextRange()
+
+    }
+    
+    private func updateTextRange() {
+        let atrStr = NSAttributedString(string: TEXT_COPY)
+        let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
+        //let paraStyle = NSMutableParagraphStyle.init()
+        //paraStyle.setParagraphStyle(NSParagraphStyle.default)
+        //paraStyle.alignment = .center
+        let range = NSMakeRange(0, attrTitle.length)
+        //attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
+        attrTitle.addAttribute(.foregroundColor, value: Color.red, range: NSMakeRange(beginPos, endPos))
+        topTextView.insertText(attrTitle, replacementRange: range)
+        
+        let start = Date().timeIntervalSince1970
+        let kmp = GMatcherExpression(pattern: "Hello", option: .KMP)
+        let matchArr = kmp?.matches(in: TEXT_COPY)
+        print("kmp time:\(Date(timeIntervalSinceReferenceDate: start))")
     }
     
     private func setupLanguageTableView() {
@@ -189,97 +230,108 @@ extension ViewController {
     }
     
     private func startRecording() throws {
-           
-           // Cancel the previous task if it's running.
-           recognitionTask?.cancel()
-           self.recognitionTask = nil
-           
-           // Configure the audio session for the app.
-//           let audioSession = AVAudioSession.sharedInstance()
-//           try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
-//           try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         
-           let inputNode = audioEngine.inputNode
+        // Cancel the previous task if it's running.
+        recognitionTask?.cancel()
+        self.recognitionTask = nil
+        
+        // Configure the audio session for the app.
+        //           let audioSession = AVAudioSession.sharedInstance()
+        //           try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+        //           try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        
+        let inputNode = audioEngine.inputNode
+        
+        // Create and configure the speech recognition request.
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        guard let recognitionRequest = recognitionRequest else { fatalError("Unable to create a SFSpeechAudioBufferRecognitionRequest object") }
+        recognitionRequest.shouldReportPartialResults = true
+        
+        // Keep speech recognition data on device
+        if #available(iOS 13, *) {
+            recognitionRequest.requiresOnDeviceRecognition = false
+        }
+        
+        recognitionRequest.requiresOnDeviceRecognition = true
+        
+        recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+            var isFinal = false
+            
+            if let result = result {
 
-           // Create and configure the speech recognition request.
-           recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
-           guard let recognitionRequest = recognitionRequest else { fatalError("Unable to create a SFSpeechAudioBufferRecognitionRequest object") }
-           recognitionRequest.shouldReportPartialResults = true
-           
-           // Keep speech recognition data on device
-           if #available(iOS 13, *) {
-               recognitionRequest.requiresOnDeviceRecognition = false
-           }
-        
-           recognitionRequest.requiresOnDeviceRecognition = true
-           
-           // Create a recognition task for the speech recognition session.
-           // Keep a reference to the task so that it can be canceled.
-//        @NSCopying open var bestTranscription: SFTranscription { get }
-//        // Hypotheses for possible transcriptions, sorted in decending order of confidence (more likely first)
-//        open var transcriptions: [SFTranscription] { get }
-//        // True if the hypotheses will not change; speech processing is complete.
-//        open var isFinal: Bool { get }
-           recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
-               var isFinal = false
-               
-               if let result = result {
-                   // Update the text view with the results.
-                   //self.textView.string = result.bestTranscription.formattedString
+                isFinal = result.isFinal
+                let best = result.bestTranscription
+                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
                 
-                   isFinal = result.isFinal
-                print("Text \(result.bestTranscription.formattedString), transcriptions = \(result.transcriptions.count)")
+                best.segments.forEach { (seg) in
+                    print("\n\t\t\t sub=\(seg.substring), range=\(seg.substringRange)  \n")
+                    let kmp = GMatcherExpression(pattern:seg.substring, option: .KMP)
+                    if let matchArr = kmp?.matches(in: TEXT_COPY) {
+                        print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+                    }
+                }
+                
+                
+                let kmp = GMatcherExpression(pattern: result.bestTranscription.formattedString, option: .KMP)
+                if let matchArr = kmp?.matches(in: TEXT_COPY) {
+                    print("\n\t\t\t\t matchArr count=\(matchArr.count), first = \(String(describing: matchArr.first))")
+                    if let first = matchArr.first {
+                        
+                    }
+                }
                 
                 self.textView.string = self.textView.string + "\n\n" + result.bestTranscription.formattedString
                 
                 
-                result.transcriptions.forEach { (trans) in
-                    
-                    print("-------\n \t trans = \(trans.segments.count), \(trans.averagePauseDuration)")
-                    trans.segments.forEach { (segment) in
-                        print("\n\t\t segment=\(segment.substring),confidence=\(segment.confidence), range=\(segment.substringRange), alternativeSubstrings=\(segment.alternativeSubstrings.count)")
-                        //self.textView.string = self.textView.string + "\(segment.substring) "
-                        segment.alternativeSubstrings.forEach { (str) in
-                            print("\n\t\t\t str = \(str)")
-                        }
-                    }
-                    let translate = trans.segments.map({ (item) -> String in
-                        return item.substring
-                    }).joined(separator: " ")
-                    print("\n**** \(translate)*****\n")
-                    //self.textView.string = self.textView.string + "\n\n" + translate
-                    
-                }
-               }
-               
-               //if error != nil || isFinal {
-               if error != nil  {
-                   // Stop recognizing speech if there is a problem.
-                   self.audioEngine.stop()
-                   inputNode.removeTap(onBus: 0)
-
-                   self.recognitionRequest = nil
-                   self.recognitionTask = nil
-
-                   self.recordButton.isEnabled = true
-                   self.recordButton.title = "Start Recording"
-               }
-           }
+                
+//                result.transcriptions.forEach { (trans) in
+//
+//                    print("-------\n \t trans = \(trans.segments.count), \(trans.averagePauseDuration)")
+//                    trans.segments.forEach { (segment) in
+//                        print("\n\t\t segment=\(segment.substring),confidence=\(segment.confidence), range=\(segment.substringRange), alternativeSubstrings=\(segment.alternativeSubstrings.count)")
+//                        //self.textView.string = self.textView.string + "\(segment.substring) "
+//                        segment.alternativeSubstrings.forEach { (str) in
+//                            print("\n\t\t\t str = \(str)")
+//                        }
+//                    }
+//                    let translate = trans.segments.map({ (item) -> String in
+//                        return item.substring
+//                    }).joined(separator: " ")
+//                    print("\n**** \(translate)*****\n")
+//
+//                    let range = self.topTextView.string.range(of: translate)
+//                    print("---range:\(String(describing: range))")
+//                }
+            }
+            
+            //if error != nil || isFinal {
+            if error != nil  {
+                // Stop recognizing speech if there is a problem.
+                self.audioEngine.stop()
+                inputNode.removeTap(onBus: 0)
+                
+                self.recognitionRequest = nil
+                self.recognitionTask = nil
+                
+                self.recordButton.isEnabled = true
+                self.recordButton.title = "Start Recording"
+            }
+        }
         
-
-           // Configure the microphone input.
-           let recordingFormat = inputNode.outputFormat(forBus: 0)
-           inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
-               self.recognitionRequest?.append(buffer)
-               //print("*****buffer call back ")
-           }
-           
-           audioEngine.prepare()
-           try audioEngine.start()
-           
-           // Let the user know to start talking.
-           textView.string = "(Go ahead, I'm listening)"
-       }
+        
+        // Configure the microphone input.
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
+            self.recognitionRequest?.append(buffer)
+            //print("*****buffer call back ")
+        }
+        
+        audioEngine.prepare()
+        try audioEngine.start()
+        
+        // Let the user know to start talking.
+        textView.string = "(Go ahead, I'm listening)"
+    }
        
        // MARK: SFSpeechRecognizerDelegate
        
