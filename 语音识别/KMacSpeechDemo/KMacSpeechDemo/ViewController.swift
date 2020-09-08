@@ -351,57 +351,57 @@ extension ViewController {
             return
         }
 
-        
         while j >= 0 {
-            let translate = list.map({ (item) -> String in
-                return item.substring
-            }).joined(separator: " ")
-            //print("j = \(j),translate = \(translate)")
-            let ranges = compareStr.nsranges(of: translate)
-            if ranges.count > 0 {
-                
-                if ranges.count == 1 {
-                    
-                    self.matchRange = ranges.first
-                    if let last = self.lastMatchRange,  let current = ranges.first, let jiao = current.intersection(last) {
-                        self.matchRange = current.union(jiao)
-                    }
-                    print("🍺 匹配到: range=\(String(describing: self.matchRange)), translate = \(translate)")
-                    DispatchQueue.main.async {
-                        self.updateTextRange()
-                    }
-                    self.lastMatchRange = self.matchRange
-                    return
-                }
-                else {
-                    ranges.forEach { (item) in
-                        //print("***匹配到多个遍历 : range=\(String(describing: item))")
-                        if let last = self.lastMatchRange {
-                            if let jiao = item.intersection(last) {
-                                self.matchRange = item.union(jiao)
-                                print("🍺🍺🍺1 匹配到: range=\(String(describing: self.matchRange))")
-                                DispatchQueue.main.async {
-                                    self.updateTextRange()
-                                }
-                                self.lastMatchRange = self.matchRange
-                                return
-                            } else if item.contains(last.location) {
-                                self.matchRange = item
-                                print("🍺🍺🍺2 匹配到: range=\(String(describing: self.matchRange))")
-                                DispatchQueue.main.async {
-                                    self.updateTextRange()
-                                }
-                                self.lastMatchRange = self.matchRange
-                                return
-                            }
-                        }
-                    }
-                }
-            }
-            
-            list.removeFirst()
-            j = j - 1
-        }
+             let translate = list.map({ (item) -> String in
+                 return item.substring
+             }).joined(separator: " ")
+             //print("j = \(j),translate = \(translate)")
+             let ranges = compareStr.nsranges(of: translate)
+             if ranges.count > 0 {
+                 
+                 if ranges.count == 1 {
+                     
+                     self.matchRange = ranges.first
+                     if let last = self.lastMatchRange,  let current = ranges.first, let jiao = current.intersection(last) {
+                         self.matchRange = current.union(jiao)
+                     }
+                     print("🍺 匹配到: range=\(String(describing: self.matchRange)), translate = \(translate)")
+                     DispatchQueue.main.async {
+                         self.updateTextRange()
+                     }
+                     self.lastMatchRange = self.matchRange
+                     return
+                 }
+                 else {
+                     ranges.forEach { (item) in
+                         //print("***匹配到多个遍历 : range=\(String(describing: item))")
+                         if let last = self.lastMatchRange {
+                             if let jiao = item.intersection(last) {
+                                 self.matchRange = item.union(jiao)
+                                 print("🍺🍺🍺1 匹配到: range=\(String(describing: self.matchRange))")
+                                 DispatchQueue.main.async {
+                                     self.updateTextRange()
+                                 }
+                                 self.lastMatchRange = self.matchRange
+                                 return
+                             } else if item.contains(last.location) {
+                                 self.matchRange = item
+                                 print("🍺🍺🍺2 匹配到: range=\(String(describing: self.matchRange))")
+                                 DispatchQueue.main.async {
+                                     self.updateTextRange()
+                                 }
+                                 self.lastMatchRange = self.matchRange
+                                 return
+                             }
+                         }
+                     }
+                 }
+             }
+             
+             list.removeFirst()
+             j = j - 1
+         }
+ 
                        
         //                print("**** formattedString = \(best.formattedString), transcriptions = \(result.transcriptions.count),segments=\(best.segments.count),speakingRate=\(best.speakingRate),averagePauseDuration=\(best.averagePauseDuration)")
         //
