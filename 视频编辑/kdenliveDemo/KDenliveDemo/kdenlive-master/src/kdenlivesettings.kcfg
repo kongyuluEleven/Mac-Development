@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile/>
+  <group name="bin">
+    <entry name="treeviewheaders" type="String">
+      <label>Bin treeview headers state.</label>
+      <default></default>
+    </entry>
+    <entry name="binSorting" type="Int">
+      <label>Bin sorting column.</label>
+      <default>0</default>
+    </entry>
+    <entry name="binMode" type="Int">
+      <label>Bin view mode.</label>
+      <default>0</default>
+    </entry>
+    <entry name="bin_zoom" type="Int">
+      <label>Bin default zoom.</label>
+      <default>4</default>
+    </entry>
+    <entry name="addedExtensions" type="String">
+      <label>User added clip file extensions.</label>
+      <default></default>
+    </entry>
+    <entry name="hoverPreview" type="Bool">
+      <label>Generate and show video preview when moving mouse over clip thumbnail.</label>
+      <default>false</default>
+    </entry>
+  </group>
+
+  <group name="misc">
+    <entry name="cleanCacheMonths" type="Int">
+      <label>Number of months to discard cache data.</label>
+      <default>6</default>
+    </entry>
+    <entry name="openlastproject" type="Bool">
+      <label>Open last project on startup.</label>
+      <default>false</default>
+    </entry>
+    <entry name="crashrecovery" type="Bool">
+      <label>Enable autosave.</label>
+      <default>true</default>
+    </entry>
+    <entry name="tabposition" type="Int">
+      <label>Select tab position in dockwidgets.</label>
+      <default>1</default>
+    </entry>
+    <entry name="checkfirstprojectclip" type="Bool">
+      <label>Check if document profile is same as first imported clip.</label>
+      <default>true</default>
+    </entry>
+    <entry name="exportframe_usingsourceres" type="Bool">
+      <label>Export image using source resolution.</label>
+      <default>true</default>
+    </entry>
+    <entry name="usekuiserver" type="Bool">
+      <label>Use KDE central job management to track render jobs.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="color_duration" type="String">
+      <label>Default color clip duration.</label>
+      <default>00:00:05:00</default>
+    </entry>
+
+    <entry name="image_duration" type="String">
+      <label>Default image clip duration.</label>
+      <default>00:00:05:00</default>
+    </entry>
+
+    <entry name="sequence_duration" type="String">
+      <label>Default image sequence frame duration.</label>
+      <default>00:00:00:01</default>
+    </entry>
+
+    <entry name="fade_duration" type="String">
+      <label>Default image sequence frame duration.</label>
+      <default>00:00:03:00</default>
+    </entry>
+
+    <entry name="autoimagesequence" type="Bool">
+      <label>Automatically import image sequences.</label>
+      <default>false</default>
+    </entry>
+    <entry name="disableimagescaling" type="Bool">
+      <label>Add a filter to disable default image scaling.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="automultistreams" type="Bool">
+      <label>Automatically import all streams in multi streams clips.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="bypasscodeccheck" type="Bool">
+      <label>Ignore libav / ffmpeg codec checking.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="use_exiftool" type="Bool">
+      <label>Get h264 metadata using exiftool.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="use_magicLantern" type="Bool">
+      <label>Get h264 metadata using exiftool.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="title_duration" type="String">
+      <label>Default title clip duration.</label>
+      <default>00:00:05:00</default>
+    </entry>
+
+    <entry name="transition_duration" type="String">
+      <label>Default transition duration.</label>
+      <default>00:00:03:00</default>
+    </entry>
+
+    <entry name="disable_effect_parameters" type="Bool">
+      <label>Disable parameters when the effect is disabled.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="profile_fps_filter" type="String">
+      <label>Default fps filter for project profile.</label>
+      <default></default>
+    </entry>
+
+    <entry name="profile_scanning_filter" type="String">
+      <label>Default scanning filter for project profile.</label>
+      <default></default>
+    </entry>
+
+    <entry name="opengl_backend" type="Int">
+      <label>Default OpenGL backend (Qt::AAUseOpenGLES).</label>
+      <default>16</default>
+    </entry>
+  </group>
+
+  <group name="project">
+    <entry name="videotracks" type="Int">
+      <label>Default number of video tracks.</label>
+      <default>2</default>
+    </entry>
+
+    <entry name="audiotracks" type="Int">
+      <label>Default number of audio tracks.</label>
+      <default>2</default>
+    </entry>
+
+    <entry name="audio_channels" type="Int">
+      <label>Default number of audio channels per track.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="enableproxy" type="Bool">
+      <label>Enable proxy clips.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="externalproxy" type="Bool">
+      <label>Enable proxy clips.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="generateproxy" type="Bool">
+      <label>Auto generate proxy for new clips.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="external_proxy_profile" type="Int">
+      <label>index for the external proxy clips combo.</label>
+      <default></default>
+    </entry>
+
+    <entry name="externalProxyProfile" type="String">
+      <label>Pattern to find external proxy clips.</label>
+      <default></default>
+    </entry>
+
+    <entry name="generateimageproxy" type="Bool">
+      <label>Auto generate proxy for new image clips.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="proxyminsize" type="Int">
+      <label>Minimum source size for proxy creation.</label>
+      <default>1000</default>
+    </entry>
+
+    <entry name="proxyimageminsize" type="Int">
+      <label>Minimum source size for proxy creation.</label>
+      <default>2000</default>
+    </entry>
+    <entry name="proxyimagesize" type="Int">
+      <label>Rescale size for image proxy creation.</label>
+      <default>800</default>
+    </entry>
+    <entry name="proxyextension" type="String">
+      <label>File extension for proxy clips.</label>
+      <default></default>
+    </entry>
+
+    <entry name="proxy_profile" type="Int">
+      <label>default proxy encoding profile.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="proxyparams" type="String">
+      <label>Proxy clips transcoding parameters.</label>
+      <default></default>
+    </entry>
+
+    <entry name="previewextension" type="String">
+      <label>File extension for timeline preview.</label>
+      <default></default>
+    </entry>
+
+    <entry name="preview_profile" type="Int">
+      <label>default preview encoding profile.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="previewparams" type="String">
+      <label>Timeline preview encoding parameters.</label>
+      <default></default>
+    </entry>
+
+    <entry name="parallelrender" type="Bool">
+      <label>Enable parallel processing for rendering.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="vaapiEnabled" type="Bool">
+      <label>Enables vaapi hw accel in encoders.</label>
+      <default>false</default>
+    </entry>
+    <entry name="nvencEnabled" type="Bool">
+      <label>Enables nvenc hw accel in encoders.</label>
+      <default>false</default>
+    </entry>
+    <entry name="nvScalingEnabled" type="Bool">
+      <label>Enables nvenc hw accel scaling.</label>
+      <default>false</default>
+    </entry>
+    </group>
+
+  <group name="timeline">
+    <entry name="headerwidth" type="Int">
+      <label>Default width for timeline track headers.</label>
+      <default>0</default>
+    </entry>
+    <entry name="defaultkeyframeinterp" type="Int">
+      <label>Default interpolation for keyframes.</label>
+      <default>1</default>
+    </entry>
+    <entry name="timelinechunks" type="Int">
+      <label>Default size of video chunks for timeline preview.</label>
+      <default>25</default>
+    </entry>
+    <entry name="autopreview" type="Bool">
+      <label>Automatically regenerate dirty zones of timeline preview.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="multistream" type="Int">
+      <label>Should we enable all audio streams by default.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="multistream_checktrack" type="Bool">
+      <label>Check if project has enough tracks on multi stream clips, and propose to add new tracks.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="videothumbnails" type="Bool">
+      <label>Display video thumbnails in timeline.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="audiothumbnails" type="Bool">
+      <label>Display audio thumbnails in timeline.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="ffmpegaudiothumbnails" type="Bool">
+      <label>Use FFmpeg to create audio thumbnails (10x faster than MLT).</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="showmarkers" type="Bool">
+      <label>Display clip markers comments in timeline.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="displayallchannels" type="Bool">
+      <label>Display all channels in audio thumbnails.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="autoscroll" type="Bool">
+      <label>Auto scroll timeline while playing.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="verticalzoom" type="Bool">
+      <label>Vertical drag in timeline ruler zooms.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="trackheight" type="Int">
+      <label>Tracks height in pixel.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="audiotracksbelow" type="Int">
+        <label>Display audio tracks grouped below video tracks.</label>
+        <default>1</default>
+    </entry>
+
+    <entry name="raisepropsclips" type="Bool">
+      <label>Raise property pane when selecting timeline clips.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="raisepropstransitions" type="Bool">
+      <label>Raise property pane when selecting timeline transitions.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="raisepropstracks" type="Bool">
+      <label>Raise property pane when selecting timeline tracks.</label>
+      <default>true</default>
+    </entry>
+
+    </group>
+
+    <group name="sdl">
+    <entry name="gpu_accel" type="Bool">
+      <label>Use Movit for GPU accelerated display and effects.</label>
+      <default>false</default>
+    </entry>
+    <entry name="sdlAudioBackend" type="String">
+      <label>Detected audio backed.</label>
+      <default>sdl2_audio</default>
+    </entry>
+    <entry name="audio_backend" type="Int">
+      <label>Audio backend index used for sound output.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="audiobackend" type="String">
+      <label>Audio backend used for sound output.</label>
+      <default>sdl2_audio</default>
+    </entry>
+
+    <entry name="audio_driver" type="UInt">
+      <label>SDL Audio driver used for sound output.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="audiodevicename" type="String">
+      <label>SDL Audio device used for sound output.</label>
+      <default></default>
+    </entry>
+
+    <entry name="audiodrivername" type="String">
+      <label>Audio driver used for sound output.</label>
+      <default></default>
+    </entry>
+
+    <entry name="videodrivername" type="String">
+      <label>Video driver used for output.</label>
+      <default></default>
+    </entry>
+
+    <entry name="audio_device" type="Int">
+      <label>Audio device for SDL output.</label>
+      <default></default>
+    </entry>
+
+    <entry name="window_background" type="Color">
+      <label>Background color for OpenGL monitor.</label>
+      <default>#535353</default>
+    </entry>
+
+    <entry name="volume" type="Int">
+      <label>Volume used for SDL output.</label>
+      <default>100</default>
+    </entry>
+
+    <entry name="monitor_dropframes" type="Bool">
+      <label>Allow framedropping in monitor playback.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="monitor_gamma" type="Int">
+      <label>Monitor gamma (rbg / rec 709).</label>
+      <default>1</default>
+    </entry>
+
+    <entry name="external_display" type="Bool">
+      <label>Use Blackmagic device for video out.</label>
+      <default>false</default>
+    </entry>
+    <entry name="blackmagic_output_device" type="Int">
+      <label>Blackmagic video output device.</label>
+      <default>0</default>
+    </entry>
+</group>
+
+  <group name="env">
+    <entry name="mltpath" type="Path">
+      <label>Mlt framework install path.</label>
+      <default></default>
+    </entry>
+
+    <entry name="rendererpath" type="Path">
+      <label>Mlt melt renderer install path.</label>
+      <default></default>
+    </entry>
+
+    <entry name="ffmpegpath" type="Path">
+      <label>FFmpeg / Libav binary path.</label>
+      <default></default>
+    </entry>
+
+    <entry name="ffplaypath" type="Path">
+      <label>FFplay / avplay binary path.</label>
+      <default></default>
+    </entry>
+
+    <entry name="ffprobepath" type="Path">
+      <label>FFprobe / avprobe binary path.</label>
+      <default></default>
+    </entry>
+
+    <entry name="mltthreads" type="Int">
+      <label>Mlt processing thread count.</label>
+      <default>1</default>
+    </entry>
+
+    <entry name="proxythreads" type="Int">
+      <label>Proxy creation processing thread count.</label>
+      <default>2</default>
+    </entry>
+
+    <entry name="encodethreads" type="Int">
+      <label>FFmpeg encoding thread count.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="currenttmpfolder" type="Path">
+      <label>Default folder for tmp files.</label>
+      <default>/tmp/</default>
+    </entry>
+
+    <entry name="defaultprojectfolder" type="Path">
+      <label>Default folder for project files.</label>
+      <default></default>
+    </entry>
+
+    <entry name="customprojectfolder" type="Bool">
+      <label>Don't use default XDG folders to store project files.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="capturetoprojectfolder" type="Bool">
+      <label>Save captured files to project folder by default.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="capturefolder" type="Path">
+      <label>Default folder for captured files.</label>
+      <default>$HOME</default>
+    </entry>
+
+    <entry name="librarytodefaultfolder" type="Bool">
+      <label>Open Library in default system folder.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="libraryfolder" type="Path">
+      <label>Default folder for library.</label>
+      <default></default>
+    </entry>
+
+    <entry name="defaultimageapp" type="String">
+      <label>Default image editing application.</label>
+      <default></default>
+    </entry>
+
+    <entry name="defaultaudioapp" type="String">
+      <label>Default audio editing application.</label>
+      <default></default>
+    </entry>
+
+  </group>
+
+
+  <group name="capture">
+    <entry name="defaultaudiocapture" type="String">
+      <label>Default audio capture system.</label>
+      <default>default:</default>
+    </entry>
+
+    <entry name="audiocapturevolume" type="Int">
+      <label>Audio capture volume</label>
+      <default>100</default>
+    </entry>
+
+    <entry name="audiocapturechannels" type="Int">
+      <label>Audio capture channels</label>
+      <default>2</default>
+    </entry>
+
+    <entry name="audiocapturesamplerate" type="Int">
+      <label>Audio capture sample rate</label>
+      <default>48000</default>
+    </entry>
+
+    <entry name="defaultcapture" type="Int">
+      <label>Default video capture system.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="detectedv4ldevices" type="UInt">
+      <label>Detected v4l devices.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="video4vdevice" type="String">
+      <label>Default video4linux capture format.</label>
+      <default>/dev/video0</default>
+    </entry>
+
+    <entry name="v4l_alsadevice" type="Int">
+      <label>Audio device for v4l capture.</label>
+      <default></default>
+    </entry>
+    
+    <entry name="alsachannels" type="UInt">
+      <label>Number of audio channels.</label>
+      <default>2</default>
+    </entry>
+
+    <entry name="v4l_alsadevicename" type="String">
+      <label>Audio device for v4l capture.</label>
+      <default>default</default>
+    </entry>
+
+    <entry name="v4l_parameters" type="String">
+      <label>Default video4linux format.</label>
+      <default></default>
+    </entry>
+
+    <entry name="v4l_extension" type="String">
+      <label>Default video4linux file extension.</label>
+      <default></default>
+    </entry>
+
+    <entry name="v4l_format" type="UInt">
+      <label>Selected capture format.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="v4l_capturevideo" type="Bool">
+      <label>Should we capture video.</label>
+      <default>true</default>
+    </entry>
+    
+    <entry name="v4l_captureaudio" type="Bool">
+      <label>Should we also capture audio.</label>
+      <default>false</default>
+    </entry>
+    
+    <entry name="v4l_profile" type="Int">
+      <label>default v4l encoding profile.</label>
+      <default>0</default>
+    </entry>
+    
+    <entry name="grab_profile" type="Int">
+      <label>default screen grab encoding profile.</label>
+      <default>0</default>
+    </entry>
+    
+    <entry name="grab_parameters" type="String">
+      <label>Default video4linux format.</label>
+      <default></default>
+    </entry>
+    
+    <entry name="grab_extension" type="String">
+      <label>Default screen grab file extension.</label>
+      <default></default>
+    </entry>
+
+    <entry name="grab_capture_type" type="Int">
+      <label>capture type.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="grab_follow_mouse" type="Bool">
+      <label>follow mouse in region capture.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="grab_offsetx" type="Int">
+      <label>x offset for video capture.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="grab_offsety" type="Int">
+      <label>y offset for video capture.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="grab_width" type="Int">
+      <label>default width for video capture.</label>
+      <default>1280</default>
+    </entry>
+
+    <entry name="grab_height" type="Int">
+      <label>default height for video capture.</label>
+      <default>720</default>
+    </entry>
+
+    <entry name="grab_fps" type="Double">
+      <label>fps for video rec.</label>
+      <default>15.0</default>
+    </entry>
+
+    <entry name="grab_hide_frame" type="Bool">
+      <label>Hide frame around capture zone.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="grab_hide_mouse" type="Bool">
+      <label>Hide mouse cursor.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="decklink_device_found" type="Bool">
+      <label>Enable Blackmagic decklink support.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="decklink_capturedevice" type="UInt">
+      <label>default HDMI capture device.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="decklink_profile" type="Int">
+      <label>default HDMI encoding profile.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="decklink_filename" type="String">
+      <label>default HDMI capture filename.</label>
+      <default>capture</default>
+    </entry>
+  
+  <entry name="decklink_parameters" type="String">
+      <label>Default Decklink encoding parameters.</label>
+      <default></default>
+  </entry>
+
+  <entry name="decklink_extension" type="String">
+      <label>Default Decklink capture file extension.</label>
+      <default></default>
+  </entry>
+  </group>
+
+  <group name="shuttle">
+    <entry name="enableshuttle" type="Bool">
+      <label>Enable jog shuttle device.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="shuttledevice" type="String">
+      <label>Path to shuttle device.</label>
+      <default></default>
+    </entry>
+
+    <entry name="shuttledevicenames" type="StringList">
+      <label>Available shuttle device names.</label>
+      <default></default>
+    </entry>
+    
+    <entry name="shuttledevicepaths" type="StringList">
+      <label>Available shuttle device paths.</label>
+      <default></default>
+    </entry>
+
+    <entry name="shuttlebuttons" type="String">
+      <label>JogShuttle button to actions mappings.</label>
+      <default></default>
+    </entry>
+  </group>
+  
+  <group name="bezier_spline">
+    <entry name="bezier_gridlines" type="Int">
+      <label>Number of lines to use for the grid.</label>
+      <default>3</default>
+    </entry>
+
+    <entry name="bezier_showpixmap" type="Bool">
+      <label>Should a background indicating the changes caused by curve manipulation be shown.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="bezier_showallhandles" type="Bool">
+      <label>Show handles for all points or only for the selected one.</label>
+      <default>true</default>
+    </entry>
+  </group>
+
+   <group name="drag_value">
+       <entry name="dragvalue_mode" type="Int">
+           <label>...</label>
+           <default>0</default>
+       </entry>
+       <entry name="dragvalue_directupdate" type="Bool">
+           <label>...</label>
+           <default>true</default>
+       </entry>
+   </group>
+
+
+  <group name="unmanaged">
+    <entry name="properties_panel_page" type="Int">
+           <label>Currently displayed page in properties panel</label>
+           <default>0</default>
+    </entry>
+    <entry name="project_fps" type="Double">
+      <label>Current project fps.</label>
+      <default>25</default>
+    </entry>
+    <entry name="default_profile" type="String">
+      <label>Default project format.</label>
+      <default></default>
+    </entry>
+
+    <entry name="showdescriptioncolumn" type="Bool">
+      <label>Show descriptions in project tree view.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="showratingcolumn" type="Bool">
+      <label>Show ratings in project tree view.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="showdatecolumn" type="Bool">
+      <label>Show dates in project tree view.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="frametimecode" type="Bool">
+      <label>Show timecodes as frame number instead of hh:mm:ss:ff.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="snaptopoints" type="Bool">
+      <label>Snap movements to clips, guides and markers.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="automatictransitions" type="Bool">
+      <label>New transitions are automatic transitions.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="transitionfollowcursor" type="Bool">
+      <label>When editing a composite transition, move timeline cursor for better preview.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="keyframeseek" type="Bool">
+      <label>When editing an effect with position, seek to the keyframe pos.</label>
+      <default>false</default>
+    </entry>
+    <entry name="showbuiltstack" type="Bool">
+      <label>Show builtin effect stack.</label>
+      <default>false</default>
+    </entry>
+    <entry name="showeffectinfo" type="Bool">
+      <label>Show small effect description in effects list.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="showrenderparams" type="Bool">
+      <label>Show avformat render parameters in rendering dialog.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="displayClipMonitorInfo" type="Int">
+      <label>Show overlay info on monitor (in / out points, markers,...).</label>
+      <default>0x15</default>
+    </entry>
+
+    <entry name="displayProjectMonitorInfo" type="Int">
+      <label>Show overlay info on monitor (in / out points, markers,...).</label>
+      <default>0x05</default>
+    </entry>
+    
+    <entry name="previewScaling" type="Int">
+      <label>Divide monitor resolution by this factor to speedup preview.</label>
+      <default>1</default>
+    </entry>
+    
+    <entry name="autoKeyframe" type="Bool">
+      <label>Automatically create a new keyframe on keyframe move.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="clipMonitorOverlayGuides" type="Int">
+      <label>index of current guides overlay for clip monitor.</label>
+      <default>0</default>
+    </entry>
+    <entry name="projectMonitorOverlayGuides" type="Int">
+      <label>index of current guides overlay for project monitor.</label>
+      <default>0</default>
+    </entry>
+    
+    <entry name="alwaysShowMonitorAudio" type="Bool">
+      <label>Always display audio thumbs in clip monitor.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="displayAudioOverlay" type="Bool">
+      <label>Show audio overlay info on monitor.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="monitoraudio" type="Int">
+      <label>Show monitor's audio level widget.</label>
+      <default>0x07</default>
+    </entry>
+
+    <entry name="showOnMonitorScene" type="Bool">
+      <label>Show on monitor adjustable effect parameter (geometry, ..).</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="autoaudiodrivername" type="String">
+      <label>Audio driver selected automatically.</label>
+      <default></default>
+    </entry>
+
+    <entry name="hastitleproducer" type="Bool">
+      <label>Is MLT compiled with Qt4 Kdenlive title support.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="mixerCollapse" type="Bool">
+      <label>Collapse audio mixer (only show master channel).</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="producerslist" type="StringList">
+      <label>List of available MLT producers.</label>
+      <default></default>
+    </entry>
+
+    <entry name="widgetstyle" type="String">
+      <label>Name of the chosen widget style.</label>
+      <default></default>
+    </entry>
+
+    <entry name="showslideshowthumbs" type="Bool">
+      <label>Show thumbnails in slideshow dialog.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="showtitlebars" type="Bool">
+      <label>Show dock widget titlebars to allow un/docking.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="colorclipcolor" type="Color">
+      <label>Color to preselect in the color clip dialog.</label>
+      <default>#000000</default>
+    </entry>
+    
+    
+    <entry name="thumbColor1" type="Color">
+      <label>Color to draw even audio channels.</label>
+      <default>#2ac1a0</default>
+    </entry>
+    
+    <entry name="thumbColor2" type="Color">
+      <label>Color to draw odd audio channels.</label>
+      <default>#2ed172</default>
+    </entry>
+
+    <entry name="rescalekeepratio" type="Bool">
+      <label>Keep aspect ratio in render dialog rescale widget.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="defaultrescalewidth" type="Int">
+      <label>default width for rendering rescale.</label>
+      <default>320</default>
+    </entry>
+
+    <entry name="defaultrescaleheight" type="Int">
+      <label>default width for rendering rescale.</label>
+      <default>240</default>
+    </entry>
+
+    <entry name="slideshowbymime" type="Bool">
+      <label>True if slideshow default method is MIME type.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="monitorscene_directupdate" type="Bool">
+      <label>Update parameters while monitor scene changes.</label>
+      <default>false</default>
+    </entry>
+    <entry name="analyse_stopmotion" type="Bool">
+      <label>Send stopmotion frames to scopes for live analysis.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="enableaudiospectrum" type="Bool">
+      <label>Send frames to audiospectrum scope for live analysis.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="showstopmotionthumbs" type="Bool">
+      <label>Show sequence thumbnails in stopmotion widget.</label>
+      <default>true</default>
+    </entry> 
+
+    <entry name="captureinterval" type="Int">
+      <label>Interval between each capture (in seconds).</label>
+      <default>5</default>
+    </entry>
+
+    <entry name="sm_notifytime" type="Int">
+      <label>Seconds before triggering a capture notification.</label>
+      <default>3</default>
+    </entry>
+
+    <entry name="sm_prenotify" type="Bool">
+      <label>Send a notification a few seconds before capture.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="sm_loop" type="Bool">
+      <label>Should we loop in stop motion playback.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="sm_playsound" type="Bool">
+      <label>Should we play a sound to notify of captured frame in stop motion.</label>
+      <default>false</default>
+    </entry>
+    
+    <entry name="sm_framesplayback" type="Int">
+      <label>Number of frames to play back in stop motion playback.</label>
+      <default>10</default>
+    </entry>
+    
+    <entry name="stopmotioneffect" type="Int">
+      <label>Effect applied to stopmotion frame overlay.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="onmonitoreffects_cornersshowlines" type="Bool">
+      <label>Connect the corners in the widget for the c0rners effect with lines.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="onmonitoreffects_geometryshowprevious" type="Bool">
+      <label>Show previous keyframe in monitor.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="onmonitoreffects_geometryshowpath" type="Bool">
+      <label>Show keyframe path in monitor.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="onmonitoreffects_cornersshowcontrols" type="Bool">
+      <label>Show additional controls in the c0rners on-monitor widget.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="projectloading_avformatnovalidate" type="Bool">
+      <label>Do not validate the video files when loading a project for the sake of speed.</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="monitor_audio" type="Bool">
+      <label>Display audio levels.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="enable_recording_preview" type="Bool">
+      <label>Should we display video frames while capturing.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="add_new_clip" type="Bool">
+      <label>Add cut clips to project after transcoding.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="default_marker_type" type="Int">
+      <label>Default category for newly created clip markers.</label>
+      <default>0</default>
+    </entry>
+
+    <entry name="mltdeinterlacer" type="String">
+      <label>Name of the chosen deinterlacer.</label>
+      <default>onefield</default>
+    </entry>
+
+    <entry name="mltinterpolation" type="String">
+      <label>Name of the chosen interpol method.</label>
+      <default>nearest</default>
+    </entry>
+    <entry name="favorite_effects" type="StringList">
+      <label>List of favorite effects ids.</label>
+      <default>volume,lift_gamma_gain,qtblend</default>
+    </entry>
+    <entry name="favorite_transitions" type="StringList">
+      <label>List of favorite transitions ids.</label>
+      <default>wipe,qtblend</default>
+    </entry>
+    <entry name="selected_effecttab" type="Int">
+      <label>Last opened tab in effects list.</label>
+      <default>0</default>
+    </entry>
+    <entry name="force_breeze" type="Bool">
+      <label>Force breeze icon theme for consistent look.</label>
+      <default>false</default>
+    </entry>
+    <entry name="use_dark_breeze" type="Bool">
+      <label>Force breeze icon color theme for consistent look.</label>
+      <default>false</default>
+    </entry>
+    </group>
+  <group name="effects">
+      <entry name="lock_ratio" type="Bool">
+      <label>Lock size ratio in effects.</label>
+      <default>true</default>
+    </entry>
+  </group>
+  <group name="titles">
+       <entry name="selected_template" type="String">
+           <label>Name of last selected title template</label>
+           <default></default>
+       </entry>
+       <entry name="titlerShowGuides" type="Bool">
+        <label>Show guides in titler.</label>
+        <default>false</default>
+        </entry>
+        <entry name="titlerHGuides" type="Int">
+        <label>Number of horizontal guides in titler.</label>
+        <default>2</default>
+        </entry>
+        <entry name="titlerVGuides" type="Int">
+        <label>Number of vertical guides in titler.</label>
+        <default>3</default>
+        </entry>
+        <entry name="titleGuideColor" type="Color">
+        <label>color titler guides.</label>
+        <default>#ff0000</default>
+        </entry>
+        <entry name="titlerbg" type="Int">
+        <label>Default background for titler.</label>
+        <default>0</default>
+        </entry>
+        <entry name="titlerShowbg" type="Bool">
+        <label>Show titler background.</label>
+        <default>false</default>
+        </entry>
+   </group>
+</kcfg>

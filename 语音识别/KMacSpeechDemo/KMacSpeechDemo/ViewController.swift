@@ -11,16 +11,15 @@ import Speech
 import AVFoundation
 
 //let TEST_URL = "https://developer.apple.com/videos/play/wwdc2020/10074/"
-let TEST_URL = "http://m.kekenet.com/menu/201207/188787.shtml###"
+let TEST_URL = "http://m.kekenet.com/menu/201206/185740.shtml"
 
-let TEXT_COPY = """
-  
- Passage 55. Stress and Relaxation
- It is commonly believed that only rich middle-aged businessmen suffer from stress. In fact anyone may become ill as a result of stress if they experience a lot of worry over a long period and their health is not especially good. Stress can be a friend or an enemy: it can warn you that you are under too much pressure and should change your way of life.
- It can kill you if you don't notice the warning signals. Doctors agree that it is probably the biggest single cause of illness in the Western world. When we are very frightened and worried our bodies produce certain chemicals to help us fight what is troubling us.
- Unfortunately, these chemicals produce the energy needed to run away fast from an object of fear, and in modern life that's often impossible. If we don't use up these chemicals, or if we produce too many of them, they may actually harm us. The parts of the body that are most affected by stress are the stomach, heart,skin, head and back.
- Stress can cause car accidents, heart attacks, and alcoholism, and may even drive people to suicide. Our living and working conditions may put us under stress. Overcrowding in large cities, traffic jams, competition for jobs, worry about the future, any big changes in our lives, may cause stress. Some British doctors have pointed out that one of Britain's worst waves of influenza happened soon after the new coins came into use. Also if you have changed jobs or moved house in recent months you are more likely to fall ill than if you haven't. And more people commit suicide in times of inflation. As with all illnesses, prevention is better than cure. If you find you can't relax, it is a sign of danger. "When you're taking work home, when you can't enjoy an evening with friends, when you haven't time for outdoor exercise—that is the time to stop and ask yourself whether your present life really suits you." Says one family doctor. " Then it's time to join a relaxation class, or take up dancing, painting or gardening."
+let HOLDE_PLACE_TEXT = "请在此处输入你想要跟踪失败的文字，然后点击《拷贝》按钮"
 
+let TEXT_COPY_DEFAULT = """
+ Passage 37. Life Lessons
+ Sometimes people come into your life and you know right away that they were meant to be there,
+ to serve some sort of purpose,teach you a lesson, or to help you figure out who you are or who you want to become. You never know who these people may be—a roommate, a neighbor, a professor, a friend, a lover, or even a complete stranger—but when you lock eyes with them,you know at that very moment they will affect your life in some profound way. Sometimes things happen to you that may seem horrible,painful, and unfair at first,but in reflection you find that without overcoming those obstacles you would have never realized your potential, strength,willpower, or heart. Everything happens for a reason. Nothing happens by chance or by means of good or bad luck. Illness,injury, love, lost moments of true greatness, and sheer stupidity all occur to test the limits of your soul. Without these small tests, whatever they may be, life would be like a smoothly paved straight flat road to nowhere. It would be safe and comfortable,but dull and utterly pointless.
+ The people you meet who affect your life, and the success and downfalls you experience, help to create who you are and who you become. Even the bad experiences can be learned from. In fact, they are sometimes the most important ones. If someone loves you, give love back to them in whatever way you can, not only because they love you, but because in a way, they are teaching you to love and how to open your heart and eyes to things. If someone hurts you, betrays you, or breaks your heart,forgive them, for they have helped you learn about trust and the importance of being cautious to whom you open your heart. Make every day count. Appreciate every moment and take from those moments everything that you possibly can for you may never be able to experience it again. Talk to people that you have never talked to before, and listen to what they have to say. Let yourself fall in love, break free, and set your sights high. Hold your head up because you have every right to. Tell yourself you are a great individual and believe in yourself, for if you don’t believe in yourself, it will be hard for others to believe in you.
 """
 
 class ViewController: NSViewController, SFSpeechRecognizerDelegate {
@@ -41,8 +40,10 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     private var lastMatchRange:NSRange?
     var isListening = false
     private var currentRow:Int = 0
-
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
+    private var originText:String = TEXT_COPY_DEFAULT
+    @IBOutlet weak var labelLanguage: NSTextField!
+    
+    private var speechRecognizer:SFSpeechRecognizer?
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
@@ -59,8 +60,9 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
         checkAuthor()
         
         speechKit.delegate = self
-        speechRecognizer.delegate = self
-        speechRecognizer.defaultTaskHint = .dictation
+        speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+        speechRecognizer?.delegate = self
+        speechRecognizer?.defaultTaskHint = .dictation
         
         setupUI()
     }
@@ -96,14 +98,22 @@ class ViewController: NSViewController, SFSpeechRecognizerDelegate {
     
     @IBAction func lrcButtonClicked(_ sender: Any) {
         
-        speechKit.recordVoice()
+ //       speechKit.recordVoice()
         
 //        lrcVC.reloadData()
 //        lrcVC.play()
+        let text = middleTextView.string
+        guard !text.isEmpty, text.count > 1, text != HOLDE_PLACE_TEXT else {
+            middleTextView.string = HOLDE_PLACE_TEXT
+            return
+        }
+        originText = text
+        topTextView.string = ""
+        updateTextRange()
+        middleTextView.string = ""
         
     }
     
-
 }
 
 extension ViewController {
@@ -113,12 +123,16 @@ extension ViewController {
         microphoneButton.isEnabled = false
         recordButton.title = "Start Recording"
         
-        let rect = middleScrollView.frame
-        lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
-        self.view.addSubview(lrcVC.view)
+//        let rect = middleScrollView.frame
+//        lrcVC.view.frame = CGRect(x: rect.origin.x + rect.size.width, y: rect.origin.y, width: view.frame.width - rect.size.width, height: rect.height)
+//        self.view.addSubview(lrcVC.view)
         
         setupLanguageTableView()
         setupTextView()
+        
+        labelLanguage.stringValue = "当前语言：英语"
+        
+        middleTextView.string = HOLDE_PLACE_TEXT
     }
     
     private func setupTextView() {
@@ -127,8 +141,8 @@ extension ViewController {
     }
     
     private func updateTextRange() {
-        
-        let atrStr = NSAttributedString(string: TEXT_COPY)
+        topTextView.string = ""
+        let atrStr = NSAttributedString(string: originText)
         let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
         //let paraStyle = NSMutableParagraphStyle.init()
         //paraStyle.setParagraphStyle(NSParagraphStyle.default)
@@ -149,7 +163,7 @@ extension ViewController {
         languageTableView.doubleAction = #selector(clickLocateMissingFiles(_:))
         
         languageTableView.allowsColumnResizing = true
-        let columnsTiles: [String] = ["语言", "描述"]
+        let columnsTiles: [String] = ["选择语言", "国家"]
         for index in 0..<languageTableView.tableColumns.count {
             languageTableView.tableColumns[index].isEditable = false
             languageTableView.tableColumns[index].headerCell.stringValue = columnsTiles[index]
@@ -174,7 +188,6 @@ extension ViewController {
     private func checkAuthor() {
         // Configure the SFSpeechRecognizer object already
         // stored in a local member variable.
-        speechRecognizer.delegate = self
         
         // Asynchronously make the authorization request.
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -232,6 +245,8 @@ extension ViewController {
         
         recognitionRequest.requiresOnDeviceRecognition = true
         
+        guard let speechRecognizer = speechRecognizer else {return}
+        
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
             var isFinal = false
             
@@ -239,7 +254,7 @@ extension ViewController {
                 //NotificationCenter.default.post(name: NSNotification.Name.init("ReconitionResultNotification"), object: result)
                 
 //                self.lrcVC.match(recognitionRes: result)
-                self.textView.string = self.textView.string + "\n\n" + result.bestTranscription.formattedString
+                self.textView.string = result.bestTranscription.formattedString
                 
                 DispatchQueue.global().async {
                     self.match(result: result)
@@ -291,10 +306,7 @@ extension ViewController {
        
     func recordButtonTapped() {
            if audioEngine.isRunning {
-               audioEngine.stop()
-               recognitionRequest?.endAudio()
-               recordButton.isEnabled = false
-               recordButton.title = "Stopping"
+               stopRecording()
            } else {
                do {
                    try startRecording()
@@ -304,6 +316,13 @@ extension ViewController {
                }
            }
        }
+    
+    private func stopRecording() {
+        audioEngine.stop()
+        recognitionRequest?.endAudio()
+        recordButton.isEnabled = false
+        recordButton.title = "Stopping"
+    }
     
     private func match(result:SFSpeechRecognitionResult) {
 
@@ -315,7 +334,7 @@ extension ViewController {
         var list = [SFTranscriptionSegment]()
         list.append(contentsOf: best.segments)
         
-        let compareStr = TEXT_COPY.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
+        let compareStr = originText.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
         
         let bestTrasnStr = best.formattedString
         
@@ -337,7 +356,7 @@ extension ViewController {
             let translate = list.map({ (item) -> String in
                 return item.substring
             }).joined(separator: " ")
-            print("j = \(j),translate = \(translate)")
+            //print("j = \(j),translate = \(translate)")
             let ranges = compareStr.nsranges(of: translate)
             if ranges.count > 0 {
                 
@@ -356,7 +375,7 @@ extension ViewController {
                 }
                 else {
                     ranges.forEach { (item) in
-                        print("***匹配到多个遍历 : range=\(String(describing: item))")
+                        //print("***匹配到多个遍历 : range=\(String(describing: item))")
                         if let last = self.lastMatchRange {
                             if let jiao = item.intersection(last) {
                                 self.matchRange = item.union(jiao)
@@ -442,7 +461,10 @@ extension ViewController {
 extension ViewController:NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, didClick tableColumn: NSTableColumn) {
-        
+        if let cell  = tableColumn.dataCell(forRow: currentRow) as? MissFileCellView {
+            cell.labelView?.textColor = .red
+        }
+        tableView.scrollRowToVisible(currentRow)
     }
     
     func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
@@ -457,6 +479,20 @@ extension ViewController:NSTableViewDelegate {
         }
         
         currentRow = row
+        
+        stopRecording()
+        speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: OSSVoiceEnum.allCases[row].rawValue))
+        speechRecognizer?.delegate = self
+        speechRecognizer?.defaultTaskHint = .dictation
+        
+        self.recordButton.isEnabled = true
+        self.recordButton.title = "Start Recording"
+        
+        tableView.reloadData()
+        tableView.scrollRowToVisible(row)
+        
+        labelLanguage.stringValue = "Language：\(OSSVoiceEnum.allCases[row].title)"
+        
         return true
     }
     

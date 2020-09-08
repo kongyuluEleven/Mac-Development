@@ -1,0 +1,289 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kdenlive" version="192" translationDomain="kdenlive">
+  <MenuBar>
+    <Menu name="file" >
+      <Action name="file_save"/>
+      <Action name="file_save_as"/>
+      <Action name="file_save_copy"/>
+      <Action name="file_revert"/>
+      <Separator />
+      <Action name="dvd_wizard" />
+      <Action name="transcode_clip" />
+      <Action name="export_project" />
+      <Action name="import_project" />
+    </Menu>
+    <Menu name="edit" >
+      <Action name="paste_effects" />
+      <Action name="project_find" />
+      <Action name="project_find_next" />
+    </Menu>
+    <Menu name="go" noMerge="1"><text>&amp;Project</text>
+      <Action name="add_clip" />
+      <Action name="add_color_clip" />
+      <Action name="add_slide_clip" />
+      <Action name="add_text_clip" />
+      <Action name="add_text_template_clip" />
+      <Action name="create_folder" />
+      <Action name="download_resource" /> 
+      <Menu name="generators" ><text>Generators</text>
+      </Menu>
+      <Separator />
+      <Action name="bin_view_mode" />
+      <Action name="stopmotion" />
+      <Separator />
+      <Action name="project_clean" />
+      <Action name="project_render" />
+      <Action name="project_adjust_profile" />
+      <Action name="archive_project" />
+      <Action name="open_backup" />
+      <Action name="project_settings" />
+    </Menu>
+
+    <Menu name="tool" ><text>Tool</text>
+      <Action name="normal_mode" />
+      <Action name="overwrite_mode" />
+      <Action name="insert_mode" />
+      <Separator />
+      <Action name="select_tool" />
+      <Action name="razor_tool" />
+      <Action name="spacer_tool" />
+    </Menu>
+
+    <Menu name="clip" ><text>&amp;Clip</text>
+          <Menu name="marker_menu" ><text>Markers</text>
+        <Action name="add_clip_marker" />
+        <Action name="add_marker_guide_quickly" />
+        <Action name="edit_clip_marker" />
+        <Action name="delete_clip_marker" />
+        <Action name="delete_all_clip_markers" />
+        </Menu>
+	  <Action name="auto_transition" />
+      <Menu name="extract_audio" ><text>Extract Audio</text>
+	  <ActionList name="audio_transcoders_list" />
+      </Menu>
+      <Menu name="clip_actions" ><text>Clip Jobs</text>
+	<ActionList name="clip_jobs" />
+      </Menu>
+      <Menu name="transcoders" ><text>Transcode</text>
+	  <ActionList name="transcoders_list" />
+      </Menu>
+      <Separator />
+      <Action name="locate_clip" />
+      <Action name="reload_clip" />
+      <Action name="replace_clip" />
+      <Action name="duplicate_clip" />
+      <Action name="proxy_clip" />
+      <Menu name="clip_in_timeline"><text>Clip in Timeline</text>
+	<ActionList name="timeline_occurences" />
+      </Menu>
+      <Action name="clip_properties" />
+      <Action name="edit_clip" />
+      <Action name="renamefile" />
+      <Action name="delete_clip" />
+    </Menu>
+
+    <Menu name="timeline" ><text>T&amp;imeline</text>
+      <Menu name="keyboard_selection" ><text>Selection</text>
+	  <Action name="select_timeline_clip" />
+	  <Action name="select_add_timeline_clip" />
+	  <Action name="deselect_timeline_clip" />
+	  <Action name="select_timeline_transition" />
+	  <Action name="select_add_timeline_transition" />
+	  <Action name="deselect_timeline_transition" />
+      </Menu>
+      <Menu name="keyboard_insert" ><text>Insertion</text>
+	  <Action name="insert_to_in_point" />
+          <Action name="overwrite_to_in_point" />
+      </Menu>
+      <Menu name="keyboard_remove" ><text>Removal</text>
+	  <Action name="remove_extract" />
+          <Action name="remove_lift" />
+      </Menu>
+      <Menu name="timeline_preview" ><text>Timeline Preview</text>
+        <Action name="prerender_timeline_zone" />
+        <Action name="stop_prerender_timeline" />
+        <Action name="set_render_timeline_zone" />
+        <Action name="unset_render_timeline_zone" />
+        <Action name="clear_render_timeline_zone"/>
+      </Menu>
+        <Action name="resize_timeline_clip_start" />
+        <Action name="resize_timeline_clip_end" />
+        <Menu name="current_clip" ><text>Current clip</text>
+            <Action name="cut_timeline_clip" />
+            <Action name="delete_timeline_clip" />
+            <Action name="edit_item_duration" />
+            <Action name="edit_item_speed" />
+            <Action name="clip_split" />
+            <Action name="clip_switch" />
+            <Action name="clip_disable" />
+            <Action name="clip_in_project_tree" />
+            <Action name="extract_clip" />
+            <Action name="save_to_bin" />
+            <Action name="expand_timeline_clip" />
+      </Menu>
+      <Action name="grab_item" />
+      <Menu name="guide_menu" ><text>&amp;Guides</text>
+		<Action name="add_guide" />
+		<Action name="edit_guide" />
+		<Action name="delete_guide" />
+		<Action name="delete_all_guides" />
+      </Menu>
+      <Menu name="space_menu" ><text>Space</text>
+	<Action name="insert_space" />
+	<Action name="delete_space" />
+        <Action name="delete_space_all_tracks" />
+      </Menu>
+      <Action name="group_clip" />
+      <Action name="ungroup_clip" />
+      <Action name="save_selection" />
+      <Action name="send_library" />
+      <Menu name="timeline_tracks" ><text>Tracks</text>
+        <Action name="master_effects" />
+        <Action name="insert_track" />
+        <Action name="delete_track" />
+        <Action name="switch_target_stream" />
+	<Separator />
+	<Action name="select_track" />
+	<Action name="select_all_tracks" />
+        <Action name="unselect_all_tracks" />
+        <Separator />
+        <Action name="switch_track_lock" />
+        <Action name="switch_all_track_lock" />
+        <Action name="switch_track_target" />
+        <Action name="switch_active_target" />
+        <Action name="switch_all_targets" />
+        <Action name="activate_all_targets" />
+        <Action name="restore_all_sources" />
+      </Menu>
+      <Separator />
+      <Menu name="video_effects_menu" ><text>Add Effect</text>
+	  <ActionList name="add_effect" />
+      </Menu>
+      <Action name="disable_timeline_effects" />
+	  <Separator />
+		<Action name="show_video_thumbs" />
+		<Action name="show_audio_thumbs" />
+		<Action name="show_markers" />
+		<Action name="snap" />
+	  <Separator />
+		<Action name="view_zoom_in" />
+		<Action name="view_zoom_out" />
+		<Action name="zoom_fit" />
+    </Menu>
+    <Menu name="monitor" ><text>Monitor</text>
+      <Action name="monitor_play" />
+      <Action name="monitor_play_zone" />
+      <Action name="monitor_loop_zone" />
+      <Action name="monitor_loop_clip" />
+      <Separator />
+      <Menu name="monitor_go" ><text>Go To</text>
+	    <Action name="seek_start" />
+        <Action name="monitor_seek_guide_backward" />
+	    <Action name="monitor_seek_snap_backward" />
+	    <Action name="seek_zone_start" />
+	    <Action name="seek_clip_start" />
+	    <Action name="seek_clip_end" />
+	    <Action name="seek_zone_end" />
+	    <Action name="monitor_seek_snap_forward" />
+        <Action name="monitor_seek_guide_forward" />
+	    <Action name="seek_end" />
+      </Menu>
+      <Menu name="monitor_seek" ><text>Seek</text>
+        <Action name="monitor_seek_backward" />
+        <Action name="monitor_seek_backward-one-frame" />
+        <Action name="monitor_seek_backward-one-second" />
+        <Action name="monitor_seek_forward-one-second" />
+        <Action name="monitor_seek_forward-one-frame" />
+        <Action name="monitor_seek_forward" />
+      </Menu>
+      <Separator />
+      <Action name="mark_in" />
+      <Action name="mark_out" />
+      <Action name="insert_project_tree" />
+      <Separator />
+      <Action name="monitor_fullscreen" />
+      <Action name="monitor_multitrack" />
+      <Action name="monitor_zoomin" />
+      <Action name="monitor_zoomout" />
+      <Menu name="monitor_config_overlay" ><text>Current Monitor Overlay</text>
+          <Action name="monitor_overlay" />
+          <Action name="monitor_overlay_tc" />
+          <Action name="monitor_overlay_fps" />
+          <Action name="monitor_overlay_markers" />
+          <Action name="monitor_overlay_audiothumb" />
+      </Menu>
+      <Menu name="monitor_scaling" ><text>Preview Resolution</text>
+          <Action name="scale_no_preview" />
+          <Action name="scale_2_preview" />
+          <Action name="scale_4_preview" />
+          <Action name="scale_8_preview" />
+          <Action name="scale_16_preview" />
+      </Menu>
+      <Menu name="monitor_config" ><text>Monitor config</text>
+          <Action name="mlt_interlace" />
+          <Action name="mlt_interpolation" />
+          <Action name="mlt_gamma" />
+          <Action name="mlt_realtime" />
+          <Action name="mlt_mute" />
+      </Menu>
+      <Action name="switch_monitor" />
+    </Menu>
+    <Menu name="view" noMerge="1" ><text>View</text>
+    <Action name="fullscreen" />
+    <Separator />
+    <Action name="load_layouts" />
+    <Action name="save_layout" />
+    <Action name="manage_layout" />
+    <Menu name="dockareaoriantation" ><text>Dock Area Orientation</text>
+        <Action name="vertical_dockareaorientation" />
+        <Action name="horizontal_dockareaorientation" />
+      </Menu>
+      <Action name="show_titlebars" />
+      <Separator />
+      <ActionList name="dock_actions" />
+    </Menu>
+    <Menu name="settings" >
+      <Action name="manage_cache" />
+      <Action name="run_wizard" />
+      <Menu name="qt_opengl" ><text>OpenGL Backend</text>
+        <Action name="opengl_auto" />
+        <Action name="opengl_desktop" />
+        <Action name="opengl_es" />
+        <Action name="opengl_software" />
+      </Menu>
+      <Action name="force_icon_theme" />
+      <Action name="themes_menu" />
+      <Action name="styles_menu" />
+    </Menu>
+    <Menu name="help" >
+      <Action name="reset_config" />
+    </Menu>
+  </MenuBar>
+  <ToolBar name="timelineToolBar" fullWidth="true" newline="true" noMerge="1" position="bottom">
+    <text>Timeline Toolbar</text>
+    <Action name="timeline_settings" />
+    <Action name="timeline_mode" />
+    <Separator />
+    <Action name="use_timeline_zone_in_edit" />
+    <Action name="select_tool" />
+    <Action name="razor_tool" />
+    <Action name="spacer_tool" />
+    <Separator />
+    <Action name="timeline_timecode" />
+    <Separator />
+    <Action name="insert_to_in_point" />
+    <Action name="overwrite_to_in_point" />
+    <Action name="remove_extract" />
+    <Action name="remove_lift" />
+    <Separator />
+    <Action name="favorite_effects" />
+    <Separator />
+    <Action name="timeline_preview_button" />
+    <Action name="audiomixer_button" />
+  </ToolBar>
+  <ToolBar name="extraToolBar" >
+    <text>Extra Toolbar</text>
+	<Action name="project_render_button" />
+  </ToolBar>
+</kpartgui>
+
