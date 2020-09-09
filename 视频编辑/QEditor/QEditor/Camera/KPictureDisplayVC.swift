@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class KPictureDisplayVC: UIViewController {
 
@@ -36,6 +37,10 @@ class KPictureDisplayVC: UIViewController {
         cancelButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControl.State())
         cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
         view.addSubview(cancelButton)
+        
+        backgroundImageView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
 
     @objc func cancel() {
