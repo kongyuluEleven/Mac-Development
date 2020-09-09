@@ -1,0 +1,1099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
+		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
+		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
+		546700362508A449008D23B4 /* OSSVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700322508A449008D23B4 /* OSSVoice.swift */; };
+		546700372508A449008D23B4 /* OSSUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700332508A449008D23B4 /* OSSUtterance.swift */; };
+		546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700342508A449008D23B4 /* OSSSpeechUtility.swift */; };
+		5467003B2508A62E008D23B4 /* KLanguaageListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */; };
+		5467003D2508A657008D23B4 /* KLanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */; };
+		5467003F2508A765008D23B4 /* CountryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5467003E2508A765008D23B4 /* CountryImages.xcassets */; };
+		9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */; };
+		A01C77C2242F2DCE00777695 /* CompositionFiltersDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C77C1242F2DCE00777695 /* CompositionFiltersDefine.swift */; };
+		A01C77C6242F32D100777695 /* CompositionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C77C5242F32D100777695 /* CompositionImageView.swift */; };
+		A01DBD2C24273A2F00DED48F /* EditToolFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DBD2B24273A2F00DED48F /* EditToolFiltersViewController.swift */; };
+		A01DBD302427420D00DED48F /* EditViewPresenter+Adjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DBD2F2427420D00DED48F /* EditViewPresenter+Adjust.swift */; };
+		A01DBD322427423900DED48F /* EditAdjustProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DBD312427423900DED48F /* EditAdjustProtocol.swift */; };
+		A02123302364019E0073A125 /* EditToolImageThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021232F2364019E0073A125 /* EditToolImageThumbView.swift */; };
+		A0212332236404090073A125 /* EditViewPresenter+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0212331236404090073A125 /* EditViewPresenter+Tool.swift */; };
+		A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123332364168E0073A125 /* UIImage+Utility.swift */; };
+		A02123362364204D0073A125 /* EditViewPresenter+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123352364204D0073A125 /* EditViewPresenter+Player.swift */; };
+		A021233923652E0C0073A125 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233823652E0C0073A125 /* Debug.swift */; };
+		A021233B23652FE40073A125 /* EditToolTimeScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233A23652FE40073A125 /* EditToolTimeScaleView.swift */; };
+		A021233F2365401A0073A125 /* UIFont+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233E2365401A0073A125 /* UIFont+Utility.swift */; };
+		A02123412365428B0073A125 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123402365428B0073A125 /* UIView+Layout.swift */; };
+		A0212343236583520073A125 /* EditToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0212342236583520073A125 /* EditToolBar.swift */; };
+		A02F7DCD239B3A7600398065 /* EditViewPlayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DCC239B3A7600398065 /* EditViewPlayProtocol.swift */; };
+		A02F7DCF239B3F8C00398065 /* EditToolViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DCE239B3F8C00398065 /* EditToolViewProtocol.swift */; };
+		A02F7DD1239B3FB500398065 /* EditPlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DD0239B3FB500398065 /* EditPlayerViewProtocol.swift */; };
+		A02F7DD5239CE94E00398065 /* ReverseVideoTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DD4239CE94E00398065 /* ReverseVideoTool.swift */; };
+		A02F7DD8239E8DB000398065 /* NotificationBannerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DD7239E8DB000398065 /* NotificationBannerExtension.swift */; };
+		A02F7DDA23A472E200398065 /* EditToolSettingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F7DD923A472E200398065 /* EditToolSettingLoadingView.swift */; };
+		A04647AE2388C3AF009FDDC2 /* UIViewController+Utillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04647AD2388C3AF009FDDC2 /* UIViewController+Utillity.swift */; };
+		A053206D242F37BA0009AD24 /* CompositionProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053206C242F37BA0009AD24 /* CompositionProject.swift */; };
+		A0532070242F383E0009AD24 /* CompositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053206F242F383E0009AD24 /* CompositionExtension.swift */; };
+		A053207424381C830009AD24 /* EditProgressAdjustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053207324381C830009AD24 /* EditProgressAdjustViewController.swift */; };
+		A05320762438429C0009AD24 /* CompositionProjectPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05320752438429C0009AD24 /* CompositionProjectPlayerExtension.swift */; };
+		A053207D2439A2430009AD24 /* CompositionExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053207C2439A2430009AD24 /* CompositionExporter.swift */; };
+		A05320802439AAF70009AD24 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053207F2439AAF70009AD24 /* ExportViewController.swift */; };
+		A0532089243AC1730009AD24 /* CompositionProjectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0532088243AC1730009AD24 /* CompositionProjectConfig.swift */; };
+		A06679C3239266F700C5EFC4 /* EditViewPresenter+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06679C2239266F700C5EFC4 /* EditViewPresenter+View.swift */; };
+		A07B6A3E24138E55008170F5 /* EditOperationCaptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A3D24138E55008170F5 /* EditOperationCaptionCell.swift */; };
+		A07B6A402413B19E008170F5 /* EditCaptionCellToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A3F2413B19E008170F5 /* EditCaptionCellToolView.swift */; };
+		A07B6A422413BE52008170F5 /* CompositionMediaSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A412413BE52008170F5 /* CompositionMediaSegment.swift */; };
+		A07B6A442413BF25008170F5 /* CompositionCaptionSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A432413BF25008170F5 /* CompositionCaptionSegment.swift */; };
+		A07B6A4624148A54008170F5 /* EditPlayerCaptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A4524148A54008170F5 /* EditPlayerCaptionTextField.swift */; };
+		A07B6A48241664C2008170F5 /* EditToolEditCaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B6A47241664C2008170F5 /* EditToolEditCaptionViewController.swift */; };
+		A07F9A4E2425D3E200245E73 /* CompositionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F9A4D2425D3E200245E73 /* CompositionPlayer.swift */; };
+		A07F9A512425EB8500245E73 /* EditPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F9A502425EB8500245E73 /* EditPlayerView.swift */; };
+		A080D70524010C300089B10B /* EditToolAddCaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D70424010C300089B10B /* EditToolAddCaptionViewController.swift */; };
+		A080D70924024D7F0089B10B /* EditDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D70824024D7F0089B10B /* EditDataSourceProtocol.swift */; };
+		A080D70B24024E6C0089B10B /* EditViewPresenter+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D70A24024E6C0089B10B /* EditViewPresenter+DataSource.swift */; };
+		A080D70D2402503E0089B10B /* EditPlayerInteractionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D70C2402503E0089B10B /* EditPlayerInteractionProtocol.swift */; };
+		A080D70F240255A30089B10B /* EditCaptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D70E240255A30089B10B /* EditCaptionProtocol.swift */; };
+		A080D711240256C00089B10B /* EditViewPresenter+Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D710240256C00089B10B /* EditViewPresenter+Caption.swift */; };
+		A080D7132402607E0089B10B /* EditOperationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080D7122402607E0089B10B /* EditOperationContainerView.swift */; };
+		A082FEB9243ADDA2008EEDDA /* EditOperationAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082FEB8243ADDA2008EEDDA /* EditOperationAudioCell.swift */; };
+		A0870A572351C84E006DC38D /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A562351C84E006DC38D /* Namespace.swift */; };
+		A0870A5A2352ECD7006DC38D /* MediaCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A592352ECD7006DC38D /* MediaCellModel.swift */; };
+		A0870A5C2352F5A7006DC38D /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A5B2352F5A7006DC38D /* UIColor+RGB.swift */; };
+		A0870A602352FB85006DC38D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A5F2352FB85006DC38D /* EditViewController.swift */; };
+		A0870A632352FBEA006DC38D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A622352FBEA006DC38D /* PlayerView.swift */; };
+		A0870A692353210B006DC38D /* EditPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A682353210B006DC38D /* EditPlayerViewController.swift */; };
+		A0870A6B23532612006DC38D /* String+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A6A23532612006DC38D /* String+Video.swift */; };
+		A0875AB1238A244200061394 /* EditToolAudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0875AB0238A244200061394 /* EditToolAudioWaveformView.swift */; };
+		A090276A244B051800A58CD7 /* ProjectCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0902769244B051800A58CD7 /* ProjectCellModel.swift */; };
+		A090276C244B05B000A58CD7 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A090276B244B05B000A58CD7 /* ProjectCell.swift */; };
+		A090276E244BE8B200A58CD7 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A090276D244BE8B200A58CD7 /* UIDeviceExtension.swift */; };
+		A09B2E7A23E3C9C900F6FC7A /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B2E7923E3C9C900F6FC7A /* AudioRecorder.swift */; };
+		A09B2E7C23E3CF6600F6FC7A /* EditAudioWaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B2E7B23E3CF6600F6FC7A /* EditAudioWaverView.swift */; };
+		A09CF7AF2349DFE500139461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7AE2349DFE500139461 /* AppDelegate.swift */; };
+		A09CF7B32349DFE500139461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7B22349DFE500139461 /* ViewController.swift */; };
+		A09CF7B62349DFE500139461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B42349DFE500139461 /* Main.storyboard */; };
+		A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B72349DFE800139461 /* Assets.xcassets */; };
+		A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B92349DFE800139461 /* LaunchScreen.storyboard */; };
+		A09CF7C32349E0F900139461 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7C22349E0F900139461 /* Define.swift */; };
+		A09CF7C62349E15800139461 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7C52349E15800139461 /* NavigationController.swift */; };
+		A09CF7C82349E17000139461 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7C72349E17000139461 /* NavigationBar.swift */; };
+		A09CF7D32349E31800139461 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7D22349E31800139461 /* MediaViewController.swift */; };
+		A09CF7D62349E34100139461 /* MediaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7D52349E34100139461 /* MediaProtocol.swift */; };
+		A09CF7D82349E35D00139461 /* MediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7D72349E35D00139461 /* MediaPresenter.swift */; };
+		A09CF7DA2349E38400139461 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7D92349E38400139461 /* MediaManager.swift */; };
+		A09CF7DC2349E69A00139461 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7DB2349E69A00139461 /* MediaModel.swift */; };
+		A09CF7DE234B0A7200139461 /* MediaVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7DD234B0A7200139461 /* MediaVideoViewController.swift */; };
+		A09CF7E0234B0A7C00139461 /* MediaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7DF234B0A7C00139461 /* MediaImageViewController.swift */; };
+		A09CF7E3234B0E0200139461 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7E2234B0E0200139461 /* MediaCell.swift */; };
+		A0ADD4BD23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ADD4BC23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift */; };
+		A0ADD4C023E005DA006BF4F5 /* QueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ADD4BF23E005DA006BF4F5 /* QueueDemo.swift */; };
+		A0ADD4C623E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ADD4C523E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift */; };
+		A0ADD4C823E3C331006BF4F5 /* EditToolRecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ADD4C723E3C331006BF4F5 /* EditToolRecordAudioViewController.swift */; };
+		A0C1A2AA23AE27530075AD4F /* EditToolAdjustProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A2A923AE27530075AD4F /* EditToolAdjustProgressView.swift */; };
+		A0C6DFB823D9CCC800A48181 /* EditToolSplitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DFB723D9CCC800A48181 /* EditToolSplitButton.swift */; };
+		A0C6DFBA23DAAE8200A48181 /* EditToolTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DFB923DAAE8200A48181 /* EditToolTransformViewController.swift */; };
+		A0C6DFBC23DAD2B700A48181 /* CompositionTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DFBB23DAD2B700A48181 /* CompositionTransition.swift */; };
+		A0C6DFD023DD1C1D00A48181 /* CompositionVideoSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DFCF23DD1C1C00A48181 /* CompositionVideoSegment.swift */; };
+		A0C6DFD223DD1E4900A48181 /* CompositionAudioSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DFD123DD1E4900A48181 /* CompositionAudioSegment.swift */; };
+		A0D79896244178320082F7FF /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D79895244178320082F7FF /* ProjectListViewController.swift */; };
+		A0DBD4E323D7360700E26238 /* CompositionSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DBD4E223D7360700E26238 /* CompositionSegment.swift */; };
+		A0DBD4E723D9788D00E26238 /* EditToolTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DBD4E623D9788D00E26238 /* EditToolTabView.swift */; };
+		A0DBD4E923D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DBD4E823D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift */; };
+		A0DBD4EC23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DBD4EB23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift */; };
+		A0E03BFD235AA2490012F226 /* EditToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E03BFC235AA2490012F226 /* EditToolViewController.swift */; };
+		A0E03C01235AA35F0012F226 /* EditViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E03C00235AA35F0012F226 /* EditViewProtocol.swift */; };
+		A0E03C03235AA3730012F226 /* EditViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E03C02235AA3730012F226 /* EditViewPresenter.swift */; };
+		A0EE9B45236D6182001CE0D8 /* EditToolChooseBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EE9B44236D6182001CE0D8 /* EditToolChooseBoxView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
+		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
+		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
+		546700312508A448008D23B4 /* OSSSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeech.swift; sourceTree = "<group>"; };
+		546700322508A449008D23B4 /* OSSVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSVoice.swift; sourceTree = "<group>"; };
+		546700332508A449008D23B4 /* OSSUtterance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSUtterance.swift; sourceTree = "<group>"; };
+		546700342508A449008D23B4 /* OSSSpeechUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeechUtility.swift; sourceTree = "<group>"; };
+		5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguaageListTableVC.swift; sourceTree = "<group>"; };
+		5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageTableViewCell.swift; sourceTree = "<group>"; };
+		5467003E2508A765008D23B4 /* CountryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CountryImages.xcassets; sourceTree = "<group>"; };
+		6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.release.xcconfig"; sourceTree = "<group>"; };
+		A01C77C1242F2DCE00777695 /* CompositionFiltersDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionFiltersDefine.swift; sourceTree = "<group>"; };
+		A01C77C5242F32D100777695 /* CompositionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionImageView.swift; sourceTree = "<group>"; };
+		A01DBD2B24273A2F00DED48F /* EditToolFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolFiltersViewController.swift; sourceTree = "<group>"; };
+		A01DBD2F2427420D00DED48F /* EditViewPresenter+Adjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+Adjust.swift"; sourceTree = "<group>"; };
+		A01DBD312427423900DED48F /* EditAdjustProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAdjustProtocol.swift; sourceTree = "<group>"; };
+		A021232F2364019E0073A125 /* EditToolImageThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolImageThumbView.swift; sourceTree = "<group>"; };
+		A0212331236404090073A125 /* EditViewPresenter+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+Tool.swift"; sourceTree = "<group>"; };
+		A02123332364168E0073A125 /* UIImage+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utility.swift"; sourceTree = "<group>"; };
+		A02123352364204D0073A125 /* EditViewPresenter+Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+Player.swift"; sourceTree = "<group>"; };
+		A021233823652E0C0073A125 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		A021233A23652FE40073A125 /* EditToolTimeScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolTimeScaleView.swift; sourceTree = "<group>"; };
+		A021233E2365401A0073A125 /* UIFont+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Utility.swift"; sourceTree = "<group>"; };
+		A02123402365428B0073A125 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		A0212342236583520073A125 /* EditToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolBar.swift; sourceTree = "<group>"; };
+		A02F7DCC239B3A7600398065 /* EditViewPlayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewPlayProtocol.swift; sourceTree = "<group>"; };
+		A02F7DCE239B3F8C00398065 /* EditToolViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolViewProtocol.swift; sourceTree = "<group>"; };
+		A02F7DD0239B3FB500398065 /* EditPlayerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerViewProtocol.swift; sourceTree = "<group>"; };
+		A02F7DD4239CE94E00398065 /* ReverseVideoTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseVideoTool.swift; sourceTree = "<group>"; };
+		A02F7DD7239E8DB000398065 /* NotificationBannerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBannerExtension.swift; sourceTree = "<group>"; };
+		A02F7DD923A472E200398065 /* EditToolSettingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolSettingLoadingView.swift; sourceTree = "<group>"; };
+		A04647AD2388C3AF009FDDC2 /* UIViewController+Utillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utillity.swift"; sourceTree = "<group>"; };
+		A053206C242F37BA0009AD24 /* CompositionProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionProject.swift; sourceTree = "<group>"; };
+		A053206F242F383E0009AD24 /* CompositionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionExtension.swift; sourceTree = "<group>"; };
+		A053207324381C830009AD24 /* EditProgressAdjustViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProgressAdjustViewController.swift; sourceTree = "<group>"; };
+		A05320752438429C0009AD24 /* CompositionProjectPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionProjectPlayerExtension.swift; sourceTree = "<group>"; };
+		A053207C2439A2430009AD24 /* CompositionExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionExporter.swift; sourceTree = "<group>"; };
+		A053207F2439AAF70009AD24 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		A0532088243AC1730009AD24 /* CompositionProjectConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionProjectConfig.swift; sourceTree = "<group>"; };
+		A06679C2239266F700C5EFC4 /* EditViewPresenter+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+View.swift"; sourceTree = "<group>"; };
+		A07B6A3D24138E55008170F5 /* EditOperationCaptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOperationCaptionCell.swift; sourceTree = "<group>"; };
+		A07B6A3F2413B19E008170F5 /* EditCaptionCellToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCaptionCellToolView.swift; sourceTree = "<group>"; };
+		A07B6A412413BE52008170F5 /* CompositionMediaSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionMediaSegment.swift; sourceTree = "<group>"; };
+		A07B6A432413BF25008170F5 /* CompositionCaptionSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionCaptionSegment.swift; sourceTree = "<group>"; };
+		A07B6A4524148A54008170F5 /* EditPlayerCaptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerCaptionTextField.swift; sourceTree = "<group>"; };
+		A07B6A47241664C2008170F5 /* EditToolEditCaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolEditCaptionViewController.swift; sourceTree = "<group>"; };
+		A07F9A4D2425D3E200245E73 /* CompositionPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionPlayer.swift; sourceTree = "<group>"; };
+		A07F9A502425EB8500245E73 /* EditPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerView.swift; sourceTree = "<group>"; };
+		A080D70424010C300089B10B /* EditToolAddCaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolAddCaptionViewController.swift; sourceTree = "<group>"; };
+		A080D70824024D7F0089B10B /* EditDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataSourceProtocol.swift; sourceTree = "<group>"; };
+		A080D70A24024E6C0089B10B /* EditViewPresenter+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+DataSource.swift"; sourceTree = "<group>"; };
+		A080D70C2402503E0089B10B /* EditPlayerInteractionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerInteractionProtocol.swift; sourceTree = "<group>"; };
+		A080D70E240255A30089B10B /* EditCaptionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCaptionProtocol.swift; sourceTree = "<group>"; };
+		A080D710240256C00089B10B /* EditViewPresenter+Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditViewPresenter+Caption.swift"; sourceTree = "<group>"; };
+		A080D7122402607E0089B10B /* EditOperationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOperationContainerView.swift; sourceTree = "<group>"; };
+		A082FEB8243ADDA2008EEDDA /* EditOperationAudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOperationAudioCell.swift; sourceTree = "<group>"; };
+		A0870A562351C84E006DC38D /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		A0870A592352ECD7006DC38D /* MediaCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCellModel.swift; sourceTree = "<group>"; };
+		A0870A5B2352F5A7006DC38D /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		A0870A5F2352FB85006DC38D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		A0870A622352FBEA006DC38D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A0870A682353210B006DC38D /* EditPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlayerViewController.swift; sourceTree = "<group>"; };
+		A0870A6A23532612006DC38D /* String+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Video.swift"; sourceTree = "<group>"; };
+		A0875AB0238A244200061394 /* EditToolAudioWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolAudioWaveformView.swift; sourceTree = "<group>"; };
+		A0902769244B051800A58CD7 /* ProjectCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellModel.swift; sourceTree = "<group>"; };
+		A090276B244B05B000A58CD7 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		A090276D244BE8B200A58CD7 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		A09B2E7923E3C9C900F6FC7A /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		A09B2E7B23E3CF6600F6FC7A /* EditAudioWaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAudioWaverView.swift; sourceTree = "<group>"; };
+		A09CF7AB2349DFE500139461 /* QEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09CF7AE2349DFE500139461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A09CF7B22349DFE500139461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A09CF7B52349DFE500139461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A09CF7B72349DFE800139461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A09CF7BA2349DFE800139461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A09CF7BC2349DFE800139461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09CF7C22349E0F900139461 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		A09CF7C52349E15800139461 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A09CF7C72349E17000139461 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		A09CF7D22349E31800139461 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		A09CF7D52349E34100139461 /* MediaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProtocol.swift; sourceTree = "<group>"; };
+		A09CF7D72349E35D00139461 /* MediaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPresenter.swift; sourceTree = "<group>"; };
+		A09CF7D92349E38400139461 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
+		A09CF7DB2349E69A00139461 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		A09CF7DD234B0A7200139461 /* MediaVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaVideoViewController.swift; sourceTree = "<group>"; };
+		A09CF7DF234B0A7C00139461 /* MediaImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaImageViewController.swift; sourceTree = "<group>"; };
+		A09CF7E2234B0E0200139461 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		A0ADD4BC23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSampleAnalyzer.swift; sourceTree = "<group>"; };
+		A0ADD4BF23E005DA006BF4F5 /* QueueDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueDemo.swift; sourceTree = "<group>"; };
+		A0ADD4C523E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolAudioDetailSettingsViewController.swift; sourceTree = "<group>"; };
+		A0ADD4C723E3C331006BF4F5 /* EditToolRecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolRecordAudioViewController.swift; sourceTree = "<group>"; };
+		A0C1A2A923AE27530075AD4F /* EditToolAdjustProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolAdjustProgressView.swift; sourceTree = "<group>"; };
+		A0C6DFB723D9CCC800A48181 /* EditToolSplitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolSplitButton.swift; sourceTree = "<group>"; };
+		A0C6DFB923DAAE8200A48181 /* EditToolTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolTransformViewController.swift; sourceTree = "<group>"; };
+		A0C6DFBB23DAD2B700A48181 /* CompositionTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionTransition.swift; sourceTree = "<group>"; };
+		A0C6DFCF23DD1C1C00A48181 /* CompositionVideoSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionVideoSegment.swift; sourceTree = "<group>"; };
+		A0C6DFD123DD1E4900A48181 /* CompositionAudioSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionAudioSegment.swift; sourceTree = "<group>"; };
+		A0D79895244178320082F7FF /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		A0DBD4E223D7360700E26238 /* CompositionSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionSegment.swift; sourceTree = "<group>"; };
+		A0DBD4E623D9788D00E26238 /* EditToolTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolTabView.swift; sourceTree = "<group>"; };
+		A0DBD4E823D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolChangeSpeedViewController.swift; sourceTree = "<group>"; };
+		A0DBD4EB23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolBaseSettingsViewController.swift; sourceTree = "<group>"; };
+		A0E03BFC235AA2490012F226 /* EditToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolViewController.swift; sourceTree = "<group>"; };
+		A0E03C00235AA35F0012F226 /* EditViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewProtocol.swift; sourceTree = "<group>"; };
+		A0E03C02235AA3730012F226 /* EditViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewPresenter.swift; sourceTree = "<group>"; };
+		A0EE9B44236D6182001CE0D8 /* EditToolChooseBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToolChooseBoxView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A09CF7A82349DFE500139461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5467002925087DDB008D23B4 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5467002C25087F7B008D23B4 /* KSCameraVC.swift */,
+				5467002D25087F7B008D23B4 /* KSCameraVC.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5467002A25087DE5008D23B4 /* Lrc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lrc;
+			sourceTree = "<group>";
+		};
+		5467002B25087DF1008D23B4 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				546700392508A5C4008D23B4 /* UI */,
+				546700302508A421008D23B4 /* speech */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		546700302508A421008D23B4 /* speech */ = {
+			isa = PBXGroup;
+			children = (
+				5467003E2508A765008D23B4 /* CountryImages.xcassets */,
+				546700312508A448008D23B4 /* OSSSpeech.swift */,
+				546700342508A449008D23B4 /* OSSSpeechUtility.swift */,
+				546700332508A449008D23B4 /* OSSUtterance.swift */,
+				546700322508A449008D23B4 /* OSSVoice.swift */,
+			);
+			path = speech;
+			sourceTree = "<group>";
+		};
+		546700392508A5C4008D23B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */,
+				5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9813C308FA00A998C8958ED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */,
+				94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A01C77C3242F32AA00777695 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				A053206E242F381E0009AD24 /* Extension */,
+				A0E0E88C242F370800E72415 /* Tool */,
+				A0E0E88B242F35C300E72415 /* Segment */,
+				A01C77C7242F34F400777695 /* Player */,
+				A01C77C4242F32B900777695 /* Views */,
+				A01C77C1242F2DCE00777695 /* CompositionFiltersDefine.swift */,
+				A053206C242F37BA0009AD24 /* CompositionProject.swift */,
+				A05320752438429C0009AD24 /* CompositionProjectPlayerExtension.swift */,
+				A0532088243AC1730009AD24 /* CompositionProjectConfig.swift */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		A01C77C4242F32B900777695 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A01C77C5242F32D100777695 /* CompositionImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A01C77C7242F34F400777695 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A07F9A4D2425D3E200245E73 /* CompositionPlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A021233723652E040073A125 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				A021233823652E0C0073A125 /* Debug.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		A02F7DD6239E8D8100398065 /* NotificationBanner */ = {
+			isa = PBXGroup;
+			children = (
+				A02F7DD7239E8DB000398065 /* NotificationBannerExtension.swift */,
+			);
+			path = NotificationBanner;
+			sourceTree = "<group>";
+		};
+		A053206E242F381E0009AD24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A053206F242F383E0009AD24 /* CompositionExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A053207E2439AAE60009AD24 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				A053207F2439AAF70009AD24 /* ExportViewController.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		A0870A542351C7FA006DC38D /* QUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A552351C802006DC38D /* Extension */,
+				A0870A562351C84E006DC38D /* Namespace.swift */,
+				A0ADD4BF23E005DA006BF4F5 /* QueueDemo.swift */,
+			);
+			path = QUIKit;
+			sourceTree = "<group>";
+		};
+		A0870A552351C802006DC38D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A5B2352F5A7006DC38D /* UIColor+RGB.swift */,
+				A0870A6A23532612006DC38D /* String+Video.swift */,
+				A02123332364168E0073A125 /* UIImage+Utility.swift */,
+				A021233E2365401A0073A125 /* UIFont+Utility.swift */,
+				A02123402365428B0073A125 /* UIView+Layout.swift */,
+				A04647AD2388C3AF009FDDC2 /* UIViewController+Utillity.swift */,
+				A090276D244BE8B200A58CD7 /* UIDeviceExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A0870A582352ECC8006DC38D /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A592352ECD7006DC38D /* MediaCellModel.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		A0870A5D2352FB57006DC38D /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A612352FBCE006DC38D /* Player */,
+				A0E03BFF235AA2CF0012F226 /* Presenter */,
+				A0E03BFE235AA2C50012F226 /* Protocol */,
+				A0870A5E2352FB6E006DC38D /* View */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		A0870A5E2352FB6E006DC38D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0DBD4EA23D9BDDE00E26238 /* SettingsViewController */,
+				A0DADA07235AD35E00BD83D7 /* Tool */,
+				A0870A5F2352FB85006DC38D /* EditViewController.swift */,
+				A0870A682353210B006DC38D /* EditPlayerViewController.swift */,
+				A0E03BFC235AA2490012F226 /* EditToolViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0870A612352FBCE006DC38D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A622352FBEA006DC38D /* PlayerView.swift */,
+				A07F9A502425EB8500245E73 /* EditPlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A09CF7A22349DFE500139461 = {
+			isa = PBXGroup;
+			children = (
+				A09CF7AD2349DFE500139461 /* QEditor */,
+				A09CF7AC2349DFE500139461 /* Products */,
+				9813C308FA00A998C8958ED0 /* Pods */,
+				E0AAE1AAAC360EE39D1501E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A09CF7AC2349DFE500139461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7AB2349DFE500139461 /* QEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A09CF7AD2349DFE500139461 /* QEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5467002B25087DF1008D23B4 /* Siri */,
+				5467002A25087DE5008D23B4 /* Lrc */,
+				5467002925087DDB008D23B4 /* Camera */,
+				5467002825085BBA008D23B4 /* QEditor.entitlements */,
+				A01C77C3242F32AA00777695 /* Composition */,
+				A02F7DD6239E8D8100398065 /* NotificationBanner */,
+				A021233723652E040073A125 /* Debug */,
+				A0870A542351C7FA006DC38D /* QUIKit */,
+				A09CF7C92349E21100139461 /* Business */,
+				A09CF7C42349E14200139461 /* Navigation */,
+				A09CF7AE2349DFE500139461 /* AppDelegate.swift */,
+				A09CF7B22349DFE500139461 /* ViewController.swift */,
+				A09CF7B42349DFE500139461 /* Main.storyboard */,
+				A09CF7B72349DFE800139461 /* Assets.xcassets */,
+				A09CF7B92349DFE800139461 /* LaunchScreen.storyboard */,
+				A09CF7BC2349DFE800139461 /* Info.plist */,
+				A09CF7C22349E0F900139461 /* Define.swift */,
+			);
+			path = QEditor;
+			sourceTree = "<group>";
+		};
+		A09CF7C42349E14200139461 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7C52349E15800139461 /* NavigationController.swift */,
+				A09CF7C72349E17000139461 /* NavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A09CF7C92349E21100139461 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				A0D798932441780A0082F7FF /* ProjectList */,
+				A053207E2439AAE60009AD24 /* Export */,
+				A0870A5D2352FB57006DC38D /* Edit */,
+				A09CF7CD2349E2B700139461 /* Media */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		A09CF7CD2349E2B700139461 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7D42349E32800139461 /* Protocol */,
+				A09CF7D12349E30C00139461 /* Model */,
+				A09CF7D02349E30600139461 /* Presenter */,
+				A09CF7CF2349E2FA00139461 /* View */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A09CF7CF2349E2FA00139461 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0870A582352ECC8006DC38D /* CellModel */,
+				A09CF7E1234B0DDB00139461 /* Cell */,
+				A09CF7D22349E31800139461 /* MediaViewController.swift */,
+				A09CF7DD234B0A7200139461 /* MediaVideoViewController.swift */,
+				A09CF7DF234B0A7C00139461 /* MediaImageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A09CF7D02349E30600139461 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7D72349E35D00139461 /* MediaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A09CF7D12349E30C00139461 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7D92349E38400139461 /* MediaManager.swift */,
+				A09CF7DB2349E69A00139461 /* MediaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A09CF7D42349E32800139461 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7D52349E34100139461 /* MediaProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A09CF7E1234B0DDB00139461 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A09CF7E2234B0E0200139461 /* MediaCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A0D798932441780A0082F7FF /* ProjectList */ = {
+			isa = PBXGroup;
+			children = (
+				A0D798982441784F0082F7FF /* CellModel */,
+				A0D79897244178370082F7FF /* View */,
+				A0D79894244178200082F7FF /* ViewController */,
+			);
+			path = ProjectList;
+			sourceTree = "<group>";
+		};
+		A0D79894244178200082F7FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D79895244178320082F7FF /* ProjectListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0D79897244178370082F7FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A090276B244B05B000A58CD7 /* ProjectCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0D798982441784F0082F7FF /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0902769244B051800A58CD7 /* ProjectCellModel.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		A0DADA07235AD35E00BD83D7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A021232F2364019E0073A125 /* EditToolImageThumbView.swift */,
+				A021233A23652FE40073A125 /* EditToolTimeScaleView.swift */,
+				A0212342236583520073A125 /* EditToolBar.swift */,
+				A0EE9B44236D6182001CE0D8 /* EditToolChooseBoxView.swift */,
+				A0875AB0238A244200061394 /* EditToolAudioWaveformView.swift */,
+				A02F7DD923A472E200398065 /* EditToolSettingLoadingView.swift */,
+				A0C1A2A923AE27530075AD4F /* EditToolAdjustProgressView.swift */,
+				A0DBD4E623D9788D00E26238 /* EditToolTabView.swift */,
+				A0C6DFB723D9CCC800A48181 /* EditToolSplitButton.swift */,
+				A09B2E7B23E3CF6600F6FC7A /* EditAudioWaverView.swift */,
+				A080D7122402607E0089B10B /* EditOperationContainerView.swift */,
+				A07B6A3D24138E55008170F5 /* EditOperationCaptionCell.swift */,
+				A082FEB8243ADDA2008EEDDA /* EditOperationAudioCell.swift */,
+				A07B6A3F2413B19E008170F5 /* EditCaptionCellToolView.swift */,
+				A07B6A4524148A54008170F5 /* EditPlayerCaptionTextField.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A0DBD4EA23D9BDDE00E26238 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0DBD4EB23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift */,
+				A0DBD4E823D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift */,
+				A0C6DFB923DAAE8200A48181 /* EditToolTransformViewController.swift */,
+				A0ADD4C523E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift */,
+				A0ADD4C723E3C331006BF4F5 /* EditToolRecordAudioViewController.swift */,
+				A080D70424010C300089B10B /* EditToolAddCaptionViewController.swift */,
+				A07B6A47241664C2008170F5 /* EditToolEditCaptionViewController.swift */,
+				A01DBD2B24273A2F00DED48F /* EditToolFiltersViewController.swift */,
+				A053207324381C830009AD24 /* EditProgressAdjustViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		A0E03BFE235AA2C50012F226 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A0E03C00235AA35F0012F226 /* EditViewProtocol.swift */,
+				A02F7DCC239B3A7600398065 /* EditViewPlayProtocol.swift */,
+				A02F7DCE239B3F8C00398065 /* EditToolViewProtocol.swift */,
+				A02F7DD0239B3FB500398065 /* EditPlayerViewProtocol.swift */,
+				A080D70824024D7F0089B10B /* EditDataSourceProtocol.swift */,
+				A080D70C2402503E0089B10B /* EditPlayerInteractionProtocol.swift */,
+				A080D70E240255A30089B10B /* EditCaptionProtocol.swift */,
+				A01DBD312427423900DED48F /* EditAdjustProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A0E03BFF235AA2CF0012F226 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0E03C02235AA3730012F226 /* EditViewPresenter.swift */,
+				A0212331236404090073A125 /* EditViewPresenter+Tool.swift */,
+				A02123352364204D0073A125 /* EditViewPresenter+Player.swift */,
+				A06679C2239266F700C5EFC4 /* EditViewPresenter+View.swift */,
+				A080D70A24024E6C0089B10B /* EditViewPresenter+DataSource.swift */,
+				A080D710240256C00089B10B /* EditViewPresenter+Caption.swift */,
+				A01DBD2F2427420D00DED48F /* EditViewPresenter+Adjust.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A0E0E88B242F35C300E72415 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				A0DBD4E223D7360700E26238 /* CompositionSegment.swift */,
+				A07B6A412413BE52008170F5 /* CompositionMediaSegment.swift */,
+				A0C6DFCF23DD1C1C00A48181 /* CompositionVideoSegment.swift */,
+				A0C6DFD123DD1E4900A48181 /* CompositionAudioSegment.swift */,
+				A07B6A432413BF25008170F5 /* CompositionCaptionSegment.swift */,
+				A0C6DFBB23DAD2B700A48181 /* CompositionTransition.swift */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		A0E0E88C242F370800E72415 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A0ADD4BC23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift */,
+				A09B2E7923E3C9C900F6FC7A /* AudioRecorder.swift */,
+				A02F7DD4239CE94E00398065 /* ReverseVideoTool.swift */,
+				A053207C2439A2430009AD24 /* CompositionExporter.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E0AAE1AAAC360EE39D1501E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A09CF7AA2349DFE500139461 /* QEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09CF7BF2349DFE800139461 /* Build configuration list for PBXNativeTarget "QEditor" */;
+			buildPhases = (
+				7494ADC3F90D5777768CC172 /* [CP] Check Pods Manifest.lock */,
+				A09CF7A72349DFE500139461 /* Sources */,
+				A09CF7A82349DFE500139461 /* Frameworks */,
+				A09CF7A92349DFE500139461 /* Resources */,
+				7D2C4B1F4CA0A7DF01C77101 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QEditor;
+			productName = QEditor;
+			productReference = A09CF7AB2349DFE500139461 /* QEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A09CF7A32349DFE500139461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "YiZhong Qi";
+				TargetAttributes = {
+					A09CF7AA2349DFE500139461 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = A09CF7A62349DFE500139461 /* Build configuration list for PBXProject "QEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A09CF7A22349DFE500139461;
+			productRefGroup = A09CF7AC2349DFE500139461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A09CF7AA2349DFE500139461 /* QEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A09CF7A92349DFE500139461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */,
+				A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */,
+				A09CF7B62349DFE500139461 /* Main.storyboard in Resources */,
+				5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */,
+				5467003F2508A765008D23B4 /* CountryImages.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7494ADC3F90D5777768CC172 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QEditor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2C4B1F4CA0A7DF01C77101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QEditor/Pods-QEditor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QEditor/Pods-QEditor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QEditor/Pods-QEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A09CF7A72349DFE500139461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07B6A48241664C2008170F5 /* EditToolEditCaptionViewController.swift in Sources */,
+				A0C6DFD023DD1C1D00A48181 /* CompositionVideoSegment.swift in Sources */,
+				A07B6A422413BE52008170F5 /* CompositionMediaSegment.swift in Sources */,
+				A090276A244B051800A58CD7 /* ProjectCellModel.swift in Sources */,
+				A09B2E7C23E3CF6600F6FC7A /* EditAudioWaverView.swift in Sources */,
+				A021233B23652FE40073A125 /* EditToolTimeScaleView.swift in Sources */,
+				A080D70F240255A30089B10B /* EditCaptionProtocol.swift in Sources */,
+				A0C6DFD223DD1E4900A48181 /* CompositionAudioSegment.swift in Sources */,
+				A080D711240256C00089B10B /* EditViewPresenter+Caption.swift in Sources */,
+				A0870A5A2352ECD7006DC38D /* MediaCellModel.swift in Sources */,
+				A02123302364019E0073A125 /* EditToolImageThumbView.swift in Sources */,
+				A09CF7E3234B0E0200139461 /* MediaCell.swift in Sources */,
+				A07B6A3E24138E55008170F5 /* EditOperationCaptionCell.swift in Sources */,
+				A090276C244B05B000A58CD7 /* ProjectCell.swift in Sources */,
+				A0DBD4E323D7360700E26238 /* CompositionSegment.swift in Sources */,
+				A0E03BFD235AA2490012F226 /* EditToolViewController.swift in Sources */,
+				A07F9A4E2425D3E200245E73 /* CompositionPlayer.swift in Sources */,
+				A0870A692353210B006DC38D /* EditPlayerViewController.swift in Sources */,
+				A053206D242F37BA0009AD24 /* CompositionProject.swift in Sources */,
+				A01C77C2242F2DCE00777695 /* CompositionFiltersDefine.swift in Sources */,
+				A080D70924024D7F0089B10B /* EditDataSourceProtocol.swift in Sources */,
+				A0E03C01235AA35F0012F226 /* EditViewProtocol.swift in Sources */,
+				A02F7DCD239B3A7600398065 /* EditViewPlayProtocol.swift in Sources */,
+				546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */,
+				A0ADD4C023E005DA006BF4F5 /* QueueDemo.swift in Sources */,
+				A09CF7DC2349E69A00139461 /* MediaModel.swift in Sources */,
+				A0870A6B23532612006DC38D /* String+Video.swift in Sources */,
+				A0C6DFB823D9CCC800A48181 /* EditToolSplitButton.swift in Sources */,
+				A053207D2439A2430009AD24 /* CompositionExporter.swift in Sources */,
+				A02F7DCF239B3F8C00398065 /* EditToolViewProtocol.swift in Sources */,
+				A0ADD4BD23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift in Sources */,
+				A053207424381C830009AD24 /* EditProgressAdjustViewController.swift in Sources */,
+				A04647AE2388C3AF009FDDC2 /* UIViewController+Utillity.swift in Sources */,
+				A082FEB9243ADDA2008EEDDA /* EditOperationAudioCell.swift in Sources */,
+				A02123362364204D0073A125 /* EditViewPresenter+Player.swift in Sources */,
+				A05320762438429C0009AD24 /* CompositionProjectPlayerExtension.swift in Sources */,
+				A09CF7D62349E34100139461 /* MediaProtocol.swift in Sources */,
+				A07B6A402413B19E008170F5 /* EditCaptionCellToolView.swift in Sources */,
+				A02F7DD8239E8DB000398065 /* NotificationBannerExtension.swift in Sources */,
+				A0212343236583520073A125 /* EditToolBar.swift in Sources */,
+				A07B6A442413BF25008170F5 /* CompositionCaptionSegment.swift in Sources */,
+				A06679C3239266F700C5EFC4 /* EditViewPresenter+View.swift in Sources */,
+				A0C6DFBA23DAAE8200A48181 /* EditToolTransformViewController.swift in Sources */,
+				A0C1A2AA23AE27530075AD4F /* EditToolAdjustProgressView.swift in Sources */,
+				A0ADD4C623E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift in Sources */,
+				A080D7132402607E0089B10B /* EditOperationContainerView.swift in Sources */,
+				A0C6DFBC23DAD2B700A48181 /* CompositionTransition.swift in Sources */,
+				A0532089243AC1730009AD24 /* CompositionProjectConfig.swift in Sources */,
+				546700372508A449008D23B4 /* OSSUtterance.swift in Sources */,
+				A09CF7C82349E17000139461 /* NavigationBar.swift in Sources */,
+				A021233923652E0C0073A125 /* Debug.swift in Sources */,
+				A02F7DDA23A472E200398065 /* EditToolSettingLoadingView.swift in Sources */,
+				A021233F2365401A0073A125 /* UIFont+Utility.swift in Sources */,
+				A01C77C6242F32D100777695 /* CompositionImageView.swift in Sources */,
+				A07F9A512425EB8500245E73 /* EditPlayerView.swift in Sources */,
+				A090276E244BE8B200A58CD7 /* UIDeviceExtension.swift in Sources */,
+				A09CF7D32349E31800139461 /* MediaViewController.swift in Sources */,
+				A0D79896244178320082F7FF /* ProjectListViewController.swift in Sources */,
+				A0870A5C2352F5A7006DC38D /* UIColor+RGB.swift in Sources */,
+				A09CF7B32349DFE500139461 /* ViewController.swift in Sources */,
+				A0212332236404090073A125 /* EditViewPresenter+Tool.swift in Sources */,
+				A080D70D2402503E0089B10B /* EditPlayerInteractionProtocol.swift in Sources */,
+				A0870A602352FB85006DC38D /* EditViewController.swift in Sources */,
+				A080D70524010C300089B10B /* EditToolAddCaptionViewController.swift in Sources */,
+				A01DBD302427420D00DED48F /* EditViewPresenter+Adjust.swift in Sources */,
+				A09CF7DA2349E38400139461 /* MediaManager.swift in Sources */,
+				A09CF7C62349E15800139461 /* NavigationController.swift in Sources */,
+				5467003B2508A62E008D23B4 /* KLanguaageListTableVC.swift in Sources */,
+				A0DBD4E723D9788D00E26238 /* EditToolTabView.swift in Sources */,
+				A0532070242F383E0009AD24 /* CompositionExtension.swift in Sources */,
+				A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */,
+				A05320802439AAF70009AD24 /* ExportViewController.swift in Sources */,
+				A0EE9B45236D6182001CE0D8 /* EditToolChooseBoxView.swift in Sources */,
+				A09B2E7A23E3C9C900F6FC7A /* AudioRecorder.swift in Sources */,
+				A02F7DD1239B3FB500398065 /* EditPlayerViewProtocol.swift in Sources */,
+				A02F7DD5239CE94E00398065 /* ReverseVideoTool.swift in Sources */,
+				A09CF7D82349E35D00139461 /* MediaPresenter.swift in Sources */,
+				A01DBD2C24273A2F00DED48F /* EditToolFiltersViewController.swift in Sources */,
+				A0875AB1238A244200061394 /* EditToolAudioWaveformView.swift in Sources */,
+				A0E03C03235AA3730012F226 /* EditViewPresenter.swift in Sources */,
+				A09CF7C32349E0F900139461 /* Define.swift in Sources */,
+				A09CF7E0234B0A7C00139461 /* MediaImageViewController.swift in Sources */,
+				A0ADD4C823E3C331006BF4F5 /* EditToolRecordAudioViewController.swift in Sources */,
+				A0DBD4EC23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift in Sources */,
+				A09CF7AF2349DFE500139461 /* AppDelegate.swift in Sources */,
+				A01DBD322427423900DED48F /* EditAdjustProtocol.swift in Sources */,
+				546700352508A449008D23B4 /* OSSSpeech.swift in Sources */,
+				A0DBD4E923D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift in Sources */,
+				546700362508A449008D23B4 /* OSSVoice.swift in Sources */,
+				A07B6A4624148A54008170F5 /* EditPlayerCaptionTextField.swift in Sources */,
+				5467003D2508A657008D23B4 /* KLanguageTableViewCell.swift in Sources */,
+				A080D70B24024E6C0089B10B /* EditViewPresenter+DataSource.swift in Sources */,
+				A0870A572351C84E006DC38D /* Namespace.swift in Sources */,
+				A0870A632352FBEA006DC38D /* PlayerView.swift in Sources */,
+				A09CF7DE234B0A7200139461 /* MediaVideoViewController.swift in Sources */,
+				5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */,
+				A02123412365428B0073A125 /* UIView+Layout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A09CF7B42349DFE500139461 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09CF7B52349DFE500139461 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A09CF7B92349DFE800139461 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09CF7BA2349DFE800139461 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A09CF7BD2349DFE800139461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B9S5K8T3BY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A09CF7BE2349DFE800139461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B9S5K8T3BY;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A09CF7C02349DFE800139461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QEditor/QEditor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = QEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.YiZhong-Qi.QEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A09CF7C12349DFE800139461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QEditor/QEditor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = QEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.YiZhong-Qi.QEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A09CF7A62349DFE500139461 /* Build configuration list for PBXProject "QEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09CF7BD2349DFE800139461 /* Debug */,
+				A09CF7BE2349DFE800139461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09CF7BF2349DFE800139461 /* Build configuration list for PBXNativeTarget "QEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09CF7C02349DFE800139461 /* Debug */,
+				A09CF7C12349DFE800139461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A09CF7A32349DFE500139461 /* Project object */;
+}
