@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     }
     
     @objc func clickCameraButton() {
-        navigationController?.pushViewController(KSCameraVC())
+        navigationController?.pushViewController(KSwiftyCameraVC())
     }
     
     
