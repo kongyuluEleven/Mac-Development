@@ -1,0 +1,6 @@
+framework module Pods_KLrcCamera_KLrcCameraUITests {
+  umbrella header "Pods-KLrcCamera-KLrcCameraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

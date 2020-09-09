@@ -1,0 +1,6 @@
+framework module Pods_KLrcCamera {
+  umbrella header "Pods-KLrcCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}
