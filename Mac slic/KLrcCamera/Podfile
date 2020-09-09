@@ -8,6 +8,9 @@ target 'KLrcCamera' do
   # Pods for KLrcCamera
  
   pod 'DeviceKit', '~> 2.0'
+  pod "SnapKit"
+  pod "KVOController"
+  pod 'NotificationBannerSwift'
 
 
 

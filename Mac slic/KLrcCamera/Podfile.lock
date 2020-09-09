@@ -1,16 +1,33 @@
 PODS:
   - DeviceKit (2.3.0)
+  - KVOController (1.2.0)
+  - MarqueeLabel (4.0.2)
+  - NotificationBannerSwift (3.0.2):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - DeviceKit (~> 2.0)
+  - KVOController
+  - NotificationBannerSwift
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - DeviceKit
+    - KVOController
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 4ebf38fd602e91150777b269dc431488adb81e2a
+PODFILE CHECKSUM: ec719edd841096c41c696bbaa923f7ddd4614a96
 
 COCOAPODS: 1.9.1

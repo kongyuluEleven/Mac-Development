@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var btnCamera: UIButton!
@@ -18,12 +19,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnCameraClicked(_ sender: Any) {
+        print("\(#function)")
+        let nav = NavigationController(rootViewController: KSwiftyCameraVC())
+        present(nav, animated: true, completion: nil)
     }
     
     @IBAction func btnRecoginitionPictureClicked(_ sender: Any) {
+        print("\(#function)")
+        self.navigationController?.pushViewController(KSwiftyCameraVC(), animated: true)
     }
     
     @IBAction func btnSiriClicked(_ sender: Any) {
+        print("\(#function)")
     }
     
 }

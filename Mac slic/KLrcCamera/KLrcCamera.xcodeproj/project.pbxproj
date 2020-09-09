@@ -3,25 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F20294BE4F45CFEAEBAA2E6 /* Pods_KLrcCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2B0DFF6BD284F49F0BC2E1 /* Pods_KLrcCameraTests.framework */; };
 		5467017D2508D637008D23B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467017C2508D637008D23B4 /* AppDelegate.swift */; };
-		5467017F2508D637008D23B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467017E2508D637008D23B4 /* SceneDelegate.swift */; };
-		546701812508D637008D23B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701802508D637008D23B4 /* ViewController.swift */; };
-		546701842508D637008D23B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546701822508D637008D23B4 /* Main.storyboard */; };
 		546701872508D637008D23B4 /* KLrcCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546701852508D637008D23B4 /* KLrcCamera.xcdatamodeld */; };
 		546701892508D639008D23B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546701882508D639008D23B4 /* Assets.xcassets */; };
 		5467018C2508D639008D23B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5467018A2508D639008D23B4 /* LaunchScreen.storyboard */; };
 		546701972508D63A008D23B4 /* KLrcCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701962508D63A008D23B4 /* KLrcCameraTests.swift */; };
 		546701A22508D63A008D23B4 /* KLrcCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701A12508D63A008D23B4 /* KLrcCameraUITests.swift */; };
-		546701B72508D70D008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701B22508D70D008D23B4 /* OSSSpeech.swift */; };
-		546701B82508D70D008D23B4 /* OSSUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701B32508D70D008D23B4 /* OSSUtterance.swift */; };
-		546701B92508D70D008D23B4 /* OSSVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701B42508D70D008D23B4 /* OSSVoice.swift */; };
-		546701BA2508D70D008D23B4 /* OSSSpeechUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701B52508D70D008D23B4 /* OSSSpeechUtility.swift */; };
-		546701BB2508D70D008D23B4 /* CountryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546701B62508D70D008D23B4 /* CountryImages.xcassets */; };
+		546701E42508DF55008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701D72508DF54008D23B4 /* KSCameraVC.swift */; };
+		546701E52508DF55008D23B4 /* KPictureDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701D82508DF54008D23B4 /* KPictureDisplayVC.swift */; };
+		546701E62508DF55008D23B4 /* KRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701D92508DF54008D23B4 /* KRecordButton.swift */; };
+		546701E72508DF55008D23B4 /* KVideoDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701DA2508DF54008D23B4 /* KVideoDisplayVC.swift */; };
+		546701E82508DF55008D23B4 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701DC2508DF54008D23B4 /* SwiftyCamButton.swift */; };
+		546701E92508DF55008D23B4 /* SwiftyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701DD2508DF54008D23B4 /* SwiftyOrientation.swift */; };
+		546701EA2508DF55008D23B4 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701DE2508DF54008D23B4 /* SwiftyCamViewController.swift */; };
+		546701EB2508DF55008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701DF2508DF54008D23B4 /* SwiftyCamViewControllerDelegate.swift */; };
+		546701EC2508DF55008D23B4 /* SwiftyPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701E02508DF54008D23B4 /* SwiftyPreviewView.swift */; };
+		546701ED2508DF55008D23B4 /* KSwiftyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701E12508DF54008D23B4 /* KSwiftyCameraVC.swift */; };
+		546701EE2508DF55008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546701E22508DF55008D23B4 /* KSCameraVC.xib */; };
+		546701EF2508DF55008D23B4 /* KSwiftyCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546701E32508DF55008D23B4 /* KSwiftyCameraVC.xib */; };
+		546701F32508DFA8008D23B4 /* KSiriVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701F12508DFA8008D23B4 /* KSiriVC.swift */; };
+		546701F42508DFA8008D23B4 /* KSiriVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546701F22508DFA8008D23B4 /* KSiriVC.xib */; };
+		546701FB2508DFE8008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701F62508DFE7008D23B4 /* OSSSpeech.swift */; };
+		546701FC2508DFE8008D23B4 /* OSSUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701F72508DFE7008D23B4 /* OSSUtterance.swift */; };
+		546701FD2508DFE8008D23B4 /* OSSVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701F82508DFE7008D23B4 /* OSSVoice.swift */; };
+		546701FE2508DFE8008D23B4 /* OSSSpeechUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546701F92508DFE7008D23B4 /* OSSSpeechUtility.swift */; };
+		546701FF2508DFE8008D23B4 /* CountryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546701FA2508DFE7008D23B4 /* CountryImages.xcassets */; };
+		546702022508E057008D23B4 /* KLanguageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546702012508E057008D23B4 /* KLanguageTableVC.swift */; };
+		5467020A2508F281008D23B4 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546702082508F281008D23B4 /* NavigationBar.swift */; };
+		5467020B2508F281008D23B4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546702092508F281008D23B4 /* NavigationController.swift */; };
+		5467020E2508F909008D23B4 /* KRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467020C2508F909008D23B4 /* KRootViewController.swift */; };
+		5467020F2508F909008D23B4 /* KRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467020D2508F909008D23B4 /* KRootViewController.xib */; };
+		546702142509092A008D23B4 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546702132509092A008D23B4 /* String+Range.swift */; };
 		A0A38A3D8C4CF451D7B496A0 /* Pods_KLrcCamera_KLrcCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FF6FDFCC227BCBE1F15511 /* Pods_KLrcCamera_KLrcCameraUITests.framework */; };
 		B12778D9EBE4E4CB7697BBBB /* Pods_KLrcCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DB39F662253276F63072AC /* Pods_KLrcCamera.framework */; };
 /* End PBXBuildFile section */
@@ -46,9 +63,6 @@
 /* Begin PBXFileReference section */
 		546701792508D637008D23B4 /* KLrcCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLrcCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5467017C2508D637008D23B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5467017E2508D637008D23B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		546701802508D637008D23B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		546701832508D637008D23B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546701862508D637008D23B4 /* KLrcCamera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KLrcCamera.xcdatamodel; sourceTree = "<group>"; };
 		546701882508D639008D23B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5467018B2508D639008D23B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,11 +74,31 @@
 		546701A12508D63A008D23B4 /* KLrcCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLrcCameraUITests.swift; sourceTree = "<group>"; };
 		546701A32508D63A008D23B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546701AF2508D63F008D23B4 /* KLrcCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KLrcCamera.entitlements; sourceTree = "<group>"; };
-		546701B22508D70D008D23B4 /* OSSSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeech.swift; sourceTree = "<group>"; };
-		546701B32508D70D008D23B4 /* OSSUtterance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSUtterance.swift; sourceTree = "<group>"; };
-		546701B42508D70D008D23B4 /* OSSVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSVoice.swift; sourceTree = "<group>"; };
-		546701B52508D70D008D23B4 /* OSSSpeechUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeechUtility.swift; sourceTree = "<group>"; };
-		546701B62508D70D008D23B4 /* CountryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CountryImages.xcassets; sourceTree = "<group>"; };
+		546701D72508DF54008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSCameraVC.swift; path = KLrcCamera/Src/Camera/ios/KSCameraVC.swift; sourceTree = SOURCE_ROOT; };
+		546701D82508DF54008D23B4 /* KPictureDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KPictureDisplayVC.swift; path = KLrcCamera/Src/Camera/ios/KPictureDisplayVC.swift; sourceTree = SOURCE_ROOT; };
+		546701D92508DF54008D23B4 /* KRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KRecordButton.swift; path = KLrcCamera/Src/Camera/ios/KRecordButton.swift; sourceTree = SOURCE_ROOT; };
+		546701DA2508DF54008D23B4 /* KVideoDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KVideoDisplayVC.swift; path = KLrcCamera/Src/Camera/ios/KVideoDisplayVC.swift; sourceTree = SOURCE_ROOT; };
+		546701DC2508DF54008D23B4 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamButton.swift; sourceTree = "<group>"; };
+		546701DD2508DF54008D23B4 /* SwiftyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyOrientation.swift; sourceTree = "<group>"; };
+		546701DE2508DF54008D23B4 /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewController.swift; sourceTree = "<group>"; };
+		546701DF2508DF54008D23B4 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		546701E02508DF54008D23B4 /* SwiftyPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPreviewView.swift; sourceTree = "<group>"; };
+		546701E12508DF54008D23B4 /* KSwiftyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSwiftyCameraVC.swift; path = KLrcCamera/Src/Camera/ios/KSwiftyCameraVC.swift; sourceTree = SOURCE_ROOT; };
+		546701E22508DF55008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KSCameraVC.xib; path = KLrcCamera/Src/Camera/ios/KSCameraVC.xib; sourceTree = SOURCE_ROOT; };
+		546701E32508DF55008D23B4 /* KSwiftyCameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KSwiftyCameraVC.xib; path = KLrcCamera/Src/Camera/ios/KSwiftyCameraVC.xib; sourceTree = SOURCE_ROOT; };
+		546701F12508DFA8008D23B4 /* KSiriVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSiriVC.swift; sourceTree = "<group>"; };
+		546701F22508DFA8008D23B4 /* KSiriVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSiriVC.xib; sourceTree = "<group>"; };
+		546701F62508DFE7008D23B4 /* OSSSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeech.swift; sourceTree = "<group>"; };
+		546701F72508DFE7008D23B4 /* OSSUtterance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSUtterance.swift; sourceTree = "<group>"; };
+		546701F82508DFE7008D23B4 /* OSSVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSVoice.swift; sourceTree = "<group>"; };
+		546701F92508DFE7008D23B4 /* OSSSpeechUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeechUtility.swift; sourceTree = "<group>"; };
+		546701FA2508DFE7008D23B4 /* CountryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CountryImages.xcassets; sourceTree = "<group>"; };
+		546702012508E057008D23B4 /* KLanguageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageTableVC.swift; sourceTree = "<group>"; };
+		546702082508F281008D23B4 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		546702092508F281008D23B4 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		5467020C2508F909008D23B4 /* KRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRootViewController.swift; sourceTree = "<group>"; };
+		5467020D2508F909008D23B4 /* KRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRootViewController.xib; sourceTree = "<group>"; };
+		546702132509092A008D23B4 /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
 		671AD5D3C792A9EC20A4528D /* Pods-KLrcCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLrcCameraTests.debug.xcconfig"; path = "Target Support Files/Pods-KLrcCameraTests/Pods-KLrcCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A51C45BE867C59F2BC9A39AC /* Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig"; path = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8783F282C1E3973073B2782 /* Pods-KLrcCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLrcCamera.debug.xcconfig"; path = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,13 +166,12 @@
 				546701B02508D6E4008D23B4 /* Src */,
 				546701AF2508D63F008D23B4 /* KLrcCamera.entitlements */,
 				5467017C2508D637008D23B4 /* AppDelegate.swift */,
-				5467017E2508D637008D23B4 /* SceneDelegate.swift */,
-				546701802508D637008D23B4 /* ViewController.swift */,
-				546701822508D637008D23B4 /* Main.storyboard */,
 				546701882508D639008D23B4 /* Assets.xcassets */,
 				5467018A2508D639008D23B4 /* LaunchScreen.storyboard */,
 				5467018D2508D639008D23B4 /* Info.plist */,
 				546701852508D637008D23B4 /* KLrcCamera.xcdatamodeld */,
+				5467020C2508F909008D23B4 /* KRootViewController.swift */,
+				5467020D2508F909008D23B4 /* KRootViewController.xib */,
 			);
 			path = KLrcCamera;
 			sourceTree = "<group>";
@@ -164,22 +197,104 @@
 		546701B02508D6E4008D23B4 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				546701B12508D70D008D23B4 /* speech */,
+				5467021025090882008D23B4 /* Utils */,
+				546701F02508DF71008D23B4 /* Siri */,
+				546701BC2508DE4B008D23B4 /* Camera */,
 			);
 			path = Src;
 			sourceTree = "<group>";
 		};
-		546701B12508D70D008D23B4 /* speech */ = {
+		546701BC2508DE4B008D23B4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				546701B22508D70D008D23B4 /* OSSSpeech.swift */,
-				546701B32508D70D008D23B4 /* OSSUtterance.swift */,
-				546701B42508D70D008D23B4 /* OSSVoice.swift */,
-				546701B52508D70D008D23B4 /* OSSSpeechUtility.swift */,
-				546701B62508D70D008D23B4 /* CountryImages.xcassets */,
+				546701BE2508DE5C008D23B4 /* mac */,
+				546701BD2508DE52008D23B4 /* ios */,
 			);
-			name = speech;
-			path = "../../../../视频编辑/QEditor/QEditor/Siri/speech";
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		546701BD2508DE52008D23B4 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		546701BE2508DE5C008D23B4 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				546701D82508DF54008D23B4 /* KPictureDisplayVC.swift */,
+				546701D92508DF54008D23B4 /* KRecordButton.swift */,
+				546701D72508DF54008D23B4 /* KSCameraVC.swift */,
+				546701E22508DF55008D23B4 /* KSCameraVC.xib */,
+				546701E12508DF54008D23B4 /* KSwiftyCameraVC.swift */,
+				546701E32508DF55008D23B4 /* KSwiftyCameraVC.xib */,
+				546701DA2508DF54008D23B4 /* KVideoDisplayVC.swift */,
+				546701DB2508DF54008D23B4 /* SwiftyCamera */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		546701DB2508DF54008D23B4 /* SwiftyCamera */ = {
+			isa = PBXGroup;
+			children = (
+				546701DC2508DF54008D23B4 /* SwiftyCamButton.swift */,
+				546701DD2508DF54008D23B4 /* SwiftyOrientation.swift */,
+				546701DE2508DF54008D23B4 /* SwiftyCamViewController.swift */,
+				546701DF2508DF54008D23B4 /* SwiftyCamViewControllerDelegate.swift */,
+				546701E02508DF54008D23B4 /* SwiftyPreviewView.swift */,
+			);
+			name = SwiftyCamera;
+			path = KLrcCamera/Src/Camera/ios/SwiftyCamera;
+			sourceTree = SOURCE_ROOT;
+		};
+		546701F02508DF71008D23B4 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				546702002508E017008D23B4 /* UI */,
+				546701F52508DFE7008D23B4 /* speech */,
+				546701F12508DFA8008D23B4 /* KSiriVC.swift */,
+				546701F22508DFA8008D23B4 /* KSiriVC.xib */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		546701F52508DFE7008D23B4 /* speech */ = {
+			isa = PBXGroup;
+			children = (
+				546701F62508DFE7008D23B4 /* OSSSpeech.swift */,
+				546701F72508DFE7008D23B4 /* OSSUtterance.swift */,
+				546701F82508DFE7008D23B4 /* OSSVoice.swift */,
+				546701F92508DFE7008D23B4 /* OSSSpeechUtility.swift */,
+				546701FA2508DFE7008D23B4 /* CountryImages.xcassets */,
+			);
+			path = speech;
+			sourceTree = "<group>";
+		};
+		546702002508E017008D23B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				546702032508F18D008D23B4 /* com */,
+				546702012508E057008D23B4 /* KLanguageTableVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		546702032508F18D008D23B4 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				546702082508F281008D23B4 /* NavigationBar.swift */,
+				546702092508F281008D23B4 /* NavigationController.swift */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		5467021025090882008D23B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				546702132509092A008D23B4 /* String+Range.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7DF3EA1ECE92C69A17B4BD21 /* Frameworks */ = {
@@ -202,7 +317,6 @@
 				671AD5D3C792A9EC20A4528D /* Pods-KLrcCameraTests.debug.xcconfig */,
 				C9FE729860127688D2DCCDE2 /* Pods-KLrcCameraTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -314,10 +428,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546701BB2508D70D008D23B4 /* CountryImages.xcassets in Resources */,
 				5467018C2508D639008D23B4 /* LaunchScreen.storyboard in Resources */,
 				546701892508D639008D23B4 /* Assets.xcassets in Resources */,
-				546701842508D637008D23B4 /* Main.storyboard in Resources */,
+				546701EF2508DF55008D23B4 /* KSwiftyCameraVC.xib in Resources */,
+				546701EE2508DF55008D23B4 /* KSCameraVC.xib in Resources */,
+				546701FF2508DFE8008D23B4 /* CountryImages.xcassets in Resources */,
+				5467020F2508F909008D23B4 /* KRootViewController.xib in Resources */,
+				546701F42508DFA8008D23B4 /* KSiriVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +562,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546701B92508D70D008D23B4 /* OSSVoice.swift in Sources */,
+				546701E52508DF55008D23B4 /* KPictureDisplayVC.swift in Sources */,
+				546701ED2508DF55008D23B4 /* KSwiftyCameraVC.swift in Sources */,
+				546701EB2508DF55008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,
+				546701E72508DF55008D23B4 /* KVideoDisplayVC.swift in Sources */,
+				546701FE2508DFE8008D23B4 /* OSSSpeechUtility.swift in Sources */,
+				546701E42508DF55008D23B4 /* KSCameraVC.swift in Sources */,
 				546701872508D637008D23B4 /* KLrcCamera.xcdatamodeld in Sources */,
-				546701BA2508D70D008D23B4 /* OSSSpeechUtility.swift in Sources */,
-				546701812508D637008D23B4 /* ViewController.swift in Sources */,
+				5467020E2508F909008D23B4 /* KRootViewController.swift in Sources */,
+				546701FB2508DFE8008D23B4 /* OSSSpeech.swift in Sources */,
+				546702022508E057008D23B4 /* KLanguageTableVC.swift in Sources */,
 				5467017D2508D637008D23B4 /* AppDelegate.swift in Sources */,
-				546701B82508D70D008D23B4 /* OSSUtterance.swift in Sources */,
-				5467017F2508D637008D23B4 /* SceneDelegate.swift in Sources */,
-				546701B72508D70D008D23B4 /* OSSSpeech.swift in Sources */,
+				5467020B2508F281008D23B4 /* NavigationController.swift in Sources */,
+				5467020A2508F281008D23B4 /* NavigationBar.swift in Sources */,
+				546701E82508DF55008D23B4 /* SwiftyCamButton.swift in Sources */,
+				546701EA2508DF55008D23B4 /* SwiftyCamViewController.swift in Sources */,
+				546701E62508DF55008D23B4 /* KRecordButton.swift in Sources */,
+				546701F32508DFA8008D23B4 /* KSiriVC.swift in Sources */,
+				546701E92508DF55008D23B4 /* SwiftyOrientation.swift in Sources */,
+				546702142509092A008D23B4 /* String+Range.swift in Sources */,
+				546701FC2508DFE8008D23B4 /* OSSUtterance.swift in Sources */,
+				546701FD2508DFE8008D23B4 /* OSSVoice.swift in Sources */,
+				546701EC2508DF55008D23B4 /* SwiftyPreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,14 +619,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		546701822508D637008D23B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				546701832508D637008D23B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5467018A2508D639008D23B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

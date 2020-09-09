@@ -7,22 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE0AD724565BC693723C70D3BB2A7C1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A523A77C993ED68629B17356298FFB5D /* SnapKit.framework */; };
 		17CE0578F3322AEABB7B5DAA36E18B16 /* Pods-KLrcCameraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B0AB8D25D118FE719EE1282068763 /* Pods-KLrcCameraTests-dummy.m */; };
-		18591BC565A9DD7923920CE22B8E9948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		28D13D95A0BEB6BF174E108EE5ED8306 /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73824947910A5D5F133D0894FBA4BB53 /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B1AF8EF30381B46379523D6F28D78F2 /* Device.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479FDC8A3863DC0B938FD5660860C9D2 /* Device.generated.swift */; };
-		393322BF510936A8CE62F4DD6EC6628A /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5284D54C81DB3B8A1CB1D6D87ABF58 /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m */; };
-		59617574D268DFE7C5440267F9AF5A9D /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3999B5917D2FE6E6B28DF178B6E1965 /* DeviceKit-dummy.m */; };
-		666DB8C81CEFFFE9D55BB26E692B999A /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A33F6E08BDC27A1AE9049076DDE832 /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18591BC565A9DD7923920CE22B8E9948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		18A111F6A6EC5F15C85272E5B19DB54F /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CC2A5B7BAEBB3442F257CB5EC63CE /* BannerColors.swift */; };
+		19D62B5850DBBC1868A55E502FE22589 /* KVOController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A2FF26604CBD8958AB32C0A0E5426A /* KVOController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A09A36C7ED2126FE226AB9D55D2EEE6 /* NSObject+FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = B766D29ED4DD30F91C7057ACE0AE76F3 /* NSObject+FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203221F9EBAF55D819E66A47039EFD01 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7845FB9AB547D8783370C3EFE2847 /* ConstraintRelation.swift */; };
+		284D017F653F6142F811599B5A722FF3 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4FB3969303CDF6BA65CEF9E5F610C /* ConstraintView+Extensions.swift */; };
+		28FF2DD2E26316CA3F053BEA685AD6A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97E52C608AC27CC429A533D47D62A44 /* UIKit.framework */; };
+		2B1AF8EF30381B46379523D6F28D78F2 /* Device.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E37076156C4274286E9AAE8AEBAA8 /* Device.generated.swift */; };
+		2E23AB69B91A8C144772C8311CD3F289 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C697FEC470427C0A9B73EB51C3A940 /* ConstraintPriority.swift */; };
+		2FC1CD90CE92CD67FB18C984E11C849D /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C4A973A24D006AE21684E34CF5803 /* ConstraintAttributes.swift */; };
+		2FF739951BAAA7FF0CED152454F7CBFC /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7101FA41135B5F75D584D96E89E72B /* ConstraintConstantTarget.swift */; };
+		325BA69A1881ED0F610714A630739449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		37BB37D70B0C8C8C5C7492331788465D /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C9C67377148271CC099F56182AB11 /* LayoutConstraintItem.swift */; };
+		395D94F6A56397448660426A101CA0CA /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D846B3CA2DFB9BB2683FE22070E4C3B6 /* MarqueeLabel.framework */; };
+		3B0303EFE03436A4FB5C5C4119403070 /* Pods-KLrcCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 808817646E47E2FCE82366C690B4DA79 /* Pods-KLrcCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40051A1CBB3F4FF55BB60549C462A096 /* BannerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813B1355DFAA3010002CB69FC424674 /* BannerAnimation.swift */; };
+		429467C3DDDCF81815ADDEAFA7BAA4B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		429F6E5AB475437DE7D9FE2B98C699D3 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B2B433EFC4441B8D369310C1C3213 /* ConstraintInsetTarget.swift */; };
+		45664F4AF395061B7E68AFEDBD55E37A /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3328C6E725B02A1643AD0880740938 /* ConstraintDirectionalInsets.swift */; };
+		4593E9D3846547373C25C000A96627D8 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329832E2C2FBC9041C403ECE162EB187 /* ConstraintLayoutSupportDSL.swift */; };
+		4666C22AB36FA28565AFD1DACEB03170 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11790539E1BEAC0F20811992C95F510A /* Debugging.swift */; };
+		4E1D870DF7A7B3A66A3C32A786FA8857 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E6F3A9587793E6205C4DCD93E5740 /* ConstraintMakerFinalizable.swift */; };
+		51DB9B6CCE5852B4FA665E0D535E2C44 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5CBD7B5F6EA3B2DBFF573DB0784FFC /* ConstraintDescription.swift */; };
+		5347875CD94DE2A4DF50D7B0A819F0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		53CAF8CF3A8ED2711A5048261EC0183F /* BaseNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49006A4A0CFFB5014A3A51C1DFC899 /* BaseNotificationBanner.swift */; };
+		57E82F372739E2AA143375228DB232EA /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1EF07BFAB80A56528E304D467EB8F /* ConstraintMakerPriortizable.swift */; };
+		59617574D268DFE7C5440267F9AF5A9D /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAC44890468D3EA20D1A65200DCABF7 /* DeviceKit-dummy.m */; };
+		5A0202FC02EB70E8301FE65F95DAA05C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD946188A362E31A28B6B3B99B5BF76 /* ConstraintViewDSL.swift */; };
+		5A4EFF8ABAEEA8F19E92E9E36F06CB86 /* NotificationBannerQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7655326497F81DC5F0E75FEFD6BA3954 /* NotificationBannerQueue.swift */; };
+		5C553FBDE4B3794145A0393D1834861A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F652A807DE4C3F8616F8E6AF10B6FB0E /* ConstraintInsets.swift */; };
+		60DEF4D90C759B8592D77B5D6183A418 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1902D807058C0C1BD1CD4D82641A0DE /* UILayoutSupport+Extensions.swift */; };
+		6539ADCDCE36807DA760DADA763EF121 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF02612BD26F81DFCDED241564A4697 /* ConstraintOffsetTarget.swift */; };
+		666DB8C81CEFFFE9D55BB26E692B999A /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91632018DFF23F72D6C4AE8EE0A3D7A5 /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		669C3F6EEFDE57E600B8796396CE0EB7 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68342B98354E5FC5ACCB35B330A0C63 /* LayoutConstraint.swift */; };
+		673BF136DE5A9374DB780431DFF7A0B4 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732E1F81B93DFDE3F2E9A9D4C6B964A /* ConstraintView.swift */; };
+		6CB05B619C38101CFAAAF9CFB9AED433 /* NotificationBannerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEF16ABAF36D69C87D1589722EEE796 /* NotificationBannerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E97645B31FAC1C6E5961BF951C09A42 /* BannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447CE67DAB0CA1D0AF520572DA2EB5B /* BannerStyle.swift */; };
 		6FFE47CCBB56517FE95D1D5C33AF75E2 /* Pods-KLrcCameraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0302A63C25ECE728E2EA93A7D7844D5 /* Pods-KLrcCameraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7958939D37CD205285BF7F12E6D1AED9 /* Pods-KLrcCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B065927CBC208496F39BD70924055D /* Pods-KLrcCamera-dummy.m */; };
-		8497E5E7DCC70111EC600CE4A0530EA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B0361729A532AA7A82E1087789D1C23B /* Pods-KLrcCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 808817646E47E2FCE82366C690B4DA79 /* Pods-KLrcCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2CFF22C3812501262ACB68637FAE92A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F3B58865400B940609D3B8E98C5834E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		75A2B460366AE806A610C9B90C64B797 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED63C988475B531F59EE8BEF7FAD638 /* FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B46652AE2AF659D0A80D7E57ED792E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		7BCFAAB2FDCD787842E193AD7781377F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE88F8011505253F5FE72D65D65434E /* ConstraintMakerRelatable.swift */; };
+		7BCFECBD2360827FBE1BBADA0CE3275B /* BannerPositionFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D11F0603C694B39DC4E707FD7634D /* BannerPositionFrame.swift */; };
+		80D7AAAD0D98D85D3DA488EA61E2F7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		872784A62CBB7B26530FE5FB70B48593 /* GrowingNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669BB5BCF531DE21467D4F196585813B /* GrowingNotificationBanner.swift */; };
+		889E2157616BF0844E55BCDC2C30A278 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D2710F8DCB6B38AD747E4420165D6 /* NSObject+FBKVOController.m */; };
+		89A30BAA43E59C3FFE26AD9DCA149424 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94C80B1DBBD0C896E3EB252BA25DE5 /* ConstraintDSL.swift */; };
+		8EE50CA49BDB3CC47A65D143D798AA72 /* KVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CDA4626EDDA93D95A93C586C4427B81 /* KVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955ADC292E48543E7B404B44028987F0 /* String+heightForConstrainedWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2067ECD26DA8E4CD07BC6F5898AE3D /* String+heightForConstrainedWidth.swift */; };
+		9670C11FE884391249C5154C3E319CDF /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DDB453F3B705959F093271DD88459 /* FBKVOController.m */; };
+		9817FE408F452A0720BEA10682715FF4 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BE9F1865C195A07E8215EC69A2DAF /* ConstraintMakerEditable.swift */; };
+		9A1936F90086E3453D464ECC9CF985C6 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B74B3FA5F1086E3A1C55547E5EA11E /* ConstraintPriorityTarget.swift */; };
+		9C10DCF21E33F2F351ABC67BDB6B6D2E /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73824947910A5D5F133D0894FBA4BB53 /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DDE84192DB7F9EBA0796DAE9C61640A /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5284D54C81DB3B8A1CB1D6D87ABF58 /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m */; };
+		9E42DE04CA4B540B331B019AF22E0BC7 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40172A8BEE91D6D6A850F891EB9B4E0 /* ConstraintMultiplierTarget.swift */; };
+		A06EF55B3C8DAA8B3E859044109DE614 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5052A65487B918D23C41D239676839 /* Constraint.swift */; };
+		A0CB68D79EDD8B0EB08C287EC90F6C2F /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA537A03B218D06787C44CC103D9C52F /* ConstraintLayoutGuide+Extensions.swift */; };
+		AB8C349C46978DF528A142C1C0959039 /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C7C8BF043D850BE39B32905B393EC /* KVOController-dummy.m */; };
+		ACBF25B65F0B14835F6984CE2876755C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0D87487F980F56BA10E0DC7D27917 /* ConstraintConfig.swift */; };
+		ADE8E38AE2FC314562F857E3D97467C4 /* MarqueeLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3387C1AE10AED19297D32D2EC1BBBDF /* MarqueeLabel-dummy.m */; };
+		AED51B90715A59D581433234B75E35B5 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD24C7C7FD63BFB120B7AFE7F51CE4A /* SnapKit-dummy.m */; };
+		B6D583573175665B793664A874414B61 /* BannerHapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396AE70E90332AADA2CC2DDBD5385A3F /* BannerHapticGenerator.swift */; };
+		B8940DE9A5F221CDF4D050A63B972472 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 556FB85F10E9E6866E17BDD2E8753282 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD503BE4798FC30D23AC747146D39FE2 /* MarqueeLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2415DC20A759631E940264791E195954 /* MarqueeLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD9BB3C791777E286CBD4D6897F6CBB2 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFAD1ED4E8592B6835A23F924BBCB87 /* ConstraintDirectionalInsetTarget.swift */; };
+		BE4622189088672DCB1C02FC478D4E33 /* NotificationBannerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5705E485AC902FA87886B1494AD5CF /* NotificationBannerUtilities.swift */; };
+		BEE8A31A2C5F1AA796F687B485257608 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC651E3FD24CB1E783B0E848FA807F97 /* ConstraintRelatableTarget.swift */; };
+		BEF4745C01CEFB14D3E8274BB9D90EE5 /* StatusBarNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D8790499380D4F391F405FDB961C7 /* StatusBarNotificationBanner.swift */; };
+		C2FE2A76E400CC0C7708F7EB8E056E7B /* NotificationBannerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D639C7573A9B6B2E83EAE31D4424456 /* NotificationBannerSwift-dummy.m */; };
+		C7DF3D5907737BD47DE4F2797A15A7F1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C53C2F01569E82BAD499AFC7669BD /* ConstraintLayoutGuideDSL.swift */; };
+		C8BB2EAEB3F03D521DC374327ADD7FE7 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275486293887000E3D26C33A6F8B2454 /* MarqueeLabel.swift */; };
+		CB636C1CDF8CA68CC827890EC33EA8D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		D5537DBA95F413DB8E97747F3AAB5438 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00404BBAD4965B7C2EEC4C35008FE2 /* ConstraintLayoutGuide.swift */; };
+		DA19086666C71398AD5336B5FE5428C7 /* Pods-KLrcCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B065927CBC208496F39BD70924055D /* Pods-KLrcCamera-dummy.m */; };
+		DEF0B2686252E09E87E3DA668145FA5D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C76F47569EE633FBFD29CDEC5DE66 /* Typealiases.swift */; };
+		DF4CAA1C20074265885E5BD402F363CA /* UIWindow+orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC27BDF6CE67CCAA5F4D6FDCB846585 /* UIWindow+orientation.swift */; };
+		E28AA2D69D4E25037A95BBD16751B8B9 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD025E2FFE763FCB61716A8F2938DB /* ConstraintMaker.swift */; };
+		ECC7FF3F30832ABD8353E2DDD9DDAAAC /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395BAB3058BBB3A878473A31D98AC9C /* ConstraintLayoutSupport.swift */; };
+		F2CFF22C3812501262ACB68637FAE92A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317B662381B96B82770403722D0C355 /* Foundation.framework */; };
+		F7465AE74252503E904BA51EDDA4B1AC /* FloatingNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDBAB3F194F364EC696CBAC82F48B3 /* FloatingNotificationBanner.swift */; };
+		F756028503F75C1C49B7FD590F110051 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246905C3E2235BED52FD6852C33E9C6A /* ConstraintItem.swift */; };
+		F7DA2C41C0084C397C7E90D094F823CE /* NotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ECE0A50BC550491FE6B1073585D4C4 /* NotificationBanner.swift */; };
+		F9804CC0F10C7CCDE5A8ECC0FD4A5190 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CABC076DC03CAA64580BC06AED4A2E3 /* QuartzCore.framework */; };
+		FE9CDBCB4D200D662D8A5634AC92786C /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B5BF9B0883110C091F1AF4ED124D5D /* ConstraintMakerExtendable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03D32ABE047B4C25747F0E1FDA89DC54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DB88E45B0ED14F0C8827BE9C46C95;
+			remoteInfo = MarqueeLabel;
+		};
+		1128EC9F8FA6B8F6DCAFF060F1B67B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		3DF709367D9CA00B9FA052A9387C4F00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
 		4D4FF50A13BEF8C51FADE7BDCAA4EB03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -30,63 +123,204 @@
 			remoteGlobalIDString = AAACB9BD43795BD644241A01CD1AC457;
 			remoteInfo = "Pods-KLrcCamera";
 		};
-		CBDFA118667E829EB6813F14D35510F1 /* PBXContainerItemProxy */ = {
+		4ECCB0A7387F329921BC167C2DF23FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DB88E45B0ED14F0C8827BE9C46C95;
+			remoteInfo = MarqueeLabel;
+		};
+		67463342937A6E1CEDD1B239333D587E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2745F4FABCC3C8D07F78FE199F16EE;
+			remoteInfo = NotificationBannerSwift;
+		};
+		6CE7A738B3C1293A473145556015AAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		6F851419C28752264EAF54327DF501AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4CDD1C6C8885D07092D8EA708AAC0E53;
 			remoteInfo = DeviceKit;
 		};
-		D9DDE7D3D4F3495A929C9BFFCEE20516 /* PBXContainerItemProxy */ = {
+		9EFAC69905C6280F11E28936701DC529 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2745F4FABCC3C8D07F78FE199F16EE;
+			remoteInfo = NotificationBannerSwift;
+		};
+		A88F6050530DFE4091FCC0B335CB3459 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4CDD1C6C8885D07092D8EA708AAC0E53;
 			remoteInfo = DeviceKit;
+		};
+		BC1412B2A5353ED47C24C7B8BB08C885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23DB88E45B0ED14F0C8827BE9C46C95;
+			remoteInfo = MarqueeLabel;
+		};
+		CEE89AD980B640D88987156543227F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2568F753F09C4DFFD8770DCC78EDAEAE;
+			remoteInfo = KVOController;
+		};
+		D07BC9C15CEFEDD7C1E7CE4472D9B117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2568F753F09C4DFFD8770DCC78EDAEAE;
+			remoteInfo = KVOController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14A33F6E08BDC27A1AE9049076DDE832 /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
+		030DDB453F3B705959F093271DD88459 /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
+		0356ADB57183BDB564C7D9BF849D0EBC /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		0AB91F46DDDA5588520D012E6F4FB918 /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotificationBannerSwift.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3914875BAC5AFFEF3AC1D478F273BA /* DeviceKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeviceKit-Info.plist"; sourceTree = "<group>"; };
+		0E2067ECD26DA8E4CD07BC6F5898AE3D /* String+heightForConstrainedWidth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+heightForConstrainedWidth.swift"; path = "NotificationBanner/Classes/String+heightForConstrainedWidth.swift"; sourceTree = "<group>"; };
+		0F5CBD7B5F6EA3B2DBFF573DB0784FFC /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		11790539E1BEAC0F20811992C95F510A /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		15CB41F65F4CDB544643F116CA0E82F8 /* Pods_KLrcCamera_KLrcCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLrcCamera_KLrcCameraUITests.framework; path = "Pods-KLrcCamera-KLrcCameraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		190D7383CCEFD8AB3F8CB93098A3F214 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeviceKit.framework; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00404BBAD4965B7C2EEC4C35008FE2 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		1F4B0AB8D25D118FE719EE1282068763 /* Pods-KLrcCameraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLrcCameraTests-dummy.m"; sourceTree = "<group>"; };
+		1FFD025E2FFE763FCB61716A8F2938DB /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		2415DC20A759631E940264791E195954 /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
+		246905C3E2235BED52FD6852C33E9C6A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		26CDBAB3F194F364EC696CBAC82F48B3 /* FloatingNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingNotificationBanner.swift; path = NotificationBanner/Classes/FloatingNotificationBanner.swift; sourceTree = "<group>"; };
+		274B2B433EFC4441B8D369310C1C3213 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		275486293887000E3D26C33A6F8B2454 /* MarqueeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarqueeLabel.swift; path = Sources/MarqueeLabel.swift; sourceTree = "<group>"; };
 		2E37AD0FE3E85A860E9F2B7C73574835 /* Pods-KLrcCameraTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCameraTests-Info.plist"; sourceTree = "<group>"; };
 		2E68E528303D473C3DB851097AD23C58 /* Pods-KLrcCameraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLrcCameraTests.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		329832E2C2FBC9041C403ECE162EB187 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		362E37076156C4274286E9AAE8AEBAA8 /* Device.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.generated.swift; path = Source/Device.generated.swift; sourceTree = "<group>"; };
+		383B19BA09671ADD9E4B4D152EF85D04 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		38B8F4C686BD309A74C1A3CC32B48867 /* Pods-KLrcCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCamera-Info.plist"; sourceTree = "<group>"; };
+		396AE70E90332AADA2CC2DDBD5385A3F /* BannerHapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerHapticGenerator.swift; path = NotificationBanner/Classes/BannerHapticGenerator.swift; sourceTree = "<group>"; };
+		399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVOController.framework; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD24C7C7FD63BFB120B7AFE7F51CE4A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		3B4C9C67377148271CC099F56182AB11 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		3B5052A65487B918D23C41D239676839 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		3D1BAA1B88012C38D53611360A9C2E71 /* Pods-KLrcCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLrcCamera.modulemap"; sourceTree = "<group>"; };
+		3ED63C988475B531F59EE8BEF7FAD638 /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
+		4317B662381B96B82770403722D0C355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4447CE67DAB0CA1D0AF520572DA2EB5B /* BannerStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerStyle.swift; path = NotificationBanner/Classes/BannerStyle.swift; sourceTree = "<group>"; };
 		45586C0B1EE8F59F4FE0C83A97647C49 /* Pods-KLrcCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCamera.release.xcconfig"; sourceTree = "<group>"; };
-		479FDC8A3863DC0B938FD5660860C9D2 /* Device.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.generated.swift; path = Source/Device.generated.swift; sourceTree = "<group>"; };
 		4AB85704E3D01D419A423C7094BB063C /* Pods-KLrcCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5CFDD84DA23EB050FB5D93DD4173B2 /* KVOController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KVOController-Info.plist"; sourceTree = "<group>"; };
+		4D639C7573A9B6B2E83EAE31D4424456 /* NotificationBannerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotificationBannerSwift-dummy.m"; sourceTree = "<group>"; };
+		4D94C80B1DBBD0C896E3EB252BA25DE5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		4E939132119C6EFDCE88CE1B09AB3442 /* MarqueeLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.release.xcconfig; sourceTree = "<group>"; };
 		516DB24B247B3E832C8A294AB5334945 /* Pods-KLrcCamera-KLrcCameraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KLrcCamera-KLrcCameraUITests-frameworks.sh"; sourceTree = "<group>"; };
+		54B74B3FA5F1086E3A1C55547E5EA11E /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		556FB85F10E9E6866E17BDD2E8753282 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		57B065927CBC208496F39BD70924055D /* Pods-KLrcCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLrcCamera-dummy.m"; sourceTree = "<group>"; };
 		59C5ADE8BE8536395E76641DF60F3A0B /* Pods-KLrcCamera-KLrcCameraUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCamera-KLrcCameraUITests-Info.plist"; sourceTree = "<group>"; };
+		5A1D8790499380D4F391F405FDB961C7 /* StatusBarNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarNotificationBanner.swift; path = NotificationBanner/Classes/StatusBarNotificationBanner.swift; sourceTree = "<group>"; };
+		5CDA4626EDDA93D95A93C586C4427B81 /* KVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOController.h; path = FBKVOController/KVOController.h; sourceTree = "<group>"; };
+		5D2639C9CDC68751CA7935929643488E /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KVOController.modulemap; sourceTree = "<group>"; };
+		63CF65A7567FF7D74D36D1FC30927730 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		64E56207D392BB2B618938B7EDBD6BCE /* DeviceKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.release.xcconfig; sourceTree = "<group>"; };
+		64ECE0A50BC550491FE6B1073585D4C4 /* NotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBanner.swift; path = NotificationBanner/Classes/NotificationBanner.swift; sourceTree = "<group>"; };
+		659C7C8BF043D850BE39B32905B393EC /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
+		669BB5BCF531DE21467D4F196585813B /* GrowingNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingNotificationBanner.swift; path = NotificationBanner/Classes/GrowingNotificationBanner.swift; sourceTree = "<group>"; };
 		69D440732C2EBE447876B49794BC0620 /* Pods-KLrcCamera-KLrcCameraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCamera-KLrcCameraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C67DBB84F8FE88C6FB69114250653D3 /* NotificationBannerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NotificationBannerSwift-Info.plist"; sourceTree = "<group>"; };
+		6CA7478B358A20819483462C282F446F /* NotificationBannerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationBannerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		6CE1B295F09F823CA6D184810F2A58F4 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		6DFAD1ED4E8592B6835A23F924BBCB87 /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		6EEF16ABAF36D69C87D1589722EEE796 /* NotificationBannerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationBannerSwift-umbrella.h"; sourceTree = "<group>"; };
 		73824947910A5D5F133D0894FBA4BB53 /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLrcCamera-KLrcCameraUITests-umbrella.h"; sourceTree = "<group>"; };
-		73C2A6ED7186883AD0BF84E7FBBABECE /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeviceKit.modulemap; sourceTree = "<group>"; };
+		7655326497F81DC5F0E75FEFD6BA3954 /* NotificationBannerQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerQueue.swift; path = NotificationBanner/Classes/NotificationBannerQueue.swift; sourceTree = "<group>"; };
+		7CABC076DC03CAA64580BC06AED4A2E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		808817646E47E2FCE82366C690B4DA79 /* Pods-KLrcCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLrcCamera-umbrella.h"; sourceTree = "<group>"; };
+		80A4FB3969303CDF6BA65CEF9E5F610C /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		8395BAB3058BBB3A878473A31D98AC9C /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		85264D274DA7CCEFCD398A0B00E112FA /* Pods-KLrcCamera-KLrcCameraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLrcCamera-KLrcCameraUITests.modulemap"; sourceTree = "<group>"; };
+		868A6C9F0BB0E18B58F3502BC16FD793 /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeviceKit.modulemap; sourceTree = "<group>"; };
+		8813B1355DFAA3010002CB69FC424674 /* BannerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerAnimation.swift; path = NotificationBanner/Classes/BannerAnimation.swift; sourceTree = "<group>"; };
 		88E2A33844866959BD122275EA70B5E8 /* Pods-KLrcCameraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLrcCameraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8D346B0BACAF0E195A0850EDE34322CF /* DeviceKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.debug.xcconfig; sourceTree = "<group>"; };
+		8A8C5024361D3367A5D9A981069A5CD0 /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
+		8AD45F50AD12855FF5A432488D22E368 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		8AFEB29BCCC1F6D7D1CBA00F7588023B /* MarqueeLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.debug.xcconfig; sourceTree = "<group>"; };
+		8D395DE6C5E0D037706BD2BC5F75416D /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
 		8D7040ECD7810EACF1C1B57B001DC897 /* Pods-KLrcCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KLrcCamera-frameworks.sh"; sourceTree = "<group>"; };
+		8E5705E485AC902FA87886B1494AD5CF /* NotificationBannerUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerUtilities.swift; path = NotificationBanner/Classes/NotificationBannerUtilities.swift; sourceTree = "<group>"; };
 		901C7ED1EE7A7AD2125FD85BC49163A9 /* Pods_KLrcCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLrcCamera.framework; path = "Pods-KLrcCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91632018DFF23F72D6C4AE8EE0A3D7A5 /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7D2710F8DCB6B38AD747E4420165D6 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F49006A4A0CFFB5014A3A51C1DFC899 /* BaseNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseNotificationBanner.swift; path = NotificationBanner/Classes/BaseNotificationBanner.swift; sourceTree = "<group>"; };
+		A1902D807058C0C1BD1CD4D82641A0DE /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		A40172A8BEE91D6D6A850F891EB9B4E0 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		A5118A2C1617FC859076E20F655C0702 /* Pods-KLrcCamera-KLrcCameraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLrcCamera-KLrcCameraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A5348B885476F3C3D6C8AFCCEC3675A6 /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
+		A523A77C993ED68629B17356298FFB5D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3BE9F1865C195A07E8215EC69A2DAF /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		AB8CC2A5B7BAEBB3442F257CB5EC63CE /* BannerColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerColors.swift; path = NotificationBanner/Classes/BannerColors.swift; sourceTree = "<group>"; };
+		ADE88F8011505253F5FE72D65D65434E /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		AEF7845FB9AB547D8783370C3EFE2847 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		B1E0D87487F980F56BA10E0DC7D27917 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		B3387C1AE10AED19297D32D2EC1BBBDF /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
 		B3A2DAB95489CA252762FAF475B4A18A /* Pods-KLrcCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCamera-acknowledgements.plist"; sourceTree = "<group>"; };
+		B41C76F47569EE633FBFD29CDEC5DE66 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		B4EDA7AF24124B2CF27157C846B022F7 /* Pods-KLrcCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLrcCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B766D29ED4DD30F91C7057ACE0AE76F3 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		B83E6F3A9587793E6205C4DCD93E5740 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		B86941A4085D0EA8C2834E539B672E57 /* KVOController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.debug.xcconfig; sourceTree = "<group>"; };
+		BD1E7249E363324E2791EE4732D55AEA /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
+		BDAC44890468D3EA20D1A65200DCABF7 /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
+		C00FD210CD51C8722F80F84672F4205E /* MarqueeLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-prefix.pch"; sourceTree = "<group>"; };
 		C0302A63C25ECE728E2EA93A7D7844D5 /* Pods-KLrcCameraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLrcCameraTests-umbrella.h"; sourceTree = "<group>"; };
+		C20C53C2F01569E82BAD499AFC7669BD /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		C4C697FEC470427C0A9B73EB51C3A940 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		C5ACA708222AC5FBFA6AAC3C7D441010 /* Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C818C50B4586A8CFAFC59A94CEE3AE79 /* Pods-KLrcCameraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLrcCameraTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CAD946188A362E31A28B6B3B99B5BF76 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		CAF02612BD26F81DFCDED241564A4697 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		CC850E3E7B891EA9F555C63D660FDDA9 /* MarqueeLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MarqueeLabel-Info.plist"; sourceTree = "<group>"; };
 		CCDBA63FF26E14C52305181E7CEBC7D9 /* Pods_KLrcCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KLrcCameraTests.framework; path = "Pods-KLrcCameraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D13DC9D6B074887452F9DE2FE8D99B46 /* DeviceKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeviceKit-Info.plist"; sourceTree = "<group>"; };
+		CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B5BF9B0883110C091F1AF4ED124D5D /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		D42A128FEC9AA4F82676D408F7510A81 /* Pods-KLrcCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCameraTests.release.xcconfig"; sourceTree = "<group>"; };
-		E3999B5917D2FE6E6B28DF178B6E1965 /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
+		D6A0FCF93C154D07BDCCD834E798DE26 /* NotificationBannerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationBannerSwift.release.xcconfig; sourceTree = "<group>"; };
+		D77C4A973A24D006AE21684E34CF5803 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		D846B3CA2DFB9BB2683FE22070E4C3B6 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97E52C608AC27CC429A533D47D62A44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB3D11F0603C694B39DC4E707FD7634D /* BannerPositionFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerPositionFrame.swift; path = NotificationBanner/Classes/BannerPositionFrame.swift; sourceTree = "<group>"; };
+		DC651E3FD24CB1E783B0E848FA807F97 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		DCC27BDF6CE67CCAA5F4D6FDCB846585 /* UIWindow+orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+orientation.swift"; path = "NotificationBanner/Classes/UIWindow+orientation.swift"; sourceTree = "<group>"; };
+		DDEAE680D6F8C6B16C1655C60A8B3D98 /* KVOController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.release.xcconfig; sourceTree = "<group>"; };
+		DE3328C6E725B02A1643AD0880740938 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		DE7C6997DFFE1EA90F7D3AC807EABCE9 /* NotificationBannerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationBannerSwift-prefix.pch"; sourceTree = "<group>"; };
 		E4626F6F84EBBA496AF21834B5585CAF /* Pods-KLrcCamera-KLrcCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCamera-KLrcCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E5575FDCB91209C3F8415C21903F60B7 /* Pods-KLrcCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLrcCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		EA537A03B218D06787C44CC103D9C52F /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		ED5284D54C81DB3B8A1CB1D6D87ABF58 /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLrcCamera-KLrcCameraUITests-dummy.m"; sourceTree = "<group>"; };
-		F7274719FAE2990DC2AB8E6D21969BB7 /* DeviceKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.release.xcconfig; sourceTree = "<group>"; };
+		F0A2FF26604CBD8958AB32C0A0E5426A /* KVOController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-umbrella.h"; sourceTree = "<group>"; };
+		F652A807DE4C3F8616F8E6AF10B6FB0E /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		F68342B98354E5FC5ACCB35B330A0C63 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F732E1F81B93DFDE3F2E9A9D4C6B964A /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		F8A1EF07BFAB80A56528E304D467EB8F /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		FA7101FA41135B5F75D584D96E89E72B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		FE0572C832378A0EF3E84557A5B8C304 /* DeviceKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.debug.xcconfig; sourceTree = "<group>"; };
+		FF8F87C71211FD21BEFF8BE308E3F289 /* NotificationBannerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NotificationBannerSwift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +332,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BA2B119D23A1CD8A76878F19F5D1A98 /* Frameworks */ = {
+		270485E6C1871A24695A7A5D16024177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B58865400B940609D3B8E98C5834E3 /* Foundation.framework in Frameworks */,
+				CB636C1CDF8CA68CC827890EC33EA8D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4274CA0E731AECC68C24808C7E6703AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325BA69A1881ED0F610714A630739449 /* Foundation.framework in Frameworks */,
+				F9804CC0F10C7CCDE5A8ECC0FD4A5190 /* QuartzCore.framework in Frameworks */,
+				28FF2DD2E26316CA3F053BEA685AD6A1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,17 +358,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9C3ED49BA0092F3FE4D6798B369E55F /* Frameworks */ = {
+		AA749837471EE842F4B01CE102FA2469 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8497E5E7DCC70111EC600CE4A0530EA8 /* Foundation.framework in Frameworks */,
+				80D7AAAD0D98D85D3DA488EA61E2F7FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC79DBDBA1AE5117711445FECB1A2EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429467C3DDDCF81815ADDEAFA7BAA4B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB23A59AD93B6D178F63AEA4EBF14D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B46652AE2AF659D0A80D7E57ED792E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7531E7A62790B1A9CC45E40A0F39A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5347875CD94DE2A4DF50D7B0A819F0D3 /* Foundation.framework in Frameworks */,
+				395D94F6A56397448660426A101CA0CA /* MarqueeLabel.framework in Frameworks */,
+				0BE0AD724565BC693723C70D3BB2A7C1 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048FB98355B8EF177292CFD6BCE2152D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AD45F50AD12855FF5A432488D22E368 /* SnapKit.modulemap */,
+				3AD24C7C7FD63BFB120B7AFE7F51CE4A /* SnapKit-dummy.m */,
+				63CF65A7567FF7D74D36D1FC30927730 /* SnapKit-Info.plist */,
+				383B19BA09671ADD9E4B4D152EF85D04 /* SnapKit-prefix.pch */,
+				556FB85F10E9E6866E17BDD2E8753282 /* SnapKit-umbrella.h */,
+				6CE1B295F09F823CA6D184810F2A58F4 /* SnapKit.debug.xcconfig */,
+				0356ADB57183BDB564C7D9BF849D0EBC /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		1021208A679CD9CE61A471781F28B164 /* DeviceKit */ = {
+			isa = PBXGroup;
+			children = (
+				362E37076156C4274286E9AAE8AEBAA8 /* Device.generated.swift */,
+				5F31559ACEB461EC947F942E58C50B25 /* Support Files */,
+			);
+			name = DeviceKit;
+			path = DeviceKit;
+			sourceTree = "<group>";
+		};
 		1A2AA7ED0E07C9572259915DA8ECABCD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +428,53 @@
 				8627113DCD15207B9D66A1B77F0C22F6 /* Pods-KLrcCameraTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		286BE51BE7D8F1319A27E72545DCCC8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D846B3CA2DFB9BB2683FE22070E4C3B6 /* MarqueeLabel.framework */,
+				A523A77C993ED68629B17356298FFB5D /* SnapKit.framework */,
+				78EACF668D6196AB80D8B4CD2A033D68 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37E338AF081BB16D866F39513A468363 /* MarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				275486293887000E3D26C33A6F8B2454 /* MarqueeLabel.swift */,
+				946FEF7E5E022E261AB32127BF4EA19E /* Support Files */,
+			);
+			name = MarqueeLabel;
+			path = MarqueeLabel;
+			sourceTree = "<group>";
+		};
+		39CF22FF4A78161CB206FA5AB93D20B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1021208A679CD9CE61A471781F28B164 /* DeviceKit */,
+				7E4D3CE59BDF649CBAD5653E91126450 /* KVOController */,
+				37E338AF081BB16D866F39513A468363 /* MarqueeLabel */,
+				58A5089672B0EB63197298DDE93A082D /* NotificationBannerSwift */,
+				B9E326134DB032DE2BE2D34D2A393753 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		403AF6022AD45EBAB7A1C8C3FA0632E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D2639C9CDC68751CA7935929643488E /* KVOController.modulemap */,
+				659C7C8BF043D850BE39B32905B393EC /* KVOController-dummy.m */,
+				4C5CFDD84DA23EB050FB5D93DD4173B2 /* KVOController-Info.plist */,
+				BD1E7249E363324E2791EE4732D55AEA /* KVOController-prefix.pch */,
+				F0A2FF26604CBD8958AB32C0A0E5426A /* KVOController-umbrella.h */,
+				B86941A4085D0EA8C2834E539B672E57 /* KVOController.debug.xcconfig */,
+				DDEAE680D6F8C6B16C1655C60A8B3D98 /* KVOController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVOController";
 			sourceTree = "<group>";
 		};
 		4B5A856C997DBDD2E9D40C83B0A575C2 /* Pods-KLrcCamera */ = {
@@ -152,15 +494,66 @@
 			path = "Target Support Files/Pods-KLrcCamera";
 			sourceTree = "<group>";
 		};
-		69283A3B0F7863F237CF1121C98C248C /* Products */ = {
+		58A5089672B0EB63197298DDE93A082D /* NotificationBannerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				190D7383CCEFD8AB3F8CB93098A3F214 /* DeviceKit.framework */,
-				901C7ED1EE7A7AD2125FD85BC49163A9 /* Pods_KLrcCamera.framework */,
-				15CB41F65F4CDB544643F116CA0E82F8 /* Pods_KLrcCamera_KLrcCameraUITests.framework */,
-				CCDBA63FF26E14C52305181E7CEBC7D9 /* Pods_KLrcCameraTests.framework */,
+				8813B1355DFAA3010002CB69FC424674 /* BannerAnimation.swift */,
+				AB8CC2A5B7BAEBB3442F257CB5EC63CE /* BannerColors.swift */,
+				396AE70E90332AADA2CC2DDBD5385A3F /* BannerHapticGenerator.swift */,
+				DB3D11F0603C694B39DC4E707FD7634D /* BannerPositionFrame.swift */,
+				4447CE67DAB0CA1D0AF520572DA2EB5B /* BannerStyle.swift */,
+				9F49006A4A0CFFB5014A3A51C1DFC899 /* BaseNotificationBanner.swift */,
+				26CDBAB3F194F364EC696CBAC82F48B3 /* FloatingNotificationBanner.swift */,
+				669BB5BCF531DE21467D4F196585813B /* GrowingNotificationBanner.swift */,
+				64ECE0A50BC550491FE6B1073585D4C4 /* NotificationBanner.swift */,
+				7655326497F81DC5F0E75FEFD6BA3954 /* NotificationBannerQueue.swift */,
+				8E5705E485AC902FA87886B1494AD5CF /* NotificationBannerUtilities.swift */,
+				5A1D8790499380D4F391F405FDB961C7 /* StatusBarNotificationBanner.swift */,
+				0E2067ECD26DA8E4CD07BC6F5898AE3D /* String+heightForConstrainedWidth.swift */,
+				DCC27BDF6CE67CCAA5F4D6FDCB846585 /* UIWindow+orientation.swift */,
+				C7EDF982D33568300774A861D7BE7EE7 /* Support Files */,
 			);
-			name = Products;
+			name = NotificationBannerSwift;
+			path = NotificationBannerSwift;
+			sourceTree = "<group>";
+		};
+		5F31559ACEB461EC947F942E58C50B25 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				868A6C9F0BB0E18B58F3502BC16FD793 /* DeviceKit.modulemap */,
+				BDAC44890468D3EA20D1A65200DCABF7 /* DeviceKit-dummy.m */,
+				0B3914875BAC5AFFEF3AC1D478F273BA /* DeviceKit-Info.plist */,
+				8A8C5024361D3367A5D9A981069A5CD0 /* DeviceKit-prefix.pch */,
+				91632018DFF23F72D6C4AE8EE0A3D7A5 /* DeviceKit-umbrella.h */,
+				FE0572C832378A0EF3E84557A5B8C304 /* DeviceKit.debug.xcconfig */,
+				64E56207D392BB2B618938B7EDBD6BCE /* DeviceKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DeviceKit";
+			sourceTree = "<group>";
+		};
+		78EACF668D6196AB80D8B4CD2A033D68 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4317B662381B96B82770403722D0C355 /* Foundation.framework */,
+				7CABC076DC03CAA64580BC06AED4A2E3 /* QuartzCore.framework */,
+				D97E52C608AC27CC429A533D47D62A44 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7E4D3CE59BDF649CBAD5653E91126450 /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				3ED63C988475B531F59EE8BEF7FAD638 /* FBKVOController.h */,
+				030DDB453F3B705959F093271DD88459 /* FBKVOController.m */,
+				5CDA4626EDDA93D95A93C586C4427B81 /* KVOController.h */,
+				B766D29ED4DD30F91C7057ACE0AE76F3 /* NSObject+FBKVOController.h */,
+				9D7D2710F8DCB6B38AD747E4420165D6 /* NSObject+FBKVOController.m */,
+				403AF6022AD45EBAB7A1C8C3FA0632E8 /* Support Files */,
+			);
+			name = KVOController;
+			path = KVOController;
 			sourceTree = "<group>";
 		};
 		8627113DCD15207B9D66A1B77F0C22F6 /* Pods-KLrcCameraTests */ = {
@@ -179,19 +572,19 @@
 			path = "Target Support Files/Pods-KLrcCameraTests";
 			sourceTree = "<group>";
 		};
-		8832829C06B73FCE09DFAD2C41A2F047 /* Support Files */ = {
+		946FEF7E5E022E261AB32127BF4EA19E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				73C2A6ED7186883AD0BF84E7FBBABECE /* DeviceKit.modulemap */,
-				E3999B5917D2FE6E6B28DF178B6E1965 /* DeviceKit-dummy.m */,
-				D13DC9D6B074887452F9DE2FE8D99B46 /* DeviceKit-Info.plist */,
-				A5348B885476F3C3D6C8AFCCEC3675A6 /* DeviceKit-prefix.pch */,
-				14A33F6E08BDC27A1AE9049076DDE832 /* DeviceKit-umbrella.h */,
-				8D346B0BACAF0E195A0850EDE34322CF /* DeviceKit.debug.xcconfig */,
-				F7274719FAE2990DC2AB8E6D21969BB7 /* DeviceKit.release.xcconfig */,
+				8D395DE6C5E0D037706BD2BC5F75416D /* MarqueeLabel.modulemap */,
+				B3387C1AE10AED19297D32D2EC1BBBDF /* MarqueeLabel-dummy.m */,
+				CC850E3E7B891EA9F555C63D660FDDA9 /* MarqueeLabel-Info.plist */,
+				C00FD210CD51C8722F80F84672F4205E /* MarqueeLabel-prefix.pch */,
+				2415DC20A759631E940264791E195954 /* MarqueeLabel-umbrella.h */,
+				8AFEB29BCCC1F6D7D1CBA00F7588023B /* MarqueeLabel.debug.xcconfig */,
+				4E939132119C6EFDCE88CE1B09AB3442 /* MarqueeLabel.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/DeviceKit";
+			path = "../Target Support Files/MarqueeLabel";
 			sourceTree = "<group>";
 		};
 		A46BDE19931CB31B5CFA85D51DA61613 /* Pods-KLrcCamera-KLrcCameraUITests */ = {
@@ -211,59 +604,135 @@
 			path = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		B9E326134DB032DE2BE2D34D2A393753 /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				3B5052A65487B918D23C41D239676839 /* Constraint.swift */,
+				D77C4A973A24D006AE21684E34CF5803 /* ConstraintAttributes.swift */,
+				B1E0D87487F980F56BA10E0DC7D27917 /* ConstraintConfig.swift */,
+				FA7101FA41135B5F75D584D96E89E72B /* ConstraintConstantTarget.swift */,
+				0F5CBD7B5F6EA3B2DBFF573DB0784FFC /* ConstraintDescription.swift */,
+				DE3328C6E725B02A1643AD0880740938 /* ConstraintDirectionalInsets.swift */,
+				6DFAD1ED4E8592B6835A23F924BBCB87 /* ConstraintDirectionalInsetTarget.swift */,
+				4D94C80B1DBBD0C896E3EB252BA25DE5 /* ConstraintDSL.swift */,
+				F652A807DE4C3F8616F8E6AF10B6FB0E /* ConstraintInsets.swift */,
+				274B2B433EFC4441B8D369310C1C3213 /* ConstraintInsetTarget.swift */,
+				246905C3E2235BED52FD6852C33E9C6A /* ConstraintItem.swift */,
+				1A00404BBAD4965B7C2EEC4C35008FE2 /* ConstraintLayoutGuide.swift */,
+				EA537A03B218D06787C44CC103D9C52F /* ConstraintLayoutGuide+Extensions.swift */,
+				C20C53C2F01569E82BAD499AFC7669BD /* ConstraintLayoutGuideDSL.swift */,
+				8395BAB3058BBB3A878473A31D98AC9C /* ConstraintLayoutSupport.swift */,
+				329832E2C2FBC9041C403ECE162EB187 /* ConstraintLayoutSupportDSL.swift */,
+				1FFD025E2FFE763FCB61716A8F2938DB /* ConstraintMaker.swift */,
+				AA3BE9F1865C195A07E8215EC69A2DAF /* ConstraintMakerEditable.swift */,
+				D2B5BF9B0883110C091F1AF4ED124D5D /* ConstraintMakerExtendable.swift */,
+				B83E6F3A9587793E6205C4DCD93E5740 /* ConstraintMakerFinalizable.swift */,
+				F8A1EF07BFAB80A56528E304D467EB8F /* ConstraintMakerPriortizable.swift */,
+				ADE88F8011505253F5FE72D65D65434E /* ConstraintMakerRelatable.swift */,
+				A40172A8BEE91D6D6A850F891EB9B4E0 /* ConstraintMultiplierTarget.swift */,
+				CAF02612BD26F81DFCDED241564A4697 /* ConstraintOffsetTarget.swift */,
+				C4C697FEC470427C0A9B73EB51C3A940 /* ConstraintPriority.swift */,
+				54B74B3FA5F1086E3A1C55547E5EA11E /* ConstraintPriorityTarget.swift */,
+				DC651E3FD24CB1E783B0E848FA807F97 /* ConstraintRelatableTarget.swift */,
+				AEF7845FB9AB547D8783370C3EFE2847 /* ConstraintRelation.swift */,
+				F732E1F81B93DFDE3F2E9A9D4C6B964A /* ConstraintView.swift */,
+				80A4FB3969303CDF6BA65CEF9E5F610C /* ConstraintView+Extensions.swift */,
+				CAD946188A362E31A28B6B3B99B5BF76 /* ConstraintViewDSL.swift */,
+				11790539E1BEAC0F20811992C95F510A /* Debugging.swift */,
+				F68342B98354E5FC5ACCB35B330A0C63 /* LayoutConstraint.swift */,
+				3B4C9C67377148271CC099F56182AB11 /* LayoutConstraintItem.swift */,
+				B41C76F47569EE633FBFD29CDEC5DE66 /* Typealiases.swift */,
+				A1902D807058C0C1BD1CD4D82641A0DE /* UILayoutSupport+Extensions.swift */,
+				048FB98355B8EF177292CFD6BCE2152D /* Support Files */,
 			);
-			name = iOS;
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		C7EDF982D33568300774A861D7BE7EE7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF8F87C71211FD21BEFF8BE308E3F289 /* NotificationBannerSwift.modulemap */,
+				4D639C7573A9B6B2E83EAE31D4424456 /* NotificationBannerSwift-dummy.m */,
+				6C67DBB84F8FE88C6FB69114250653D3 /* NotificationBannerSwift-Info.plist */,
+				DE7C6997DFFE1EA90F7D3AC807EABCE9 /* NotificationBannerSwift-prefix.pch */,
+				6EEF16ABAF36D69C87D1589722EEE796 /* NotificationBannerSwift-umbrella.h */,
+				6CA7478B358A20819483462C282F446F /* NotificationBannerSwift.debug.xcconfig */,
+				D6A0FCF93C154D07BDCCD834E798DE26 /* NotificationBannerSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NotificationBannerSwift";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				EFC12DBB242C95DD54F2F8CD7D441E8D /* Pods */,
-				69283A3B0F7863F237CF1121C98C248C /* Products */,
+				286BE51BE7D8F1319A27E72545DCCC8F /* Frameworks */,
+				39CF22FF4A78161CB206FA5AB93D20B0 /* Pods */,
+				D29E10DD101A9921814638DDFAFF0D9C /* Products */,
 				1A2AA7ED0E07C9572259915DA8ECABCD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D29E10DD101A9921814638DDFAFF0D9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				190D7383CCEFD8AB3F8CB93098A3F214 /* DeviceKit.framework */,
+				399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */,
+				CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel.framework */,
+				0AB91F46DDDA5588520D012E6F4FB918 /* NotificationBannerSwift.framework */,
+				901C7ED1EE7A7AD2125FD85BC49163A9 /* Pods_KLrcCamera.framework */,
+				15CB41F65F4CDB544643F116CA0E82F8 /* Pods_KLrcCamera_KLrcCameraUITests.framework */,
+				CCDBA63FF26E14C52305181E7CEBC7D9 /* Pods_KLrcCameraTests.framework */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EFC12DBB242C95DD54F2F8CD7D441E8D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE90B3219D589BE369C32EC9707D8F36 /* DeviceKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FE90B3219D589BE369C32EC9707D8F36 /* DeviceKit */ = {
-			isa = PBXGroup;
-			children = (
-				479FDC8A3863DC0B938FD5660860C9D2 /* Device.generated.swift */,
-				8832829C06B73FCE09DFAD2C41A2F047 /* Support Files */,
-			);
-			name = DeviceKit;
-			path = DeviceKit;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0E8280AE2F8318F7CFD01D6D9EF74BE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A2B460366AE806A610C9B90C64B797 /* FBKVOController.h in Headers */,
+				19D62B5850DBBC1868A55E502FE22589 /* KVOController-umbrella.h in Headers */,
+				8EE50CA49BDB3CC47A65D143D798AA72 /* KVOController.h in Headers */,
+				1A09A36C7ED2126FE226AB9D55D2EEE6 /* NSObject+FBKVOController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		162E426BFDDFDFD32EF482D015420A3C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				666DB8C81CEFFFE9D55BB26E692B999A /* DeviceKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3076D331E9F18C1C52553382CDD01DA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD503BE4798FC30D23AC747146D39FE2 /* MarqueeLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81620BDF17119878F17849B60DDC8BA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB05B619C38101CFAAAF9CFB9AED433 /* NotificationBannerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838CE5C642E6207A0507478F55E55F7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C10DCF21E33F2F351ABC67BDB6B6D2E /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,25 +744,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5AB97D128E96AEDE4E86A8B30E04E6E /* Headers */ = {
+		BA01691F905AD5468728BD861DA606F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D13D95A0BEB6BF174E108EE5ED8306 /* Pods-KLrcCamera-KLrcCameraUITests-umbrella.h in Headers */,
+				B8940DE9A5F221CDF4D050A63B972472 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9178C1164158D9E2C294D853E5C52CD /* Headers */ = {
+		FEF27841BBB752404022DA5BE48B2C7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0361729A532AA7A82E1087789D1C23B /* Pods-KLrcCamera-umbrella.h in Headers */,
+				3B0303EFE03436A4FB5C5C4119403070 /* Pods-KLrcCamera-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524F7FA090E0C088E20CC9CDC9C2BFE5 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				BA01691F905AD5468728BD861DA606F6 /* Headers */,
+				2FB83DF4F6D9267344063A98E4B2DB64 /* Sources */,
+				CB23A59AD93B6D178F63AEA4EBF14D1E /* Frameworks */,
+				8601E08E22034D81E63B029EB9831B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605360BAC5A14D6B62096A72BE755391 /* Build configuration list for PBXNativeTarget "KVOController" */;
+			buildPhases = (
+				0E8280AE2F8318F7CFD01D6D9EF74BE4 /* Headers */,
+				1EB910ACA7B3AC52692D864DA7E60506 /* Sources */,
+				AA749837471EE842F4B01CE102FA2469 /* Frameworks */,
+				C6CEE298C180498CBB5D7D482DE940BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVOController;
+			productName = KVOController;
+			productReference = 399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F2745F4FABCC3C8D07F78FE199F16EE /* NotificationBannerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B2DDC516682E473123D30A6C7E35A0 /* Build configuration list for PBXNativeTarget "NotificationBannerSwift" */;
+			buildPhases = (
+				81620BDF17119878F17849B60DDC8BA4 /* Headers */,
+				7AC9AE7A7DCFEF86449DBBE49E463CD3 /* Sources */,
+				E7531E7A62790B1A9CC45E40A0F39A4B /* Frameworks */,
+				936BC78587BC26E6A9516D3A2AEECBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D9C525EB4C031F3C3EB742CC531C5A2 /* PBXTargetDependency */,
+				31FAF4920281203EBC1506ECABD58973 /* PBXTargetDependency */,
+			);
+			name = NotificationBannerSwift;
+			productName = NotificationBannerSwift;
+			productReference = 0AB91F46DDDA5588520D012E6F4FB918 /* NotificationBannerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4CDD1C6C8885D07092D8EA708AAC0E53 /* DeviceKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5AC05C163DBB658D212E5CA21CA8B4A /* Build configuration list for PBXNativeTarget "DeviceKit" */;
@@ -314,17 +839,21 @@
 		};
 		A59892621A5C8219432BE4B42492372B /* Pods-KLrcCamera-KLrcCameraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44A5E6074509BC705589D00050407DC1 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera-KLrcCameraUITests" */;
+			buildConfigurationList = 1EA634CF119B5D79A46EFE2221B0C156 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera-KLrcCameraUITests" */;
 			buildPhases = (
-				A5AB97D128E96AEDE4E86A8B30E04E6E /* Headers */,
-				C591AC754257E243C056E9EF1FA50492 /* Sources */,
-				9BA2B119D23A1CD8A76878F19F5D1A98 /* Frameworks */,
-				D4D4F3A3EA828606C8F13589EF018EB9 /* Resources */,
+				838CE5C642E6207A0507478F55E55F7F /* Headers */,
+				86B6CBFC3BB80EB17DA3781B158F3507 /* Sources */,
+				270485E6C1871A24695A7A5D16024177 /* Frameworks */,
+				5B7CC23ED53213D647C4EB7EF86E4693 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BDB084143ED3C05E57B2BCFA6D750443 /* PBXTargetDependency */,
+				95320DAE3F9D0021FEB453C5A61037FD /* PBXTargetDependency */,
+				A71F8AA738DB4E4EB23C5115554C87F9 /* PBXTargetDependency */,
+				B7661F60A01B53AEFF8BE9BC276C3169 /* PBXTargetDependency */,
+				8E87C5272562B9983258AFEA69D91368 /* PBXTargetDependency */,
+				74DCF8F02C4EFA8A2800E65615CD1EF9 /* PBXTargetDependency */,
 			);
 			name = "Pods-KLrcCamera-KLrcCameraUITests";
 			productName = "Pods-KLrcCamera-KLrcCameraUITests";
@@ -333,21 +862,43 @@
 		};
 		AAACB9BD43795BD644241A01CD1AC457 /* Pods-KLrcCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFBD0B00D5CFCC4C1E3C473837C502D8 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera" */;
+			buildConfigurationList = 1227126EFA8E2D9119E5114B1AF4375B /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera" */;
 			buildPhases = (
-				C9178C1164158D9E2C294D853E5C52CD /* Headers */,
-				8503C9851C39ED8E3BCDB080EC12BBF4 /* Sources */,
-				B9C3ED49BA0092F3FE4D6798B369E55F /* Frameworks */,
-				A229C7177B3242D5114AE7D3BE531B30 /* Resources */,
+				FEF27841BBB752404022DA5BE48B2C7A /* Headers */,
+				5378D3F7606B96B42D57365AE7E27A33 /* Sources */,
+				BC79DBDBA1AE5117711445FECB1A2EAB /* Frameworks */,
+				36FDCBD6B23CD941C4D84E7443173107 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D13A9E5C7131205528B6C5C827EE27F /* PBXTargetDependency */,
+				E44BB770C2C1F5C3FA5BB12E79B7E4F7 /* PBXTargetDependency */,
+				FE6B85E1B40011E287246263858F66E0 /* PBXTargetDependency */,
+				9595F1A1C28688EE4BC1255327649004 /* PBXTargetDependency */,
+				528DBF71F89A6B0A3AA4270EAD55B393 /* PBXTargetDependency */,
+				38B427883B3393A04BB25028241553D0 /* PBXTargetDependency */,
 			);
 			name = "Pods-KLrcCamera";
 			productName = "Pods-KLrcCamera";
 			productReference = 901C7ED1EE7A7AD2125FD85BC49163A9 /* Pods_KLrcCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25360692F94D05B6B4344D370C7EC6AA /* Build configuration list for PBXNativeTarget "MarqueeLabel" */;
+			buildPhases = (
+				3076D331E9F18C1C52553382CDD01DA8 /* Headers */,
+				8FEEA90DA6EE49996DA2C10407C82C74 /* Sources */,
+				4274CA0E731AECC68C24808C7E6703AA /* Frameworks */,
+				888A2E430615987F208E1A0B7610045B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarqueeLabel;
+			productName = MarqueeLabel;
+			productReference = CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E64C74CE36EEF7AA719C25B8B4020416 /* Pods-KLrcCameraTests */ = {
@@ -387,19 +938,30 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 69283A3B0F7863F237CF1121C98C248C /* Products */;
+			productRefGroup = D29E10DD101A9921814638DDFAFF0D9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4CDD1C6C8885D07092D8EA708AAC0E53 /* DeviceKit */,
+				2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */,
+				C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */,
+				2F2745F4FABCC3C8D07F78FE199F16EE /* NotificationBannerSwift */,
 				AAACB9BD43795BD644241A01CD1AC457 /* Pods-KLrcCamera */,
 				A59892621A5C8219432BE4B42492372B /* Pods-KLrcCamera-KLrcCameraUITests */,
 				E64C74CE36EEF7AA719C25B8B4020416 /* Pods-KLrcCameraTests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36FDCBD6B23CD941C4D84E7443173107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		428FC4A1AFC625758EC014C4EBBA2A8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,7 +969,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A229C7177B3242D5114AE7D3BE531B30 /* Resources */ = {
+		5B7CC23ED53213D647C4EB7EF86E4693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8601E08E22034D81E63B029EB9831B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888A2E430615987F208E1A0B7610045B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936BC78587BC26E6A9516D3A2AEECBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CEE298C180498CBB5D7D482DE940BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,29 +1011,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4D4F3A3EA828606C8F13589EF018EB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8503C9851C39ED8E3BCDB080EC12BBF4 /* Sources */ = {
+		1EB910ACA7B3AC52692D864DA7E60506 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7958939D37CD205285BF7F12E6D1AED9 /* Pods-KLrcCamera-dummy.m in Sources */,
+				9670C11FE884391249C5154C3E319CDF /* FBKVOController.m in Sources */,
+				AB8C349C46978DF528A142C1C0959039 /* KVOController-dummy.m in Sources */,
+				889E2157616BF0844E55BCDC2C30A278 /* NSObject+FBKVOController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C591AC754257E243C056E9EF1FA50492 /* Sources */ = {
+		2FB83DF4F6D9267344063A98E4B2DB64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393322BF510936A8CE62F4DD6EC6628A /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m in Sources */,
+				A06EF55B3C8DAA8B3E859044109DE614 /* Constraint.swift in Sources */,
+				2FC1CD90CE92CD67FB18C984E11C849D /* ConstraintAttributes.swift in Sources */,
+				ACBF25B65F0B14835F6984CE2876755C /* ConstraintConfig.swift in Sources */,
+				2FF739951BAAA7FF0CED152454F7CBFC /* ConstraintConstantTarget.swift in Sources */,
+				51DB9B6CCE5852B4FA665E0D535E2C44 /* ConstraintDescription.swift in Sources */,
+				45664F4AF395061B7E68AFEDBD55E37A /* ConstraintDirectionalInsets.swift in Sources */,
+				BD9BB3C791777E286CBD4D6897F6CBB2 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				89A30BAA43E59C3FFE26AD9DCA149424 /* ConstraintDSL.swift in Sources */,
+				5C553FBDE4B3794145A0393D1834861A /* ConstraintInsets.swift in Sources */,
+				429F6E5AB475437DE7D9FE2B98C699D3 /* ConstraintInsetTarget.swift in Sources */,
+				F756028503F75C1C49B7FD590F110051 /* ConstraintItem.swift in Sources */,
+				A0CB68D79EDD8B0EB08C287EC90F6C2F /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				D5537DBA95F413DB8E97747F3AAB5438 /* ConstraintLayoutGuide.swift in Sources */,
+				C7DF3D5907737BD47DE4F2797A15A7F1 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				ECC7FF3F30832ABD8353E2DDD9DDAAAC /* ConstraintLayoutSupport.swift in Sources */,
+				4593E9D3846547373C25C000A96627D8 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				E28AA2D69D4E25037A95BBD16751B8B9 /* ConstraintMaker.swift in Sources */,
+				9817FE408F452A0720BEA10682715FF4 /* ConstraintMakerEditable.swift in Sources */,
+				FE9CDBCB4D200D662D8A5634AC92786C /* ConstraintMakerExtendable.swift in Sources */,
+				4E1D870DF7A7B3A66A3C32A786FA8857 /* ConstraintMakerFinalizable.swift in Sources */,
+				57E82F372739E2AA143375228DB232EA /* ConstraintMakerPriortizable.swift in Sources */,
+				7BCFAAB2FDCD787842E193AD7781377F /* ConstraintMakerRelatable.swift in Sources */,
+				9E42DE04CA4B540B331B019AF22E0BC7 /* ConstraintMultiplierTarget.swift in Sources */,
+				6539ADCDCE36807DA760DADA763EF121 /* ConstraintOffsetTarget.swift in Sources */,
+				2E23AB69B91A8C144772C8311CD3F289 /* ConstraintPriority.swift in Sources */,
+				9A1936F90086E3453D464ECC9CF985C6 /* ConstraintPriorityTarget.swift in Sources */,
+				BEE8A31A2C5F1AA796F687B485257608 /* ConstraintRelatableTarget.swift in Sources */,
+				203221F9EBAF55D819E66A47039EFD01 /* ConstraintRelation.swift in Sources */,
+				284D017F653F6142F811599B5A722FF3 /* ConstraintView+Extensions.swift in Sources */,
+				673BF136DE5A9374DB780431DFF7A0B4 /* ConstraintView.swift in Sources */,
+				5A0202FC02EB70E8301FE65F95DAA05C /* ConstraintViewDSL.swift in Sources */,
+				4666C22AB36FA28565AFD1DACEB03170 /* Debugging.swift in Sources */,
+				669C3F6EEFDE57E600B8796396CE0EB7 /* LayoutConstraint.swift in Sources */,
+				37BB37D70B0C8C8C5C7492331788465D /* LayoutConstraintItem.swift in Sources */,
+				AED51B90715A59D581433234B75E35B5 /* SnapKit-dummy.m in Sources */,
+				DEF0B2686252E09E87E3DA668145FA5D /* Typealiases.swift in Sources */,
+				60DEF4D90C759B8592D77B5D6183A418 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5378D3F7606B96B42D57365AE7E27A33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA19086666C71398AD5336B5FE5428C7 /* Pods-KLrcCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC9AE7A7DCFEF86449DBBE49E463CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40051A1CBB3F4FF55BB60549C462A096 /* BannerAnimation.swift in Sources */,
+				18A111F6A6EC5F15C85272E5B19DB54F /* BannerColors.swift in Sources */,
+				B6D583573175665B793664A874414B61 /* BannerHapticGenerator.swift in Sources */,
+				7BCFECBD2360827FBE1BBADA0CE3275B /* BannerPositionFrame.swift in Sources */,
+				6E97645B31FAC1C6E5961BF951C09A42 /* BannerStyle.swift in Sources */,
+				53CAF8CF3A8ED2711A5048261EC0183F /* BaseNotificationBanner.swift in Sources */,
+				F7465AE74252503E904BA51EDDA4B1AC /* FloatingNotificationBanner.swift in Sources */,
+				872784A62CBB7B26530FE5FB70B48593 /* GrowingNotificationBanner.swift in Sources */,
+				F7DA2C41C0084C397C7E90D094F823CE /* NotificationBanner.swift in Sources */,
+				5A4EFF8ABAEEA8F19E92E9E36F06CB86 /* NotificationBannerQueue.swift in Sources */,
+				C2FE2A76E400CC0C7708F7EB8E056E7B /* NotificationBannerSwift-dummy.m in Sources */,
+				BE4622189088672DCB1C02FC478D4E33 /* NotificationBannerUtilities.swift in Sources */,
+				BEF4745C01CEFB14D3E8274BB9D90EE5 /* StatusBarNotificationBanner.swift in Sources */,
+				955ADC292E48543E7B404B44028987F0 /* String+heightForConstrainedWidth.swift in Sources */,
+				DF4CAA1C20074265885E5BD402F363CA /* UIWindow+orientation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B6CBFC3BB80EB17DA3781B158F3507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDE84192DB7F9EBA0796DAE9C61640A /* Pods-KLrcCamera-KLrcCameraUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEEA90DA6EE49996DA2C10407C82C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE8E38AE2FC314562F857E3D97467C4 /* MarqueeLabel-dummy.m in Sources */,
+				C8BB2EAEB3F03D521DC374327ADD7FE7 /* MarqueeLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,32 +1135,91 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		31FAF4920281203EBC1506ECABD58973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 1128EC9F8FA6B8F6DCAFF060F1B67B9B /* PBXContainerItemProxy */;
+		};
+		38B427883B3393A04BB25028241553D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 3DF709367D9CA00B9FA052A9387C4F00 /* PBXContainerItemProxy */;
+		};
 		3BA810D83325CBB5ADAAC531C6C90F57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KLrcCamera";
 			target = AAACB9BD43795BD644241A01CD1AC457 /* Pods-KLrcCamera */;
 			targetProxy = 4D4FF50A13BEF8C51FADE7BDCAA4EB03 /* PBXContainerItemProxy */;
 		};
-		3D13A9E5C7131205528B6C5C827EE27F /* PBXTargetDependency */ = {
+		528DBF71F89A6B0A3AA4270EAD55B393 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DeviceKit;
-			target = 4CDD1C6C8885D07092D8EA708AAC0E53 /* DeviceKit */;
-			targetProxy = D9DDE7D3D4F3495A929C9BFFCEE20516 /* PBXContainerItemProxy */;
+			name = NotificationBannerSwift;
+			target = 2F2745F4FABCC3C8D07F78FE199F16EE /* NotificationBannerSwift */;
+			targetProxy = 9EFAC69905C6280F11E28936701DC529 /* PBXContainerItemProxy */;
 		};
-		BDB084143ED3C05E57B2BCFA6D750443 /* PBXTargetDependency */ = {
+		5D9C525EB4C031F3C3EB742CC531C5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarqueeLabel;
+			target = C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */;
+			targetProxy = 4ECCB0A7387F329921BC167C2DF23FE6 /* PBXContainerItemProxy */;
+		};
+		74DCF8F02C4EFA8A2800E65615CD1EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 6CE7A738B3C1293A473145556015AAE4 /* PBXContainerItemProxy */;
+		};
+		8E87C5272562B9983258AFEA69D91368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NotificationBannerSwift;
+			target = 2F2745F4FABCC3C8D07F78FE199F16EE /* NotificationBannerSwift */;
+			targetProxy = 67463342937A6E1CEDD1B239333D587E /* PBXContainerItemProxy */;
+		};
+		95320DAE3F9D0021FEB453C5A61037FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DeviceKit;
 			target = 4CDD1C6C8885D07092D8EA708AAC0E53 /* DeviceKit */;
-			targetProxy = CBDFA118667E829EB6813F14D35510F1 /* PBXContainerItemProxy */;
+			targetProxy = A88F6050530DFE4091FCC0B335CB3459 /* PBXContainerItemProxy */;
+		};
+		9595F1A1C28688EE4BC1255327649004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarqueeLabel;
+			target = C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */;
+			targetProxy = 03D32ABE047B4C25747F0E1FDA89DC54 /* PBXContainerItemProxy */;
+		};
+		A71F8AA738DB4E4EB23C5115554C87F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = 2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */;
+			targetProxy = CEE89AD980B640D88987156543227F29 /* PBXContainerItemProxy */;
+		};
+		B7661F60A01B53AEFF8BE9BC276C3169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarqueeLabel;
+			target = C23DB88E45B0ED14F0C8827BE9C46C95 /* MarqueeLabel */;
+			targetProxy = BC1412B2A5353ED47C24C7B8BB08C885 /* PBXContainerItemProxy */;
+		};
+		E44BB770C2C1F5C3FA5BB12E79B7E4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceKit;
+			target = 4CDD1C6C8885D07092D8EA708AAC0E53 /* DeviceKit */;
+			targetProxy = 6F851419C28752264EAF54327DF501AD /* PBXContainerItemProxy */;
+		};
+		FE6B85E1B40011E287246263858F66E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVOController;
+			target = 2568F753F09C4DFFD8770DCC78EDAEAE /* KVOController */;
+			targetProxy = D07BC9C15CEFEDD7C1E7CE4472D9B117 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09FB92131453D3F4ACFBAE5910C5FD84 /* Release */ = {
+		15866D910841B448CB08814A950ED916 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45586C0B1EE8F59F4FE0C83A97647C49 /* Pods-KLrcCamera.release.xcconfig */;
+			baseConfigurationReference = D6A0FCF93C154D07BDCCD834E798DE26 /* NotificationBannerSwift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -503,23 +1230,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift.modulemap";
+				PRODUCT_MODULE_NAME = NotificationBannerSwift;
+				PRODUCT_NAME = NotificationBannerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -565,7 +1291,155 @@
 			};
 			name = Debug;
 		};
-		5B8091F5D111ED7901AC6D689A42C5B7 /* Debug */ = {
+		29E5B3487D0B90A27C3FFD12047110EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE1B295F09F823CA6D184810F2A58F4 /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		333983EAD0396C024B341E9C0B4C8F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45586C0B1EE8F59F4FE0C83A97647C49 /* Pods-KLrcCamera.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C4733E0E74C83F8C9F566269C9254CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5575FDCB91209C3F8415C21903F60B7 /* Pods-KLrcCamera.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44805FC4BCA1EF54433E85B42C3D46DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86941A4085D0EA8C2834E539B672E57 /* KVOController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/KVOController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				PRODUCT_MODULE_NAME = KVOController;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A700F65FCE0564402A347A5427DA74A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5ACA708222AC5FBFA6AAC3C7D441010 /* Pods-KLrcCamera-KLrcCameraUITests.debug.xcconfig */;
 			buildSettings = {
@@ -602,6 +1476,79 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		718551D57C5B3E659755AD7B7B50B1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E939132119C6EFDCE88CE1B09AB3442 /* MarqueeLabel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MarqueeLabel/MarqueeLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel.modulemap";
+				PRODUCT_MODULE_NAME = MarqueeLabel;
+				PRODUCT_NAME = MarqueeLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		884D819C25E00F0EABA1F35B31CA0C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0356ADB57183BDB564C7D9BF849D0EBC /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -669,7 +1616,7 @@
 		};
 		8BE311D37763DD5962F40A9234AC9B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D346B0BACAF0E195A0850EDE34322CF /* DeviceKit.debug.xcconfig */;
+			baseConfigurationReference = FE0572C832378A0EF3E84557A5B8C304 /* DeviceKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -702,11 +1649,10 @@
 			};
 			name = Debug;
 		};
-		8C116BDD2A3AA4C80570D77CDE7B5858 /* Debug */ = {
+		93217F3A767BCF0C92AFDA32342944D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5575FDCB91209C3F8415C21903F60B7 /* Pods-KLrcCamera.debug.xcconfig */;
+			baseConfigurationReference = 6CA7478B358A20819483462C282F446F /* NotificationBannerSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -717,23 +1663,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera/Pods-KLrcCamera.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NotificationBannerSwift/NotificationBannerSwift.modulemap";
+				PRODUCT_MODULE_NAME = NotificationBannerSwift;
+				PRODUCT_NAME = NotificationBannerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A09A8C3F1BA1B0C94B58253798863981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFEB29BCCC1F6D7D1CBA00F7588023B /* MarqueeLabel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MarqueeLabel/MarqueeLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MarqueeLabel/MarqueeLabel.modulemap";
+				PRODUCT_MODULE_NAME = MarqueeLabel;
+				PRODUCT_NAME = MarqueeLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -800,45 +1780,6 @@
 			};
 			name = Release;
 		};
-		BE8BD2E152A8B3B3B99F8371DE950EF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4626F6F84EBBA496AF21834B5585CAF /* Pods-KLrcCamera-KLrcCameraUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C99A2930CE5CCAEDF462C4C336AD3131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D42A128FEC9AA4F82676D408F7510A81 /* Pods-KLrcCameraTests.release.xcconfig */;
@@ -878,9 +1819,84 @@
 			};
 			name = Release;
 		};
+		D4ABCB330E06D554692589C56CA59DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEAE680D6F8C6B16C1655C60A8B3D98 /* KVOController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KVOController/KVOController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVOController/KVOController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KVOController/KVOController.modulemap";
+				PRODUCT_MODULE_NAME = KVOController;
+				PRODUCT_NAME = KVOController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5BD09226417CC68C5C41223A5220446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4626F6F84EBBA496AF21834B5585CAF /* Pods-KLrcCamera-KLrcCameraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D68D30FA5358C543AF9F3CDD6DB2BF44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7274719FAE2990DC2AB8E6D21969BB7 /* DeviceKit.release.xcconfig */;
+			baseConfigurationReference = 64E56207D392BB2B618938B7EDBD6BCE /* DeviceKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -917,20 +1933,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1227126EFA8E2D9119E5114B1AF4375B /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4733E0E74C83F8C9F566269C9254CB /* Debug */,
+				333983EAD0396C024B341E9C0B4C8F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA634CF119B5D79A46EFE2221B0C156 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera-KLrcCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A700F65FCE0564402A347A5427DA74A /* Debug */,
+				D5BD09226417CC68C5C41223A5220446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25360692F94D05B6B4344D370C7EC6AA /* Build configuration list for PBXNativeTarget "MarqueeLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09A8C3F1BA1B0C94B58253798863981 /* Debug */,
+				718551D57C5B3E659755AD7B7B50B1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3D562618C0C240FB84E51B9F6FC43D76 /* Build configuration list for PBXNativeTarget "Pods-KLrcCameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				205700385B32B410F45926BA07EC7DA4 /* Debug */,
 				C99A2930CE5CCAEDF462C4C336AD3131 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44A5E6074509BC705589D00050407DC1 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera-KLrcCameraUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B8091F5D111ED7901AC6D689A42C5B7 /* Debug */,
-				BE8BD2E152A8B3B3B99F8371DE950EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -944,20 +1978,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		524F7FA090E0C088E20CC9CDC9C2BFE5 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E5B3487D0B90A27C3FFD12047110EB /* Debug */,
+				884D819C25E00F0EABA1F35B31CA0C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605360BAC5A14D6B62096A72BE755391 /* Build configuration list for PBXNativeTarget "KVOController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44805FC4BCA1EF54433E85B42C3D46DD /* Debug */,
+				D4ABCB330E06D554692589C56CA59DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B2DDC516682E473123D30A6C7E35A0 /* Build configuration list for PBXNativeTarget "NotificationBannerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93217F3A767BCF0C92AFDA32342944D2 /* Debug */,
+				15866D910841B448CB08814A950ED916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5AC05C163DBB658D212E5CA21CA8B4A /* Build configuration list for PBXNativeTarget "DeviceKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BE311D37763DD5962F40A9234AC9B35 /* Debug */,
 				D68D30FA5358C543AF9F3CDD6DB2BF44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFBD0B00D5CFCC4C1E3C473837C502D8 /* Build configuration list for PBXNativeTarget "Pods-KLrcCamera" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C116BDD2A3AA4C80570D77CDE7B5858 /* Debug */,
-				09FB92131453D3F4ACFBAE5910C5FD84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
