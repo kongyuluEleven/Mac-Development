@@ -8,11 +8,17 @@
 
 import UIKit
 
-class KLanguaageListTableVC: UITableViewController {
+
+public protocol KLanguageListTableVCDelegate: class {
+    func KLanguageListTableVCDidSelectLanguage(_ language:OSSVoiceEnum)
+}
+
+class KLanguageListTableVC: UITableViewController {
 
     // MARK: - Variables
     
     private let speechKit = OSSSpeech.shared
+    var delegate:KLanguageListTableVCDelegate?
     
     private lazy var microphoneButton: UIBarButtonItem = {
         var micImage: UIImage?
@@ -51,7 +57,7 @@ class KLanguaageListTableVC: UITableViewController {
     }
 }
 
-extension KLanguaageListTableVC {
+extension KLanguageListTableVC {
 
     // MARK: - Table View Data Source and Delegate
 
@@ -85,10 +91,12 @@ extension KLanguaageListTableVC {
             let attributedString = NSAttributedString(string: OSSVoiceEnum.allCases[indexPath.item].demoMessage)
             speechKit.speakAttributedText(attributedText: attributedString)
         }
+        
+        delegate?.KLanguageListTableVCDidSelectLanguage(OSSVoiceEnum.allCases[indexPath.item])
     }
 }
 
-extension KLanguaageListTableVC: OSSSpeechDelegate {
+extension KLanguageListTableVC: OSSSpeechDelegate {
     
     func didCompleteTranslation(withText text: String) {
         print("Translation completed: \(text)")

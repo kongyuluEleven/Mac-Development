@@ -31,6 +31,8 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var btnCancel: UIButton!
     
+    @IBOutlet weak var btnStart: UIButton!
+    @IBOutlet weak var btnLanguage: UIButton!
     
     private var speechRecognizer:SFSpeechRecognizer?
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -41,13 +43,13 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     private var matchRange:NSRange?
     private var lastMatchRange:NSRange?
     
+    private var language:String = "en-US"
+    private var languageTitle:String = "English"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
         checkAuthor()
-        setupSiri()
-        //recordButtonTapped()
     }
     
     private func setupUI() {
@@ -66,7 +68,13 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         lrcTextView.font = UIFont.systemFont(ofSize: 20)
         
         self.navigationController?.navigationBar.isHidden = true
+        btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
+        
         updateTextRange()
+    }
+    
+    private func updateUI() {
+        btnLanguage.setTitle(languageTitle, for: .normal)
     }
     
     
@@ -99,7 +107,43 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     @IBAction func btnSpeakClicked(_ sender: Any) {
         //OSSSpeech.shared.recordVoice()
+        
+    }
+    
+    @IBAction func btnStartClicked(_ sender: Any) {
         recordButtonTapped()
+    }
+    
+    @IBAction func btnLanguageClicked(_ sender: Any) {
+        let vc = KLanguageListTableVC()
+        vc.delegate = self
+        let nav = NavigationController(rootViewController: vc)
+        present(nav, animated: true, completion: nil)
+    }
+    
+    
+}
+
+// MARK: -选择语言
+extension KSwiftyCameraVC:KLanguageListTableVCDelegate {
+    func KLanguageListTableVCDidSelectLanguage(_ language: OSSVoiceEnum) {
+        self.language = language.rawValue
+        self.languageTitle = language.title
+        updateUI()
+        stopSpeech()
+    }
+}
+
+// MARK: SFSpeechRecognizerDelegate
+extension KSwiftyCameraVC:SFSpeechRecognizerDelegate {
+    func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+        if available {
+            btnStart.isEnabled = true
+            changeTip(text: "Start Recording")
+        } else {
+            btnStart.isEnabled = false
+            changeTip(text: "Recognition Not Available")
+        }
     }
 }
 
@@ -107,28 +151,34 @@ class KSwiftyCameraVC: SwiftyCamViewController {
 extension KSwiftyCameraVC {
     
     private func changeTip(text:String) {
-        titleLable.text = text
+        //titleLable.text = text
+        btnStart.setTitle(text, for: .normal)
     }
     
     func recordButtonTapped() {
         if audioEngine.isRunning {
             stopRecording()
         } else {
-            do {
-                try startRecording()
-                //btnRecoginition.setTitle("Stop Recording", for: .normal)
-                changeTip(text: "Stop Recording")
-                
-            } catch {
-                //btnRecoginition.setTitle("Recording Not Available", for: .normal)
-                changeTip(text: "Recording Not Available")
-            }
+            restartRecord()
+        }
+    }
+    
+    private func restartRecord() {
+        do {
+            try startRecording()
+            //btnRecoginition.setTitle("Stop Recording", for: .normal)
+            changeTip(text: "Stop Recording")
+            
+        } catch {
+            //btnRecoginition.setTitle("Recording Not Available", for: .normal)
+            changeTip(text: "Recording Not Available")
         }
     }
     
     private func setupSiri() {
-        speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
-        //speechRecognizer?.delegate = self
+        print("重新初始化speechRecognizer：\(language)")
+        speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: language))
+        speechRecognizer?.delegate = self
         speechRecognizer?.defaultTaskHint = .dictation
     }
     
@@ -159,22 +209,22 @@ extension KSwiftyCameraVC {
             OperationQueue.main.addOperation {
                 switch authStatus {
                 case .authorized:
-                    self.btnSpeak.isEnabled = true
+                    self.btnStart.isEnabled = true
                     
                 case .denied:
-                    self.btnSpeak.isEnabled = false
+                    self.btnStart.isEnabled = false
                     self.changeTip(text: "User denied access to speech recognition")
                     
                 case .restricted:
-                    self.btnSpeak.isEnabled = false
+                    self.btnStart.isEnabled = false
                     self.changeTip(text: "Speech recognition restricted on this device")
                     
                 case .notDetermined:
-                    self.btnSpeak.isEnabled = false
+                    self.btnStart.isEnabled = false
                     self.changeTip(text: "Speech recognition not yet authorized")
                     
                 default:
-                    self.btnSpeak.isEnabled = false
+                    self.btnStart.isEnabled = false
                 }
             }
         }
@@ -204,17 +254,19 @@ extension KSwiftyCameraVC {
         }
         
         //recognitionRequest.requiresOnDeviceRecognition = true
-        
-        guard let speechRecognizer = speechRecognizer else {
+        if speechRecognizer == nil {
             setupSiri()
-            return
         }
         
-        recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+        guard let speechRecognizer = speechRecognizer else {return}
+        
+        recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
+            
+            guard let self = self else {return}
             var isFinal = false
             
             if let result = result {
-                self.changeTip(text: result.bestTranscription.formattedString)
+                self.titleLable.text = result.bestTranscription.formattedString
                 print("识别到：\(result.bestTranscription.formattedString)")
                 
                 DispatchQueue.global().async {
@@ -232,8 +284,8 @@ extension KSwiftyCameraVC {
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
                 
-                self.btnSpeak.isEnabled = true
-                //self.btnRecoginition.setTitle("Start Recording", for: .normal)
+                self.btnStart.isEnabled = true
+                self.changeTip(text: "Start Recording")
             }
         }
         
@@ -252,24 +304,30 @@ extension KSwiftyCameraVC {
         //textView.text = "(Go ahead, I'm listening)"
     }
        
-       // MARK: SFSpeechRecognizerDelegate
        
-    public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
-        if available {
-            btnSpeak.isEnabled = true
-            changeTip(text: "Start Recording")
-        } else {
-            btnSpeak.isEnabled = false
-            changeTip(text: "Recognition Not Available")
-        }
-    }
-       
-
     private func stopRecording() {
         audioEngine.stop()
         recognitionRequest?.endAudio()
-        btnSpeak.isEnabled = false
+        btnStart.isEnabled = false
         changeTip(text: "Stopping")
+        
+        self.audioEngine.stop()
+    }
+    
+    private func stopSpeech() {
+        stopRecording()
+        let inputNode = audioEngine.inputNode
+        self.audioEngine.stop()
+        inputNode.removeTap(onBus: 0)
+        
+        self.recognitionRequest = nil
+        self.recognitionTask = nil
+        
+        self.btnStart.isEnabled = true
+        self.changeTip(text: "Start Recording")
+        
+        self.speechRecognizer?.delegate = nil
+        self.speechRecognizer = nil
     }
     
     private func match(result:SFSpeechRecognitionResult) {

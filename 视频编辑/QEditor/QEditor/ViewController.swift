@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     }
     
     @objc func clickbuttonLanguage() {
-        navigationController?.pushViewController(KLanguaageListTableVC())
+        navigationController?.pushViewController(KLanguageListTableVC())
 //        let nav = NavigationController(rootViewController: KLanguaageListTableVC())
 //        present(nav, animated: true, completion: nil)
     }

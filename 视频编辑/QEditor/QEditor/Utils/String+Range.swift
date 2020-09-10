@@ -18,11 +18,11 @@ extension String {
         }
         searchedRange = sr
         
-        var resultRange = self.range(of: string, options: .regularExpression, range: searchedRange, locale: nil)
+        var resultRange = self.range(of: string, options: .widthInsensitive, range: searchedRange, locale: nil)
         while let range = resultRange {
             rangeArray.append(range)
             searchedRange = Range(uncheckedBounds: (range.upperBound, searchedRange.upperBound))
-            resultRange = self.range(of: string, options: .regularExpression, range: searchedRange, locale: nil)
+            resultRange = self.range(of: string, options: .widthInsensitive, range: searchedRange, locale: nil)
         }
         return rangeArray
     }

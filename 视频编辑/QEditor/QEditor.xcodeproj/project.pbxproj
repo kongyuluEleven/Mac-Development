@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		545797662509D66F00D15A8B /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797652509D66F00D15A8B /* String+Range.swift */; };
+		545797782509F62300D15A8B /* GACMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797692509F62300D15A8B /* GACMatcherProcessor.m */; };
+		545797792509F62300D15A8B /* GThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5457976A2509F62300D15A8B /* GThreadSafeArray.m */; };
+		5457977A2509F62300D15A8B /* GKMPMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797702509F62300D15A8B /* GKMPMatcherProcessor.m */; };
+		5457977B2509F62300D15A8B /* GRegexMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797712509F62300D15A8B /* GRegexMatcherProcessor.m */; };
+		5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797752509F62300D15A8B /* GMatcherExpression.m */; };
+		5457977D2509F62300D15A8B /* GMatcherResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797762509F62300D15A8B /* GMatcherResult.m */; };
+		5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797772509F62300D15A8B /* GThreadSafeDictionary.m */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
 		546700362508A449008D23B4 /* OSSVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700322508A449008D23B4 /* OSSVoice.swift */; };
 		546700372508A449008D23B4 /* OSSUtterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700332508A449008D23B4 /* OSSUtterance.swift */; };
 		546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700342508A449008D23B4 /* OSSSpeechUtility.swift */; };
-		5467003B2508A62E008D23B4 /* KLanguaageListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */; };
+		5467003B2508A62E008D23B4 /* KLanguageListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467003A2508A62E008D23B4 /* KLanguageListTableVC.swift */; };
 		5467003D2508A657008D23B4 /* KLanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */; };
 		5467003F2508A765008D23B4 /* CountryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5467003E2508A765008D23B4 /* CountryImages.xcassets */; };
 		546700462508B276008D23B4 /* SwiftyPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700412508B275008D23B4 /* SwiftyPreviewView.swift */; };
@@ -125,6 +132,22 @@
 
 /* Begin PBXFileReference section */
 		545797652509D66F00D15A8B /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
+		545797682509F62300D15A8B /* GKMPMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMPMatcherProcessor.h; sourceTree = "<group>"; };
+		545797692509F62300D15A8B /* GACMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACMatcherProcessor.m; sourceTree = "<group>"; };
+		5457976A2509F62300D15A8B /* GThreadSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeArray.m; sourceTree = "<group>"; };
+		5457976B2509F62300D15A8B /* GRegexMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRegexMatcherProcessor.h; sourceTree = "<group>"; };
+		5457976C2509F62300D15A8B /* GMatcherResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherResult.h; sourceTree = "<group>"; };
+		5457976D2509F62300D15A8B /* GMatcherExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatcherExpression.h; sourceTree = "<group>"; };
+		5457976E2509F62300D15A8B /* GThreadSafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GThreadSafeDictionary.h; sourceTree = "<group>"; };
+		5457976F2509F62300D15A8B /* GACMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACMatcherProcessor.h; sourceTree = "<group>"; };
+		545797702509F62300D15A8B /* GKMPMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMPMatcherProcessor.m; sourceTree = "<group>"; };
+		545797712509F62300D15A8B /* GRegexMatcherProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRegexMatcherProcessor.m; sourceTree = "<group>"; };
+		545797722509F62300D15A8B /* IMatcherProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMatcherProcessor.h; sourceTree = "<group>"; };
+		545797732509F62300D15A8B /* IMatcherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMatcherObject.h; sourceTree = "<group>"; };
+		545797742509F62300D15A8B /* GThreadSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GThreadSafeArray.h; sourceTree = "<group>"; };
+		545797752509F62300D15A8B /* GMatcherExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherExpression.m; sourceTree = "<group>"; };
+		545797762509F62300D15A8B /* GMatcherResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherResult.m; sourceTree = "<group>"; };
+		545797772509F62300D15A8B /* GThreadSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeDictionary.m; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -132,7 +155,7 @@
 		546700322508A449008D23B4 /* OSSVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSVoice.swift; sourceTree = "<group>"; };
 		546700332508A449008D23B4 /* OSSUtterance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSUtterance.swift; sourceTree = "<group>"; };
 		546700342508A449008D23B4 /* OSSSpeechUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSSpeechUtility.swift; sourceTree = "<group>"; };
-		5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguaageListTableVC.swift; sourceTree = "<group>"; };
+		5467003A2508A62E008D23B4 /* KLanguageListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageListTableVC.swift; sourceTree = "<group>"; };
 		5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageTableViewCell.swift; sourceTree = "<group>"; };
 		5467003E2508A765008D23B4 /* CountryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CountryImages.xcassets; sourceTree = "<group>"; };
 		546700412508B275008D23B4 /* SwiftyPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPreviewView.swift; sourceTree = "<group>"; };
@@ -260,9 +283,33 @@
 		545797642509D63F00D15A8B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				545797672509F62200D15A8B /* match */,
 				545797652509D66F00D15A8B /* String+Range.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		545797672509F62200D15A8B /* match */ = {
+			isa = PBXGroup;
+			children = (
+				545797682509F62300D15A8B /* GKMPMatcherProcessor.h */,
+				545797692509F62300D15A8B /* GACMatcherProcessor.m */,
+				5457976A2509F62300D15A8B /* GThreadSafeArray.m */,
+				5457976B2509F62300D15A8B /* GRegexMatcherProcessor.h */,
+				5457976C2509F62300D15A8B /* GMatcherResult.h */,
+				5457976D2509F62300D15A8B /* GMatcherExpression.h */,
+				5457976E2509F62300D15A8B /* GThreadSafeDictionary.h */,
+				5457976F2509F62300D15A8B /* GACMatcherProcessor.h */,
+				545797702509F62300D15A8B /* GKMPMatcherProcessor.m */,
+				545797712509F62300D15A8B /* GRegexMatcherProcessor.m */,
+				545797722509F62300D15A8B /* IMatcherProcessor.h */,
+				545797732509F62300D15A8B /* IMatcherObject.h */,
+				545797742509F62300D15A8B /* GThreadSafeArray.h */,
+				545797752509F62300D15A8B /* GMatcherExpression.m */,
+				545797762509F62300D15A8B /* GMatcherResult.m */,
+				545797772509F62300D15A8B /* GThreadSafeDictionary.m */,
+			);
+			path = match;
 			sourceTree = "<group>";
 		};
 		5467002925087DDB008D23B4 /* Camera */ = {
@@ -311,7 +358,7 @@
 		546700392508A5C4008D23B4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5467003A2508A62E008D23B4 /* KLanguaageListTableVC.swift */,
+				5467003A2508A62E008D23B4 /* KLanguageListTableVC.swift */,
 				5467003C2508A657008D23B4 /* KLanguageTableViewCell.swift */,
 			);
 			path = UI;
@@ -836,14 +883,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */,
 				A07B6A48241664C2008170F5 /* EditToolEditCaptionViewController.swift in Sources */,
 				A0C6DFD023DD1C1D00A48181 /* CompositionVideoSegment.swift in Sources */,
+				5457977B2509F62300D15A8B /* GRegexMatcherProcessor.m in Sources */,
 				A07B6A422413BE52008170F5 /* CompositionMediaSegment.swift in Sources */,
 				A090276A244B051800A58CD7 /* ProjectCellModel.swift in Sources */,
 				A09B2E7C23E3CF6600F6FC7A /* EditAudioWaverView.swift in Sources */,
 				A021233B23652FE40073A125 /* EditToolTimeScaleView.swift in Sources */,
 				A080D70F240255A30089B10B /* EditCaptionProtocol.swift in Sources */,
 				546700472508B276008D23B4 /* SwiftyCamViewController.swift in Sources */,
+				545797792509F62300D15A8B /* GThreadSafeArray.m in Sources */,
 				A0C6DFD223DD1E4900A48181 /* CompositionAudioSegment.swift in Sources */,
 				A080D711240256C00089B10B /* EditViewPresenter+Caption.swift in Sources */,
 				A0870A5A2352ECD7006DC38D /* MediaCellModel.swift in Sources */,
@@ -858,8 +908,10 @@
 				A053206D242F37BA0009AD24 /* CompositionProject.swift in Sources */,
 				A01C77C2242F2DCE00777695 /* CompositionFiltersDefine.swift in Sources */,
 				A080D70924024D7F0089B10B /* EditDataSourceProtocol.swift in Sources */,
+				5457977D2509F62300D15A8B /* GMatcherResult.m in Sources */,
 				A0E03C01235AA35F0012F226 /* EditViewProtocol.swift in Sources */,
 				546700552508B605008D23B4 /* KSwiftyCameraVC.swift in Sources */,
+				5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */,
 				A02F7DCD239B3A7600398065 /* EditViewPlayProtocol.swift in Sources */,
 				5467004E2508B55C008D23B4 /* KPictureDisplayVC.swift in Sources */,
 				546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */,
@@ -871,6 +923,7 @@
 				A02F7DCF239B3F8C00398065 /* EditToolViewProtocol.swift in Sources */,
 				A0ADD4BD23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift in Sources */,
 				546700502508B577008D23B4 /* KRecordButton.swift in Sources */,
+				545797782509F62300D15A8B /* GACMatcherProcessor.m in Sources */,
 				A053207424381C830009AD24 /* EditProgressAdjustViewController.swift in Sources */,
 				A04647AE2388C3AF009FDDC2 /* UIViewController+Utillity.swift in Sources */,
 				A082FEB9243ADDA2008EEDDA /* EditOperationAudioCell.swift in Sources */,
@@ -909,7 +962,7 @@
 				A01DBD302427420D00DED48F /* EditViewPresenter+Adjust.swift in Sources */,
 				A09CF7DA2349E38400139461 /* MediaManager.swift in Sources */,
 				A09CF7C62349E15800139461 /* NavigationController.swift in Sources */,
-				5467003B2508A62E008D23B4 /* KLanguaageListTableVC.swift in Sources */,
+				5467003B2508A62E008D23B4 /* KLanguageListTableVC.swift in Sources */,
 				A0DBD4E723D9788D00E26238 /* EditToolTabView.swift in Sources */,
 				A0532070242F383E0009AD24 /* CompositionExtension.swift in Sources */,
 				A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */,
@@ -922,6 +975,7 @@
 				A01DBD2C24273A2F00DED48F /* EditToolFiltersViewController.swift in Sources */,
 				A0875AB1238A244200061394 /* EditToolAudioWaveformView.swift in Sources */,
 				A0E03C03235AA3730012F226 /* EditViewPresenter.swift in Sources */,
+				5457977A2509F62300D15A8B /* GKMPMatcherProcessor.m in Sources */,
 				A09CF7C32349E0F900139461 /* Define.swift in Sources */,
 				A09CF7E0234B0A7C00139461 /* MediaImageViewController.swift in Sources */,
 				546700482508B276008D23B4 /* SwiftyCamButton.swift in Sources */,
