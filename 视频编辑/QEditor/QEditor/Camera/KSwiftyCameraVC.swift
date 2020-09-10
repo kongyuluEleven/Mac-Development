@@ -50,6 +50,7 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         super.viewDidLoad()
         setupUI()
         checkAuthor()
+        recordButtonTapped()
     }
     
     private func setupUI() {
@@ -186,15 +187,29 @@ extension KSwiftyCameraVC {
         
         let atrStr = NSAttributedString(string: originText)
         let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
-        //let paraStyle = NSMutableParagraphStyle.init()
-        //paraStyle.setParagraphStyle(NSParagraphStyle.default)
-        //paraStyle.alignment = .center
-        //let range = NSMakeRange(0, attrTitle.length)
-        //attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
+        let paraStyle = NSMutableParagraphStyle.init()
+        paraStyle.setParagraphStyle(NSParagraphStyle.default)
+        paraStyle.alignment = .center
+        let range = NSMakeRange(0, attrTitle.length)
+        attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
+        attrTitle.addAttribute(.font, value: UIFont.systemFont(ofSize: 30), range: range)
+        attrTitle.addAttribute(.foregroundColor, value: UIColor.blue, range: range)
         if let matchRange = matchRange {
+            attrTitle.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: 40), range: matchRange)
             attrTitle.addAttribute(.foregroundColor, value: UIColor.red, range: matchRange)
+            lrcTextView.selectedRange = matchRange // optional
+            
+            let more = min(matchRange.upperBound + 100, range.upperBound)
+            let scrollRange =  NSMakeRange(matchRange.lowerBound,more)
+            lrcTextView.scrollRangeToVisible(scrollRange)
         }
         lrcTextView.attributedText = attrTitle
+        
+//        if let string = ayatTextView.text, let range = string.localizedStandardRange(of: tazweedAyahas[8].text) {
+//                let viewRange = NSRange(range, in: string)
+//                ayatTextView.selectedRange = viewRange // optional
+//                ayatTextView.scrollRangeToVisible(viewRange)
+//            }
     }
     
     private func checkAuthor() {
@@ -257,8 +272,10 @@ extension KSwiftyCameraVC {
         if speechRecognizer == nil {
             setupSiri()
         }
-        
-        guard let speechRecognizer = speechRecognizer else {return}
+
+        guard let speechRecognizer = speechRecognizer else {
+            return
+        }
         
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
             
@@ -292,8 +309,8 @@ extension KSwiftyCameraVC {
         
         // Configure the microphone input.
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
-            self.recognitionRequest?.append(buffer)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { [weak self] (buffer: AVAudioPCMBuffer, when: AVAudioTime)  in
+            self?.recognitionRequest?.append(buffer)
             //print("*****buffer call back ")
         }
         
@@ -342,7 +359,7 @@ extension KSwiftyCameraVC {
         
         let compareStr = originText.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
         
-        let bestTrasnStr = best.formattedString
+        var bestTrasnStr = best.formattedString
         
         if let range = compareStr.nsranges(of: bestTrasnStr).first {
             self.matchRange = range
@@ -356,12 +373,28 @@ extension KSwiftyCameraVC {
             self.lastMatchRange = self.matchRange
             return
         }
+        
+        bestTrasnStr = best.formattedString.lowercased()
+        
+        if let range = compareStr.nsranges(of: bestTrasnStr).first {
+            self.matchRange = range
+            if let last = self.lastMatchRange, let jiao = range.intersection(last) {
+                self.matchRange = range.union(jiao)
+            }
+            print("🍺1 匹配到: range=\(String(describing: self.matchRange)), bestTrasnStr = \(bestTrasnStr)")
+            DispatchQueue.main.async {
+                self.updateTextRange()
+            }
+            self.lastMatchRange = self.matchRange
+            return
+        }
 
         while j >= 0 {
              let translate = list.map({ (item) -> String in
                  return item.substring
              }).joined(separator: " ")
              //print("j = \(j),translate = \(translate)")
+             //let matchRang = compareStr.localizedStandardCompare(translate)
              let ranges = compareStr.nsranges(of: translate)
              if ranges.count > 0 {
                  

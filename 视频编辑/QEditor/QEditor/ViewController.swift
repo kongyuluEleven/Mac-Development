@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         let buttonLrc = UIButton(type: .custom)
         buttonLrc.frame = .init(x: 0, y: 0, width: 100, height: 100)
-        buttonLrc.setTitle("字幕", for: .normal)
+        buttonLrc.setTitle("编辑字幕", for: .normal)
         buttonLrc.center = view.center
         buttonLrc.addTarget(self, action: #selector(clickLrcButton), for: .touchUpInside)
         buttonLrc.setTitleColor(.red, for: .normal)
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         let buttonLanguage = UIButton(type: .custom)
         buttonLanguage.frame = .init(x: 0, y: 0, width: 100, height: 100)
-        buttonLanguage.setTitle("语言", for: .normal)
+        buttonLanguage.setTitle("导入字幕", for: .normal)
         buttonLanguage.center = view.center
         buttonLanguage.addTarget(self, action: #selector(clickbuttonLanguage), for: .touchUpInside)
         buttonLanguage.setTitleColor(.red, for: .normal)
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     }
     
     @objc func clickbuttonLanguage() {
-        navigationController?.pushViewController(KLanguageListTableVC())
+//        navigationController?.pushViewController(KLanguageListTableVC())
 //        let nav = NavigationController(rootViewController: KLanguaageListTableVC())
 //        present(nav, animated: true, completion: nil)
     }

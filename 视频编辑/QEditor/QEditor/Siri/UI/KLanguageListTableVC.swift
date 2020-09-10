@@ -33,6 +33,13 @@ class KLanguageListTableVC: UITableViewController {
         return button
     }()
     
+    private lazy var cancelButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(cancel))
+        button.tintColor = .black
+        button.accessibilityIdentifier = "OSSSpeechKitCancelButton"
+        return button
+    }()
+    
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
@@ -41,13 +48,22 @@ class KLanguageListTableVC: UITableViewController {
         tableView.accessibilityIdentifier = "OSSSpeechKitLanguageTableView"
         speechKit.delegate = self
         navigationItem.rightBarButtonItem = microphoneButton
+        navigationItem.leftBarButtonItem = cancelButton
         tableView.register(KLanguageTableViewCell.self,
                            forCellReuseIdentifier: KLanguageTableViewCell.reuseIdentifier)
+    }
+    
+    @objc func cancel() {
+        self.dismiss(animated: true) {
+            
+        }
     }
     
     // MARK: - Voice Recording
     
     @objc func recordVoice() {
+        
+        
         if microphoneButton.tintColor == .red {
             speechKit.endVoiceRecording()
             return

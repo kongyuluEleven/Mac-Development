@@ -15,6 +15,7 @@
 		5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797752509F62300D15A8B /* GMatcherExpression.m */; };
 		5457977D2509F62300D15A8B /* GMatcherResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797762509F62300D15A8B /* GMatcherResult.m */; };
 		5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797772509F62300D15A8B /* GThreadSafeDictionary.m */; };
+		54579782250A240E00D15A8B /* GHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54579780250A240E00D15A8B /* GHLabel.m */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
@@ -148,6 +149,8 @@
 		545797752509F62300D15A8B /* GMatcherExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherExpression.m; sourceTree = "<group>"; };
 		545797762509F62300D15A8B /* GMatcherResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMatcherResult.m; sourceTree = "<group>"; };
 		545797772509F62300D15A8B /* GThreadSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeDictionary.m; sourceTree = "<group>"; };
+		54579780250A240E00D15A8B /* GHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHLabel.m; sourceTree = "<group>"; };
+		54579781250A240E00D15A8B /* GHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLabel.h; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -310,6 +313,15 @@
 				545797772509F62300D15A8B /* GThreadSafeDictionary.m */,
 			);
 			path = match;
+			sourceTree = "<group>";
+		};
+		5457977F250A23FA00D15A8B /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				54579781250A240E00D15A8B /* GHLabel.h */,
+				54579780250A240E00D15A8B /* GHLabel.m */,
+			);
+			path = Com;
 			sourceTree = "<group>";
 		};
 		5467002925087DDB008D23B4 /* Camera */ = {
@@ -534,6 +546,7 @@
 		A09CF7AD2349DFE500139461 /* QEditor */ = {
 			isa = PBXGroup;
 			children = (
+				5457977F250A23FA00D15A8B /* Com */,
 				545797642509D63F00D15A8B /* Utils */,
 				5467002B25087DF1008D23B4 /* Siri */,
 				5467002A25087DE5008D23B4 /* Lrc */,
@@ -904,6 +917,7 @@
 				A0DBD4E323D7360700E26238 /* CompositionSegment.swift in Sources */,
 				A0E03BFD235AA2490012F226 /* EditToolViewController.swift in Sources */,
 				A07F9A4E2425D3E200245E73 /* CompositionPlayer.swift in Sources */,
+				54579782250A240E00D15A8B /* GHLabel.m in Sources */,
 				A0870A692353210B006DC38D /* EditPlayerViewController.swift in Sources */,
 				A053206D242F37BA0009AD24 /* CompositionProject.swift in Sources */,
 				A01C77C2242F2DCE00777695 /* CompositionFiltersDefine.swift in Sources */,
