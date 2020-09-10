@@ -7,16 +7,50 @@
 //
 
 import UIKit
-
 import AVFoundation
+import Speech
+
+let TEST_URL = "http://m.kekenet.com/menu/201206/185740.shtml"
+
+let HOLDE_PLACE_TEXT = "请在此处输入你想要跟踪失败的文字，然后点击《拷贝》按钮"
+
+let TEXT_COPY_DEFAULT = """
+ Passage 37. Life Lessons
+ Sometimes people come into your life and you know right away that they were meant to be there,
+ to serve some sort of purpose,teach you a lesson, or to help you figure out who you are or who you want to become. You never know who these people may be—a roommate, a neighbor, a professor, a friend, a lover, or even a complete stranger—but when you lock eyes with them,you know at that very moment they will affect your life in some profound way. Sometimes things happen to you that may seem horrible,painful, and unfair at first,but in reflection you find that without overcoming those obstacles you would have never realized your potential, strength,willpower, or heart. Everything happens for a reason. Nothing happens by chance or by means of good or bad luck. Illness,injury, love, lost moments of true greatness, and sheer stupidity all occur to test the limits of your soul. Without these small tests, whatever they may be, life would be like a smoothly paved straight flat road to nowhere. It would be safe and comfortable,but dull and utterly pointless.
+ The people you meet who affect your life, and the success and downfalls you experience, help to create who you are and who you become. Even the bad experiences can be learned from. In fact, they are sometimes the most important ones. If someone loves you, give love back to them in whatever way you can, not only because they love you, but because in a way, they are teaching you to love and how to open your heart and eyes to things. If someone hurts you, betrays you, or breaks your heart,forgive them, for they have helped you learn about trust and the importance of being cautious to whom you open your heart. Make every day count. Appreciate every moment and take from those moments everything that you possibly can for you may never be able to experience it again. Talk to people that you have never talked to before, and listen to what they have to say. Let yourself fall in love, break free, and set your sights high. Hold your head up because you have every right to. Tell yourself you are a great individual and believe in yourself, for if you don’t believe in yourself, it will be hard for others to believe in you.
+"""
+
 class KSwiftyCameraVC: SwiftyCamViewController {
 
     @IBOutlet weak var captureButton    : KRecordButton!
     @IBOutlet weak var flipCameraButton : UIButton!
     @IBOutlet weak var flashButton      : UIButton!
+    @IBOutlet weak var btnSpeak: UIButton!
+    @IBOutlet weak var lrcTextView: UITextView!
+    @IBOutlet weak var titleLable: UILabel!
+    @IBOutlet weak var btnCancel: UIButton!
+    
+    
+    private var speechRecognizer:SFSpeechRecognizer?
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var recognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+    private var lock = NSLock.init()
+    private var originText:String = TEXT_COPY_DEFAULT
+    private var matchRange:NSRange?
+    private var lastMatchRange:NSRange?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        
+        checkAuthor()
+        setupSiri()
+        //recordButtonTapped()
+    }
+    
+    private func setupUI() {
         shouldPrompToAppSettings = true
         cameraDelegate = self
         maximumVideoDuration = 10.0
@@ -26,6 +60,19 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         flashMode = .auto
         flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
         captureButton.buttonEnabled = false
+        titleLable.text = ""
+        //lrcTextView.text = ""
+        lrcTextView.backgroundColor = .clear
+        lrcTextView.font = UIFont.systemFont(ofSize: 20)
+        
+        self.navigationController?.navigationBar.isHidden = true
+        updateTextRange()
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -46,10 +93,264 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         toggleFlashAnimation()
     }
 
+    @IBAction func btnCancelClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnSpeakClicked(_ sender: Any) {
+        //OSSSpeech.shared.recordVoice()
+        recordButtonTapped()
+    }
 }
 
+// MARK: -语音识别
 extension KSwiftyCameraVC {
     
+    private func changeTip(text:String) {
+        titleLable.text = text
+    }
+    
+    func recordButtonTapped() {
+        if audioEngine.isRunning {
+            stopRecording()
+        } else {
+            do {
+                try startRecording()
+                //btnRecoginition.setTitle("Stop Recording", for: .normal)
+                changeTip(text: "Stop Recording")
+                
+            } catch {
+                //btnRecoginition.setTitle("Recording Not Available", for: .normal)
+                changeTip(text: "Recording Not Available")
+            }
+        }
+    }
+    
+    private func setupSiri() {
+        speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+        //speechRecognizer?.delegate = self
+        speechRecognizer?.defaultTaskHint = .dictation
+    }
+    
+    private func updateTextRange() {
+        
+        let atrStr = NSAttributedString(string: originText)
+        let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
+        //let paraStyle = NSMutableParagraphStyle.init()
+        //paraStyle.setParagraphStyle(NSParagraphStyle.default)
+        //paraStyle.alignment = .center
+        //let range = NSMakeRange(0, attrTitle.length)
+        //attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
+        if let matchRange = matchRange {
+            attrTitle.addAttribute(.foregroundColor, value: UIColor.red, range: matchRange)
+        }
+        lrcTextView.attributedText = attrTitle
+    }
+    
+    private func checkAuthor() {
+        // Configure the SFSpeechRecognizer object already
+        // stored in a local member variable.
+        
+        // Asynchronously make the authorization request.
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+
+            // Divert to the app's main thread so that the UI
+            // can be updated.
+            OperationQueue.main.addOperation {
+                switch authStatus {
+                case .authorized:
+                    self.btnSpeak.isEnabled = true
+                    
+                case .denied:
+                    self.btnSpeak.isEnabled = false
+                    self.changeTip(text: "User denied access to speech recognition")
+                    
+                case .restricted:
+                    self.btnSpeak.isEnabled = false
+                    self.changeTip(text: "Speech recognition restricted on this device")
+                    
+                case .notDetermined:
+                    self.btnSpeak.isEnabled = false
+                    self.changeTip(text: "Speech recognition not yet authorized")
+                    
+                default:
+                    self.btnSpeak.isEnabled = false
+                }
+            }
+        }
+    }
+    
+    private func startRecording() throws {
+        
+        // Cancel the previous task if it's running.
+        recognitionTask?.cancel()
+        self.recognitionTask = nil
+        
+        // Configure the audio session for the app.
+        let audioSession = AVAudioSession.sharedInstance()
+        try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        
+        let inputNode = audioEngine.inputNode
+        
+        // Create and configure the speech recognition request.
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        guard let recognitionRequest = recognitionRequest else { fatalError("Unable to create a SFSpeechAudioBufferRecognitionRequest object") }
+        recognitionRequest.shouldReportPartialResults = true
+        
+        // Keep speech recognition data on device
+        if #available(iOS 13, *) {
+            recognitionRequest.requiresOnDeviceRecognition = true
+        }
+        
+        //recognitionRequest.requiresOnDeviceRecognition = true
+        
+        guard let speechRecognizer = speechRecognizer else {
+            setupSiri()
+            return
+        }
+        
+        recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+            var isFinal = false
+            
+            if let result = result {
+                self.changeTip(text: result.bestTranscription.formattedString)
+                print("识别到：\(result.bestTranscription.formattedString)")
+                
+                DispatchQueue.global().async {
+                    self.match(result: result)
+                }
+                
+            }
+            
+            if error != nil || isFinal {
+                // Stop recognizing speech if there is a problem.
+                print("error=\(String(describing: error))")
+                self.audioEngine.stop()
+                inputNode.removeTap(onBus: 0)
+                
+                self.recognitionRequest = nil
+                self.recognitionTask = nil
+                
+                self.btnSpeak.isEnabled = true
+                //self.btnRecoginition.setTitle("Start Recording", for: .normal)
+            }
+        }
+        
+        
+        // Configure the microphone input.
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
+            self.recognitionRequest?.append(buffer)
+            //print("*****buffer call back ")
+        }
+        
+        audioEngine.prepare()
+        try audioEngine.start()
+        
+        // Let the user know to start talking.
+        //textView.text = "(Go ahead, I'm listening)"
+    }
+       
+       // MARK: SFSpeechRecognizerDelegate
+       
+    public func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+        if available {
+            btnSpeak.isEnabled = true
+            changeTip(text: "Start Recording")
+        } else {
+            btnSpeak.isEnabled = false
+            changeTip(text: "Recognition Not Available")
+        }
+    }
+       
+
+    private func stopRecording() {
+        audioEngine.stop()
+        recognitionRequest?.endAudio()
+        btnSpeak.isEnabled = false
+        changeTip(text: "Stopping")
+    }
+    
+    private func match(result:SFSpeechRecognitionResult) {
+
+        lock.lock()
+        defer { lock.unlock() }
+        
+        let best = result.bestTranscription
+        var j = best.segments.count - 1
+        var list = [SFTranscriptionSegment]()
+        list.append(contentsOf: best.segments)
+        
+        let compareStr = originText.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
+        
+        let bestTrasnStr = best.formattedString
+        
+        if let range = compareStr.nsranges(of: bestTrasnStr).first {
+            self.matchRange = range
+            if let last = self.lastMatchRange, let jiao = range.intersection(last) {
+                self.matchRange = range.union(jiao)
+            }
+            print("🍺0 匹配到: range=\(String(describing: self.matchRange)), bestTrasnStr = \(bestTrasnStr)")
+            DispatchQueue.main.async {
+                self.updateTextRange()
+            }
+            self.lastMatchRange = self.matchRange
+            return
+        }
+
+        while j >= 0 {
+             let translate = list.map({ (item) -> String in
+                 return item.substring
+             }).joined(separator: " ")
+             //print("j = \(j),translate = \(translate)")
+             let ranges = compareStr.nsranges(of: translate)
+             if ranges.count > 0 {
+                 
+                 if ranges.count == 1 {
+                     
+                     self.matchRange = ranges.first
+                     if let last = self.lastMatchRange,  let current = ranges.first, let jiao = current.intersection(last) {
+                         self.matchRange = current.union(jiao)
+                     }
+                     print("🍺 匹配到: range=\(String(describing: self.matchRange)), translate = \(translate)")
+                     DispatchQueue.main.async {
+                         self.updateTextRange()
+                     }
+                     self.lastMatchRange = self.matchRange
+                     return
+                 }
+                 else {
+                     ranges.forEach { (item) in
+                         //print("***匹配到多个遍历 : range=\(String(describing: item))")
+                         if let last = self.lastMatchRange {
+                             if let jiao = item.intersection(last) {
+                                 self.matchRange = item.union(jiao)
+                                 print("🍺🍺🍺1 匹配到: range=\(String(describing: self.matchRange))")
+                                 DispatchQueue.main.async {
+                                     self.updateTextRange()
+                                 }
+                                 self.lastMatchRange = self.matchRange
+                                 return
+                             } else if item.contains(last.location) {
+                                 self.matchRange = item
+                                 print("🍺🍺🍺2 匹配到: range=\(String(describing: self.matchRange))")
+                                 DispatchQueue.main.async {
+                                     self.updateTextRange()
+                                 }
+                                 self.lastMatchRange = self.matchRange
+                                 return
+                             }
+                         }
+                     }
+                 }
+             }
+             
+             list.removeFirst()
+             j = j - 1
+         }
+                        
+    }
 }
 
 // UI Animations
@@ -104,7 +405,7 @@ extension KSwiftyCameraVC {
 }
 
 
-// MARK : - SwiftyCamViewControllerDelegate
+// MARK: - SwiftyCamViewControllerDelegate
 extension KSwiftyCameraVC:SwiftyCamViewControllerDelegate {
     func swiftyCamSessionDidStartRunning(_ swiftyCam: SwiftyCamViewController) {
         print("Session did start running")

@@ -11,9 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSwiftyCameraVC" customModule="QEditor" customModuleProvider="target">
             <connections>
+                <outlet property="btnCancel" destination="iGd-wF-6WG" id="j2f-eS-w6v"/>
+                <outlet property="btnSpeak" destination="jMZ-Xf-cY0" id="XW7-D0-2fQ"/>
                 <outlet property="captureButton" destination="e0Q-UM-QaE" id="7Bq-Zj-SDG"/>
                 <outlet property="flashButton" destination="afA-qh-0Jh" id="t9G-ZS-IuW"/>
                 <outlet property="flipCameraButton" destination="t1I-MW-UR1" id="3tM-YK-YnL"/>
+                <outlet property="lrcTextView" destination="Yva-rq-Is6" id="8BG-3W-3fj"/>
+                <outlet property="titleLable" destination="96d-9k-hif" id="f8K-Rs-Q9s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -50,23 +54,81 @@
                         <action selector="toggleFlashTapped:" destination="-1" eventType="touchUpInside" id="yzW-Nf-U3E"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMZ-Xf-cY0">
+                    <rect key="frame" x="354" y="754.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Qob-da-sso"/>
+                        <constraint firstAttribute="height" constant="40" id="hVh-b1-5Sj"/>
+                    </constraints>
+                    <state key="normal" title="V" image="mic2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="mic2"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSpeakClicked:" destination="-1" eventType="touchUpInside" id="FIZ-7O-zR2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-wF-6WG">
+                    <rect key="frame" x="28" y="84" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="b2x-Xh-iM4"/>
+                        <constraint firstAttribute="width" constant="30" id="lpi-zl-M0y"/>
+                    </constraints>
+                    <state key="normal" image="cancel"/>
+                    <connections>
+                        <action selector="btnCancelClicked:" destination="-1" eventType="touchUpInside" id="ovI-hN-qTE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96d-9k-hif">
+                    <rect key="frame" x="10" y="54" width="394" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OlI-l3-ggx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yva-rq-Is6">
+                    <rect key="frame" x="10" y="124" width="394" height="610.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="jMZ-Xf-cY0" firstAttribute="centerY" secondItem="e0Q-UM-QaE" secondAttribute="centerY" id="5VY-fu-lB2"/>
+                <constraint firstItem="jMZ-Xf-cY0" firstAttribute="top" secondItem="Yva-rq-Is6" secondAttribute="bottom" constant="20" id="BiM-2L-NZn"/>
+                <constraint firstItem="96d-9k-hif" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="CcZ-xs-s1d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="96d-9k-hif" secondAttribute="trailing" constant="10" id="HFN-Bs-mu8"/>
+                <constraint firstItem="iGd-wF-6WG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Im5-mq-uNj"/>
+                <constraint firstItem="Yva-rq-Is6" firstAttribute="top" secondItem="iGd-wF-6WG" secondAttribute="bottom" constant="10" id="N7D-eb-dCN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yva-rq-Is6" secondAttribute="trailing" constant="10" id="RiX-10-ShO"/>
+                <constraint firstItem="iGd-wF-6WG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="SHP-aY-Jcs"/>
                 <constraint firstItem="e0Q-UM-QaE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SW1-So-QbS"/>
                 <constraint firstItem="e0Q-UM-QaE" firstAttribute="leading" secondItem="t1I-MW-UR1" secondAttribute="trailing" constant="50" id="Ya7-vR-uwX"/>
                 <constraint firstItem="afA-qh-0Jh" firstAttribute="centerY" secondItem="e0Q-UM-QaE" secondAttribute="centerY" id="aaY-aC-Ocd"/>
                 <constraint firstItem="t1I-MW-UR1" firstAttribute="centerY" secondItem="e0Q-UM-QaE" secondAttribute="centerY" id="bDN-Qg-s5u"/>
+                <constraint firstItem="Yva-rq-Is6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="d7w-U7-INl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jMZ-Xf-cY0" secondAttribute="trailing" constant="20" id="dhz-bz-K3X"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e0Q-UM-QaE" secondAttribute="bottom" constant="50" id="ni7-wH-eXf"/>
+                <constraint firstItem="96d-9k-hif" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="x4F-Q7-GEI"/>
                 <constraint firstItem="afA-qh-0Jh" firstAttribute="leading" secondItem="e0Q-UM-QaE" secondAttribute="trailing" constant="50" id="yE5-0E-4yV"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="89"/>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </view>
     </objects>
     <resources>
+        <image name="cancel" width="30" height="30"/>
         <image name="flashOutline" width="18" height="30"/>
         <image name="flipCamera" width="30" height="23"/>
+        <image name="mic2" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,5 +20,133 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEB4601B-CA50-4BB9-BD69-59AC9B6D940B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KLrcCamera/Src/Siri/KSiriVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "checkAuthor()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CEB4601B-CA50-4BB9-BD69-59AC9B6D940B - 4c60d54d13772392"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.SFSpeechRecognizerAuthorizationStatus) -&gt; () in KLrcCamera.KSiriVC.(checkAuthor in _71EE14287DC69D310CA9C226769775C8)() -&gt; ()"
+                  moduleName = "KLrcCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/Mac%20slic/KLrcCamera/KLrcCamera/Src/Siri/KSiriVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "CEB4601B-CA50-4BB9-BD69-59AC9B6D940B - 43e9b6293c3b6cdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (__C.SFSpeechRecognizerAuthorizationStatus) -&gt; () in KLrcCamera.KSiriVC.(checkAuthor in _71EE14287DC69D310CA9C226769775C8)() -&gt; ()"
+                  moduleName = "KLrcCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/Mac%20slic/KLrcCamera/KLrcCamera/Src/Siri/KSiriVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "948402DC-225D-4BB2-B689-EF0EF09499BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KLrcCamera/Src/Siri/KSiriVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "checkAuthor()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "948402DC-225D-4BB2-B689-EF0EF09499BA - 1be2d462d476034f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KLrcCamera.KSiriVC.(checkAuthor in _71EE14287DC69D310CA9C226769775C8)() -&gt; ()"
+                  moduleName = "KLrcCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/Mac%20slic/KLrcCamera/KLrcCamera/Src/Siri/KSiriVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "948402DC-225D-4BB2-B689-EF0EF09499BA - 4c60d54d13772392"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.SFSpeechRecognizerAuthorizationStatus) -&gt; () in KLrcCamera.KSiriVC.(checkAuthor in _71EE14287DC69D310CA9C226769775C8)() -&gt; ()"
+                  moduleName = "KLrcCamera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kongyulu/development/mac/gitpro/Mac-Development/Mac%20slic/KLrcCamera/KLrcCamera/Src/Siri/KSiriVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "490CED89-4319-45B4-B4A4-F77F07818BD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KLrcCamera/Src/Siri/KSiriVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "startRecording()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "623C0CB7-2DC3-457A-93F6-6FCF5000F99B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KLrcCamera/Src/Siri/KSiriVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "startRecording()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

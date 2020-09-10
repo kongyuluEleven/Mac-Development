@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545797662509D66F00D15A8B /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797652509D66F00D15A8B /* String+Range.swift */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
@@ -123,6 +124,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		545797652509D66F00D15A8B /* String+Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -255,6 +257,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		545797642509D63F00D15A8B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				545797652509D66F00D15A8B /* String+Range.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5467002925087DDB008D23B4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +487,7 @@
 		A09CF7AD2349DFE500139461 /* QEditor */ = {
 			isa = PBXGroup;
 			children = (
+				545797642509D63F00D15A8B /* Utils */,
 				5467002B25087DF1008D23B4 /* Siri */,
 				5467002A25087DE5008D23B4 /* Lrc */,
 				5467002925087DDB008D23B4 /* Camera */,
@@ -920,6 +931,7 @@
 				A01DBD322427423900DED48F /* EditAdjustProtocol.swift in Sources */,
 				546700492508B276008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				546700352508A449008D23B4 /* OSSSpeech.swift in Sources */,
+				545797662509D66F00D15A8B /* String+Range.swift in Sources */,
 				A0DBD4E923D9BD4D00E26238 /* EditToolChangeSpeedViewController.swift in Sources */,
 				546700362508A449008D23B4 /* OSSVoice.swift in Sources */,
 				A07B6A4624148A54008170F5 /* EditPlayerCaptionTextField.swift in Sources */,

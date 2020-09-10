@@ -243,7 +243,7 @@ extension ViewController {
             recognitionRequest.requiresOnDeviceRecognition = false
         }
         
-        recognitionRequest.requiresOnDeviceRecognition = true
+        recognitionRequest.requiresOnDeviceRecognition = false
         
         guard let speechRecognizer = speechRecognizer else {return}
         

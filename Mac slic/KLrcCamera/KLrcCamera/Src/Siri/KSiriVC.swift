@@ -40,6 +40,7 @@ class KSiriVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupSiri()
     }
     
     private func setupUI() {
@@ -59,6 +60,7 @@ class KSiriVC: UIViewController {
     
     @IBAction func btnRecoginitionClicked(_ sender: Any) {
         print("\(#function)")
+        checkAuthor()
         recordButtonTapped()
     }
     
@@ -97,7 +99,7 @@ extension KSiriVC {
         if let matchRange = matchRange {
             attrTitle.addAttribute(.foregroundColor, value: UIColor.red, range: matchRange)
         }
-        textView.attributedText = attrTitle
+        textView2.attributedText = attrTitle
     }
     
     private func checkAuthor() {
@@ -158,7 +160,7 @@ extension KSiriVC {
             recognitionRequest.requiresOnDeviceRecognition = false
         }
         
-        recognitionRequest.requiresOnDeviceRecognition = true
+        //recognitionRequest.requiresOnDeviceRecognition = true
         
         guard let speechRecognizer = speechRecognizer else {return}
         
@@ -180,6 +182,7 @@ extension KSiriVC {
             
             if error != nil || isFinal {
                 // Stop recognizing speech if there is a problem.
+                print("error=\(String(describing: error))")
                 self.audioEngine.stop()
                 inputNode.removeTap(onBus: 0)
                 
