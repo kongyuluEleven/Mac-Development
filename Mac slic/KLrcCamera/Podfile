@@ -11,6 +11,8 @@ target 'KLrcCamera' do
   pod "SnapKit"
   pod "KVOController"
   pod 'NotificationBannerSwift'
+  #pod 'GPUImage'
+  pod 'GPUImage2-YZ', '1.0.0'
 
 
 

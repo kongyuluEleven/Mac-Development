@@ -106,7 +106,7 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         setupUI()
         checkAuthor()
@@ -128,7 +128,7 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         lrcTextView.backgroundColor = .clear
         lrcTextView.font = UIFont.systemFont(ofSize: 20)
         
-        self.navigationController?.navigationBar.isHidden = true
+        //self.navigationController?.navigationBar.isHidden = true
         btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
         
         switchShowLrc.isOn = isShowLrc
@@ -158,7 +158,8 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.navigationController?.navigationBar.isHidden = false
+        //self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -180,7 +181,10 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     }
 
     @IBAction func btnCancelClicked(_ sender: Any) {
+        
         navigationController?.popViewController(animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
     }
     
     @IBAction func btnSpeakClicked(_ sender: Any) {
@@ -452,22 +456,10 @@ extension KSwiftyCameraVC {
         }
         lrcTextView.attributedText = attrTitle
         
-//        if let string = ayatTextView.text, let range = string.localizedStandardRange(of: tazweedAyahas[8].text) {
-//                let viewRange = NSRange(range, in: string)
-//                ayatTextView.selectedRange = viewRange // optional
-//                ayatTextView.scrollRangeToVisible(viewRange)
-//            }
     }
     
     private func checkAuthor() {
-        // Configure the SFSpeechRecognizer object already
-        // stored in a local member variable.
-        
-        // Asynchronously make the authorization request.
         SFSpeechRecognizer.requestAuthorization { authStatus in
-
-            // Divert to the app's main thread so that the UI
-            // can be updated.
             OperationQueue.main.addOperation {
                 switch authStatus {
                 case .authorized:

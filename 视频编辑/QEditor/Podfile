@@ -14,6 +14,8 @@ target 'QEditor' do
   
 #  pod 'GPUImage2-YZ', :path => '/Users/qyizhong/Desktop/GPUImage2'
   pod 'GPUImage2-YZ', '1.0.0'
+
+#  pod 'GPUImage'
   
   pod 'DeviceKit', '~> 2.0'
   
@@ -26,5 +28,10 @@ target 'QEditor' do
   pod 'SwifterSwift/Foundation', '~> 5.1.0'
   
   pod 'FLEX', :configurations => ['Debug']
+  
+  
+  pod 'MetalPetal'
+  pod 'MetalPetal/Swift'
+
 
 end

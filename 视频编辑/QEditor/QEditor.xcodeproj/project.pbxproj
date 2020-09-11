@@ -17,6 +17,52 @@
 		5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797772509F62300D15A8B /* GThreadSafeDictionary.m */; };
 		54579782250A240E00D15A8B /* GHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54579780250A240E00D15A8B /* GHLabel.m */; };
 		54579784250B2B0600D15A8B /* KDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579783250B2B0600D15A8B /* KDefine.swift */; };
+		54579787250B4C0500D15A8B /* KGPUImageCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579786250B4C0500D15A8B /* KGPUImageCamera.swift */; };
+		54579798250B90C700D15A8B /* ImageErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579794250B90C500D15A8B /* ImageErrors.swift */; };
+		54579799250B90C700D15A8B /* CVPixelBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579795250B90C600D15A8B /* CVPixelBuffer+Extension.swift */; };
+		5457979A250B90C700D15A8B /* CGImage+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579796250B90C600D15A8B /* CGImage+Conversion.swift */; };
+		5457979B250B90C700D15A8B /* Image+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579797250B90C700D15A8B /* Image+Orientation.swift */; };
+		5457979F250B90FB00D15A8B /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457979C250B90FA00D15A8B /* ImageCollectionCell.swift */; };
+		545797A0250B90FB00D15A8B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457979D250B90FB00D15A8B /* ImagePicker.swift */; };
+		545797A1250B90FB00D15A8B /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457979E250B90FB00D15A8B /* ImageDataProvider.swift */; };
+		545797A4250B914400D15A8B /* ImageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797A2250B914400D15A8B /* ImageContent.swift */; };
+		545797A5250B914400D15A8B /* ContentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797A3250B914400D15A8B /* ContentProtocol.swift */; };
+		545797AB250B919A00D15A8B /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 545797A8250B919900D15A8B /* DeepLabV3.mlmodel */; };
+		545797AC250B919A00D15A8B /* DeepLabV3FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 545797A9250B919900D15A8B /* DeepLabV3FP16.mlmodel */; };
+		545797AD250B919A00D15A8B /* DeepLabV3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 545797AA250B919A00D15A8B /* DeepLabV3Int8LUT.mlmodel */; };
+		545797B2250B91B400D15A8B /* DeepLabCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797AF250B91B300D15A8B /* DeepLabCenter.swift */; };
+		545797B3250B91B400D15A8B /* SegmentationResultMLMultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797B0250B91B400D15A8B /* SegmentationResultMLMultiArray.swift */; };
+		545797B4250B91B400D15A8B /* DeepLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797B1250B91B400D15A8B /* DeepLab.swift */; };
+		545797B7250B91C600D15A8B /* VisionSaliency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797B5250B91C600D15A8B /* VisionSaliency.swift */; };
+		545797B8250B91C600D15A8B /* VisionSaliencyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797B6250B91C600D15A8B /* VisionSaliencyCenter.swift */; };
+		545797BB250B91EE00D15A8B /* Segment.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 545797BA250B91EE00D15A8B /* Segment.mlmodel */; };
+		545797BE250B91F800D15A8B /* UIImage+Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797BC250B91F700D15A8B /* UIImage+Segment.swift */; };
+		545797BF250B91F800D15A8B /* Segmentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797BD250B91F800D15A8B /* Segmentor.swift */; };
+		545797C1250B923200D15A8B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797C0250B923200D15A8B /* Task.swift */; };
+		545797DA250B946A00D15A8B /* AssetExportSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CA250B946A00D15A8B /* AssetExportSession.swift */; };
+		545797DB250B946A00D15A8B /* MovieSegmentsRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CB250B946A00D15A8B /* MovieSegmentsRecorder.swift */; };
+		545797DC250B946A00D15A8B /* MovieRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CC250B946A00D15A8B /* MovieRecorder.swift */; };
+		545797DD250B946A00D15A8B /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CD250B946A00D15A8B /* UnfairLock.swift */; };
+		545797DE250B946A00D15A8B /* AudioVideoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CE250B946A00D15A8B /* AudioVideoSettings.swift */; };
+		545797DF250B946A00D15A8B /* Camera+FocusExposure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797CF250B946A00D15A8B /* Camera+FocusExposure.swift */; };
+		545797E0250B946A00D15A8B /* AudioQueueCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D0250B946A00D15A8B /* AudioQueueCaptureSession.swift */; };
+		545797E1250B946A00D15A8B /* Camera+AudioQueueCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D1250B946A00D15A8B /* Camera+AudioQueueCapture.swift */; };
+		545797E2250B946A00D15A8B /* SampleBufferUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D2250B946A00D15A8B /* SampleBufferUtilities.swift */; };
+		545797E3250B946A00D15A8B /* AVAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D3250B946A00D15A8B /* AVAsset.swift */; };
+		545797E4250B946A00D15A8B /* PlayerVideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D4250B946A00D15A8B /* PlayerVideoOutput.swift */; };
+		545797E5250B946A00D15A8B /* VideoOrientationUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D5250B946A00D15A8B /* VideoOrientationUtilities.swift */; };
+		545797E6250B946A00D15A8B /* DeviceOrientationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D6250B946A00D15A8B /* DeviceOrientationTracker.swift */; };
+		545797E7250B946A00D15A8B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D7250B946A00D15A8B /* Camera.swift */; };
+		545797E8250B946A00D15A8B /* Camera+PhotoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D8250B946A00D15A8B /* Camera+PhotoCapture.swift */; };
+		545797E9250B946A00D15A8B /* VideoComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797D9250B946A00D15A8B /* VideoComposition.swift */; };
+		545797EC250B969A00D15A8B /* KImageMattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797EA250B969A00D15A8B /* KImageMattingVC.swift */; };
+		545797ED250B969A00D15A8B /* KImageMattingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545797EB250B969A00D15A8B /* KImageMattingVC.xib */; };
+		545797F0250B982B00D15A8B /* KPhotoMattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797EE250B982B00D15A8B /* KPhotoMattingVC.swift */; };
+		545797F1250B982B00D15A8B /* KPhotoMattingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545797EF250B982B00D15A8B /* KPhotoMattingVC.xib */; };
+		545797F4250B984200D15A8B /* KVideoMattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797F2250B984200D15A8B /* KVideoMattingVC.swift */; };
+		545797F5250B984200D15A8B /* KVideoMattingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545797F3250B984200D15A8B /* KVideoMattingVC.xib */; };
+		545797F7250B9B1900D15A8B /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545797F6250B9B1900D15A8B /* image.xcassets */; };
+		545797FD250BA4A200D15A8B /* KBaseRenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797FC250BA4A200D15A8B /* KBaseRenderController.swift */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
@@ -153,6 +199,52 @@
 		54579780250A240E00D15A8B /* GHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHLabel.m; sourceTree = "<group>"; };
 		54579781250A240E00D15A8B /* GHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLabel.h; sourceTree = "<group>"; };
 		54579783250B2B0600D15A8B /* KDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDefine.swift; sourceTree = "<group>"; };
+		54579786250B4C0500D15A8B /* KGPUImageCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGPUImageCamera.swift; sourceTree = "<group>"; };
+		54579794250B90C500D15A8B /* ImageErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageErrors.swift; sourceTree = "<group>"; };
+		54579795250B90C600D15A8B /* CVPixelBuffer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extension.swift"; sourceTree = "<group>"; };
+		54579796250B90C600D15A8B /* CGImage+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Conversion.swift"; sourceTree = "<group>"; };
+		54579797250B90C700D15A8B /* Image+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Orientation.swift"; sourceTree = "<group>"; };
+		5457979C250B90FA00D15A8B /* ImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		5457979D250B90FB00D15A8B /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5457979E250B90FB00D15A8B /* ImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
+		545797A2250B914400D15A8B /* ImageContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContent.swift; sourceTree = "<group>"; };
+		545797A3250B914400D15A8B /* ContentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentProtocol.swift; sourceTree = "<group>"; };
+		545797A8250B919900D15A8B /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		545797A9250B919900D15A8B /* DeepLabV3FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3FP16.mlmodel; sourceTree = "<group>"; };
+		545797AA250B919A00D15A8B /* DeepLabV3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3Int8LUT.mlmodel; sourceTree = "<group>"; };
+		545797AF250B91B300D15A8B /* DeepLabCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLabCenter.swift; sourceTree = "<group>"; };
+		545797B0250B91B400D15A8B /* SegmentationResultMLMultiArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationResultMLMultiArray.swift; sourceTree = "<group>"; };
+		545797B1250B91B400D15A8B /* DeepLab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLab.swift; sourceTree = "<group>"; };
+		545797B5250B91C600D15A8B /* VisionSaliency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionSaliency.swift; sourceTree = "<group>"; };
+		545797B6250B91C600D15A8B /* VisionSaliencyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionSaliencyCenter.swift; sourceTree = "<group>"; };
+		545797BA250B91EE00D15A8B /* Segment.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Segment.mlmodel; sourceTree = "<group>"; };
+		545797BC250B91F700D15A8B /* UIImage+Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Segment.swift"; sourceTree = "<group>"; };
+		545797BD250B91F800D15A8B /* Segmentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segmentor.swift; sourceTree = "<group>"; };
+		545797C0250B923200D15A8B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		545797CA250B946A00D15A8B /* AssetExportSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetExportSession.swift; sourceTree = "<group>"; };
+		545797CB250B946A00D15A8B /* MovieSegmentsRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSegmentsRecorder.swift; sourceTree = "<group>"; };
+		545797CC250B946A00D15A8B /* MovieRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRecorder.swift; sourceTree = "<group>"; };
+		545797CD250B946A00D15A8B /* UnfairLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
+		545797CE250B946A00D15A8B /* AudioVideoSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVideoSettings.swift; sourceTree = "<group>"; };
+		545797CF250B946A00D15A8B /* Camera+FocusExposure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+FocusExposure.swift"; sourceTree = "<group>"; };
+		545797D0250B946A00D15A8B /* AudioQueueCaptureSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioQueueCaptureSession.swift; sourceTree = "<group>"; };
+		545797D1250B946A00D15A8B /* Camera+AudioQueueCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+AudioQueueCapture.swift"; sourceTree = "<group>"; };
+		545797D2250B946A00D15A8B /* SampleBufferUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleBufferUtilities.swift; sourceTree = "<group>"; };
+		545797D3250B946A00D15A8B /* AVAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAsset.swift; sourceTree = "<group>"; };
+		545797D4250B946A00D15A8B /* PlayerVideoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVideoOutput.swift; sourceTree = "<group>"; };
+		545797D5250B946A00D15A8B /* VideoOrientationUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOrientationUtilities.swift; sourceTree = "<group>"; };
+		545797D6250B946A00D15A8B /* DeviceOrientationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceOrientationTracker.swift; sourceTree = "<group>"; };
+		545797D7250B946A00D15A8B /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		545797D8250B946A00D15A8B /* Camera+PhotoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+PhotoCapture.swift"; sourceTree = "<group>"; };
+		545797D9250B946A00D15A8B /* VideoComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoComposition.swift; sourceTree = "<group>"; };
+		545797EA250B969A00D15A8B /* KImageMattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KImageMattingVC.swift; sourceTree = "<group>"; };
+		545797EB250B969A00D15A8B /* KImageMattingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KImageMattingVC.xib; sourceTree = "<group>"; };
+		545797EE250B982B00D15A8B /* KPhotoMattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPhotoMattingVC.swift; sourceTree = "<group>"; };
+		545797EF250B982B00D15A8B /* KPhotoMattingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KPhotoMattingVC.xib; sourceTree = "<group>"; };
+		545797F2250B984200D15A8B /* KVideoMattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVideoMattingVC.swift; sourceTree = "<group>"; };
+		545797F3250B984200D15A8B /* KVideoMattingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVideoMattingVC.xib; sourceTree = "<group>"; };
+		545797F6250B9B1900D15A8B /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		545797FC250BA4A200D15A8B /* KBaseRenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBaseRenderController.swift; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -290,6 +382,11 @@
 			children = (
 				545797672509F62200D15A8B /* match */,
 				545797652509D66F00D15A8B /* String+Range.swift */,
+				545797C0250B923200D15A8B /* Task.swift */,
+				54579796250B90C600D15A8B /* CGImage+Conversion.swift */,
+				54579795250B90C600D15A8B /* CVPixelBuffer+Extension.swift */,
+				54579797250B90C700D15A8B /* Image+Orientation.swift */,
+				54579794250B90C500D15A8B /* ImageErrors.swift */,
 				54579783250B2B0600D15A8B /* KDefine.swift */,
 			);
 			path = Utils;
@@ -321,15 +418,119 @@
 		5457977F250A23FA00D15A8B /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				545797A3250B914400D15A8B /* ContentProtocol.swift */,
+				545797A2250B914400D15A8B /* ImageContent.swift */,
+				5457979C250B90FA00D15A8B /* ImageCollectionCell.swift */,
+				5457979E250B90FB00D15A8B /* ImageDataProvider.swift */,
+				5457979D250B90FB00D15A8B /* ImagePicker.swift */,
 				54579781250A240E00D15A8B /* GHLabel.h */,
 				54579780250A240E00D15A8B /* GHLabel.m */,
 			);
 			path = Com;
 			sourceTree = "<group>";
 		};
+		54579785250B4BE800D15A8B /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				54579786250B4C0500D15A8B /* KGPUImageCamera.swift */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
+		54579793250B905400D15A8B /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		545797A6250B916800D15A8B /* DeepLearn */ = {
+			isa = PBXGroup;
+			children = (
+				545797C2250B924700D15A8B /* ui */,
+				545797B9250B91D300D15A8B /* segment */,
+				545797AE250B91A000D15A8B /* deep */,
+				545797A7250B917F00D15A8B /* Model */,
+				545797F6250B9B1900D15A8B /* image.xcassets */,
+			);
+			path = DeepLearn;
+			sourceTree = "<group>";
+		};
+		545797A7250B917F00D15A8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				545797BA250B91EE00D15A8B /* Segment.mlmodel */,
+				545797A8250B919900D15A8B /* DeepLabV3.mlmodel */,
+				545797A9250B919900D15A8B /* DeepLabV3FP16.mlmodel */,
+				545797AA250B919A00D15A8B /* DeepLabV3Int8LUT.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		545797AE250B91A000D15A8B /* deep */ = {
+			isa = PBXGroup;
+			children = (
+				545797B5250B91C600D15A8B /* VisionSaliency.swift */,
+				545797B6250B91C600D15A8B /* VisionSaliencyCenter.swift */,
+				545797B1250B91B400D15A8B /* DeepLab.swift */,
+				545797AF250B91B300D15A8B /* DeepLabCenter.swift */,
+				545797B0250B91B400D15A8B /* SegmentationResultMLMultiArray.swift */,
+			);
+			path = deep;
+			sourceTree = "<group>";
+		};
+		545797B9250B91D300D15A8B /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				545797BD250B91F800D15A8B /* Segmentor.swift */,
+				545797BC250B91F700D15A8B /* UIImage+Segment.swift */,
+			);
+			path = segment;
+			sourceTree = "<group>";
+		};
+		545797C2250B924700D15A8B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				545797EA250B969A00D15A8B /* KImageMattingVC.swift */,
+				545797EB250B969A00D15A8B /* KImageMattingVC.xib */,
+				545797EE250B982B00D15A8B /* KPhotoMattingVC.swift */,
+				545797EF250B982B00D15A8B /* KPhotoMattingVC.xib */,
+				545797F2250B984200D15A8B /* KVideoMattingVC.swift */,
+				545797F3250B984200D15A8B /* KVideoMattingVC.xib */,
+				545797FC250BA4A200D15A8B /* KBaseRenderController.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		545797C9250B946A00D15A8B /* VideoIO */ = {
+			isa = PBXGroup;
+			children = (
+				545797CA250B946A00D15A8B /* AssetExportSession.swift */,
+				545797CB250B946A00D15A8B /* MovieSegmentsRecorder.swift */,
+				545797CC250B946A00D15A8B /* MovieRecorder.swift */,
+				545797CD250B946A00D15A8B /* UnfairLock.swift */,
+				545797CE250B946A00D15A8B /* AudioVideoSettings.swift */,
+				545797CF250B946A00D15A8B /* Camera+FocusExposure.swift */,
+				545797D0250B946A00D15A8B /* AudioQueueCaptureSession.swift */,
+				545797D1250B946A00D15A8B /* Camera+AudioQueueCapture.swift */,
+				545797D2250B946A00D15A8B /* SampleBufferUtilities.swift */,
+				545797D3250B946A00D15A8B /* AVAsset.swift */,
+				545797D4250B946A00D15A8B /* PlayerVideoOutput.swift */,
+				545797D5250B946A00D15A8B /* VideoOrientationUtilities.swift */,
+				545797D6250B946A00D15A8B /* DeviceOrientationTracker.swift */,
+				545797D7250B946A00D15A8B /* Camera.swift */,
+				545797D8250B946A00D15A8B /* Camera+PhotoCapture.swift */,
+				545797D9250B946A00D15A8B /* VideoComposition.swift */,
+			);
+			name = VideoIO;
+			path = VideoIO/Sources/VideoIO;
+			sourceTree = "<group>";
+		};
 		5467002925087DDB008D23B4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				545797C9250B946A00D15A8B /* VideoIO */,
+				54579785250B4BE800D15A8B /* GPUImage */,
 				546700402508B152008D23B4 /* SwiftyCamera */,
 				5467002C25087F7B008D23B4 /* KSCameraVC.swift */,
 				5467002D25087F7B008D23B4 /* KSCameraVC.xib */,
@@ -549,6 +750,8 @@
 		A09CF7AD2349DFE500139461 /* QEditor */ = {
 			isa = PBXGroup;
 			children = (
+				545797A6250B916800D15A8B /* DeepLearn */,
+				54579793250B905400D15A8B /* Metal */,
 				5457977F250A23FA00D15A8B /* Com */,
 				545797642509D63F00D15A8B /* Utils */,
 				5467002B25087DF1008D23B4 /* Siri */,
@@ -842,10 +1045,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */,
+				545797F5250B984200D15A8B /* KVideoMattingVC.xib in Resources */,
 				A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */,
 				A09CF7B62349DFE500139461 /* Main.storyboard in Resources */,
 				546700562508B605008D23B4 /* KSwiftyCameraVC.xib in Resources */,
 				5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */,
+				545797ED250B969A00D15A8B /* KImageMattingVC.xib in Resources */,
+				545797F7250B9B1900D15A8B /* image.xcassets in Resources */,
+				545797F1250B982B00D15A8B /* KPhotoMattingVC.xib in Resources */,
 				5467003F2508A765008D23B4 /* CountryImages.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -900,9 +1107,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */,
+				545797B7250B91C600D15A8B /* VisionSaliency.swift in Sources */,
 				A07B6A48241664C2008170F5 /* EditToolEditCaptionViewController.swift in Sources */,
 				A0C6DFD023DD1C1D00A48181 /* CompositionVideoSegment.swift in Sources */,
+				545797E5250B946A00D15A8B /* VideoOrientationUtilities.swift in Sources */,
+				545797C1250B923200D15A8B /* Task.swift in Sources */,
+				545797E3250B946A00D15A8B /* AVAsset.swift in Sources */,
+				54579799250B90C700D15A8B /* CVPixelBuffer+Extension.swift in Sources */,
 				5457977B2509F62300D15A8B /* GRegexMatcherProcessor.m in Sources */,
+				545797E8250B946A00D15A8B /* Camera+PhotoCapture.swift in Sources */,
+				545797BF250B91F800D15A8B /* Segmentor.swift in Sources */,
 				A07B6A422413BE52008170F5 /* CompositionMediaSegment.swift in Sources */,
 				A090276A244B051800A58CD7 /* ProjectCellModel.swift in Sources */,
 				A09B2E7C23E3CF6600F6FC7A /* EditAudioWaverView.swift in Sources */,
@@ -910,13 +1124,16 @@
 				A080D70F240255A30089B10B /* EditCaptionProtocol.swift in Sources */,
 				546700472508B276008D23B4 /* SwiftyCamViewController.swift in Sources */,
 				545797792509F62300D15A8B /* GThreadSafeArray.m in Sources */,
+				545797A4250B914400D15A8B /* ImageContent.swift in Sources */,
 				A0C6DFD223DD1E4900A48181 /* CompositionAudioSegment.swift in Sources */,
 				A080D711240256C00089B10B /* EditViewPresenter+Caption.swift in Sources */,
 				A0870A5A2352ECD7006DC38D /* MediaCellModel.swift in Sources */,
 				A02123302364019E0073A125 /* EditToolImageThumbView.swift in Sources */,
 				A09CF7E3234B0E0200139461 /* MediaCell.swift in Sources */,
 				A07B6A3E24138E55008170F5 /* EditOperationCaptionCell.swift in Sources */,
+				545797A1250B90FB00D15A8B /* ImageDataProvider.swift in Sources */,
 				A090276C244B05B000A58CD7 /* ProjectCell.swift in Sources */,
+				545797F0250B982B00D15A8B /* KPhotoMattingVC.swift in Sources */,
 				A0DBD4E323D7360700E26238 /* CompositionSegment.swift in Sources */,
 				A0E03BFD235AA2490012F226 /* EditToolViewController.swift in Sources */,
 				A07F9A4E2425D3E200245E73 /* CompositionPlayer.swift in Sources */,
@@ -925,53 +1142,74 @@
 				A053206D242F37BA0009AD24 /* CompositionProject.swift in Sources */,
 				A01C77C2242F2DCE00777695 /* CompositionFiltersDefine.swift in Sources */,
 				A080D70924024D7F0089B10B /* EditDataSourceProtocol.swift in Sources */,
+				545797DF250B946A00D15A8B /* Camera+FocusExposure.swift in Sources */,
+				545797DA250B946A00D15A8B /* AssetExportSession.swift in Sources */,
 				5457977D2509F62300D15A8B /* GMatcherResult.m in Sources */,
+				545797BE250B91F800D15A8B /* UIImage+Segment.swift in Sources */,
+				545797E6250B946A00D15A8B /* DeviceOrientationTracker.swift in Sources */,
+				545797BB250B91EE00D15A8B /* Segment.mlmodel in Sources */,
 				A0E03C01235AA35F0012F226 /* EditViewProtocol.swift in Sources */,
 				546700552508B605008D23B4 /* KSwiftyCameraVC.swift in Sources */,
 				5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */,
+				545797A5250B914400D15A8B /* ContentProtocol.swift in Sources */,
 				A02F7DCD239B3A7600398065 /* EditViewPlayProtocol.swift in Sources */,
 				5467004E2508B55C008D23B4 /* KPictureDisplayVC.swift in Sources */,
 				546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */,
+				545797FD250BA4A200D15A8B /* KBaseRenderController.swift in Sources */,
 				A0ADD4C023E005DA006BF4F5 /* QueueDemo.swift in Sources */,
+				545797E4250B946A00D15A8B /* PlayerVideoOutput.swift in Sources */,
 				A09CF7DC2349E69A00139461 /* MediaModel.swift in Sources */,
 				A0870A6B23532612006DC38D /* String+Video.swift in Sources */,
 				A0C6DFB823D9CCC800A48181 /* EditToolSplitButton.swift in Sources */,
+				545797E9250B946A00D15A8B /* VideoComposition.swift in Sources */,
 				A053207D2439A2430009AD24 /* CompositionExporter.swift in Sources */,
 				A02F7DCF239B3F8C00398065 /* EditToolViewProtocol.swift in Sources */,
 				A0ADD4BD23DFF9FF006BF4F5 /* AudioSampleAnalyzer.swift in Sources */,
 				546700502508B577008D23B4 /* KRecordButton.swift in Sources */,
 				545797782509F62300D15A8B /* GACMatcherProcessor.m in Sources */,
 				A053207424381C830009AD24 /* EditProgressAdjustViewController.swift in Sources */,
+				545797F4250B984200D15A8B /* KVideoMattingVC.swift in Sources */,
 				A04647AE2388C3AF009FDDC2 /* UIViewController+Utillity.swift in Sources */,
 				A082FEB9243ADDA2008EEDDA /* EditOperationAudioCell.swift in Sources */,
 				A02123362364204D0073A125 /* EditViewPresenter+Player.swift in Sources */,
 				A05320762438429C0009AD24 /* CompositionProjectPlayerExtension.swift in Sources */,
 				A09CF7D62349E34100139461 /* MediaProtocol.swift in Sources */,
+				5457979A250B90C700D15A8B /* CGImage+Conversion.swift in Sources */,
 				A07B6A402413B19E008170F5 /* EditCaptionCellToolView.swift in Sources */,
 				A02F7DD8239E8DB000398065 /* NotificationBannerExtension.swift in Sources */,
 				A0212343236583520073A125 /* EditToolBar.swift in Sources */,
 				A07B6A442413BF25008170F5 /* CompositionCaptionSegment.swift in Sources */,
+				545797B4250B91B400D15A8B /* DeepLab.swift in Sources */,
+				545797EC250B969A00D15A8B /* KImageMattingVC.swift in Sources */,
 				A06679C3239266F700C5EFC4 /* EditViewPresenter+View.swift in Sources */,
 				A0C6DFBA23DAAE8200A48181 /* EditToolTransformViewController.swift in Sources */,
+				545797DC250B946A00D15A8B /* MovieRecorder.swift in Sources */,
 				A0C1A2AA23AE27530075AD4F /* EditToolAdjustProgressView.swift in Sources */,
+				545797B2250B91B400D15A8B /* DeepLabCenter.swift in Sources */,
 				A0ADD4C623E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift in Sources */,
 				A080D7132402607E0089B10B /* EditOperationContainerView.swift in Sources */,
 				A0C6DFBC23DAD2B700A48181 /* CompositionTransition.swift in Sources */,
 				A0532089243AC1730009AD24 /* CompositionProjectConfig.swift in Sources */,
+				545797AC250B919A00D15A8B /* DeepLabV3FP16.mlmodel in Sources */,
 				546700372508A449008D23B4 /* OSSUtterance.swift in Sources */,
+				54579798250B90C700D15A8B /* ImageErrors.swift in Sources */,
 				A09CF7C82349E17000139461 /* NavigationBar.swift in Sources */,
 				A021233923652E0C0073A125 /* Debug.swift in Sources */,
 				A02F7DDA23A472E200398065 /* EditToolSettingLoadingView.swift in Sources */,
 				A021233F2365401A0073A125 /* UIFont+Utility.swift in Sources */,
 				A01C77C6242F32D100777695 /* CompositionImageView.swift in Sources */,
 				A07F9A512425EB8500245E73 /* EditPlayerView.swift in Sources */,
+				5457979B250B90C700D15A8B /* Image+Orientation.swift in Sources */,
+				545797AD250B919A00D15A8B /* DeepLabV3Int8LUT.mlmodel in Sources */,
 				A090276E244BE8B200A58CD7 /* UIDeviceExtension.swift in Sources */,
 				A09CF7D32349E31800139461 /* MediaViewController.swift in Sources */,
 				A0D79896244178320082F7FF /* ProjectListViewController.swift in Sources */,
+				5457979F250B90FB00D15A8B /* ImageCollectionCell.swift in Sources */,
 				A0870A5C2352F5A7006DC38D /* UIColor+RGB.swift in Sources */,
 				A09CF7B32349DFE500139461 /* ViewController.swift in Sources */,
 				5467004C2508B53F008D23B4 /* KVideoDisplayVC.swift in Sources */,
 				A0212332236404090073A125 /* EditViewPresenter+Tool.swift in Sources */,
+				545797B8250B91C600D15A8B /* VisionSaliencyCenter.swift in Sources */,
 				A080D70D2402503E0089B10B /* EditPlayerInteractionProtocol.swift in Sources */,
 				A0870A602352FB85006DC38D /* EditViewController.swift in Sources */,
 				5467004A2508B276008D23B4 /* SwiftyOrientation.swift in Sources */,
@@ -986,19 +1224,29 @@
 				A05320802439AAF70009AD24 /* ExportViewController.swift in Sources */,
 				A0EE9B45236D6182001CE0D8 /* EditToolChooseBoxView.swift in Sources */,
 				A09B2E7A23E3C9C900F6FC7A /* AudioRecorder.swift in Sources */,
+				545797DE250B946A00D15A8B /* AudioVideoSettings.swift in Sources */,
 				A02F7DD1239B3FB500398065 /* EditPlayerViewProtocol.swift in Sources */,
+				545797E7250B946A00D15A8B /* Camera.swift in Sources */,
+				545797E0250B946A00D15A8B /* AudioQueueCaptureSession.swift in Sources */,
 				A02F7DD5239CE94E00398065 /* ReverseVideoTool.swift in Sources */,
 				A09CF7D82349E35D00139461 /* MediaPresenter.swift in Sources */,
 				A01DBD2C24273A2F00DED48F /* EditToolFiltersViewController.swift in Sources */,
 				A0875AB1238A244200061394 /* EditToolAudioWaveformView.swift in Sources */,
 				A0E03C03235AA3730012F226 /* EditViewPresenter.swift in Sources */,
 				5457977A2509F62300D15A8B /* GKMPMatcherProcessor.m in Sources */,
+				545797A0250B90FB00D15A8B /* ImagePicker.swift in Sources */,
 				A09CF7C32349E0F900139461 /* Define.swift in Sources */,
 				A09CF7E0234B0A7C00139461 /* MediaImageViewController.swift in Sources */,
 				546700482508B276008D23B4 /* SwiftyCamButton.swift in Sources */,
+				545797AB250B919A00D15A8B /* DeepLabV3.mlmodel in Sources */,
 				A0ADD4C823E3C331006BF4F5 /* EditToolRecordAudioViewController.swift in Sources */,
+				545797DD250B946A00D15A8B /* UnfairLock.swift in Sources */,
+				545797E1250B946A00D15A8B /* Camera+AudioQueueCapture.swift in Sources */,
 				A0DBD4EC23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift in Sources */,
+				545797B3250B91B400D15A8B /* SegmentationResultMLMultiArray.swift in Sources */,
 				A09CF7AF2349DFE500139461 /* AppDelegate.swift in Sources */,
+				545797DB250B946A00D15A8B /* MovieSegmentsRecorder.swift in Sources */,
+				54579787250B4C0500D15A8B /* KGPUImageCamera.swift in Sources */,
 				A01DBD322427423900DED48F /* EditAdjustProtocol.swift in Sources */,
 				546700492508B276008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				546700352508A449008D23B4 /* OSSSpeech.swift in Sources */,
@@ -1012,6 +1260,7 @@
 				546700462508B276008D23B4 /* SwiftyPreviewView.swift in Sources */,
 				A0870A632352FBEA006DC38D /* PlayerView.swift in Sources */,
 				A09CF7DE234B0A7200139461 /* MediaVideoViewController.swift in Sources */,
+				545797E2250B946A00D15A8B /* SampleBufferUtilities.swift in Sources */,
 				5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */,
 				54579784250B2B0600D15A8B /* KDefine.swift in Sources */,
 				A02123412365428B0073A125 /* UIView+Layout.swift in Sources */,

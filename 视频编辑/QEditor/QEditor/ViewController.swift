@@ -101,6 +101,7 @@ class ViewController: UIViewController {
 //        navigationController?.pushViewController(KLanguageListTableVC())
 //        let nav = NavigationController(rootViewController: KLanguaageListTableVC())
 //        present(nav, animated: true, completion: nil)
+        navigationController?.pushViewController(KImageMattingVC())
     }
 
 

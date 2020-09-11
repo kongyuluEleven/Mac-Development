@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-KLrcCamera-KLrcCameraUITests/Pods-KLrcCamera-KLrcCameraUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework
+${BUILT_PRODUCTS_DIR}/GPUImage2-YZ/GPUImage.framework
 ${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework
 ${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
 ${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework
