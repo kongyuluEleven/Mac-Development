@@ -12,6 +12,7 @@ import MetalPetal
 
 class KPhotoMattingVC: KBaseRenderController {
     
+    @IBOutlet weak var btnSelectPicture: UIButton!
     fileprivate var startTimestamp: CFAbsoluteTime = 0
     
     let imagePickerController = UIImagePickerController()
@@ -27,6 +28,8 @@ class KPhotoMattingVC: KBaseRenderController {
             self?.mattingFilter.inputBackgroundImage = MTIImage(cgImage: cgImage, isOpaque: true)
             self?.mtiImageView.image = self?.mattingFilter.outputImage
         }
+        
+        self.view.bringSubviewToFront(btnSelectPicture)
     }
     
     override func viewDidLayoutSubviews() {
@@ -34,10 +37,12 @@ class KPhotoMattingVC: KBaseRenderController {
         backgroundPicker.frame = CGRect(x: 0, y: view.bounds.height - 60, width: view.bounds.width, height: 60)
         backgroundPicker.setupLayout(itemSize: CGSize(width: 50, height: 50), direction: .horizontal)
     }
+
     
-    @IBAction func tapCamera(_ sender: Any) {
+    @IBAction func btnSelectPictureClicked(_ sender: Any) {
         self.present(imagePickerController, animated: true)
     }
+    
 }
 
 // MARK: - UIImagePickerControllerDelegate & UINavigationControllerDelegate

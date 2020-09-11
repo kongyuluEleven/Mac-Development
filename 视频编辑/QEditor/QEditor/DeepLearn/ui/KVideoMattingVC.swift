@@ -12,6 +12,10 @@ import AVKit
 
 class KVideoMattingVC: KBaseRenderController {
     
+    @IBOutlet weak var btnMirror: UIButton!
+    @IBOutlet weak var btnLight: UIButton!
+    @IBOutlet weak var btnRecord: KRecordButton!
+    @IBOutlet weak var filterSwitch: UISwitch!
     private let folderName = "videos"
     
     private var camera: Camera?
@@ -44,6 +48,12 @@ class KVideoMattingVC: KBaseRenderController {
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         
         self.isFilterEnabled = true
+        
+        self.view.bringSubviewToFront(filterSwitch)
+        self.view.bringSubviewToFront(btnLight)
+        self.view.bringSubviewToFront(btnMirror)
+        self.view.bringSubviewToFront(btnRecord)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -114,6 +124,12 @@ class KVideoMattingVC: KBaseRenderController {
     private func recordingStopped() {
         self.recorder = nil
         self.isRecording = false
+    }
+    
+    @IBAction func btnLightClicked(_ sender: Any) {
+    }
+    
+    @IBAction func btnMirrorClicked(_ sender: Any) {
     }
     
     private func showPlayerViewController(url: URL) {

@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KVideoMattingVC" customModule="QEditor" customModuleProvider="target">
             <connections>
+                <outlet property="btnLight" destination="6TY-Um-nN5" id="fXv-Ha-zj4"/>
+                <outlet property="btnMirror" destination="CMT-ws-vre" id="B0z-gn-d2K"/>
+                <outlet property="btnRecord" destination="Q1o-NQ-19O" id="B7g-QZ-tCT"/>
+                <outlet property="filterSwitch" destination="MqT-z3-LcD" id="Rgc-C5-JIT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,36 +30,57 @@
                         <action selector="filterSwitchValueChanged:" destination="-1" eventType="valueChanged" id="UrE-If-yeS"/>
                     </connections>
                 </switch>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TY-Um-nN5">
-                    <rect key="frame" x="178" y="420" width="30" height="33"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="2" image="flipCamera"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-ws-vre">
+                    <rect key="frame" x="92" y="759.5" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NIv-VY-Oy1"/>
+                        <constraint firstAttribute="height" constant="30" id="QZ6-gr-ZfG"/>
+                    </constraints>
+                    <state key="normal" title="1" image="flashOutline"/>
+                    <connections>
+                        <action selector="btnLightClicked:" destination="-1" eventType="touchUpInside" id="XAj-FM-fJa"/>
+                        <action selector="rotateCamera:" destination="-1" eventType="touchUpInside" id="prT-ec-Yb5"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-92-xfv">
                     <rect key="frame" x="325" y="660" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="V"/>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-NQ-19O" customClass="KRecordButton" customModule="QEditor" customModuleProvider="target">
-                    <rect key="frame" x="189" y="702" width="75" height="75"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1o-NQ-19O" customClass="KRecordButton" customModule="QEditor" customModuleProvider="target">
+                    <rect key="frame" x="169.5" y="737" width="75" height="75"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="e49-Lc-DcQ"/>
+                        <constraint firstAttribute="width" constant="75" id="k8w-cY-X2b"/>
+                    </constraints>
                     <connections>
                         <action selector="recordButtonTouchDown:" destination="-1" eventType="valueChanged" id="2fK-AU-oT9"/>
                         <action selector="recordButtonTouchUp:" destination="-1" eventType="valueChanged" id="DGR-fU-OpQ"/>
                     </connections>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-ws-vre">
-                    <rect key="frame" x="259" y="724" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="1" image="flashOutline"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TY-Um-nN5">
+                    <rect key="frame" x="289.5" y="758" width="30" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="JcX-P9-onN"/>
+                        <constraint firstAttribute="width" constant="30" id="lRn-Wl-jh8"/>
+                    </constraints>
+                    <state key="normal" title="2" image="flipCamera"/>
                     <connections>
-                        <action selector="rotateCamera:" destination="-1" eventType="touchUpInside" id="prT-ec-Yb5"/>
+                        <action selector="btnMirrorClicked:" destination="-1" eventType="touchUpInside" id="Svy-ju-mA2"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6TY-Um-nN5" firstAttribute="centerY" secondItem="Q1o-NQ-19O" secondAttribute="centerY" id="5hy-gw-OXS"/>
+                <constraint firstItem="Q1o-NQ-19O" firstAttribute="leading" secondItem="CMT-ws-vre" secondAttribute="trailing" constant="47.5" id="SZg-Ih-w4k"/>
+                <constraint firstItem="CMT-ws-vre" firstAttribute="centerY" secondItem="Q1o-NQ-19O" secondAttribute="centerY" id="UiU-fJ-Rjr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q1o-NQ-19O" secondAttribute="bottom" constant="50" id="Wrf-ac-wVh"/>
+                <constraint firstItem="Q1o-NQ-19O" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rkM-Zy-mqq"/>
+                <constraint firstItem="6TY-Um-nN5" firstAttribute="leading" secondItem="Q1o-NQ-19O" secondAttribute="trailing" constant="45" id="ta6-pv-hw7"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
         </view>
     </objects>
