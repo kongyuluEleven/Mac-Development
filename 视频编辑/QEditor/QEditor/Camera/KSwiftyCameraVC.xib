@@ -138,6 +138,8 @@
                         <constraint firstAttribute="height" constant="29" id="jwf-tj-eYG"/>
                     </constraints>
                     <connections>
+                        <action selector="sliderTouchDown:" destination="-1" eventType="touchDown" id="rIp-lF-q6U"/>
+                        <action selector="sliderTouchUpInside:" destination="-1" eventType="touchUpInside" id="XTW-ds-Eee"/>
                         <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="h04-1X-jUG"/>
                     </connections>
                 </slider>

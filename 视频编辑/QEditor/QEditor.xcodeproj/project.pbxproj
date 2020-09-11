@@ -16,6 +16,7 @@
 		5457977D2509F62300D15A8B /* GMatcherResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797762509F62300D15A8B /* GMatcherResult.m */; };
 		5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 545797772509F62300D15A8B /* GThreadSafeDictionary.m */; };
 		54579782250A240E00D15A8B /* GHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54579780250A240E00D15A8B /* GHLabel.m */; };
+		54579784250B2B0600D15A8B /* KDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579783250B2B0600D15A8B /* KDefine.swift */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
@@ -151,6 +152,7 @@
 		545797772509F62300D15A8B /* GThreadSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GThreadSafeDictionary.m; sourceTree = "<group>"; };
 		54579780250A240E00D15A8B /* GHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHLabel.m; sourceTree = "<group>"; };
 		54579781250A240E00D15A8B /* GHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLabel.h; sourceTree = "<group>"; };
+		54579783250B2B0600D15A8B /* KDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDefine.swift; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			children = (
 				545797672509F62200D15A8B /* match */,
 				545797652509D66F00D15A8B /* String+Range.swift */,
+				54579783250B2B0600D15A8B /* KDefine.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1010,6 +1013,7 @@
 				A0870A632352FBEA006DC38D /* PlayerView.swift in Sources */,
 				A09CF7DE234B0A7200139461 /* MediaVideoViewController.swift in Sources */,
 				5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */,
+				54579784250B2B0600D15A8B /* KDefine.swift in Sources */,
 				A02123412365428B0073A125 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

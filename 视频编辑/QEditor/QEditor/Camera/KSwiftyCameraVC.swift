@@ -39,7 +39,7 @@ enum SliderType:Int {
         case .fontSize:
             return 80
         case .speed :
-            return 1.0
+            return 10.0
         }
     }
 }
@@ -86,8 +86,16 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     private var languageTitle:String = "English"
     
     private var sliderType:SliderType = .fontSize
-    private var lrcFontSize:Float = 30.0
-    private var lrcSpeed:Float = 0.3
+    private var lrcFontSize:Float = 30.0 {
+        didSet {
+            
+        }
+    }
+    private var lrcSpeed:Float = 0.3 {
+        didSet {
+            
+        }
+    }
     
     private var timer = Timer()
     
@@ -98,6 +106,8 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         setupUI()
         checkAuthor()
         recordButtonTapped()
@@ -125,8 +135,14 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         
         updateTextRange()
         
-        lrcFontSize = SliderType.fontSize.max * 0.5
-        lrcSpeed = SliderType.speed.max * 0.5
+        //lrcFontSize = SliderType.fontSize.max * 0.5
+        //lrcSpeed = SliderType.speed.max * 0.5
+        if let fontSize = UserDefaults.standard.float(forKey: UserDefaultsKeys.fontSizeKey) {
+            lrcFontSize = fontSize
+        }
+        if let speed = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollSpeedKey) {
+            lrcSpeed = speed
+        }
         sliderType = .fontSize
         updateSliderUI()
         slider.isHidden = true
@@ -217,12 +233,45 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         case .fontSize:
             lrcFontSize = value
             updateFont()
+            UserDefaults.standard.set(lrcFontSize, forKey: UserDefaultsKeys.fontSizeKey)
         case .speed:
             lrcSpeed = value
             updateSpeed()
+            UserDefaults.standard.set(lrcSpeed, forKey: UserDefaultsKeys.scrollSpeedKey)
         }
     
     }
+    
+    
+    @IBAction func sliderTouchDown(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        switch sliderType {
+        case .fontSize:
+            print("touch down font set")
+        case .speed:
+           stopTimer()
+        }
+    }
+    
+    @IBAction func sliderTouchUpInside(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        switch sliderType {
+        case .fontSize:
+            print("touch down font set")
+        case .speed:
+           lrcSpeed = value
+           startTimer()
+        }
+    }
+    
     
     
     @IBAction func lrcSegmentControlValueChanged(_ sender: Any) {
@@ -249,10 +298,10 @@ extension KSwiftyCameraVC {
         slider.maximumValue = sliderType.max
         switch sliderType {
         case .fontSize:
-            slider.setValue(lrcFontSize)
+            slider.setValue(lrcFontSize, animated: false)
             updateFont()
         case .speed:
-            slider.setValue(lrcSpeed)
+            slider.setValue(lrcSpeed, animated: false)
             updateSpeed()
         }
     }
@@ -271,7 +320,7 @@ extension KSwiftyCameraVC {
 // MARK: -字幕滚动
 extension KSwiftyCameraVC {
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(lrcSpeed), repeats: true, block: { [weak self] (time) in
+        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/lrcSpeed), repeats: true, block: { [weak self] (time) in
             guard let self = self else {return}
             
             DispatchQueue.main.async {
