@@ -44,6 +44,12 @@ enum SliderType:Int {
     }
 }
 
+
+enum LrcMoveType:Int {
+    case autoMove
+    case speechMove
+}
+
 class KSwiftyCameraVC: SwiftyCamViewController {
 
     @IBOutlet weak var captureButton    : KRecordButton!
@@ -61,6 +67,7 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     @IBOutlet weak var btnSpeedSet: UIButton!
     @IBOutlet weak var btnBeaty: UIButton!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var lrcSegmentControl: UISegmentedControl!
     
     
     
@@ -72,6 +79,7 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     private var originText:String = TEXT_COPY_DEFAULT
     private var matchRange:NSRange?
     private var lastMatchRange:NSRange?
+    private var curScrollRange:NSRange?
     private var isShowLrc:Bool = true
     
     private var language:String = "en-US"
@@ -80,6 +88,13 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     private var sliderType:SliderType = .fontSize
     private var lrcFontSize:Float = 30.0
     private var lrcSpeed:Float = 0.3
+    
+    private var timer = Timer()
+    
+    deinit {
+        stopTimer()
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,8 +129,10 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         lrcSpeed = SliderType.speed.max * 0.5
         sliderType = .fontSize
         updateSliderUI()
-        
         slider.isHidden = true
+        
+        lrcSegmentControl.tintColor = .green
+        
     }
     
     private func updateUI() {
@@ -207,6 +224,21 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     }
     
+    
+    @IBAction func lrcSegmentControlValueChanged(_ sender: Any) {
+        guard let segmentControl = sender as? UISegmentedControl else {
+            return
+        }
+        let index = segmentControl.selectedSegmentIndex
+        
+        if index == LrcMoveType.autoMove.rawValue { // 自动滚动
+            startTimer()
+        } else { // 语音识别滚动
+            stopTimer()
+        }
+        
+    }
+    
 }
 
 // MARK: -UI更新
@@ -232,6 +264,52 @@ extension KSwiftyCameraVC {
     
     private func updateSpeed() {
         
+    }
+}
+
+
+// MARK: -字幕滚动
+extension KSwiftyCameraVC {
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(lrcSpeed), repeats: true, block: { [weak self] (time) in
+            guard let self = self else {return}
+            
+            DispatchQueue.main.async {
+                
+                let pt = self.lrcTextView.contentOffset
+                let n = pt.y + self.lrcTextView.bounds.size.height * 0.1
+                self.lrcTextView.setContentOffset(CGPoint(x: pt.x, y: n), animated: true)
+                
+                print("n=\(n), offset=\(self.lrcTextView.contentOffset)")
+                
+                if n > self.lrcTextView.contentSize.height - self.lrcTextView.bounds.size.height {
+                    self.stopTimer()
+                    return
+                }
+            }
+
+        })
+    }
+    
+    private func stopTimer() {
+        //定时器暂停
+        timer.fireDate = Date.distantFuture
+        //定时器销毁
+        timer.invalidate()
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+extension KSwiftyCameraVC:UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        //定时器暂停
+        timer.fireDate = Date.distantFuture
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        //计时器继续
+        timer.fireDate = Date.distantPast
+
     }
 }
 

@@ -21,6 +21,7 @@
                 <outlet property="captureButton" destination="e0Q-UM-QaE" id="7Bq-Zj-SDG"/>
                 <outlet property="flashButton" destination="afA-qh-0Jh" id="t9G-ZS-IuW"/>
                 <outlet property="flipCameraButton" destination="t1I-MW-UR1" id="3tM-YK-YnL"/>
+                <outlet property="lrcSegmentControl" destination="qzP-kg-Pnr" id="cp8-js-QCs"/>
                 <outlet property="lrcTextView" destination="Yva-rq-Is6" id="8BG-3W-3fj"/>
                 <outlet property="slider" destination="Dku-Wr-XhC" id="nbc-G5-iS2"/>
                 <outlet property="switchShowLrc" destination="EVE-Dm-Du7" id="Puo-kT-JI5"/>
@@ -103,6 +104,17 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASy-c9-8aO">
+                    <rect key="frame" x="364" y="115" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="bfy-Pq-neZ"/>
+                        <constraint firstAttribute="height" constant="30" id="cHf-Mt-wed"/>
+                    </constraints>
+                    <state key="normal" title="Start"/>
+                    <connections>
+                        <action selector="btnStartClicked:" destination="-1" eventType="touchUpInside" id="CNR-nd-pXu"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usD-aH-7Jh">
                     <rect key="frame" x="235" y="74" width="80" height="30"/>
                     <constraints>
@@ -162,22 +174,25 @@
                         <action selector="btnBeatyClicked:" destination="-1" eventType="touchUpInside" id="FSk-Zh-MRu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASy-c9-8aO">
-                    <rect key="frame" x="364" y="115" width="30" height="30"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-kg-Pnr">
+                    <rect key="frame" x="134.5" y="114" width="145" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="bfy-Pq-neZ"/>
-                        <constraint firstAttribute="height" constant="30" id="cHf-Mt-wed"/>
+                        <constraint firstAttribute="height" constant="31" id="P4d-Ul-VLr"/>
                     </constraints>
-                    <state key="normal" title="Start"/>
+                    <segments>
+                        <segment title="自动滚动"/>
+                        <segment title="语音识别"/>
+                    </segments>
                     <connections>
-                        <action selector="btnStartClicked:" destination="-1" eventType="touchUpInside" id="CNR-nd-pXu"/>
+                        <action selector="lrcSegmentControlValueChanged:" destination="-1" eventType="valueChanged" id="LPh-e8-X2S"/>
                     </connections>
-                </button>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EVE-Dm-Du7" secondAttribute="trailing" constant="30" id="3Ra-45-ec3"/>
+                <constraint firstItem="qzP-kg-Pnr" firstAttribute="top" secondItem="usD-aH-7Jh" secondAttribute="bottom" constant="10" id="4M1-pl-WvH"/>
                 <constraint firstItem="Dku-Wr-XhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="4Y8-dx-DK2"/>
                 <constraint firstItem="jMZ-Xf-cY0" firstAttribute="centerY" secondItem="e0Q-UM-QaE" secondAttribute="centerY" id="5VY-fu-lB2"/>
                 <constraint firstItem="96d-9k-hif" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="CcZ-xs-s1d"/>
@@ -204,6 +219,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vP3-y2-xth" secondAttribute="bottom" constant="10" id="nEr-hd-m6T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e0Q-UM-QaE" secondAttribute="bottom" constant="50" id="ni7-wH-eXf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X63-aH-yqL" secondAttribute="bottom" constant="10" id="pu4-bZ-1uy"/>
+                <constraint firstItem="qzP-kg-Pnr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tAh-LY-ExH"/>
                 <constraint firstItem="Yva-rq-Is6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="unp-EL-Bhz"/>
                 <constraint firstItem="96d-9k-hif" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="x4F-Q7-GEI"/>
                 <constraint firstItem="Yva-rq-Is6" firstAttribute="top" secondItem="iGd-wF-6WG" secondAttribute="bottom" constant="60" id="xeV-19-6a5"/>
