@@ -21,6 +21,29 @@ let TEXT_COPY_DEFAULT = """
  The people you meet who affect your life, and the success and downfalls you experience, help to create who you are and who you become. Even the bad experiences can be learned from. In fact, they are sometimes the most important ones. If someone loves you, give love back to them in whatever way you can, not only because they love you, but because in a way, they are teaching you to love and how to open your heart and eyes to things. If someone hurts you, betrays you, or breaks your heart,forgive them, for they have helped you learn about trust and the importance of being cautious to whom you open your heart. Make every day count. Appreciate every moment and take from those moments everything that you possibly can for you may never be able to experience it again. Talk to people that you have never talked to before, and listen to what they have to say. Let yourself fall in love, break free, and set your sights high. Hold your head up because you have every right to. Tell yourself you are a great individual and believe in yourself, for if you don’t believe in yourself, it will be hard for others to believe in you.
 """
 
+enum SliderType:Int {
+    case fontSize
+    case speed
+    
+    var min:Float {
+        switch self {
+        case .fontSize:
+            return 10
+        case .speed :
+            return 0.1
+        }
+    }
+    
+    var max:Float {
+        switch self {
+        case .fontSize:
+            return 80
+        case .speed :
+            return 1.0
+        }
+    }
+}
+
 class KSwiftyCameraVC: SwiftyCamViewController {
 
     @IBOutlet weak var captureButton    : KRecordButton!
@@ -33,6 +56,13 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     @IBOutlet weak var btnStart: UIButton!
     @IBOutlet weak var btnLanguage: UIButton!
+    @IBOutlet weak var switchShowLrc: UISwitch!
+    @IBOutlet weak var btnFontSet: UIButton!
+    @IBOutlet weak var btnSpeedSet: UIButton!
+    @IBOutlet weak var btnBeaty: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    
+    
     
     private var speechRecognizer:SFSpeechRecognizer?
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -42,9 +72,14 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     private var originText:String = TEXT_COPY_DEFAULT
     private var matchRange:NSRange?
     private var lastMatchRange:NSRange?
+    private var isShowLrc:Bool = true
     
     private var language:String = "en-US"
     private var languageTitle:String = "English"
+    
+    private var sliderType:SliderType = .fontSize
+    private var lrcFontSize:Float = 30.0
+    private var lrcSpeed:Float = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +106,16 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         self.navigationController?.navigationBar.isHidden = true
         btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
         
+        switchShowLrc.isOn = isShowLrc
+        
         updateTextRange()
+        
+        lrcFontSize = SliderType.fontSize.max * 0.5
+        lrcSpeed = SliderType.speed.max * 0.5
+        sliderType = .fontSize
+        updateSliderUI()
+        
+        slider.isHidden = true
     }
     
     private func updateUI() {
@@ -122,7 +166,73 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         present(nav, animated: true, completion: nil)
     }
     
+    @IBAction func swicthShowLrcClicked(_ sender: Any) {
+        if let switchButton = sender as? UISwitch {
+            isShowLrc = switchButton.isOn
+            updateTextRange()
+        }
+    }
     
+    @IBAction func btnFontSetClicked(_ sender: Any) {
+        sliderType = .fontSize
+        updateSliderUI()
+        slider.isHidden = false
+    }
+    
+    @IBAction func btnSpeedSetClicked(_ sender: Any) {
+        sliderType = .speed
+        updateSliderUI()
+        slider.isHidden = false
+    }
+    
+    @IBAction func btnBeatyClicked(_ sender: Any) {
+        slider.isHidden = true
+    }
+    
+    @IBAction func sliderValueChanged(_ sender: Any) {
+        
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        switch sliderType {
+        case .fontSize:
+            lrcFontSize = value
+            updateFont()
+        case .speed:
+            lrcSpeed = value
+            updateSpeed()
+        }
+    
+    }
+    
+}
+
+// MARK: -UI更新
+extension KSwiftyCameraVC {
+    
+    private func updateSliderUI() {
+        slider.minimumValue = sliderType.min
+        slider.maximumValue = sliderType.max
+        switch sliderType {
+        case .fontSize:
+            slider.setValue(lrcFontSize)
+            updateFont()
+        case .speed:
+            slider.setValue(lrcSpeed)
+            updateSpeed()
+        }
+    }
+    
+    private func updateFont() {
+        //更新textView字体
+        updateTextRange()
+    }
+    
+    private func updateSpeed() {
+        
+    }
 }
 
 // MARK: -选择语言
@@ -152,8 +262,7 @@ extension KSwiftyCameraVC:SFSpeechRecognizerDelegate {
 extension KSwiftyCameraVC {
     
     private func changeTip(text:String) {
-        //titleLable.text = text
-        btnStart.setTitle(text, for: .normal)
+        titleLable.text = text
     }
     
     func recordButtonTapped() {
@@ -167,11 +276,9 @@ extension KSwiftyCameraVC {
     private func restartRecord() {
         do {
             try startRecording()
-            //btnRecoginition.setTitle("Stop Recording", for: .normal)
             changeTip(text: "Stop Recording")
             
         } catch {
-            //btnRecoginition.setTitle("Recording Not Available", for: .normal)
             changeTip(text: "Recording Not Available")
         }
     }
@@ -185,23 +292,36 @@ extension KSwiftyCameraVC {
     
     private func updateTextRange() {
         
+        if !isShowLrc {
+            lrcTextView.text = ""
+            lrcTextView.attributedText = nil
+            return
+        }
+        //1. 连续布局属性 - 关掉
+        lrcTextView.layoutManager.allowsNonContiguousLayout = false
+        //连续布局属性 默认是true的，如果不设置false 每次都会出现一闪一闪的
+        //2. 设置textview的可见范围
         let atrStr = NSAttributedString(string: originText)
         let attrTitle = NSMutableAttributedString.init(attributedString: atrStr)
         let paraStyle = NSMutableParagraphStyle.init()
         paraStyle.setParagraphStyle(NSParagraphStyle.default)
         paraStyle.alignment = .center
+        paraStyle.lineSpacing = 6
         let range = NSMakeRange(0, attrTitle.length)
         attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
-        attrTitle.addAttribute(.font, value: UIFont.systemFont(ofSize: 30), range: range)
+        attrTitle.addAttribute(.font, value: UIFont.systemFont(ofSize: CGFloat(lrcFontSize)), range: range)
         attrTitle.addAttribute(.foregroundColor, value: UIColor.blue, range: range)
         if let matchRange = matchRange {
-            attrTitle.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: 40), range: matchRange)
+            attrTitle.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: CGFloat(lrcFontSize)), range: matchRange)
             attrTitle.addAttribute(.foregroundColor, value: UIColor.red, range: matchRange)
             lrcTextView.selectedRange = matchRange // optional
             
-            let more = min(matchRange.upperBound + 100, range.upperBound)
+            let more = min(matchRange.upperBound + 10, range.upperBound)
             let scrollRange =  NSMakeRange(matchRange.lowerBound,more)
-            lrcTextView.scrollRangeToVisible(scrollRange)
+            //lrcTextView.scrollRangeToVisible(scrollRange)
+            
+            let rect = lrcTextView.layoutManager.boundingRect(forGlyphRange: scrollRange, in: lrcTextView.textContainer)
+            lrcTextView.contentOffset = CGPoint(x: 0, y: rect.origin.y - lrcTextView.bounds.size.height * 0.2)
         }
         lrcTextView.attributedText = attrTitle
         
@@ -225,21 +345,26 @@ extension KSwiftyCameraVC {
                 switch authStatus {
                 case .authorized:
                     self.btnStart.isEnabled = true
+                    self.btnStart.tintColor = .blue
                     
                 case .denied:
                     self.btnStart.isEnabled = false
+                    self.btnStart.tintColor = .darkGray
                     self.changeTip(text: "User denied access to speech recognition")
                     
                 case .restricted:
                     self.btnStart.isEnabled = false
+                    self.btnStart.tintColor = .darkGray
                     self.changeTip(text: "Speech recognition restricted on this device")
                     
                 case .notDetermined:
                     self.btnStart.isEnabled = false
+                    self.btnStart.tintColor = .darkGray
                     self.changeTip(text: "Speech recognition not yet authorized")
                     
                 default:
                     self.btnStart.isEnabled = false
+                    self.btnStart.tintColor = .darkGray
                 }
             }
         }
@@ -277,10 +402,14 @@ extension KSwiftyCameraVC {
             return
         }
         
+        self.btnStart.tintColor = .red
+        
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
             
             guard let self = self else {return}
             var isFinal = false
+            
+            self.btnStart.tintColor = .red
             
             if let result = result {
                 self.titleLable.text = result.bestTranscription.formattedString
@@ -302,6 +431,7 @@ extension KSwiftyCameraVC {
                 self.recognitionTask = nil
                 
                 self.btnStart.isEnabled = true
+                self.btnStart.tintColor = .blue
                 self.changeTip(text: "Start Recording")
             }
         }
@@ -327,6 +457,7 @@ extension KSwiftyCameraVC {
         recognitionRequest?.endAudio()
         btnStart.isEnabled = false
         changeTip(text: "Stopping")
+        self.btnStart.tintColor = .darkGray
         
         self.audioEngine.stop()
     }
@@ -341,6 +472,7 @@ extension KSwiftyCameraVC {
         self.recognitionTask = nil
         
         self.btnStart.isEnabled = true
+        self.btnStart.tintColor = .blue
         self.changeTip(text: "Start Recording")
         
         self.speechRecognizer?.delegate = nil
