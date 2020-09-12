@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import Speech
+import MetalPetal
+import AVKit
 
 let TEST_URL = "http://m.kekenet.com/menu/201206/185740.shtml"
 
@@ -50,8 +52,14 @@ enum LrcMoveType:Int {
     case speechMove
 }
 
-class KSwiftyCameraVC: SwiftyCamViewController {
-
+class KSwiftyCameraVC: KBaseRenderController {
+    
+    @IBOutlet weak var controlBgView: UIView!
+    
+    @IBOutlet weak var labelOpenLrc: UILabel!
+    
+    @IBOutlet weak var switchOpenMatting: UISwitch!
+    @IBOutlet weak var labelOpenMatting: UILabel!
     @IBOutlet weak var captureButton    : KRecordButton!
     @IBOutlet weak var flipCameraButton : UIButton!
     @IBOutlet weak var flashButton      : UIButton!
@@ -70,6 +78,15 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     @IBOutlet weak var lrcSegmentControl: UISegmentedControl!
     
     
+    private let folderName = "videos"
+    private var camera: Camera?
+    private let videoQueue = DispatchQueue(label: "com.metalpetal.MetalPetalDemo.videoCallback")
+    private var recorder: MovieRecorder?
+    private var isRecording = false
+    private var pixelBufferPool: MTICVPixelBufferPool?
+    private var currentVideoURL: URL?
+    private var isFilterEnabled = false
+    private var isFrontCamera = true
     
     private var speechRecognizer:SFSpeechRecognizer?
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -106,73 +123,39 @@ class KSwiftyCameraVC: SwiftyCamViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupMetalCamera()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        setupUI()
+        initUI()
         checkAuthor()
         recordButtonTapped()
+        controlBgView.backgroundColor = .clear
+        self.view.bringSubviewToFront(controlBgView)
     }
-    
-    private func setupUI() {
-        shouldPrompToAppSettings = true
-        cameraDelegate = self
-        maximumVideoDuration = 10.0
-        shouldUseDeviceOrientation = true
-        allowAutoRotate = true
-        audioEnabled = true
-        flashMode = .auto
-        flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
-        captureButton.buttonEnabled = false
-        titleLable.text = ""
-        //lrcTextView.text = ""
-        lrcTextView.backgroundColor = .clear
-        lrcTextView.font = UIFont.systemFont(ofSize: 20)
-        
-        //self.navigationController?.navigationBar.isHidden = true
-        btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
-        
-        switchShowLrc.isOn = isShowLrc
-        
-        updateTextRange()
-        
-        //lrcFontSize = SliderType.fontSize.max * 0.5
-        //lrcSpeed = SliderType.speed.max * 0.5
-        if let fontSize = UserDefaults.standard.float(forKey: UserDefaultsKeys.fontSizeKey) {
-            lrcFontSize = fontSize
-        }
-        if let speed = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollSpeedKey) {
-            lrcSpeed = speed
-        }
-        sliderType = .fontSize
-        updateSliderUI()
-        slider.isHidden = true
-        
-        lrcSegmentControl.tintColor = .green
-        
-    }
-    
-    private func updateUI() {
-        btnLanguage.setTitle(languageTitle, for: .normal)
-    }
-    
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         //self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        camera?.startRunningCaptureSession()
+    }
+   
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        camera?.stopRunningCaptureSession()
+        //captureButton.delegate = self
+    }
 
     override var prefersStatusBarHidden: Bool {
         return true
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        captureButton.delegate = self
-    }
     
     @IBAction func cameraSwitchTapped(_ sender: Any) {
-        switchCamera()
+        rotateCamera()
     }
     
     @IBAction func toggleFlashTapped(_ sender: Any) {
@@ -203,10 +186,13 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         present(nav, animated: true, completion: nil)
     }
     
+    //开启字幕
     @IBAction func swicthShowLrcClicked(_ sender: Any) {
         if let switchButton = sender as? UISwitch {
             isShowLrc = switchButton.isOn
             updateTextRange()
+            stopTimer()
+            startTimer()
         }
     }
     
@@ -292,7 +278,233 @@ class KSwiftyCameraVC: SwiftyCamViewController {
         
     }
     
+    //开启抠图
+    @IBAction func switchOpenMattingValueChanged(_ sender: Any) {
+        guard let switchButton = sender as? UISwitch else {return}
+        filterSwitchValueChanged(switchButton)
+    }
+    
 }
+
+// MARK: - UI 设置
+extension KSwiftyCameraVC {
+    
+    private func bringSubsUIToFront() {
+        
+    }
+    
+    private func setupSwiftCamera() {
+//        shouldPrompToAppSettings = true
+//        cameraDelegate = self
+//        maximumVideoDuration = 10.0
+//        shouldUseDeviceOrientation = true
+//        allowAutoRotate = true
+//        audioEnabled = true
+//        flashMode = .auto
+    }
+    
+    private func initUI() {
+
+        flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
+        captureButton.buttonEnabled = false
+        titleLable.text = ""
+        //lrcTextView.text = ""
+        lrcTextView.backgroundColor = .clear
+        lrcTextView.font = UIFont.systemFont(ofSize: 20)
+        
+        //self.navigationController?.navigationBar.isHidden = true
+        btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
+        
+        switchShowLrc.isOn = isShowLrc
+        
+        updateTextRange()
+        
+        //lrcFontSize = SliderType.fontSize.max * 0.5
+        //lrcSpeed = SliderType.speed.max * 0.5
+        if let fontSize = UserDefaults.standard.float(forKey: UserDefaultsKeys.fontSizeKey) {
+            lrcFontSize = fontSize
+        }
+        if let speed = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollSpeedKey) {
+            lrcSpeed = speed
+        }
+        sliderType = .fontSize
+        updateSliderUI()
+        slider.isHidden = true
+        
+        lrcSegmentControl.tintColor = .green
+        lrcSegmentControl.selectedSegmentIndex = 1
+        
+    }
+    
+    
+    private func updateUI() {
+        btnLanguage.setTitle(languageTitle, for: .normal)
+    }
+}
+
+// MARK: - Metal Camera设置
+extension KSwiftyCameraVC {
+    private func setupMetalCamera() {
+        createDir()
+        camera = Camera(captureSessionPreset: .vga640x480, defaultCameraPosition: .front, configurator: .portraitFrontMirroredVideoOutput)
+        try? camera?.enableVideoDataOutput(on: self.videoQueue, delegate: self)
+        camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
+        
+        self.isFilterEnabled = true
+    }
+    
+    private func createDir()  {
+        let path = "\(NSTemporaryDirectory())/\(folderName)"
+        let fileManager = FileManager()
+        try? fileManager.removeItem(atPath: path)
+        
+        do {
+            try fileManager.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+        } catch {
+            print("\(error)")
+        }
+    }
+    
+    private func rotateCamera() {
+        camera?.stopRunningCaptureSession()
+        pixelBufferPool = nil
+        
+        if isFrontCamera {
+            camera = Camera(captureSessionPreset: .medium, configurator: .portraitFrontMirroredVideoOutput)
+        } else {
+            camera = Camera(captureSessionPreset: .vga640x480, defaultCameraPosition: .front, configurator: .portraitFrontMirroredVideoOutput)
+        }
+        isFrontCamera = !isFrontCamera
+        
+        try? camera?.enableVideoDataOutput(on: self.videoQueue, delegate: self)
+        camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
+        camera?.startRunningCaptureSession()
+        
+    }
+
+    private func currentPixelBufferBool(for pixelBuffer: CVPixelBuffer) -> MTICVPixelBufferPool? {
+        if pixelBufferPool != nil {
+            return pixelBufferPool
+        }
+        let width = CVPixelBufferGetWidth(pixelBuffer)
+        let height = CVPixelBufferGetHeight(pixelBuffer)
+        pixelBufferPool = try? MTICVPixelBufferPool(pixelBufferWidth: width,
+                                                    pixelBufferHeight: height,
+                                                    pixelFormatType: kCVPixelFormatType_32BGRA,
+                                                    minimumBufferCount: 30)
+        return pixelBufferPool
+    }
+    
+    private func startRecord() {
+        if isRecording {
+            return
+        }
+
+        let url = URL(fileURLWithPath: "\(NSTemporaryDirectory())/\(folderName)/\(UUID().uuidString).mp4")
+        self.currentVideoURL = url
+        
+        var configuration = MovieRecorder.Configuration()
+        configuration.isAudioEnabled = false
+        let recorder = MovieRecorder(url: url, configuration: configuration, delegate: self)
+        self.recorder = recorder
+        recorder.prepareToRecord()
+        
+        self.isRecording = true
+    }
+    
+    private func stopRecord() {
+        self.recorder?.finishRecording()
+    }
+    
+    private func filterSwitchValueChanged(_ sender: UISwitch) {
+        self.isFilterEnabled = sender.isOn
+    }
+
+    private func recordingStopped() {
+        self.recorder = nil
+        self.isRecording = false
+    }
+    
+    private func showPlayerViewController(url: URL) {
+        let playerViewController = AVPlayerViewController()
+        let player = AVPlayer(url: url)
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            player.play()
+        }
+    }
+    
+    
+}
+
+// MARK: - Metal Camera 视频帧输出
+extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        guard let formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer), CMFormatDescriptionGetMediaType(formatDescription) == kCMMediaType_Video, let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            return
+        }
+        var outputSampleBuffer = sampleBuffer
+        let inputImage = MTIImage(cvPixelBuffer: pixelBuffer, alphaType: .alphaIsOne)
+        var outputImage = inputImage
+        if self.isFilterEnabled {
+            self.mattingFilter.inputImage = inputImage
+            self.generateMask(from: pixelBuffer)
+            if let image = self.mattingFilter.outputImage?.withCachePolicy(.persistent) {
+                outputImage = image
+            }
+        }
+        
+        
+        DispatchQueue.main.async {
+            if self.isRecording {
+                let bufferPool = self.currentPixelBufferBool(for: pixelBuffer)
+                if let pixelBuffer = try? bufferPool?.makePixelBuffer(allocationThreshold: 30) {
+                    do {
+                        try self.context.render(outputImage, to: pixelBuffer)
+                        if let smbf = SampleBufferUtilities.makeSampleBufferByReplacingImageBuffer(of: sampleBuffer, with: pixelBuffer) {
+                            outputSampleBuffer = smbf
+                        }
+                    } catch {
+                        print("\(error)")
+                    }
+                }
+                self.recorder?.append(sampleBuffer: outputSampleBuffer)
+            }
+            self.mtiImageView.image = outputImage
+        }
+    }
+}
+
+
+// MARK: - Metal Camera MovieRecorderDelegate
+extension KSwiftyCameraVC: MovieRecorderDelegate {
+    
+    func movieRecorderDidFinishPreparing(_ recorder: MovieRecorder) {
+        
+    }
+    
+    func movieRecorderDidCancelRecording(_ recorder: MovieRecorder) {
+        recordingStopped()
+    }
+    
+    func movieRecorder(_ recorder: MovieRecorder, didFailWithError error: Error) {
+        recordingStopped()
+    }
+    
+    func movieRecorderDidFinishRecording(_ recorder: MovieRecorder) {
+        recordingStopped()
+        if let url = self.currentVideoURL {
+            showPlayerViewController(url: url)
+        }
+    }
+    
+    func movieRecorder(_ recorder: MovieRecorder, didUpdateWithTotalDuration totalDuration: TimeInterval) {
+        print(totalDuration)
+    }
+}
+
+
 
 // MARK: -UI更新
 extension KSwiftyCameraVC {
@@ -398,15 +610,15 @@ extension KSwiftyCameraVC {
     
     func recordButtonTapped() {
         if audioEngine.isRunning {
-            stopRecording()
+            stopAudioRecording()
         } else {
-            restartRecord()
+            restartAudioRecord()
         }
     }
     
-    private func restartRecord() {
+    private func restartAudioRecord() {
         do {
-            try startRecording()
+            try startAudioRecording()
             changeTip(text: "Stop Recording")
             
         } catch {
@@ -489,7 +701,7 @@ extension KSwiftyCameraVC {
         }
     }
     
-    private func startRecording() throws {
+    private func startAudioRecording() throws {
         
         // Cancel the previous task if it's running.
         recognitionTask?.cancel()
@@ -571,7 +783,7 @@ extension KSwiftyCameraVC {
     }
        
        
-    private func stopRecording() {
+    private func stopAudioRecording() {
         audioEngine.stop()
         recognitionRequest?.endAudio()
         btnStart.isEnabled = false
@@ -582,7 +794,7 @@ extension KSwiftyCameraVC {
     }
     
     private func stopSpeech() {
-        stopRecording()
+        stopAudioRecording()
         let inputNode = audioEngine.inputNode
         self.audioEngine.stop()
         inputNode.removeTap(onBus: 0)
@@ -732,17 +944,17 @@ extension KSwiftyCameraVC {
     }
     
     fileprivate func toggleFlashAnimation() {
-        //flashEnabled = !flashEnabled
-        if flashMode == .auto{
-            flashMode = .on
-            flashButton.setImage(#imageLiteral(resourceName: "flash"), for: UIControl.State())
-        }else if flashMode == .on{
-            flashMode = .off
-            flashButton.setImage(#imageLiteral(resourceName: "flashOutline"), for: UIControl.State())
-        }else if flashMode == .off{
-            flashMode = .auto
-            flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
-        }
+//        //flashEnabled = !flashEnabled
+//        if flashMode == .auto{
+//            flashMode = .on
+//            flashButton.setImage(#imageLiteral(resourceName: "flash"), for: UIControl.State())
+//        }else if flashMode == .on{
+//            flashMode = .off
+//            flashButton.setImage(#imageLiteral(resourceName: "flashOutline"), for: UIControl.State())
+//        }else if flashMode == .off{
+//            flashMode = .auto
+//            flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
+//        }
     }
 }
 

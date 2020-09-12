@@ -16,14 +16,12 @@ class KVideoMattingVC: KBaseRenderController {
     @IBOutlet weak var btnLight: UIButton!
     @IBOutlet weak var btnRecord: KRecordButton!
     @IBOutlet weak var filterSwitch: UISwitch!
-    private let folderName = "videos"
     
+    private let folderName = "videos"
     private var camera: Camera?
     private let videoQueue = DispatchQueue(label: "com.metalpetal.MetalPetalDemo.videoCallback")
-    
     private var recorder: MovieRecorder?
     private var isRecording = false
-    
     private var pixelBufferPool: MTICVPixelBufferPool?
     private var currentVideoURL: URL?
     private var isFilterEnabled = false
@@ -66,7 +64,7 @@ class KVideoMattingVC: KBaseRenderController {
         camera?.stopRunningCaptureSession()
     }
     
-    @IBAction func rotateCamera(_ sender: Any) {
+    func rotateCamera(_ sender: Any) {
         camera?.stopRunningCaptureSession()
         pixelBufferPool = nil
         
@@ -130,6 +128,7 @@ class KVideoMattingVC: KBaseRenderController {
     }
     
     @IBAction func btnMirrorClicked(_ sender: Any) {
+        rotateCamera(sender)
     }
     
     private func showPlayerViewController(url: URL) {

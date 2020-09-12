@@ -67,7 +67,7 @@ class KBaseRenderController: UIViewController {
         setupBackgroundPicker()
         algorithmSegment?.addTarget(self, action: #selector(switchAlgorithm), for: .valueChanged)
         
-        mtiImageView.contentMode = .scaleAspectFill
+        mtiImageView.contentMode = .scaleAspectFit
         mtiImageView.context = self.context
     }
     
@@ -75,8 +75,6 @@ class KBaseRenderController: UIViewController {
         
         view.addSubview(mtiImageView)
         view.addSubview(btnPicker)
-        
-        mtiImageView.frame = self.view.frame
         
         mtiImageView.frame = self.view.frame
         btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-40, width: 80, height: 80)

@@ -39,7 +39,6 @@
                     <state key="normal" title="1" image="flashOutline"/>
                     <connections>
                         <action selector="btnLightClicked:" destination="-1" eventType="touchUpInside" id="XAj-FM-fJa"/>
-                        <action selector="rotateCamera:" destination="-1" eventType="touchUpInside" id="prT-ec-Yb5"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-92-xfv">
