@@ -129,7 +129,10 @@ class KSwiftyCameraVC: KBaseRenderController {
         checkAuthor()
         recordButtonTapped()
         controlBgView.backgroundColor = .clear
+        //controlBgView.addSubview(backgroundPicker)
+        
         self.view.bringSubviewToFront(controlBgView)
+        bringPickerViewToFront()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -147,6 +150,10 @@ class KSwiftyCameraVC: KBaseRenderController {
         super.viewWillDisappear(animated)
         camera?.stopRunningCaptureSession()
         //captureButton.delegate = self
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -191,8 +198,12 @@ class KSwiftyCameraVC: KBaseRenderController {
         if let switchButton = sender as? UISwitch {
             isShowLrc = switchButton.isOn
             updateTextRange()
-            stopTimer()
-            startTimer()
+            if isShowLrc,lrcSegmentControl.selectedSegmentIndex == LrcMoveType.autoMove.rawValue  {
+                stopTimer()
+                startTimer()
+            } else {
+                stopTimer()
+            }
         }
     }
     
@@ -226,7 +237,6 @@ class KSwiftyCameraVC: KBaseRenderController {
             UserDefaults.standard.set(lrcFontSize, forKey: UserDefaultsKeys.fontSizeKey)
         case .speed:
             lrcSpeed = value
-            updateSpeed()
             UserDefaults.standard.set(lrcSpeed, forKey: UserDefaultsKeys.scrollSpeedKey)
         }
     
@@ -306,7 +316,8 @@ extension KSwiftyCameraVC {
     private func initUI() {
 
         flashButton.setImage(#imageLiteral(resourceName: "flashauto"), for: UIControl.State())
-        captureButton.buttonEnabled = false
+        captureButton.buttonEnabled = true
+        captureButton.delegate = self
         titleLable.text = ""
         //lrcTextView.text = ""
         lrcTextView.backgroundColor = .clear
@@ -334,6 +345,8 @@ extension KSwiftyCameraVC {
         lrcSegmentControl.tintColor = .green
         lrcSegmentControl.selectedSegmentIndex = 1
         
+        
+        
     }
     
     
@@ -342,8 +355,48 @@ extension KSwiftyCameraVC {
     }
 }
 
+// MARK: - SwiftyCamButtonDelegate
+extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
+    func longPressDidReachMaximumDuration() {
+        print("\(#function)")
+        stopRecord()
+    }
+    
+    func setMaxiumVideoDuration() -> Double {
+        return 120.0
+    }
+    
+    func buttonWasTapped() {
+        print("\(#function)")
+    }
+    
+    func buttonDidBeginLongPress() {
+        print("\(#function)")
+        startRecord()
+    }
+    
+    func buttonDidEndLongPress() {
+        print("\(#function)")
+        stopRecord()
+    }
+}
+
 // MARK: - Metal Camera设置
 extension KSwiftyCameraVC {
+    private func bringPickerViewToFront() {
+        mtiImageView.frame = self.view.frame
+        btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-60, width: 60, height: 60)
+        
+        let buttonFrame = btnPicker.frame
+        var pickerFrame = CGRect(x: 0, y: 0, width: 80, height: view.bounds.height * 0.5)
+        pickerFrame.origin.x = view.bounds.width - pickerFrame.width
+        pickerFrame.origin.y = buttonFrame.minY - pickerFrame.height - 20
+        backgroundPicker.frame = pickerFrame
+        self.controlBgView.addSubview(backgroundPicker)
+        self.controlBgView.addSubview(btnPicker)
+        self.controlBgView.bringSubviewToFront(btnPicker)
+    }
+    
     private func setupMetalCamera() {
         createDir()
         camera = Camera(captureSessionPreset: .vga640x480, defaultCameraPosition: .front, configurator: .portraitFrontMirroredVideoOutput)
@@ -426,12 +479,16 @@ extension KSwiftyCameraVC {
     }
     
     private func showPlayerViewController(url: URL) {
-        let playerViewController = AVPlayerViewController()
-        let player = AVPlayer(url: url)
-        playerViewController.player = player
-        self.present(playerViewController, animated: true) {
-            player.play()
-        }
+//        let playerViewController = AVPlayerViewController()
+//        let player = AVPlayer(url: url)
+//        playerViewController.player = player
+//        self.present(playerViewController, animated: true) {
+//            player.play()
+//        }
+        let vc = KMedaiFileMattingVC()
+        navigationController?.pushViewController(vc, animated: true)
+        vc.videoAsset = AVURLAsset(url: url)
+        vc.play()
     }
     
     
@@ -516,9 +573,11 @@ extension KSwiftyCameraVC {
         case .fontSize:
             slider.setValue(lrcFontSize, animated: false)
             updateFont()
+            stopTimer()
         case .speed:
             slider.setValue(lrcSpeed, animated: false)
-            updateSpeed()
+            stopTimer()
+            startTimer()
         }
     }
     
@@ -528,7 +587,8 @@ extension KSwiftyCameraVC {
     }
     
     private func updateSpeed() {
-        
+        stopTimer()
+        startTimer()
     }
 }
 

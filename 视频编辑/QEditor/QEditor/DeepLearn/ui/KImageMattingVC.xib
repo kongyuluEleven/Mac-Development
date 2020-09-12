@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KImageMattingVC" customModule="QEditor" customModuleProvider="target">
             <connections>
                 <outlet property="btnPictureMatting" destination="f9e-cy-ucq" id="5ue-Yp-NuI"/>
+                <outlet property="btnRecordMatting" destination="pJx-IJ-G2i" id="Wp8-OK-rIp"/>
                 <outlet property="btnVideoMatting" destination="11x-a3-Uey" id="szP-ud-C0x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -39,11 +40,24 @@
                         <action selector="btnVideoMattingClicked:" destination="-1" eventType="touchUpInside" id="QxU-eg-LEd"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJx-IJ-G2i">
+                    <rect key="frame" x="30" y="172" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="my5-rh-fEn"/>
+                        <constraint firstAttribute="width" constant="100" id="xOs-nY-hHx"/>
+                    </constraints>
+                    <state key="normal" title="录制视频抠图"/>
+                    <connections>
+                        <action selector="btnRecordMattingClicked:" destination="-1" eventType="touchUpInside" id="WdL-wQ-TBM"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="pJx-IJ-G2i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="9on-fW-ik0"/>
                 <constraint firstItem="11x-a3-Uey" firstAttribute="width" secondItem="f9e-cy-ucq" secondAttribute="width" multiplier="1.31538" id="RIR-U6-h0b"/>
+                <constraint firstItem="pJx-IJ-G2i" firstAttribute="top" secondItem="f9e-cy-ucq" secondAttribute="bottom" constant="30" id="ceu-Gt-kkp"/>
                 <constraint firstItem="11x-a3-Uey" firstAttribute="height" secondItem="f9e-cy-ucq" secondAttribute="height" id="kw7-a3-ddh"/>
                 <constraint firstItem="11x-a3-Uey" firstAttribute="leading" secondItem="f9e-cy-ucq" secondAttribute="trailing" constant="20" id="u4C-dY-aIq"/>
                 <constraint firstItem="f9e-cy-ucq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="68" id="x0Q-bo-XqI"/>

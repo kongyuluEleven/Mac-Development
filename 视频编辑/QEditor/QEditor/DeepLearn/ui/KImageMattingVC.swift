@@ -12,6 +12,7 @@ class KImageMattingVC: UIViewController {
 
     @IBOutlet weak var btnPictureMatting: UIButton!
     @IBOutlet weak var btnVideoMatting: UIButton!
+    @IBOutlet weak var btnRecordMatting: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +29,7 @@ class KImageMattingVC: UIViewController {
         navigationController?.pushViewController(KVideoMattingVC())
     }
     
+    @IBAction func btnRecordMattingClicked(_ sender: Any) {
+        navigationController?.pushViewController(KVideoRecordVC())
+    }
 }

@@ -77,22 +77,20 @@ class KBaseRenderController: UIViewController {
         view.addSubview(btnPicker)
         
         mtiImageView.frame = self.view.frame
-        btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-40, width: 80, height: 80)
+        btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-60, width: 60, height: 60)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         mtiImageView.frame = self.view.frame
-        btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-40, width: 80, height: 80)
+        btnPicker.frame = CGRect(x: view.bounds.width - btnPicker.width, y: view.bounds.height - btnPicker.height-60, width: 60, height: 60)
         
         let buttonFrame = btnPicker.frame
         var pickerFrame = CGRect(x: 0, y: 0, width: 80, height: view.bounds.height * 0.5)
         pickerFrame.origin.x = view.bounds.width - pickerFrame.width
         pickerFrame.origin.y = buttonFrame.minY - pickerFrame.height - 20
         backgroundPicker.frame = pickerFrame
-        
-        
     }
     
     func setupBackgroundPicker() {
@@ -122,6 +120,7 @@ class KBaseRenderController: UIViewController {
             backgroundPicker.isHidden = false
         } else {
             backgroundPicker.isHidden = true
+            self.view.bringSubviewToFront(backgroundPicker)
         }
     }
 }

@@ -63,6 +63,13 @@
 		545797F5250B984200D15A8B /* KVideoMattingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545797F3250B984200D15A8B /* KVideoMattingVC.xib */; };
 		545797F7250B9B1900D15A8B /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545797F6250B9B1900D15A8B /* image.xcassets */; };
 		545797FD250BA4A200D15A8B /* KBaseRenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797FC250BA4A200D15A8B /* KBaseRenderController.swift */; };
+		54579800250CA70F00D15A8B /* KVideoRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545797FE250CA70F00D15A8B /* KVideoRecordVC.swift */; };
+		54579801250CA70F00D15A8B /* KVideoRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545797FF250CA70F00D15A8B /* KVideoRecordVC.xib */; };
+		54579804250CA74800D15A8B /* KMedaiFileMattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579802250CA74800D15A8B /* KMedaiFileMattingVC.swift */; };
+		54579805250CA74800D15A8B /* KMedaiFileMattingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54579803250CA74800D15A8B /* KMedaiFileMattingVC.xib */; };
+		54579807250CA7C700D15A8B /* KVideoMattingOutputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579806250CA7C700D15A8B /* KVideoMattingOutputHandler.swift */; };
+		5457980E250CA96700D15A8B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457980C250CA96700D15A8B /* Alert.swift */; };
+		5457980F250CA96700D15A8B /* PlayerPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457980D250CA96700D15A8B /* PlayerPreviewView.swift */; };
 		5467002E25087F7B008D23B4 /* KSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467002C25087F7B008D23B4 /* KSCameraVC.swift */; };
 		5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5467002D25087F7B008D23B4 /* KSCameraVC.xib */; };
 		546700352508A449008D23B4 /* OSSSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546700312508A448008D23B4 /* OSSSpeech.swift */; };
@@ -245,6 +252,13 @@
 		545797F3250B984200D15A8B /* KVideoMattingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVideoMattingVC.xib; sourceTree = "<group>"; };
 		545797F6250B9B1900D15A8B /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		545797FC250BA4A200D15A8B /* KBaseRenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBaseRenderController.swift; sourceTree = "<group>"; };
+		545797FE250CA70F00D15A8B /* KVideoRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVideoRecordVC.swift; sourceTree = "<group>"; };
+		545797FF250CA70F00D15A8B /* KVideoRecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVideoRecordVC.xib; sourceTree = "<group>"; };
+		54579802250CA74800D15A8B /* KMedaiFileMattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMedaiFileMattingVC.swift; sourceTree = "<group>"; };
+		54579803250CA74800D15A8B /* KMedaiFileMattingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KMedaiFileMattingVC.xib; sourceTree = "<group>"; };
+		54579806250CA7C700D15A8B /* KVideoMattingOutputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVideoMattingOutputHandler.swift; sourceTree = "<group>"; };
+		5457980C250CA96700D15A8B /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		5457980D250CA96700D15A8B /* PlayerPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPreviewView.swift; sourceTree = "<group>"; };
 		5467002825085BBA008D23B4 /* QEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QEditor.entitlements; sourceTree = "<group>"; };
 		5467002C25087F7B008D23B4 /* KSCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSCameraVC.swift; sourceTree = "<group>"; };
 		5467002D25087F7B008D23B4 /* KSCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSCameraVC.xib; sourceTree = "<group>"; };
@@ -418,6 +432,8 @@
 		5457977F250A23FA00D15A8B /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				5457980C250CA96700D15A8B /* Alert.swift */,
+				5457980D250CA96700D15A8B /* PlayerPreviewView.swift */,
 				545797A3250B914400D15A8B /* ContentProtocol.swift */,
 				545797A2250B914400D15A8B /* ImageContent.swift */,
 				5457979C250B90FA00D15A8B /* ImageCollectionCell.swift */,
@@ -498,6 +514,11 @@
 				545797F2250B984200D15A8B /* KVideoMattingVC.swift */,
 				545797F3250B984200D15A8B /* KVideoMattingVC.xib */,
 				545797FC250BA4A200D15A8B /* KBaseRenderController.swift */,
+				545797FE250CA70F00D15A8B /* KVideoRecordVC.swift */,
+				545797FF250CA70F00D15A8B /* KVideoRecordVC.xib */,
+				54579802250CA74800D15A8B /* KMedaiFileMattingVC.swift */,
+				54579803250CA74800D15A8B /* KMedaiFileMattingVC.xib */,
+				54579806250CA7C700D15A8B /* KVideoMattingOutputHandler.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -1044,9 +1065,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54579801250CA70F00D15A8B /* KVideoRecordVC.xib in Resources */,
 				A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */,
 				545797F5250B984200D15A8B /* KVideoMattingVC.xib in Resources */,
 				A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */,
+				54579805250CA74800D15A8B /* KMedaiFileMattingVC.xib in Resources */,
 				A09CF7B62349DFE500139461 /* Main.storyboard in Resources */,
 				546700562508B605008D23B4 /* KSwiftyCameraVC.xib in Resources */,
 				5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */,
@@ -1181,10 +1204,12 @@
 				A07B6A442413BF25008170F5 /* CompositionCaptionSegment.swift in Sources */,
 				545797B4250B91B400D15A8B /* DeepLab.swift in Sources */,
 				545797EC250B969A00D15A8B /* KImageMattingVC.swift in Sources */,
+				54579807250CA7C700D15A8B /* KVideoMattingOutputHandler.swift in Sources */,
 				A06679C3239266F700C5EFC4 /* EditViewPresenter+View.swift in Sources */,
 				A0C6DFBA23DAAE8200A48181 /* EditToolTransformViewController.swift in Sources */,
 				545797DC250B946A00D15A8B /* MovieRecorder.swift in Sources */,
 				A0C1A2AA23AE27530075AD4F /* EditToolAdjustProgressView.swift in Sources */,
+				54579800250CA70F00D15A8B /* KVideoRecordVC.swift in Sources */,
 				545797B2250B91B400D15A8B /* DeepLabCenter.swift in Sources */,
 				A0ADD4C623E2BBC4006BF4F5 /* EditToolAudioDetailSettingsViewController.swift in Sources */,
 				A080D7132402607E0089B10B /* EditOperationContainerView.swift in Sources */,
@@ -1193,6 +1218,7 @@
 				545797AC250B919A00D15A8B /* DeepLabV3FP16.mlmodel in Sources */,
 				546700372508A449008D23B4 /* OSSUtterance.swift in Sources */,
 				54579798250B90C700D15A8B /* ImageErrors.swift in Sources */,
+				5457980F250CA96700D15A8B /* PlayerPreviewView.swift in Sources */,
 				A09CF7C82349E17000139461 /* NavigationBar.swift in Sources */,
 				A021233923652E0C0073A125 /* Debug.swift in Sources */,
 				A02F7DDA23A472E200398065 /* EditToolSettingLoadingView.swift in Sources */,
@@ -1245,8 +1271,10 @@
 				A0DBD4EC23D9BDF700E26238 /* EditToolBaseSettingsViewController.swift in Sources */,
 				545797B3250B91B400D15A8B /* SegmentationResultMLMultiArray.swift in Sources */,
 				A09CF7AF2349DFE500139461 /* AppDelegate.swift in Sources */,
+				54579804250CA74800D15A8B /* KMedaiFileMattingVC.swift in Sources */,
 				545797DB250B946A00D15A8B /* MovieSegmentsRecorder.swift in Sources */,
 				54579787250B4C0500D15A8B /* KGPUImageCamera.swift in Sources */,
+				5457980E250CA96700D15A8B /* Alert.swift in Sources */,
 				A01DBD322427423900DED48F /* EditAdjustProtocol.swift in Sources */,
 				546700492508B276008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				546700352508A449008D23B4 /* OSSSpeech.swift in Sources */,
