@@ -66,6 +66,8 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBOutlet weak var flashButton      : UIButton!
     @IBOutlet weak var btnSpeak: UIButton!
     @IBOutlet weak var lrcTextView: UITextView!
+    @IBOutlet weak var lrcTextViewConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var btnCancel: UIButton!
     
@@ -77,6 +79,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBOutlet weak var btnBeaty: UIButton!
     //@IBOutlet weak var slider: UISlider!
     @IBOutlet weak var lrcSegmentControl: UISegmentedControl!
+    @IBOutlet weak var btnEditText: UIButton!
     
     @IBOutlet weak var beatyBgView: UIView!
     @IBOutlet weak var beatyEnableSwitch: UISwitch!
@@ -132,6 +135,8 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     private var language:String = "en-US"
     private var languageTitle:String = "English"
+    
+    private let TEXTVIEW_MIN_H = 200
     
     //private var sliderType:SliderType = .fontSize
     private var lrcFontSize:Float = 30.0 {
@@ -276,8 +281,12 @@ class KSwiftyCameraVC: KBaseRenderController {
         
         if index == LrcMoveType.autoMove.rawValue { // 自动滚动
             startTimer()
+            //停止语音识别
+            stopAudioRecording()
         } else { // 语音识别滚动
             stopTimer()
+            //开启语音识别
+            restartAudioRecord()
         }
         
     }
@@ -339,6 +348,13 @@ class KSwiftyCameraVC: KBaseRenderController {
     }
     
     @IBAction func fontAreasizeSliderValueChanged(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        lrcTextViewConstraint.constant = CGFloat(value)
+        self.view.layoutIfNeeded()
     }
     @IBAction func fontScrollSpeedSliderValuedChanged(_ sender: Any) {
     }
@@ -396,12 +412,12 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     @IBAction func fontColorYellowButtonClicked(_ sender: Any) {
         lrcFontColor = .yellow
-        lrcFontMatchColor = .white
+        lrcFontMatchColor = .green
         updateTextRange()
     }
     
     @IBAction func fontColorBrownButtonClicked(_ sender: Any) {
-        lrcFontColor = .brown
+        lrcFontColor = .purple
         lrcFontMatchColor = .white
         updateTextRange()
     }
@@ -413,11 +429,18 @@ class KSwiftyCameraVC: KBaseRenderController {
     }
     
     @IBAction func fontColorPinkButtonClicked(_ sender: Any) {
-        lrcFontColor = .systemPink
-        lrcFontMatchColor = .white
+        lrcFontColor = .orange
+        lrcFontMatchColor = .green
         updateTextRange()
     }
     
+    @IBAction func btnEditTextClicked(_ sender: Any) {
+        let vc = KEditLrcTextController()
+        vc.deleage = self
+        vc.orginText = originText
+        let nav = NavigationController(rootViewController: vc)
+        present(nav, animated: true, completion: nil)
+    }
     
     
 }
@@ -727,6 +750,9 @@ extension KSwiftyCameraVC {
         fontScrollSpeedSlider.maximumValue = type.max
         print("speed min=\(type.min),max = \(type.max)")
         fontScrollSpeedSlider.setValue(lrcSpeed, animated: false)
+        
+        fontAreaSizeSlider.minimumValue = Float(TEXTVIEW_MIN_H)
+        fontAreaSizeSlider.maximumValue = Float(self.view.bounds.height)
 
     }
     
@@ -1029,9 +1055,18 @@ extension KSwiftyCameraVC {
         var list = [SFTranscriptionSegment]()
         list.append(contentsOf: best.segments)
         
-        let compareStr = originText.replacingOccurrences(of: ",", with: " ").replacingOccurrences(of: ".", with: " ")
+        let compareStr = originText.replacingOccurrences(of: ",", with: " ")
+            .replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+
         
-        var bestTrasnStr = best.formattedString
+        //print("需要匹配的语句：compareStr=\(compareStr)")
+        var bestTrasnStr = best.formattedString.replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
         
         if let range = compareStr.nsranges(of: bestTrasnStr).first {
             self.matchRange = range
@@ -1046,7 +1081,10 @@ extension KSwiftyCameraVC {
             return
         }
         
-        bestTrasnStr = best.formattedString.lowercased()
+        bestTrasnStr = best.formattedString.lowercased().replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
         
         if let range = compareStr.nsranges(of: bestTrasnStr).first {
             self.matchRange = range
@@ -1229,4 +1267,34 @@ extension KSwiftyCameraVC:SwiftyCamViewControllerDelegate {
         print(error)
     }
 
+}
+
+
+// MARK: - KEditLrcTextControllerDeleage
+extension KSwiftyCameraVC:KEditLrcTextControllerDeleage {
+    
+    func KEditLrcTextController_didSaveText(content: String) {
+        lock.lock()
+        defer { lock.unlock() }
+        
+        //停止语音识别
+        stopAudioRecording()
+        stopTimer()
+        
+        originText = content
+        updateTextRange()
+    }
+    
+    func KEditLrcTextController_didStartCamera(content: String) {
+        lock.lock()
+        defer { lock.unlock() }
+        
+        //停止语音识别
+        stopAudioRecording()
+        stopTimer()
+        
+        originText = content
+        updateTextRange()
+        
+    }
 }

@@ -26,6 +26,7 @@
                 <outlet property="beatyResetButton" destination="ct4-cL-mmk" id="c8q-cY-Pck"/>
                 <outlet property="btnBeaty" destination="X63-aH-yqL" id="bxg-CT-oFE"/>
                 <outlet property="btnCancel" destination="iGd-wF-6WG" id="j2f-eS-w6v"/>
+                <outlet property="btnEditText" destination="0dY-Eu-pFA" id="aHK-E7-VDU"/>
                 <outlet property="btnFontSet" destination="f1k-GY-B0d" id="Dzt-5L-JZW"/>
                 <outlet property="btnLanguage" destination="usD-aH-7Jh" id="yox-j3-YEz"/>
                 <outlet property="btnSpeedSet" destination="vP3-y2-xth" id="r00-ip-dAg"/>
@@ -48,6 +49,7 @@
                 <outlet property="labelOpenMatting" destination="CXn-1L-3DR" id="at6-f9-7TS"/>
                 <outlet property="lrcSegmentControl" destination="qzP-kg-Pnr" id="cp8-js-QCs"/>
                 <outlet property="lrcTextView" destination="Yva-rq-Is6" id="8BG-3W-3fj"/>
+                <outlet property="lrcTextViewConstraint" destination="5CL-lf-dM9" id="jJ0-1s-fiH"/>
                 <outlet property="switchOpenMatting" destination="E13-Gb-Ml2" id="VKy-wp-dxJ"/>
                 <outlet property="titleLable" destination="96d-9k-hif" id="f8K-Rs-Q9s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -340,6 +342,17 @@
                                 <constraint firstItem="9au-Oe-Ag6" firstAttribute="top" secondItem="6cv-ye-cC7" secondAttribute="bottom" constant="10" id="yo8-oO-yI2"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-Eu-pFA">
+                            <rect key="frame" x="40" y="80" width="80" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Ofr-z8-Wj3"/>
+                                <constraint firstAttribute="height" constant="30" id="fv2-hc-489"/>
+                            </constraints>
+                            <state key="normal" title="编辑字幕"/>
+                            <connections>
+                                <action selector="btnEditTextClicked:" destination="-1" eventType="touchUpInside" id="5Am-nQ-Dx9"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -351,6 +364,7 @@
                         <constraint firstItem="Yva-rq-Is6" firstAttribute="leading" secondItem="ou3-n9-PJX" secondAttribute="leading" constant="40" id="Ei3-MN-I4O"/>
                         <constraint firstItem="96d-9k-hif" firstAttribute="leading" secondItem="ou3-n9-PJX" secondAttribute="leading" constant="20" id="ExM-eA-gji"/>
                         <constraint firstAttribute="trailing" secondItem="ASy-c9-8aO" secondAttribute="trailing" constant="30" id="FhJ-g7-ewp"/>
+                        <constraint firstItem="0dY-Eu-pFA" firstAttribute="top" secondItem="iGd-wF-6WG" secondAttribute="bottom" constant="10" id="G8P-Ch-nf0"/>
                         <constraint firstItem="Cpd-de-Uyg" firstAttribute="leading" secondItem="iGd-wF-6WG" secondAttribute="leading" id="Ijt-Cr-8Q5"/>
                         <constraint firstItem="afA-qh-0Jh" firstAttribute="centerY" secondItem="e0Q-UM-QaE" secondAttribute="centerY" id="JtV-Os-q5J"/>
                         <constraint firstItem="ASy-c9-8aO" firstAttribute="top" secondItem="96d-9k-hif" secondAttribute="bottom" constant="20" id="KSG-US-jWX"/>
@@ -368,6 +382,7 @@
                         <constraint firstItem="iGd-wF-6WG" firstAttribute="top" secondItem="ou3-n9-PJX" secondAttribute="top" constant="40" id="ima-g5-9Fb"/>
                         <constraint firstAttribute="bottom" secondItem="CXn-1L-3DR" secondAttribute="bottom" constant="44" id="mNQ-Nm-72k"/>
                         <constraint firstItem="vP3-y2-xth" firstAttribute="leading" secondItem="f1k-GY-B0d" secondAttribute="trailing" constant="10" id="q6a-bc-VCE"/>
+                        <constraint firstItem="0dY-Eu-pFA" firstAttribute="leading" secondItem="ou3-n9-PJX" secondAttribute="leading" constant="40" id="qF8-tZ-NWp"/>
                         <constraint firstItem="e0Q-UM-QaE" firstAttribute="leading" secondItem="t1I-MW-UR1" secondAttribute="trailing" constant="30" id="r2g-al-UPg"/>
                         <constraint firstItem="E13-Gb-Ml2" firstAttribute="centerY" secondItem="CXn-1L-3DR" secondAttribute="centerY" id="sDm-jr-fWF"/>
                         <constraint firstItem="Cpd-de-Uyg" firstAttribute="trailing" secondItem="96d-9k-hif" secondAttribute="trailing" id="svY-yf-kNu"/>
@@ -524,7 +539,7 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-iX-3r9">
                             <rect key="frame" x="194" y="190.5" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
                             <connections>
                                 <action selector="fontColorBrownButtonClicked:" destination="-1" eventType="touchUpInside" id="TLY-Qm-qvV"/>
                             </connections>
@@ -540,7 +555,7 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-OK-fN1">
                             <rect key="frame" x="254" y="190.5" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="fontColorPinkButtonClicked:" destination="-1" eventType="touchUpInside" id="Psh-3e-tgM"/>
                             </connections>
