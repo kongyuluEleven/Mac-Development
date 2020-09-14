@@ -139,6 +139,10 @@ class KSwiftyCameraVC: KBaseRenderController {
             
         }
     }
+    
+    private var lrcFontColor:UIColor = .white
+    private var lrcFontMatchColor:UIColor = .red
+    
     private var lrcSpeed:Float = 0.3 {
         didSet {
             
@@ -370,6 +374,50 @@ class KSwiftyCameraVC: KBaseRenderController {
         UserDefaults.standard.set(lrcSpeed, forKey: UserDefaultsKeys.scrollSpeedKey)
         startTimer()
     }
+    
+    
+    @IBAction func fontColorRedButtonClicked(_ sender: Any) {
+        lrcFontColor = .red
+        lrcFontMatchColor = .yellow
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorGreenButtonClicked(_ sender: Any) {
+        lrcFontColor = .green
+        lrcFontMatchColor = .yellow
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorBlueButtonClicked(_ sender: Any) {
+        lrcFontColor = .blue
+        lrcFontMatchColor = .white
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorYellowButtonClicked(_ sender: Any) {
+        lrcFontColor = .yellow
+        lrcFontMatchColor = .white
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorBrownButtonClicked(_ sender: Any) {
+        lrcFontColor = .brown
+        lrcFontMatchColor = .white
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorWhiteButtonClicked(_ sender: Any) {
+        lrcFontColor = .white
+        lrcFontMatchColor = .red
+        updateTextRange()
+    }
+    
+    @IBAction func fontColorPinkButtonClicked(_ sender: Any) {
+        lrcFontColor = .systemPink
+        lrcFontMatchColor = .white
+        updateTextRange()
+    }
+    
     
     
 }
@@ -814,10 +862,10 @@ extension KSwiftyCameraVC {
         let range = NSMakeRange(0, attrTitle.length)
         attrTitle.addAttribute(NSAttributedString.Key.paragraphStyle, value: paraStyle, range: range)
         attrTitle.addAttribute(.font, value: UIFont.systemFont(ofSize: CGFloat(lrcFontSize)), range: range)
-        attrTitle.addAttribute(.foregroundColor, value: UIColor.blue, range: range)
+        attrTitle.addAttribute(.foregroundColor, value: lrcFontColor, range: range)
         if let matchRange = matchRange {
             attrTitle.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: CGFloat(lrcFontSize)), range: matchRange)
-            attrTitle.addAttribute(.foregroundColor, value: UIColor.red, range: matchRange)
+            attrTitle.addAttribute(.foregroundColor, value: lrcFontMatchColor, range: matchRange)
             lrcTextView.selectedRange = matchRange // optional
             
             let more = min(matchRange.upperBound + 10, range.upperBound)

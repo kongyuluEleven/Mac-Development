@@ -83,6 +83,7 @@
 		54288D99250F217A00AA406C /* CompositionExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D4E250F217A00AA406C /* CompositionExporter.swift */; };
 		54288D9A250F217A00AA406C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D4F250F217A00AA406C /* AudioRecorder.swift */; };
 		54288D9B250F217A00AA406C /* CompositionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D51250F217A00AA406C /* CompositionPlayer.swift */; };
+		54288D9D250F753E00AA406C /* KColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D9C250F753E00AA406C /* KColorButton.swift */; };
 		544F760D250CC303009FD12C /* MTTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FD250CC2FD009FD12C /* MTTintColor.swift */; };
 		544F760E250CC303009FD12C /* MTImageOverlayFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FE250CC2FD009FD12C /* MTImageOverlayFilter.metal */; };
 		544F760F250CC303009FD12C /* MTLuxBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FF250CC2FE009FD12C /* MTLuxBlendFilter.metal */; };
@@ -380,6 +381,7 @@
 		54288D4E250F217A00AA406C /* CompositionExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionExporter.swift; sourceTree = "<group>"; };
 		54288D4F250F217A00AA406C /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		54288D51250F217A00AA406C /* CompositionPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionPlayer.swift; sourceTree = "<group>"; };
+		54288D9C250F753E00AA406C /* KColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KColorButton.swift; sourceTree = "<group>"; };
 		544F75FD250CC2FD009FD12C /* MTTintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTintColor.swift; sourceTree = "<group>"; };
 		544F75FE250CC2FD009FD12C /* MTImageOverlayFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MTImageOverlayFilter.metal; sourceTree = "<group>"; };
 		544F75FF250CC2FE009FD12C /* MTLuxBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MTLuxBlendFilter.metal; sourceTree = "<group>"; };
@@ -1123,6 +1125,7 @@
 				54579780250A240E00D15A8B /* GHLabel.m */,
 				544F76C5250CC7FC009FD12C /* KGridView.swift */,
 				544F76C7250CC81E009FD12C /* KScrollView.swift */,
+				54288D9C250F753E00AA406C /* KColorButton.swift */,
 			);
 			path = Com;
 			sourceTree = "<group>";
@@ -1714,6 +1717,7 @@
 				544F7683250CC364009FD12C /* MTLarkFilter.swift in Sources */,
 				A0870A5C2352F5A7006DC38D /* UIColor+RGB.swift in Sources */,
 				54288D86250F217A00AA406C /* MediaVideoViewController.swift in Sources */,
+				54288D9D250F753E00AA406C /* KColorButton.swift in Sources */,
 				544F768E250CC364009FD12C /* MTHudsonFilter.swift in Sources */,
 				A09CF7B32349DFE500139461 /* ViewController.swift in Sources */,
 				5467004C2508B53F008D23B4 /* KVideoDisplayVC.swift in Sources */,
