@@ -41,7 +41,7 @@ enum SliderType:Int {
         case .fontSize:
             return 80
         case .speed :
-            return 10.0
+            return 1.0
         }
     }
 }
@@ -204,6 +204,8 @@ class KSwiftyCameraVC: KBaseRenderController {
             } else {
                 stopTimer()
             }
+            
+            lrcTextView.isHidden = !switchButton.isOn
         }
     }
     
@@ -320,8 +322,9 @@ extension KSwiftyCameraVC {
         captureButton.delegate = self
         titleLable.text = ""
         //lrcTextView.text = ""
-        lrcTextView.backgroundColor = .clear
+        lrcTextView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         lrcTextView.font = UIFont.systemFont(ofSize: 20)
+
         
         //self.navigationController?.navigationBar.isHidden = true
         btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
@@ -569,6 +572,7 @@ extension KSwiftyCameraVC {
     private func updateSliderUI() {
         slider.minimumValue = sliderType.min
         slider.maximumValue = sliderType.max
+        print("min=\(slider.minimumValue),max = \(slider.maximumValue)")
         switch sliderType {
         case .fontSize:
             slider.setValue(lrcFontSize, animated: false)
@@ -596,16 +600,16 @@ extension KSwiftyCameraVC {
 // MARK: -字幕滚动
 extension KSwiftyCameraVC {
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/lrcSpeed), repeats: true, block: { [weak self] (time) in
+        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(0.1), repeats: true, block: { [weak self] (time) in
             guard let self = self else {return}
             
             DispatchQueue.main.async {
                 
                 let pt = self.lrcTextView.contentOffset
-                let n = pt.y + self.lrcTextView.bounds.size.height * 0.1
+                let n = pt.y + self.lrcTextView.bounds.size.height * 0.1 * CGFloat(self.lrcSpeed)
                 self.lrcTextView.setContentOffset(CGPoint(x: pt.x, y: n), animated: true)
                 
-                print("n=\(n), offset=\(self.lrcTextView.contentOffset)")
+                //print("n=\(n), offset=\(self.lrcTextView.contentOffset)")
                 
                 if n > self.lrcTextView.contentSize.height - self.lrcTextView.bounds.size.height {
                     self.stopTimer()

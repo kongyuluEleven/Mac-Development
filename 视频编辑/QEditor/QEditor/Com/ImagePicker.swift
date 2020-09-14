@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ImagePicker: UIView {
     
     fileprivate let imageCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -41,10 +42,14 @@ class ImagePicker: UIView {
             layout.minimumInteritemSpacing = 10.0
             layout.minimumLineSpacing = 0
             layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+            imageCollectionView.alwaysBounceVertical = false
+            imageCollectionView.alwaysBounceHorizontal = true
         default:
             layout.minimumInteritemSpacing = 0
             layout.minimumLineSpacing = 10
             layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+            imageCollectionView.alwaysBounceVertical = true
+            imageCollectionView.alwaysBounceHorizontal = false
         }
         
         imageCollectionView.setCollectionViewLayout(layout, animated: false)
@@ -55,8 +60,6 @@ class ImagePicker: UIView {
     private func initialSetup() {
         imageCollectionView.register(ImageCollectionCell.self, forCellWithReuseIdentifier: "ImagePickerCell")
         imageCollectionView.bounces = true
-        imageCollectionView.alwaysBounceVertical = true
-        imageCollectionView.alwaysBounceHorizontal = true
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
         addSubview(imageCollectionView)
@@ -65,6 +68,11 @@ class ImagePicker: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         imageCollectionView.frame = bounds
+    }
+    
+    func selectItem(at indexPath: IndexPath) {
+        imageCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+        collectionView(imageCollectionView, didSelectItemAt: indexPath)
     }
 }
 
@@ -93,3 +101,4 @@ extension ImagePicker: UICollectionViewDelegate, UICollectionViewDataSource {
         onSelect?(image)
     }
 }
+

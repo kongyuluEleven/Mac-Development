@@ -19,7 +19,7 @@ class ImageDataProvider {
     
     func loadData() {
         imageNames.removeAll()
-        for index in 0...4 {
+        for index in 0...10 {
             imageNames.append("material_\(index).jpg")
         }
     }
