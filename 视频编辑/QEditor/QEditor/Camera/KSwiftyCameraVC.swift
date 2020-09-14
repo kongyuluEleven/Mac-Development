@@ -11,6 +11,7 @@ import AVFoundation
 import Speech
 import MetalPetal
 import AVKit
+import SnapKit
 
 let TEST_URL = "http://m.kekenet.com/menu/201206/185740.shtml"
 
@@ -56,7 +57,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     @IBOutlet weak var controlBgView: UIView!
     
-    @IBOutlet weak var labelOpenLrc: UILabel!
+    //@IBOutlet weak var labelOpenLrc: UILabel!
     
     @IBOutlet weak var switchOpenMatting: UISwitch!
     @IBOutlet weak var labelOpenMatting: UILabel!
@@ -70,12 +71,42 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     @IBOutlet weak var btnStart: UIButton!
     @IBOutlet weak var btnLanguage: UIButton!
-    @IBOutlet weak var switchShowLrc: UISwitch!
+    //@IBOutlet weak var switchShowLrc: UISwitch!
     @IBOutlet weak var btnFontSet: UIButton!
     @IBOutlet weak var btnSpeedSet: UIButton!
     @IBOutlet weak var btnBeaty: UIButton!
-    @IBOutlet weak var slider: UISlider!
+    //@IBOutlet weak var slider: UISlider!
     @IBOutlet weak var lrcSegmentControl: UISegmentedControl!
+    
+    @IBOutlet weak var beatyBgView: UIView!
+    @IBOutlet weak var beatyEnableSwitch: UISwitch!
+    
+    @IBOutlet weak var beatyFinishButton: UIButton!
+    @IBOutlet weak var beatyResetButton: UIButton!
+    @IBOutlet weak var beatyEnableLabel: UILabel!
+    
+    @IBOutlet weak var beatyMopiLabel: UILabel!
+    @IBOutlet weak var beatyMopiSlider: UISlider!
+    @IBOutlet weak var beatyBaoguangLabel: UILabel!
+    @IBOutlet weak var beatyBaoguangSlider: UISlider!
+    @IBOutlet weak var beatyMeibaiLabel: UILabel!
+    @IBOutlet weak var beatyMeibaiSlider: UISlider!
+    @IBOutlet weak var beatyBaoheLabel: UILabel!
+    @IBOutlet weak var beatyBaoheSlider: UISlider!
+    
+
+    @IBOutlet weak var fontSetBgView: UIView!
+    @IBOutlet weak var fontEnableLabel: UILabel!
+    
+    @IBOutlet weak var fontEnableSwitch: UISwitch!
+    @IBOutlet weak var fontSizeLabel: UILabel!
+    @IBOutlet weak var fontSizeSlider: UISlider!
+    @IBOutlet weak var fontScrollSpeedLabel: UILabel!
+    @IBOutlet weak var fontScrollSpeedSlider: UISlider!
+    @IBOutlet weak var fontAreaSizeLabel: UILabel!
+    @IBOutlet weak var fontAreaSizeSlider: UISlider!
+    @IBOutlet weak var fontResetButton: UIButton!
+    @IBOutlet weak var fontFinishButton: UIButton!
     
     
     private let folderName = "videos"
@@ -102,7 +133,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     private var language:String = "en-US"
     private var languageTitle:String = "English"
     
-    private var sliderType:SliderType = .fontSize
+    //private var sliderType:SliderType = .fontSize
     private var lrcFontSize:Float = 30.0 {
         didSet {
             
@@ -115,6 +146,14 @@ class KSwiftyCameraVC: KBaseRenderController {
     }
     
     private var timer = Timer()
+    
+    private let colorLookupFilter: MTIColorLookupFilter = {
+        let filter = MTIColorLookupFilter()
+        filter.inputColorLookupTable = MTIImage(image: UIImage(named: "ColorLookup512")!, isOpaque: true)
+        return filter
+    }()
+    
+    private var isBeautyEnabled = true
     
     deinit {
         stopTimer()
@@ -133,6 +172,7 @@ class KSwiftyCameraVC: KBaseRenderController {
         
         self.view.bringSubviewToFront(controlBgView)
         bringPickerViewToFront()
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -210,70 +250,18 @@ class KSwiftyCameraVC: KBaseRenderController {
     }
     
     @IBAction func btnFontSetClicked(_ sender: Any) {
-        sliderType = .fontSize
-        updateSliderUI()
-        slider.isHidden = false
+        fontSetBgView.isHidden = false
+        self.view.bringSubviewToFront(fontSetBgView)
     }
     
     @IBAction func btnSpeedSetClicked(_ sender: Any) {
-        sliderType = .speed
-        updateSliderUI()
-        slider.isHidden = false
+        //点击滤镜
+
     }
     
     @IBAction func btnBeatyClicked(_ sender: Any) {
-        slider.isHidden = true
+        beatyBgView.isHidden = false
     }
-    
-    @IBAction func sliderValueChanged(_ sender: Any) {
-        
-        guard let slider = sender as? UISlider else {
-            return
-        }
-        
-        let value = slider.value
-        switch sliderType {
-        case .fontSize:
-            lrcFontSize = value
-            updateFont()
-            UserDefaults.standard.set(lrcFontSize, forKey: UserDefaultsKeys.fontSizeKey)
-        case .speed:
-            lrcSpeed = value
-            UserDefaults.standard.set(lrcSpeed, forKey: UserDefaultsKeys.scrollSpeedKey)
-        }
-    
-    }
-    
-    
-    @IBAction func sliderTouchDown(_ sender: Any) {
-        guard let slider = sender as? UISlider else {
-            return
-        }
-        
-        let value = slider.value
-        switch sliderType {
-        case .fontSize:
-            print("touch down font set")
-        case .speed:
-           stopTimer()
-        }
-    }
-    
-    @IBAction func sliderTouchUpInside(_ sender: Any) {
-        guard let slider = sender as? UISlider else {
-            return
-        }
-        
-        let value = slider.value
-        switch sliderType {
-        case .fontSize:
-            print("touch down font set")
-        case .speed:
-           lrcSpeed = value
-           startTimer()
-        }
-    }
-    
     
     
     @IBAction func lrcSegmentControlValueChanged(_ sender: Any) {
@@ -295,6 +283,94 @@ class KSwiftyCameraVC: KBaseRenderController {
         guard let switchButton = sender as? UISwitch else {return}
         filterSwitchValueChanged(switchButton)
     }
+    
+    
+    @IBAction func beatyEnableSwitchValueChanged(_ sender: Any) {
+        guard let switchButton = sender as? UISwitch else {return}
+        isBeautyEnabled = switchButton.isOn
+    }
+    
+    @IBAction func beatyResetButtonClicked(_ sender: Any) {
+        beatyBgView.isHidden = true
+    }
+    
+    @IBAction func beatyFinishButtonClicked(_ sender: Any) {
+        beatyBgView.isHidden = true
+    }
+    
+    @IBAction func beatyMopiSliderValueChanged(_ sender: Any) {
+    }
+    
+    @IBAction func beatyBaoguangSliderValueChanged(_ sender: Any) {
+    }
+    
+    @IBAction func beatyMeibaiSliderValueChanged(_ sender: Any) {
+    }
+    
+    @IBAction func beatyBaoheSliderValueChanged(_ sender: Any) {
+    }
+    
+    
+    @IBAction func fontEnableSwitchValueChanged(_ sender: Any) {
+        if let switchButton = sender as? UISwitch {
+            isShowLrc = switchButton.isOn
+            updateTextRange()
+            if isShowLrc,lrcSegmentControl.selectedSegmentIndex == LrcMoveType.autoMove.rawValue  {
+                stopTimer()
+                startTimer()
+            } else {
+                stopTimer()
+            }
+            
+            lrcTextView.isHidden = !switchButton.isOn
+        }
+    }
+    
+    
+    @IBAction func fontFinishButtonClicked(_ sender: Any) {
+        fontSetBgView.isHidden =  true
+    }
+    @IBAction func fontResetButtonClicked(_ sender: Any) {
+        fontSetBgView.isHidden =  true
+    }
+    
+    @IBAction func fontAreasizeSliderValueChanged(_ sender: Any) {
+    }
+    @IBAction func fontScrollSpeedSliderValuedChanged(_ sender: Any) {
+    }
+    
+    @IBAction func fontSizeSliderValueChanged(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        lrcFontSize = value
+        updateFont()
+        UserDefaults.standard.set(lrcFontSize, forKey: UserDefaultsKeys.fontSizeKey)
+        
+    }
+    
+    
+    @IBAction func fontScrollSpeedSliderTouchDown(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        stopTimer()
+    }
+    
+    @IBAction func fontScrollSpeedSliderTouchUp(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        
+        let value = slider.value
+        lrcSpeed = value
+        UserDefaults.standard.set(lrcSpeed, forKey: UserDefaultsKeys.scrollSpeedKey)
+        startTimer()
+    }
+    
     
 }
 
@@ -329,8 +405,6 @@ extension KSwiftyCameraVC {
         //self.navigationController?.navigationBar.isHidden = true
         btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
         
-        switchShowLrc.isOn = isShowLrc
-        
         updateTextRange()
         
         //lrcFontSize = SliderType.fontSize.max * 0.5
@@ -341,14 +415,27 @@ extension KSwiftyCameraVC {
         if let speed = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollSpeedKey) {
             lrcSpeed = speed
         }
-        sliderType = .fontSize
+
         updateSliderUI()
-        slider.isHidden = true
+
         
         lrcSegmentControl.tintColor = .green
         lrcSegmentControl.selectedSegmentIndex = 1
         
+        beatyEnableSwitch.isOn = isBeautyEnabled
+        beatyBgView.isHidden = true
         
+        
+        self.view.addSubview(fontSetBgView)
+        fontSetBgView.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalToSuperview()
+            make.height.equalTo(250)
+        }
+        
+        fontSetBgView.isHidden = true
+        
+        btnFontSet.setTitle("字幕设置", for: .normal)
+        fontEnableSwitch.isOn = isShowLrc
         
     }
     
@@ -515,6 +602,12 @@ extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate {
             }
         }
         
+        if self.isBeautyEnabled {
+            self.colorLookupFilter.inputImage = outputImage
+            if let image = self.colorLookupFilter.outputImage?.withCachePolicy(.persistent) {
+                outputImage = image
+            }
+        }
         
         DispatchQueue.main.async {
             if self.isRecording {
@@ -569,20 +662,24 @@ extension KSwiftyCameraVC: MovieRecorderDelegate {
 // MARK: -UI更新
 extension KSwiftyCameraVC {
     
+    
     private func updateSliderUI() {
-        slider.minimumValue = sliderType.min
-        slider.maximumValue = sliderType.max
-        print("min=\(slider.minimumValue),max = \(slider.maximumValue)")
-        switch sliderType {
-        case .fontSize:
-            slider.setValue(lrcFontSize, animated: false)
-            updateFont()
-            stopTimer()
-        case .speed:
-            slider.setValue(lrcSpeed, animated: false)
-            stopTimer()
-            startTimer()
-        }
+        
+        //设置字体
+        var type = SliderType.fontSize
+        fontSizeSlider.minimumValue = type.min
+        fontSizeSlider.maximumValue = type.max
+        print("font min=\(type.min),max = \(type.max)")
+        fontSizeSlider.setValue(lrcFontSize, animated: false)
+        updateFont()
+        
+        //设置滚动速度
+        type = SliderType.speed
+        fontScrollSpeedSlider.minimumValue = type.min
+        fontScrollSpeedSlider.maximumValue = type.max
+        print("speed min=\(type.min),max = \(type.max)")
+        fontScrollSpeedSlider.setValue(lrcSpeed, animated: false)
+
     }
     
     private func updateFont() {
