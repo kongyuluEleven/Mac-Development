@@ -1,8 +1,8 @@
 //
-//  KFilterPhotoEditVC.swift
+//  KFilterPhotoEditController.swift
 //  QEditor
 //
-//  Created by kongyulu on 2020/9/12.
+//  Created by kongyulu on 2020/9/14.
 //  Copyright © 2020 YiZhong Qi. All rights reserved.
 //
 
@@ -10,12 +10,13 @@ import UIKit
 import Photos
 import MetalPetal
 
-class KFilterPhotoEditVC: UIViewController {
+class KFilterPhotoEditController: UIViewController {
 
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var filtersView: UIView!
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
+    
     
     fileprivate var filterCollectionView: UICollectionView!
     fileprivate var toolCollectionView: UICollectionView!
@@ -237,13 +238,15 @@ class KFilterPhotoEditVC: UIViewController {
         }
     }
     
-    @IBAction func filterButtonTapped(_ sender: Any) {
+
+    @IBAction func filterButtonClicked(_ sender: Any) {
         addCollectionView(at: 0)
     }
     
-    @IBAction func editButtonTapped(_ sender: Any) {
+    @IBAction func editButtonClicked(_ sender: Any) {
         addCollectionView(at: 1)
     }
+    
     
     fileprivate func addCollectionView(at index: Int) {
         let isFilterTabSelected = index == 0
@@ -334,7 +337,7 @@ class KFilterPhotoEditVC: UIViewController {
     }
 }
 
-extension KFilterPhotoEditVC:KFilterControlViewDelegate {
+extension KFilterPhotoEditController:KFilterControlViewDelegate {
     
     func filterControlViewDidPressCancel() {
         dismissFilterControlView()
@@ -418,7 +421,7 @@ extension KFilterPhotoEditVC:KFilterControlViewDelegate {
     }
 }
 
-extension KFilterPhotoEditVC: UICollectionViewDataSource, UICollectionViewDelegate {
+extension KFilterPhotoEditController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -468,3 +471,4 @@ extension KFilterPhotoEditVC: UICollectionViewDataSource, UICollectionViewDelega
     }
     
 }
+

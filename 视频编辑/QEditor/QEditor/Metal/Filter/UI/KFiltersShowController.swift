@@ -14,6 +14,7 @@ import MetalKit
 
 class KFiltersShowController: UIViewController {
     
+    @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var photoView: UIView!
     @IBOutlet weak var albumView: UIView!
     fileprivate var scrollView: KScrollView!
@@ -102,15 +103,10 @@ class KFiltersShowController: UIViewController {
         return true
     }
     
-    @IBAction func nextButtonTapped(_ sender: Any) {
-//        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-//        guard let editorController = mainStoryBoard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as? PhotoEditorViewController else {
-//            return
-//        }
-        
-//        editorController.croppedImage = scrollView.croppedImage
-//
-//        navigationController?.pushViewController(editorController, animated: false)
+    @IBAction func btnEditClicked(_ sender: Any) {
+        let vc = KFilterPhotoEditController()
+        vc.croppedImage = scrollView.croppedImage
+        navigationController?.pushViewController(vc)
     }
     
 }

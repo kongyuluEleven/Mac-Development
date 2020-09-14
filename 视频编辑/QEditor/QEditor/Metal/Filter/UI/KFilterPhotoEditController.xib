@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KFilterPhotoEditController" customModule="QEditor" customModuleProvider="target">
+            <connections>
+                <outlet property="editButton" destination="owu-PC-Dww" id="QEV-oY-Bus"/>
+                <outlet property="filterButton" destination="I80-uS-mUy" id="MUi-FQ-VeP"/>
+                <outlet property="filtersView" destination="crA-1A-8oX" id="Li7-xJ-EcS"/>
+                <outlet property="previewView" destination="Rsa-dq-GTw" id="X0R-ve-ezh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-dq-GTw" userLabel="Preview View">
+                    <rect key="frame" x="20" y="54" width="374" height="352"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="352" id="R9d-Hi-JZY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crA-1A-8oX" userLabel="Filters View">
+                    <rect key="frame" x="20" y="416" width="374" height="396"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91H-Gh-2B8" userLabel="Toobar View">
+                    <rect key="frame" x="0.0" y="832" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owu-PC-Dww" userLabel="Edit Button">
+                            <rect key="frame" x="86" y="0.0" width="39" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="editButtonClicked:" destination="-1" eventType="touchUpInside" id="a1G-pM-t7m"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I80-uS-mUy" userLabel="Filter Button">
+                            <rect key="frame" x="21" y="-1" width="39" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="filterButtonClicked:" destination="-1" eventType="touchUpInside" id="scn-QQ-heK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="upx-ok-Y80"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rsa-dq-GTw" secondAttribute="trailing" constant="20" id="Ema-Hd-kJz"/>
+                <constraint firstItem="Rsa-dq-GTw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RTU-WA-iqN"/>
+                <constraint firstItem="crA-1A-8oX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aHU-PD-WyX"/>
+                <constraint firstAttribute="bottom" secondItem="91H-Gh-2B8" secondAttribute="bottom" constant="20" id="b0m-4f-Uuf"/>
+                <constraint firstItem="crA-1A-8oX" firstAttribute="top" secondItem="Rsa-dq-GTw" secondAttribute="bottom" constant="10" id="gcd-dC-NCt"/>
+                <constraint firstItem="91H-Gh-2B8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gs8-9V-C49"/>
+                <constraint firstItem="91H-Gh-2B8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ii0-JM-1GV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="crA-1A-8oX" secondAttribute="trailing" constant="20" id="jip-AS-guw"/>
+                <constraint firstItem="Rsa-dq-GTw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="xEh-tV-n3M"/>
+                <constraint firstItem="91H-Gh-2B8" firstAttribute="top" secondItem="crA-1A-8oX" secondAttribute="bottom" constant="20" id="zNc-RE-z3p"/>
+            </constraints>
+            <point key="canvasLocation" x="121.73913043478262" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
