@@ -84,6 +84,8 @@
 		54288D9A250F217A00AA406C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D4F250F217A00AA406C /* AudioRecorder.swift */; };
 		54288D9B250F217A00AA406C /* CompositionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D51250F217A00AA406C /* CompositionPlayer.swift */; };
 		54288D9D250F753E00AA406C /* KColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54288D9C250F753E00AA406C /* KColorButton.swift */; };
+		5435DFD22510F2240078B20B /* KRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435DFD02510F2240078B20B /* KRootViewController.swift */; };
+		5435DFD32510F2240078B20B /* KRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5435DFD12510F2240078B20B /* KRootViewController.xib */; };
 		544F760D250CC303009FD12C /* MTTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FD250CC2FD009FD12C /* MTTintColor.swift */; };
 		544F760E250CC303009FD12C /* MTImageOverlayFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FE250CC2FD009FD12C /* MTImageOverlayFilter.metal */; };
 		544F760F250CC303009FD12C /* MTLuxBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 544F75FF250CC2FE009FD12C /* MTLuxBlendFilter.metal */; };
@@ -302,7 +304,6 @@
 		A0870A6B23532612006DC38D /* String+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0870A6A23532612006DC38D /* String+Video.swift */; };
 		A090276E244BE8B200A58CD7 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A090276D244BE8B200A58CD7 /* UIDeviceExtension.swift */; };
 		A09CF7AF2349DFE500139461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7AE2349DFE500139461 /* AppDelegate.swift */; };
-		A09CF7B32349DFE500139461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CF7B22349DFE500139461 /* ViewController.swift */; };
 		A09CF7B62349DFE500139461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B42349DFE500139461 /* Main.storyboard */; };
 		A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B72349DFE800139461 /* Assets.xcassets */; };
 		A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09CF7B92349DFE800139461 /* LaunchScreen.storyboard */; };
@@ -390,6 +391,8 @@
 		54288D4F250F217A00AA406C /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		54288D51250F217A00AA406C /* CompositionPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionPlayer.swift; sourceTree = "<group>"; };
 		54288D9C250F753E00AA406C /* KColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KColorButton.swift; sourceTree = "<group>"; };
+		5435DFD02510F2240078B20B /* KRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRootViewController.swift; sourceTree = "<group>"; };
+		5435DFD12510F2240078B20B /* KRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRootViewController.xib; sourceTree = "<group>"; };
 		544F75FD250CC2FD009FD12C /* MTTintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTintColor.swift; sourceTree = "<group>"; };
 		544F75FE250CC2FD009FD12C /* MTImageOverlayFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MTImageOverlayFilter.metal; sourceTree = "<group>"; };
 		544F75FF250CC2FE009FD12C /* MTLuxBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MTLuxBlendFilter.metal; sourceTree = "<group>"; };
@@ -625,7 +628,6 @@
 		A090276D244BE8B200A58CD7 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		A09CF7AB2349DFE500139461 /* QEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09CF7AE2349DFE500139461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A09CF7B22349DFE500139461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A09CF7B52349DFE500139461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A09CF7B72349DFE800139461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09CF7BA2349DFE800139461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1413,12 +1415,13 @@
 				A0870A542351C7FA006DC38D /* QUIKit */,
 				A09CF7C42349E14200139461 /* Navigation */,
 				A09CF7AE2349DFE500139461 /* AppDelegate.swift */,
-				A09CF7B22349DFE500139461 /* ViewController.swift */,
 				A09CF7B42349DFE500139461 /* Main.storyboard */,
 				A09CF7B72349DFE800139461 /* Assets.xcassets */,
 				A09CF7B92349DFE800139461 /* LaunchScreen.storyboard */,
 				A09CF7BC2349DFE800139461 /* Info.plist */,
 				A09CF7C22349E0F900139461 /* Define.swift */,
+				5435DFD02510F2240078B20B /* KRootViewController.swift */,
+				5435DFD12510F2240078B20B /* KRootViewController.xib */,
 			);
 			path = QEditor;
 			sourceTree = "<group>";
@@ -1520,6 +1523,7 @@
 				544F76E6250CCDFB009FD12C /* KFilterPhotoListController.xib in Resources */,
 				544F76E2250CCDD7009FD12C /* KFiltersShowController.xib in Resources */,
 				542889C2250F15A100AA406C /* KGPUImageCameraController.xib in Resources */,
+				5435DFD32510F2240078B20B /* KRootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1754,7 +1758,6 @@
 				54288D86250F217A00AA406C /* MediaVideoViewController.swift in Sources */,
 				54288D9D250F753E00AA406C /* KColorButton.swift in Sources */,
 				544F768E250CC364009FD12C /* MTHudsonFilter.swift in Sources */,
-				A09CF7B32349DFE500139461 /* ViewController.swift in Sources */,
 				5467004C2508B53F008D23B4 /* KVideoDisplayVC.swift in Sources */,
 				54288D89250F217A00AA406C /* MediaViewController.swift in Sources */,
 				544F76C0250CC364009FD12C /* MTLarkFilter.metal in Sources */,
@@ -1770,6 +1773,7 @@
 				544F7671250CC364009FD12C /* MTJunoFilter.metal in Sources */,
 				544F7685250CC364009FD12C /* MTXpro2Filter.metal in Sources */,
 				A09CF7C62349E15800139461 /* NavigationController.swift in Sources */,
+				5435DFD22510F2240078B20B /* KRootViewController.swift in Sources */,
 				5467003B2508A62E008D23B4 /* KLanguageListTableVC.swift in Sources */,
 				544F768C250CC364009FD12C /* MTClarendonVideoFilter.metal in Sources */,
 				544F7679250CC364009FD12C /* MTLudwigFilter.swift in Sources */,
