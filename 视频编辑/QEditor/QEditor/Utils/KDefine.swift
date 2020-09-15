@@ -18,4 +18,8 @@ class UserDefaultsKeys: NSObject {
         return "scrollSpeed"
     }
     
+    class var scrollAreaHeighKey: String {
+        return "scrollAreaHeigh"
+    }
+    
 }

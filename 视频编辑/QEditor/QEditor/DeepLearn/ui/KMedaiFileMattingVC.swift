@@ -59,6 +59,8 @@ class KMedaiFileMattingVC: UIViewController {
         setupAlgorithmSegmentControl()
         
         self.view.bringSubviewToFront(playButton)
+        
+        backgroundPicker.selectItem(at: IndexPath(row: 0, section: 0))
     }
     
     private func setupBackgroundPicker() {
@@ -213,7 +215,7 @@ fileprivate extension KMedaiFileMattingVC {
             filter.setValue(seconds * 10.0, forKey: kCIInputRadiusKey)
             
             // Crop the blurred output to the bounds of the original image
-            let output = filter.outputImage!.cropped(to: request.sourceImage.extent)
+            guard let output = filter.outputImage?.cropped(to: request.sourceImage.extent) else {return}
             
             // Provide the filter output to the composition
             request.finish(with: output, context: nil)

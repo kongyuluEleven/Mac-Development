@@ -154,7 +154,14 @@ class KSwiftyCameraVC: KBaseRenderController {
         }
     }
     
+    private var lrcScrollAreaHeigh:Float = 300.0 {
+        didSet {
+            
+        }
+    }
+    
     private var timer = Timer()
+    private var recordTimer:Timer?
     
     private let colorLookupFilter: MTIColorLookupFilter = {
         let filter = MTIColorLookupFilter()
@@ -175,7 +182,7 @@ class KSwiftyCameraVC: KBaseRenderController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         initUI()
         checkAuthor()
-        recordButtonTapped()
+        //recordButtonTapped()
         controlBgView.backgroundColor = .clear
         //controlBgView.addSubview(backgroundPicker)
         
@@ -353,7 +360,10 @@ class KSwiftyCameraVC: KBaseRenderController {
         }
         
         let value = slider.value
-        lrcTextViewConstraint.constant = CGFloat(value)
+        lrcScrollAreaHeigh = value
+        UserDefaults.standard.set(lrcScrollAreaHeigh, forKey: UserDefaultsKeys.scrollAreaHeighKey)
+        
+        lrcTextViewConstraint.constant = CGFloat(lrcScrollAreaHeigh)
         self.view.layoutIfNeeded()
     }
     @IBAction func fontScrollSpeedSliderValuedChanged(_ sender: Any) {
@@ -486,12 +496,16 @@ extension KSwiftyCameraVC {
         if let speed = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollSpeedKey) {
             lrcSpeed = speed
         }
+        
+        if let heigh = UserDefaults.standard.float(forKey: UserDefaultsKeys.scrollAreaHeighKey) {
+            lrcScrollAreaHeigh = heigh
+        }
 
         updateSliderUI()
 
         
         lrcSegmentControl.tintColor = .green
-        lrcSegmentControl.selectedSegmentIndex = 1
+        lrcSegmentControl.selectedSegmentIndex = 0
         
         beatyEnableSwitch.isOn = isBeautyEnabled
         beatyBgView.isHidden = true
@@ -508,6 +522,8 @@ extension KSwiftyCameraVC {
         btnFontSet.setTitle("字幕设置", for: .normal)
         fontEnableSwitch.isOn = isShowLrc
         
+        lrcTextView.borderColor = .yellow
+        
     }
     
     
@@ -515,6 +531,8 @@ extension KSwiftyCameraVC {
         btnLanguage.setTitle(languageTitle, for: .normal)
     }
 }
+
+
 
 // MARK: - SwiftyCamButtonDelegate
 extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
@@ -529,6 +547,62 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
     
     func buttonWasTapped() {
         print("\(#function)")
+        if isRecording {
+            stopVideoRecord()
+            
+        } else {
+            WZBCountdownLabel.play(withNumber: 5, endTitle: "Go") { [weak self] (label) in
+                print("开始")
+            } success: { [weak self] (label) in
+                print("完成")
+                guard let self = self else {return}
+                self.startVideoRecord()
+            }
+        }
+    }
+    
+    private func startVideoRecord() {
+        if !self.isRecording {
+            self.stopTimer()
+            self.lrcResetOffset()
+            
+            
+            self.startRecord()
+            self.captureButton.growButton()
+            self.startRecordTimer()
+            
+            if lrcSegmentControl.selectedSegmentIndex == 1 {
+                restartAudioRecord()
+            } else {
+                self.startTimer()
+            }
+        }
+    }
+    
+    private func stopVideoRecord() {
+        stopRecord()
+        invalidateRecordTimer()
+        captureButton.shrinkButton()
+        self.stopTimer()
+        self.lrcResetOffset()
+        if lrcSegmentControl.selectedSegmentIndex == 1 {
+            stopAudioRecording()
+        }
+    }
+    
+    @objc fileprivate func timerFinished() {
+        stopVideoRecord()
+    }
+    
+    fileprivate func startRecordTimer() {
+        recordTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector:  #selector(timerFinished), userInfo: nil, repeats: false)
+    }
+    
+    // End timer if UILongPressGestureRecognizer is ended before time has ended
+    
+    fileprivate func invalidateRecordTimer() {
+        recordTimer?.invalidate()
+        recordTimer = nil
     }
     
     func buttonDidBeginLongPress() {
@@ -565,6 +639,7 @@ extension KSwiftyCameraVC {
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         
         self.isFilterEnabled = true
+        switchOpenMatting.isOn = true
     }
     
     private func createDir()  {
@@ -640,16 +715,20 @@ extension KSwiftyCameraVC {
     }
     
     private func showPlayerViewController(url: URL) {
-//        let playerViewController = AVPlayerViewController()
-//        let player = AVPlayer(url: url)
-//        playerViewController.player = player
-//        self.present(playerViewController, animated: true) {
-//            player.play()
-//        }
-        let vc = KMedaiFileMattingVC()
-        navigationController?.pushViewController(vc, animated: true)
-        vc.videoAsset = AVURLAsset(url: url)
-        vc.play()
+
+        if isFilterEnabled {
+            let vc = KMedaiFileMattingVC()
+            navigationController?.pushViewController(vc, animated: true)
+            vc.videoAsset = AVURLAsset(url: url)
+            vc.play()
+        } else {
+            let playerViewController = AVPlayerViewController()
+            let player = AVPlayer(url: url)
+            playerViewController.player = player
+            self.present(playerViewController, animated: true) {
+                player.play()
+            }
+        }
     }
     
     
@@ -753,6 +832,7 @@ extension KSwiftyCameraVC {
         
         fontAreaSizeSlider.minimumValue = Float(TEXTVIEW_MIN_H)
         fontAreaSizeSlider.maximumValue = Float(self.view.bounds.height)
+        fontAreaSizeSlider.setValue(lrcScrollAreaHeigh)
 
     }
     
@@ -770,6 +850,16 @@ extension KSwiftyCameraVC {
 
 // MARK: -字幕滚动
 extension KSwiftyCameraVC {
+    
+    private func lrcResetOffset() {
+        DispatchQueue.main.async {
+            
+            let pt = self.lrcTextView.contentOffset
+            let n = CGFloat(0)
+            self.lrcTextView.setContentOffset(CGPoint(x: pt.x, y: n), animated: true)
+        }
+    }
+    
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(0.1), repeats: true, block: { [weak self] (time) in
             guard let self = self else {return}

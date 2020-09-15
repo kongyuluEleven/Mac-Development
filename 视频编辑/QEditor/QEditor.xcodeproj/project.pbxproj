@@ -284,6 +284,7 @@
 		546700562508B605008D23B4 /* KSwiftyCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546700542508B605008D23B4 /* KSwiftyCameraVC.xib */; };
 		54AE67EA250F899A005587E2 /* KEditLrcTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE67E8250F899A005587E2 /* KEditLrcTextController.swift */; };
 		54AE67EB250F899A005587E2 /* KEditLrcTextController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE67E9250F899A005587E2 /* KEditLrcTextController.xib */; };
+		54AE67EE251050B1005587E2 /* WZBCountdownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */; };
 		9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */; };
 		A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123332364168E0073A125 /* UIImage+Utility.swift */; };
 		A021233923652E0C0073A125 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233823652E0C0073A125 /* Debug.swift */; };
@@ -596,6 +597,9 @@
 		546700542508B605008D23B4 /* KSwiftyCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KSwiftyCameraVC.xib; sourceTree = "<group>"; };
 		54AE67E8250F899A005587E2 /* KEditLrcTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEditLrcTextController.swift; sourceTree = "<group>"; };
 		54AE67E9250F899A005587E2 /* KEditLrcTextController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KEditLrcTextController.xib; sourceTree = "<group>"; };
+		54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBCountdownLabel.m; sourceTree = "<group>"; };
+		54AE67ED251050B1005587E2 /* WZBCountdownLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBCountdownLabel.h; sourceTree = "<group>"; };
+		54AE683325105217005587E2 /* QEditor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QEditor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.release.xcconfig"; sourceTree = "<group>"; };
@@ -1118,6 +1122,8 @@
 		5457977F250A23FA00D15A8B /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				54AE67ED251050B1005587E2 /* WZBCountdownLabel.h */,
+				54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */,
 				5457980C250CA96700D15A8B /* Alert.swift */,
 				5457980D250CA96700D15A8B /* PlayerPreviewView.swift */,
 				545797A3250B914400D15A8B /* ContentProtocol.swift */,
@@ -1377,6 +1383,7 @@
 		A09CF7AD2349DFE500139461 /* QEditor */ = {
 			isa = PBXGroup;
 			children = (
+				54AE683325105217005587E2 /* QEditor-Bridging-Header.h */,
 				54288CED250F210700AA406C /* VideoEdit */,
 				545797A6250B916800D15A8B /* DeepLearn */,
 				54579793250B905400D15A8B /* Metal */,
@@ -1650,6 +1657,7 @@
 				544F761C250CC303009FD12C /* MTLocalLaplacianFilter.swift in Sources */,
 				54288D8D250F217A00AA406C /* CompositionFiltersDefine.swift in Sources */,
 				54288D85250F217A00AA406C /* MediaManager.swift in Sources */,
+				54AE67EE251050B1005587E2 /* WZBCountdownLabel.m in Sources */,
 				544F76A2250CC364009FD12C /* MTStinsonVideoFilter.metal in Sources */,
 				544F7612250CC303009FD12C /* MTAntiLuxFilter.swift in Sources */,
 				544F76B2250CC364009FD12C /* MTNashvilleFilter.swift in Sources */,
@@ -1994,6 +2002,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG GLES";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/QEditor/QEditor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2026,6 +2035,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GLES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/QEditor/QEditor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
