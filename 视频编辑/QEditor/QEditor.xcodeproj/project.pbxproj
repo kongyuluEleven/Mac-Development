@@ -285,6 +285,10 @@
 		54AE67EA250F899A005587E2 /* KEditLrcTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE67E8250F899A005587E2 /* KEditLrcTextController.swift */; };
 		54AE67EB250F899A005587E2 /* KEditLrcTextController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE67E9250F899A005587E2 /* KEditLrcTextController.xib */; };
 		54AE67EE251050B1005587E2 /* WZBCountdownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */; };
+		54AE683825108FCF005587E2 /* HDHTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE683425108FCE005587E2 /* HDHTimerView.swift */; };
+		54AE683925108FCF005587E2 /* HDHProgressBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE683525108FCE005587E2 /* HDHProgressBarView.xib */; };
+		54AE683A25108FCF005587E2 /* HDHProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE683625108FCF005587E2 /* HDHProgressBarView.swift */; };
+		54AE683B25108FCF005587E2 /* HDHTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE683725108FCF005587E2 /* HDHTimerView.xib */; };
 		9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */; };
 		A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123332364168E0073A125 /* UIImage+Utility.swift */; };
 		A021233923652E0C0073A125 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233823652E0C0073A125 /* Debug.swift */; };
@@ -600,6 +604,10 @@
 		54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBCountdownLabel.m; sourceTree = "<group>"; };
 		54AE67ED251050B1005587E2 /* WZBCountdownLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBCountdownLabel.h; sourceTree = "<group>"; };
 		54AE683325105217005587E2 /* QEditor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QEditor-Bridging-Header.h"; sourceTree = "<group>"; };
+		54AE683425108FCE005587E2 /* HDHTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDHTimerView.swift; sourceTree = "<group>"; };
+		54AE683525108FCE005587E2 /* HDHProgressBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDHProgressBarView.xib; sourceTree = "<group>"; };
+		54AE683625108FCF005587E2 /* HDHProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDHProgressBarView.swift; sourceTree = "<group>"; };
+		54AE683725108FCF005587E2 /* HDHTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDHTimerView.xib; sourceTree = "<group>"; };
 		6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.release.xcconfig"; sourceTree = "<group>"; };
@@ -1122,6 +1130,10 @@
 		5457977F250A23FA00D15A8B /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				54AE683625108FCF005587E2 /* HDHProgressBarView.swift */,
+				54AE683525108FCE005587E2 /* HDHProgressBarView.xib */,
+				54AE683425108FCE005587E2 /* HDHTimerView.swift */,
+				54AE683725108FCF005587E2 /* HDHTimerView.xib */,
 				54AE67ED251050B1005587E2 /* WZBCountdownLabel.h */,
 				54AE67EC251050B0005587E2 /* WZBCountdownLabel.m */,
 				5457980C250CA96700D15A8B /* Alert.swift */,
@@ -1493,6 +1505,8 @@
 				54579805250CA74800D15A8B /* KMedaiFileMattingVC.xib in Resources */,
 				A09CF7B62349DFE500139461 /* Main.storyboard in Resources */,
 				546700562508B605008D23B4 /* KSwiftyCameraVC.xib in Resources */,
+				54AE683925108FCF005587E2 /* HDHProgressBarView.xib in Resources */,
+				54AE683B25108FCF005587E2 /* HDHTimerView.xib in Resources */,
 				5467002F25087F7B008D23B4 /* KSCameraVC.xib in Resources */,
 				545797ED250B969A00D15A8B /* KImageMattingVC.xib in Resources */,
 				545797F7250B9B1900D15A8B /* image.xcassets in Resources */,
@@ -1650,6 +1664,7 @@
 				544F7675250CC364009FD12C /* MTCharmesVideoFilter.metal in Sources */,
 				545797E9250B946A00D15A8B /* VideoComposition.swift in Sources */,
 				544F7693250CC364009FD12C /* MTRiseFilter.swift in Sources */,
+				54AE683A25108FCF005587E2 /* HDHProgressBarView.swift in Sources */,
 				546700502508B577008D23B4 /* KRecordButton.swift in Sources */,
 				544F76CC250CC919009FD12C /* KAlbumPhotoCell.swift in Sources */,
 				545797782509F62300D15A8B /* GACMatcherProcessor.m in Sources */,
@@ -1808,6 +1823,7 @@
 				5457980E250CA96700D15A8B /* Alert.swift in Sources */,
 				54288D73250F217A00AA406C /* EditToolImageThumbView.swift in Sources */,
 				544F76AE250CC364009FD12C /* MTAmaroFilter.metal in Sources */,
+				54AE683825108FCF005587E2 /* HDHTimerView.swift in Sources */,
 				54288D77250F217A00AA406C /* EditToolTabView.swift in Sources */,
 				54288D55250F217A00AA406C /* EditViewPresenter.swift in Sources */,
 				546700492508B276008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,

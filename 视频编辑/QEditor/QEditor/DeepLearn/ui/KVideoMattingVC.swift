@@ -206,6 +206,6 @@ extension KVideoMattingVC: MovieRecorderDelegate {
     }
     
     func movieRecorder(_ recorder: MovieRecorder, didUpdateWithTotalDuration totalDuration: TimeInterval) {
-        print(totalDuration)
+        //print(totalDuration)
     }
 }

@@ -572,11 +572,17 @@ extension CompositionProject {
             }
             
             do {
-                try currentTrack.insertTimeRange(videoSegments[i].timeRange, of: asset.tracks(withMediaType: .video).first!, at: cursorTime)
+                if let assetItem =  asset.tracks(withMediaType: .video).first  {
+                    try currentTrack.insertTimeRange(videoSegments[i].timeRange, of: assetItem, at: cursorTime)
+                }
+                
                 if let sourceAudioTrack = asset.tracks(withMediaType: .audio).first {
                     try audioTrack.insertTimeRange(videoSegments[i].timeRange, of: sourceAudioTrack, at: cursorTime)
                 }
-                try imageSourceTrack.insertTimeRange(imageSourceRange, of: asset.tracks(withMediaType: .video).first!, at: imageCursorTime)
+                if let assetItem =  asset.tracks(withMediaType: .video).first  {
+                    try imageSourceTrack.insertTimeRange(imageSourceRange, of: assetItem, at: imageCursorTime)
+                }
+                
             } catch {
                 QELog(error)
             }

@@ -16,6 +16,7 @@
 		54AE680B2510516C005587E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AE68092510516C005587E2 /* LaunchScreen.storyboard */; };
 		54AE68162510516D005587E2 /* test01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE68152510516D005587E2 /* test01Tests.swift */; };
 		54AE68212510516D005587E2 /* test01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE68202510516D005587E2 /* test01UITests.swift */; };
+		54AE68312510517D005587E2 /* WZBCountdownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE68302510517D005587E2 /* WZBCountdownLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		54AE681C2510516D005587E2 /* test01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AE68202510516D005587E2 /* test01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test01UITests.swift; sourceTree = "<group>"; };
 		54AE68222510516D005587E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AE682E2510517B005587E2 /* test01-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test01-Bridging-Header.h"; sourceTree = "<group>"; };
+		54AE682F2510517C005587E2 /* WZBCountdownLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBCountdownLabel.h; sourceTree = "<group>"; };
+		54AE68302510517D005587E2 /* WZBCountdownLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBCountdownLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +108,14 @@
 				54AE67FB2510516A005587E2 /* AppDelegate.swift */,
 				54AE67FD2510516A005587E2 /* SceneDelegate.swift */,
 				54AE67FF2510516A005587E2 /* ViewController.swift */,
+				54AE682F2510517C005587E2 /* WZBCountdownLabel.h */,
+				54AE68302510517D005587E2 /* WZBCountdownLabel.m */,
 				54AE68012510516A005587E2 /* Main.storyboard */,
 				54AE68072510516C005587E2 /* Assets.xcassets */,
 				54AE68092510516C005587E2 /* LaunchScreen.storyboard */,
 				54AE680C2510516C005587E2 /* Info.plist */,
 				54AE68042510516A005587E2 /* test01.xcdatamodeld */,
+				54AE682E2510517B005587E2 /* test01-Bridging-Header.h */,
 			);
 			path = test01;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 				TargetAttributes = {
 					54AE67F72510516A005587E2 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					54AE68102510516D005587E2 = {
 						CreatedOnToolsVersion = 12.0;
@@ -264,6 +272,7 @@
 				54AE68062510516A005587E2 /* test01.xcdatamodeld in Sources */,
 				54AE68002510516A005587E2 /* ViewController.swift in Sources */,
 				54AE67FC2510516A005587E2 /* AppDelegate.swift in Sources */,
+				54AE68312510517D005587E2 /* WZBCountdownLabel.m in Sources */,
 				54AE67FE2510516A005587E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B72G3TW8NM;
 				INFOPLIST_FILE = test01/Info.plist;
@@ -449,6 +459,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..test01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test01/test01-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B72G3TW8NM;
 				INFOPLIST_FILE = test01/Info.plist;
@@ -468,6 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..test01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test01/test01-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

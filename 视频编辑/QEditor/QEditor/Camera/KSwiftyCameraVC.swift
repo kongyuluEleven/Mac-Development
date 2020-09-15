@@ -53,6 +53,11 @@ enum LrcMoveType:Int {
     case speechMove
 }
 
+let kScreenW = UIScreen.main.bounds.size.width      //屏幕宽
+let kScreenH = UIScreen.main.bounds.size.height     //屏幕高
+
+let kMaxSeconds : Int = 60
+
 class KSwiftyCameraVC: KBaseRenderController {
     
     @IBOutlet weak var controlBgView: UIView!
@@ -110,11 +115,33 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBOutlet weak var fontAreaSizeSlider: UISlider!
     @IBOutlet weak var fontResetButton: UIButton!
     @IBOutlet weak var fontFinishButton: UIButton!
+
     
+    
+    //MARK:- 懒加载属性
+    fileprivate lazy var hdhTimeView : HDHTimerView = {
+        let timeView = HDHTimerView.getTimerView()
+        timeView.maxSeconds = kMaxSeconds
+        //        timeView.backgroundColor = UIColor.groupTableViewBackground
+        let x = (kScreenW - timeView.frame.size.width) / 2.0
+        let rect = CGRect.init(x: x, y: 100, width: timeView.frame.size.width, height: timeView.frame.size.height)
+        timeView.frame = rect
+        timeView.backgroundColor = .clear
+        return timeView
+    }()
+    
+    fileprivate lazy var hdhProgressBarView : HDHProgressBarView = {
+        let progressBarView = HDHProgressBarView.getProgressBarView()
+        progressBarView.frame = CGRect(x: 0, y: 250, width: kScreenW, height: progressBarView.frame.size.height)
+        progressBarView.finishedTime = kMaxSeconds
+        progressBarView.backgroundColor = .clear
+        return progressBarView
+    }()
     
     private let folderName = "videos"
     private var camera: Camera?
     private let videoQueue = DispatchQueue(label: "com.metalpetal.MetalPetalDemo.videoCallback")
+    private let audioQueue = DispatchQueue(label: "com.metalpetal.MetalPetalDemo.audioCallback")
     private var recorder: MovieRecorder?
     private var isRecording = false
     private var pixelBufferPool: MTICVPixelBufferPool?
@@ -195,6 +222,11 @@ class KSwiftyCameraVC: KBaseRenderController {
         super.viewDidDisappear(animated)
         //self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -524,6 +556,35 @@ extension KSwiftyCameraVC {
         
         lrcTextView.borderColor = .yellow
         
+        initRecordTimeUI()
+        
+    }
+    
+    private func initRecordTimeUI() {
+        //进度条
+        view.addSubview(hdhProgressBarView)
+        
+        //计时器
+        view.addSubview(hdhTimeView)
+        
+        hdhProgressBarView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(lrcTextView)
+            make.bottom.equalTo(lrcTextView.snp.top).offset(20)
+            make.height.equalTo(20)
+        }
+        
+        hdhTimeView.snp.makeConstraints { (make) in
+            make.left.equalTo(lrcTextView)
+            make.bottom.equalTo(hdhProgressBarView.snp.top)
+            make.width.equalTo(150)
+            make.height.equalTo(40)
+        }
+        
+        
+        hdhTimeView.timeCompleteBlock = { [weak self] (maxSeconds) in
+            print("计时到了：\(maxSeconds)秒")
+            //recordTimeLabel.text = "录音完成"
+        }
     }
     
     
@@ -556,7 +617,10 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
             } success: { [weak self] (label) in
                 print("完成")
                 guard let self = self else {return}
-                self.startVideoRecord()
+                DispatchQueue.main.async {
+                    self.startVideoRecord()
+                }
+                
             }
         }
     }
@@ -576,6 +640,9 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
             } else {
                 self.startTimer()
             }
+            
+            hdhTimeView.start()
+            hdhProgressBarView.start()
         }
     }
     
@@ -588,14 +655,19 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
         if lrcSegmentControl.selectedSegmentIndex == 1 {
             stopAudioRecording()
         }
+        
+        hdhTimeView.stop()
+        hdhProgressBarView.stop()
     }
     
     @objc fileprivate func timerFinished() {
-        stopVideoRecord()
+        DispatchQueue.main.async {
+            self.stopVideoRecord()
+        }
     }
     
     fileprivate func startRecordTimer() {
-        recordTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector:  #selector(timerFinished), userInfo: nil, repeats: false)
+        recordTimer = Timer.scheduledTimer(timeInterval: TimeInterval(kMaxSeconds), target: self, selector:  #selector(timerFinished), userInfo: nil, repeats: false)
     }
     
     // End timer if UILongPressGestureRecognizer is ended before time has ended
@@ -614,7 +686,11 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
         print("\(#function)")
         stopRecord()
     }
+
+
 }
+
+
 
 // MARK: - Metal Camera设置
 extension KSwiftyCameraVC {
@@ -636,6 +712,7 @@ extension KSwiftyCameraVC {
         createDir()
         camera = Camera(captureSessionPreset: .vga640x480, defaultCameraPosition: .front, configurator: .portraitFrontMirroredVideoOutput)
         try? camera?.enableVideoDataOutput(on: self.videoQueue, delegate: self)
+        try? camera?.enableAudioDataOutput(on: self.audioQueue, delegate: self)
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         
         self.isFilterEnabled = true
@@ -666,6 +743,7 @@ extension KSwiftyCameraVC {
         isFrontCamera = !isFrontCamera
         
         try? camera?.enableVideoDataOutput(on: self.videoQueue, delegate: self)
+        try? camera?.enableAudioDataOutput(on: self.audioQueue, delegate: self)
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         camera?.startRunningCaptureSession()
         
@@ -691,9 +769,10 @@ extension KSwiftyCameraVC {
 
         let url = URL(fileURLWithPath: "\(NSTemporaryDirectory())/\(folderName)/\(UUID().uuidString).mp4")
         self.currentVideoURL = url
-        
+        print("录像路径:\(url)")
         var configuration = MovieRecorder.Configuration()
         configuration.isAudioEnabled = false
+        configuration.audioSettings = camera?.audioDataOutput?.recommendedAudioSettingsForAssetWriter(writingTo: .mp4) as! [String : Any]
         let recorder = MovieRecorder(url: url, configuration: configuration, delegate: self)
         self.recorder = recorder
         recorder.prepareToRecord()
@@ -775,6 +854,25 @@ extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate {
                 self.recorder?.append(sampleBuffer: outputSampleBuffer)
             }
             self.mtiImageView.image = outputImage
+        }
+    }
+    
+    
+
+}
+
+// MARK: - Metal Camera 音频采集输出
+extension KSwiftyCameraVC : AVCaptureAudioDataOutputSampleBufferDelegate {
+    func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        if #available(iOS 13.0, *) {
+            print("音频采集回调：\(sampleBuffer.numSamples)")
+        } else {
+            // Fallback on earlier versions
+        }
+        DispatchQueue.main.async {
+            if self.isRecording {
+                //self.recorder?.append(sampleBuffer: sampleBuffer)
+            }
         }
     }
 }
