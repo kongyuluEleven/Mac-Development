@@ -627,8 +627,7 @@
                                 <segment title="设置"/>
                             </segments>
                             <connections>
-                                <action selector="segmentFilterSetValueChange:" destination="-1" eventType="valueChanged" id="KZi-i9-rSl"/>
-                                <action selector="segmentFilterSetValueChanged:" destination="-1" eventType="valueChanged" id="9Ok-j0-F0W"/>
+                                <action selector="segmentFilterSetValueChanged:" destination="-1" eventType="valueChanged" id="YKy-kw-Fi4"/>
                             </connections>
                         </segmentedControl>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4J-gF-r8u">
