@@ -116,6 +116,9 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBOutlet weak var fontResetButton: UIButton!
     @IBOutlet weak var fontFinishButton: UIButton!
 
+    @IBOutlet weak var filtersView: UIView!
+    @IBOutlet weak var btnFilterSetFinished: UIButton!
+    @IBOutlet weak var segementFilterSet: UISegmentedControl!
     
     
     //MARK:- 懒加载属性
@@ -197,6 +200,20 @@ class KSwiftyCameraVC: KBaseRenderController {
     }()
     
     private var isBeautyEnabled = true
+    
+    //滤镜处理
+    fileprivate var filterCollectionView: UICollectionView!
+    fileprivate var toolCollectionView: UICollectionView!
+    fileprivate var filterControlView: KFilterControlView?
+    fileprivate var originInputImage: MTIImage?
+    public var croppedImage: UIImage!
+    fileprivate var adjustFilter = MTBasicAdjustFilter()
+    fileprivate var allFilters: [MTFilter.Type] = []
+    fileprivate var cachedFilters: [Int: MTFilter] = [:]
+    fileprivate var currentSelectFilterIndex: Int = 0
+    fileprivate var currentAdjustStrengthFilter: MTFilter?
+    fileprivate var allTools: [KFilterToolItem] = []
+    fileprivate var thumbnails: [String: UIImage] = [:]
     
     deinit {
         stopTimer()
@@ -304,11 +321,13 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     @IBAction func btnSpeedSetClicked(_ sender: Any) {
         //点击滤镜
-
+        filtersView.isHidden = false
+        self.view.bringSubviewToFront(filtersView)
     }
     
     @IBAction func btnBeatyClicked(_ sender: Any) {
         beatyBgView.isHidden = false
+        self.view.bringSubviewToFront(beatyBgView)
     }
     
     
@@ -484,6 +503,24 @@ class KSwiftyCameraVC: KBaseRenderController {
         present(nav, animated: true, completion: nil)
     }
     
+    @IBAction func btnFilterViewFinshClicked(_ sender: Any) {
+        filtersView.isHidden = true
+    }
+    
+    @IBAction func segmentFilterSetValueChanged(_ sender: Any) {
+        
+        guard let segmentControl = sender as? UISegmentedControl else {
+            return
+        }
+        let index = segmentControl.selectedSegmentIndex
+        if index == 0 {
+            addCollectionView(at: 0)
+        } else {
+            addCollectionView(at: 1)
+        }
+        
+    }
+    
     
 }
 
@@ -539,10 +576,33 @@ extension KSwiftyCameraVC {
         lrcSegmentControl.tintColor = .green
         lrcSegmentControl.selectedSegmentIndex = 0
         
+        //初始化美颜设置
         beatyEnableSwitch.isOn = isBeautyEnabled
+        initBeautySetView()
+    
+        //初始化字体设置
+        initFontSetView()
+        lrcTextView.borderColor = .yellow
+        initRecordTimeUI()
+        
+        //初始化滤镜
+        initFilterData()
+        initFilterUI()
+        
+    }
+    
+    private func initBeautySetView() {
+        //添加美颜设置View
+        self.view.addSubview(beatyBgView)
+        beatyBgView.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalToSuperview()
+            make.height.equalTo(250)
+        }
         beatyBgView.isHidden = true
-        
-        
+    }
+    
+    private func initFontSetView() {
+        //添加字体设置View
         self.view.addSubview(fontSetBgView)
         fontSetBgView.snp.makeConstraints { (make) in
             make.left.bottom.right.equalToSuperview()
@@ -553,11 +613,6 @@ extension KSwiftyCameraVC {
         
         btnFontSet.setTitle("字幕设置", for: .normal)
         fontEnableSwitch.isOn = isShowLrc
-        
-        lrcTextView.borderColor = .yellow
-        
-        initRecordTimeUI()
-        
     }
     
     private func initRecordTimeUI() {
@@ -612,20 +667,20 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
             stopVideoRecord()
             
         } else {
-            WZBCountdownLabel.play(withNumber: 5, endTitle: "Go") { [weak self] (label) in
+            
+            WZBCountdownLabel.play(withNumber: 5, endTitle: "go", begin: { [weak self] (label) in
                 print("开始")
                 DispatchQueue.main.async {
                     guard let self = self else {return}
                     self.hdhTimeView.reset()
                     self.hdhProgressBarView.reset()
                 }
-            } success: { [weak self] (label) in
+            }) { [weak self] (lable) in
                 print("完成")
                 guard let self = self else {return}
                 DispatchQueue.main.async {
                     self.startVideoRecord()
                 }
-                
             }
         }
     }
@@ -1496,4 +1551,345 @@ extension KSwiftyCameraVC:KEditLrcTextControllerDeleage {
         updateTextRange()
         
     }
+}
+
+
+// MARK: - 滤镜处理
+extension KSwiftyCameraVC {
+    private func initFilterData() {
+        allFilters = MTFilterManager.shared.allFilters
+        croppedImage = UIImage(named: "material_0.jpg")
+        let ciImage = CIImage(cgImage: croppedImage.cgImage!)
+        let originImage = MTIImage(ciImage: ciImage, isOpaque: true)
+        originInputImage = originImage
+        
+        generateFilterThumbnails()
+    }
+    
+    private func initFilterUI() {
+        self.view.addSubview(filtersView)
+        
+        filtersView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        filtersView.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.height.equalTo(250)
+        }
+        
+        setupFilterCollectionView()
+        setupToolDataSource()
+        setupToolCollectionView()
+        btnFilterSetFinished.setTitle("完成", for: .normal)
+        filtersView.isHidden = true
+    }
+    
+    fileprivate func setupFilterCollectionView() {
+    
+        let frame = CGRect(x: 0, y: 0, width: filtersView.bounds.width, height: filtersView.bounds.height - 44)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.sectionInset = .zero
+        layout.itemSize = CGSize(width: 104, height: frame.height)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        filterCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
+        filterCollectionView.backgroundColor = .clear
+        filterCollectionView.showsHorizontalScrollIndicator = false
+        filterCollectionView.showsVerticalScrollIndicator = false
+        filtersView.addSubview(filterCollectionView)
+        filterCollectionView.dataSource = self
+        filterCollectionView.delegate = self
+        filterCollectionView.register(KFilterPickerCell.self, forCellWithReuseIdentifier: NSStringFromClass(KFilterPickerCell.self))
+        filterCollectionView.reloadData()
+        
+        filterCollectionView.snp.makeConstraints { (make) in
+            //make.
+        }
+    }
+    
+    fileprivate func setupToolCollectionView() {
+        let frame = CGRect(x: 0, y: 0, width: filtersView.bounds.width, height: filtersView.bounds.height - 44)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.sectionInset = .zero
+        layout.itemSize = CGSize(width: 98, height: frame.height)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        toolCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
+        toolCollectionView.backgroundColor = .clear
+        toolCollectionView.showsHorizontalScrollIndicator = false
+        toolCollectionView.showsVerticalScrollIndicator = false
+        toolCollectionView.dataSource = self
+        toolCollectionView.delegate = self
+        toolCollectionView.register(KToolPickerCell.self, forCellWithReuseIdentifier: NSStringFromClass(KToolPickerCell.self))
+        toolCollectionView.reloadData()
+    }
+    
+    fileprivate func setupToolDataSource() {
+        allTools.removeAll()
+        allTools.append(KFilterToolItem(type: .adjust, slider: .adjustStraighten))
+        allTools.append(KFilterToolItem(type: .brightness, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .contrast, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .structure, slider: .zeroToHundred))
+        allTools.append(KFilterToolItem(type: .warmth, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .saturation, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .color, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .fade, slider: .zeroToHundred))
+        allTools.append(KFilterToolItem(type: .highlights, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .shadows, slider: .negHundredToHundred))
+        allTools.append(KFilterToolItem(type: .vignette, slider: .zeroToHundred))
+        allTools.append(KFilterToolItem(type: .tiltShift, slider: .tiltShift))
+        allTools.append(KFilterToolItem(type: .sharpen, slider: .zeroToHundred))
+    }
+    
+    fileprivate func generateFilterThumbnails() {
+        DispatchQueue.global().async {
+            
+            let size = CGSize(width: 200, height: 200)
+            UIGraphicsBeginImageContextWithOptions(size, false, 0)
+            self.croppedImage.draw(in: CGRect(origin: .zero, size: size))
+            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            if let image = scaledImage {
+                for filter in self.allFilters {
+                    let image = MTFilterManager.shared.generateThumbnailsForImage(image, with: filter)
+                    self.thumbnails[filter.name] = image
+                    DispatchQueue.main.async {
+                        self.filterCollectionView.reloadData()
+                    }
+                }
+            }
+        }
+    }
+    
+    fileprivate func addCollectionView(at index: Int) {
+        let isFilterTabSelected = index == 0
+        UIView.animate(withDuration: 0.5, animations: {
+            if isFilterTabSelected {
+                self.toolCollectionView.removeFromSuperview()
+                self.filtersView.addSubview(self.filterCollectionView)
+            } else {
+                self.filterCollectionView.removeFromSuperview()
+                self.filtersView.addSubview(self.toolCollectionView)
+            }
+        }) { (finish) in
+
+        }
+
+    }
+    
+    fileprivate func presentFilterControlView(for tool: KFilterToolItem) {
+        
+        //adjustFilter.inputImage = imageView.image
+        adjustFilter.inputImage = originInputImage
+        let width = self.filtersView.bounds.width
+        let height = self.filtersView.bounds.height + 44 + view.safeAreaInsets.bottom
+        let frame = CGRect(x: 0, y: view.bounds.height - height + 44, width: width, height: height)
+    
+        let value = valueForFilterControlView(with: tool)
+        let controlView = KFilterControlView(frame: frame, filterTool: tool, value: value)
+        controlView.delegate = self
+        filterControlView = controlView
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.view.addSubview(controlView)
+            controlView.setPosition(offScreen: false)
+        }) { finish in
+            self.title = tool.title
+        }
+    }
+    
+    fileprivate func dismissFilterControlView() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.filterControlView?.setPosition(offScreen: true)
+        }) { finish in
+            self.filterControlView?.removeFromSuperview()
+            self.title = "Editor"
+        }
+    }
+    
+    fileprivate func valueForFilterControlView(with tool: KFilterToolItem) -> Float {
+        switch tool.type {
+        case .adjustStrength:
+            return 1.0
+        case .adjust:
+            return 0
+        case .brightness:
+            return adjustFilter.brightness
+        case .contrast:
+            return adjustFilter.contrast
+        case .structure:
+            return 0
+        case .warmth:
+            return adjustFilter.temperature
+        case .saturation:
+            return adjustFilter.saturation
+        case .color:
+            return 0
+        case .fade:
+            return adjustFilter.fade
+        case .highlights:
+            return adjustFilter.highlights
+        case .shadows:
+            return adjustFilter.shadows
+        case .vignette:
+            return adjustFilter.vignette
+        case .tiltShift:
+            return adjustFilter.tintShadowsIntensity
+        case .sharpen:
+            return adjustFilter.sharpen
+        }
+    }
+    
+    fileprivate func getFilterAtIndex(_ index: Int) -> MTFilter {
+        if let filter = cachedFilters[index] {
+            return filter
+        }
+        let filter = allFilters[index].init()
+        cachedFilters[index] = filter
+        return filter
+    }
+}
+
+// MARK: - 滤镜处理
+extension KSwiftyCameraVC {
+}
+
+extension KSwiftyCameraVC: KFilterControlViewDelegate {
+    
+    func filterControlViewDidPressCancel() {
+        dismissFilterControlView()
+    }
+    
+    func filterControlViewDidPressDone() {
+        dismissFilterControlView()
+    }
+    
+    func filterControlViewDidStartDragging() {
+        
+    }
+    
+    func filterControlView(_ controlView: KFilterControlView, didChangeValue value: Float, filterTool: KFilterToolItem) {
+        
+        if filterTool.type == .adjustStrength {
+            currentAdjustStrengthFilter?.strength = value
+            //imageView.image = currentAdjustStrengthFilter?.outputImage
+            return
+        }
+        
+        switch filterTool.type {
+        case .adjust:
+            break
+        case .brightness:
+            adjustFilter.brightness = value
+            break
+        case .contrast:
+            adjustFilter.contrast = value
+            break
+        case .structure:
+            break
+        case .warmth:
+            adjustFilter.temperature = value
+            break
+        case .saturation:
+            adjustFilter.saturation = value
+            break
+        case .color:
+            adjustFilter.tintShadowsColor = .green
+            adjustFilter.tintShadowsIntensity = 1
+            break
+        case .fade:
+            adjustFilter.fade = value
+            break
+        case .highlights:
+            adjustFilter.highlights = value
+            break
+        case .shadows:
+            adjustFilter.shadows = value
+            break
+        case .vignette:
+            adjustFilter.vignette = value
+            break
+        case .tiltShift:
+            adjustFilter.tintShadowsIntensity = value
+        case .sharpen:
+            adjustFilter.sharpen = value
+        default:
+            break
+        }
+        //imageView.image = adjustFilter.outputImage
+    }
+    
+    func filterControlViewDidEndDragging() {
+        
+    }
+    
+    func filterControlView(_ controlView: KFilterControlView, borderSelectionChangeTo isSelected: Bool) {
+        if isSelected {
+            let blendFilter = MTIBlendFilter(blendMode: .overlay)
+            let filter = getFilterAtIndex(currentSelectFilterIndex)
+            blendFilter.inputBackgroundImage = filter.borderImage
+            //blendFilter.inputImage = imageView.image
+            //imageView.image = blendFilter.outputImage
+        } else {
+//            let filter = getFilterAtIndex(currentSelectFilterIndex)
+//            filter.inputImage = originInputImage
+//            imageView.image = filter.outputImage
+        }
+    }
+}
+
+extension KSwiftyCameraVC: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == filterCollectionView {
+            return allFilters.count
+        }
+        return allTools.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == filterCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(KFilterPickerCell.self), for: indexPath) as! KFilterPickerCell
+            let filter = allFilters[indexPath.item]
+            cell.update(filter)
+            cell.thumbnailImageView.image = thumbnails[filter.name]
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(KToolPickerCell.self), for: indexPath) as! KToolPickerCell
+            let tool = allTools[indexPath.item]
+            cell.update(tool)
+            return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == filterCollectionView {
+            if currentSelectFilterIndex == indexPath.item {
+                if indexPath.item != 0 {
+                    let item = KFilterToolItem(type: .adjustStrength, slider: .zeroToHundred)
+                    presentFilterControlView(for: item)
+                    currentAdjustStrengthFilter = allFilters[currentSelectFilterIndex].init()
+                    currentAdjustStrengthFilter?.inputImage = originInputImage
+                }
+            } else {
+                let filter = allFilters[indexPath.item].init()
+                filter.inputImage = originInputImage
+                //imageView.image = filter.outputImage
+                currentSelectFilterIndex = indexPath.item
+            }
+        } else {
+            let tool = allTools[indexPath.item]
+            presentFilterControlView(for: tool)
+        }
+    }
+    
 }
