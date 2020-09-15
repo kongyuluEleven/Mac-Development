@@ -120,6 +120,8 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBOutlet weak var btnFilterSetFinished: UIButton!
     @IBOutlet weak var segementFilterSet: UISegmentedControl!
     
+    @IBOutlet weak var fliterEnableSwitch: UISwitch!
+    @IBOutlet weak var fliterEnableLabel: UILabel!
     
     //MARK:- 懒加载属性
     fileprivate lazy var hdhTimeView : HDHTimerView = {
@@ -149,7 +151,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     private var isRecording = false
     private var pixelBufferPool: MTICVPixelBufferPool?
     private var currentVideoURL: URL?
-    private var isFilterEnabled = false
+    
     private var isFrontCamera = true
     
     private var speechRecognizer:SFSpeechRecognizer?
@@ -199,7 +201,14 @@ class KSwiftyCameraVC: KBaseRenderController {
         return filter
     }()
     
+    //是否允许美颜
     private var isBeautyEnabled = true
+    
+    //是否允许滤镜
+    private var isCustomFilterEnabled = true
+    
+    //是否允许抠图
+    private var isMattingEnabled = false
     
     //滤镜处理
     fileprivate var filterCollectionView: UICollectionView!
@@ -212,6 +221,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     fileprivate var cachedFilters: [Int: MTFilter] = [:]
     fileprivate var currentSelectFilterIndex: Int = 0
     fileprivate var currentAdjustStrengthFilter: MTFilter?
+    fileprivate var currentUseFliter: MTFilter?
     fileprivate var allTools: [KFilterToolItem] = []
     fileprivate var thumbnails: [String: UIImage] = [:]
     
@@ -359,6 +369,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     @IBAction func beatyEnableSwitchValueChanged(_ sender: Any) {
         guard let switchButton = sender as? UISwitch else {return}
         isBeautyEnabled = switchButton.isOn
+        UserDefaults.standard.setValue(isBeautyEnabled, forKey: UserDefaultsKeys.isBeautyEnableKey)
     }
     
     @IBAction func beatyResetButtonClicked(_ sender: Any) {
@@ -518,7 +529,13 @@ class KSwiftyCameraVC: KBaseRenderController {
         } else {
             addCollectionView(at: 1)
         }
-        
+    }
+    
+    @IBAction func fliterEnableSwitchValueChanged(_ sender: Any) {
+        if let switchButton = sender as? UISwitch {
+            isCustomFilterEnabled = switchButton.isOn
+            UserDefaults.standard.setValue(isCustomFilterEnabled, forKey: UserDefaultsKeys.isFliterEnableKey)
+        }
     }
     
     
@@ -577,6 +594,7 @@ extension KSwiftyCameraVC {
         lrcSegmentControl.selectedSegmentIndex = 0
         
         //初始化美颜设置
+        isBeautyEnabled  = UserDefaults.standard.bool(forKey: UserDefaultsKeys.isBeautyEnableKey)
         beatyEnableSwitch.isOn = isBeautyEnabled
         initBeautySetView()
     
@@ -777,7 +795,7 @@ extension KSwiftyCameraVC {
         try? camera?.enableAudioDataOutput(on: self.audioQueue, delegate: self)
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         
-        self.isFilterEnabled = true
+        isMattingEnabled = UserDefaults.standard.bool(forKey: UserDefaultsKeys.isMattingEnableKey)
         switchOpenMatting.isOn = true
     }
     
@@ -847,7 +865,8 @@ extension KSwiftyCameraVC {
     }
     
     private func filterSwitchValueChanged(_ sender: UISwitch) {
-        self.isFilterEnabled = sender.isOn
+        isMattingEnabled = sender.isOn
+        UserDefaults.standard.setValue(isMattingEnabled, forKey: UserDefaultsKeys.isMattingEnableKey)
     }
 
     private func recordingStopped() {
@@ -857,7 +876,7 @@ extension KSwiftyCameraVC {
     
     private func showPlayerViewController(url: URL) {
 
-        if isFilterEnabled {
+        if isMattingEnabled {
             let vc = KMedaiFileMattingVC()
             navigationController?.pushViewController(vc, animated: true)
             vc.videoAsset = AVURLAsset(url: url)
@@ -901,7 +920,7 @@ extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate, AVCapt
             var outputSampleBuffer = sampleBuffer
             let inputImage = MTIImage(cvPixelBuffer: pixelBuffer, alphaType: .alphaIsOne)
             var outputImage = inputImage
-            if self.isFilterEnabled {
+            if self.isMattingEnabled {
                 self.mattingFilter.inputImage = inputImage
                 self.generateMask(from: pixelBuffer)
                 if let image = self.mattingFilter.outputImage?.withCachePolicy(.persistent) {
@@ -915,6 +934,14 @@ extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate, AVCapt
                     outputImage = image
                 }
             }
+            
+            if self.isCustomFilterEnabled, let filter = currentUseFliter {
+                filter.inputImage = outputImage
+                if let image = filter.outputImage {
+                    outputImage = image
+                }
+            }
+            
             
             DispatchQueue.main.async {
                 if self.isRecording {
@@ -1580,7 +1607,12 @@ extension KSwiftyCameraVC {
         setupToolDataSource()
         setupToolCollectionView()
         btnFilterSetFinished.setTitle("完成", for: .normal)
+        
+        isCustomFilterEnabled = UserDefaults.standard.bool(forKey: UserDefaultsKeys.isFliterEnableKey)
+        fliterEnableSwitch.isOn = isCustomFilterEnabled
         filtersView.isHidden = true
+        
+        
     }
     
     fileprivate func setupFilterCollectionView() {
@@ -1605,7 +1637,9 @@ extension KSwiftyCameraVC {
         filterCollectionView.reloadData()
         
         filterCollectionView.snp.makeConstraints { (make) in
-            //make.
+            make.top.equalTo(segementFilterSet.snp.bottom).offset(20)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(100)
         }
     }
     
@@ -1627,6 +1661,7 @@ extension KSwiftyCameraVC {
         toolCollectionView.delegate = self
         toolCollectionView.register(KToolPickerCell.self, forCellWithReuseIdentifier: NSStringFromClass(KToolPickerCell.self))
         toolCollectionView.reloadData()
+        
     }
     
     fileprivate func setupToolDataSource() {
@@ -1672,9 +1707,22 @@ extension KSwiftyCameraVC {
             if isFilterTabSelected {
                 self.toolCollectionView.removeFromSuperview()
                 self.filtersView.addSubview(self.filterCollectionView)
+                
+                self.filterCollectionView.snp.makeConstraints { (make) in
+                    make.top.equalTo(self.segementFilterSet.snp.bottom).offset(20)
+                    make.left.right.equalToSuperview()
+                    make.height.equalTo(120)
+                }
+                
             } else {
                 self.filterCollectionView.removeFromSuperview()
                 self.filtersView.addSubview(self.toolCollectionView)
+                
+                self.toolCollectionView.snp.makeConstraints { (make) in
+                    make.top.equalTo(self.segementFilterSet.snp.bottom).offset(20)
+                    make.left.right.equalToSuperview()
+                    make.height.equalTo(120)
+                }
             }
         }) { (finish) in
 
@@ -1879,12 +1927,14 @@ extension KSwiftyCameraVC: UICollectionViewDataSource, UICollectionViewDelegate 
                     presentFilterControlView(for: item)
                     currentAdjustStrengthFilter = allFilters[currentSelectFilterIndex].init()
                     currentAdjustStrengthFilter?.inputImage = originInputImage
+                    currentUseFliter = currentAdjustStrengthFilter
                 }
             } else {
                 let filter = allFilters[indexPath.item].init()
                 filter.inputImage = originInputImage
                 //imageView.image = filter.outputImage
                 currentSelectFilterIndex = indexPath.item
+                currentUseFliter = filter
             }
         } else {
             let tool = allTools[indexPath.item]

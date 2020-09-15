@@ -22,4 +22,16 @@ class UserDefaultsKeys: NSObject {
         return "scrollAreaHeigh"
     }
     
+    class var isFliterEnableKey: String {
+        return "isFliterEnable"
+    }
+    
+    class var isMattingEnableKey: String {
+        return "isMattingEnable"
+    }
+    
+    class var isBeautyEnableKey: String {
+        return "isBeautyEnable"
+    }
+    
 }

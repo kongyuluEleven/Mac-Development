@@ -37,6 +37,8 @@
                 <outlet property="filtersView" destination="7vA-cM-QuU" id="2OM-eI-fia"/>
                 <outlet property="flashButton" destination="afA-qh-0Jh" id="t9G-ZS-IuW"/>
                 <outlet property="flipCameraButton" destination="t1I-MW-UR1" id="3tM-YK-YnL"/>
+                <outlet property="fliterEnableLabel" destination="cDN-B6-9hx" id="N2N-Bw-OKT"/>
+                <outlet property="fliterEnableSwitch" destination="4wH-eW-aD2" id="pT3-UK-IqM"/>
                 <outlet property="fontAreaSizeLabel" destination="FIU-0Y-a36" id="SGn-sL-rTx"/>
                 <outlet property="fontAreaSizeSlider" destination="U8b-ir-ZVS" id="oVk-mU-7Ec"/>
                 <outlet property="fontEnableLabel" destination="FBT-Vz-lnT" id="NWw-dI-wqn"/>
@@ -641,12 +643,36 @@
                                 <action selector="btnFilterViewFinshClicked:" destination="-1" eventType="touchUpInside" id="LXg-Mj-TfU"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启滤镜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDN-B6-9hx">
+                            <rect key="frame" x="3" y="14" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="giP-A6-xeg"/>
+                                <constraint firstAttribute="width" constant="70" id="qGq-b7-S1C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-eW-aD2">
+                            <rect key="frame" x="73" y="9" width="49" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="Pug-7j-pur"/>
+                                <constraint firstAttribute="width" constant="47" id="Rbv-GX-sRD"/>
+                            </constraints>
+                            <connections>
+                                <action selector="fliterEnableSwitchValueChanged:" destination="-1" eventType="valueChanged" id="nvF-ZY-QhT"/>
+                            </connections>
+                        </switch>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="4wH-eW-aD2" firstAttribute="top" secondItem="7vA-cM-QuU" secondAttribute="top" constant="9" id="AeG-ZM-zma"/>
+                        <constraint firstItem="4wH-eW-aD2" firstAttribute="leading" secondItem="cDN-B6-9hx" secondAttribute="trailing" id="HFe-YM-pJc"/>
                         <constraint firstItem="j1N-An-O8M" firstAttribute="centerX" secondItem="7vA-cM-QuU" secondAttribute="centerX" id="JiC-Qr-El3"/>
                         <constraint firstItem="V4J-gF-r8u" firstAttribute="top" secondItem="7vA-cM-QuU" secondAttribute="top" constant="10" id="MKB-eT-Ifd"/>
+                        <constraint firstItem="cDN-B6-9hx" firstAttribute="leading" secondItem="7vA-cM-QuU" secondAttribute="leading" constant="3" id="UHs-zT-IAr"/>
                         <constraint firstItem="j1N-An-O8M" firstAttribute="top" secondItem="7vA-cM-QuU" secondAttribute="top" constant="10" id="UPh-5p-m0Q"/>
+                        <constraint firstItem="cDN-B6-9hx" firstAttribute="top" secondItem="7vA-cM-QuU" secondAttribute="top" constant="14" id="aqr-mq-taY"/>
                         <constraint firstAttribute="trailing" secondItem="V4J-gF-r8u" secondAttribute="trailing" constant="20" id="dGe-25-Nfm"/>
                     </constraints>
                 </view>
