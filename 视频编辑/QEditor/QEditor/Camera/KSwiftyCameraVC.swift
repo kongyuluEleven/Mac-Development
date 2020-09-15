@@ -614,6 +614,11 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
         } else {
             WZBCountdownLabel.play(withNumber: 5, endTitle: "Go") { [weak self] (label) in
                 print("开始")
+                DispatchQueue.main.async {
+                    guard let self = self else {return}
+                    self.hdhTimeView.reset()
+                    self.hdhProgressBarView.reset()
+                }
             } success: { [weak self] (label) in
                 print("完成")
                 guard let self = self else {return}
@@ -640,6 +645,8 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
             } else {
                 self.startTimer()
             }
+            hdhTimeView.reset()
+            hdhProgressBarView.reset()
             
             hdhTimeView.start()
             hdhProgressBarView.start()
@@ -771,7 +778,7 @@ extension KSwiftyCameraVC {
         self.currentVideoURL = url
         print("录像路径:\(url)")
         var configuration = MovieRecorder.Configuration()
-        configuration.isAudioEnabled = false
+        configuration.isAudioEnabled = true
         configuration.audioSettings = camera?.audioDataOutput?.recommendedAudioSettingsForAssetWriter(writingTo: .mp4) as! [String : Any]
         let recorder = MovieRecorder(url: url, configuration: configuration, delegate: self)
         self.recorder = recorder
@@ -814,68 +821,72 @@ extension KSwiftyCameraVC {
 }
 
 // MARK: - Metal Camera 视频帧输出
-extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate {
+extension KSwiftyCameraVC : AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer), CMFormatDescriptionGetMediaType(formatDescription) == kCMMediaType_Video, let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+        guard let formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer) else {
             return
         }
-        var outputSampleBuffer = sampleBuffer
-        let inputImage = MTIImage(cvPixelBuffer: pixelBuffer, alphaType: .alphaIsOne)
-        var outputImage = inputImage
-        if self.isFilterEnabled {
-            self.mattingFilter.inputImage = inputImage
-            self.generateMask(from: pixelBuffer)
-            if let image = self.mattingFilter.outputImage?.withCachePolicy(.persistent) {
-                outputImage = image
-            }
-        }
         
-        if self.isBeautyEnabled {
-            self.colorLookupFilter.inputImage = outputImage
-            if let image = self.colorLookupFilter.outputImage?.withCachePolicy(.persistent) {
-                outputImage = image
-            }
-        }
-        
-        DispatchQueue.main.async {
-            if self.isRecording {
-                let bufferPool = self.currentPixelBufferBool(for: pixelBuffer)
-                if let pixelBuffer = try? bufferPool?.makePixelBuffer(allocationThreshold: 30) {
-                    do {
-                        try self.context.render(outputImage, to: pixelBuffer)
-                        if let smbf = SampleBufferUtilities.makeSampleBufferByReplacingImageBuffer(of: sampleBuffer, with: pixelBuffer) {
-                            outputSampleBuffer = smbf
-                        }
-                    } catch {
-                        print("\(error)")
-                    }
+        if CMFormatDescriptionGetMediaType(formatDescription) == kCMMediaType_Audio {
+            //当前是音频，直接添加到缓存
+            DispatchQueue.main.async {
+                if self.isRecording {
+                    self.recorder?.append(sampleBuffer: sampleBuffer)
                 }
-                self.recorder?.append(sampleBuffer: outputSampleBuffer)
             }
-            self.mtiImageView.image = outputImage
+            return
+            
+        } else if CMFormatDescriptionGetMediaType(formatDescription) == kCMMediaType_Video {
+            //处理音频
+            guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+                return
+            }
+            
+            var outputSampleBuffer = sampleBuffer
+            let inputImage = MTIImage(cvPixelBuffer: pixelBuffer, alphaType: .alphaIsOne)
+            var outputImage = inputImage
+            if self.isFilterEnabled {
+                self.mattingFilter.inputImage = inputImage
+                self.generateMask(from: pixelBuffer)
+                if let image = self.mattingFilter.outputImage?.withCachePolicy(.persistent) {
+                    outputImage = image
+                }
+            }
+            
+            if self.isBeautyEnabled {
+                self.colorLookupFilter.inputImage = outputImage
+                if let image = self.colorLookupFilter.outputImage?.withCachePolicy(.persistent) {
+                    outputImage = image
+                }
+            }
+            
+            DispatchQueue.main.async {
+                if self.isRecording {
+                    let bufferPool = self.currentPixelBufferBool(for: pixelBuffer)
+                    if let pixelBuffer = try? bufferPool?.makePixelBuffer(allocationThreshold: 30) {
+                        do {
+                            try self.context.render(outputImage, to: pixelBuffer)
+                            if let smbf = SampleBufferUtilities.makeSampleBufferByReplacingImageBuffer(of: sampleBuffer, with: pixelBuffer) {
+                                outputSampleBuffer = smbf
+                            }
+                        } catch {
+                            print("\(error)")
+                        }
+                    }
+                    self.recorder?.append(sampleBuffer: outputSampleBuffer)
+                }
+                self.mtiImageView.image = outputImage
+            }
         }
+        
     }
     
     
 
 }
 
-// MARK: - Metal Camera 音频采集输出
-extension KSwiftyCameraVC : AVCaptureAudioDataOutputSampleBufferDelegate {
-    func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        if #available(iOS 13.0, *) {
-            print("音频采集回调：\(sampleBuffer.numSamples)")
-        } else {
-            // Fallback on earlier versions
-        }
-        DispatchQueue.main.async {
-            if self.isRecording {
-                //self.recorder?.append(sampleBuffer: sampleBuffer)
-            }
-        }
-    }
-}
+
 
 
 // MARK: - Metal Camera MovieRecorderDelegate
