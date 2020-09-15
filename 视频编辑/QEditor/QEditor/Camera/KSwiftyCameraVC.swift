@@ -796,7 +796,8 @@ extension KSwiftyCameraVC {
         camera?.videoDataOutput?.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
         
         isMattingEnabled = UserDefaults.standard.bool(forKey: UserDefaultsKeys.isMattingEnableKey)
-        switchOpenMatting.isOn = true
+        switchOpenMatting.isOn = isMattingEnabled
+        btnPicker.isHidden = !isMattingEnabled
     }
     
     private func createDir()  {
@@ -867,6 +868,7 @@ extension KSwiftyCameraVC {
     private func filterSwitchValueChanged(_ sender: UISwitch) {
         isMattingEnabled = sender.isOn
         UserDefaults.standard.setValue(isMattingEnabled, forKey: UserDefaultsKeys.isMattingEnableKey)
+        btnPicker.isHidden = !isMattingEnabled
     }
 
     private func recordingStopped() {
