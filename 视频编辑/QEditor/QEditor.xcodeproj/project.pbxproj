@@ -292,6 +292,52 @@
 		54AE683A25108FCF005587E2 /* HDHProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE683625108FCF005587E2 /* HDHProgressBarView.swift */; };
 		54AE683B25108FCF005587E2 /* HDHTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE683725108FCF005587E2 /* HDHTimerView.xib */; };
 		54AE683D2510B139005587E2 /* KSwiftCameraVC+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE683C2510B139005587E2 /* KSwiftCameraVC+Filter.swift */; };
+		54E5B43D2511B901007ADA3F /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B42F2511B8FB007ADA3F /* SketchViewController.swift */; };
+		54E5B43E2511B901007ADA3F /* ChainableAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4302511B8FC007ADA3F /* ChainableAPIViewController.swift */; };
+		54E5B43F2511B901007ADA3F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4322511B8FC007ADA3F /* CameraViewController.swift */; };
+		54E5B4402511B901007ADA3F /* TripleBufferingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4332511B8FD007ADA3F /* TripleBufferingViewController.swift */; };
+		54E5B4412511B901007ADA3F /* VideoProcessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4342511B8FD007ADA3F /* VideoProcessorViewController.swift */; };
+		54E5B4422511B901007ADA3F /* BouncingBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4362511B8FE007ADA3F /* BouncingBallViewController.swift */; };
+		54E5B4432511B901007ADA3F /* P1040808.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B4382511B8FF007ADA3F /* P1040808.jpg */; };
+		54E5B4442511B901007ADA3F /* ImageRendererViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4392511B8FF007ADA3F /* ImageRendererViewController.m */; };
+		54E5B4452511B901007ADA3F /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B43A2511B900007ADA3F /* Shaders.metal */; };
+		54E5B4462511B901007ADA3F /* SceneKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B43B2511B900007ADA3F /* SceneKitViewController.swift */; };
+		54E5B4472511B901007ADA3F /* BlendModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B43C2511B901007ADA3F /* BlendModeViewController.m */; };
+		54E5B450251200A7007ADA3F /* Image+texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B44F251200A7007ADA3F /* Image+texture.swift */; };
+		54E5B4522512011B007ADA3F /* MTLTexture+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4512512011B007ADA3F /* MTLTexture+extension.swift */; };
+		54E5B45425120198007ADA3F /* KLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45325120198007ADA3F /* KLog.swift */; };
+		54E5B47025120383007ADA3F /* GCarnivalMirrorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45725120377007ADA3F /* GCarnivalMirrorFilter.swift */; };
+		54E5B47125120383007ADA3F /* GSepiaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45825120377007ADA3F /* GSepiaFilter.swift */; };
+		54E5B47225120383007ADA3F /* BinaryImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45925120378007ADA3F /* BinaryImageFilter.swift */; };
+		54E5B47325120383007ADA3F /* GGaussianBlur2DFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45A25120378007ADA3F /* GGaussianBlur2DFilter.swift */; };
+		54E5B47425120383007ADA3F /* FilterShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45B25120379007ADA3F /* FilterShaders.metal */; };
+		54E5B47525120383007ADA3F /* MainBundleTextureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45C25120379007ADA3F /* MainBundleTextureProvider.swift */; };
+		54E5B47625120383007ADA3F /* GColorGBRFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45D2512037A007ADA3F /* GColorGBRFilter.swift */; };
+		54E5B47725120383007ADA3F /* GNormalMapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45E2512037A007ADA3F /* GNormalMapFilter.swift */; };
+		54E5B47825120383007ADA3F /* GPixellationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B45F2512037B007ADA3F /* GPixellationFilter.swift */; };
+		54E5B47925120383007ADA3F /* BnaryImageFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4602512037B007ADA3F /* BnaryImageFilterType.swift */; };
+		54E5B47A25120383007ADA3F /* GImageFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4612512037C007ADA3F /* GImageFilterType.swift */; };
+		54E5B47B25120383007ADA3F /* GDivideFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4622512037D007ADA3F /* GDivideFilter.swift */; };
+		54E5B47C25120383007ADA3F /* GKuwaharaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4632512037D007ADA3F /* GKuwaharaFilter.swift */; };
+		54E5B47D25120383007ADA3F /* GImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4642512037E007ADA3F /* GImageFilter.swift */; };
+		54E5B47E25120383007ADA3F /* GMPSUnaryImageFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4652512037E007ADA3F /* GMPSUnaryImageFilterType.swift */; };
+		54E5B47F25120383007ADA3F /* GSaturationAdjustmentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4662512037F007ADA3F /* GSaturationAdjustmentFilter.swift */; };
+		54E5B48025120383007ADA3F /* GLuminanceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4672512037F007ADA3F /* GLuminanceFilter.swift */; };
+		54E5B48125120383007ADA3F /* GRotationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46825120380007ADA3F /* GRotationFilter.swift */; };
+		54E5B48225120383007ADA3F /* GCenterMagnificationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46925120380007ADA3F /* GCenterMagnificationFilter.swift */; };
+		54E5B48325120383007ADA3F /* GMPSUnaryImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46A25120381007ADA3F /* GMPSUnaryImageFilter.swift */; };
+		54E5B48425120383007ADA3F /* SimpleTextureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46B25120381007ADA3F /* SimpleTextureProvider.swift */; };
+		54E5B48525120383007ADA3F /* GWeightedCenterMagnificationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46C25120382007ADA3F /* GWeightedCenterMagnificationFilter.swift */; };
+		54E5B48625120383007ADA3F /* GSlmmingFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46D25120382007ADA3F /* GSlmmingFilter.swift */; };
+		54E5B48725120383007ADA3F /* GTextureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46E25120383007ADA3F /* GTextureProvider.swift */; };
+		54E5B48825120383007ADA3F /* GContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B46F25120383007ADA3F /* GContext.swift */; };
+		54E5B48D251203C7007ADA3F /* MetalCameraCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B48A251203C6007ADA3F /* MetalCameraCaptureDevice.swift */; };
+		54E5B48E251203C7007ADA3F /* MetalCameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B48B251203C6007ADA3F /* MetalCameraSession.swift */; };
+		54E5B48F251203C7007ADA3F /* MetalCameraSessionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B48C251203C7007ADA3F /* MetalCameraSessionTypes.swift */; };
+		54E5B4932512059B007ADA3F /* KFilterShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B49025120599007ADA3F /* KFilterShaders.metal */; };
+		54E5B4942512059B007ADA3F /* KRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4922512059B007ADA3F /* KRenderer.swift */; };
+		54E5B4972512064C007ADA3F /* K3DCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4952512064C007ADA3F /* K3DCameraController.swift */; };
+		54E5B4982512064C007ADA3F /* K3DCameraController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B4962512064C007ADA3F /* K3DCameraController.xib */; };
 		9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */; };
 		A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123332364168E0073A125 /* UIImage+Utility.swift */; };
 		A021233923652E0C0073A125 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233823652E0C0073A125 /* Debug.swift */; };
@@ -613,6 +659,57 @@
 		54AE683625108FCF005587E2 /* HDHProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDHProgressBarView.swift; sourceTree = "<group>"; };
 		54AE683725108FCF005587E2 /* HDHTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDHTimerView.xib; sourceTree = "<group>"; };
 		54AE683C2510B139005587E2 /* KSwiftCameraVC+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KSwiftCameraVC+Filter.swift"; sourceTree = "<group>"; };
+		54E5B42F2511B8FB007ADA3F /* SketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		54E5B4302511B8FC007ADA3F /* ChainableAPIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableAPIViewController.swift; sourceTree = "<group>"; };
+		54E5B4312511B8FC007ADA3F /* BouncingBallTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingBallTypes.h; sourceTree = "<group>"; };
+		54E5B4322511B8FC007ADA3F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		54E5B4332511B8FD007ADA3F /* TripleBufferingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleBufferingViewController.swift; sourceTree = "<group>"; };
+		54E5B4342511B8FD007ADA3F /* VideoProcessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessorViewController.swift; sourceTree = "<group>"; };
+		54E5B4352511B8FE007ADA3F /* ImageRendererViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRendererViewController.h; sourceTree = "<group>"; };
+		54E5B4362511B8FE007ADA3F /* BouncingBallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncingBallViewController.swift; sourceTree = "<group>"; };
+		54E5B4372511B8FE007ADA3F /* BlendModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlendModeViewController.h; sourceTree = "<group>"; };
+		54E5B4382511B8FF007ADA3F /* P1040808.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = P1040808.jpg; sourceTree = "<group>"; };
+		54E5B4392511B8FF007ADA3F /* ImageRendererViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRendererViewController.m; sourceTree = "<group>"; };
+		54E5B43A2511B900007ADA3F /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		54E5B43B2511B900007ADA3F /* SceneKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitViewController.swift; sourceTree = "<group>"; };
+		54E5B43C2511B901007ADA3F /* BlendModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlendModeViewController.m; sourceTree = "<group>"; };
+		54E5B4482511DA71007ADA3F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		54E5B44F251200A7007ADA3F /* Image+texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+texture.swift"; sourceTree = "<group>"; };
+		54E5B4512512011B007ADA3F /* MTLTexture+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLTexture+extension.swift"; sourceTree = "<group>"; };
+		54E5B45325120198007ADA3F /* KLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLog.swift; sourceTree = "<group>"; };
+		54E5B45725120377007ADA3F /* GCarnivalMirrorFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCarnivalMirrorFilter.swift; sourceTree = "<group>"; };
+		54E5B45825120377007ADA3F /* GSepiaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSepiaFilter.swift; sourceTree = "<group>"; };
+		54E5B45925120378007ADA3F /* BinaryImageFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryImageFilter.swift; sourceTree = "<group>"; };
+		54E5B45A25120378007ADA3F /* GGaussianBlur2DFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGaussianBlur2DFilter.swift; sourceTree = "<group>"; };
+		54E5B45B25120379007ADA3F /* FilterShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FilterShaders.metal; sourceTree = "<group>"; };
+		54E5B45C25120379007ADA3F /* MainBundleTextureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBundleTextureProvider.swift; sourceTree = "<group>"; };
+		54E5B45D2512037A007ADA3F /* GColorGBRFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GColorGBRFilter.swift; sourceTree = "<group>"; };
+		54E5B45E2512037A007ADA3F /* GNormalMapFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNormalMapFilter.swift; sourceTree = "<group>"; };
+		54E5B45F2512037B007ADA3F /* GPixellationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPixellationFilter.swift; sourceTree = "<group>"; };
+		54E5B4602512037B007ADA3F /* BnaryImageFilterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BnaryImageFilterType.swift; sourceTree = "<group>"; };
+		54E5B4612512037C007ADA3F /* GImageFilterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GImageFilterType.swift; sourceTree = "<group>"; };
+		54E5B4622512037D007ADA3F /* GDivideFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDivideFilter.swift; sourceTree = "<group>"; };
+		54E5B4632512037D007ADA3F /* GKuwaharaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKuwaharaFilter.swift; sourceTree = "<group>"; };
+		54E5B4642512037E007ADA3F /* GImageFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GImageFilter.swift; sourceTree = "<group>"; };
+		54E5B4652512037E007ADA3F /* GMPSUnaryImageFilterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMPSUnaryImageFilterType.swift; sourceTree = "<group>"; };
+		54E5B4662512037F007ADA3F /* GSaturationAdjustmentFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSaturationAdjustmentFilter.swift; sourceTree = "<group>"; };
+		54E5B4672512037F007ADA3F /* GLuminanceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLuminanceFilter.swift; sourceTree = "<group>"; };
+		54E5B46825120380007ADA3F /* GRotationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRotationFilter.swift; sourceTree = "<group>"; };
+		54E5B46925120380007ADA3F /* GCenterMagnificationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCenterMagnificationFilter.swift; sourceTree = "<group>"; };
+		54E5B46A25120381007ADA3F /* GMPSUnaryImageFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMPSUnaryImageFilter.swift; sourceTree = "<group>"; };
+		54E5B46B25120381007ADA3F /* SimpleTextureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTextureProvider.swift; sourceTree = "<group>"; };
+		54E5B46C25120382007ADA3F /* GWeightedCenterMagnificationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWeightedCenterMagnificationFilter.swift; sourceTree = "<group>"; };
+		54E5B46D25120382007ADA3F /* GSlmmingFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSlmmingFilter.swift; sourceTree = "<group>"; };
+		54E5B46E25120383007ADA3F /* GTextureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTextureProvider.swift; sourceTree = "<group>"; };
+		54E5B46F25120383007ADA3F /* GContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GContext.swift; sourceTree = "<group>"; };
+		54E5B48A251203C6007ADA3F /* MetalCameraCaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraCaptureDevice.swift; sourceTree = "<group>"; };
+		54E5B48B251203C6007ADA3F /* MetalCameraSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraSession.swift; sourceTree = "<group>"; };
+		54E5B48C251203C7007ADA3F /* MetalCameraSessionTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCameraSessionTypes.swift; sourceTree = "<group>"; };
+		54E5B49025120599007ADA3F /* KFilterShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = KFilterShaders.metal; sourceTree = "<group>"; };
+		54E5B4912512059A007ADA3F /* KShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShaderTypes.h; sourceTree = "<group>"; };
+		54E5B4922512059B007ADA3F /* KRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRenderer.swift; sourceTree = "<group>"; };
+		54E5B4952512064C007ADA3F /* K3DCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K3DCameraController.swift; sourceTree = "<group>"; };
+		54E5B4962512064C007ADA3F /* K3DCameraController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = K3DCameraController.xib; sourceTree = "<group>"; };
 		6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.release.xcconfig"; sourceTree = "<group>"; };
@@ -1104,6 +1201,9 @@
 				54579794250B90C500D15A8B /* ImageErrors.swift */,
 				54579783250B2B0600D15A8B /* KDefine.swift */,
 				544F76C3250CC744009FD12C /* UIView+SafeArea.swift */,
+				54E5B44F251200A7007ADA3F /* Image+texture.swift */,
+				54E5B4512512011B007ADA3F /* MTLTexture+extension.swift */,
+				54E5B45325120198007ADA3F /* KLog.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1169,6 +1269,8 @@
 		54579793250B905400D15A8B /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				54E5B455251201E4007ADA3F /* FilterCamera */,
+				54E5B42E2511B8D9007ADA3F /* MetalPetalDemo */,
 				544F75FA250CC2C0009FD12C /* Filter */,
 			);
 			path = Metal;
@@ -1330,6 +1432,83 @@
 			path = SwiftyCamera;
 			sourceTree = "<group>";
 		};
+		54E5B42E2511B8D9007ADA3F /* MetalPetalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4372511B8FE007ADA3F /* BlendModeViewController.h */,
+				54E5B43C2511B901007ADA3F /* BlendModeViewController.m */,
+				54E5B4312511B8FC007ADA3F /* BouncingBallTypes.h */,
+				54E5B4362511B8FE007ADA3F /* BouncingBallViewController.swift */,
+				54E5B4322511B8FC007ADA3F /* CameraViewController.swift */,
+				54E5B4302511B8FC007ADA3F /* ChainableAPIViewController.swift */,
+				54E5B4352511B8FE007ADA3F /* ImageRendererViewController.h */,
+				54E5B4392511B8FF007ADA3F /* ImageRendererViewController.m */,
+				54E5B4382511B8FF007ADA3F /* P1040808.jpg */,
+				54E5B43B2511B900007ADA3F /* SceneKitViewController.swift */,
+				54E5B43A2511B900007ADA3F /* Shaders.metal */,
+				54E5B42F2511B8FB007ADA3F /* SketchViewController.swift */,
+				54E5B4332511B8FD007ADA3F /* TripleBufferingViewController.swift */,
+				54E5B4342511B8FD007ADA3F /* VideoProcessorViewController.swift */,
+			);
+			path = MetalPetalDemo;
+			sourceTree = "<group>";
+		};
+		54E5B455251201E4007ADA3F /* FilterCamera */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B489251203A6007ADA3F /* UI */,
+				54E5B45625120343007ADA3F /* GFilters */,
+			);
+			path = FilterCamera;
+			sourceTree = "<group>";
+		};
+		54E5B45625120343007ADA3F /* GFilters */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B45925120378007ADA3F /* BinaryImageFilter.swift */,
+				54E5B4602512037B007ADA3F /* BnaryImageFilterType.swift */,
+				54E5B45B25120379007ADA3F /* FilterShaders.metal */,
+				54E5B45725120377007ADA3F /* GCarnivalMirrorFilter.swift */,
+				54E5B46925120380007ADA3F /* GCenterMagnificationFilter.swift */,
+				54E5B45D2512037A007ADA3F /* GColorGBRFilter.swift */,
+				54E5B46F25120383007ADA3F /* GContext.swift */,
+				54E5B4622512037D007ADA3F /* GDivideFilter.swift */,
+				54E5B45A25120378007ADA3F /* GGaussianBlur2DFilter.swift */,
+				54E5B4642512037E007ADA3F /* GImageFilter.swift */,
+				54E5B4612512037C007ADA3F /* GImageFilterType.swift */,
+				54E5B4632512037D007ADA3F /* GKuwaharaFilter.swift */,
+				54E5B4672512037F007ADA3F /* GLuminanceFilter.swift */,
+				54E5B46A25120381007ADA3F /* GMPSUnaryImageFilter.swift */,
+				54E5B4652512037E007ADA3F /* GMPSUnaryImageFilterType.swift */,
+				54E5B45E2512037A007ADA3F /* GNormalMapFilter.swift */,
+				54E5B45F2512037B007ADA3F /* GPixellationFilter.swift */,
+				54E5B46825120380007ADA3F /* GRotationFilter.swift */,
+				54E5B4662512037F007ADA3F /* GSaturationAdjustmentFilter.swift */,
+				54E5B45825120377007ADA3F /* GSepiaFilter.swift */,
+				54E5B46D25120382007ADA3F /* GSlmmingFilter.swift */,
+				54E5B46E25120383007ADA3F /* GTextureProvider.swift */,
+				54E5B46C25120382007ADA3F /* GWeightedCenterMagnificationFilter.swift */,
+				54E5B45C25120379007ADA3F /* MainBundleTextureProvider.swift */,
+				54E5B46B25120381007ADA3F /* SimpleTextureProvider.swift */,
+			);
+			path = GFilters;
+			sourceTree = "<group>";
+		};
+		54E5B489251203A6007ADA3F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B49025120599007ADA3F /* KFilterShaders.metal */,
+				54E5B4922512059B007ADA3F /* KRenderer.swift */,
+				54E5B4912512059A007ADA3F /* KShaderTypes.h */,
+				54E5B48A251203C6007ADA3F /* MetalCameraCaptureDevice.swift */,
+				54E5B48B251203C6007ADA3F /* MetalCameraSession.swift */,
+				54E5B48C251203C7007ADA3F /* MetalCameraSessionTypes.swift */,
+				54E5B4952512064C007ADA3F /* K3DCameraController.swift */,
+				54E5B4962512064C007ADA3F /* K3DCameraController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		9813C308FA00A998C8958ED0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1438,6 +1617,7 @@
 		E0AAE1AAAC360EE39D1501E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54E5B4482511DA71007ADA3F /* SceneKit.framework */,
 				6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */,
 			);
 			name = Frameworks;
@@ -1505,6 +1685,7 @@
 			files = (
 				54579801250CA70F00D15A8B /* KVideoRecordVC.xib in Resources */,
 				A09CF7BB2349DFE800139461 /* LaunchScreen.storyboard in Resources */,
+				54E5B4432511B901007ADA3F /* P1040808.jpg in Resources */,
 				545797F5250B984200D15A8B /* KVideoMattingVC.xib in Resources */,
 				A09CF7B82349DFE800139461 /* Assets.xcassets in Resources */,
 				544F76ED250F004F009FD12C /* FilterAssets.bundle in Resources */,
@@ -1522,6 +1703,7 @@
 				54AE67EB250F899A005587E2 /* KEditLrcTextController.xib in Resources */,
 				544F76E6250CCDFB009FD12C /* KFilterPhotoListController.xib in Resources */,
 				544F76E2250CCDD7009FD12C /* KFiltersShowController.xib in Resources */,
+				54E5B4982512064C007ADA3F /* K3DCameraController.xib in Resources */,
 				542889C2250F15A100AA406C /* KGPUImageCameraController.xib in Resources */,
 				5435DFD32510F2240078B20B /* KRootViewController.xib in Resources */,
 			);
@@ -1578,25 +1760,31 @@
 			files = (
 				544F7699250CC364009FD12C /* MTSkylineVideoFilter.swift in Sources */,
 				54288D74250F217A00AA406C /* EditPlayerCaptionTextField.swift in Sources */,
+				54E5B47725120383007ADA3F /* GNormalMapFilter.swift in Sources */,
 				54288D79250F217A00AA406C /* EditOperationAudioCell.swift in Sources */,
 				5457977E2509F62300D15A8B /* GThreadSafeDictionary.m in Sources */,
 				54288D83250F217A00AA406C /* MediaProtocol.swift in Sources */,
 				545797B7250B91C600D15A8B /* VisionSaliency.swift in Sources */,
 				544F7619250CC303009FD12C /* MTAntiLuxFilter.metal in Sources */,
 				54288D63250F217A00AA406C /* EditViewProtocol.swift in Sources */,
+				54E5B43D2511B901007ADA3F /* SketchViewController.swift in Sources */,
 				544F769E250CC364009FD12C /* MTSlumberFilter.metal in Sources */,
 				544F7672250CC364009FD12C /* MTCremaFilter.swift in Sources */,
 				54288D6C250F217A00AA406C /* EditToolChangeSpeedViewController.swift in Sources */,
 				544F760E250CC303009FD12C /* MTImageOverlayFilter.metal in Sources */,
 				54288D75250F217A00AA406C /* EditToolAudioWaveFormView.swift in Sources */,
+				54E5B48E251203C7007ADA3F /* MetalCameraSession.swift in Sources */,
+				54E5B48625120383007ADA3F /* GSlmmingFilter.swift in Sources */,
 				544F768A250CC364009FD12C /* MTKelvinFilter.metal in Sources */,
 				545797E5250B946A00D15A8B /* VideoOrientationUtilities.swift in Sources */,
 				545797C1250B923200D15A8B /* Task.swift in Sources */,
 				54288D82250F217A00AA406C /* MediaPresenter.swift in Sources */,
 				545797E3250B946A00D15A8B /* AVAsset.swift in Sources */,
 				54579799250B90C700D15A8B /* CVPixelBuffer+Extension.swift in Sources */,
+				54E5B4422511B901007ADA3F /* BouncingBallViewController.swift in Sources */,
 				54288D5D250F217A00AA406C /* EditDataSourceProtocol.swift in Sources */,
 				54288D65250F217A00AA406C /* EditToolRecordAudioViewController.swift in Sources */,
+				54E5B48F251203C7007ADA3F /* MetalCameraSessionTypes.swift in Sources */,
 				5457977B2509F62300D15A8B /* GRegexMatcherProcessor.m in Sources */,
 				545797E8250B946A00D15A8B /* Camera+PhotoCapture.swift in Sources */,
 				54288D98250F217A00AA406C /* ReverseVideoTool.swift in Sources */,
@@ -1620,6 +1808,7 @@
 				544F7678250CC364009FD12C /* MTSierraFilter.swift in Sources */,
 				544F76D2250CC950009FD12C /* KFilterControlView.swift in Sources */,
 				545797A1250B90FB00D15A8B /* ImageDataProvider.swift in Sources */,
+				54E5B47B25120383007ADA3F /* GDivideFilter.swift in Sources */,
 				545797F0250B982B00D15A8B /* KPhotoMattingVC.swift in Sources */,
 				544F76B9250CC364009FD12C /* MT1977Filter.metal in Sources */,
 				544F7617250CC303009FD12C /* MTStarlightFilter.swift in Sources */,
@@ -1646,21 +1835,28 @@
 				54288D90250F217A00AA406C /* CompositionTransition.swift in Sources */,
 				546700552508B605008D23B4 /* KSwiftyCameraVC.swift in Sources */,
 				5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */,
+				54E5B48025120383007ADA3F /* GLuminanceFilter.swift in Sources */,
+				54E5B47825120383007ADA3F /* GPixellationFilter.swift in Sources */,
 				54288D68250F217A00AA406C /* EditToolBaseSettingsViewController.swift in Sources */,
 				544F7610250CC303009FD12C /* MTBasicAdjustFilter.metal in Sources */,
 				54288D88250F217A00AA406C /* MediaCell.swift in Sources */,
+				54E5B48125120383007ADA3F /* GRotationFilter.swift in Sources */,
 				544F7680250CC364009FD12C /* MTToasterFilter.swift in Sources */,
 				545797A5250B914400D15A8B /* ContentProtocol.swift in Sources */,
 				544F7698250CC364009FD12C /* MTHelenaVideoFilter.swift in Sources */,
 				54288D62250F217A00AA406C /* EditCaptionProtocol.swift in Sources */,
+				54E5B48825120383007ADA3F /* GContext.swift in Sources */,
 				5467004E2508B55C008D23B4 /* KPictureDisplayVC.swift in Sources */,
 				544F767C250CC364009FD12C /* MTSutroFilter.metal in Sources */,
 				546700382508A449008D23B4 /* OSSSpeechUtility.swift in Sources */,
 				54288D58250F217A00AA406C /* EditViewPresenter+Tool.swift in Sources */,
 				544F76BE250CC364009FD12C /* MTSutroFilter.swift in Sources */,
+				54E5B4402511B901007ADA3F /* TripleBufferingViewController.swift in Sources */,
 				544F7696250CC364009FD12C /* MTWaldenFilter.swift in Sources */,
 				544F767B250CC364009FD12C /* MTBrooklynVideoFilter.metal in Sources */,
+				54E5B47625120383007ADA3F /* GColorGBRFilter.swift in Sources */,
 				54288D67250F217A00AA406C /* EditToolAudioDetailSettingsViewController.swift in Sources */,
+				54E5B43E2511B901007ADA3F /* ChainableAPIViewController.swift in Sources */,
 				545797FD250BA4A200D15A8B /* KBaseRenderController.swift in Sources */,
 				544F7690250CC364009FD12C /* MTLudwigFilter.metal in Sources */,
 				A0ADD4C023E005DA006BF4F5 /* QueueDemo.swift in Sources */,
@@ -1669,7 +1865,9 @@
 				54288D95250F217A00AA406C /* CompositionImageView.swift in Sources */,
 				54288D6B250F217A00AA406C /* EditToolFiltersViewController.swift in Sources */,
 				A0870A6B23532612006DC38D /* String+Video.swift in Sources */,
+				54E5B4972512064C007ADA3F /* K3DCameraController.swift in Sources */,
 				544F7675250CC364009FD12C /* MTCharmesVideoFilter.metal in Sources */,
+				54E5B48425120383007ADA3F /* SimpleTextureProvider.swift in Sources */,
 				545797E9250B946A00D15A8B /* VideoComposition.swift in Sources */,
 				544F7693250CC364009FD12C /* MTRiseFilter.swift in Sources */,
 				54AE683A25108FCF005587E2 /* HDHProgressBarView.swift in Sources */,
@@ -1681,19 +1879,23 @@
 				54288D8D250F217A00AA406C /* CompositionFiltersDefine.swift in Sources */,
 				54288D85250F217A00AA406C /* MediaManager.swift in Sources */,
 				54AE67EE251050B1005587E2 /* WZBCountdownLabel.m in Sources */,
+				54E5B4472511B901007ADA3F /* BlendModeViewController.m in Sources */,
 				544F76A2250CC364009FD12C /* MTStinsonVideoFilter.metal in Sources */,
+				54E5B450251200A7007ADA3F /* Image+texture.swift in Sources */,
 				544F7612250CC303009FD12C /* MTAntiLuxFilter.swift in Sources */,
 				544F76B2250CC364009FD12C /* MTNashvilleFilter.swift in Sources */,
 				54288D9A250F217A00AA406C /* AudioRecorder.swift in Sources */,
 				54288D61250F217A00AA406C /* EditPlayerViewProtocol.swift in Sources */,
 				544F760F250CC303009FD12C /* MTLuxBlendFilter.metal in Sources */,
 				545797F4250B984200D15A8B /* KVideoMattingVC.swift in Sources */,
+				54E5B47E25120383007ADA3F /* GMPSUnaryImageFilterType.swift in Sources */,
 				A04647AE2388C3AF009FDDC2 /* UIViewController+Utillity.swift in Sources */,
 				544F76AC250CC364009FD12C /* MTLoFiFilter.swift in Sources */,
 				544F7681250CC364009FD12C /* MTCremaFilter.metal in Sources */,
 				54288D53250F217A00AA406C /* ProjectCell.swift in Sources */,
 				544F76B5250CC364009FD12C /* MTStinsonVideoFilter.swift in Sources */,
 				544F7673250CC364009FD12C /* MTPerpetuaFilter.metal in Sources */,
+				54E5B47425120383007ADA3F /* FilterShaders.metal in Sources */,
 				544F76A0250CC364009FD12C /* MTMayfairFilter.metal in Sources */,
 				5457979A250B90C700D15A8B /* CGImage+Conversion.swift in Sources */,
 				54288D7A250F217A00AA406C /* EditToolTimeScaleView.swift in Sources */,
@@ -1701,8 +1903,10 @@
 				54288D6A250F217A00AA406C /* EditToolAddCaptionViewController.swift in Sources */,
 				544F7615250CC303009FD12C /* MTStarlightFilter.metal in Sources */,
 				544F76B1250CC364009FD12C /* MTHelenaVideoFilter.metal in Sources */,
+				54E5B4462511B901007ADA3F /* SceneKitViewController.swift in Sources */,
 				544F7695250CC364009FD12C /* MTVesperVideoFilter.swift in Sources */,
 				A02F7DD8239E8DB000398065 /* NotificationBannerExtension.swift in Sources */,
+				54E5B4442511B901007ADA3F /* ImageRendererViewController.m in Sources */,
 				544F76C1250CC364009FD12C /* MTNormalFilter.swift in Sources */,
 				54288D6F250F217A00AA406C /* EditToolViewController.swift in Sources */,
 				544F7697250CC364009FD12C /* MTWillowFilter.swift in Sources */,
@@ -1711,8 +1915,10 @@
 				544F76B0250CC364009FD12C /* MTGinghamVideoFilter.swift in Sources */,
 				544F76B8250CC364009FD12C /* MTEarlybirdFilter.swift in Sources */,
 				54579807250CA7C700D15A8B /* KVideoMattingOutputHandler.swift in Sources */,
+				54E5B45425120198007ADA3F /* KLog.swift in Sources */,
 				54288D5B250F217A00AA406C /* EditViewPresenter+View.swift in Sources */,
 				545797DC250B946A00D15A8B /* MovieRecorder.swift in Sources */,
+				54E5B48325120383007ADA3F /* GMPSUnaryImageFilter.swift in Sources */,
 				54579800250CA70F00D15A8B /* KVideoRecordVC.swift in Sources */,
 				54288D70250F217A00AA406C /* EditToolAdjustProgressView.swift in Sources */,
 				545797B2250B91B400D15A8B /* DeepLabCenter.swift in Sources */,
@@ -1725,16 +1931,20 @@
 				545797AC250B919A00D15A8B /* DeepLabV3FP16.mlmodel in Sources */,
 				546700372508A449008D23B4 /* OSSUtterance.swift in Sources */,
 				544F76A7250CC364009FD12C /* MTInkwellFilter.swift in Sources */,
+				54E5B4932512059B007ADA3F /* KFilterShaders.metal in Sources */,
 				54288D5A250F217A00AA406C /* EditViewPresenter+Adjust.swift in Sources */,
 				54579798250B90C700D15A8B /* ImageErrors.swift in Sources */,
 				5457980F250CA96700D15A8B /* PlayerPreviewView.swift in Sources */,
 				A09CF7C82349E17000139461 /* NavigationBar.swift in Sources */,
+				54E5B47F25120383007ADA3F /* GSaturationAdjustmentFilter.swift in Sources */,
 				544F76A1250CC364009FD12C /* MTReyesFilter.metal in Sources */,
 				54288D71250F217A00AA406C /* EditOperationContainerView.swift in Sources */,
 				544F76BF250CC364009FD12C /* MTWaldenFilter.metal in Sources */,
 				A021233923652E0C0073A125 /* Debug.swift in Sources */,
 				54288D59250F217A00AA406C /* EditViewPresenter+Player.swift in Sources */,
 				544F7618250CC303009FD12C /* MTLocalLaplacianFilter.metal in Sources */,
+				54E5B48725120383007ADA3F /* GTextureProvider.swift in Sources */,
+				54E5B47325120383007ADA3F /* GGaussianBlur2DFilter.swift in Sources */,
 				544F76C6250CC7FC009FD12C /* KGridView.swift in Sources */,
 				54288D81250F217A00AA406C /* ExportViewController.swift in Sources */,
 				A021233F2365401A0073A125 /* UIFont+Utility.swift in Sources */,
@@ -1745,6 +1955,8 @@
 				A090276E244BE8B200A58CD7 /* UIDeviceExtension.swift in Sources */,
 				5457979F250B90FB00D15A8B /* ImageCollectionCell.swift in Sources */,
 				544F7611250CC303009FD12C /* MTImageOverlayFilter.swift in Sources */,
+				54E5B48D251203C7007ADA3F /* MetalCameraCaptureDevice.swift in Sources */,
+				54E5B4452511B901007ADA3F /* Shaders.metal in Sources */,
 				544F76B3250CC364009FD12C /* MTSkylineVideoFilter.metal in Sources */,
 				54288D52250F217A00AA406C /* ProjectCellModel.swift in Sources */,
 				544F76CA250CC892009FD12C /* KFilterToolItem.swift in Sources */,
@@ -1753,6 +1965,7 @@
 				544F76A9250CC364009FD12C /* MTXpro2Filter.swift in Sources */,
 				544F767E250CC364009FD12C /* MTKelvinFilter.swift in Sources */,
 				54288D96250F217A00AA406C /* CompositionProjectPlayerExtension.swift in Sources */,
+				54E5B47125120383007ADA3F /* GSepiaFilter.swift in Sources */,
 				544F7683250CC364009FD12C /* MTLarkFilter.swift in Sources */,
 				A0870A5C2352F5A7006DC38D /* UIColor+RGB.swift in Sources */,
 				54288D86250F217A00AA406C /* MediaVideoViewController.swift in Sources */,
@@ -1769,6 +1982,7 @@
 				544F76B7250CC364009FD12C /* MT1977Filter.swift in Sources */,
 				544F76AD250CC364009FD12C /* MTAdenFilter.swift in Sources */,
 				5467004A2508B276008D23B4 /* SwiftyOrientation.swift in Sources */,
+				54E5B47225120383007ADA3F /* BinaryImageFilter.swift in Sources */,
 				54288D8F250F217A00AA406C /* CompositionCaptionSegment.swift in Sources */,
 				544F7671250CC364009FD12C /* MTJunoFilter.metal in Sources */,
 				544F7685250CC364009FD12C /* MTXpro2Filter.metal in Sources */,
@@ -1780,25 +1994,32 @@
 				544F76E1250CCDD7009FD12C /* KFiltersShowController.swift in Sources */,
 				544F7689250CC364009FD12C /* MTMavenVideoFilter.metal in Sources */,
 				A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */,
+				54E5B43F2511B901007ADA3F /* CameraViewController.swift in Sources */,
 				544F760D250CC303009FD12C /* MTTintColor.swift in Sources */,
 				545797DE250B946A00D15A8B /* AudioVideoSettings.swift in Sources */,
 				544F769F250CC364009FD12C /* MTWillowFilter.metal in Sources */,
 				544F76E5250CCDFB009FD12C /* KFilterPhotoListController.swift in Sources */,
+				54E5B4942512059B007ADA3F /* KRenderer.swift in Sources */,
 				545797E7250B946A00D15A8B /* Camera.swift in Sources */,
 				545797E0250B946A00D15A8B /* AudioQueueCaptureSession.swift in Sources */,
+				54E5B47525120383007ADA3F /* MainBundleTextureProvider.swift in Sources */,
+				54E5B48525120383007ADA3F /* GWeightedCenterMagnificationFilter.swift in Sources */,
 				54288D87250F217A00AA406C /* MediaCellModel.swift in Sources */,
 				54288D7F250F217A00AA406C /* PlayerView.swift in Sources */,
 				544F76BA250CC364009FD12C /* MTHefeFilter.metal in Sources */,
 				544F76A6250CC364009FD12C /* MTVesperVideoFilter.metal in Sources */,
 				544F76A8250CC364009FD12C /* MTValenciaFilter.metal in Sources */,
 				544F7688250CC364009FD12C /* MTDogpatchVideoFilter.swift in Sources */,
+				54E5B47925120383007ADA3F /* BnaryImageFilterType.swift in Sources */,
 				54288D60250F217A00AA406C /* EditToolViewProtocol.swift in Sources */,
 				544F7682250CC364009FD12C /* MTAdenFilter.metal in Sources */,
 				54288D94250F217A00AA406C /* CompositionProject.swift in Sources */,
+				54E5B47D25120383007ADA3F /* GImageFilter.swift in Sources */,
 				5457977A2509F62300D15A8B /* GKMPMatcherProcessor.m in Sources */,
 				544F7684250CC364009FD12C /* MTBrannanFilter.swift in Sources */,
 				545797A0250B90FB00D15A8B /* ImagePicker.swift in Sources */,
 				A09CF7C32349E0F900139461 /* Define.swift in Sources */,
+				54E5B4522512011B007ADA3F /* MTLTexture+extension.swift in Sources */,
 				542889C1250F15A100AA406C /* KGPUImageCameraController.swift in Sources */,
 				54288D80250F217A00AA406C /* EditPlayerView.swift in Sources */,
 				544F7676250CC364009FD12C /* MTNormalFilter.metal in Sources */,
@@ -1823,6 +2044,7 @@
 				54579804250CA74800D15A8B /* KMedaiFileMattingVC.swift in Sources */,
 				544F76D4250CC964009FD12C /* KHorizontalSliderView.swift in Sources */,
 				544F76AB250CC364009FD12C /* MTClarendonVideoFilter.swift in Sources */,
+				54E5B4412511B901007ADA3F /* VideoProcessorViewController.swift in Sources */,
 				54288D6D250F217A00AA406C /* EditViewController.swift in Sources */,
 				54288D99250F217A00AA406C /* CompositionExporter.swift in Sources */,
 				545797DB250B946A00D15A8B /* MovieSegmentsRecorder.swift in Sources */,
@@ -1830,12 +2052,15 @@
 				54579787250B4C0500D15A8B /* KGPUImageCamera.swift in Sources */,
 				5457980E250CA96700D15A8B /* Alert.swift in Sources */,
 				54288D73250F217A00AA406C /* EditToolImageThumbView.swift in Sources */,
+				54E5B47C25120383007ADA3F /* GKuwaharaFilter.swift in Sources */,
 				544F76AE250CC364009FD12C /* MTAmaroFilter.metal in Sources */,
 				54AE683825108FCF005587E2 /* HDHTimerView.swift in Sources */,
 				54288D77250F217A00AA406C /* EditToolTabView.swift in Sources */,
+				54E5B47025120383007ADA3F /* GCarnivalMirrorFilter.swift in Sources */,
 				54288D55250F217A00AA406C /* EditViewPresenter.swift in Sources */,
 				546700492508B276008D23B4 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				544F76B4250CC364009FD12C /* MTSlumberFilter.swift in Sources */,
+				54E5B47A25120383007ADA3F /* GImageFilterType.swift in Sources */,
 				546700352508A449008D23B4 /* OSSSpeech.swift in Sources */,
 				545797662509D66F00D15A8B /* String+Range.swift in Sources */,
 				546700362508A449008D23B4 /* OSSVoice.swift in Sources */,
@@ -1845,6 +2070,7 @@
 				5467003D2508A657008D23B4 /* KLanguageTableViewCell.swift in Sources */,
 				544F768D250CC364009FD12C /* MTMavenVideoFilter.swift in Sources */,
 				544F76CE250CC92C009FD12C /* KFilterPickerCell.swift in Sources */,
+				54E5B48225120383007ADA3F /* GCenterMagnificationFilter.swift in Sources */,
 				A0870A572351C84E006DC38D /* Namespace.swift in Sources */,
 				546700462508B276008D23B4 /* SwiftyPreviewView.swift in Sources */,
 				544F7616250CC303009FD12C /* MTBasicAdjustFilter.swift in Sources */,

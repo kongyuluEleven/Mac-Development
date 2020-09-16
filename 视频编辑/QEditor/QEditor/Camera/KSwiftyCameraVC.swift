@@ -225,6 +225,16 @@ class KSwiftyCameraVC: KBaseRenderController {
     fileprivate var allTools: [KFilterToolItem] = []
     fileprivate var thumbnails: [String: UIImage] = [:]
     
+    //多屏滤镜处理
+    @IBOutlet weak var imageSlider:  UISlider!
+    var filterType: GImageFilterType = .mpsUnaryImageKernel(type: .laplacian) {
+        didSet {
+        }
+    }
+    var imageFilter: GImageFilter?
+    var imageSliderValue: Float = 10
+    let filterContext = GContext()
+    
     deinit {
         stopTimer()
     }
@@ -1944,4 +1954,234 @@ extension KSwiftyCameraVC: UICollectionViewDataSource, UICollectionViewDelegate 
         }
     }
     
+}
+
+
+
+// MARK: - 多屏滤镜处理
+extension KSwiftyCameraVC {
+    
+    private func filterSelectionClicked(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "滤镜选择", message: nil, preferredStyle: .alert)
+        var objects = [GImageFilterType]()
+//        objects.append(.gaussianBlur2D)
+//        objects.append(.saturationAdjustment)
+        objects.append(.rotation)
+        objects.append(.colorGBR)
+        objects.append(.sepia)
+        objects.append(.pixellation)
+        objects.append(.luminance)
+        objects.append(.normalMap)
+        objects.append(.invert)
+        objects.append(.centerMagnification)
+        objects.append(.swellingUp)
+        objects.append(.slimming)
+        objects.append(.repeat)
+        objects.append(.redEmphasis)
+        objects.append(.greenEmphasis)
+        objects.append(.blueEmphasis)
+        objects.append(.rgbEmphasis)
+        objects.append(.divide)
+        objects.append(.carnivalMirror)
+        objects.append(.kuwahara)
+        objects.append(.mpsUnaryImageKernel(type: .sobel))
+        objects.append(.mpsUnaryImageKernel(type: .laplacian))
+        objects.append(.mpsUnaryImageKernel(type: .gaussianBlur))
+        objects.append(.mpsUnaryImageKernel(type: .emboss))
+//        objects.append(.mpsUnaryImageKernel(type: .gaussianPyramid))
+//        objects.append(.mpsUnaryImageKernel(type: .laplacianPyramid))
+//        objects.append(.binaryImageKernel(type: .oneStepLaplacianPyramid))
+
+
+        for x in objects {
+            alert.addAction(UIAlertAction(title: x.name, style: .default, handler: { (action) in
+                
+                self.filterType = x
+                self.imageFilter = x.createImageFilter(context: self.filterContext)
+                self.changeSliderSetting()
+            }))
+        }
+        alert.addAction(UIAlertAction(title: "确认", style: .default, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func changeSliderSetting() {
+        imageSlider.isHidden = false
+        switch filterType {
+        case .gaussianBlur2D:
+            imageSlider.value = 1
+            imageSlider.minimumValue = 1
+            imageSlider.maximumValue = 8
+        case .saturationAdjustment:
+            imageSlider.value = 1
+            imageSlider.minimumValue = 0
+            imageSlider.maximumValue = 1
+        case .colorGBR:
+            imageSlider.value = 0
+            imageSlider.minimumValue = 0
+            imageSlider.maximumValue = 360
+        case .rotation:
+            imageSlider.value = 0
+            imageSlider.minimumValue = 0
+            imageSlider.maximumValue = 1
+        case .sepia:
+            imageSlider.isHidden = true
+        case .pixellation:
+            imageSlider.value = 1
+            imageSlider.minimumValue = 1
+            imageSlider.maximumValue = 300
+        case .divide:
+            imageSlider.minimumValue = 1
+            imageSlider.maximumValue = 10
+            imageSlider.value = 5
+        case .carnivalMirror:
+            imageSlider.minimumValue = 20
+            imageSlider.maximumValue = 50
+            imageSlider.value = 20
+        case .kuwahara:
+            imageSlider.minimumValue = 1
+            imageSlider.maximumValue = 20
+            imageSlider.value = 10
+        case .luminance:
+            imageSlider.isHidden = true
+        case .normalMap:
+            imageSlider.isHidden = true
+        case .invert:
+            imageSlider.isHidden = true
+        case .centerMagnification:
+            imageSlider.value = 0.75
+            imageSlider.minimumValue = 0.5
+            imageSlider.maximumValue = 1
+        case .swellingUp:
+            imageSlider.value = 0.75
+            imageSlider.minimumValue = 0.5
+            imageSlider.maximumValue = 1
+        case .slimming:
+            imageSlider.value = 0.75
+            imageSlider.minimumValue = 0
+            imageSlider.maximumValue = 0.9
+        case .mpsUnaryImageKernel(let type):
+            switch type {
+            case .sobel:
+                imageSlider.isHidden = true
+            case .laplacian:
+                imageSlider.value = 0.02
+                imageSlider.minimumValue = 0.01
+                imageSlider.maximumValue = 0.1
+                imageSlider.isHidden = false
+            case .gaussianBlur:
+                imageSlider.value = 0
+                imageSlider.minimumValue = 0
+                imageSlider.maximumValue = 20
+                imageSlider.isHidden = false
+            case .emboss:
+                imageSlider.isHidden = true
+            default:
+                imageSlider.isHidden = true
+            }
+        default:
+            imageSlider.isHidden = true
+        }
+        
+        imageSliderValue = Float(imageSlider.value)
+    }
+    
+    
+    
+    func createMatchingBackingDataWithImage1(imageRef: CGImage?, orienation: UIImage.Orientation) -> CGImage? {
+        return imageRef
+        
+        
+        var orientedImage: CGImage?
+        
+        if let imageRef = imageRef {
+            let originalWidth = imageRef.width
+            let originalHeight = imageRef.height
+            let bitsPerComponent = imageRef.bitsPerComponent
+            let bytesPerRow = imageRef.bytesPerRow
+            
+            let colorSpace = imageRef.colorSpace
+//            let colorSpace = CGColorSpace(name: CGColorSpace.genericRGBLinear)
+            GZLogFunc(colorSpace?.name)
+            let bitmapInfo = imageRef.bitmapInfo
+            
+            var degreesToRotate: Double
+            var swapWidthHeight: Bool
+            var mirrored: Bool
+            switch orienation {
+            case .up:
+                degreesToRotate = 0.0
+                swapWidthHeight = false
+                mirrored = false
+                break
+            case .upMirrored:
+                degreesToRotate = 0.0
+                swapWidthHeight = false
+                mirrored = true
+                break
+            case .right:
+                degreesToRotate = -90.0
+                swapWidthHeight = true
+                mirrored = false
+                break
+            case .rightMirrored:
+                degreesToRotate = -90.0
+                swapWidthHeight = true
+                mirrored = true
+                break
+            case .down:
+                degreesToRotate = 180.0
+                swapWidthHeight = false
+                mirrored = false
+                break
+            case .downMirrored:
+                degreesToRotate = 180.0
+                swapWidthHeight = false
+                mirrored = true
+                break
+            case .left:
+                degreesToRotate = 90.0
+                swapWidthHeight = true
+                mirrored = false
+                break
+            case .leftMirrored:
+                degreesToRotate = 90.0
+                swapWidthHeight = true
+                mirrored = true
+                break
+            }
+            let radians = degreesToRotate * Double.pi / 180
+            
+            var width: Int
+            var height: Int
+            if swapWidthHeight {
+                width = originalHeight
+                height = originalWidth
+            } else {
+                width = originalWidth
+                height = originalHeight
+            }
+            
+            if let contextRef = CGContext(data: nil, width: width, height: height, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace!, bitmapInfo: bitmapInfo.rawValue) {
+                
+                contextRef.translateBy(x: CGFloat(width) / 2.0, y: CGFloat(height) / 2.0)
+                if mirrored {
+                    contextRef.scaleBy(x: -1.0, y: 1.0)
+                }
+                contextRef.rotate(by: CGFloat(radians))
+                if swapWidthHeight {
+                    contextRef.translateBy(x: -CGFloat(height) / 2.0, y: -CGFloat(width) / 2.0)
+                } else {
+                    contextRef.translateBy(x: -CGFloat(width) / 2.0, y: -CGFloat(height) / 2.0)
+                }
+                contextRef.draw(imageRef, in: CGRect(x: 0, y: 0, width: originalWidth, height: originalHeight))
+                
+                orientedImage = contextRef.makeImage()
+            }
+        }
+        
+        return orientedImage
+    }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class KRootViewController: UIViewController {
     
-    private var dataArr:[String] = ["拍摄视频","视频编辑","滤镜","抠图"]
+    private var dataArr:[String] = ["拍摄视频","视频编辑","滤镜","抠图","摄像"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -65,6 +65,9 @@ extension KRootViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if row == 3 {
             navigationController?.pushViewController(KImageMattingVC())
+        }
+        else if row == 4 {
+            //navigationController?.pushViewController(K3DCameraController())
         }
     }
     
