@@ -53,6 +53,14 @@ enum LrcMoveType:Int {
     case speechMove
 }
 
+struct LrcSegment {
+    var content:String
+    var beginTime:Double
+    var endTime:Double
+    var range:NSRange?
+    var length:Int
+}
+
 let kScreenW = UIScreen.main.bounds.size.width      //屏幕宽
 let kScreenH = UIScreen.main.bounds.size.height     //屏幕高
 
@@ -159,14 +167,19 @@ class KSwiftyCameraVC: KBaseRenderController {
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
     private var lock = NSLock.init()
+    private var wordlock = NSLock.init()
     private var originText:String = TEXT_COPY_DEFAULT
     private var matchRange:NSRange?
     private var lastMatchRange:NSRange?
+    private var lastMatchLineRange:NSRange?
     private var curScrollRange:NSRange?
     private var isShowLrc:Bool = true
     
     private var language:String = "en-US"
     private var languageTitle:String = "English"
+    
+    private var lrcOriginSegmentList:[LrcSegment] = [LrcSegment]()
+    private var lrcCurrentMatchSegmentIndex: Int = 0
     
     private let TEXTVIEW_MIN_H = 200
     
@@ -234,6 +247,33 @@ class KSwiftyCameraVC: KBaseRenderController {
     var imageFilter: GImageFilter?
     var imageSliderValue: Float = 10
     let filterContext = GContext()
+    
+    
+    /// HUD类型
+    public var HUDType: HUDType = .bar
+    /// 录音框
+    private var chatHUD: MCRecordHUD!
+    /// 录音器
+    private var avrecorder: AVAudioRecorder!
+    /// 录音器设置
+    private let avrecorderSetting = [AVSampleRateKey : NSNumber(value: Float(44100.0)),//声音采样率
+                                     AVFormatIDKey : NSNumber(value: Int32(kAudioFormatMPEG4AAC)),//编码格式
+                             AVNumberOfChannelsKey : NSNumber(value: 1),//采集音轨
+                          AVEncoderAudioQualityKey : NSNumber(value: Int32(AVAudioQuality.medium.rawValue))]//声音质量
+    /// 录音计时器
+    private var avrecordTimer: Timer?
+    /// 波形更新间隔
+    private let updateFequency = 0.05
+    /// 声音数据数组
+    private var soundMeters: [Float]!
+    /// 声音数据数组容量
+    private let soundMeterCount = 10
+    /// 录音时间
+    private var avrecordTime = 0.00
+    
+    private var recordFileUrl:URL?
+    
+    
     
     deinit {
         stopTimer()
@@ -582,6 +622,7 @@ extension KSwiftyCameraVC {
         //self.navigationController?.navigationBar.isHidden = true
         btnStart.setImage(UIImage(named: "microphone-icon"), for: .normal)
         
+        initLrcData()
         updateTextRange()
         
         //lrcFontSize = SliderType.fontSize.max * 0.5
@@ -617,6 +658,9 @@ extension KSwiftyCameraVC {
         initFilterData()
         initFilterUI()
         
+        
+        //初始化录音
+        initAVRecorder()
     }
     
     private func initBeautySetView() {
@@ -683,6 +727,8 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
     func longPressDidReachMaximumDuration() {
         print("\(#function)")
         stopRecord()
+        //停止录音
+        self.endRecordVoice()
     }
     
     func setMaxiumVideoDuration() -> Double {
@@ -693,6 +739,8 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
         print("\(#function)")
         if isRecording {
             stopVideoRecord()
+            //停止录音
+            self.endRecordVoice()
             
         } else {
             
@@ -708,6 +756,9 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
                 guard let self = self else {return}
                 DispatchQueue.main.async {
                     self.startVideoRecord()
+                    
+                    //开始录音
+                    self.beginRecordVoice()
                 }
             }
         }
@@ -733,6 +784,7 @@ extension KSwiftyCameraVC:SwiftyCamButtonDelegate {
             
             hdhTimeView.start()
             hdhProgressBarView.start()
+            
         }
     }
     
@@ -887,20 +939,27 @@ extension KSwiftyCameraVC {
     }
     
     private func showPlayerViewController(url: URL) {
+        
+        let vc = KMedaiFileMattingVC()
+        vc.recordFile = recordFileUrl
+        vc.language = language
+        navigationController?.pushViewController(vc, animated: true)
+        vc.videoAsset = AVURLAsset(url: url)
+        vc.play()
 
-        if isMattingEnabled {
-            let vc = KMedaiFileMattingVC()
-            navigationController?.pushViewController(vc, animated: true)
-            vc.videoAsset = AVURLAsset(url: url)
-            vc.play()
-        } else {
-            let playerViewController = AVPlayerViewController()
-            let player = AVPlayer(url: url)
-            playerViewController.player = player
-            self.present(playerViewController, animated: true) {
-                player.play()
-            }
-        }
+//        if isMattingEnabled {
+//            let vc = KMedaiFileMattingVC()
+//            navigationController?.pushViewController(vc, animated: true)
+//            vc.videoAsset = AVURLAsset(url: url)
+//            vc.play()
+//        } else {
+//            let playerViewController = AVPlayerViewController()
+//            let player = AVPlayer(url: url)
+//            playerViewController.player = player
+//            self.present(playerViewController, animated: true) {
+//                player.play()
+//            }
+//        }
     }
     
     
@@ -1132,6 +1191,18 @@ extension KSwiftyCameraVC:SFSpeechRecognizerDelegate {
 // MARK: -语音识别
 extension KSwiftyCameraVC {
     
+    
+    private func initLrcData() {
+        let arr = originText.components(separatedBy: "\n").map { (str) -> LrcSegment in
+            let range = originText.nsranges(of: str).first
+            let segment = LrcSegment(content: str, beginTime: 0, endTime: 0, range: range, length: str.count)
+            return segment
+        }
+    
+        lrcOriginSegmentList.removeAll()
+        lrcOriginSegmentList.append(contentsOf: arr)
+    }
+    
     private func changeTip(text:String) {
         titleLable.text = text
     }
@@ -1263,6 +1334,8 @@ extension KSwiftyCameraVC {
         
         self.btnStart.tintColor = .red
         
+        self.lastMatchRange = NSMakeRange(0, 10)
+        
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { [weak self] result, error in
             
             guard let self = self else {return}
@@ -1275,7 +1348,7 @@ extension KSwiftyCameraVC {
                 print("识别到：\(result.bestTranscription.formattedString)")
                 
                 DispatchQueue.global().async {
-                    self.match(result: result)
+                    self.match2(result: result)
                 }
                 
             }
@@ -1338,7 +1411,152 @@ extension KSwiftyCameraVC {
         self.speechRecognizer = nil
     }
     
+    
+    private func match(segment:LrcSegment,regRes:SFSpeechRecognitionResult) -> Bool {
+
+        lock.lock()
+        defer { lock.unlock() }
+        
+        
+        let best = regRes.bestTranscription
+        var j = best.segments.count - 1
+        var list = [SFTranscriptionSegment]()
+        list.append(contentsOf: best.segments)
+        
+        let wordOriginText = segment.content
+        guard let segmentRange = segment.range else {return false}
+        
+        let compareStr = wordOriginText.replacingOccurrences(of: ",", with: " ")
+            .replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+
+        
+        //print("需要匹配的语句：compareStr=\(compareStr)")
+        var bestTrasnStr = best.formattedString.replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+        
+        if compareStr.contains(bestTrasnStr) {
+            
+            if let range = compareStr.nsranges(of: bestTrasnStr).first {
+                self.matchRange = NSMakeRange(segmentRange.lowerBound, segmentRange.lowerBound + range.length)
+                print("🍺0 匹配到: range=\(String(describing: self.matchRange)), bestTrasnStr = \(bestTrasnStr)")
+                DispatchQueue.main.async {
+                    self.updateTextRange()
+                }
+                self.lastMatchRange = self.matchRange
+                return true
+            }
+        }
+    
+        return false
+                        
+    }
+    
+    private func updateMatchRange(range:NSRange) {
+       
+        if let seg = lrcSegment(range: range) {
+            self.matchRange = seg.range
+            print("🍺 匹配到: range=\(String(describing: self.matchRange))")
+            DispatchQueue.main.async {
+                self.updateTextRange()
+            }
+            self.lastMatchRange = self.matchRange
+        }
+    }
+    
+    private func lrcSegment(range:NSRange) -> LrcSegment? {
+        
+        let result = lrcOriginSegmentList.first { (item) -> Bool in
+            if let lineRange = item.range,
+               lineRange.upperBound >= range.upperBound,
+               lineRange.lowerBound <= range.lowerBound {
+                return true
+            }
+            return false
+        }
+        return result
+    }
+    
     private func match(result:SFSpeechRecognitionResult) {
+
+        lock.lock()
+        defer { lock.unlock() }
+        
+        let best = result.bestTranscription
+        var j = best.segments.count - 1
+        var list = [SFTranscriptionSegment]()
+        list.append(contentsOf: best.segments)
+        
+        let compareStr = originText.replacingOccurrences(of: ",", with: " ")
+            .replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+
+        
+        //print("需要匹配的语句：compareStr=\(compareStr)")
+        var bestTrasnStr = best.formattedString.replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+        
+        if let range = compareStr.nsranges(of: bestTrasnStr).first,
+           let last = self.lastMatchRange,
+           last.upperBound <= range.lowerBound {
+            updateMatchRange(range: range)
+            return
+        }
+        
+        bestTrasnStr = best.formattedString.lowercased().replacingOccurrences(of: ".", with: " ")
+            .replacingOccurrences(of: "。", with: " ")
+            .replacingOccurrences(of: "?", with: " ")
+            .replacingOccurrences(of: "!", with: " ")
+        
+        if let range = compareStr.nsranges(of: bestTrasnStr).first,
+           let last = self.lastMatchRange,
+           last.upperBound <= range.lowerBound {
+            updateMatchRange(range: range)
+            return
+        }
+
+        while j >= 0 {
+             let translate = list.map({ (item) -> String in
+                 return item.substring
+             }).joined(separator: " ")
+
+             let ranges = compareStr.nsranges(of: translate)
+             if ranges.count > 0 {
+                 if ranges.count == 1 {
+                    if let range = ranges.first,
+                       let last = self.lastMatchRange,
+                       last.upperBound <= range.lowerBound {
+                        updateMatchRange(range: range)
+                        return
+                    }
+                 }
+                 else {
+                     ranges.forEach { (range) in
+                        if let last = self.lastMatchRange,
+                           last.upperBound <= range.lowerBound {
+                            updateMatchRange(range: range)
+                            return
+                        }
+                     }
+                 }
+             }
+             
+             list.removeFirst()
+             j = j - 1
+         }
+                        
+    }
+    
+    
+    private func match2(result:SFSpeechRecognitionResult) {
 
         lock.lock()
         defer { lock.unlock() }
@@ -2183,5 +2401,155 @@ extension KSwiftyCameraVC {
         }
         
         return orientedImage
+    }
+}
+
+
+// MARK: - AVRecorder录音
+
+extension KSwiftyCameraVC {
+    
+    /// 开始录音
+    @objc private func beginRecordVoice() {
+        if recorder == nil {
+            return
+        }
+        view.addSubview(chatHUD)
+        view.isUserInteractionEnabled = true  //录音时候禁止点击其他地方
+        chatHUD.startCounting()
+        soundMeters = [Float]()
+        avrecorder.record()
+        avrecordTimer = Timer.scheduledTimer(timeInterval: updateFequency, target: self, selector: #selector(updateMeters), userInfo: nil, repeats: true)
+    }
+    
+    /// 停止录音
+    @objc private func endRecordVoice() {
+        avrecorder.stop()
+        avrecordTimer?.invalidate()
+        chatHUD.removeFromSuperview()
+        view.isUserInteractionEnabled = true  //录音完了才能点击其他地方
+        chatHUD.stopCounting()
+        soundMeters.removeAll()
+    }
+    
+    /// 取消录音
+    @objc private func cancelRecordVoice() {
+        endRecordVoice()
+        avrecorder.deleteRecording()
+    }
+    
+    /// 上划取消录音
+    @objc private func remindDragExit() {
+        chatHUD.titleLabel.text = "Release to cancel"
+    }
+    
+    /// 下滑继续录音
+    @objc private func remindDragEnter() {
+        chatHUD.titleLabel.text = "Slide up to cancel"
+    }
+    
+    @objc private func updateMeters() {
+        avrecorder.updateMeters()
+        avrecordTime += updateFequency
+        addSoundMeter(item: avrecorder.averagePower(forChannel: 0))
+        if avrecordTime >= 60.0 {
+            endRecordVoice()
+        }
+    }
+    
+    private func addSoundMeter(item: Float) {
+        if soundMeters.count < soundMeterCount {
+            soundMeters.append(item)
+        } else {
+            for (index, _) in soundMeters.enumerated() {
+                if index < soundMeterCount - 1 {
+                    soundMeters[index] = soundMeters[index + 1]
+                }
+            }
+            // 插入新数据
+            soundMeters[soundMeterCount - 1] = item
+            NotificationCenter.default.post(name: NSNotification.Name.init("updateMeters"), object: soundMeters)
+        }
+    }
+}
+
+
+// MARK: - AVRecorder录音 AVAudioRecorderDelegate
+
+extension KSwiftyCameraVC: AVAudioRecorderDelegate  {
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if avrecordTime > 1.0 {
+            if flag {
+                do {
+                    let exists = try recorder.url.checkResourceIsReachable()
+                    if exists {
+                        print("finish record")
+                    }
+                }
+                catch { print("fail to load record")}
+            } else {
+                print("record failed")
+            }
+        }
+        avrecordTime = 0
+    }
+}
+
+
+// MARK: - AVRecorder录音 设置
+
+extension KSwiftyCameraVC {
+    private func initAVRecorder() {
+        chatHUD = MCRecordHUD(type: HUDType)
+        configRecord()
+        
+    }
+    
+    private func configAVAudioSession() {
+        let session = AVAudioSession.sharedInstance()
+        do { try session.setCategory(AVAudioSession.Category.record, options: .defaultToSpeaker) }
+        catch { print("session config failed") }
+    }
+    
+    private func configRecord() {
+        AVAudioSession.sharedInstance().requestRecordPermission { (allowed) in
+            if !allowed {
+                return
+            }
+        }
+        
+        recordFileUrl = directoryURL()
+        
+        guard let url = recordFileUrl else {
+            print("session config failed url = nil")
+            return
+        }
+        
+        let session = AVAudioSession.sharedInstance()
+        do { try session.setCategory(AVAudioSession.Category.playAndRecord, options: .defaultToSpeaker) }
+        catch { print("session config failed") }
+        do {
+            self.avrecorder = try AVAudioRecorder(url: url, settings: self.avrecorderSetting)
+            self.avrecorder.delegate = self
+            self.avrecorder.prepareToRecord()
+            self.avrecorder.isMeteringEnabled = true
+        } catch {
+            print(error.localizedDescription)
+        }
+        do { try AVAudioSession.sharedInstance().setActive(true) }
+        catch { print("session active failed") }
+    }
+    
+    private func directoryURL() -> URL? {
+        //定义并构建一个url来保存音频，音频文件名为recording-yyyy-MM-dd-HH-mm-ss.m4a
+        //根据时间来设置存储文件名
+        let format = DateFormatter()
+        format.dateFormat="yyyy-MM-dd-HH-mm-ss"
+        let currentFileName = "recording-\(format.string(from: Date())).m4a"
+        print(currentFileName)
+        
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let soundFileURL = documentsDirectory.appendingPathComponent(currentFileName)
+        return soundFileURL
     }
 }

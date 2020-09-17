@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import MetalPetal
+import Speech
 
 class KMedaiFileMattingVC: UIViewController {
 
@@ -27,6 +28,13 @@ class KMedaiFileMattingVC: UIViewController {
     fileprivate let context = try! MTIContext(device: MTLCreateSystemDefaultDevice()!)
     fileprivate var exporter: AssetExportSession?
     fileprivate var compositionHandler: KVideoMattingOutputHandler?
+    
+    public var recordFile:URL?
+    public var language:String?
+    
+    @IBOutlet weak var lrcTextView: UITextView!
+    
+    @IBOutlet weak var btnFetchLrc: UIButton!
     
     fileprivate lazy var algorithmSegmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl()
@@ -61,6 +69,10 @@ class KMedaiFileMattingVC: UIViewController {
         self.view.bringSubviewToFront(playButton)
         
         backgroundPicker.selectItem(at: IndexPath(row: 0, section: 0))
+        
+        lrcTextView.text = ""
+//        lrcTextView.backgroundColor = .clear
+//        lrcTextView.textColor = .white
     }
     
     private func setupBackgroundPicker() {
@@ -97,6 +109,12 @@ class KMedaiFileMattingVC: UIViewController {
         player.play()
     }
     
+    
+    @IBAction func btnFetchLrcClicked(_ sender: Any) {
+        print("\(#function)")
+        handleTranscribeButtonTapped()
+    }
+    
     @IBAction func startMattingAndOutput(_ sender: UIButton) {
         exportMattedVideo()
     }
@@ -122,6 +140,8 @@ class KMedaiFileMattingVC: UIViewController {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
     }
+    
+    
 }
 
 fileprivate extension KMedaiFileMattingVC {
@@ -228,4 +248,98 @@ fileprivate extension KMedaiFileMattingVC {
     func composeVideoByCustomRendering() {
         
     }
+}
+
+
+// MARK: - Transcription management
+extension KMedaiFileMattingVC {
+  fileprivate func transcribeFile(url: URL, locale: Locale?) {
+    let locale = locale ?? Locale.current
+
+    guard let recognizer = SFSpeechRecognizer(locale: locale) else {
+      print("Speech recognition not available for specified locale")
+      return
+    }
+
+    if !recognizer.isAvailable {
+      print("Speech recognition not currently available")
+      //return
+    }
+
+    // 2
+    updateUIForTranscriptionInProgress()
+    let request = SFSpeechURLRecognitionRequest(url: url)
+    request.shouldReportPartialResults = true
+    
+    // Keep speech recognition data on device
+    if #available(iOS 13, *) {
+        request.requiresOnDeviceRecognition = true
+    }
+    
+    //request.requiresOnDeviceRecognition = true
+    
+    // 3
+    recognizer.recognitionTask(with: request) {
+      [unowned self] (result, error) in
+      guard let result = result else {
+        print("There was an error transcribing that file")
+        return
+      }
+    
+      let str = result.bestTranscription.formattedString
+      print("\(str)\n")
+        
+        if let err = error {
+            print("\(err)")
+        }
+
+      // 4
+      if result.isFinal {
+        self.updateUIWithCompletedTranscription(str)
+      }
+    }
+  }
+
+  private func handleTranscribeButtonTapped() {
+    SFSpeechRecognizer.requestAuthorization {
+      [unowned self] (authStatus) in
+      switch authStatus {
+      case .authorized:
+        if let url = self.recordFile {
+            self.transcribeFile(url: url, locale: Locale(identifier: language ?? "en-US"))
+        }
+      case .denied:
+        print("Speech recognition authorization denied")
+      case .restricted:
+        print("Not available on this device")
+      case .notDetermined:
+        print("Not determined")
+      }
+    }
+  }
+  
+  fileprivate func updateUIForTranscriptionInProgress() {
+    DispatchQueue.main.async { [unowned self] in
+//      self.transcribeButton.isEnabled = false
+//      self.activityIndicator.startAnimating()
+//      UIView.animate(withDuration: 0.5) {
+//        self.activityIndicator.isHidden = false
+//      }
+    }
+  }
+  
+  fileprivate func updateUIWithCompletedTranscription(_ transcription: String) {
+    DispatchQueue.main.async { [unowned self] in
+      self.lrcTextView.text = transcription
+        self.view.bringSubviewToFront(self.lrcTextView)
+        print("transcription = \(transcription)")
+//      UIView.animate(withDuration: 0.5, animations: {
+//        self.activityIndicator.isHidden = true
+//        self.transcriptionTextView.isHidden = false
+//        }, completion: { _ in
+//          self.activityIndicator.stopAnimating()
+//          self.transcribeButton.isEnabled = true
+//      })
+    }
+  }
 }

@@ -338,6 +338,10 @@
 		54E5B4942512059B007ADA3F /* KRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4922512059B007ADA3F /* KRenderer.swift */; };
 		54E5B4972512064C007ADA3F /* K3DCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4952512064C007ADA3F /* K3DCameraController.swift */; };
 		54E5B4982512064C007ADA3F /* K3DCameraController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B4962512064C007ADA3F /* K3DCameraController.xib */; };
+		54E5B49C25136002007ADA3F /* MCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B49925136001007ADA3F /* MCProgressView.swift */; };
+		54E5B49D25136002007ADA3F /* MCRecordHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B49A25136001007ADA3F /* MCRecordHUD.swift */; };
+		54E5B49E25136002007ADA3F /* MCVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B49B25136001007ADA3F /* MCVolumeView.swift */; };
+		54E5B4A02513601A007ADA3F /* HUDMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B49F2513601A007ADA3F /* HUDMarco.swift */; };
 		9BC77A73B00FD3AFC27A4856 /* Pods_QEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */; };
 		A02123342364168E0073A125 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02123332364168E0073A125 /* UIImage+Utility.swift */; };
 		A021233923652E0C0073A125 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021233823652E0C0073A125 /* Debug.swift */; };
@@ -710,6 +714,10 @@
 		54E5B4922512059B007ADA3F /* KRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRenderer.swift; sourceTree = "<group>"; };
 		54E5B4952512064C007ADA3F /* K3DCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K3DCameraController.swift; sourceTree = "<group>"; };
 		54E5B4962512064C007ADA3F /* K3DCameraController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = K3DCameraController.xib; sourceTree = "<group>"; };
+		54E5B49925136001007ADA3F /* MCProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCProgressView.swift; sourceTree = "<group>"; };
+		54E5B49A25136001007ADA3F /* MCRecordHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCRecordHUD.swift; sourceTree = "<group>"; };
+		54E5B49B25136001007ADA3F /* MCVolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCVolumeView.swift; sourceTree = "<group>"; };
+		54E5B49F2513601A007ADA3F /* HUDMarco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDMarco.swift; sourceTree = "<group>"; };
 		6A0FDA30D11EE65245A87B79 /* Pods_QEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CE7CD99EC1462EFFF0184 /* Pods-QEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		94C3146E5EAD2F1A784A5AE8 /* Pods-QEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-QEditor/Pods-QEditor.release.xcconfig"; sourceTree = "<group>"; };
@@ -1234,6 +1242,10 @@
 		5457977F250A23FA00D15A8B /* Com */ = {
 			isa = PBXGroup;
 			children = (
+				54E5B49F2513601A007ADA3F /* HUDMarco.swift */,
+				54E5B49925136001007ADA3F /* MCProgressView.swift */,
+				54E5B49A25136001007ADA3F /* MCRecordHUD.swift */,
+				54E5B49B25136001007ADA3F /* MCVolumeView.swift */,
 				54AE683625108FCF005587E2 /* HDHProgressBarView.swift */,
 				54AE683525108FCE005587E2 /* HDHProgressBarView.xib */,
 				54AE683425108FCE005587E2 /* HDHTimerView.swift */,
@@ -1818,6 +1830,7 @@
 				54288D76250F217A00AA406C /* EditToolChooseBoxView.swift in Sources */,
 				544F769A250CC364009FD12C /* MTBrannanFilter.metal in Sources */,
 				54579782250A240E00D15A8B /* GHLabel.m in Sources */,
+				54E5B49D25136002007ADA3F /* MCRecordHUD.swift in Sources */,
 				544F76BB250CC364009FD12C /* MTGinghamVideoFilter.metal in Sources */,
 				544F7686250CC364009FD12C /* MTEarlybirdFilter.metal in Sources */,
 				54288D5C250F217A00AA406C /* EditAdjustProtocol.swift in Sources */,
@@ -1837,8 +1850,10 @@
 				5457977C2509F62300D15A8B /* GMatcherExpression.m in Sources */,
 				54E5B48025120383007ADA3F /* GLuminanceFilter.swift in Sources */,
 				54E5B47825120383007ADA3F /* GPixellationFilter.swift in Sources */,
+				54E5B4A02513601A007ADA3F /* HUDMarco.swift in Sources */,
 				54288D68250F217A00AA406C /* EditToolBaseSettingsViewController.swift in Sources */,
 				544F7610250CC303009FD12C /* MTBasicAdjustFilter.metal in Sources */,
+				54E5B49C25136002007ADA3F /* MCProgressView.swift in Sources */,
 				54288D88250F217A00AA406C /* MediaCell.swift in Sources */,
 				54E5B48125120383007ADA3F /* GRotationFilter.swift in Sources */,
 				544F7680250CC364009FD12C /* MTToasterFilter.swift in Sources */,
@@ -1907,6 +1922,7 @@
 				544F7695250CC364009FD12C /* MTVesperVideoFilter.swift in Sources */,
 				A02F7DD8239E8DB000398065 /* NotificationBannerExtension.swift in Sources */,
 				54E5B4442511B901007ADA3F /* ImageRendererViewController.m in Sources */,
+				54E5B49E25136002007ADA3F /* MCVolumeView.swift in Sources */,
 				544F76C1250CC364009FD12C /* MTNormalFilter.swift in Sources */,
 				54288D6F250F217A00AA406C /* EditToolViewController.swift in Sources */,
 				544F7697250CC364009FD12C /* MTWillowFilter.swift in Sources */,
@@ -2248,7 +2264,7 @@
 					"@executable_path/Frameworks",
 				);
 				MTL_HEADER_SEARCH_PATHS = "${PODS_CONFIGURATION_BUILD_DIR}/MetalPetal/MetalPetal.framework/Headers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.YiZhong-Qi.QEditor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.WordCutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG GLES";
@@ -2281,7 +2297,7 @@
 					"@executable_path/Frameworks",
 				);
 				MTL_HEADER_SEARCH_PATHS = "${PODS_CONFIGURATION_BUILD_DIR}/MetalPetal/MetalPetal.framework/Headers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wondershare.YiZhong-Qi.QEditor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.WordCutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GLES;
