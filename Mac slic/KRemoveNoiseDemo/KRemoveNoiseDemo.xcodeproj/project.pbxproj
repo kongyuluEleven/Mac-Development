@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54E5B4AE25138B94007ADA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4AD25138B94007ADA3F /* AppDelegate.swift */; };
+		54E5B4B025138B94007ADA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4AF25138B94007ADA3F /* ViewController.swift */; };
+		54E5B4B325138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4B125138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodeld */; };
+		54E5B4B525138B98007ADA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B4B425138B98007ADA3F /* Assets.xcassets */; };
+		54E5B4B825138B99007ADA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E5B4B625138B99007ADA3F /* Main.storyboard */; };
+		54E5B4C425138B99007ADA3F /* KRemoveNoiseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4C325138B99007ADA3F /* KRemoveNoiseDemoTests.swift */; };
+		54E5B4CF25138B99007ADA3F /* KRemoveNoiseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4CE25138B99007ADA3F /* KRemoveNoiseDemoUITests.swift */; };
+		54E5B4E225138BBF007ADA3F /* noise_suppression.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4E125138BBF007ADA3F /* noise_suppression.c */; };
+		54E5B4E525138BE3007ADA3F /* NoiseTool..m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5B4E325138BE2007ADA3F /* NoiseTool..m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54E5B4C025138B99007ADA3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54E5B4A225138B94007ADA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54E5B4A925138B94007ADA3F;
+			remoteInfo = KRemoveNoiseDemo;
+		};
+		54E5B4CB25138B99007ADA3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54E5B4A225138B94007ADA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54E5B4A925138B94007ADA3F;
+			remoteInfo = KRemoveNoiseDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54E5B4AA25138B94007ADA3F /* KRemoveNoiseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRemoveNoiseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E5B4AD25138B94007ADA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54E5B4AF25138B94007ADA3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54E5B4B225138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KRemoveNoiseDemo.xcdatamodel; sourceTree = "<group>"; };
+		54E5B4B425138B98007ADA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54E5B4B725138B99007ADA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54E5B4B925138B99007ADA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E5B4BA25138B99007ADA3F /* KRemoveNoiseDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KRemoveNoiseDemo.entitlements; sourceTree = "<group>"; };
+		54E5B4BF25138B99007ADA3F /* KRemoveNoiseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRemoveNoiseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E5B4C325138B99007ADA3F /* KRemoveNoiseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRemoveNoiseDemoTests.swift; sourceTree = "<group>"; };
+		54E5B4C525138B99007ADA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E5B4CA25138B99007ADA3F /* KRemoveNoiseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRemoveNoiseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E5B4CE25138B99007ADA3F /* KRemoveNoiseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRemoveNoiseDemoUITests.swift; sourceTree = "<group>"; };
+		54E5B4D025138B99007ADA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E5B4DD25138BBC007ADA3F /* KRemoveNoiseDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRemoveNoiseDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		54E5B4DE25138BBE007ADA3F /* dr_wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dr_wav.h; sourceTree = "<group>"; };
+		54E5B4DF25138BBE007ADA3F /* noise_suppression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise_suppression.h; sourceTree = "<group>"; };
+		54E5B4E025138BBE007ADA3F /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		54E5B4E125138BBF007ADA3F /* noise_suppression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise_suppression.c; sourceTree = "<group>"; };
+		54E5B4E325138BE2007ADA3F /* NoiseTool..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseTool..m; sourceTree = "<group>"; };
+		54E5B4E425138BE3007ADA3F /* NoiseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseTool.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54E5B4A725138B94007ADA3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4BC25138B99007ADA3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4C725138B99007ADA3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54E5B4A125138B94007ADA3F = {
+			isa = PBXGroup;
+			children = (
+				54E5B4AC25138B94007ADA3F /* KRemoveNoiseDemo */,
+				54E5B4C225138B99007ADA3F /* KRemoveNoiseDemoTests */,
+				54E5B4CD25138B99007ADA3F /* KRemoveNoiseDemoUITests */,
+				54E5B4AB25138B94007ADA3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54E5B4AB25138B94007ADA3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4AA25138B94007ADA3F /* KRemoveNoiseDemo.app */,
+				54E5B4BF25138B99007ADA3F /* KRemoveNoiseDemoTests.xctest */,
+				54E5B4CA25138B99007ADA3F /* KRemoveNoiseDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54E5B4AC25138B94007ADA3F /* KRemoveNoiseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4DC25138BA7007ADA3F /* webrtc */,
+				54E5B4AD25138B94007ADA3F /* AppDelegate.swift */,
+				54E5B4AF25138B94007ADA3F /* ViewController.swift */,
+				54E5B4B425138B98007ADA3F /* Assets.xcassets */,
+				54E5B4B625138B99007ADA3F /* Main.storyboard */,
+				54E5B4B925138B99007ADA3F /* Info.plist */,
+				54E5B4BA25138B99007ADA3F /* KRemoveNoiseDemo.entitlements */,
+				54E5B4B125138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodeld */,
+			);
+			path = KRemoveNoiseDemo;
+			sourceTree = "<group>";
+		};
+		54E5B4C225138B99007ADA3F /* KRemoveNoiseDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4C325138B99007ADA3F /* KRemoveNoiseDemoTests.swift */,
+				54E5B4C525138B99007ADA3F /* Info.plist */,
+			);
+			path = KRemoveNoiseDemoTests;
+			sourceTree = "<group>";
+		};
+		54E5B4CD25138B99007ADA3F /* KRemoveNoiseDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4CE25138B99007ADA3F /* KRemoveNoiseDemoUITests.swift */,
+				54E5B4D025138B99007ADA3F /* Info.plist */,
+			);
+			path = KRemoveNoiseDemoUITests;
+			sourceTree = "<group>";
+		};
+		54E5B4DC25138BA7007ADA3F /* webrtc */ = {
+			isa = PBXGroup;
+			children = (
+				54E5B4E425138BE3007ADA3F /* NoiseTool.h */,
+				54E5B4E325138BE2007ADA3F /* NoiseTool..m */,
+				54E5B4DE25138BBE007ADA3F /* dr_wav.h */,
+				54E5B4E125138BBF007ADA3F /* noise_suppression.c */,
+				54E5B4DF25138BBE007ADA3F /* noise_suppression.h */,
+				54E5B4E025138BBE007ADA3F /* timing.h */,
+				54E5B4DD25138BBC007ADA3F /* KRemoveNoiseDemo-Bridging-Header.h */,
+			);
+			path = webrtc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54E5B4A925138B94007ADA3F /* KRemoveNoiseDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E5B4D325138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemo" */;
+			buildPhases = (
+				54E5B4A625138B94007ADA3F /* Sources */,
+				54E5B4A725138B94007ADA3F /* Frameworks */,
+				54E5B4A825138B94007ADA3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRemoveNoiseDemo;
+			productName = KRemoveNoiseDemo;
+			productReference = 54E5B4AA25138B94007ADA3F /* KRemoveNoiseDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54E5B4BE25138B99007ADA3F /* KRemoveNoiseDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E5B4D625138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemoTests" */;
+			buildPhases = (
+				54E5B4BB25138B99007ADA3F /* Sources */,
+				54E5B4BC25138B99007ADA3F /* Frameworks */,
+				54E5B4BD25138B99007ADA3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54E5B4C125138B99007ADA3F /* PBXTargetDependency */,
+			);
+			name = KRemoveNoiseDemoTests;
+			productName = KRemoveNoiseDemoTests;
+			productReference = 54E5B4BF25138B99007ADA3F /* KRemoveNoiseDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54E5B4C925138B99007ADA3F /* KRemoveNoiseDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E5B4D925138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemoUITests" */;
+			buildPhases = (
+				54E5B4C625138B99007ADA3F /* Sources */,
+				54E5B4C725138B99007ADA3F /* Frameworks */,
+				54E5B4C825138B99007ADA3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54E5B4CC25138B99007ADA3F /* PBXTargetDependency */,
+			);
+			name = KRemoveNoiseDemoUITests;
+			productName = KRemoveNoiseDemoUITests;
+			productReference = 54E5B4CA25138B99007ADA3F /* KRemoveNoiseDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54E5B4A225138B94007ADA3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					54E5B4A925138B94007ADA3F = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+					54E5B4BE25138B99007ADA3F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 54E5B4A925138B94007ADA3F;
+					};
+					54E5B4C925138B99007ADA3F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 54E5B4A925138B94007ADA3F;
+					};
+				};
+			};
+			buildConfigurationList = 54E5B4A525138B94007ADA3F /* Build configuration list for PBXProject "KRemoveNoiseDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54E5B4A125138B94007ADA3F;
+			productRefGroup = 54E5B4AB25138B94007ADA3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54E5B4A925138B94007ADA3F /* KRemoveNoiseDemo */,
+				54E5B4BE25138B99007ADA3F /* KRemoveNoiseDemoTests */,
+				54E5B4C925138B99007ADA3F /* KRemoveNoiseDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54E5B4A825138B94007ADA3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E5B4B525138B98007ADA3F /* Assets.xcassets in Resources */,
+				54E5B4B825138B99007ADA3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4BD25138B99007ADA3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4C825138B99007ADA3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54E5B4A625138B94007ADA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E5B4E225138BBF007ADA3F /* noise_suppression.c in Sources */,
+				54E5B4B025138B94007ADA3F /* ViewController.swift in Sources */,
+				54E5B4B325138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodeld in Sources */,
+				54E5B4AE25138B94007ADA3F /* AppDelegate.swift in Sources */,
+				54E5B4E525138BE3007ADA3F /* NoiseTool..m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4BB25138B99007ADA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E5B4C425138B99007ADA3F /* KRemoveNoiseDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E5B4C625138B99007ADA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E5B4CF25138B99007ADA3F /* KRemoveNoiseDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54E5B4C125138B99007ADA3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54E5B4A925138B94007ADA3F /* KRemoveNoiseDemo */;
+			targetProxy = 54E5B4C025138B99007ADA3F /* PBXContainerItemProxy */;
+		};
+		54E5B4CC25138B99007ADA3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54E5B4A925138B94007ADA3F /* KRemoveNoiseDemo */;
+			targetProxy = 54E5B4CB25138B99007ADA3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54E5B4B625138B99007ADA3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54E5B4B725138B99007ADA3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54E5B4D125138B9A007ADA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54E5B4D225138B9A007ADA3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54E5B4D425138B9A007ADA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KRemoveNoiseDemo/KRemoveNoiseDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KRemoveNoiseDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KRemoveNoiseDemo/webrtc/KRemoveNoiseDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54E5B4D525138B9A007ADA3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KRemoveNoiseDemo/KRemoveNoiseDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KRemoveNoiseDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KRemoveNoiseDemo/webrtc/KRemoveNoiseDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		54E5B4D725138B9A007ADA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KRemoveNoiseDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRemoveNoiseDemo.app/Contents/MacOS/KRemoveNoiseDemo";
+			};
+			name = Debug;
+		};
+		54E5B4D825138B9A007ADA3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KRemoveNoiseDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRemoveNoiseDemo.app/Contents/MacOS/KRemoveNoiseDemo";
+			};
+			name = Release;
+		};
+		54E5B4DA25138B9A007ADA3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KRemoveNoiseDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KRemoveNoiseDemo;
+			};
+			name = Debug;
+		};
+		54E5B4DB25138B9A007ADA3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KRemoveNoiseDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KRemoveNoiseDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KRemoveNoiseDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54E5B4A525138B94007ADA3F /* Build configuration list for PBXProject "KRemoveNoiseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E5B4D125138B9A007ADA3F /* Debug */,
+				54E5B4D225138B9A007ADA3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E5B4D325138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E5B4D425138B9A007ADA3F /* Debug */,
+				54E5B4D525138B9A007ADA3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E5B4D625138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E5B4D725138B9A007ADA3F /* Debug */,
+				54E5B4D825138B9A007ADA3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E5B4D925138B9A007ADA3F /* Build configuration list for PBXNativeTarget "KRemoveNoiseDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E5B4DA25138B9A007ADA3F /* Debug */,
+				54E5B4DB25138B9A007ADA3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54E5B4B125138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54E5B4B225138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodel */,
+			);
+			currentVersion = 54E5B4B225138B94007ADA3F /* KRemoveNoiseDemo.xcdatamodel */;
+			path = KRemoveNoiseDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54E5B4A225138B94007ADA3F /* Project object */;
+}

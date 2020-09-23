@@ -55,10 +55,13 @@ class KFilterPhotoEditController: UIViewController {
         setupToolDataSource()
         setupToolCollectionView()
     
-        let ciImage = CIImage(cgImage: croppedImage.cgImage!)
-        let originImage = MTIImage(ciImage: ciImage, isOpaque: true)
-        originInputImage = originImage
-        imageView.image = originImage
+        if let tempImage = croppedImage.cgImage {
+            let ciImage = CIImage(cgImage: tempImage)
+            let originImage = MTIImage(ciImage: ciImage, isOpaque: true)
+            originInputImage = originImage
+            imageView.image = originImage
+        }
+
         
         generateFilterThumbnails()
         setupNavigationButton()

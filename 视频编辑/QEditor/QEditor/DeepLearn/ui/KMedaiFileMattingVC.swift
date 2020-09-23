@@ -306,7 +306,7 @@ extension KMedaiFileMattingVC {
       switch authStatus {
       case .authorized:
         if let url = self.recordFile {
-            self.transcribeFile(url: url, locale: Locale(identifier: language ?? "en-US"))
+            self.transcribeFile(url: url, locale: Locale(identifier: self.language ?? "en-US"))
         }
       case .denied:
         print("Speech recognition authorization denied")

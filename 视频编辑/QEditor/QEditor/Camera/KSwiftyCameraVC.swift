@@ -273,6 +273,7 @@ class KSwiftyCameraVC: KBaseRenderController {
     
     private var recordFileUrl:URL?
     
+    private let noNoiseTool = NoiseTool()
     
     
     deinit {
@@ -1207,6 +1208,13 @@ extension KSwiftyCameraVC {
         titleLable.text = text
     }
     
+    private func configureAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, options: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch { }
+    }
+    
     func recordButtonTapped() {
         if audioEngine.isRunning {
             stopAudioRecording()
@@ -1371,6 +1379,7 @@ extension KSwiftyCameraVC {
         
         // Configure the microphone input.
         let recordingFormat = inputNode.outputFormat(forBus: 0)
+        //let recordingFormat = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 1)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { [weak self] (buffer: AVAudioPCMBuffer, when: AVAudioTime)  in
             self?.recognitionRequest?.append(buffer)
             //print("*****buffer call back ")
@@ -1386,12 +1395,11 @@ extension KSwiftyCameraVC {
        
     private func stopAudioRecording() {
         audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0)
         recognitionRequest?.endAudio()
         btnStart.isEnabled = false
         changeTip(text: "Stopping")
         self.btnStart.tintColor = .darkGray
-        
-        self.audioEngine.stop()
     }
     
     private func stopSpeech() {
