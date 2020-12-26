@@ -9,7 +9,7 @@
 
 @interface AppDelegate ()
 
-@property (strong) IBOutlet NSWindow *window;
+
 - (IBAction)saveAction:(id)sender;
 
 @end
