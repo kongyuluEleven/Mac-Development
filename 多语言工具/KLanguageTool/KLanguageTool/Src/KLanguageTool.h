@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KLanguageTool : NSObject
-
+- (void)createFile:(NSString *)file;
+- (void)createDefaultFile;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,6 +15,33 @@
 		544EBBB825976771009A5596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBB725976771009A5596 /* main.m */; };
 		544EBBC325976772009A5596 /* KLanguageToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBC225976772009A5596 /* KLanguageToolTests.m */; };
 		544EBBCE25976772009A5596 /* KLanguageToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBCD25976772009A5596 /* KLanguageToolUITests.m */; };
+		544EBC1E25976807009A5596 /* main11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBE125976806009A5596 /* main11.cpp */; };
+		544EBC1F25976807009A5596 /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBE325976806009A5596 /* XlsReader.cpp */; };
+		544EBC2025976807009A5596 /* DHxlsReaderIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBEE25976806009A5596 /* DHxlsReaderIOS.m */; };
+		544EBC2125976807009A5596 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF225976806009A5596 /* DHcell.m */; };
+		544EBC2225976807009A5596 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF525976806009A5596 /* xls.c */; };
+		544EBC2325976807009A5596 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF625976806009A5596 /* xlstool.c */; };
+		544EBC2425976807009A5596 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF725976806009A5596 /* ole.c */; };
+		544EBC2525976807009A5596 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF825976806009A5596 /* xls2csv.c */; };
+		544EBC2625976807009A5596 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBF925976806009A5596 /* getopt.c */; };
+		544EBC2725976807009A5596 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBFC25976806009A5596 /* unzip.c */; };
+		544EBC2825976807009A5596 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBFD25976806009A5596 /* zip.c */; };
+		544EBC2925976807009A5596 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBFE25976806009A5596 /* ioapi.c */; };
+		544EBC2A25976807009A5596 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBFF25976806009A5596 /* mztools.c */; };
+		544EBC2B25976807009A5596 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC0725976806009A5596 /* SSZipArchive.m */; };
+		544EBC2C25976807009A5596 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC0A25976806009A5596 /* aeskey.c */; };
+		544EBC2D25976807009A5596 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC0B25976806009A5596 /* hmac.c */; };
+		544EBC2E25976807009A5596 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC0E25976806009A5596 /* aescrypt.c */; };
+		544EBC2F25976807009A5596 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC0F25976806009A5596 /* fileenc.c */; };
+		544EBC3025976807009A5596 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC1225976807009A5596 /* sha1.c */; };
+		544EBC3125976807009A5596 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC1725976807009A5596 /* prng.c */; };
+		544EBC3225976807009A5596 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC1925976807009A5596 /* pwd2key.c */; };
+		544EBC3325976807009A5596 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC1A25976807009A5596 /* aestab.c */; };
+		544EBC3425976807009A5596 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC1D25976807009A5596 /* entropy.c */; };
+		544EBC43259769E8009A5596 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 544EBC42259769E8009A5596 /* libz.tbd */; };
+		544EBC48259769F6009A5596 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 544EBC47259769F6009A5596 /* libiconv.2.tbd */; };
+		544EBC5A25976BF7009A5596 /* KLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBC5925976BF7009A5596 /* KLanguageTool.m */; };
+		544EBC6025976C96009A5596 /* 多语言例子.xls in Resources */ = {isa = PBXBuildFile; fileRef = 544EBC5F25976C95009A5596 /* 多语言例子.xls */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +79,66 @@
 		544EBBC925976772009A5596 /* KLanguageToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLanguageToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		544EBBCD25976772009A5596 /* KLanguageToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLanguageToolUITests.m; sourceTree = "<group>"; };
 		544EBBCF25976772009A5596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544EBBE125976806009A5596 /* main11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main11.cpp; sourceTree = "<group>"; };
+		544EBBE225976806009A5596 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		544EBBE325976806009A5596 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		544EBBE425976806009A5596 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		544EBBE625976806009A5596 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		544EBBE725976806009A5596 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		544EBBE825976806009A5596 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		544EBBE925976806009A5596 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		544EBBEA25976806009A5596 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		544EBBEB25976806009A5596 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		544EBBEC25976806009A5596 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		544EBBEE25976806009A5596 /* DHxlsReaderIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReaderIOS.m; sourceTree = "<group>"; };
+		544EBBEF25976806009A5596 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
+		544EBBF025976806009A5596 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		544EBBF125976806009A5596 /* DHxlsReaderIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReaderIOS.h; sourceTree = "<group>"; };
+		544EBBF225976806009A5596 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		544EBBF325976806009A5596 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		544EBBF525976806009A5596 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		544EBBF625976806009A5596 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		544EBBF725976806009A5596 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		544EBBF825976806009A5596 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		544EBBF925976806009A5596 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		544EBBFC25976806009A5596 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		544EBBFD25976806009A5596 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		544EBBFE25976806009A5596 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		544EBBFF25976806009A5596 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		544EBC0025976806009A5596 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		544EBC0125976806009A5596 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		544EBC0225976806009A5596 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		544EBC0325976806009A5596 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		544EBC0425976806009A5596 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		544EBC0525976806009A5596 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		544EBC0625976806009A5596 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		544EBC0725976806009A5596 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		544EBC0925976806009A5596 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		544EBC0A25976806009A5596 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		544EBC0B25976806009A5596 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		544EBC0C25976806009A5596 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		544EBC0D25976806009A5596 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		544EBC0E25976806009A5596 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		544EBC0F25976806009A5596 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		544EBC1025976806009A5596 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		544EBC1125976806009A5596 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		544EBC1225976807009A5596 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		544EBC1325976807009A5596 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		544EBC1425976807009A5596 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		544EBC1525976807009A5596 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		544EBC1625976807009A5596 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		544EBC1725976807009A5596 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		544EBC1825976807009A5596 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		544EBC1925976807009A5596 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		544EBC1A25976807009A5596 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		544EBC1B25976807009A5596 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		544EBC1C25976807009A5596 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		544EBC1D25976807009A5596 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		544EBC42259769E8009A5596 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		544EBC47259769F6009A5596 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		544EBC5825976BF7009A5596 /* KLanguageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLanguageTool.h; sourceTree = "<group>"; };
+		544EBC5925976BF7009A5596 /* KLanguageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLanguageTool.m; sourceTree = "<group>"; };
+		544EBC5F25976C95009A5596 /* 多语言例子.xls */ = {isa = PBXFileReference; lastKnownFileType = file; name = "多语言例子.xls"; path = "KLanguageTool/Res/多语言例子.xls"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544EBC48259769F6009A5596 /* libiconv.2.tbd in Frameworks */,
+				544EBC43259769E8009A5596 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +175,7 @@
 				544EBBC125976772009A5596 /* KLanguageToolTests */,
 				544EBBCC25976772009A5596 /* KLanguageToolUITests */,
 				544EBBA625976764009A5596 /* Products */,
+				544EBC41259769E8009A5596 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +192,9 @@
 		544EBBA725976764009A5596 /* KLanguageTool */ = {
 			isa = PBXGroup;
 			children = (
+				544EBC5E25976C40009A5596 /* Res */,
+				544EBC4C25976A5D009A5596 /* Src */,
+				544EBBDE25976806009A5596 /* Tools */,
 				544EBBA825976764009A5596 /* AppDelegate.h */,
 				544EBBA925976764009A5596 /* AppDelegate.m */,
 				544EBBAB25976764009A5596 /* ViewController.h */,
@@ -132,6 +225,158 @@
 				544EBBCF25976772009A5596 /* Info.plist */,
 			);
 			path = KLanguageToolUITests;
+			sourceTree = "<group>";
+		};
+		544EBBDE25976806009A5596 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBDF25976806009A5596 /* DHxlsReader */,
+				544EBBFA25976806009A5596 /* SSZipArchive */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		544EBBDF25976806009A5596 /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBE025976806009A5596 /* cplusplus */,
+				544EBBE425976806009A5596 /* config.h */,
+				544EBBE525976806009A5596 /* libxls */,
+				544EBBED25976806009A5596 /* DHxlsReaderIOS */,
+				544EBBF425976806009A5596 /* src */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		544EBBE025976806009A5596 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBE125976806009A5596 /* main11.cpp */,
+				544EBBE225976806009A5596 /* XlsReader.h */,
+				544EBBE325976806009A5596 /* XlsReader.cpp */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		544EBBE525976806009A5596 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBE625976806009A5596 /* xlstypes.h */,
+				544EBBE725976806009A5596 /* xlsstruct.h */,
+				544EBBE825976806009A5596 /* brdb.c.h */,
+				544EBBE925976806009A5596 /* xlstool.h */,
+				544EBBEA25976806009A5596 /* xls.h */,
+				544EBBEB25976806009A5596 /* ole.h */,
+				544EBBEC25976806009A5596 /* brdb.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		544EBBED25976806009A5596 /* DHxlsReaderIOS */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBEE25976806009A5596 /* DHxlsReaderIOS.m */,
+				544EBBEF25976806009A5596 /* DHxlsReaderIOS-Prefix.pch */,
+				544EBBF025976806009A5596 /* DHcell.h */,
+				544EBBF125976806009A5596 /* DHxlsReaderIOS.h */,
+				544EBBF225976806009A5596 /* DHcell.m */,
+				544EBBF325976806009A5596 /* DHcell-Private.h */,
+			);
+			path = DHxlsReaderIOS;
+			sourceTree = "<group>";
+		};
+		544EBBF425976806009A5596 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBF525976806009A5596 /* xls.c */,
+				544EBBF625976806009A5596 /* xlstool.c */,
+				544EBBF725976806009A5596 /* ole.c */,
+				544EBBF825976806009A5596 /* xls2csv.c */,
+				544EBBF925976806009A5596 /* getopt.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		544EBBFA25976806009A5596 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBFB25976806009A5596 /* minizip */,
+				544EBC0525976806009A5596 /* SSZipArchive.h */,
+				544EBC0625976806009A5596 /* Common.h */,
+				544EBC0725976806009A5596 /* SSZipArchive.m */,
+				544EBC0825976806009A5596 /* aes */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		544EBBFB25976806009A5596 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				544EBBFC25976806009A5596 /* unzip.c */,
+				544EBBFD25976806009A5596 /* zip.c */,
+				544EBBFE25976806009A5596 /* ioapi.c */,
+				544EBBFF25976806009A5596 /* mztools.c */,
+				544EBC0025976806009A5596 /* crypt.h */,
+				544EBC0125976806009A5596 /* zip.h */,
+				544EBC0225976806009A5596 /* unzip.h */,
+				544EBC0325976806009A5596 /* mztools.h */,
+				544EBC0425976806009A5596 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		544EBC0825976806009A5596 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				544EBC0925976806009A5596 /* prng.h */,
+				544EBC0A25976806009A5596 /* aeskey.c */,
+				544EBC0B25976806009A5596 /* hmac.c */,
+				544EBC0C25976806009A5596 /* aestab.h */,
+				544EBC0D25976806009A5596 /* pwd2key.h */,
+				544EBC0E25976806009A5596 /* aescrypt.c */,
+				544EBC0F25976806009A5596 /* fileenc.c */,
+				544EBC1025976806009A5596 /* aesopt.h */,
+				544EBC1125976806009A5596 /* aes_via_ace.h */,
+				544EBC1225976807009A5596 /* sha1.c */,
+				544EBC1325976807009A5596 /* brg_types.h */,
+				544EBC1425976807009A5596 /* entropy.h */,
+				544EBC1525976807009A5596 /* hmac.h */,
+				544EBC1625976807009A5596 /* brg_endian.h */,
+				544EBC1725976807009A5596 /* prng.c */,
+				544EBC1825976807009A5596 /* aes.h */,
+				544EBC1925976807009A5596 /* pwd2key.c */,
+				544EBC1A25976807009A5596 /* aestab.c */,
+				544EBC1B25976807009A5596 /* sha1.h */,
+				544EBC1C25976807009A5596 /* fileenc.h */,
+				544EBC1D25976807009A5596 /* entropy.c */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		544EBC41259769E8009A5596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544EBC47259769F6009A5596 /* libiconv.2.tbd */,
+				544EBC42259769E8009A5596 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		544EBC4C25976A5D009A5596 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				544EBC5825976BF7009A5596 /* KLanguageTool.h */,
+				544EBC5925976BF7009A5596 /* KLanguageTool.m */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		544EBC5E25976C40009A5596 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				544EBC5F25976C95009A5596 /* 多语言例子.xls */,
+			);
+			path = Res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544EBC6025976C96009A5596 /* 多语言例子.xls in Resources */,
 				544EBBB225976771009A5596 /* Assets.xcassets in Resources */,
 				544EBBB525976771009A5596 /* Main.storyboard in Resources */,
 			);
@@ -262,10 +508,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544EBC2D25976807009A5596 /* hmac.c in Sources */,
+				544EBC2425976807009A5596 /* ole.c in Sources */,
+				544EBC2225976807009A5596 /* xls.c in Sources */,
+				544EBC2B25976807009A5596 /* SSZipArchive.m in Sources */,
+				544EBC2025976807009A5596 /* DHxlsReaderIOS.m in Sources */,
+				544EBC3425976807009A5596 /* entropy.c in Sources */,
+				544EBC2825976807009A5596 /* zip.c in Sources */,
+				544EBC3125976807009A5596 /* prng.c in Sources */,
 				544EBBAD25976764009A5596 /* ViewController.m in Sources */,
+				544EBC1E25976807009A5596 /* main11.cpp in Sources */,
+				544EBC1F25976807009A5596 /* XlsReader.cpp in Sources */,
+				544EBC2A25976807009A5596 /* mztools.c in Sources */,
+				544EBC3225976807009A5596 /* pwd2key.c in Sources */,
+				544EBC2F25976807009A5596 /* fileenc.c in Sources */,
 				544EBBAA25976764009A5596 /* AppDelegate.m in Sources */,
+				544EBC5A25976BF7009A5596 /* KLanguageTool.m in Sources */,
 				544EBBB825976771009A5596 /* main.m in Sources */,
+				544EBC3325976807009A5596 /* aestab.c in Sources */,
+				544EBC2725976807009A5596 /* unzip.c in Sources */,
+				544EBC2925976807009A5596 /* ioapi.c in Sources */,
+				544EBC2325976807009A5596 /* xlstool.c in Sources */,
+				544EBC2C25976807009A5596 /* aeskey.c in Sources */,
 				544EBBB025976764009A5596 /* KLanguageTool.xcdatamodeld in Sources */,
+				544EBC3025976807009A5596 /* sha1.c in Sources */,
+				544EBC2125976807009A5596 /* DHcell.m in Sources */,
+				544EBC2625976807009A5596 /* getopt.c in Sources */,
+				544EBC2E25976807009A5596 /* aescrypt.c in Sources */,
+				544EBC2525976807009A5596 /* xls2csv.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +703,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZC2T44ZDX;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = "KLanguageTool/KLanguageTool-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KLanguageTool/Tools/DHxlsReader/DHxlsReaderIOS\"";
 				INFOPLIST_FILE = KLanguageTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -453,11 +726,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZC2T44ZDX;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = "KLanguageTool/KLanguageTool-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KLanguageTool/Tools/DHxlsReader/DHxlsReaderIOS\"";
 				INFOPLIST_FILE = KLanguageTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
