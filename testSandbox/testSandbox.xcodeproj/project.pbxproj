@@ -10,7 +10,7 @@
 		54AE854B24ACAA0B004B7D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */; };
 		54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854C24ACAA0D004B7D6C /* Assets.xcassets */; };
 		54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE854E24ACAA0D004B7D6C /* MainMenu.xib */; };
-		54ED06DB24DE5B3F00D0310F /* testSandboxSub.app in Resources */ = {isa = PBXBuildFile; fileRef = 54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */; };
+		54ECC67A253574CD00019ED1 /* KFacebookshareDemo-iOS.app in Resources */ = {isa = PBXBuildFile; fileRef = 54ECC679253574CD00019ED1 /* KFacebookshareDemo-iOS.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		54AE855124ACAA0D004B7D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54AE855224ACAA0D004B7D6C /* testSandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testSandbox.entitlements; sourceTree = "<group>"; };
 		54AE858924ADB3CA004B7D6C /* testM1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testM1.xcodeproj; path = testM1/testM1.xcodeproj; sourceTree = "<group>"; };
-		54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = testSandboxSub.app; path = "../../../../../../Library/Developer/Xcode/DerivedData/testSandboxW-gmszvobeybqslvaxkpnrfctqaxch/Build/Products/Release/testSandboxSub.app"; sourceTree = "<group>"; };
+		54ECC679253574CD00019ED1 /* KFacebookshareDemo-iOS.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "KFacebookshareDemo-iOS.app"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		54AE854924ACAA0B004B7D6C /* testSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				54ED06DA24DE5B3F00D0310F /* testSandboxSub.app */,
+				54ECC679253574CD00019ED1 /* KFacebookshareDemo-iOS.app */,
 				54AE854A24ACAA0B004B7D6C /* AppDelegate.swift */,
 				54AE854C24ACAA0D004B7D6C /* Assets.xcassets */,
 				54AE854E24ACAA0D004B7D6C /* MainMenu.xib */,
@@ -186,8 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AE854D24ACAA0D004B7D6C /* Assets.xcassets in Resources */,
+				54ECC67A253574CD00019ED1 /* KFacebookshareDemo-iOS.app in Resources */,
 				54AE855024ACAA0D004B7D6C /* MainMenu.xib in Resources */,
-				54ED06DB24DE5B3F00D0310F /* testSandboxSub.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

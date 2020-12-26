@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54AE042025884A8F00EDD256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE041F25884A8F00EDD256 /* AppDelegate.swift */; };
+		54AE042325884A8F00EDD256 /* WSMacLanguageTool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54AE042125884A8F00EDD256 /* WSMacLanguageTool.xcdatamodeld */; };
+		54AE042525884A9D00EDD256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AE042425884A9D00EDD256 /* Assets.xcassets */; };
+		54AE042825884A9D00EDD256 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE042625884A9D00EDD256 /* MainMenu.xib */; };
+		54AE043425884A9D00EDD256 /* WSMacLanguageToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE043325884A9D00EDD256 /* WSMacLanguageToolTests.swift */; };
+		54AE043F25884A9D00EDD256 /* WSMacLanguageToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE043E25884A9D00EDD256 /* WSMacLanguageToolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54AE043025884A9D00EDD256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AE041425884A8F00EDD256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AE041B25884A8F00EDD256;
+			remoteInfo = WSMacLanguageTool;
+		};
+		54AE043B25884A9D00EDD256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AE041425884A8F00EDD256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AE041B25884A8F00EDD256;
+			remoteInfo = WSMacLanguageTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54AE041C25884A8F00EDD256 /* WSMacLanguageTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSMacLanguageTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AE041F25884A8F00EDD256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54AE042225884A8F00EDD256 /* WSMacLanguageTool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WSMacLanguageTool.xcdatamodel; sourceTree = "<group>"; };
+		54AE042425884A9D00EDD256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AE042725884A9D00EDD256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		54AE042925884A9D00EDD256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AE042A25884A9D00EDD256 /* WSMacLanguageTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WSMacLanguageTool.entitlements; sourceTree = "<group>"; };
+		54AE042F25884A9D00EDD256 /* WSMacLanguageToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSMacLanguageToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AE043325884A9D00EDD256 /* WSMacLanguageToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMacLanguageToolTests.swift; sourceTree = "<group>"; };
+		54AE043525884A9D00EDD256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AE043A25884A9D00EDD256 /* WSMacLanguageToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSMacLanguageToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AE043E25884A9D00EDD256 /* WSMacLanguageToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMacLanguageToolUITests.swift; sourceTree = "<group>"; };
+		54AE044025884A9D00EDD256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54AE041925884A8F00EDD256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE042C25884A9D00EDD256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE043725884A9D00EDD256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54AE041325884A8F00EDD256 = {
+			isa = PBXGroup;
+			children = (
+				54AE041E25884A8F00EDD256 /* WSMacLanguageTool */,
+				54AE043225884A9D00EDD256 /* WSMacLanguageToolTests */,
+				54AE043D25884A9D00EDD256 /* WSMacLanguageToolUITests */,
+				54AE041D25884A8F00EDD256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54AE041D25884A8F00EDD256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54AE041C25884A8F00EDD256 /* WSMacLanguageTool.app */,
+				54AE042F25884A9D00EDD256 /* WSMacLanguageToolTests.xctest */,
+				54AE043A25884A9D00EDD256 /* WSMacLanguageToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54AE041E25884A8F00EDD256 /* WSMacLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				54AE041F25884A8F00EDD256 /* AppDelegate.swift */,
+				54AE042425884A9D00EDD256 /* Assets.xcassets */,
+				54AE042625884A9D00EDD256 /* MainMenu.xib */,
+				54AE042925884A9D00EDD256 /* Info.plist */,
+				54AE042A25884A9D00EDD256 /* WSMacLanguageTool.entitlements */,
+				54AE042125884A8F00EDD256 /* WSMacLanguageTool.xcdatamodeld */,
+			);
+			path = WSMacLanguageTool;
+			sourceTree = "<group>";
+		};
+		54AE043225884A9D00EDD256 /* WSMacLanguageToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				54AE043325884A9D00EDD256 /* WSMacLanguageToolTests.swift */,
+				54AE043525884A9D00EDD256 /* Info.plist */,
+			);
+			path = WSMacLanguageToolTests;
+			sourceTree = "<group>";
+		};
+		54AE043D25884A9D00EDD256 /* WSMacLanguageToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54AE043E25884A9D00EDD256 /* WSMacLanguageToolUITests.swift */,
+				54AE044025884A9D00EDD256 /* Info.plist */,
+			);
+			path = WSMacLanguageToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54AE041B25884A8F00EDD256 /* WSMacLanguageTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AE044325884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageTool" */;
+			buildPhases = (
+				54AE041825884A8F00EDD256 /* Sources */,
+				54AE041925884A8F00EDD256 /* Frameworks */,
+				54AE041A25884A8F00EDD256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSMacLanguageTool;
+			productName = WSMacLanguageTool;
+			productReference = 54AE041C25884A8F00EDD256 /* WSMacLanguageTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54AE042E25884A9D00EDD256 /* WSMacLanguageToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AE044625884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageToolTests" */;
+			buildPhases = (
+				54AE042B25884A9D00EDD256 /* Sources */,
+				54AE042C25884A9D00EDD256 /* Frameworks */,
+				54AE042D25884A9D00EDD256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AE043125884A9D00EDD256 /* PBXTargetDependency */,
+			);
+			name = WSMacLanguageToolTests;
+			productName = WSMacLanguageToolTests;
+			productReference = 54AE042F25884A9D00EDD256 /* WSMacLanguageToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54AE043925884A9D00EDD256 /* WSMacLanguageToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AE044925884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageToolUITests" */;
+			buildPhases = (
+				54AE043625884A9D00EDD256 /* Sources */,
+				54AE043725884A9D00EDD256 /* Frameworks */,
+				54AE043825884A9D00EDD256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AE043C25884A9D00EDD256 /* PBXTargetDependency */,
+			);
+			name = WSMacLanguageToolUITests;
+			productName = WSMacLanguageToolUITests;
+			productReference = 54AE043A25884A9D00EDD256 /* WSMacLanguageToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54AE041425884A8F00EDD256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					54AE041B25884A8F00EDD256 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					54AE042E25884A9D00EDD256 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 54AE041B25884A8F00EDD256;
+					};
+					54AE043925884A9D00EDD256 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 54AE041B25884A8F00EDD256;
+					};
+				};
+			};
+			buildConfigurationList = 54AE041725884A8F00EDD256 /* Build configuration list for PBXProject "WSMacLanguageTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54AE041325884A8F00EDD256;
+			productRefGroup = 54AE041D25884A8F00EDD256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54AE041B25884A8F00EDD256 /* WSMacLanguageTool */,
+				54AE042E25884A9D00EDD256 /* WSMacLanguageToolTests */,
+				54AE043925884A9D00EDD256 /* WSMacLanguageToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54AE041A25884A8F00EDD256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AE042525884A9D00EDD256 /* Assets.xcassets in Resources */,
+				54AE042825884A9D00EDD256 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE042D25884A9D00EDD256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE043825884A9D00EDD256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54AE041825884A8F00EDD256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AE042025884A8F00EDD256 /* AppDelegate.swift in Sources */,
+				54AE042325884A8F00EDD256 /* WSMacLanguageTool.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE042B25884A9D00EDD256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AE043425884A9D00EDD256 /* WSMacLanguageToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE043625884A9D00EDD256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AE043F25884A9D00EDD256 /* WSMacLanguageToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54AE043125884A9D00EDD256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AE041B25884A8F00EDD256 /* WSMacLanguageTool */;
+			targetProxy = 54AE043025884A9D00EDD256 /* PBXContainerItemProxy */;
+		};
+		54AE043C25884A9D00EDD256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AE041B25884A8F00EDD256 /* WSMacLanguageTool */;
+			targetProxy = 54AE043B25884A9D00EDD256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54AE042625884A9D00EDD256 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54AE042725884A9D00EDD256 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54AE044125884A9D00EDD256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54AE044225884A9D00EDD256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54AE044425884A9D00EDD256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WSMacLanguageTool/WSMacLanguageTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WSMacLanguageTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54AE044525884A9D00EDD256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WSMacLanguageTool/WSMacLanguageTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = WSMacLanguageTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		54AE044725884A9D00EDD256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = WSMacLanguageToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSMacLanguageTool.app/Contents/MacOS/WSMacLanguageTool";
+			};
+			name = Debug;
+		};
+		54AE044825884A9D00EDD256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = WSMacLanguageToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSMacLanguageTool.app/Contents/MacOS/WSMacLanguageTool";
+			};
+			name = Release;
+		};
+		54AE044A25884A9D00EDD256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = WSMacLanguageToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WSMacLanguageTool;
+			};
+			name = Debug;
+		};
+		54AE044B25884A9D00EDD256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = WSMacLanguageToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.WSMacLanguageToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WSMacLanguageTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54AE041725884A8F00EDD256 /* Build configuration list for PBXProject "WSMacLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AE044125884A9D00EDD256 /* Debug */,
+				54AE044225884A9D00EDD256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AE044325884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AE044425884A9D00EDD256 /* Debug */,
+				54AE044525884A9D00EDD256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AE044625884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AE044725884A9D00EDD256 /* Debug */,
+				54AE044825884A9D00EDD256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AE044925884A9D00EDD256 /* Build configuration list for PBXNativeTarget "WSMacLanguageToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AE044A25884A9D00EDD256 /* Debug */,
+				54AE044B25884A9D00EDD256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54AE042125884A8F00EDD256 /* WSMacLanguageTool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54AE042225884A8F00EDD256 /* WSMacLanguageTool.xcdatamodel */,
+			);
+			currentVersion = 54AE042225884A8F00EDD256 /* WSMacLanguageTool.xcdatamodel */;
+			path = WSMacLanguageTool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54AE041425884A8F00EDD256 /* Project object */;
+}

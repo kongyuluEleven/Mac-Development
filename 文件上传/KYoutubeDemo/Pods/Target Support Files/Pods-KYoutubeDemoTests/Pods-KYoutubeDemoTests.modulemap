@@ -1,0 +1,6 @@
+framework module Pods_KYoutubeDemoTests {
+  umbrella header "Pods-KYoutubeDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

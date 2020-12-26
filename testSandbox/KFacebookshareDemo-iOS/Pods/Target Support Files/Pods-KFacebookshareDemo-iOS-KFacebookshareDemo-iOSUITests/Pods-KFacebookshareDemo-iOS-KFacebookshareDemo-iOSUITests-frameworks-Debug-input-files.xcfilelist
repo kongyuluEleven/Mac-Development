@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-KFacebookshareDemo-iOS-KFacebookshareDemo-iOSUITests/Pods-KFacebookshareDemo-iOS-KFacebookshareDemo-iOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
+${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
+${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework

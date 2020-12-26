@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KFacebookshareDemo-iOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for KFacebookshareDemo-iOS
+  pod 'FBSDKCoreKit/Swift'
+  pod 'FBSDKLoginKit/Swift'
+  pod 'FBSDKShareKit/Swift'
+
+  target 'KFacebookshareDemo-iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'KFacebookshareDemo-iOSUITests' do
+    # Pods for testing
+  end
+
+end

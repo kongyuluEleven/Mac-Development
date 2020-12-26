@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542D06FA251EBFFD008B1F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D06F9251EBFFD008B1F7B /* AppDelegate.swift */; };
+		542D06FC251EBFFD008B1F7B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 542D06FB251EBFFD008B1F7B /* GameScene.sks */; };
+		542D06FE251EBFFD008B1F7B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 542D06FD251EBFFD008B1F7B /* Actions.sks */; };
+		542D0700251EBFFD008B1F7B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D06FF251EBFFD008B1F7B /* GameScene.swift */; };
+		542D0702251EBFFD008B1F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D0701251EBFFD008B1F7B /* ViewController.swift */; };
+		542D0704251EC005008B1F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542D0703251EC005008B1F7B /* Assets.xcassets */; };
+		542D0707251EC005008B1F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542D0705251EC005008B1F7B /* Main.storyboard */; };
+		542D0713251EC006008B1F7B /* KmacGame01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D0712251EC006008B1F7B /* KmacGame01Tests.swift */; };
+		542D071E251EC006008B1F7B /* KmacGame01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D071D251EC006008B1F7B /* KmacGame01UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		542D070F251EC006008B1F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542D06EE251EBFFD008B1F7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542D06F5251EBFFD008B1F7B;
+			remoteInfo = KmacGame01;
+		};
+		542D071A251EC006008B1F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542D06EE251EBFFD008B1F7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542D06F5251EBFFD008B1F7B;
+			remoteInfo = KmacGame01;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		542D06F6251EBFFD008B1F7B /* KmacGame01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmacGame01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542D06F9251EBFFD008B1F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		542D06FB251EBFFD008B1F7B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		542D06FD251EBFFD008B1F7B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		542D06FF251EBFFD008B1F7B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		542D0701251EBFFD008B1F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		542D0703251EC005008B1F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		542D0706251EC005008B1F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		542D0708251EC005008B1F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542D0709251EC006008B1F7B /* KmacGame01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KmacGame01.entitlements; sourceTree = "<group>"; };
+		542D070E251EC006008B1F7B /* KmacGame01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmacGame01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542D0712251EC006008B1F7B /* KmacGame01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmacGame01Tests.swift; sourceTree = "<group>"; };
+		542D0714251EC006008B1F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542D0719251EC006008B1F7B /* KmacGame01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KmacGame01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542D071D251EC006008B1F7B /* KmacGame01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmacGame01UITests.swift; sourceTree = "<group>"; };
+		542D071F251EC006008B1F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542D06F3251EBFFD008B1F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D070B251EC006008B1F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D0716251EC006008B1F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542D06ED251EBFFC008B1F7B = {
+			isa = PBXGroup;
+			children = (
+				542D06F8251EBFFD008B1F7B /* KmacGame01 */,
+				542D0711251EC006008B1F7B /* KmacGame01Tests */,
+				542D071C251EC006008B1F7B /* KmacGame01UITests */,
+				542D06F7251EBFFD008B1F7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		542D06F7251EBFFD008B1F7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542D06F6251EBFFD008B1F7B /* KmacGame01.app */,
+				542D070E251EC006008B1F7B /* KmacGame01Tests.xctest */,
+				542D0719251EC006008B1F7B /* KmacGame01UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542D06F8251EBFFD008B1F7B /* KmacGame01 */ = {
+			isa = PBXGroup;
+			children = (
+				542D06F9251EBFFD008B1F7B /* AppDelegate.swift */,
+				542D06FB251EBFFD008B1F7B /* GameScene.sks */,
+				542D06FD251EBFFD008B1F7B /* Actions.sks */,
+				542D06FF251EBFFD008B1F7B /* GameScene.swift */,
+				542D0701251EBFFD008B1F7B /* ViewController.swift */,
+				542D0703251EC005008B1F7B /* Assets.xcassets */,
+				542D0705251EC005008B1F7B /* Main.storyboard */,
+				542D0708251EC005008B1F7B /* Info.plist */,
+				542D0709251EC006008B1F7B /* KmacGame01.entitlements */,
+			);
+			path = KmacGame01;
+			sourceTree = "<group>";
+		};
+		542D0711251EC006008B1F7B /* KmacGame01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				542D0712251EC006008B1F7B /* KmacGame01Tests.swift */,
+				542D0714251EC006008B1F7B /* Info.plist */,
+			);
+			path = KmacGame01Tests;
+			sourceTree = "<group>";
+		};
+		542D071C251EC006008B1F7B /* KmacGame01UITests */ = {
+			isa = PBXGroup;
+			children = (
+				542D071D251EC006008B1F7B /* KmacGame01UITests.swift */,
+				542D071F251EC006008B1F7B /* Info.plist */,
+			);
+			path = KmacGame01UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542D06F5251EBFFD008B1F7B /* KmacGame01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542D0722251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01" */;
+			buildPhases = (
+				542D06F2251EBFFD008B1F7B /* Sources */,
+				542D06F3251EBFFD008B1F7B /* Frameworks */,
+				542D06F4251EBFFD008B1F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KmacGame01;
+			productName = KmacGame01;
+			productReference = 542D06F6251EBFFD008B1F7B /* KmacGame01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		542D070D251EC006008B1F7B /* KmacGame01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542D0725251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01Tests" */;
+			buildPhases = (
+				542D070A251EC006008B1F7B /* Sources */,
+				542D070B251EC006008B1F7B /* Frameworks */,
+				542D070C251EC006008B1F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542D0710251EC006008B1F7B /* PBXTargetDependency */,
+			);
+			name = KmacGame01Tests;
+			productName = KmacGame01Tests;
+			productReference = 542D070E251EC006008B1F7B /* KmacGame01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		542D0718251EC006008B1F7B /* KmacGame01UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542D0728251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01UITests" */;
+			buildPhases = (
+				542D0715251EC006008B1F7B /* Sources */,
+				542D0716251EC006008B1F7B /* Frameworks */,
+				542D0717251EC006008B1F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542D071B251EC006008B1F7B /* PBXTargetDependency */,
+			);
+			name = KmacGame01UITests;
+			productName = KmacGame01UITests;
+			productReference = 542D0719251EC006008B1F7B /* KmacGame01UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542D06EE251EBFFD008B1F7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = wondershare;
+				TargetAttributes = {
+					542D06F5251EBFFD008B1F7B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					542D070D251EC006008B1F7B = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 542D06F5251EBFFD008B1F7B;
+					};
+					542D0718251EC006008B1F7B = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 542D06F5251EBFFD008B1F7B;
+					};
+				};
+			};
+			buildConfigurationList = 542D06F1251EBFFD008B1F7B /* Build configuration list for PBXProject "KmacGame01" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 542D06ED251EBFFC008B1F7B;
+			productRefGroup = 542D06F7251EBFFD008B1F7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542D06F5251EBFFD008B1F7B /* KmacGame01 */,
+				542D070D251EC006008B1F7B /* KmacGame01Tests */,
+				542D0718251EC006008B1F7B /* KmacGame01UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542D06F4251EBFFD008B1F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D06FC251EBFFD008B1F7B /* GameScene.sks in Resources */,
+				542D0704251EC005008B1F7B /* Assets.xcassets in Resources */,
+				542D06FE251EBFFD008B1F7B /* Actions.sks in Resources */,
+				542D0707251EC005008B1F7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D070C251EC006008B1F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D0717251EC006008B1F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542D06F2251EBFFD008B1F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D0702251EBFFD008B1F7B /* ViewController.swift in Sources */,
+				542D0700251EBFFD008B1F7B /* GameScene.swift in Sources */,
+				542D06FA251EBFFD008B1F7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D070A251EC006008B1F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D0713251EC006008B1F7B /* KmacGame01Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542D0715251EC006008B1F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D071E251EC006008B1F7B /* KmacGame01UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		542D0710251EC006008B1F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542D06F5251EBFFD008B1F7B /* KmacGame01 */;
+			targetProxy = 542D070F251EC006008B1F7B /* PBXContainerItemProxy */;
+		};
+		542D071B251EC006008B1F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542D06F5251EBFFD008B1F7B /* KmacGame01 */;
+			targetProxy = 542D071A251EC006008B1F7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		542D0705251EC005008B1F7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542D0706251EC005008B1F7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		542D0720251EC006008B1F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		542D0721251EC006008B1F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		542D0723251EC006008B1F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KmacGame01/KmacGame01.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KmacGame01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		542D0724251EC006008B1F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KmacGame01/KmacGame01.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KmacGame01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		542D0726251EC006008B1F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KmacGame01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KmacGame01.app/Contents/MacOS/KmacGame01";
+			};
+			name = Debug;
+		};
+		542D0727251EC006008B1F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KmacGame01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KmacGame01.app/Contents/MacOS/KmacGame01";
+			};
+			name = Release;
+		};
+		542D0729251EC006008B1F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KmacGame01UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KmacGame01;
+			};
+			name = Debug;
+		};
+		542D072A251EC006008B1F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B72G3TW8NM;
+				INFOPLIST_FILE = KmacGame01UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare..KmacGame01UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KmacGame01;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542D06F1251EBFFD008B1F7B /* Build configuration list for PBXProject "KmacGame01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D0720251EC006008B1F7B /* Debug */,
+				542D0721251EC006008B1F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542D0722251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D0723251EC006008B1F7B /* Debug */,
+				542D0724251EC006008B1F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542D0725251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D0726251EC006008B1F7B /* Debug */,
+				542D0727251EC006008B1F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542D0728251EC006008B1F7B /* Build configuration list for PBXNativeTarget "KmacGame01UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D0729251EC006008B1F7B /* Debug */,
+				542D072A251EC006008B1F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542D06EE251EBFFD008B1F7B /* Project object */;
+}

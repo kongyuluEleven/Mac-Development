@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544EBB6B259763D0009A5596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBB6A259763D0009A5596 /* AppDelegate.m */; };
+		544EBB6E259763D0009A5596 /* KLanguageTool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 544EBB6C259763D0009A5596 /* KLanguageTool.xcdatamodeld */; };
+		544EBB70259763E1009A5596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544EBB6F259763E1009A5596 /* Assets.xcassets */; };
+		544EBB73259763E1009A5596 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544EBB71259763E1009A5596 /* MainMenu.xib */; };
+		544EBB76259763E1009A5596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBB75259763E1009A5596 /* main.m */; };
+		544EBB81259763E2009A5596 /* KLanguageToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBB80259763E2009A5596 /* KLanguageToolTests.m */; };
+		544EBB8C259763E2009A5596 /* KLanguageToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBB8B259763E2009A5596 /* KLanguageToolUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		544EBB7D259763E2009A5596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544EBB5E259763D0009A5596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544EBB65259763D0009A5596;
+			remoteInfo = KLanguageTool;
+		};
+		544EBB88259763E2009A5596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544EBB5E259763D0009A5596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544EBB65259763D0009A5596;
+			remoteInfo = KLanguageTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		544EBB66259763D0009A5596 /* KLanguageTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLanguageTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		544EBB69259763D0009A5596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		544EBB6A259763D0009A5596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		544EBB6D259763D0009A5596 /* KLanguageTool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KLanguageTool.xcdatamodel; sourceTree = "<group>"; };
+		544EBB6F259763E1009A5596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		544EBB72259763E1009A5596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		544EBB74259763E1009A5596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544EBB75259763E1009A5596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		544EBB77259763E1009A5596 /* KLanguageTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KLanguageTool.entitlements; sourceTree = "<group>"; };
+		544EBB7C259763E2009A5596 /* KLanguageToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLanguageToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544EBB80259763E2009A5596 /* KLanguageToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLanguageToolTests.m; sourceTree = "<group>"; };
+		544EBB82259763E2009A5596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544EBB87259763E2009A5596 /* KLanguageToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLanguageToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544EBB8B259763E2009A5596 /* KLanguageToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLanguageToolUITests.m; sourceTree = "<group>"; };
+		544EBB8D259763E2009A5596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		544EBB63259763D0009A5596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB79259763E2009A5596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB84259763E2009A5596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544EBB5D259763D0009A5596 = {
+			isa = PBXGroup;
+			children = (
+				544EBB68259763D0009A5596 /* KLanguageTool */,
+				544EBB7F259763E2009A5596 /* KLanguageToolTests */,
+				544EBB8A259763E2009A5596 /* KLanguageToolUITests */,
+				544EBB67259763D0009A5596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		544EBB67259763D0009A5596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				544EBB66259763D0009A5596 /* KLanguageTool.app */,
+				544EBB7C259763E2009A5596 /* KLanguageToolTests.xctest */,
+				544EBB87259763E2009A5596 /* KLanguageToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		544EBB68259763D0009A5596 /* KLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				544EBB69259763D0009A5596 /* AppDelegate.h */,
+				544EBB6A259763D0009A5596 /* AppDelegate.m */,
+				544EBB6F259763E1009A5596 /* Assets.xcassets */,
+				544EBB71259763E1009A5596 /* MainMenu.xib */,
+				544EBB74259763E1009A5596 /* Info.plist */,
+				544EBB75259763E1009A5596 /* main.m */,
+				544EBB77259763E1009A5596 /* KLanguageTool.entitlements */,
+				544EBB6C259763D0009A5596 /* KLanguageTool.xcdatamodeld */,
+			);
+			path = KLanguageTool;
+			sourceTree = "<group>";
+		};
+		544EBB7F259763E2009A5596 /* KLanguageToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				544EBB80259763E2009A5596 /* KLanguageToolTests.m */,
+				544EBB82259763E2009A5596 /* Info.plist */,
+			);
+			path = KLanguageToolTests;
+			sourceTree = "<group>";
+		};
+		544EBB8A259763E2009A5596 /* KLanguageToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				544EBB8B259763E2009A5596 /* KLanguageToolUITests.m */,
+				544EBB8D259763E2009A5596 /* Info.plist */,
+			);
+			path = KLanguageToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		544EBB65259763D0009A5596 /* KLanguageTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544EBB90259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageTool" */;
+			buildPhases = (
+				544EBB62259763D0009A5596 /* Sources */,
+				544EBB63259763D0009A5596 /* Frameworks */,
+				544EBB64259763D0009A5596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLanguageTool;
+			productName = KLanguageTool;
+			productReference = 544EBB66259763D0009A5596 /* KLanguageTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		544EBB7B259763E2009A5596 /* KLanguageToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544EBB93259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageToolTests" */;
+			buildPhases = (
+				544EBB78259763E2009A5596 /* Sources */,
+				544EBB79259763E2009A5596 /* Frameworks */,
+				544EBB7A259763E2009A5596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				544EBB7E259763E2009A5596 /* PBXTargetDependency */,
+			);
+			name = KLanguageToolTests;
+			productName = KLanguageToolTests;
+			productReference = 544EBB7C259763E2009A5596 /* KLanguageToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		544EBB86259763E2009A5596 /* KLanguageToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544EBB96259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageToolUITests" */;
+			buildPhases = (
+				544EBB83259763E2009A5596 /* Sources */,
+				544EBB84259763E2009A5596 /* Frameworks */,
+				544EBB85259763E2009A5596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				544EBB89259763E2009A5596 /* PBXTargetDependency */,
+			);
+			name = KLanguageToolUITests;
+			productName = KLanguageToolUITests;
+			productReference = 544EBB87259763E2009A5596 /* KLanguageToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		544EBB5E259763D0009A5596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					544EBB65259763D0009A5596 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					544EBB7B259763E2009A5596 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 544EBB65259763D0009A5596;
+					};
+					544EBB86259763E2009A5596 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 544EBB65259763D0009A5596;
+					};
+				};
+			};
+			buildConfigurationList = 544EBB61259763D0009A5596 /* Build configuration list for PBXProject "KLanguageTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 544EBB5D259763D0009A5596;
+			productRefGroup = 544EBB67259763D0009A5596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544EBB65259763D0009A5596 /* KLanguageTool */,
+				544EBB7B259763E2009A5596 /* KLanguageToolTests */,
+				544EBB86259763E2009A5596 /* KLanguageToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		544EBB64259763D0009A5596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544EBB70259763E1009A5596 /* Assets.xcassets in Resources */,
+				544EBB73259763E1009A5596 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB7A259763E2009A5596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB85259763E2009A5596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		544EBB62259763D0009A5596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544EBB6B259763D0009A5596 /* AppDelegate.m in Sources */,
+				544EBB76259763E1009A5596 /* main.m in Sources */,
+				544EBB6E259763D0009A5596 /* KLanguageTool.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB78259763E2009A5596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544EBB81259763E2009A5596 /* KLanguageToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544EBB83259763E2009A5596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544EBB8C259763E2009A5596 /* KLanguageToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		544EBB7E259763E2009A5596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544EBB65259763D0009A5596 /* KLanguageTool */;
+			targetProxy = 544EBB7D259763E2009A5596 /* PBXContainerItemProxy */;
+		};
+		544EBB89259763E2009A5596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544EBB65259763D0009A5596 /* KLanguageTool */;
+			targetProxy = 544EBB88259763E2009A5596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		544EBB71259763E1009A5596 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				544EBB72259763E1009A5596 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		544EBB8E259763E2009A5596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		544EBB8F259763E2009A5596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		544EBB91259763E2009A5596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KLanguageTool/KLanguageTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KLanguageTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		544EBB92259763E2009A5596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KLanguageTool/KLanguageTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KLanguageTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		544EBB94259763E2009A5596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KLanguageToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLanguageTool.app/Contents/MacOS/KLanguageTool";
+			};
+			name = Debug;
+		};
+		544EBB95259763E2009A5596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KLanguageToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLanguageTool.app/Contents/MacOS/KLanguageTool";
+			};
+			name = Release;
+		};
+		544EBB97259763E2009A5596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KLanguageToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KLanguageTool;
+			};
+			name = Debug;
+		};
+		544EBB98259763E2009A5596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KLanguageToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KLanguageToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KLanguageTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		544EBB61259763D0009A5596 /* Build configuration list for PBXProject "KLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544EBB8E259763E2009A5596 /* Debug */,
+				544EBB8F259763E2009A5596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544EBB90259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544EBB91259763E2009A5596 /* Debug */,
+				544EBB92259763E2009A5596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544EBB93259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544EBB94259763E2009A5596 /* Debug */,
+				544EBB95259763E2009A5596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544EBB96259763E2009A5596 /* Build configuration list for PBXNativeTarget "KLanguageToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544EBB97259763E2009A5596 /* Debug */,
+				544EBB98259763E2009A5596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		544EBB6C259763D0009A5596 /* KLanguageTool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				544EBB6D259763D0009A5596 /* KLanguageTool.xcdatamodel */,
+			);
+			currentVersion = 544EBB6D259763D0009A5596 /* KLanguageTool.xcdatamodel */;
+			path = KLanguageTool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 544EBB5E259763D0009A5596 /* Project object */;
+}

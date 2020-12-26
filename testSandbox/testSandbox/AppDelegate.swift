@@ -201,8 +201,8 @@ extension AppDelegate {
 //            }
 //            debugPrint("path = \(path)")
             
-            //let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testM1.app"
-            let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testSandboxSub.app"
+            let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/KFacebookshareDemo-iOS.app"
+            //let pathStr  =  "\(Bundle.main.bundlePath)/Contents/Resources/testSandboxSub.app"
             debugPrint("pathStr = \(pathStr)")
             
             _ = try? NSWorkspace.shared.open(URL(fileURLWithPath: pathStr))

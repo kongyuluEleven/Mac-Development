@@ -1,0 +1,6 @@
+framework module Pods_KFacebookshareDemo_iOSTests {
+  umbrella header "Pods-KFacebookshareDemo-iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
