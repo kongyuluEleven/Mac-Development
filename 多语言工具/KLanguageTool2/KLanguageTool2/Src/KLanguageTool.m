@@ -123,7 +123,7 @@
 
 - (void)crateFileToMacWithDic:(NSDictionary *)dic {
     
-    NSString *dataFilePath = [[self filePath] stringByAppendingPathComponent:@"wj_Language"];
+    NSString *dataFilePath = [[self filePath] stringByAppendingPathComponent:@"kyl_Language"];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
