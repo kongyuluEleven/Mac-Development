@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540110592599D41A0015CC5F /* KLangaugeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540110572599D41A0015CC5F /* KLangaugeWindowController.m */; };
+		5401105A2599D41A0015CC5F /* KLangaugeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540110582599D41A0015CC5F /* KLangaugeWindowController.xib */; };
 		544EBBAA25976764009A5596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBA925976764009A5596 /* AppDelegate.m */; };
 		544EBBAD25976764009A5596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBAC25976764009A5596 /* ViewController.m */; };
 		544EBBB025976764009A5596 /* KLanguageTool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 544EBBAE25976764009A5596 /* KLanguageTool.xcdatamodeld */; };
@@ -62,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540110562599D41A0015CC5F /* KLangaugeWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLangaugeWindowController.h; sourceTree = "<group>"; };
+		540110572599D41A0015CC5F /* KLangaugeWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLangaugeWindowController.m; sourceTree = "<group>"; };
+		540110582599D41A0015CC5F /* KLangaugeWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KLangaugeWindowController.xib; sourceTree = "<group>"; };
 		544EBBA525976764009A5596 /* KLanguageTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLanguageTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544EBBA825976764009A5596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		544EBBA925976764009A5596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -205,6 +210,9 @@
 				544EBBB725976771009A5596 /* main.m */,
 				544EBBB925976771009A5596 /* KLanguageTool.entitlements */,
 				544EBBAE25976764009A5596 /* KLanguageTool.xcdatamodeld */,
+				540110562599D41A0015CC5F /* KLangaugeWindowController.h */,
+				540110572599D41A0015CC5F /* KLangaugeWindowController.m */,
+				540110582599D41A0015CC5F /* KLangaugeWindowController.xib */,
 			);
 			path = KLanguageTool;
 			sourceTree = "<group>";
@@ -482,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				544EBC6025976C96009A5596 /* 多语言例子.xls in Resources */,
+				5401105A2599D41A0015CC5F /* KLangaugeWindowController.xib in Resources */,
 				544EBBB225976771009A5596 /* Assets.xcassets in Resources */,
 				544EBBB525976771009A5596 /* Main.storyboard in Resources */,
 			);
@@ -527,6 +536,7 @@
 				544EBBB825976771009A5596 /* main.m in Sources */,
 				544EBC3325976807009A5596 /* aestab.c in Sources */,
 				544EBC2725976807009A5596 /* unzip.c in Sources */,
+				540110592599D41A0015CC5F /* KLangaugeWindowController.m in Sources */,
 				544EBC2925976807009A5596 /* ioapi.c in Sources */,
 				544EBC2325976807009A5596 /* xlstool.c in Sources */,
 				544EBC2C25976807009A5596 /* aeskey.c in Sources */,
