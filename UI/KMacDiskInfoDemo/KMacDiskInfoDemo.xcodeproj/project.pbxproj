@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54011184259ABCC40015CC5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54011183259ABCC40015CC5F /* AppDelegate.swift */; };
+		54011186259ABCC40015CC5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54011185259ABCC40015CC5F /* ViewController.swift */; };
+		54011189259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54011187259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodeld */; };
+		5401118B259ABCD00015CC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5401118A259ABCD00015CC5F /* Assets.xcassets */; };
+		5401118E259ABCD00015CC5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5401118C259ABCD00015CC5F /* Main.storyboard */; };
+		5401119A259ABCD00015CC5F /* KMacDiskInfoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54011199259ABCD00015CC5F /* KMacDiskInfoDemoTests.swift */; };
+		540111A5259ABCD00015CC5F /* KMacDiskInfoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540111A4259ABCD00015CC5F /* KMacDiskInfoDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54011196259ABCD00015CC5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54011178259ABCC40015CC5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5401117F259ABCC40015CC5F;
+			remoteInfo = KMacDiskInfoDemo;
+		};
+		540111A1259ABCD00015CC5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54011178259ABCC40015CC5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5401117F259ABCC40015CC5F;
+			remoteInfo = KMacDiskInfoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54011180259ABCC40015CC5F /* KMacDiskInfoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMacDiskInfoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54011183259ABCC40015CC5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54011185259ABCC40015CC5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54011188259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KMacDiskInfoDemo.xcdatamodel; sourceTree = "<group>"; };
+		5401118A259ABCD00015CC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5401118D259ABCD00015CC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5401118F259ABCD00015CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54011190259ABCD00015CC5F /* KMacDiskInfoDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KMacDiskInfoDemo.entitlements; sourceTree = "<group>"; };
+		54011195259ABCD00015CC5F /* KMacDiskInfoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMacDiskInfoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54011199259ABCD00015CC5F /* KMacDiskInfoDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMacDiskInfoDemoTests.swift; sourceTree = "<group>"; };
+		5401119B259ABCD00015CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540111A0259ABCD00015CC5F /* KMacDiskInfoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMacDiskInfoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540111A4259ABCD00015CC5F /* KMacDiskInfoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMacDiskInfoDemoUITests.swift; sourceTree = "<group>"; };
+		540111A6259ABCD00015CC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5401117D259ABCC40015CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54011192259ABCD00015CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5401119D259ABCD00015CC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54011177259ABCC40015CC5F = {
+			isa = PBXGroup;
+			children = (
+				54011182259ABCC40015CC5F /* KMacDiskInfoDemo */,
+				54011198259ABCD00015CC5F /* KMacDiskInfoDemoTests */,
+				540111A3259ABCD00015CC5F /* KMacDiskInfoDemoUITests */,
+				54011181259ABCC40015CC5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54011181259ABCC40015CC5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54011180259ABCC40015CC5F /* KMacDiskInfoDemo.app */,
+				54011195259ABCD00015CC5F /* KMacDiskInfoDemoTests.xctest */,
+				540111A0259ABCD00015CC5F /* KMacDiskInfoDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54011182259ABCC40015CC5F /* KMacDiskInfoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54011183259ABCC40015CC5F /* AppDelegate.swift */,
+				54011185259ABCC40015CC5F /* ViewController.swift */,
+				5401118A259ABCD00015CC5F /* Assets.xcassets */,
+				5401118C259ABCD00015CC5F /* Main.storyboard */,
+				5401118F259ABCD00015CC5F /* Info.plist */,
+				54011190259ABCD00015CC5F /* KMacDiskInfoDemo.entitlements */,
+				54011187259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodeld */,
+			);
+			path = KMacDiskInfoDemo;
+			sourceTree = "<group>";
+		};
+		54011198259ABCD00015CC5F /* KMacDiskInfoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				54011199259ABCD00015CC5F /* KMacDiskInfoDemoTests.swift */,
+				5401119B259ABCD00015CC5F /* Info.plist */,
+			);
+			path = KMacDiskInfoDemoTests;
+			sourceTree = "<group>";
+		};
+		540111A3259ABCD00015CC5F /* KMacDiskInfoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				540111A4259ABCD00015CC5F /* KMacDiskInfoDemoUITests.swift */,
+				540111A6259ABCD00015CC5F /* Info.plist */,
+			);
+			path = KMacDiskInfoDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5401117F259ABCC40015CC5F /* KMacDiskInfoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540111A9259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemo" */;
+			buildPhases = (
+				5401117C259ABCC40015CC5F /* Sources */,
+				5401117D259ABCC40015CC5F /* Frameworks */,
+				5401117E259ABCC40015CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMacDiskInfoDemo;
+			productName = KMacDiskInfoDemo;
+			productReference = 54011180259ABCC40015CC5F /* KMacDiskInfoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54011194259ABCD00015CC5F /* KMacDiskInfoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540111AC259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemoTests" */;
+			buildPhases = (
+				54011191259ABCD00015CC5F /* Sources */,
+				54011192259ABCD00015CC5F /* Frameworks */,
+				54011193259ABCD00015CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54011197259ABCD00015CC5F /* PBXTargetDependency */,
+			);
+			name = KMacDiskInfoDemoTests;
+			productName = KMacDiskInfoDemoTests;
+			productReference = 54011195259ABCD00015CC5F /* KMacDiskInfoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5401119F259ABCD00015CC5F /* KMacDiskInfoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540111AF259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemoUITests" */;
+			buildPhases = (
+				5401119C259ABCD00015CC5F /* Sources */,
+				5401119D259ABCD00015CC5F /* Frameworks */,
+				5401119E259ABCD00015CC5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540111A2259ABCD00015CC5F /* PBXTargetDependency */,
+			);
+			name = KMacDiskInfoDemoUITests;
+			productName = KMacDiskInfoDemoUITests;
+			productReference = 540111A0259ABCD00015CC5F /* KMacDiskInfoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54011178259ABCC40015CC5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5401117F259ABCC40015CC5F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					54011194259ABCD00015CC5F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5401117F259ABCC40015CC5F;
+					};
+					5401119F259ABCD00015CC5F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5401117F259ABCC40015CC5F;
+					};
+				};
+			};
+			buildConfigurationList = 5401117B259ABCC40015CC5F /* Build configuration list for PBXProject "KMacDiskInfoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54011177259ABCC40015CC5F;
+			productRefGroup = 54011181259ABCC40015CC5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5401117F259ABCC40015CC5F /* KMacDiskInfoDemo */,
+				54011194259ABCD00015CC5F /* KMacDiskInfoDemoTests */,
+				5401119F259ABCD00015CC5F /* KMacDiskInfoDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5401117E259ABCC40015CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5401118B259ABCD00015CC5F /* Assets.xcassets in Resources */,
+				5401118E259ABCD00015CC5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54011193259ABCD00015CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5401119E259ABCD00015CC5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5401117C259ABCC40015CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54011186259ABCC40015CC5F /* ViewController.swift in Sources */,
+				54011189259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodeld in Sources */,
+				54011184259ABCC40015CC5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54011191259ABCD00015CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5401119A259ABCD00015CC5F /* KMacDiskInfoDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5401119C259ABCD00015CC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540111A5259ABCD00015CC5F /* KMacDiskInfoDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54011197259ABCD00015CC5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5401117F259ABCC40015CC5F /* KMacDiskInfoDemo */;
+			targetProxy = 54011196259ABCD00015CC5F /* PBXContainerItemProxy */;
+		};
+		540111A2259ABCD00015CC5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5401117F259ABCC40015CC5F /* KMacDiskInfoDemo */;
+			targetProxy = 540111A1259ABCD00015CC5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5401118C259ABCD00015CC5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5401118D259ABCD00015CC5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540111A7259ABCD00015CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		540111A8259ABCD00015CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		540111AA259ABCD00015CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KMacDiskInfoDemo/KMacDiskInfoDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KMacDiskInfoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		540111AB259ABCD00015CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KMacDiskInfoDemo/KMacDiskInfoDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KMacDiskInfoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		540111AD259ABCD00015CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KMacDiskInfoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMacDiskInfoDemo.app/Contents/MacOS/KMacDiskInfoDemo";
+			};
+			name = Debug;
+		};
+		540111AE259ABCD00015CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KMacDiskInfoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMacDiskInfoDemo.app/Contents/MacOS/KMacDiskInfoDemo";
+			};
+			name = Release;
+		};
+		540111B0259ABCD00015CC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KMacDiskInfoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KMacDiskInfoDemo;
+			};
+			name = Debug;
+		};
+		540111B1259ABCD00015CC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KMacDiskInfoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KMacDiskInfoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KMacDiskInfoDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5401117B259ABCC40015CC5F /* Build configuration list for PBXProject "KMacDiskInfoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540111A7259ABCD00015CC5F /* Debug */,
+				540111A8259ABCD00015CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540111A9259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540111AA259ABCD00015CC5F /* Debug */,
+				540111AB259ABCD00015CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540111AC259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540111AD259ABCD00015CC5F /* Debug */,
+				540111AE259ABCD00015CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540111AF259ABCD00015CC5F /* Build configuration list for PBXNativeTarget "KMacDiskInfoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540111B0259ABCD00015CC5F /* Debug */,
+				540111B1259ABCD00015CC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54011187259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54011188259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodel */,
+			);
+			currentVersion = 54011188259ABCC40015CC5F /* KMacDiskInfoDemo.xcdatamodel */;
+			path = KMacDiskInfoDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54011178259ABCC40015CC5F /* Project object */;
+}
