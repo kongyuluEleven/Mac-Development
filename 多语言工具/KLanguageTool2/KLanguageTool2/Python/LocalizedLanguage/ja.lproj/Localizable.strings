@@ -1,0 +1,2454 @@
+
+/**************************************************************/
+/*                   About Window strings                     */
+/**************************************************************/
+/* Home Page */
+"AboutWnd.HomePageTip" = "www.wondershare.jp";
+
+/* Support */
+"AboutWnd.SupportTip" = "製品概要";
+
+/* Version */
+"AboutWnd.VersionTip" = "バージョン：";
+
+/* Version */
+"AboutWnd.Wnd.Title" = "製品情報";
+"AboutWnd.Wnd.COIntroduce" = "Wondershareは、2003年に設立され、スマート ホーム テクノロジーを世界的にリードする企業となることを目指しています。強力なテクノロジーソリューション、並びに世界水準のカスタマー・サービスを提供しており 、世界150か国以上の何百万もの人々から信頼されています。 我々Wondershareは、ユーザーが自分の情熱を追求できるよう、より創造的な世界を構築できるように支援しております。";
+"AboutWnd.Wnd.linkTitle" = "詳細については、以下をご覧ください。WondershareホームページWondershare Filmora 公式サイト";
+
+/********common********/
+"OK" = "OK";
+"Cancel" = "キャンセル";
+"CANCEL" = "キャンセル";
+"Reset" = "リセット";
+"RESET" = "リセット";
+"Delete" = "削除";
+"Custom" = "カスタム";
+"fmim_key" = "fmimj.dylib";
+"langID" = "jp";
+"PackageValidateKey" = "e2e82cfdb34166c9dd8f9e217f2a6f68";
+"trailer11_key" = "1-1.MP4";
+"trailer916_key" = "9-16.MP4";
+"trailer169_key" = "16-9.MP4";
+"trailer43_key" = "4-3.MP4";
+"Buy" = "購入";
+
+"Music" = "音楽";
+"Video" = "ビデオ";
+/*****Folder operation*****/
+"Create folder %@ failed!" = "フォルダ%@を作成できません。";
+"remove file path %@ failed!" = "ファイルパス%@を削除できません。";
+"Please make sure the output folder has read and write privilege." = "出力フォルダが書込み可能かどうかもう一度、ご確認ください。";
+
+/********Tooltips********/
+"Undo" = "取り消し";
+"Redo" = "やり直し";
+//重复"Delete" = "削除";
+"Split" = "分割";
+"Crop" = "クロップとズーム";
+"Adjust Speed" = "速度を調整";
+"Color Correction" = "色調補正";
+"Edit" = "編集";
+"Green Screen" = "グリーンスクリーン";
+"Freeze Frame" = "フリーズフレーム\n";
+"Set Duration" = "持続時間を設定";
+"Audio Mixer" = "オーディオミキサー";
+"Zoom to Fit Timeline" = "タイムラインに合わせてズームする";
+"Zoom Out" = "ズームアウト";
+"Zoom In" = "ズームイン";
+"Record Audio" = "オーディオ録音";
+"Add Marker" = "マーカーを追加";
+"Peak Volume Meter" = "ピークボリュームメーター";
+"Record VoiceOver" = "ボイスオーバーを録音";
+//重复"Add Marker" = "マーカーを追加";
+"Add Track" = "トラックを追加";
+"Show Track" = "トラックを表示";
+"Hide Track" = "トラックを隠す";
+"Mute" = "消音";
+"Unmute" = "消音を解除";
+"Lock Track" = "トラックをロックする";
+"Unlock Track" = "トラックのロックを解除する";
+"Hide media folder list" = "メディアフォルダのリストを隠す";
+"Show media folder list" = "メディアフォルダのリストを表示";
+"Add a new folder" = "新しいフォルダを追加";
+"Delete folder" = "フォルダを削除";
+"Import Media" = "メディアのインポート";
+"Record a video" = "ビデオを録画する";
+"Filter by media type" = "メディアタイプ別にフィルタリングする";
+"Adjust View, Sort, Group" = "表示、ソート、グループを調整する";
+"Play" = "再生";
+"Stop" = "停止";
+"Pause" = "一時停止";
+"Previous Frame" = "前へ";
+"Next Frame" = "次へ";
+"Mark In" = "マークイン";
+"Mark Out" = "マークアウト";
+"Playhead Position" = "再生ヘッドの位置";
+"Preview quality and display settings" = "プレビュー品質と表示設定";
+"Snapshot" = "スクリーンキャプチャ";
+"Volume" = "音量";
+"Full Screen" = "フルスクリーン";
+"Exit Full Screen" = "フルスクリーンを終了";
+"More Effects" = "他のエフェクト";
+/****timeline****/
+"Add Video" = "ビデオを追加";
+"Add Audio" = "オーディオを追加";
+"Delete Selected Track" = "選択したトラックを削除する";
+"Delete Empty Tracks" = "空トラックを削除する";
+"Adjust Track Height" = "トラックの高さを調整する";
+"Small" = "小";
+"Normal" = "通常";
+"Big" = "大";
+"Open Track Manager" = "トラックマネージャを開く";
+"Track Manager" = "トラックマネージャー";
+"Video Tracks" = "ビデオトラック";
+"Add:" = "追加：";
+"video track(s)" = "ビデオトラック";
+"Placement" = "レイアウト：";
+"Audio Tracks" = "オーディオトラック";
+"Audio track(s)" = "オーディオトラック";
+"After Track %d" = "上のトラック%d";
+"Before Track %d" = "下のトラック%d";
+"There are contents on the selected track, deleting the track will remove all contents as well, do you wish to continue?" = "選択したトラックにはコンテンツがあります、トラックを削除するとすべてのコンテンツも削除されます。続行しますか？";
+
+"Modify Marker" = "マーカーを変更する";
+"Go to Previous Marker" = "前へ";
+"Go to Next Marker" = "次へ";
+"Delete All Markers" = "すべてのマーカーを削除";
+"Delete Marker" = "マーカーを削除";
+"Name:" = "名称：";
+"Time:" = "時間：";
+"Comments:" = "コメント：";
+"Marker Color:" = "マーカーの色：";
+//重复"Volume" = "音量";
+
+"Show Properties" = "プロパティを表示";
+"Cut" = "切り取り";
+"Copy" = "コピー";
+"Paste" = "貼り付け";
+//重复"Split" = "分割";
+"Trim Start to Playhead" = "編集開始点から再生ヘッドまでトリム";
+"Trim End to Playhead" = "編集終了点から再生ヘッドまでトリム";
+"Crop and Zoom" = "クロップとズーム";
+"Rotate 90° CW" = "時計回りに90度回転";
+"Roate 90° CCW" = "反時計回りに90度回転";
+"Speed and Duration" = "スピードと持続時間";
+"Add Freeze Frame" = "フリーズフレームを追加";
+"Adjust Audio" = "オーディオを調整する";
+"Detach Audio" = "オーディオを切り離す";
+"Mute" = "ミュート";
+//"Color Correction" = "色補正";
+//重复"Green Screen" = "グリーンスクリーン";
+"Copy Effects" = "エフェクトをコピー";
+"Paste Effects" = "エフェクトを貼り付け";
+"Delete Effects" = "エフェクトを削除";
+//"Crop and Zoom"
+"Duration" = "再生時間設定";
+"Advanced Edit" = "高度編集";
+
+"1. Drop Main Video here to form your story" = "1.ここにメインビデオをドロップしてストーリーを形成する";
+"2. Drop Overlay Video or Titles above your main story" = "2.メインストーリーの上にオーバーレイまたはタイトルをドロップする";
+"3. Drop Background music here" = "3.BGMをここにドロップする";
+
+/******menu*****/
+"View" = "表示";
+"Go to" = "移動";
+"Tools" = "ツール";
+"Zoom Timeline" = "タイムラインを拡大・縮小";
+
+/****document******/
+"Do you want to save changes to this project before creating new project." = "新しいプロジェクトを作成する前に、このプロジェクトの変更を保存しますか？";
+"Do you want to save changes to this project before open a project." = "プロジェクトを開く前にこのプロジェクトの変更を保存しますか？";
+"If you don't save, your changes will be lost" = "保存しない場合、変更した内容は失われます。";
+"Save" = "保存";
+"Don't Save" = "保存しない";
+"Open" = "開く";
+"Open Recent" = "最近のファイルを開く";
+"Clear Menu" = "クリアメニュー";
+"Open document failed!" = "プロジェクトファイルを開くことができません";
+"Save document failed!" = "プロジェクトファイルを開くことができません";
+"Application abnormal, you need to exit the restart Application" = "エラーが発生しました。アプリケーションを終了して再起動してください。";
+"Recover unsaved project" = "保存されていないプロジェクトを復元";
+"Video Editor did not close properly last time, would you like to recover the last unsaved project?" = "以前のプロジェクトの自動バックアップが検出されました。このバックアップファイルを使用しますか？";
+"Open project..." = "プロジェクトを開く...";
+"Save project..." = "プロジェクトを保存...";
+
+"Locate missing files" = "紛失したファイルを見つける";
+"Some file(s) in your project folder can't be found. please select the file from the list below and locate them one by one:" = "プロジェクト内の一部のファイルが移動され、または紛失しました。以下のリストからファイルを選択して、再配置してください：";
+"Ignore All" = "すべて無視";
+"Locate" = "検索";
+"File name" = "ファイル名";
+"Original path" = "元のパス";
+"Matched file" = "一致したファイル";
+"Project Settings" = "プロジェクト設定";
+"Resolution:" = "解像度：";
+"This video does not match the document settings. Change document settings to match the video's settings?" = "メディアの解像度またはフレームレートが現在のプロジェクト設定と一致しません。プロジェクトの設定を一致するように変更しますか？";
+"Keep exiting settings" = "変更しない";
+"Change document settings" = "メディアと一致させる";
+"Always ask" = "毎回確認する";
+"Oops! The project file was created with a previous version and might be problematic, please re-open it with Filmora version 8." = "プロジェクトファイルは以前のバージョンで作成されていました。エラーが発生する可能性がありますので、Filmoraバージョン8で再度開いてください。";
+
+/*****crop/pan&zoom*****/
+"Crop" = "クロップ";
+"Pan and Zoom" = "パンとズーム";
+"Ratio:" = "アスペクト比：";
+"Original Ratio" = "元の比率";
+//重复"Custom" = "カスタム";
+"Start" = "入門ミッション";
+"End" = "終了";
+
+/******guide window******/
+"Create New Project" = "新しいプロジェクトを作成";
+"Open exsiting Project" = "既存のプロジェクトを開く";
+"Get Started" = "入門ミッション";//開始";
+"Project Library" = "プロジェクトライブラリ";
+//重复"Open" = "開く";
+
+/***Record Audio/Webcam*****/
+//重复"Record Audio" = "オーディオ録音";
+"Mute Project" = "プロジェクトの消音";
+"Device:" = "デバイス：";
+"Video Device:" = "ビデオデバイス：";
+"Audio Device:" = "オーディオデバイス：";
+//重复"Resolution:" = "解像度：";
+"Live Recording..." = "ライブレコーディング...";
+"Record Webcam" = "WebCamで録画する";
+"Install Computer Audio Drive" = "コンピュータオーディオドライバをインストールする";
+"It is required to install an audio drive in order to record system audio" = "システムオーディオを録音するには、オーディオドライバをインストールする必要があります";
+"Install computer audio drive successful!" = "オーディオドライバが正しくインストールされました";
+"Install computer audio drive failed!" = "オーディオドライバのインストールに失敗しました";
+
+/***About window*****/
+"About" = "製品情報";
+"Special Thanks to our Lead Videographer Dan Bergh.\nDan， We have smiled every day at work because of you. Your jokes， quirks， and larger-than-life personality have brought us endless joy. Filmora has thrived because of your skills and professionalism. The entire team here at Wondershare is grateful to you for both your creative vision and your unshakable enthusiasm. Keep up the good fighting. Our thoughts and prayers are with you.\nYour friends on Team Filmora thank you.\n\nAnd the whole team that build this product:\nProduct Management:\nSummer Qin, Jack Wu, Cole Vineyard, Desmond Ye, Sherwin Lee, Ricky Cheung, Connor Zhai, Bruce, Ellen Zhou\nProgramming Team:\nWang Xiaoyan, Zhu Jian, Zhong Chen, Li Xiaopeng, Mu Xueqiang, Ran Jun, Xiao Shanlin, Wang Youxiang, Gao Hongmin, Chen Min, Ruan Shengqiang, Li Yong, Zou Peng, Chen Yi, Zhao Song\nQuality Engineering:\nCici Chen, Huang Jing, Wang Hao, Zhao Yulong\nUI Design:\nShaan Jahagirdar, Koko Li\nVideo/Effect Design:\nKevin Cho, Felix Wong, Alexandra Marriott, Nick Li, Trevor Komori\nProduct Marketing:\nLuna Que, Annie Feng, Sunny, Weiwei, Emilia, Chloe, Meng, Echo, Irene, Eric, William, Pedro Diniz, Lisa, Sophia, Horan, Zoey, Sandra Huang, Erica Lam, Daniel Kim, Katie Nohr, Elliot Chan, Jannelle Rillorta, Lennart Pohle, Ileana Anciano, Jonathan Hoarau, Tania, Roy, Davidson Yeap, Mariam Khan, Guilherme Veloso, Masagi Fukuda" = "プロダクト マネジメント：\nSummer Qin, Jack Wu, Cole Vineyard, Desmond Ye, Sherwin Lee, Ricky Cheung, Connor Zhai, Bruce, Ellen Zhou\nプログラミング：\nWang Xiaoyan, Zhu Jian, Zhong Chen, Li Xiaopeng, Mu Xueqiang, Ran Jun, Xiao Shanlin, Wang Youxiang, Gao Hongmin, Chen Min, Ruan Shengqiang, Li Yong, Zou Peng, Chen Yi, Zhao Song\n品質エンジニアリング：\nCici Chen, Huang Jing, Wang Hao, Zhao Yulong\nUIデザイン：\nShaan Jahagirdar, Koko Li\nビデオ/エフェクトデザイン：\nKevin Cho, Felix Wong, Alexandra Marriott, Nick Li, Trevor Komori\nプロダクトマーケティング：\nLuna Que, Annie Feng, Sunny, Weiwei, Emilia, Chloe, Meng, Echo, Irene, Eric, William, Pedro Diniz, Lisa, Sophia, Horan, Zoey, Sandra Huang, Erica Lam, Daniel Kim, Katie Nohr, Elliot Chan, Jannelle Rillorta, Lennart Pohle, Ileana Anciano, Jonathan Hoarau, Tania, Roy, Davidson Yeap, Mariam Khan, Guilherme Veloso, Masagi Fukuda";
+"Special Thanks to our Lead Videographer Dan Bergh." = "ビデオグラファー Dan Berghに特別感謝します。";
+"Product Management:" = "プロダクト マネジメント：";
+"Programming Team:" = "プログラミング：";
+"Quality Engineering:" = "品質エンジニアリング：";
+"UI Design:" = "UIデザイン：";
+"Video/Effect Design:" = "ビデオ/エフェクトデザイン：";
+"Product Marketing:" = "プロダクトマーケティング：";
+"Video editing simplified" = "動画編集をもっと簡単に";
+
+/***Video Property*****/
+"Transform" = "変形";
+"Rotate:" = "回転:";
+"Flip:" = "反転：";
+"Scale:" = "スケール：";
+"Position:" = "ポジション：";
+"Composition" = "合成";
+"Blending Mode:" = "描画モード：";
+//"Normal"
+"Darken" = "比較（暗）";
+"Multiply" = "乗算";
+"ColorBurn" = "焼き込みカラー";
+"LinearBurn" = "カラー比較(暗)";
+"Screen" = "スクリーン";
+"ColorDodge" = "覆い焼きカラー";
+"LinearDodge" = "カラー比較(明)";
+"Overlay" = "オーバーレイ";
+"SoftLight" = "ソフトライト";
+"HardLight" = "ハードライト";
+"VividLight" = "ビビッドライト";
+"LinearLight" = "リニアライト";
+"PinLight" = "ピンライト";
+"HardMix" = "ハードミックス";
+"Difference" = "差の絶対値";
+"Exclusion" = "除外";
+"Lighten" = "比較(明)";
+"Opacity:" = "不透明度：";
+"Lens Correction" = "レンズ補正";
+"Select Model to defish:" = "モデルを選択：";
+"Select a Profile" = "プロフィールを選択";
+"Select a Resolution" = "解像度を選択";
+"Adjust Level:" = "スムーズレベルを調整：";
+"Chroma Key(Green Screen)" = "クロマキー（グリーンスクリーン）";
+"Select Color:" = "カラーを選択：";
+"Tolerence:" = "許容差：";
+"Offset:" = "オフセット：";
+"Border thinkness:" = "エッジの幅：";
+"Feather:" = "フェザーエッジ：";
+"Alpha Channel:" = "アルファチャンネル：";
+"Stabilization" = "手ぶれ補正";
+"Analyze" = "分析する";
+"Smooth level:" = "スムーズレベル：";
+/***Color Property*****/
+"White Balance" = "ホワイトバランス";
+//重复"Select Color:" = "カラーを選択：";
+"Temprature:" = "色温度：";
+"Tint:" = "色合い：";
+"Tone" = "トーン";
+"Contrast:" = "コントラスト：";
+"Saturation:" = "彩度：";
+"Brightness:" = "明るさ：";
+"3D LUT" = "3D LUT";
+"3D Lut:" = "3D LUT：";
+"None" = "なし";
+"Load New LUT" = "新しいLUTを読み込み";
+/***Audio Property*****/
+"FadeIn:" = "フェードイン：";
+"FadeOut:" = "フェードアウト：";
+"Pitch:" = "ピッチ：";
+"Equalizer:" = "イコライザ：";
+"Denoise:" = "ノイズ除去：";
+"Remove Background noise" = "バックグラウンドノイズを除去する";
+"Weak" = "弱";
+"Mid" = "標準";
+"Strong" = "強";
+"Volume:" = "音量：";
+"Classic" = "クラシック";
+"Dance" = "ダンス";
+"Low Bass" = "ローバス";
+"Sparkle" = "スパークル";
+"Pop" = "ポップ";
+"Rock'n'Roll" = "ロックンロール";
+"Soft" = "ソフト";
+"Techno" = "テクノ";
+"Hard Rock" = "ハードロック";
+"Ska" = "スカ";
+"Country" = "カントリー";
+"Acoustic" = "アコースティック";
+"Folk" = "フォークソング";
+"Blues" = "ブルース";
+/***Transtion Property*****/
+"Transition Universal" = "ユニバーサルトランジション";
+"Duration:" = "持続期間：";
+"Apply to all transitions" = "すべてのトランジションに適用";
+"Transition Mode:" = "トランジションモード：";
+"Overlap" = "オーバーラップ";
+"Prefix" = "プレフィックス";
+"Postfix" = "ポストフィックス";
+"Transition %@ Special" = "%@をトランジションする";
+"There is no parameter for this Filter" = "このフィルタのパラメータはありません";
+/*** Filter Edit Params*****/
+"mode %d" = "モード%d";
+"Circular" = "円形";
+"Linear" = "リニア";
+//重复"There is no parameter for this Filter" = "このフィルタのパラメータはありません";
+/***Import wnd Controller*****/
+"Failed in Loading files." = "ファイルの読み込みに失敗しました";
+"Loading file..." = "ファイルを読み込み中...";
+"Copying files" = "ファイルのコピー";
+"Copying file..." = "ファイルをコピー中...";
+"Loading files" = "ファイルを読み込み";
+"4K resolution video files are not supported in trial version due to macOS's limitaion.\n" = "macOS試用版の制限により、4K解像度のビデオファイルは対応していません。";
+"Show details" = "もっと見る";
+"For more information, please click here to contact our support team." = "詳細は、こちらからサポートチームにお問い合わせください。";
+//Speed Adjust
+"Speed:" = "速度：";
+//重复"Duration:" = "持続期間：";
+"Reverse:" = "逆再生：";
+"Play video clip in reverse" = "逆再生速度";
+"Ripple:" = "リップル：";
+"Keep Ripple" = "リップル編集";
+"Custom speed" = "速度をカスタム";
+"Slow" = "遅く";
+"Fast" = "速く";
+//重复"Normal" = "通常";
+"Freeze Frame" = "フリーズフレーム";
+"Reverse" = "リバース";
+"Replay" = "再生";
+"Add Speed Point" = "スピードポイントを追加する";
+"Clear Speed Point" = "スピードポイントを削除";
+"Custom Freeze frame Duration" = "フリーズフレームの持続時間をカスタマイズ";
+
+//资源区
+
+"Photo" = "写真";
+"Audio" = "オーディオ";
+//重复"None" = "なし";
+"All" = "すべて";
+"YES" = "はい";
+"NO" = "いいえ";
+"List View" = "リスト表示";
+"Large Thumbnail View" = "大アイコンのサムネイル表示";
+"Middle Thumbnail View" = "中アイコンのサムネイル表示";
+"Small Thumbnail View" = "小アイコンのサムネイル表示";
+"Name" = "名前";
+//重复"Duration" = "再生時間設定";
+"Type" = "タイプ";
+"Date Created" = "作成日";
+"Category" = "カテゴリー";
+"Ascending" = "昇順";
+"Descending" = "降順";
+"Camera Name" = "カメラ名";
+"View" = "ビュー";
+"Sort By" = "並び替え";
+"Group By" = "グループ";
+"Hide media folder list" = "メディアフォルダリストを非表示にする";
+"Display media folder list" = "メディアフォルダリストを表示する";
+"Large Thumbnail" = "大アイコンのサムネイル";
+"Small Thumbnail" = "小アイコンのサムネイル";
+"Folder" = "フォルダ";
+"Sample Videos" = "サンプル動画";
+"Sample Colors" = "サンプルカラー";
+"Project Media" = "プロジェクトメディア";
+"My Projects" = "マイプロジェクト";
+"Import Media Files" = "メディアファイルをインポート";
+"Import Media Folder" = "メディアフォルダをインポート";
+"Import from Camera or Phone" = "カメラまたはスマホからインポート";
+"Import with Instant Cutter Tool" = "超高速動画カッターツールからインポート";
+"Download Media from Facebook" = "Facebookからメディアをダウンロード";
+"Download Photos from Instagram" = "Instagramから写真をダウンロード";
+"Download Photos from Flickr" = "Flickrから写真をダウンロード";
+"Create Adjustment Layer" = "調整レイヤーを作成";
+"Create Color Matte" = "カラーマットを作成";
+"Record from WebCam" = "ウェブカメラからの録画";
+"Record Voiceover" = "Voiceoverを録音";
+"Record PC Screen" = "PC画面を録画";
+//重复"Play" = "再生";
+"Insert" = "挿入";
+"Overwrite" = "上書き";
+"Append(add to the end)" = "プロジェクトの終わりに追加\n";
+"Add to new track" = "新しいトラックに追加";
+"Create Proxy file" = "プロキシファイルを作成";
+"Cancel Create Proxy file" = "プロキシをキャンセルする";
+"Relink Media" = "メディアの再リンク";
+"Rename" = "名前を変更";
+//重复"Delete" = "削除";
+"Reveal in Finder" = "Finderに表示";
+"Scene Detection" = "シーン検出";
+"Audio Track" = "音楽トラック";
+"Properties" = "プロパティ";
+"Warning:" = "警告：";
+"Warning" = "警告";
+"Folder name already exits, please choose a new name" = "この名前は使用中です。新しい名前を選択してください。";
+"Your selection is used on at least one timeline. Are you sure you want to remove it from your project?" = "選択された1つまたは複数のクリップがタイムラインに追加されました。ライブラリから削除すると、プロジェクトからも削除されます。続行しますか？";
+//重复"Folder" = "フォルダ";
+//"Add a new folder"
+//重复"Delete folder" = "フォルダを削除";
+"Filter" = "フィルタ";
+"Sort" = "ソート";
+"Record" = "録画";
+"Import" = "インポート";
+"less than 1 min" = "1分未満";
+"1 ~ 5 min" = "1〜5分";
+"5 ~ 30 min" = "5〜30分";
+"30 ~ 60 min" = "30〜60分";
+"more than 60 min" = "60分以上";
+"Apply" = "適用";
+"Apply to All" = "すべてに適用";
+"APPLY TO ALL" = "すべてに適用";
+"Download" = "ダウンロード";
+"Download All" = "すべてをダウンロードする";
+"Random to All" = "すべてをランダムにする";
+"Add to Favorite" = "お気に入りに追加";
+"Remove from favorite" = "お気に入りから削除";
+"FAVORITE" = "お気に入り";
+"Start Time" = "開始時間";
+"End Time" = "終了時間";
+"Titles" = "タイトル";
+"Transitions" = "トランジション";
+
+//"Start" = "開始";
+"Name:" = "名前：";
+//重复"Name" = "名前";
+"Location:" = "ロケーション：";
+"Location" = "ロケーション";
+"File Size:" = "ファイルサイズ：";
+//重复"Duration:" = "持続期間：";
+//重复"Duration" = "再生時間設定";
+"Date Created:" = "作成日：";
+//重复"Date Created" = "作成日";
+"Codec:" = "コーデック：";
+//重复"Resolution:" = "解像度：";
+"Resolution" = "解像度";
+"FrameRate:" = "フレームレート：";
+"Frame Rate:" = "フレームレート:";
+"Frame Rate" = "フレームレート";
+"Aspect Ratio:" = "アスペクト比：";
+"Bit Rate:" = "ビットレート：";
+"Camera Maker:" = "カメラメーカー：";
+"Camera Model:" = "カメラモデル：";
+"Exposure Time:" = "露光時間：";
+//重复"Alpha Channel:" = "アルファチャンネル：";
+"Channel:" = "チャネル：";
+"Sample Rate:" = "サンプルレート：";
+"Sample Rate" = "サンプルレート";
+//重复"Bit Rate:" = "ビットレート：";
+"Property" = "プロパティ";
+"Used" = "使用済";
+"Media Type" = "メディアタイプ";
+//重复"Date Created" = "作成日";
+"Favorite" = "お気に入り";
+//重复"Category" = "カテゴリー";
+//
+"The video you ara loading is in high quality, do you wish to create proxy file to accelerate editingprocess?" = "サイズの小さいプロキシコピーで作業をすると、より高速で編集をお楽しみいただけます。出力する際には、プロジェクトは元のサイズでレンダリングされます。こちらの設定は「環境設定」でリセットすることができます。";
+//重复"Always ask" = "毎回確認する";
+
+//Export
+"Title" = "タイトル";
+"My Video" = "マイビデオ";
+"My Audio" = "私のオーディオ";
+"Export" = "エクスポート";
+"Uploading is failed maybe due to network.For more information, please click here to contact our support team." = "ネットワーク接続の原因でアップロードに失敗しました。詳細については、サポートチームにお問い合わせください。";
+"Oops, authorization expired, please re-authorize your account to continue the uploading." = "認証の有効期限が切れました。アップロードを続行するにはアカウントを再承認してください。";
+"Oops! There is an error to start your upload, you don’t have enough free space with your Vimeo account, please check your account status or try again later;" = "アップロードを開始する際にエラーが発生しました。お使いのVimeoアカウントに十分な空き容量がありません。アカウントのステータスを確認の上、再試行してください。";
+"Oops! There is an error to start your upload, you can only upload 1 HD video per week with a Basic account, please check your account status or try again later;" = "アップロードを開始する際にエラーが発生しました。ベーシックアカウントで週1個だけのHDビデオをアップロードすることができます。アカウントのステータスをご確認してください。";
+"Oops! There is an error to start your upload, you can only upload 10 video per day with a Basic account, please check your account status or try again later;" = "アップロードを開始する際にエラーが発生しました。ベーシックアカウントで1日に10本の動画しかアップロードできません。アカウントのステータスを確認してください。";
+"Oops! This video length is longer than 15 mins,normal account should increse limit after upload to YouTube." = "この動画の長さは15分を超えています。YouTubeアカウントが未確認の場合、15分未満の長さの動画しかアップロードできません。";
+"Oops!  Failed to upload this video as Facebook limits the video length to 20 min and video size to 1GB; It is recommended to export your video to computer, and then upload it manually." = "アップロードに失敗しました。再生時間が20分以下でサイズが1GB以下のビデオしかFacebookにアップロードできません。ビデオをお使いのPCにエクスポートしてから、手動的にアップロードすることをお勧めします。";
+//重复"Warning" = "警告";
+//重复"Pause" = "一時停止";
+"Find in Target" = "Finderに表示";
+"Resume" = "再開";
+"Step: Bruning to Dic,please wait a moment." = "ステップ：ディスクに書き込み中、しばらくお待ちください...";
+"Step: make iSO %.2f%%" = "ステップ：DVDをISOに作成中％.2f%%";
+"Step: upload %d" = "ステップ： %dアップロード中";
+"Step: Copying folder Please Wait..." = "ステップ：フォルダをコピー中、お待ちください...";
+"Step: Making ISO Please Wait..." = "ステップ：DVDをISOに作成中、お待ちください...";
+"Step: Converting %d%%" = "ステップ： %d%%変換中";
+"Step: Faild" = "ステップ：失敗";
+"Step: Updating..." = "ステップ：更新中...";
+"Please select your country, Filmora will choose the right TV Standard for you automatically." = "お客様の国を選択してください。自動的に適切なTV規格を設定します。";
+"Select Music" = "音楽を選択";
+"EXPORT" = "エクスポート";
+"Others..." = "その他...";
+"Good" = "標準品質";
+"SETTING" = "設定";
+"Better" = "高品質";
+"Best" = "最高品質";
+"Please connect optical driver!" = "ドライバーを接続してください";
+"CREATE MENU" = "メニューを作成";
+
+"Public" = "公開";
+"public" = "公開";
+"private" = "非公開";
+"Anyone" = "すべて";
+"anybody" = "全員";
+"Only Me" = "自分のみ";
+"contacts" = "コンタクト";
+"Sigin out" = "サインアウト";
+//"sigin in"
+//重复"Custom" = "カスタム";
+
+//播放器
+//重复"View" = "ビュー";
+"Go to" = "へ移動";
+"Full" = "フル";
+"Playback Quality" = "再生品質";
+"Fit" = "フィット";
+"Safe Zone" = "セーフゾーン";
+//重复"View" = "ビュー";
+//重复"Playback Quality" = "再生品質";
+"Zoom Level" = "ズームレベル";
+//重复"Safe Zone" = "セーフゾーン";
+//重复"View" = "ビュー";
+//重复"Playback Quality" = "再生品質";
+//重复"Zoom Level" = "ズームレベル";
+//重复"Safe Zone" = "セーフゾーン";
+"Use Original Media When Pause" = "一時停止時に元のメディアを使用する";
+
+//高级调色
+"Histogram" = "ヒストグラム";
+//重复"White Balance" = "ホワイトバランス";
+//重复"3D LUT" = "3D LUT";
+"Color" = "色";
+"Light" = "ライト";
+"HSL" = "HSL";
+"Vignette" = "ビネット";
+"Temperature" = "色温度";
+"Tint" = "色合い";
+"Exposure" = "露光";
+"Brightness" = "明るさ";
+"Contrast" = "コントラスト";
+"Saturation" = "彩度";
+"Vibrance" = "鮮やかさ";
+"Highlights" = "ハイライト";
+"Shadows" = "シャドウ";
+"Whites" = "白";
+"Blacks" = "黒";
+"Amount" = "量";
+"Size" = "サイズ";
+"Roundness" = "円形";
+"Feather" = "アンチエイリアス";
+//重复"Exposure" = "露光";
+"Highlight" = "ハイライト";
+"Red" = "レッド";
+"Orange" = "オレンジ";
+"Yellow" = "イエロー";
+"Green" = "グリーン";
+"Magenta" = "マゼンタ";
+"Purple" = "パープル";
+"Blue" = "ブルー";
+"Cyan" = "シアン";
+"Hue" = "色相";
+//重复"Saturation" = "彩度";
+"Luminance" = "明るさ";
+"Name your own color preset, it will be saved in the \"Custom\" category in Preset" = "カスタムカラープリセットに名前を付けてください。 プリセットのカスタムカテゴリに保存されます。";
+"A preset with the name already exists. Replace it will overwrite the current preset." = "この名前は既に使用されています。既存のプリセットを置き換えますか？";
+"Add to favorite" = "お気に入りに追加";
+//重复"Remove from favorite" = "お気に入りから削除";
+"Delete custom preset" = "カスタムプリセットを削除";
+//重复"Delete" = "削除";
+"Adjust" = "調整";
+"Preset" = "プリセット";
+"Save as Preset" = "プリセットとして保存";
+"Reset All" = "すべてをリセット";
+//重复"OK" = "OK";
+"Advanced Color Tuning" = "高度な色補正";
+"Disable Comparison" = "比較を無効にする";
+"Split View-Left/Right" = "分割ビュー - 左/右";
+"Split View-Top/Bottom" = "分割ビュー - 上/下";
+"Side by Side View" = "並んでビュー";
+//重复"Save as Preset" = "プリセットとして保存";
+"Compare Before/After" = "比較 使用前/使用後";
+"Show Original" = "オリジナルを表示する";
+
+//蒙太奇
+//重复"Delete" = "削除";
+"Start time:" = "開始時間：";
+"End time:" = "終了時間：";
+"Size:" = "サイズ：";
+"Zoom:" = "ズーム：";
+"Color:" = "色：";
+"Border" = "枠線";
+"Rotate" = "回転";
+//重复"OK" = "OK";
+"Media" = "メディア";
+//重复"Video" = "ビデオ";
+//重复"Color" = "色";
+"Drag video or image onto the drop zone to create your split screen video." = "分割表示のビデオを作成するため、ドロップゾーンに動画や写真をドラッグしてください。";
+
+//社交资源下载
+"Download Media from %@" = "%@からメディアをダウンロード";
+"SIGN IN" = "ログイン";
+"SIGN OUT" = "サインアウト";
+"Save to:" = "保存先：";
+//重复"Cancel" = "キャンセル";
+"Files selected: %d file(s)" = "選択したファイル： %dファイル";
+
+//Audio Mixter
+"Stereo" = "ステレオ";
+"Surround" = "サラウンド";
+"Master" = "マスター";
+"-60" = "-∞";
+
+//title edit
+"SAVE AS PRESET" = "プリセットとして保存";
+"ADVANCED" = "高度編集";
+"Top Left" = "左上";
+"Top Center" = "上部中央";
+"Top Right" = "右上";
+"Center Left" = "中央の左";
+"Center" = "センター";
+"Center Right" = "中央の右";
+"Bottom Left" = "左下";
+"Bottom Center" = "下部中央";
+"Bottom Right" = "右下";
+"Freedom" = "自由";
+"Font" = "フォント";
+"Settings" = "設定";
+"Transform" = "変換";
+//重复"Composition" = "合成";
+"Align:" = "整列：";
+"Text Spacing:" = "テキスト間隔：";
+"Line Spacing:" = "行間隔：";
+//重复"Position:" = "ポジション：";
+"Text layer:" = "テキストレイヤー：";
+"Bold" = "太字";
+"Italic" = "斜体";
+"Align Left" = "左に揃える";
+"Align Center" = "中央揃え";
+"Align Right" = "右に揃える";
+"Align Justified" = "両端揃え";
+
+//advance title edit
+"Title Inspector" = "タイトルインスペクタ";
+"Add Text Box" = "テキストボックスを追加";
+"Add Shape" = "図形を追加";
+"Add Photo" = "写真を追加";
+//重复"Preset" = "プリセット";
+"Customize" = "カスタマイズ";
+"Animation" = "アニメーション";
+"Move to Front" = "最前面へ移動";
+"Move Forward One" = "前面へ移動";
+"Move Back One" = "背面へ移動";
+"Move to Back" = "最背面へ移動";
+"Color Fill" = "テキストの塗りつぶし";
+"Gradient Fill" = "グラデーションで塗りつぶし";
+"Image Fill" = "イメージ塗りつぶし";
+"Parameter:" = "パラメータ：";
+"Blur:" = "ぼかし：";
+"Type:" = "タイプ：";
+//重复"Color:" = "色：";
+"Opaciity:" = "不透明度：";
+"Angle:" = "角度：";
+"Effect:" = "エフェクト：";
+//重复"Size:" = "サイズ：";
+//文案缺失"Alpha Channel" = "";
+"Distance:" = "距離：";
+"Input text" = "入力";
+"Text Fill" = "テキストの塗りつぶし";
+"Text Border" = "テキストの境界線";
+"Text Shadow" = "文字にシャドーをつける";
+"Shape Fill" = "形状の塗りつぶし";
+"Shape Border" = "図形の枠線";
+//重复"Save as Preset" = "プリセットとして保存";
+"Name your own text preset, it will be saved in the \"%@\" category in %@" = "カスタムカラープリセットに名前を付けてください。 %@の%@カテゴリに保存されます。";
+"Text/Credit" = "テキスト/クレジット";
+"A preset with the name already exists. Replace it will overwrite the current preset." = "この名前はすでに使用されています。置き換えると、既存のプリセットが上書きされます。";
+"Replace" = "置換";
+"A preset with the name already exists. Please choose a new name." = "名前は既に使用されています。新しい名前を選択してください。";
+
+//////mediabrower
+"Import from Device" = "デバイスからのインポート";
+//重复"All" = "すべて";
+"Picture" = "画像";
+"LivePhoto" = "ライブフォト";
+//"Others..."
+"Change" = "変換";
+"Import from:" = "インポート元：";
+"No device detected" = "デバイスが見つかりません";
+//重复"Save to:" = "保存先：";
+"IMPORT" = "インポート";
+//重复"CANCEL" = "キャンセル";
+//重复"Files selected: %d file(s)" = "選択したファイル： %dファイル";
+"Check All" = "すべてをチェック";
+"Date" = "日付";
+//重复"Size" = "サイズ";
+//重复"Name" = "名前";
+/////VEOnlineResourceWindowController
+"Downloading" = "ダウンロード中";
+"Downloading online content (%d%) ..." = "オンラインコンテンツ (%d%%)をダウンロード中...";
+//////VEPacksManagerWindowController
+"Delete Selected" = "選択された項目を削除";
+//重复"Cancel" = "キャンセル";
+"Delete unused effect pack can save disk space, would you want to delete some?" = "利用していないエフェクトパックを削除して、ディスクスペースを確保してください。削除したものはエフェクトストアから再度ダウンロードすることが可能です。";
+
+//WSID
+"Choose a Plan" = "プランを選択";
+"Message Center" = "メッセージセンター";
+"Mark as Read" = "既読としてマーク";
+"Account Information" = "アカウント情報";
+"Offline Activation" = "製品登録";
+"Login" = "ログイン";
+"Logout" = "ログアウト";
+"Create Account" = "アカウントを作成";
+"Login to Continue" = "続行するにはログインしてください";
+"You need a Wondershare ID to continue your current action. Please log in or create one for free." = "続けるにはwondershare IDのログインが必要です。ログインまたは無料のアカウントを作成してください。";
+"Expires after:" = "有効期限：";
+"upgrade" = "購入";
+"Free Plan" = "無料プラン";
+"Annual Plan" = "年間プラン";
+"Lifetime Plan" = "ライフタイムプラン";
+"Extend My License" = "ライセンスを拡張";
+"Change Password" = "パスワードを変更";
+"Unlimited" = "ライフタイム";
+"Unlimited with watermark" = "透かしがあり";
+"Register Your Software" = "製品登録";
+"Licensed e-mail:" = "Eメールアドレス:";
+"Registration Code:" = "登録コード:";
+"Your copy of software is not activated and the outputted video will be added a watermark." = "登録されていないため、出力ビデオにウォーターマークが入っています。";
+"Buy a License to remove the limitation to enjoy all the benefits of Video Editor and product lifetime support." = "Wondershare Filmoraをご購入後、製品のすべての機能をご利用して頂きます。また、サーポートサービスを無償もご利用して頂けます。";
+"Buy Now" = "今すぐ購入";
+"Evaluate" = "試用";
+"Register" = "登録";
+"Trial Version" = "試用版";
+"Registered Version" = "製品版";
+"Registration info is invalid." = "登録情報は無効です。";
+"Note: if you have any problem with the registration code and the software, please visit: Support Center" = "製品に関するお問い合わせは、下記をクリックしてください。お問い合わせ：";
+"Was your payment processed successfully?" = "お支払いが正常に処理されましたか？";
+"If you have paid successfully, please refresh your payment status. The payment status may not be refreshed timely due to network delay, you can also refresh your status again in \"Activate\"" = "お支払いが完了しましたら、お支払い状況を更新してください。ネットワークの遅延のために支払いステータスがすぐに更新されないことがあります。\"今すぐ更新\"をクリックしてステータスを更新することができます。";
+"No activation status update, please refresh later." = "ユーザーのステータスは有効化されていません。後で再試行してください。";
+"Refresh Now" = "今すぐ更新";
+"Your activation status may not be refreshed timely under certain circumstances，you can have a try of refresh manually." = "有効化のステータスが適時に更新されない場合があります。手動で更新してください。";
+"Password Reset Succeeded!" = "パスワードがリセットされました！";
+"Status:" = "ステータス:";
+"Expiration Date" = "有効期限";
+"Active" = "認証済";
+"Unable to connect" = "接続できません";
+"Your computer seems to be offline, causing a connection error. Please check your connection and try again." = "お使いのコンピュータがオフラインになっているため、接続エラーが発生しています。接続を確認してからもう一度お試しください。";
+
+//偏好设置
+"Never" = "なし";
+"Every Day" = "毎日";
+"Every Week" = "毎週";
+"Every Month" = "毎月";
+"Arrange Objects" = "オブジェクトを配置";
+
+
+//////补充
+"Purchase" = "購入";
+
+//crop/pan&zoom
+"Swap the Start and End areas" = "開始領域と終了領域を交換";
+
+//import
+"There isn't enough space for importing, please delete unnecessary files to free enough space." = "十分なディスク容量がありません。ディスクスペースを確保してからもう一度試してください。";
+
+//"Sign in" = "ログイン";
+"Recent Project will be shown here" = "最近使ったプロジェクト";
+
+//播放器补充
+//重复"Playhead Position" = "再生ヘッドの位置";
+//重复"Mark In" = "マークイン";
+//重复"Mark Out" = "マークアウト";
+//重复"Previous Frame" = "前へ";
+//重复"Play" = "再生";
+//重复"Pause" = "一時停止";
+//重复"Stop" = "停止";
+//重复"Next Frame" = "次へ";
+//重复"Snapshot" = "スクリーンキャプチャ";
+//重复"Volume" = "音量";
+//重复"Full Screen" = "フルスクリーン";
+//重复"Exit Full Screen" = "フルスクリーンを終了";
+//重复"Preview quality and display settings" = "プレビュー品質と表示設定";
+//重复"View" = "表示";
+"Play/Pause" = "再生/一時停止";
+"Play Full Screen" = "フルスクリーンモードで再生";
+"Previous Edit" = "前の編集";
+"Next Edit" = "次の編集";
+//重复"Go to" = "移動";
+"Previous Second" = "前の秒";
+"Next Second" = "次の秒";
+"Previous Marker" = "以前のマーカー";
+"Next Marker" = "次のマーカー";
+"Beginning" = "プロジェクトの始まり";
+"End" = "プロジェクトの終わり";
+//重复"Zoom Timeline" = "タイムラインを拡大・縮小";
+"Zoom In Timeline" = "ズームイン";
+"Zoom Out Timeline" = "ズームアウト";
+"Zoom to Fit Timeline" = "画面サイズに合わせてズーム";
+"Enable Canvas Snapping" = "キャンバススナップを有効にする";
+"Enter Full Screen" = "全画面表示に入する";
+
+//高级调色补充
+"A preset with the name already exists. Please choose a new name." = "この名前は既に使用されています。新しい名前を選択してください。";
+"Before" = "前";
+"After" = "後";
+"Are you sure you want to delete this LUT file?" = "このLUTファイルを削除してもよろしいですか？";
+"You can load your own LUT files later." = "後で自分のLUTファイルを読み込むことができます。";
+"Yes" = "はい";
+"No" = "いいえ";
+"is in an unsupported format and cannot be loaded." = "サポートされていない形式です、読み込みできません。";
+//重复"None" = "なし";
+"Load New LUT..." = "新しいLUTを読み込み中…";
+"All Presets" = "すべてのプリセット";
+//重复"Favorite" = "お気に入り";
+//重复"Custom" = "カスタム";
+//重复"3D LUT" = "3D LUT";
+//重复"Undo" = "取り消し";
+//重复"Redo" = "やり直し";
+"My Color Preset" = "マイプリセット1";
+
+//社交资源补充
+"Check All" = "すべてチェック";
+"Quit" = "終了";
+
+//长度设置对话框
+"Duration Settings" = "再生時間設定";
+"Ok" = "OK";
+//重复"Cancel" = "キャンセル";
+"Input Duration:" = "再生時間を入力：";
+
+//motion设置
+"Motion" = "モーション";
+//重复"Apply" = "適用";
+"Random to all clips on current track" = "すべてをランダムにする";
+"Apply to all clips on current track" = "すべてに適用";
+
+//资源区
+"Image" = "画像";
+"Text" = "テキスト";
+"Effects" = "エフェクト";
+"Elements" = "エレメント";
+"Split Screen" = "画面分割";
+"Import Media Files Here" = "ここにメディアファイルをインポートする";
+//文案缺失"Click here to import media." = "";
+"Drag to the timeline to apply" = "適用するためにタイムラインにドラッグしてください";
+"OpenPreferences" = "システム環境設定";
+"Preferences" = "設定";
+"General" = "一般";
+"Folder Path" = "フォルダ";
+"Editing" = "編集";
+//重复"Save" = "保存";
+"Performance" = "パフォーマンス";
+"Output" = "出力";
+"Open the Output Folder after exporting video." = "動画をエクスポートした後、出力フォルダを開きます。";
+"Play alert sound after conversion." = "変換完了後に音を鳴らす";
+"Miscellaneous:" = "その他の設定：";
+"Check for update:" = "更新プログラムを自動的にチェックする：";
+"Reset all dialog warnings:" = "すべてのプログラムの警告メッセージを初期化する：";
+"Message Center:" = "メッセージセンター：";
+"Don't show messages automatically" = "このメッセージを再度表示しない";
+"Folders:" = "フォルダ：";
+"Snapshot files folder:" = "スナップショットファイルフォルダ：";
+"Upload files folder:" = "アップロードファイルフォルダ：";
+"Effect Packs:" = "エフェクトパック：";
+"Install Effect Pack to:" = "エフェクトパック：";
+"Effect Packs takes up: %.1f MB" = "エフェクトパックの使用量：%.1f MB";
+"Manage" = "管理";
+"Default Durations:" = "デフォルト再生時間：";
+"Photo Duration:" = "写真再生時間：";
+"Transition Duration:" = "トランジション再生時間：";
+"Effect Duration:" = "エフェクト再生時間：";
+"Freeze Frame Duration:" = "フリーズフレーム期間：";
+"Photo Placement:" = "写真のレイアウト";
+//重复"Fit" = "フィット";
+"Crop to Fit" = "フィットサイズにクロップ";
+"Pan & Zoom" = "パン＆ズーム";
+"Save:" = "保存：";
+"Automatically backup projects, every" = "プロジェクトを自動的にバックアップする";
+"min" = "分";
+"GPU" = "GPU";
+"Enable GPU Accelaration" = "ビデオをレンダリング及び再生する際、ハードウェア・アクセラレーションを有効にする";
+"Proxy:" = "プロキシ：";
+"Automatically create Proxy when resolution higher than:" = "メディアの解像度が次の値よりも高い場合は、自動的にプロキシを作成する：";
+"Proxy file folder:" = "プロキシの位置：";
+"Automatically delete Proxy when closing a project file" = "プロジェクトが閉じられたら、プロキシを自動的に削除する";
+"Clean" = "クリア";
+
+//顶部菜单
+"About WSVEOnline" = "WSVEOnlineについて";
+"Preferences…" = "設定";
+"Order" = "注文";
+"Activate" = "認証済";
+"Check for Updates..." = "アップデートを確認...";
+"Services" = "サービス";
+"Hide WSVEOnline" = "WSVEOnlineを非表示にする";
+"Hide Others" = "他を隠す";
+"Show All" = "すべて表示する";
+"Quit WSVEOnline" = "WSVEOnlineを終了";
+"File" = "ファイル";
+"New" = "新しいプロジェクト";
+"Open…" = "プロジェクトを開く";
+"Close" = "閉じる";
+"Save…" = "プロジェクトを保存...";
+"Save As…" = "プロジェクトを別名で保存...";
+"Archive Project" = "プロジェクトをアーカイブする";
+"Download Media" = "メディアをダウンロードする";
+"Record Media" = "メディアを録音する";
+"Project Setting" = "プロジェクト設定";
+"Ripple Delete" = "リップル削除";
+"Select All" = "すべて選択";
+"Deselect All" = "すべての選択を解除";
+//重复"Tools" = "ツール";
+//重复"Show Properties" = "プロパティを表示";
+"Rotate 90 CW" = "時計回りに90°回転";
+"Rotate 90 CCW" = "反時計回りに90°回転";
+"Create Video..." = "ビデオを作成...";
+"Export to Device..." = "デバイスに出力";
+"Upload to Youtube..." = "YouTubeにアップロード";
+"Upload to Vimeo..." = "Vimeoにアップロード...";
+"Burn DVD..." = "DVDに書き込む";
+"Window" = "ウィンドウ";
+"Minimize" = "最小化";
+"Zoom" = "最大化";
+"Bring All to Front" = "すべてを手前に移動";
+"Help" = "ヘルプ";
+"Online Help" = "オンラインヘルプ";
+"Product FAQ" = "製品FAQ";
+"Support Center" = "サポート";
+"Offline Activation" = "オフライン製品登録";
+"About Wondershare ID" = "Wondershare IDについて";
+"Fetch Log" = "ログを取得する";
+"New Feature Request" = "新機能に対する要望";
+"Filmora YouTube" = "Wondershare YouTube";
+"Filmora Facebook" = "Wondershare Facebook";
+"Filmora Twitter" = "Wondershare Twitter";
+
+//时间线
+"Enable Timeline Snap" = "タイムラインスナッピングを有効にする";
+"Default" = "デフォルト";
+
+//输出
+//"Sign In" = "ログイン";
+//"Sign Out" = "サインアウト";
+"You can update this video to YouTube" = "この動画をYouTubeにアップロードできる";
+"The file has been successfully uploaded to Vimeo." = "ファイルはVimeoにアップロードされました。";
+"The file has been successfully uploaded to YouTube." = "ファイルはYouTubeにアップロードされました。";
+//重复"You can update this video to YouTube" = "この動画をYouTubeにアップロードできる";
+"Anyone" = "すべての人";
+"People I fellow on viemo" = "Vimeoでフォローしている人";
+"Only me" = "自分のみ";
+"DVD" = "DVD";
+"DVD Folder" = "DVDフォルダ";
+"Template" = "テンプレート";
+"Create Menu" = "メニューを作成";
+"No Music" = "音楽なし";
+"My DVD" = "マイDVD";
+"Burn to:" = "作成：";
+"TV Standard:" = "テレビ規格：";
+//重复"Aspect Ratio:" = "アスペクト比：";
+"DVD Lable:" = "DVDラベル：";
+"Burn Device:" = "書き込みデバイス：";
+//重复"Please connect optical driver!" = "ドライバーを接続してください";
+"Disc Type:" = "ディスクの種類：";
+"Capacity:" = "容量：";
+"Category:" = "カテゴリー：";
+"Title:" = "タイトル：";
+"Tags:" = "タグ：";
+"Privacy:" = "プライバシー：";
+//重复"Public" = "公開";
+"Private" = "非公開";
+//重复"Custom" = "カスタム";
+"Do Nothing" = "何もしない";
+"Sound Reminder" = "音で知らせる";
+"Put Computer to Sleep" = "コンピュータをスリープ状態にする";
+"Shut Down My Computer" = "コンピュータをシャットダウン";
+"Creating Movie ..." = "ムービーを作成...";
+"Step: Mission Complete!" = "ステップ：完了しました！";
+"Find in target" = "ターゲットを見つける";
+//文案缺失"Congratulations!" = "";
+"Pan" = "パン";
+"Volume Fader" = "ボリュームフェーダー";
+"Master Track" = "マスタートラック";
+"Level Meter" = "レベルメーター";
+"Buy License" = "Buy License";
+"Create With Wondershare Filmora" = "Wondershare Filmoraで作成";
+
+//Media browser补充
+"Downloading video content (%d%) ..." = "動画コンテンツ（ %d ％）をダウンロード中...";
+"Downloading %@ content (%d%) ..." = "%@コンテンツ（ %d ％）をダウンロード中...";
+"The output directory could not be found. Please update it and try again." = "出力ディレクトリが見つかりません。更新してもう一度お試しください。";
+//重复"Motion" = "モーション";
+//重复"Select a Profile" = "プロフィールを選択";
+//重复"Default" = "デフォルト";
+"Auto" = "オート";
+"Load New LUT..." = "新しいLUTを読み込み";
+
+//marker edit window
+"Marker Editor" = "マーカーエディタ";
+
+// Export & detect 补充
+"Format" = "フォーマット";
+"Device" = "デバイス";
+"YouTube" = "YouTube";
+"Vimeo" = "Vimeo";
+//重复"DVD" = "DVD";
+"Output Descriptions" = "出力の説明";
+"DVD Descriptions" = "DVDの説明";
+"Quality" = "ビデオ画質：";
+"Encoder:" = "エンコーダ：";
+"Detect" = "検出する";
+"Loading scenes to Timeline" = "シーンをタイムラインにロードする";
+"Buy License" = "購入";
+
+//document
+"This project file was saved from an older version of Filmora and must be converted. The original project file will not be changed." = "このプロジェクトファイルは以前のバージョンのFilmoraで保存されたため、変換する必要があります。元のプロジェクトファイルは変更されません。";
+"Convert document failed!" = "プロジェクトファイルの変換に失敗しました！";
+
+"There is no enough space on the disk, please free up some disk space and try again." = "十分なディスク容量がありません。ディスクスペースを確保してからもう一度試してください。";
+"Task is still in progress, are you sure to cancel it?" = "タスクはまだ進行中です。キャンセルしてもよろしいですか？";
+"RateAppstore" = "macappstore://itunes.apple.com/app/id447570101?mt=12";
+
+"Missing Effects" = "エフェクト紛失";
+"This project file uses effect packs that are currently unavailable on your computer. You can open Effect Store to re-download below effect packs or click \"Ignore\" to continue open the project file without the missing effects." = "このプロジェクトファイルには、現在コンピュータで使用できないエフェクトパックが使用されています。エフェクトストアを開いてエフェクトパックを再ダウンロードして、または「無視」をクリックしてエフェクトがなくなった状態でプロジェクトファイルを開きます。";
+"Ignore" = "無視";
+"Relocate" = "再リンク";
+"Open Effect Store" = "エフェクトストアを開く";
+"Effect Pack Name" = "エフェクトパックの名前";
+"Export to file or send to Filmora for more edits:" = "ファイルへエクスポートまたはFilmoraに転送：";
+"Progress" = "進捗";
+"Burning is successful! Would you like to burn more DVDs?" = "書き込みに成功しました！もっとDVDを書き込みしますか？";
+"No, thanks" = "いいえ";
+"More" = "もっと";
+"Sign out" = "サインアウト";
+"My Profile" = "マイプロフィール";
+"My Favorites" = "お気に入り";
+"My Effects" = "マイエフェクト";
+//重复//"Sign in" = "ログイン";
+"Filmora Effects Store" = "Filmoraエフェクトストア";
+"Download more effects from Filmora Resource Center" = "Filmoraリソースセンターから多くのエフェクトがダウンロードできます";
+//滤镜参数
+"alpha" = "アルファ";
+"Percent" = "パーセンテージ";
+"amount" = "量";
+"PhaseIncrement" = "位相インクリメント";
+"ZoomRate" = "ズーム倍率";
+"Source_Width" = "ソース幅";
+"BG_Color" = "背景色";
+"BG_Luminance" = "背景の明るさ";
+"BG_Blur_Level" = "背景のアンチエイリアス";
+//重复"Size" = "サイズ";
+"Blur" = "アンチエイリアス";
+"Opacity" = "不透明度";
+//重复"Start" = "入門ミッション";
+//重复"End" = "終了";
+"Gradient Direction" = "グラディエント方向";
+"Direction" = "方向";
+"Radius" = "半径";
+"strength" = "強さ";
+"Frequency" = "頻度";
+"Pos_X" = "X座標";
+"Pos_Y" = "Y座標";
+"Rot_Z" = "Z座標";
+"RGB_Separate" = "各RGB";
+"Motion_Blur" = "モーションぼかし";
+"Fade" = "フェード";
+"left" = "左";
+"right" = "右";
+"top" = "上";
+"bottom" = "下";
+"autoZoom" = "最大化";
+"blurEdges" = "フェザーエッジ：";
+"Mode" = "モード";
+"BlockSize" = "ブロックサイズ";
+"Amplitude" = "振幅";
+"aPercent" = "パーセンテージ";
+"Presets" = "プリセット";
+"radius" = "半径";
+"posX" = "X座標";
+"posY" = "Y座標";
+"Frosted_Level" = "曇りレベル";
+"DecolorPosX" = "デコラートX座標";
+"DecolorPosY" = "デコラートY座標";
+"Block_size" = "ブロックサイズ";
+//重复"Hue" = "色相";
+"path" = "パス";
+"blurStrength" = "ぼかし強さ";
+"invertMask" = "マスクを反転させる";
+//重复"Type" = "タイプ";
+"Intensity" = "強度";
+"decolorPosX" = "デコラートX座標";
+"decolorPosY" = "デコラートY座標";
+"percent" = "パーセンテージ";
+"Colorful" = "カラフル";
+"SquareSize" = "正方形のサイズ";
+"Desity" = "密度";
+"Height" = "高さ";
+"swing" = "スイング";
+"frequency" = "頻度";
+"Warp_Level" = "ワープレベル";
+"Scales_Level" = "スケールレベル";
+"nDistance" = "距離";
+"nBlur" = "ぼかし";
+"nAlpha" = "不透明度";
+"dwValue" = "色";
+"uDirect" = "方向";
+"m_dRCol" = "レッド";
+"m_dGCol" = "グリーン";
+"m_dBCol" = "ブルー";
+"m_bSrcLeft" = "ソーススイッチャー";
+"m_bSplit" = "有効にする";
+"centerX" = "センターX";
+"centerY" = "センターY";
+"intensity" = "強度";
+"size" = "サイズ";
+"rotation" = "回転";
+"bright" = "明るい";
+"emboss" = "エンボス";
+"steps" = "ステップ";
+"Level" = "レベル";
+"xPos" = "X座標";
+"yPos" = "Y座標";
+"Scale Width" = "Xスケール";
+"Scale Height" = "Yスケール";
+"Position" = "ポジション";
+"borderH" = "ボーダーの高さ";
+
+//高级调色9月25补充
+"Load LUT" = "LUTを読み込み";
+"Film/TV" = "フィルム";
+"Film" = "フィルム";
+"Common" = "一般";
+
+//输出新补充
+"You can upload this video to YouTube" = "この動画をYouTubeにアップロードできる";
+"You can upload this video to Vimeo" = "この動画をVimeoにアップロードできる";
+//重复"Task is still in progress, are you sure to cancel it?" = "タスクはまだ進行中です。キャンセルしてもよろしいですか？";
+"Disc space is not enough. Please insert a disc with larger space, or adjust the video quality, or delete some files." = "ディスクの容量が不足です。より大きなスペースのディスクを挿入するか、ビデオの画質を調整するか、ファイルを削除してください。";
+"Disc is not blank. Please insert a blank one." = "このディスクは空ではありません。ブランクディスクを挿入してください。";
+"have no enough free space" = "十分な空き領域がありません";
+
+"Pause Recording" = "録音を一時停止する";
+"Resume Recording" = "録音を再開する";
+"Description:" = "説明：";
+
+"DVDMedia" = "DVDメディア";
+//重复"DVD Folder" = "DVDフォルダ";
+"ISO" = "ISO";
+
+"Shut down" = "シャットダウン";
+"If you do nothing, the computer will shut down automatically in %d seconds." = "何もしないと、コンピュータは%d秒後に自動的にシャットダウンします。";
+"Are you sure you want to shut down your computer now?" = "今すぐコンピュータをシャットダウンしますか？";
+
+"Step: make menu %d%%" = "ステップ：メニューを作成%d %%";
+"Setting" = "設定";
+
+"Nothing configurable" = "設定可能な何もありません";
+"There is no parameter for this object, select a text box in the Previewer to continue." = "画像にはパラメータがありません。プレビューウィンドウでテキストボックスを選択して続行してください。";
+
+
+//新补充
+"Search" = "検索";
+"Video Info:" = "ビデオ情報：";
+"Audio Info:" = "オーディオ情報：";
+"Image Info:" = "画像情報：";
+
+"Creating proxy file is necessary for smooth playback, do you wish to create proxy file for this clip?" = "スムーズに再生するためプロキシファイルを作成する必要があります、このクリップのプロキシファイルを作成しますか？";
+
+"Show Audio Indicator" = "オーディオインジケータを表示";
+"Hide Audio Indicator" = "オーディオインジケータを隠す";
+"Viewable by:" = "閲覧者：";
+"Music Trak" = "ミュージックトラック";
+"Video Trak" = "ビデオトラック";
+"Destination:" = "目的地：";
+
+"Click to Apply" = "エフェクトをクリック";
+
+//
+"Freeze" = "フリーズ";
+"No Animation" = "アニメーションなし";
+"No Motion" = "アニメーションなし";
+"Type Writer" = "タイプライター";
+"Wavy Style" = "波型";
+"Rich Tick" = "Rich Tick";
+"Random" = "ランダム";
+"Random 2" = "ランダム2";
+"String Blur" = "文字をぼかし";
+"Cinema Style" = "シネマスタイル";
+"Doomo" = "Doomo";
+"Up Insert" = "上方向へ挿入";
+"Down Insert" = "下方向へ挿入";
+"Up Dir Insert" = "ディレクトリ上方向挿入";
+"Left Dir Insert" = "ディレクトリ左方向挿入左方向挿入";
+"Right Dir Insert" = "ディレクトリ右方向挿入";
+"Down Dir Insert" = "ディレクトリ下方向挿入";
+"Up Roll" = "ロールアップ";
+"Down Roll" = "ダウンロール";
+"Left Roll" = "左ロール";
+"Right Roll" = "右ロール";
+"Drop1" = "Drop1";
+"Pixelate" = "ピクセレート";
+"Pinwheel" = "ピンホイール";
+"Erase" = "イレース";
+"Crosszoom" = "クロスズーム";
+"Doorway" = "ドアウェイ";
+"Roll clockwise" = "時計回りに回転";
+"Round zoom out" = "ラウンドズームアウト";
+"Twrl" = "Twrl";
+"LinearWipe" = "リニアワイプ";
+"Push" = "プッシュ";
+"SkewRight" = "右斜め";
+"Evaporate" = "エバポレート1";
+"Boom!" = "ブーム！";
+"Bounce to zoom in 1" = "バウンスズームイン1";
+"Bounce to zoom in 2" = "バウンスズームイン2";
+"Bounce to zoom out 1" = "バウンスズームアウト1";
+"Clockwise rotate to zoom in 1" = "時計回りに回転ズームイン1";
+"Clockwise rotate to zoom in 2" = "時計回りに回転ズームイン2";
+"Clockwise rotate" = "時計回りに回転";
+"Counter clockwise rotate" = "反時計回りに回転";
+"Down Up 1" = "ダウン1";
+"Down Up 2" = "ダウン2";
+"Fade Slide 1" = "スライド1をフェードアウト";
+"Fade Slide 2" = "フェードスライド2";
+"Fade Slide 3" = "フェードスライド3";
+"Fade Slide 4" = "フェードスライド4";
+"Fade Zoom In" = "フェードズームイン";
+"Fade Zoom Out" = "フェードズームアウト";
+//重复"Fade" = "フェード";
+"Flip Down1" = "フリップダウン1";
+"Flip Down2" = "フリップダウン2";
+"Flip Up1" = "フリップアップ1";
+"Flip Up2" = "フリップアップ2";
+"Fly to zoom in" = "フライジームイン";
+"Grow Shrink" = "縮小";
+"Move to bottom" = "下に移動";
+"Move to left" = "左に移動";
+"Move to lower left" = "左下に移動する";
+"Move to lower right" = "右下に移動";
+"Move to right" = "右に移動";
+"Move to top" = "一番上に移動";
+"Move to upper left" = "左上に移動";
+"Move to upper right and zoom in" = "右上に移動してズームイン";
+"Move to upper right" = "右上に移動";
+"Photo Spin 3" = "フォトスピン3";
+"Photo Spin 4" = "フォトスピン4";
+"Rotate to zoom in 1" = "回転してズームイン1";
+"Rotate to zoom in 2" = "回転してズームイン2";
+"Spin 1" = "スピン1";
+"Spin 2" = "スピン2";
+"Spin 3" = "スピン3";
+"Spin 4" = "スピン4";
+"Stretch in and zoom in 1" = "ストレッチズームイン1";
+"Stretch in and zoom in 2" = "ストレッチズームイン2";
+"Stretch to left" = "左にストレッチ";
+"Stretch to right" = "右にストレッチ";
+"To the Left 1" = "左へ1";
+"To the Left 2" = "左へ2";
+"To the Right 1" = "右へ1";
+"To the Right 2" = "右へ2";
+"Up Down 1" = "アップダウン1";
+"Up Down 2" = "アップダウン2";
+"Wham!" = "Wham!";
+"Zoom in 1" = "ズームイン1";
+"Zoom in 2" = "ズームイン2";
+"Zoom in 3" = "ズームイン3";
+"Zoom in and out" = "ズームイン/ズームアウト";
+"Zoom in to the bottom" = "一番下にズームイン";
+"Zoom in to the left" = "左にズームイン";
+"Zoom in to the right" = "右にズームイン";
+"Zoom in to the top" = "一番上にズームイン";
+"Zoom out 1" = "ズームアウト";
+"Zoom out 2" = "ズームアウト";
+"Zoom out 3" = "ズームアウト";
+"Zoom out to the right" = "右にズームアウト";
+"Drop" = "ドロップ";
+"Expansion" = "エクスパンション";
+"Fly in and Fade out" = "フライイン＆フェードアウト";
+"Fly in and Fly out" = "フライイン＆フライアウト";
+"Stretch in and zoom in" = "ストレッチズームイン";
+"Tiny zoom" = "Tiny zoom";
+"Zoom in" = "ズームイン";
+"Zoom out" = "ズームアウト";
+"Text style 1" = "テキストスタイル1";
+"Text style 2" = "テキストスタイル2";
+"Text style 3" = "テキストスタイル3";
+"Text style 4" = "テキストスタイル4";
+"Text style 5" = "テキストスタイル5";
+"Text style 6" = "テキストスタイル6";
+"Text style 7" = "テキストスタイル7";
+"Text style 8" = "テキストスタイル8";
+"Text style 9" = "テキストスタイル9";
+"Text style 10" = "テキストスタイル10";
+"Text style 11" = "テキストスタイル11";
+"Text style 12" = "テキストスタイル12";
+"Text style 13" = "テキストスタイル13";
+"Text style 14" = "テキストスタイル14";
+"Text style 15" = "テキストスタイル15";
+"Text style 16" = "テキストスタイル16";
+"Text style 17" = "テキストスタイル17";
+"Text style 18" = "テキストスタイル18";
+"Text style 19" = "テキストスタイル19";
+"Text style 20" = "テキストスタイル20";
+"Text style 21" = "テキストスタイル21";
+"Text style 22" = "テキストスタイル22";
+"Text style 23" = "テキストスタイル23";
+
+//水印
+"This package is not valid! It may be has been damaged, please reinstall the program!" = "パッケージファイルが無効です！破損している可能性があります、プログラムを再インストールしてください！";
+"Media Mismatch" = "メディアの不一致";
+"The selected file’s duration is different from the clip you used in project and may cause issues, please reselect another file with the same duration." = "選択したファイルの持続時間がプロジェクトで使用したクリップと異なるため、問題が発生する可能性があります。同じ持続期間のファイルを再選択してください。";
+"Oops, the selected file’s duration must be the same as the clip you used in project." = "選択したファイルの持続時間は、プロジェクトで使用したクリップと同じでなければなりません。";
+
+//重复"Show Audio Indicator" = "オーディオインジケータを表示";
+//重复"Hide Audio Indicator" = "オーディオインジケータを隠す";
+//重复"Viewable by:" = "閲覧者：";
+//重复"Music Trak" = "ミュージックトラック";
+//重复"Video Trak" = "ビデオトラック";
+//重复"Destination:" = "目的地：";
+
+"No write privilege for the target directory, please specify a new directory." = "ターゲットディレクトリの書き込み権限がありません。新しいディレクトリを指定してください。";
+
+
+"Show Speed Control" = "スピードコントロールを表示";
+"Can't find the file, please make sure the filename and path are not changed:" = "ファイルが見つかりません。もう一度、ファイル名とパスをご確認ください。";
+
+"No disc.Please insert a blank one." = "ディスクがありません。空白のディスクを挿入してください。";
+"Customize Equalizer" = "イコライザのカスタマイズ";
+
+"Countdown1" = "カウントダウン1";
+"Countdown2" = "カウントダウン2";
+"Countdown3" = "カウントダウン3";
+"Countdown4" = "カウントダウン4";
+"Countdown5" = "カウントダウン5";
+"Countdown6" = "カウントダウン6";
+"Countdown7" = "カウントダウン7";
+"Countdown8" = "カウントダウン8";
+"Countdown9" = "カウントダウン9";
+"Black" = "ブラック";
+//重复"Blue" = "ブルー";
+//重复"Green" = "グリーン";
+"Grey" = "グレー";
+//重复"Orange" = "オレンジ";
+//重复"Red" = "レッド";
+"White" = "ホワイト";
+"Checkerboard" = "チェックボード";
+
+"Gradient1" = "グラデーションで塗りつぶし1";
+"Gradient2" = "グラデーションで塗りつぶし2";
+"Gradient3" = "グラデーションで塗りつぶし3";
+"Gradient4" = "グラデーションで塗りつぶし4";
+"Gradient5" = "グラデーションで塗りつぶし5";
+"Gradient6" = "グラデーションで塗りつぶし6";
+"Gradient7" = "グラデーションで塗りつぶし7";
+
+//重复"No write privilege for the target directory, please specify a new directory." = "ターゲットディレクトリの書き込み権限がありません。新しいディレクトリを指定してください。";
+//重复"Show Audio Indicator" = "オーディオインジケータを表示";
+//重复"Hide Audio Indicator" = "オーディオインジケータを隠す";
+//重复"Viewable by:" = "閲覧者：";
+//重复"Music Trak" = "ミュージックトラック";
+//重复"Video Trak" = "ビデオトラック";
+//重复"Destination:" = "目的地：";
+//重复"No disc.Please insert a blank one." = "ディスクがありません。空白のディスクを挿入してください。";
+//重复"Customize Equalizer" = "イコライザのカスタマイズ";
+//new
+"This app requires camera access to record video." = "ビデオを録画するためにカメラにアクセスする必要があります。";
+"This app requires microphone access to record audio." = "オーディオを録音するためにマイクにアクセスが必要です。";
+"This app needs to send Apple Events to control iTunes." = "iTunesを制御するためアップルイベントを送信する必要があります。";
+"Filmora does not have access to your Camera and Microphone. " = "Filmoraはカメラとマイクにアクセスできません。";
+"Filmora does not have access to your screen recording." = "Filmoraは、画面録画にアクセスできません。";
+"To allow access, open System Preferences, click on Security & Privacy and adjust the Privacy settings there." = "アクセスを許可するには、「システム環境設定」を開いて、「セキュリティとプライバシー」をクリックして、プライバシー設定を調整してください。";
+"Drop Shadow" = "ドロップシャドウ";
+
+
+//文案缺失"This app is running from a read-only disc image." = "";
+//文案缺失"Problem might occur when running in disc image. It is recommended that you finished app installation by moving app to your Applications Folder." = "";
+
+
+"16:9 (Widescreen)" = "16:9 (ワイドスクリーン)";
+"1:1 (Instagram)" = "1:1 (Instagram)";
+"9:16 (Portrait)" = "9:16 (縦画面)";
+"4:3 (Standard)" = "4:3 (標準)";
+"21:9 (Cinema)" = "21:9 (シネマスコープ)";
+
+"Select Project Aspect Ratio" = "縦横比を設定";
+
+"Change Project Aspect Ratio" = "縦横比を変更";
+
+"All Effects" = "すべてのエフェクト";
+
+//9.1
+"Auto Enhance" = "自動補正";
+//重复"Amount" = "量";
+"High Quality (Full)" = "超高品質 (Full)";
+"Better Quality (1/2)" = "高品質 (1/2)";
+"Medium Quality (1/4)" = "標準品質 (1/4)";
+"Low Quality (1/8)" = "普通品質 (1/8)";
+
+"Filmstock" = "Filmstock";
+"Open Filmstock" = "Filmstockを開く";
+
+// 9.1.3
+"Enable hardware acceleration for video decoding" = "ビデオをデコードする際、ハードウェアアクセラレーションを有効にする";
+"Enable hardware acceleration for video encoding" = "ビデオをエンコードする際、ハードウェアアクセラレーションを有効にする";
+"The state of GPU rendering and hardware decoding has been changed and will take effect after rebooting the program." = "GPUレンダリングとハードウェアデコードの状態が変更されました。Filmoraの再起動で有効になります.";
+"Name your custom text settings. They will be saved under the \"Custom\" category in your Titles library." = "オリジナルのカスタムテキストを作成し、名前を付けます。 作成されたカスタムテキストはタイトルライブラリの「カスタム」の中に保存されます。";
+"Save as Custom" = "カスタムとして保存";
+"SAVE AS CUSTOM" = "カスタムとして保存";
+//9.2.0
+"Render Preview" = "レンダリングプレビュー";
+"Rendering files" = "レンダリングファイル";
+"Creating preview render for smooth playback" = "スムーズにプレビューするため、レンダリングを実行中です。";
+"Rendering frame %d of %lld" = "フレーム %d の %lldをレンダリング";
+"Rendering frames: %lld of %lld" = "フレーム %d の %lldをレンダリング";
+"Estimated Time Left: %@" = "推定残り時間：%@";
+"Success! Your video has been created." = "ビデオは正常に作成されました。";
+"Click this \"Render Preview\" button for smooth playback. You can delete unused render files to free up disk space by going to 'File' > 'Preferences' and finding the option in the 'Performance' tab." = "プレビューをスムーズに実行するには、「プレビューレンダリング」をクリックしてください。ディスク容量を確保するには、「ファイル」＞「設定」＞「パフォーマンス」より、使用しないレンダリングファイルを削除してください。";
+"File name should not begin with a dot \".\"" = "ファイル名はドット 「.」で始められません。";
+"If you use dot \".\" at the beginning of your file's name the file will be hidden." = "ファイル名の先頭に「.」を使用すると、ファイル名が表示されません。";
+"Use \".\"" = "「.」を使用";
+"Oops! You aren't subscribed to a Filmstock plan through this Wondershare ID." = "ご入力されたWondershare IDはFilmstock のサブスクリプションプランに登録されていません。";
+"Delete Preview Render Files" = "プレビュー レンダリングファイルを削除";
+"Tutorials" = "チュートリアル";
+"Give Feedback" = "フィードバックを送信";
+"Preview Render:" = "レンダリングプレビュー：";
+"Background render" = "バックグラウンドレンダリング";
+"Start after" = "自動レンダリング開始時：";
+"Seconds" = "秒後";
+"Preview Render files folder:" = "プレビューレンダリングファイルのフォルダ：";
+"Automatically delete render files when closing a project file" = "プロジェクトファイルを閉じる際に、レンダーファイルを自動的に削除する";
+"Delete render files" = "レンダリングファイルを削除";
+"Are you sure you want to delete all render files?" = "すべてのレンダリングファイルを削除してよろしいですか？";
+"Auto Ripple" = "自動リップル";
+"Auto Ripple On" = "自動リップルをオンにする";
+"Auto Ripple Off" = "自動リップルをオフにする";
+//"Keyboard shortcuts"
+//重复"Project Media" = "プロジェクトメディア";
+"Shared Media" = "共有メディア";
+"Split Screen" = "分割表示";
+"Advanced Split Screen Edit" = "詳細";
+//重复"Media" = "メディア";
+"Volume:" = "音量";
+"Pan:" = "パン：";
+"Error! Low disk space" = "エラー！ ディスク容量が足りません。";
+"Error! Render folder is full" = "エラー！ レンダリングフォルダに空き容量がありません。";
+"Insert Mode:" = "挿入モード：";
+"Split selected track only and insert" = "選択したトラックのみを分割して挿入する";
+"Split all tracks and insert" = "すべてのトラックを分割して挿入する";
+"The file name(s) would be too long for the destination folder. You can shorten the file name and try again, or try a location that has a shorter path." = "ファイル名の長さが、指定のフォルダに対して長すぎる可能性があります。短いファイル名に変更して再実行するか、より短いパス名がある場所に移動してください。";
+"There is not enough disk space. Free up disk space and try again." = "ディスク容量が不足しています。ディスクスペースを確保してから再度お試しください。";
+"The Split Screen clip has been modified. Do you want to save the changes?" = "分割表示クリップが変更されました。変更を保存しますか？";
+//重复"Folder" = "フォルダ";
+"Import media here to use it in multiple projects." = "メディアを複数のプロジェクトで使用するには、ここにインポートしてください。";
+"The file name(s) would be too long for the destination folder. Try a location that has a shorter path." = "ファイル名の長さが、指定のフォルダに対して長すぎる可能性があります。より短いパス名がある場所に移動してください。";
+"Drag a video or image onto the drop zone in previewer to create your split screen clip. Click the \"Advanced\" button to trim each sub clip." = "分割表示のクリップを作成するには、プレビューアのドロップゾーンにビデオまたは画像をドラッグしてください。「高度編集」ボタンをクリックして、各サブクリップを編集することも可能です。";
+"Add to Split Screen" = "分割表示に追加";
+//9.2.0 缺失
+"Import Frequently Used Media Here to Use Across Projects" = "よく使用するメディアをここにインポートしてプロジェクト間で使用する";
+
+"Confirm your order information" = "ご注文情報を確認してください";
+"Confirm" = "確認";
+"Email" = "Eメール";
+"Order number" = "注文番号";
+"Product name" = "製品名";
+"Telephone number" = "電話番号";
+"Are you sure you want to remove all render files?" = "レンダリングファイルを全て削除してよろしいですか？";
+"Are you sure you want to remove all proxy files?" = "プロキシファイルを全て削除してよろしいですか？";
+"There is not enough free disk space to complete preview render, please free up some disk space and try again." = "プレビューレンダリングを実行するためのディスク容量が足りません。ディスク容量を確保してから再度お試しください。";
+
+"Individual Plan" = "個人向けプラン";
+"Business Plan" = "ビジネスプラン";
+"Academic Plan" = "学生・教職員プラン";
+"Manage My Account" = "マイアカウントを管理";
+"Nothing configurable, please click a split screen section in Previewer to continue editing." = "設定可能なものがありません。分割表示プレビューアをクリックして編集を続けてください。";
+"Fit Split Screen Duration on main Timeline" = "分割表示のメディア持続時間をタイムラインに一致させる";
+
+"Split Screen 1" = "分割表示1";
+//重复"Shared Media" = "共有メディア";
+//重复"Import Frequently Used Media Here to Use Across Projects" = "よく使用するメディアをここにインポートしてプロジェクト間で使用する";
+"Confirm your order information" = "注文情報を確認してください";
+//重复"Confirm" = "確認";
+//"Email" = "Eメールアドレス";
+//重复"Order number" = "注文番号";
+//重复"Product name" = "製品名";
+//重复"Telephone number" = "電話番号";
+//重复"Are you sure you want to remove all render files?" = "レンダリングファイルを全て削除してよろしいですか？";
+//重复"Are you sure you want to remove all proxy files?" = "プロキシファイルを全て削除してよろしいですか？";
+//重复"There is not enough free disk space to complete preview render, please free up some disk space and try again." = "プレビューレンダリングを実行するためのディスク容量が足りません。ディスク容量を確保してから再度お試しください。";
+//重复"Confirm your order information" = "注文情報を確認してください";
+//重复"Confirm" = "確認";
+//重复//"Email" = "Eメールアドレス";
+//重复"Order number" = "注文番号";
+//重复"Product name" = "製品名";
+//重复"Telephone number" = "電話番号";
+//重复"Are you sure you want to remove all render files?" = "レンダリングファイルを全て削除してよろしいですか？";
+//重复"Are you sure you want to remove all proxy files?" = "プロキシファイルを全て削除してよろしいですか？";
+
+
+//文案缺失"Advanced" = "";
+"Render Timeline" = "プレビューレンダリング";
+//文案缺失"The upload has failed, but the video has been saved to your hard disk. Please sign in your YouTube account again if necessary and upload the file again." = "";
+//文案缺失"Open File Location" = "";
+
+"Untitled" = "タイトルなし";
+"Split Screen Duration" = "分割表示の持続期間";
+"Enable Split Screen Animation" = "分割表示のアニメーションを有効にする";
+
+"Preparing..." = "準備中…";
+"Creating..." = "変換中…";
+"Make TSFolder..." = "TSフォルダを作成…";
+"Copy TSFolder..." = "TSフォルダをコピー…";
+"Make DVDMedia..." = "DVDメディアを作成…";
+"Make ISO..." = "ISOを作成…";
+"Copy ISO..." = "ISOをコピー…";
+"Burning..." = "作成中…";
+"Uploading..." = "アップロード中…";
+"Create DVD Menu" = "DVD メニューを作成";
+
+"Invalid characters in DVD name! \"*./[]\\:\";|=\", as well as Japanese and Chinese characters are not allowed!" = "ファイル名に無効な文字が！ \"*./[]\\:\";|=\"だけでなく、日本語や中国語の文字が許可されていません！";
+
+"How kinds of videos you are planning to make?\nWe will provide relative resources/effects based on your opinion in the futher. (Max. 3 choices)" = "差し支えなければ、作成される動画の種類をお知らせください。お客様の貴重なご意見を今後の編集エフェクトの開発の参考にさせていただきます。（最大3つまで選択可能）";
+"Submit" = "送信";
+"Skip" = "スキップ";
+"Follow us for more tutorials." = "Filmora公式チャンネルをフォローする";
+//9.2.5
+//文案缺失"Video Tutorials" = "";
+"Learn Filmora" = "スタートガイドを始める";
+"Quick Tour" = "クイックスタート";
+"Hi, thanks for choosing Filmora. We made this quick start tour to help you jump in and make amazing videos. It'll only take 1 minute!" = "Filmoraをご利用いただき誠にありがとうございます。 動画編集をさらに簡単にお楽しみいただけるよう、1分間のクイックスタートガイドをご覧ください。";
+"1/5 Import Media" = "1/5メディアをインポート";
+"Import video clips, images, and audio files." = "ビデオクリップ、画像、およびオーディオファイルをインポートしてみましょう。";
+"NEXT" = "次へ";
+"2/5 Add Resources to Project" = "2/5プロジェクトにリソースを追加";
+"Add Resources to Project" = "プロジェクトにリソースを追加";
+"Just drag and drop! Add clips, titles, transitions, effects, and more to the timeline easily." = "ドラッグ＆ドロップするだけ！クリップ、タイトル、トランジション、エフェクトなどをタイムラインに簡単に追加可能。";
+"3/5 Manage Clips on Timeline" = "3/5タイムラインでクリップを整理";
+"Manage Clips on Timeline" = "タイムラインでクリップを整理";
+"Split clips using the 'scissors' tool. Drag clips to move them to different tracks." = "「はさみ」ツールを使用してクリップを分割してください。クリップをドラッグして、別のトラックに移動してみましょう。";
+"4/5 Preview Your Project" = "4/5プロジェクトをプレビュー";
+"Preview Your Project" = "プロジェクトをプレビュー";
+"Drag the playhead to where you want to start watching and click the 'Play' button." = "再生ヘッドを視聴を開始する場所にドラッグし、「再生」ボタンをクリックしてください。";
+"5/5 Export and Share" = "5/5エクスポートと共有";
+"Export and Share" = "エクスポートと共有";
+"Export your video to your computer or share it on social media." = "ビデオをエクスポートするか、ソーシャルメディアで共有してください。";
+"Finish" = "終わり";
+"Click here to watch video tutorials, read our user guide, and more." = "こちらから動画チュートリアルやユーザーガイドがご覧いただけます。";
+"START A NEW VIDEO" = " 新しいプロジェクトを開始する";
+"STAY IN THIS PORJECT" = " サンプルプロジェクトを編集する";
+"Well Done!" = "よくやった";
+"You finished the Quick Start guide! Now you can keep playing with this sample project, or you can start a brand new creation that’s all your own." = "クイックスタートガイドが終了しました。これで、独自の作成を開始したり、Filmoraの詳細を学ぶことができます。";
+"Are you sure you want to quit the Quick Start tour? It's only 1 minute long and you learn a lot." = "本当にクイックスタートガイドを終了しますか？";
+"Continue" = " 続ける";
+"Quit the tour" = " 終了";
+"Click here to import your own pictures, videos, or audio" = "ここをクリックして、写真、ビデオ、およびオーディオファイルをインポートしてください。";
+"When you're finished, click 'Export' to export your video." = "編集完了したら、「出力」をクリックしてビデオを出力してください。";
+//文案缺失"1 minute" = "";
+//文案缺失"Drag and drop" = "";
+//文案缺失"Drag" = "";
+//文案缺失"space" = "";
+"Filmora Quick Start" = "Filmoraクイックスタート";
+"1 Learning the Interface" = "1操作画面について";
+"2 Creating a Project" = "2プロジェクトの作成";
+"3 Importing Media" = "3メディアのインポート";
+"4 Editing Basics" = "4基本編集";
+"5 Exporting Media" = "5メディアのエクスポート";
+"6 Performance and Preferences" = "6パフォーマンスと設定";
+"7 Using the Timeline" = "7タイムラインの使用";
+"8 Editing Audio" = "8オーディオの編集";
+"9 Color Correction" = "9色補正";
+"10 Text and Titles" = "10テキストとタイトル";
+"11 Transitions" = "11トランジション";
+"12 Effects" = "12エフェクト";
+"13 Auto Ripple" = "13自動リップル";
+"Quick Start Guide" = "クイックスタートガイド";
+
+//9.2.9
+"REGISTER" = "登録";
+"Forget password?" = "パスワードをお忘れの方はこちら？";
+//重复//"Email" = "Eメールアドレス";
+"Please input your email" = "メールアドレスを入力してください";
+"Password" = "パスワード";
+"Confirm Password" = "パスワード";
+"Please enter a vaild email" = "正しいメールアドレスを入力してください";
+"Please enter a password" = "パスワードを入力してください";
+"Enter a combination of at least six numbersletters & symbols." = "6〜16桁のパスワードを入力してください。";
+"The password you\ve entered is incorrect." = "パスワードが不一致です！";
+"Something wrong please try again!" = "エーラーが発生しました、再試行してください。";
+"Login successfully" = "ログインに成功しました";
+"Success" = "成功";
+"Error" = "エラー";
+"In Process" = "処理中";
+"Create an Account" = "新規登録";
+"or login with" = "SNSアカウントでログイン";
+"Create Account Successfully!" = "アカウントを新規作成しました！";
+"Log in to your Wondershare ID" = "Wondershare IDログイン";
+"Create your Wondershare ID" = "Wondershare IDを新規作成";
+"Already have an account?" = "既にアカウントをお持ちですか？";
+"Sign in here" = "ログイン";
+"Not a member?" = "はじめてご利用される方";
+//重复"OK" = "OK";
+"Back to Log In" = "ログインに戻る";
+"Next Step" = "次へ";
+"Reset Password" = "パスワードをリセット";
+"New Password" = "新しいパスワード";
+"Please confirm your password" = "パスワードを確認してください";
+"Please wait for follow-up actions!" = "フォローアップのアクションを待ってください！";
+"Didn't receive an email?" = "コードを受け取りませんでしたか？";
+"Click here to" = "迷惑メールフォルダを確認、または";
+"resend" = "再送信";
+"Forgot your password?" = "パスワードをお忘れですか？";
+"Enter your email address" = "お客様のEメール";
+"For your account security please enter your verification code below. We sent your verification code to" = "セキュリティのため、認証コードを入力してください。";
+"Enter verification code" = "認証コードを入力してください";
+"By creating this account you are agreeing to our" = "このアカウントを作成すると、";
+"Privacy Policy" = "プライバシーポリシー";
+"EULA" = "エンドユーザー使用許諾契約書";
+"First Name" = "名";
+"Last Name" = "姓";
+"Please enter a valid first name." = "「名」を入力してください";
+"Please enter a valid last name." = "「姓」を入力してください";
+
+"Active Device Limit" = "アクティブデバイスの制限";
+"Empower Your Imagination" = "想像力のその先へ";
+"Log In on this Device" = "このデバイスでログイン";
+"Do Not Log In" = "ログインしない";
+"You are currently signed in as %@ on %d other devices. Your device limit is %d" = "現在、他の %d つのデバイスで %@ としてサインインしています。 デバイス数の制限は %d つです";
+"If you log in on this device using this account you will be logged out on the following device:%@" = "このアカウントを使用してこのデバイスでログインすると、次のデバイスからログアウトされます：%@";
+"Loading..." = "読み込み中...";
+"Try Again" = "再試行";
+"Page Did Not Load" = "ページが読み込まれませんでした";
+"The page could not be loaded. Please try one of the following solutions:\n1. Check your network settings and, if there's no problem, try again.\n2. Disable or change the settings on your firewall and try again." = "ページが読み込まれませんでした。 次の解決策を試してください：\n1. ネットワーク設定を確認し、問題がない場合は再試行してください。\n2.ファイアウォールの設定を無効にするか変更して、再試行してください。";
+
+"Network connection failed" = "ネットワーク接続に失敗しました";
+
+"We noticed that you added some footage into the project.Do you want to export your video?" = "プロジェクトに映像を追加したことがわかりました。ビデオをエクスポートしますか？";
+
+"Project Library Window at Startup:" = "起動時のプロジェクトライブラリウィンドウ:";
+"Show this window when Filmora launches" = "Filmoraの起動時にこのウィンドウを表示する";
+"Show Startup window when Filmora launches" = "Filmoraの起動時にこのウィンドウを表示する";
+
+//Old Project conversion
+"If the conversion fails, you can still use your original version of Filmora to open the project file." = "変換に失敗した場合でも、元のバージョンのFilmoraを使用してプロジェクトファイルを開くことができます。";
+"Failed to convert the project file" = "プロジェクトファイルの変換に失敗しました";
+"Please use your original version of Filmora to open the project file." = "元のバージョンのFilmoraを使用して、プロジェクトファイルを開いてください。";
+"Contact our Customer Support if you don't have your original version any more." = "元のバージョンがない場合は、カスタマーサポートにお問い合わせください。";
+
+
+//9.2.11
+"Help Center" = "ヘルプセンター";
+
+//9.3.0
+
+"Follow this tutorial to get up to speed." = "チュートリアルを視聴して編集の効率を上げましょう。";
+
+"Match to Media" = "メディアに一致";
+"Keep Project Settings" = "プロジェクト設定を保持する";
+
+"You have exceeded the character limit; please use multiple text boxes." = "文字数の上限に達しました。複数のテキストボックスをご利用ください。";
+
+"Do you want to keep the split clips as a group?" = "分割クリップをグループ化しますか？";
+"Keep Group" = "グループ化を保持";
+"Ungroup" = "グループ解除";
+
+//
+"Straight Alpha" = "ストレートアルファ";
+"Premultiplied Alpha" = "合成アルファ";
+"Ignore Alpha" = "アルファを無視する";
+//
+"Click to split" = "クリックして分割する";
+"Drag to move playhead" = "ドラッグしてプレイヘッドに移動";
+//节拍检测
+"Beat Detection" = "ビート検出";
+"Beat Options" = "ビートオプション";
+"Highlight every" = "ハイライト間隔";
+"Highlight offset" = "ハイライト指定";
+"Beats" = "ビート";
+"Mark highlight beats only" = "ハイライトされたビートのみをマーク";
+"Beats analyzed. Drag and drop the music to the timeline to see beat markers." = "ビートが検出されました。音楽ファイルをタイムラインにドラッグアンドドロップし、ビートマーカーを確認してください。";
+"Filmora is installing beat detection plugins. Please wait." = "ビート検出プラグインをインストールしています。少々お待ちください。";
+"beat detection completed" = "ビート検出が完了しました";
+"beat detected failed" = "ビートが検出されませんでした";
+"Request time out, Please check your network connection." = "タイムアウトをリクエストしてください。ネットワーク接続を確認してください。";
+"Click here to manually install the plugin." = "プラグインを手動でインストールするには、ここをクリックしてください。";
+
+"Color Enhancement" = "カラーエンハンス";
+"Threshold" = "しきい値";
+"Value" = "値";
+
+"Frames" = "フレーム";
+//9.3.2
+"Included " = "搭載素材";
+"You don't have any Favorites. Click 'Favorite' while hovering over a resource to add an item to this folder. " = "お気に入りがありません。お気に入りフォルダに素材を追加するには、素材にマウスのカーソルを合わせながら「お気に入り」をクリックしてください。";
+"Find even more video effects, music, stock footage, and images on Filmstock." = "Filmstockからは、さらに多くの動画エフェクト、音楽、ストック映像、画像が入手できます。";
+"Visit Filmstock" = "Filmstockを開く";
+"Loading..." = "読み込み中…";
+"Your One-Stop Shop for Royalty-Free Video Effects, Audio, and Stock Media." = "ロイヤリティフリーの動画エフェクトや、サウンド素材、メディア素材が一気に揃うサイトです。";
+"You're not connected to the internet" = "インターネットに接続されていません。";
+"You need internet access to visit Filmstock. Please check your connection and try again." = "Filmstockにアクセスするには、インターネットに接続する必要があります。ネット接続を確認してから、もう一度お試しください。";
+//重复"Try Again" = "再試行";
+"Access more effects! Try Filmstock free for %@ days." = "より多くのエフェクトを入手！ Filmstockを%@日間無料でお試しください。";
+"Access more effects! Try" = "より多くのエフェクトを入手！";
+"free for %@ days." = "を%@日間無料でお試しください。";
+"Start Free Trial" = "無料体験を開始";
+"I agree to the Terms and Conditions." = "利用規約に同意します。";
+"I agree to" = "同意";
+"the Terms and Conditions" = "利用規約";
+"Free Trial of Filmstock" = "Filmstockを無料体験";
+"1. You'll get the Free Trial for %@ days." = "1. %@日間無料で試用可能です。";
+"For your trial period you'll be able to use both Standard and Premium video effects and other resources recommended here for free." = "ご試用いただけるFilmstockの有料素材は、ソフト内に表示されているFilmstockの素材のみです。";
+"When your trial ends you can choose to purchase a Filmstock plan to continue using these resources." = "試用期間が終了した後も、Filmstockの有料素材を使用されたい場合、Filmstockの有料プランをご購入ください。";
+"Got It" = "了解";
+"Congrats! Your free trial will last from %@ to %@." = "Filmstockの有料素材（一部）は、%@から%@まで無料でご試用いただけます。";
+"from %@ to %@" = "%@から%@まで";
+"Free Trial" = "無料体験";
+"%@ Days Left" = "残り%@日";
+"Sorry, your free trial has ended. To continue using Filmstock resources please purchase a subscription." = "無料体験期間が終了しました。Filmstockの素材を引き続き使用するには、サブスクリプションプランをご購入ください。";
+"Subscribe" = "サブスクリプションを購入";
+"Refresh My Account" = "アカウントを更新";
+"You are subscribed to the Filmstock Standard Plan. If you need to try the effects from the Premium Plan, please upgrade your account." = "Filmstockのスタンダードプランに登録されています。プレミアムプランのエフェクトをご利用いただく場合は、アカウントをアップグレードしてください。";
+"You are subscribed to the Filmstock Premium Plan. All the recommended effects below can be used." = "Filmstockのプレミアムプランに登録されています。下記すべての推奨エフェクトをご利用いただけます。";
+"Subscribe to Premium Plan" = "プレミアムプランのサブスクリプションを購入";
+"A video preview of the effects in this pack." = "このパックのエフェクトのビデオをプレビューします。";
+"Downloading..." = "ダウンロード中…";
+"Cancel Download" = "ダウンロードをキャンセル";
+"Find effects downloaded from Filmstock here." = "Filmstockからダウンロードしたエフェクトはこちらから検索してください。";
+"Free plan" = "フリー";
+"Standard plan" = "スタンダードプラン";
+"Premium plan" = "プレミアムプラン";
+"StIll have problems, please click here." = "まだご不明な点がございましたら、FAQページにてご参考ください。";
+"click here" = "FAQページへ";
+"Favorite" = "お気に入";
+"upgrade_Link" = "アップグレード";
+"Login Required" = "ログインが必要です";
+"Filmstokcs need login and register" = "続行するにはWondershare IDが必要になります。ログイン、または無料でアカウントを作成してください。";
+"Wondershare ID provides you an easy way to activate your software access Filmora Effect Store and Filmora.io community." = "Wondershare IDを取得すると、Filmoraのアカウント管理及びエフェクトストアでのエフェクトの管理が簡単にできます。";
+
+//9.3.5
+"Get More Effects from Filmstock" = "Filmstockからより多くのエフェクトを入手";
+"Try Filmstock free for %d days" = "Filmstockを%d日間無料体験";
+
+//1.2 unlogin users
+"Activate Filmora" = "Filmoraのライセンス認証";
+"Wondershare Filmora (UNACTIVATED)" = "Wondershare Filmora（ライセンス未認証）";
+"Sign in with your Wondershare ID to activate Filmora" = "Wondershare IDでログインしてFilmoraをアクティベートする";
+"Enter the email you used to place the order" = "ご購入際のメールアドレスを入力してください";
+"Enter your password" = "パスワードを入力してください";
+"Forget password" = "パスワードをお忘れですか？";
+"Sign in to Activate Filmora Now" = "Filmoraのライセンス認証をする";
+"OR" = "または";
+"If you have a license code, or have other trouble to activate Filmora, click here to troubleshoot." = "登録コードをお持ちの場合は、ここをクリックしてFilmoraのライセンス認証をしてください。";
+"If you're having trouble activating Filmora, click here to troubleshoot." = "Filmoraのライセンス認証に問題がある場合は、ここをクリックしてトラブルシューティングを行ってください。";
+"click here" = "ここ";
+
+//1.3 login users
+"You are signed in with the Wondershare ID (%@) and are using the free plan of Filmora." = "Wondershare ID （%@）でサインインしました。現在はFilmoraの無料プランを使用しています。";
+"If you have purchased a plan, click here to refresh your activation status." = "すでにプランをご購入されている場合は、ここをクリックしてライセンスステータスを更新してください。";
+"Please make sure you‘re using the same OS platform you purchased it for." = "ご購入された製品とパソコンのOSが合っているかを確認してください。";
+
+"Wondershare Filmora (ACTIVATED)" = "Wondershare Filmora（ライセンス認証済）";
+"Your Wondershare ID (%@) has been activated sucessfully." = "Wondershare ID （%@）は正常にアクティベートされました。";
+"Wondershare ID" = "Wondershare ID";
+"Lifetime Plan/Annualy Plan/Monthly Plan/Quaterly Plan" = "ライフタイムプラン/年間プラン/月間プラン/3ヶ月間プラン";
+"Expires" = "有効期限";
+"Your license has been activated successfully." = "ライセンスが正常にアクティベートされました。";
+"You are signed in with the Wondershare ID (%@) .We are refreshing your account info now. It may take a few seconds." = "Wondershare ID （%@）でサインインしました。アカウント情報を更新しています。しばらくお待ちください。";
+//重复"You are signed in with the Wondershare ID (%@) and are using the free plan of Filmora." = "Wondershare ID （%@）でサインインしました。現在はFilmoraの無料プランを使用しています。";
+"It looks like this Wondershare ID has been deactivated on this device, please re-login on this device or double check the activation status in Account Center." = "ご注文の際に使用したWondershare IDアカウントでサインインしているか、ご購入された製品とパソコンのOSが合っているかを確認してください。";
+"There is no Wondershare ID associated with that email address. Make sure to use the email address you used to place the order. You can find it in your confirmation email." = "入力されたメールアドレスで登録されたWondershare IDがみつかりませんでした。 ご注文の際に使用したメールアドレスを使用してください。ご 注文確認メールで関連情報を確認できます。";
+"The password you've entered is incorrect. Click Forget password to reset your password." = "パスワードが正しくありません。 パスワードを忘れた場合は、ここをクリックして再設定してください。";
+"Enter the email address you used to purchase your license and the activation code you received in your confirmation email. Or click here to retrieve your license code." = "ご注文時に使用したメールアドレスとご注文確認メールで受け取った登録コードを入力してください。ここをクリックして登録コードを再取得することも可能です。";
+"Licensed e-mail" = "登録Eメールアドレス";
+"Activation code" = "登録コード";
+"FREE TRIAL" = "無料体験";
+"Activate Filmora Now" = "今すぐFilmoraのライセンス認証をする";
+"If you have purchased a plan, click here to refresh your authorization." = "プランをご購入された場合は、ここをクリックして使用権限を更新してください。";
+"We are refreshing your account info now. It may take a few seconds." = "アカウント情報を更新しています。しばらくお待ちください。";
+"Still unactivated? Please check that you're using the same OS platform you purchased it for. For more troubleshooting, click here." = "ライセンス認証が完了しなかった場合は、ご購入された製品とパソコンのOSが合っているかをご確認ください。トラブルシューティングの詳細については、ここをクリックしてください。";
+"click here2" = "ここ";
+
+//9.5
+"Split Button" = "分割ボタン";
+"Show the split button on timeline playhead" = "タイムラインの再生ヘッドに分割ボタンを表示する";
+"Unlisted" = "限定公開";
+"Select all clips with the same color mark" = "同じ色のクリップを選択する";
+"Close Gap" = "ギャップを閉じる";
+
+// 9.5 任务部分
+"1. Videos about daily life are popular on YouTube." = "1. YouTubeでは日常生活をテーマにした動画が人気です。";
+"2. When using a green screen make sure your space is well lit." = "2. グリーンスクリーンを使用する場合は、スペースに十分な光が当たるようにしてください。";
+"3. 'Magic hours' for video lighting: right after sunrise and right before it sets." = "3. 撮影時の照明の「マジックアワー」は、日の出の直後と日没の直前です。";
+"4. Invent your own challenge video and you could go viral." = "4. オリジナルのチャレンジ動画を作成し、注目を集めましょう。";
+"5. Clap to create a waveform spike for easy audio syncing." = "5. クラップして波形のスパイクを作成し、簡単にオーディオを同期できます。";
+"6. The internet loves animals. Could your pet be the next big star?" = "6. ペット動画は常にネットで人気があります。あなたのペットが、次のビッグスターになるかもしれません。";
+"7. Use text in Facebook videos - 85% of them are watched without sound." = "7. Facebookの動画にテキストを使おう - 85%は音声なしで視聴されています。";
+"8. When shooting outdoors, keep the sun behind you." = "8. 屋外で撮影するときは、太陽の光をバックに撮影しましょう。";
+"9. Add clips to Shared Media to access them in future projects. " = "9. 共有メディアにクリップを追加して、次回以降のプロジェクトでアクセスできるようにしましょう。";
+"10. Create a video intro that shows off your personality." = "10. あなたの個性をアピールするビデオイントロを作成しましょう。";
+"11. Fade down your background music while someone's talking." = "11. 人物が話している際には、BGMをフェードダウンさせます。";
+"12. Use timeline markers to label your clips and stay organized." = "12. タイムラインマーカーを使って、クリップにラベルを付けて整理しましょう。";
+"13. You can record voiceovers inside Filmora." = "13. Filmoraを使って、ナレーションを録音できます。";
+"14. Mark beats with Beat Detection and edit to your music." = "14. ビート検出機能を使ってビートをマークし、音楽に合わせて編集しましょう。";
+"15.Build \"social proof\" with a testimonial video" = "15.テスティモ二アル動画でコメントやフィードバックを残すことができます。";
+"16.Introduce the team with a company video." = "16.会社の動画でチームを紹介しましょう。";
+"17. Create a music video for your fire audio track." = "17. オーディオトラックでオリジナルミュージックビデオを作成。";
+//重复"Redo" = "やり直し";
+"Redo last action." = "最後の操作をやり直します。";
+"Undo" = "元に戻す";
+"Undo last action." = "最後の操作を元に戻します。";
+//重复"Delete" = "削除";
+"Delete selected media on timeline." = "タイムライン上で選択したメディアを削除します。";
+//重复"Split" = "分割";
+"Split selected media at playhead location." = "プレイヘッドの位置で選択したメディアを分割します。";
+//重复"Crop" = "クロップ";
+"Choose a smaller section of your image to keep." = "画像の細部を選択して保存します。";
+"Speed" = "スピード";
+"Adjust the speed of your media or play it backwards." = "メディアの再生速度を調整したり、逆再生したりすることができます。";
+"Advanced Color Tuning" = "高度色彩補正";
+"Change the aesthetic of your media by adjusting settings like white balance, saturation, and contrast or by applying 3D LUTs." = "ホワイトバランス、彩度、コントラストなどの設定を調整したり、3D LUTを適用したりすることで、メディアのビジュアルを変更することができます。";
+"Click for more help." = "詳細はこちらへ";
+//重复"Green Screen" = "グリーンスクリーン";
+"Change your background or create special effects." = "背景を変更したり、特殊効果を作成したりします。";
+//重复"Click for more help." = "詳細はこちらへ";
+//重复"Edit" = "編集";
+"Find additional editing options like opacity, rotation, motion, and more. " = "不透明度、回転、モーションなどの編集オプションを提供します。";
+//重复"Click for more help." = "詳細はこちらへ";
+"Duration" = "再生時間";
+"Extend or reduce the duration of your media. This may change the speed." = "メディアの再生時間を延長または短縮します。 これにより速度が変わる場合があります。";
+"Right-click and visit Beat Search by previewing the music. The following music can be added to the timeline for further editing." = "ライティングを修正、色をスタイリングして動画に新たな美しさを与えます。";
+"No Effects" = "エフェクトなし";
+"1. Click to split your selected clip. " = "1.選択したクリップを分割するには、はさみのマーククリックします。";
+"2. Click, hold, and drag to move the playhead." = "2. クリックしたままドラッグしてプレイヘッドを移動させます。";
+"Right click on the song thumbnail to access Beat Detection. Then add the song to the timeline the beats will be marked for easy editing." = "曲のサムネイルを右クリックしてビート検出にアクセスします。曲をタイムラインに追加すると、ビートがマークされて編集しやすくなります。";
+"Click here for tutorials." = "チュートリアルはこちら";
+//"Click here to complete missions and earn rewards." = "ここをクリックしてミッションを完了し、賞品を獲得しましょう。";
+//"You'll also find video tutorials and creative ideas!" = "動画チュートリアルやクリエイティブアイデアもぜひ！";
+"Get Started" = "開始";
+"Advanced Challenge" = "上級チャレンジ";
+//重复"Help Center" = "ヘルプセンター";
+"Welcome! Complete the missions below to get familiar with Filmora. Do them all to earn a reward!" = "Filmoraを使いこなすには、以下のミッションを完了してください。 すべてのミッションを実行してください！";
+"Import Media 9.5" = "メディアをインポート";
+"Split a Clip" = "クリップを分割";
+//"Crop a Clip" = "クリップをクロップ";
+"Add Video Effects" = "トランジションの追加";
+//"Try the Speed Controls" = "スピードの調整を試す";
+"Export Your Video" = "動画をエクスポート";
+"When you're done, click here to access your prize." = "完了したら、右下のボタンをクリックして賞品をGETしてください。";
+"Claim Your Reward" = "賞品をGET";
+"Drag a video clip, image, or audio file from your computer and drop it into Project Media" = "パソコンからビデオクリップ、画像、オーディオファイルをドラッグして、プロジェクトメディアにドロップしてください。";
+"Done! Next" = "完了しました！次へ";
+"Learn More" = "もっと見る";
+"Click and drag to move the playhead. Then, click the scissors to split your clip." = "プレイヘッドをドラッグして移動します。次に、はさみのマークをクリックしてクリップを分割します。";
+"Crop a Clip" = "クリップをクロップ";
+"Click on the 'Crop' icon and then adjust the green box around your clip." = "クロップのアイコンをクリックして、クリップを囲む緑色のボックスを調整します。";
+"Add a Transition" = "トランジションの追加";
+"Go to Transitions and drag any transition so it's sitting between two clips." = "トランジションに移動し、トランジションをドラッグして、2つのクリップの間に配置します。";
+"Back" = "戻る";
+"Add an Effect" = "エフェクトの追加";
+"Go to Effects and choose a filter or overlay. Drag it onto a clip, or into the space above it." = "エフェクトに移動し、フィルターまたはオーバーレイを選択し、クリップまたはその上のスペースにドラッグします。";
+"Add an Element" = "エレメントの追加";
+"Go to Elements and choose a motion graphic you like. Drag it into your timeline above a clip." = "エレメントに移動して、お好きなモーションを選択し、クリップの上のタイムラインにドラッグします。";
+"Try the Speed Controls" = "スピードの調整を試す";
+"With a clip selected, click on the speed gauge icon. You'll see options to make your clip 100 times faster or slower." = "クリップを選択した状態で、スピードゲージのアイコンをクリックすると、 クリップを100倍速くしたり遅くしたりするオプションが表示されます。";
+"Click Export. Then, name your video and choose where to save it. Click Export in the window." = "エクスポートをクリックします。 次に、ビデオに名前を付け、保存先を選択します。 ウィンドウで「エクスポート」をクリックして、ミッションを完了しましょう！ ";
+"When your video is done exporting, your mission will be complete!" = "ビデオを正常にエクスポートしたら、ミッションは完了となります。";
+
+"Congrats!" = "おめでとう！";
+"For completing the Get Started missions, you've earned a free video effect pack! " = "入門ミッションを完了すると、無料のビデオエフェクトパックを獲得できます！";
+//"*One prize per account." = "*アカウントごとに1つの賞品のみを獲得可能です。";
+"Claim Your Prize" = "賞品をGET";
+"You've Earned a FREE Effect Pack! " = "無料エフェクトパックを獲得しました！";
+"*This offer is exclusive to users who completed the related tasks. " = "※関連タスクを完了したユーザーのみにご利用いただける特典です";
+//"*One prize per account." = "※賞品は各アカウントにつき１点です";
+"Choose Your FREE Effect Pack" = "無料エフェクトパックを選択";
+"Your Audience Awaits!" = "動画作成を始めよう！";
+"Get Filmora and start creating." = "Filmoraをダウンロードして、動画作成を始めよう！";
+"Filmora Lifetime plan" = "Filmora ライフタイムプラン";
+"All features" = "すべての機能";
+"Free updates" = "無料アップデート";
+"No watermark" = "ウォーターマークなし";
+"Free Tech Support" = "無料技術サポート";
+"Windows" = "Windows";
+"macOS" = "macOS";
+//重复"Buy Now" = "今すぐ購入";
+"Sorry, it looks like you've already claimed your free pack. You can download it from your account center." = "すでに無料賞品を獲得済です。アカウントセンターよりダウンロードしてください。";
+"Take Me There" = "確認する";
+"Sorry, it looks like you haven't earned this reward. In order to claim your free pack, download Filmora and complete the related tasks." = "賞品が未獲得です。Filmoraをダウンロードのうえ、タスクを完了して無料パックをGETしてください。";
+"Download Free Trial" = "無料版をダウンロードする";
+"Awesome! " = "完了！";
+"Now download your free pack." = "無料パックをダウンロードしてください。";
+//重复"Download" = "ダウンロード";
+"You already purchased this pack. Please choose a different pack." = "すでに購入済です。異なるパックを選択してください。";
+"Do more with Filmora! Complete the missions below to learn more about the program and earn a reward." = "Filmoraをさらに活用しましょう！ 以下のミッションを完了して、プログラムの詳細を学び、賞品を獲得しましょう。";
+"Try the Green Screen Tool" = "グリーンスクリーンツールを試す";
+"Add Movement with Pan and Zoom" = "パンとズームで動きを追加";
+//"Use a Split Screen Preset" = "分割画面プリセットを使用する";
+//"Try Advanced Text Editing" = "高度なテキスト編集を試す";
+//"Do Some Color Correction" = "色補正を行う";
+"Use a Keyboard Shortcut" = "キーボードショートカットを使用する";
+//重复"Try the Green Screen Tool" = "グリーンスクリーンツールを試す";
+"Add a video with green in it to your timeline and double click on it. Then, check the box next to Chroma Key. The green will be keyed out." = "タイムラインに グリーンのビデオを追加し、ダブルクリックします。 次に、「クロマキー」にチェックを入れると、 グリーンの部分がキーアウトされます。";
+
+"Add Movement with Pan & Zoom" = "パンとズームで動きを追加";
+"Select a clip in the timeline and click the 'crop' icon in the toolbar. Then, click into the Pan & Zoom tab. Set a start and end frame to create movement." = "タイムラインでクリップを選択し、ツールバーの「クロップ」アイコンをクリックします。次に、パン＆ズームタブをクリックし、開始フレームと終了フレームを設定して動きを作ります。";
+
+"Use a Split Screen Preset" = "分割画面プリセットを使用する";
+"Go to the split screen tab and drag any preset into your timeline. Then, drag video clips or images into the drop zones in the Preview panel. " = "分割表示に移動し、任意のプリセットをタイムラインにドラッグします。次に、ビデオクリップや画像をプレビューパネルのドロップゾーンにドラッグします。";
+
+"Try Advanced Text Editing" = "高度なテキスト編集を試す";
+"From the Titles tab drag any text effect into the timeline, double click on it, and choose Advanced. In the Advanced Text Editing window you can make a variety of changes. " = "「タイトル」タブからテキストエフェクトをタイムラインにドラッグし、ダブルクリックしてから、「高度編集」ボタンをクリックします。高度編集画面では、さまざまな変更を行うことができます。";
+
+"Do Some Color Correction" = "色補正を行う";
+"Double click on a clip in your timeline, then go into the Color tab and click Advanced to see all the color tuning options." = "タイムラインでクリップをダブルクリックし、「色」>「高度編集」のタブをクリックすると、すべてのカラー補正オプションが表示されます。";
+
+//重复"Use a Keyboard Shortcut" = "キーボードショートカットを使用する";
+"Go to Help > Keyboard Shortcuts to see a list of the shortcuts available and try one out. Learning these will save you a lot of time." = "「ヘルプ」> 「キーボードショートカット」に移動して、使用可能なショートカットのリストをが表示されます。ショートカットを使用することで多くの時間を節約できます。";
+"Congrats on finishing the missions!" = "ミッションが完了しました！";
+"Search the Filmora User Guide" = "Filmoraの操作ガイドを検索する";
+"SEARCH" = "検索";
+"Popular topics:" = "よくあるトピック：";
+"Activate Filmora  " = "Filmoraのライセンス認証";
+"Download free video effects" = "無料の動画エフェクトをダウンロード";
+"Remove watermark" = "ウォーターマークを削除";
+"Quick Start Tour" = "クイックスタートガイド";
+"Learn Filmora's basic workflow in 5 steps." = "5つのステップでFilmoraの基本操作を学ぶ";
+"Essential Editing Tutorials" = "基本的な編集チュートリアル";
+"Advanced Editing Tutorials" = "高度な編集チュートリアル";
+"Get Creative" = "ライセンス認証";
+"More Video Tutorials" = "他のビデオチュートリアル";
+"User Guide" = "操作ガイド";
+"Basic Editing" = "基本編集";
+"Add Effects" = "エフェクトの追加";
+"Advanced Editing" = "高度編集";
+"Export & Share" = "エクスポートと共有";
+"See More Topics >>" = "他のトピックを見る >>";
+"FAQs" = "FAQ";
+"How can I activate my Filmora license?" = "Filmoraのライセンスを認証するにはどうすればいいですか？";
+"What is Filmstock?" = "Filmstockとは何ですか？";
+"How do I download all built-in effects?" = "すべての搭載エフェクトをダウンロードするにはどうすればいいですか？";
+"Limitations of the free trial." = "試用版の制限を教えてください。";
+"How do I edit green screen videos with Filmora?" = "Filmoraでグリーンスクリーンビデオを編集するにはどうすればよいですか？";
+"How do I create a thumbnail for my video?" = "ビデオのサムネイルを作成するにはどうすればよいですか？";
+"How can I get plain text (no animation) in Filmora?" = "Filmoraでプレーンテキスト（アニメーションなし）を取得するにはどうすればよいですか？";
+"How can I add a watermark or logo to my video?" = "ビデオにウォーターマークやロゴを追加するにはどうすればよいですか？";
+"Get inspired by Filmora users like you!" = "他のFilmoraユーザを見る！";
+"Travel" = "旅行";
+"Family & Love" = "ファミリー& ラブ";
+//重复"Music" = "音楽";
+"Gaming" = "ゲーム";
+"More Categories" = "他のカテゴリ";
+"Editing Video Footage" = "映像の編集";
+"Editing Audio Clips" = "オーディオクリップの編集";
+"Editing Images" = "画像の編集";
+"Add Filters, Transitions, Sound Effects, and more" = "フィルター、トランジション、サウンドエフェクトなどの追加";
+//重复"Advanced Color Tuning" = "高度色彩補正";
+"Pan & Zoom" = "パンとズーム";
+"Play videos backwards" = "動画の逆再生";
+"See More" = "もっと見る";
+"Complete missions inside Filmora to earn a reward!" = "Filmora内のミッションを完了して賞品を獲得しましょう！";
+"Earn a Prize" = "賞品を獲得";
+"See what's possible with Filmora!" = "Filmoraで何ができるか見てみましょう！";
+"Get Creative Now" = "今すぐ開始";
+"Get More Royalty-Free Music" = "より多くのロイヤリティフリーの音楽をGET";
+//"Try it Free" = "無料体験";
+"Get More Creative Titles" = "より多くのクリエイティブなタイトルをGET";
+//重复//"Try it Free" = "無料体験";
+"Get More Transitions" = "より多くのトランジションをGET";
+//重复//"Try it Free" = "無料体験";
+"Get More Filters and Overlays" = "より多くのフィルターとオーバーレイをGET";
+//重复//"Try it Free" = "無料体験";
+"Get More Motion Elements" = "より多くのモーションエレメントをGET";
+"Try it Free" = "無料体験";
+//"Get More Royalty-Free Music."
+"Try Filmstock free for 7 days." = "Filmstockを7日間無料でお試しください。";
+"START FREE TRIAL" = "無料体験を開始";
+"I agree to the Terms and Conditions" = "利用規約に同意します";
+"1. The free trial lasts 7 days." = "1.無料体験の期限は7日間です。";
+"2. For your trial period you'll have access to a specific selection of resources from Filmstock." = "2.ご試用いただけるFilmstockの有料素材は、ソフト内に表示されているFilmstockの素材のみです。";
+"3. When your trial ends you can choose to purchase a Filmstock plan if you want to continue using these resources." = "3.試用期間が終了した後も、Filmstockの有料素材を使したい場合、Filmstockの有料プランを購入してください。 ";
+"Visit Filmstock." = "Filmstockを開く";
+"Get More Creative Titles for FREE" = "より多くのクリエイティブなタイトルを無料でGET";
+"Get More Transitions for FREE" = "より多くのトランジションを無料でGET";
+"Get More Filters and Overlays for FREE" = "より多くのフィルターとオーバーレイを無料で入手";
+"Get More Motion Elements for FREE" = "より多くのモーションエレメントを無料でGET";
+"Can you answer 2 quick questions?" = "２つの簡単な質問に回答してください。";
+"We noticed that you closed Filmora without trying it. Please let us know what we could have better. " = "Filmoraが終了しました。";
+"Your feedback will help us improve our products. Thank you!" = "よろしければサービスの向上のため、ご意見をお聞かせください。";
+"1. Why did you close Filmora without creating a video? (Check all that apply)" = "1.動画を作成せず、Filmoraを終了した理由は？（当てはまるものすべてにチェックを入れてください）";
+"I don't have any footage yet." = "まだ編集したい素材がない";
+"The interface looks too complicated." = "インターフェースが複雑すぎる";
+"I don't know how to import footage." = "素材のインポートの仕方がわからない";
+"I don't know how to start making a video." = "動画の作成方法がわからない";
+"The software crashed." = "ソフトがクラッシュした";
+" It is not a free software." = "ソフトが有料";
+"The software cannot run on my computer." = "ソフトが起動しない";
+"I'm busy. I'll try again later." = "時間がない、あとで編集したい";
+"I am not in the mood to make a video" = "動画編集をするやる気がない";
+"Other (please specifiy)" = "その他（理由をご記入ください）";
+"2. Please leave your email address. We might contact you for more information." = "2.E-mailアドレスを記入してください。";
+"Filmora Video Tutorials to Help you Get Started!" = "Filmoraのチュートリアル動画を見る！";
+"FREE Stock Videos, Audio, and Video Effects" = "無料動画、音楽、エフェクト";
+"Videos" = "動画";
+//"Audio" = "音楽";
+"Video Effects" = "エフェクト";
+"Discover More" = "もっと見る";
+"You've Earned 7 Days of the Filmstock Standard Plan" = "Filmstockのスタンダードプランを無料で７日間ご利用いただけます";
+"*This offer is exclusive to users who completed the related tasks. " = "※このプランは関連タスクを完了したユーザーのにご利用いただけます";
+"*One prize per account." = "※賞品は各アカウントにつき１点です";
+//"Claim Your Reward" = "賞品をGET";
+"Why Choose Filmstock?" = "Filmstockの特長";
+"Unlimited Downloads" = "ダウンロードし放題";
+"Download anything in the Standard Library including Filmora effects, After Effects templates, stock video, and more." = "スタンダードライブラリーのFilmoraエフェクト、アフターエフェクトテンプレート、動画その他をダウンロードする";
+"Royalty-Free License" = "ロイヤリティフリーライセンス";
+"Use anything from Filmstock in any kind of project, personal or commercial." = "Filmstockの素材を使って商用、または個人用プロジェクトを作成";
+"Constantly Growing" = "常時アップデート";
+"More of the resources you need are added every week." = "毎週様々な素材をアップデート";
+"Unique Media" = "ユニークなメディア";
+"Filmstock provides a wide selection of media assets including video effects you won't find anywhere else." = "Filmstockでは様々なオリジナルメディア素材をご用意しています。";
+"Featured Assets" = "メディア素材";
+"Filmora Effects Packs" = "Filmoraエフェクトパック";
+//重复"Videos" = "動画";
+//"Audio"
+"Images" = "画像";
+"Explore More" = "その他";
+"Success! You've Activated 7 Days Filmstock Standard Plan!" = "７日間無料のFilmtocksのスタンダードプランの申し込みが完了しました！";
+"Explore Filmstock Now" = "Filmstockを始める";
+"Opps! You’ve already redeemed this reward. You can purchase a plan to continue using Filmstock assets. " = "特典のご利用済です。Filmstockのプランをご購入いただき、引き続きサービスをお楽しみください。";
+"Subscribe Now" = "登録";
+
+// 9.5之外部分
+"Lower playback quality to improve playback performance" = "画質を下げて再生パフォーマンスを高めることができます";
+"Vertical" = "縦書き";
+"Horizontal" = "横書き";
+"Edge Processing:" = "エッジ処理:";
+"Reflect" = "ミラー";
+"Extend" = "拡大";
+"Tile" = "タイル";
+"Include Trimmed Frames" = "トリムされたフレームを含む";
+
+// WSID3.0
+"Login to your Wondershare ID" = "Wondershare IDにログイン";
+"Email address" = "Eメールアドレス";
+"Use a email address instead" = "代わりにメールアドレスを使用する";
+"Use a mobile phone instead" = "代わりに電話番号を使用する";
+"or login with" = "または";
+//"NEXT"
+"Set Password" = "パスワード設定";
+"Don't have a Wondershare ID?" = "Wondershare IDをお持ちでないですか？";
+"Create account" = "アカウント作成";
+"Verify your identity" = "本人確認";
+"To confirm your identity we'll send you a verification code to" = "ご本人確認のために、認証コードを次の宛先にお送りします。";
+"Continue" = "続ける";
+//重复"Skip" = "スキップ";
+"Sign in to a different account" = "別のアカウントにログインする";
+//重复"SIGN IN" = "ログイン";
+"Keep me signed in" = "ログイン状態を保持する";
+"Forget your password?" = "パスワードをお忘れですか？";
+"login success" = "ログイン成功";
+"Enter the code sent to" = "送信されたコードを入力してください";
+"Verify Code" = "認証コード";
+"Create a Wondershare ID" = "Wondershare IDを作成するか、";
+"Or, link this account to your current Wondershare ID." = "現在のWondershare IDにこのアカウントをリンクします。";
+"Back to sign in" = "ログインに戻る";
+"We found a Wondershare ID linked with this email. Please log in." = "このメールアドレスにリンクされているWondershare IDが見つかりました。 直接Wondershare IDでログインしてください。";
+"Please enter your email" = "メールアドレスを入力してください";
+"Please enter your mobile phone" = "電話番号を入力してください";
+//重复"Enter your password" = "パスワードを入力してください";
+"Create Password" = "パスワード設定";
+//重复"First Name" = "名";
+//重复"Last Name" = "姓";
+"Country" = "国と地域";
+"Create Account" = "アカウント作成";
+"Connect & Create Account" = "アカウントをリンク&作成";
+"Create account with email" = "メールアドレスでアカウント作成";
+"Create account with Mobile Phone" = "電話番号でアカウント作成";
+"By clicking Create account, I agree that I have read and accepted the" = "「アカウント作成」をクリックすると、<a href='httpsを読み、その内容に同意したものとみなされます";
+"Click to create an account, it means that you have read and agree to Wondershare's license policy and privacy policy" = "アカウント作成をクリックすると、Wondershare エンドユーザー使用許諾契約書とプライバシーポリシーを読み、その内容に同意したものとみなされます。";
+"Sign in with Email address" = "メールアドレスでログイン";
+//重复"New Password" = "新しいパスワード";
+//重复"Please confirm your password" = "パスワードを確認してください";
+"Success! New password set." = "新しいパスワードが正常に設定されました。";
+//重复"Password" = "パスワード";
+"This account doesn't exist. Enter a different account or" = "このアカウントは存在しません。別のアカウントを入力するか、";
+"create a new one." = "新しいアカウントを作成してください。";
+//重复"Error" = "エラー";
+"Success!" = "成功です！";
+"Oops, there's no page here." = "申し訳ございませんが、ページが見つかりません。";
+"BACK TO HOME PAGE" = "ホームページに戻る";
+"Didn't receive a code?" = "コードが届かないですか？";
+"Please wait for the message to arrive. You can also check your spam folder or" = "少々お待ちください。迷惑メールフォルダを確認するか、";
+"resend the code" = "コードを再送してください。";
+"Account does not exist." = "アカウントは存在しません。";
+"Account created successfully!" = "アカウントが作成されました。";
+"Verification code sent." = "認証コードが送信されました。";
+"Login via SMS verification code" = "SMS認証コードでログイン";
+"Please enter the displayed code" = "表示されたコードを入力してください";
+"Get new code" = "新しいコードを取得";
+"Confirm" = "確認する";
+"Login with SMS verification code" = "SMS認証コードでログイン";
+"Login with account and password" = "アカウントとパスワードでログイン";
+"Enter verification code" = "認証コードを入力してください";
+"Please enter SMS verification code, a SMS has been sent to" = "送信されたSMS認証コードを入力してください。";
+"Phone number/email" = "電話番号/メールアドレス";
+"Scan the QR code to sign in" = "QRコードをスキャンしてログイン";
+"Connecting account failed" = "アカウントの接続に失敗しました";
+"Connecting account successfully" = "アカウントの接続に成功しました";
+"Your Wondershare Account has been connected to another social account, please go back and log in directly." = "Wondershareアカウントは別のソーシャルアカウントに接続されています。直接ログインしてください。";
+"Account already exists" = "アカウントはすでに存在しています。";
+"The account already has a Wondershare account, please enter the verification code to complete the binding and login" = "アカウントにはすでにWondershareアカウントがあります。紐付けてログインするには、認証コードを入力してください。";
+"The mobile phone number has not yet created a Wondershare account, please enter the verification code to complete the binding and login" = "電話番号はまだWondershareアカウントを作成していません。紐付けてログインするには、認証コードを入力してください。";
+"Use account password binding" = "アカウントとパスワードで紐付ける";
+"Bind and log in" = "紐付けてログインする";
+"Bind and register" = "紐付けて登録する";
+"Create a Wondershare ID Or, link this account to your current Wondershare ID." = "Wondershare IDを作成するか、現在のWondershare IDにこのアカウントをリンクします。";
+"waiting..." = "待機中...";
+"We opened a new browser tab, you can log in in the new tab" = "新しいブラウザタブを開きました。新しいタブでログインできます";
+"You should complete the authentication in your browser. After completing this step, you will automatically continue from here." = "ブラウザで認証を完了させてください。 このステップを完了すると、自動的にここから続行されます。";
+"Restart" = "再起動";
+"You can now close this browser tab and return to the application." = "このブラウザタブを閉じてソフトに戻ってください。";
+"Sorry, we could not sign you in" = "申し訳ありませんが、ログンインできませんでした。";
+"Please go back and try again" = "ログイン画面に戻ってもう一度お試しください。";
+"Go Back" = "戻る";
+"Repeat submit" = "繰り返し送信";
+"register ip required" = "登録済みのIPが必要です";
+
+// Color Match
+"Comparison View" = "比較表示";
+//重复"Level" = "レベル";
+"Reference" = "リファレンスフレーム";
+"Current" = "現在のフレーム";
+"Select a frame to match to." = "一致するフレームを選択";
+"Match" = "一致する";
+"Match the selection's color to the reference frame." = "選択した範囲のカラーをリファレンスフレームに一致する";
+"Matching…" = "一致適用中…";
+//文案缺失"Color Match" = "";
+"Previous Clip" = "前のクリップ";
+"Next Clip" = "次のクリップ";
+
+// Keyboard Shortcuts
+"Search keyboard shortcuts" = "キーボードのショートカットを検索";
+"No results." = "検索結果なし";
+//文案缺失"Conflicting Shortcuts" = "";
+//文案缺失"The \"Ctrl+C\" shortcut is already assigned to the \"Copy\" command. Do you wish to replace it?" = "";
+//文案缺失"Cannot Set Shortcut" = "";
+//文案缺失"Notall keys can be used in shortcuts." = "";
+//重复"Confirm" = "確認";
+"Restore Defaults" = "リセットする";
+"Add" = "追加";
+"Add Shortcut" = "ショートカットの追加";
+"Keyboard Shortcuts" = "キーボードショートカット";
+"Marker" = "マーカー";
+"Miscellaneous" = "その他";
+"Red Marker" = "レッドマーカー";
+"Orange Marker" = "オレンジマーカー";
+"Yellow Marker" = "イエローマーカー";
+"Green Marker" = "グリーンマーカー";
+"Cyan Marker" = "シアンマーカー";
+"Blue Marker" = "ブルーマーカー";
+"Purple Marker" = "パープルマーカー";
+"Grey Marker" = "グレイマーカー";
+//"Add Keyframe"
+"Previous Keyframe" = "前のキーフレーム";
+"Next Keyframe" = "次のキーフレーム";
+//"Motion Tracking"
+//"Color Match"
+"Previous Frame / Move Left" = "前のフレーム/左に移動";
+"Next Frame / Move Right" = "次のフレーム/右に移動";
+"Previous Edit Point/ Move Up" = "前の編集ポイント/上に移動";
+"Next Edit Point/ Move Down" = "次の編集ポイント/下に移動";
+//"Add a New Folder"
+
+// Text
+//"Plain Text"
+//"Basic 1"
+//"Basic 2"
+//"Basic 3"
+//"Basic 4"
+
+// Filmora X: KeyFrame
+// KeyFrame
+//重复"Animation" = "アニメーション";
+//"Preset"
+//"Customize"
+"Preset Animation" = "アニメーションプリセット";
+"Preset Motions" = "モーションプリセット";
+//"Reset"
+//"Add"
+//"Delete"
+//"Rotate"
+"Scale" = "スケール";
+//"Position"
+//"Opacity"
+"Edit Keyframe" = "キーフレームの編集";
+"Delete Keyframe" = "キーフレームの削除";
+"Clear All Keyframes" = "すべてのキーフレームをクリア";
+"Add Animation" = "アニメーションを追加";
+//"Apply"
+"Preset Motions and Keyframe Animations cannot be used at the same time." = "モーションプリセットとキーフレームアニメーションを同時に使うことはできません。";
+"Drag or double-click to apply." = "ドラッグするかダブルクリックして適用してください。";
+//文案缺失"Double-click to apply." = "";
+"The new animation will replace the previous animation." = "新しいアニメーションが前のアニメーションを置き換えます。";
+"Slide Up" = "上にスライド";
+"Slide Right" = "右にスライド";
+//重复"Pause" = "一時停止";
+"Fade In" = "フェードイン";
+"Fade Out" = "フェードアウト";
+//重复"Zoom In" = "ズームイン";
+//重复"Zoom Out" = "ズームアウト";
+"Vortex In" = "渦巻きイン";
+"Vortex Out" = "渦巻きアウト";
+
+// Audio Ducking
+"Ducking" = "ダッキング";
+"Lower the volume of other clips" = "他のクリップの音量を下げる";
+"The clips you have selected have different values set." = "選択したクリップで異なる値が設定されています。";
+"Not all of the selected clips are enabled." = "選択したすべてのクリップが有効になるわけではありません。";
+//"Audio ducking has not been turned on. Please try again."
+"Something went wrong. Please try again." = "問題が発生した可能性があります。 もう一度お試しください。";
+
+// Motion Tracking
+"Motion Tracking" = "モーショントラック";
+"Start Tracking" = "追跡開始";
+//"Reset"
+//"Hide Target Box"
+//"Show Target Box"
+"Import from computer." = "PCからインポートする";
+"The target inside the tracking box must be visible 100% of the time it is being tracked." = "追跡ボックスの中にあるターゲットは、追跡されている間、画面上100%見えている必要があります。";
+"In order to apply motion tracking, the flip effect on this clip will be undone. Do you want to continue?" = "モーショントラックを適用すると、このクリップに適用されたフリップエフェクトはリセットされます。続けますか？";
+"In order to apply motion tracking any keyframing, animations, or pan & zoom motions will be removed. Do you want to continue?" = "モーショントラックを適用すると、このクリップに適用されたキーフレームや、アニメーション、パン＆ズームモーションは削除されます。続けますか？";
+"Unchecking the box next to Motion Tracking will clear all motion tracking data. Do you want to continue?" = "モーショントラックの横にあるチェックボックスをオフにすると、モーショントラックのデータがすべてクリアされます。続けますか？";
+"Resetting will clear all of the current motion tracking data. Do you want to continue?" = "リセットすると、現在使われているモーショントラックのデータはすべてクリアされます。続けますか？";
+"Don't show this again" = "この画面を再度表示しない";
+"During the rendering process all other operations are temporarily unavailable." = "レンダリング中は、他のすべての操作が一時的にご利用できなくなります。";
+"Please move the playhead to the selected clip to begin motion tracking." = "モーショントラックを開始するには、選択したクリップ上にプレイヘッドを移動してください。";
+"Please move the playhead to earlier in the clip so there is room to apply motion tracking." = "モーショントラックを適用するため、プレイヘッドをクリップの前方に移動してください。";
+//工程文档补充
+"Select a folder to exact file from archived project" = "アーカイブされたプロジェクトから該当ファイルの入っているフォルダを選択する";
+"The remaining disk space is:" = "ハードディスクの空き容量は以下のとおりです。";
+
+// v9.4
+"Account" = "アカウント";
+"Get Started with Filmora" = "Filmoraを始めよう";
+"Main Benefits" = "主なメリット";
+"Free Trial Version" = "無料体験版";
+"Activated Version" = "製品版";
+"All Features" = "すべての機能";
+"Export and share video without a watermark" = "透かしなしでビデオを出力＆共有";
+"Free technical support" = "無償技術サポート";
+//重复"Free Trial" = "無料体験";
+"If you already purchased Filmora, click here to activate!" = "Filmoraをすでにご購入されている場合は、ここをクリックしてライセンス認証をしてください。";
+"Welcome back!" = "Filmoraをご試用いただき、ありがとうございます。";
+"Are you enjoying the free trial of Filmora?" = "Filmoraの無料体験はいかがでしょうか？";
+"Continue Free Trial" = "無料体験のまま続ける";
+"Welcome back" = "Filmoraをご試用いただき、ありがとうございます";
+"You’re signed in with the Wondershare ID %@." = "Wondershare ID %@でサインインしています。";
+"Buy now to export videos without a watermark!" = "ご購入いただくと、透かしなしでビデオが出力できます。";
+"If you already purchased Filmora, click here to refresh your activation status!" = "Filmoraをすでにご購入されている場合は、ここをクリックしてライセンス認証をしてください。";
+//重复"Login" = "ログイン";
+"Purchase Filmora to export without a watermark" = "Filmoraを購入して、透かしなしでビデオを出力";
+//重复"Free Trial Version" = "無料体験版";
+"Full Version" = "製品版";
+"Videos exported from the free trial will include a watermark." = "無料体験版で出力されたビデオには透かしが入ります。";
+"Log in to Export with Watermark" = "ログインして透かし付きで出力";
+"Contact us." = "らこち";
+"Questions? Contact us." = "何かご不明な点がございましたらこちらよりお問い合わせください。";
+"Purchase Filmora to export without a watermark." = "Filmoraをご購入いただくと、透かしなしでビデオが出力できます。";
+"Click here to log in and export without a watermark." = "こちらをクリックしてログインし、透かしなしでビデオを出力してください。";
+"Already purchased? Click here to log in and export without a watermark." = "すでにご購入済みですか？こちらをクリックしてログインし、透かしなしでビデオを出力してください。";
+"Export with Watermark" = "透かし付きで出力";
+"Click here to refresh your activation status." = "こちらをクリックしてライセンスステータスを更新してください。";
+"Already purchased? Click here to refresh your activation status." = "すでにご購入済みですか？こちらをクリックしてライセンスステータスを更新してください。";
+"If you already purchased Filmora, please log in to your Wondershare ID to activate the software." = "Filmoraをすでにご購入されている場合は、Wondershare IDにログインしてソフトのライセンス認証をしてください。";
+"If you haven't yet, click here to buy Filmora." = "まだご購入されていない場合は、こちらをクリックしてFilmoraをご購入ください。";
+//重复"Cancel" = "キャンセル";
+"Log In" = "ログイン";
+"If you have purchased Filmora, you can now export without a watermark!" = "Filmoraをご購入されている場合は、透かしなしでビデオを出力できます。";
+"click here to buy Filmora." = "こちらをクリックしてFilmoraをご購入ください。";
+//重复"Cancel" = "キャンセル";
+//重复"Export" = "エクスポート";
+"Activation failed. Here are some reasons this might have happened:" = "ライセンス認証に失敗しました。考えられる認証失敗の理由として下記をご参照ください：";
+"1. You could be experiencing a network delay. Wait a minute or two, then click 'Try Again'." = "1.ネットワークの接続状態が悪い可能性があります。 1〜2分待ってから、「再試行」をクリックし、再度お試しください。";
+"2. You could be logged into a Wondershare ID different from the one you used to make your purchase. You are currently signed in as: %@. " = "2.ご購入時に使用したWondershare IDとログインしているWondershare IDが異なる可能性があります。 現在、%@でログインしています。";
+"Click here to log out. Then, log in with the Wondershare ID associated with your license. " = "ここをクリックしてログアウトしてください。 次に、ライセンスに関連付けられたWondershare IDでログインしてください。 ";
+"Click here to log out." = "ここをクリックしてログアウトしてください。";
+//重复"Try Again" = "再試行";
+"You are logged out. Please relogin to activate." = "ログアウトされました。お手数ですが、再度ログインして、ライセンス認証をしてください。";
+// youtube 分享时的分类选择列表
+"Film & Animation" = "映画とアニメ";
+"Autos & Vehicles" = "自動車と乗り物";
+//重复"Music" = "音楽";
+"Pets & Animals" = "ペットと動物";
+"Sports" = "スポーツ";
+"Travel & Events" = "旅行とイベント";
+//重复"Gaming" = "ゲーム";
+"People & Blogs" = "ブログ";
+"Comedy" = "コメディ";
+"Entertainment" = "エンターテイメント";
+"News & Politics" = "ニュースと政治";
+"Howto & Style" = "ハウツーとスタイル";
+"Education" = "教育";
+"Science & Technology" = "科学と技術";
+"Nonprofits & Activism" = "非営利団体と社会活動";
+
+// 等补充部分
+//文案缺失"There is a problem with the current network and server connection, please check and try again" = "";
+//文案缺失"Terms of Use" = "";
+//文案缺失"By clicking Create account, I agree that I have read and accepted the Terms of Use and Privacy Policy" = "";
+// 前面已经定义，需要给翻译："It looks like this Wondershare ID has been deactivated on this device, please re-login on this device or double check the activation status in Account Center."
+// 前面已经定义，需要给翻译："If you have a license code, or have other trouble to activate Filmora, click here to troubleshoot.
+//文案缺失"Please enter your correct email address." = "";
+//文案缺失"User Interface" = "";
+
+"Appearance" = "外観";
+"Dark Mode" = "ダークモード";
+"Light Mode" = "ライトモード";
+"System Default" = "システムデフォルト";
+
+//Filmora.6.1
+"Watermaked" = "透かし入り";
+"Upgrade plan" = "プランをアップグレード";
+"Watermarked" = "透かし入り";
+"Your export video will include a watermark because you have choose a free plan." = "無料プランをご利用いただいているため、出力されたビデオには透かしが入ります。";
+"Upgrade to remove watermarks." = "透かしを削除するにはプランをアップグレードしてください。";
+//重复"Purchase Filmora to export without a watermark" = "Filmoraを購入して、透かしなしでビデオを出力";
+"Premium Includes" = "プレミアム機能";
+"Go upgrade" = "プランをアップグレード";
+"Contact us" = "お問い合わせ";
+"Already purchased?" = "すでにご購入済みですか？";
+"This video editor is easy for anyone to learn, even if they’ve never edited video before." = "この動画編集ソフトはとても簡単です。動画編集したことがない人も簡単に操作できます。";
+"4K Support" = "4K対応";
+"All Text  Styles" = "すべてのテキストスタイル";
+"285+Filters" = "285+フィルター";
+"More Share" = "より多くの人にシェア";
+"Tech Support" = "技術サポート";
+"Music Tools" = "音楽ツール";
+
+"The file name cannot contain any emoji characters." = "ファイル名に絵文字を含めることはできません。";
+
+
+//以下为 比english多出的部分
+/* ************************************************************ */
+/* About Window strings */
+/* *******common******* */
+/* ****Folder operation**** */
+/* *******Tooltips******* */
+/* ***timeline*** */
+/* *****menu**** */
+/* ***document***** */
+/* ****crop/pan&zoom**** */
+/* *****guide window***** */
+/* **Record Audio/Webcam**** */
+/* **About window**** */
+/* **Video Property**** */
+/* **Color Property**** */
+/* **Audio Property**** */
+/* **Transtion Property**** */
+/* ** Filter Edit Params**** */
+/* **Import wnd Controller**** */
+"Add a new folder" = "新しいフォルダを追加する";
+"Frame Rate:" = "フレームレート：";
+"sigin in" = "ログイン";
+"Feedback" = "Feedback";
+"RateAppstore" = "macappstore：//itunes.apple.com/app/id447570101？mt = 12";
+"Warning. Wondershare ID account different" = "Filmstockサイトでエフェクトパックをダウンロードする際に使用したWondershare IDアカウントがFilmoraでログインしたアカウントと異なります。エラーが起こる可能性がありますので、同じアカウントでログインするか、お問い合わせ窓口までご連絡ください。";
+"The movie has been created successfully!" = "ムービーの作成に成功になりました。";
+"Keyboard shortcuts" = "キーボードショートカット";
+"Comfirm" = "確認";
+"Split Screen Inspector" = "分割表示インスペクター";
+"007 Series" = "007シリーズ";
+"Batman" = "バットマン";
+"B&W Film" = "白黒フィルム";
+"Dark Film" = "ダークフィルム";
+"Game of Thrones" = "ゲーム・オブ・スローンズ";
+"Gravity" = "ゼロ・グラビティ";
+"Harry Potter" = "ハリー・ポッター";
+"House of Cards" = "ハウス・オブ・カード野望の階段";
+"Mission Impossible" = "ミッション:インポッシブル";
+"Reign" = "REIGN/クイーン・メアリー";
+"Sparta 300" = "300（スリーハンドレッド）";
+"Star Wars" = "スター・ウォーズ";
+"Walking Dead" = "ウォーキング・デッド";
+"Warm Film" = "心温まる映画";
+"Cool Film" = "クールフィルム";
+"Want to learn more? Click here to find more tutorials." = "Filmoraのその他のチュートリアルを閲覧するには、こちらをクリックしてください。";
+"most popular" = "一番人気";
+"Do you want to save this project before starting a new one?" = "新しいプロジェクトを開始する前にこのプロジェクトを保存しますか？";
+"Got it!" = "OK!";
+"Quick Start" = "クイックスタート";
+//"Split a Clip" = "クリップを分割";
+//"Done! Next" = "完了しました！次へ";
+//"Export Your Video" = "動画をエクスポート";
+//"Congrats!" = "完了しました！";
+"Get More Royalty-Free Music." = "より多くのロイヤリティフリーの音楽をGET";
+"Audio" = "音楽";
+//9.4
+"if you've finished the redeem process. Click here to refresh your account authorization." = "すでに製品を引き換えた場合、ここをクリックしてソフトの使用権限を更新してください。";
+"Click here" = "ここ";
+"Redeem My Activation Code" = "製品引き換え";
+"Non-Activated" = "ライセンス認証されていない";
+"If you own this product, please click the button below to redeem your activation code" = "下記のボタンをクリックしてソフトの使用権限を引き換えてください";
+"Login and Activate your software" = "ログインしてライセンス認証をしてください";
+"You need to login your account and redeem your activation code to use the software, if you close this login window, the application will quit." = "製品版として使用するには、アカウントにログインしてシリアル番号でソフトの使用権限を引き換える必要があります。このログインウィンドウを閉じると、ソフトは終了します。";
+"Was your redeem successfully processed?" = "製品引き換えが完了したでしょうか。";
+"If your redeem succeeded, click Yes to activate your app. Or, if failed, click No to try again." = "引き換えが成功した場合は「はい」をクリックしてソフトの使用権限を更新してください。失敗した場合は「いいえ」をクリックして再試行してください。";
+"How to Activate" = "ライセンス認証方法";
+"Quit_Account" = "キャンセル";
+"Continue_Account" = "続ける";
+//w日文版本
+"The password you've entered is incorrect. Click Forget password to reset your password." = "パスワードが正しくありません。パスワードを忘れた場合は、ここをクリックして再設定してください。";
+"Incorrect email format" = "間違ったメール形式";
+"There is no Wondershare ID associated with that email address." = "そのメールアドレスに関連付けられたWondershare IDはありません。";
+//"Color Matc" = "カラーマッチ";
+"Conflicting ShortcutsThe \"Ctrl+C\" shortcut is already assigned to the \"Copy\" command. Do you wish to replace it?" = "このショートカットキーはすでに割り当てられています。ショートカットキー「Ctrl+C」はすでに「コピー」コマンドに割り当てられています。変更しますか？";
+"Cannot Set ShortcutNot all keys can be used in shortcuts." = "ショートカットを設定できなせん。すべてのキーがショートカットで使えるわけではありません。";
+//"Add Keyfram" = "キーフレームの追加";
+//"Motion Trackin" = "モーショントラック";
+"Add a New Folder" = "新規フォルダの追加";
+// Appearance Switch换肤相关，win端特有
+//"Set the appearance that matches your computer settings" = "お使いのパソコン設定に合った外観を設定します。";
+//"Plain Tex" = "シンプルテキスト";
+//"Basic " = "ベーシック1";
+//"Basic " = "ベーシック2";
+//"Basic " = "ベーシック3";
+//"Basic " = "ベーシック4";
+//"Prese" = "プリセット";
+//"Customiz" = "カスタム";
+//"Rese" = "リセット";
+//"Ad" = "追加";
+//"Delet" = "削除";
+//"Rotat" = "回転";
+//"Positio" = "ポジション";
+//"Opacit" = "不透明度";
+//"Appl" = "適用する";
+//文案缺失"Add from local" = "";
+//文案缺失"The current timeline cursor is not on cilp and motion tracking rendering cannot be performed." = "";
+//文案缺失"The current timeline cursor cannot perform motion tracking rendering on the last frame of cilp." = "";
+//"Audio ducking has not been turned on. Please try again" = "オーディオダッキングがオンになっていません。もう一度お試しください。";
+//"Hide Target Bo" = "ターゲットボックスを非表示";
+//"Show Target Bo" = "ターゲットボックスを表示";
+//9.6.1
+
+

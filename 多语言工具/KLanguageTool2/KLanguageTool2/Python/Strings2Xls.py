@@ -72,8 +72,9 @@ def convertToSingleFile(stringsDir, targetDir):
                                     ws.write(x+1, index + 1, value)
                             index += 1
                         workbook.save(filePath)
-    print "Convert %s successfully! you can see xls file in %s" % (
-        stringsDir, destDir)
+                        
+                        #print ("So, you're %r old, %r tall and %r heavy.") % (age, height, weight)
+    print("Convert %s successfully! you can see xls file in %s" ) % (stringsDir, destDir)
 
 
 #  convert .strings files to multiple xls files
@@ -107,8 +108,7 @@ def convertToMultipleFiles(stringsDir, targetDir):
             filePath = destDir + "/" + dirname.replace(".lproj", "") + ".xls"
             workbook.save(filePath)
 
-    print "Convert %s successfully! you can see xls file in %s" % (
-        stringsDir, destDir)
+    print ("Convert %s successfully! you can see xls file in %s") % (stringsDir, destDir)
 
 # Start convert .strings files to xls
 
@@ -117,14 +117,14 @@ def startConvert(options):
     stringsDir = options.stringsDir
     targetDir = options.targetDir
 
-    print "Start converting"
+    print ("Start converting")
 
     if stringsDir is None:
-        print ".strings files directory can not be empty! try -h for help."
+        print (".strings files directory can not be empty! try -h for help.")
         return
 
     if targetDir is None:
-        print "Target file directory can not be empty! try -h for help."
+        print ("Target file directory can not be empty! try -h for help.")
         return
 
     if options.excelStorageForm == "single":
