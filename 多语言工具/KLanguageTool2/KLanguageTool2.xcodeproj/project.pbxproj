@@ -41,15 +41,6 @@
 		540111042599DA4D0015CC5F /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 540111032599DA4D0015CC5F /* libiconv.2.tbd */; };
 		540111092599DA570015CC5F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 540111082599DA560015CC5F /* libz.tbd */; };
 		5401110F2599DB010015CC5F /* 多语言例子.xls in Resources */ = {isa = PBXBuildFile; fileRef = 5401110E2599DB010015CC5F /* 多语言例子.xls */; };
-		54011123259A006D0015CC5F /* XmlFileUtil.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111A259A006D0015CC5F /* XmlFileUtil.py */; };
-		54011124259A006D0015CC5F /* XlsFileUtil.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111B259A006D0015CC5F /* XlsFileUtil.py */; };
-		54011125259A006D0015CC5F /* Xls2Xml.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111C259A006D0015CC5F /* Xls2Xml.py */; };
-		54011126259A006D0015CC5F /* Strings2Xls.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111D259A006D0015CC5F /* Strings2Xls.py */; };
-		54011127259A006D0015CC5F /* Log.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111E259A006D0015CC5F /* Log.py */; };
-		54011128259A006D0015CC5F /* StringsFileUtil.py in Resources */ = {isa = PBXBuildFile; fileRef = 5401111F259A006D0015CC5F /* StringsFileUtil.py */; };
-		54011129259A006D0015CC5F /* Strings2Xml.py in Resources */ = {isa = PBXBuildFile; fileRef = 54011120259A006D0015CC5F /* Strings2Xml.py */; };
-		5401112A259A006D0015CC5F /* Xml2Xls.py in Resources */ = {isa = PBXBuildFile; fileRef = 54011121259A006D0015CC5F /* Xml2Xls.py */; };
-		5401112B259A006D0015CC5F /* Xls2Strings.py in Resources */ = {isa = PBXBuildFile; fileRef = 54011122259A006D0015CC5F /* Xls2Strings.py */; };
 		54011131259A01D00015CC5F /* KPythonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54011130259A01D00015CC5F /* KPythonTool.m */; };
 		54011137259A10770015CC5F /* KPythonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54011136259A10770015CC5F /* KPythonManager.m */; };
 /* End PBXBuildFile section */
@@ -148,15 +139,6 @@
 		540111032599DA4D0015CC5F /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		540111082599DA560015CC5F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5401110E2599DB010015CC5F /* 多语言例子.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = "多语言例子.xls"; sourceTree = "<group>"; };
-		5401111A259A006D0015CC5F /* XmlFileUtil.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = XmlFileUtil.py; sourceTree = "<group>"; };
-		5401111B259A006D0015CC5F /* XlsFileUtil.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = XlsFileUtil.py; sourceTree = "<group>"; };
-		5401111C259A006D0015CC5F /* Xls2Xml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Xls2Xml.py; sourceTree = "<group>"; };
-		5401111D259A006D0015CC5F /* Strings2Xls.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Strings2Xls.py; sourceTree = "<group>"; };
-		5401111E259A006D0015CC5F /* Log.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Log.py; sourceTree = "<group>"; };
-		5401111F259A006D0015CC5F /* StringsFileUtil.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = StringsFileUtil.py; sourceTree = "<group>"; };
-		54011120259A006D0015CC5F /* Strings2Xml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Strings2Xml.py; sourceTree = "<group>"; };
-		54011121259A006D0015CC5F /* Xml2Xls.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Xml2Xls.py; sourceTree = "<group>"; };
-		54011122259A006D0015CC5F /* Xls2Strings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Xls2Strings.py; sourceTree = "<group>"; };
 		5401112F259A01D00015CC5F /* KPythonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPythonTool.h; sourceTree = "<group>"; };
 		54011130259A01D00015CC5F /* KPythonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPythonTool.m; sourceTree = "<group>"; };
 		54011135259A10770015CC5F /* KPythonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPythonManager.h; sourceTree = "<group>"; };
@@ -214,7 +196,6 @@
 		540110692599D89C0015CC5F /* KLanguageTool2 */ = {
 			isa = PBXGroup;
 			children = (
-				540111162599FFAE0015CC5F /* Python */,
 				5401110D2599DB010015CC5F /* Res */,
 				5401109D2599D9400015CC5F /* Src */,
 				540110A02599D9400015CC5F /* Tools */,
@@ -406,22 +387,6 @@
 			path = ../../KLanguageTool/KLanguageTool/Res;
 			sourceTree = "<group>";
 		};
-		540111162599FFAE0015CC5F /* Python */ = {
-			isa = PBXGroup;
-			children = (
-				5401111E259A006D0015CC5F /* Log.py */,
-				5401111D259A006D0015CC5F /* Strings2Xls.py */,
-				54011120259A006D0015CC5F /* Strings2Xml.py */,
-				5401111F259A006D0015CC5F /* StringsFileUtil.py */,
-				54011122259A006D0015CC5F /* Xls2Strings.py */,
-				5401111C259A006D0015CC5F /* Xls2Xml.py */,
-				5401111B259A006D0015CC5F /* XlsFileUtil.py */,
-				54011121259A006D0015CC5F /* Xml2Xls.py */,
-				5401111A259A006D0015CC5F /* XmlFileUtil.py */,
-			);
-			path = Python;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,6 +397,7 @@
 				540110632599D89C0015CC5F /* Sources */,
 				540110642599D89C0015CC5F /* Frameworks */,
 				540110652599D89C0015CC5F /* Resources */,
+				549CBC9C25A5636600919A6A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -524,18 +490,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54011123259A006D0015CC5F /* XmlFileUtil.py in Resources */,
-				54011124259A006D0015CC5F /* XlsFileUtil.py in Resources */,
-				5401112A259A006D0015CC5F /* Xml2Xls.py in Resources */,
-				54011129259A006D0015CC5F /* Strings2Xml.py in Resources */,
 				5401110F2599DB010015CC5F /* 多语言例子.xls in Resources */,
-				54011125259A006D0015CC5F /* Xls2Xml.py in Resources */,
-				54011126259A006D0015CC5F /* Strings2Xls.py in Resources */,
 				540110712599D8AA0015CC5F /* Assets.xcassets in Resources */,
-				5401112B259A006D0015CC5F /* Xls2Strings.py in Resources */,
 				540110742599D8AA0015CC5F /* MainMenu.xib in Resources */,
-				54011128259A006D0015CC5F /* StringsFileUtil.py in Resources */,
-				54011127259A006D0015CC5F /* Log.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +511,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		549CBC9C25A5636600919A6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#\"${SRCROOT}/languageTool.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		540110632599D89C0015CC5F /* Sources */ = {

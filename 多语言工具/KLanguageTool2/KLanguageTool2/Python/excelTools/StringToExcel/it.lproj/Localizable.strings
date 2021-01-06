@@ -1,0 +1,2419 @@
+
+/**************************************************************/
+/*                   About Window strings                     */
+/**************************************************************/
+/* Home Page */
+"AboutWnd.HomePageTip" = "www.wondershare.com/it/";
+
+/* Support */
+"AboutWnd.SupportTip" = "Panoramica del Prodotto";
+
+/* Version */
+"AboutWnd.VersionTip" = "Versione:";
+
+/* Version */
+"AboutWnd.Wnd.Title" = "Di";
+"AboutWnd.Wnd.COIntroduce" = "Fondata nel 2003 quotata nel mercato delle imprese in crescita A-share nel 2018，Wondershare è l’abilitatore creativo digitale di nuova generazione al mondo e anche riconosciuta dal governo cinese come “una impresa software chiave all'interno del layout di pianificazione nazionale.” Con la missione di \"rendere il mondo più creativo\", l'azienda fornisce prodotti e servizi software creativi digitali all'avanguardia, semplici e convenienti a utenti Internet di nuova generazione in tutto il mondo e l’impiego dell’azienda copre oltre 200 paesi e regioni in tutto il mondo. ";
+"AboutWnd.Wnd.linkTitle" = "Visita Wondershare e Wondershare Filmora per sapere più informazioni.";
+
+/********common********/
+"OK" = "OK";
+"Cancel" = "Annulla";
+"CANCEL" = "ANNULLA";
+"Reset" = "Reimposta";
+"RESET" = "Reimposta";
+"Delete" = "Elimina";
+"Custom" = "Personalizza";
+"fmim_key" = "fmimi.dylib";
+"langID" = "it";
+"PackageValidateKey" = "8616efd64c26a0381427d9603b9194ab";
+"trailer11_key" = "1-1.MP4";
+"trailer916_key" = "9-16.MP4";
+"trailer169_key" = "16-9.MP4";
+"trailer43_key" = "4-3.MP4";
+"Buy" = "Acquista";
+
+"Music" = "Musica";
+"Video" = "Video";
+/*****Folder operation*****/
+"Create folder %@ failed!" = "Impossibile creare la cartella %@ !";
+"remove file path %@ failed!" = "Impossibile rimuovere il percorso del file %@ !";
+"Please make sure the output folder has read and write privilege." = "Assicurati che la cartella di output abbia privilegi di lettura e scrittura.";
+
+/********Tooltips********/
+"Undo" = "Annulla";
+"Redo" = "Rifai";
+//重复"Delete" = "Elimina";
+"Split" = "Dividi";
+"Crop" = "Spunta";
+"Adjust Speed" = "Regola la velocità";
+"Color Correction" = "Correzione del colore";
+"Edit" = "Modifica";
+"Green Screen" = "Schermo verde";
+"Freeze Frame" = "Blocca fotogramma";
+"Set Duration" = "Imposta la durata";
+"Audio Mixer" = "Mixer audio";
+"Zoom to Fit Timeline" = "Fai lo zoom per regolare la Timeline";
+"Zoom Out" = "Zoom indietro";
+"Zoom In" = "Zoom avanti";
+"Record Audio" = "Registra audio";
+"Add Marker" = "Aggiungi marcatore";
+"Peak Volume Meter" = "Peak VU-Meter";
+"Record VoiceOver" = "Registra Voce fuoricampo";
+//重复"Add Marker" = "Aggiungi marcatore";
+"Add Track" = "Aggiungi traccia";
+"Show Track" = "Mostra traccia";
+"Hide Track" = "Nascondi traccia";
+"Mute" = "Silenzioso";
+"Unmute" = "Attiva volume";
+"Lock Track" = "Blocca traccia";
+"Unlock Track" = "Sblocca traccia";
+"Hide media folder list" = "Nascondi l'elenco delle cartelle multimediali";
+"Show media folder list" = "Mostra l'elenco delle cartelle multimediali";
+"Add a new folder" = "Aggiungi una nuova cartella";
+"Delete folder" = "Elimina cartella";
+"Import Media" = "Importa media";
+"Record a video" = "Registra un video";
+"Filter by media type" = "Filtra per tipo di supporto";
+"Adjust View, Sort, Group" = "Regola Visualizza, Ordina, Raggruppa";
+"Play" = "Riproduci";
+"Stop" = "Stop";
+"Pause" = "Pausa";
+"Previous Frame" = "Fotogramma precedente";
+"Next Frame" = "Fotogramma successivo";
+"Mark In" = "Segna";
+"Mark Out" = "Non Segnare";
+"Playhead Position" = "Posizione della testina";
+"Preview quality and display settings" = "Anteprima della qualità e impostazioni di visualizzazione";
+"Snapshot" = "Istantanea";
+"Volume" = "Volume";
+"Full Screen" = "A schermo intero";
+"Exit Full Screen" = "Esci dalla modalità schermo intero";
+"More Effects" = "Più Effetti";
+/****timeline****/
+"Add Video" = "Aggiungi video";
+"Add Audio" = "Aggiungi audio";
+"Delete Selected Track" = "Elimina traccia selezionata";
+"Delete Empty Tracks" = "Elimina tracce vuote";
+"Adjust Track Height" = "Regola altezza traccia";
+"Small" = "Piccolo";
+"Normal" = "Normale";
+"Big" = "Grande";
+"Open Track Manager" = "Apri Gestore Traccia";
+"Track Manager" = "Gestore Traccia";
+"Video Tracks" = "Tracce video";
+"Add:" = "Inserisci:";
+"video track(s)" = "traccia/e video";
+"Placement" = "Posizionamento:";
+"Audio Tracks" = "Tracce audio";
+"Audio track(s)" = "Traccia/e audio";
+"After Track %d" = "Sopra traccia %d";
+"Before Track %d" = "Sotto traccia %d";
+"There are contents on the selected track, deleting the track will remove all contents as well, do you wish to continue?" = "Ci sono dei contenuti sulla traccia selezionata, l'eliminazione della traccia rimuoverà anche tutti i contenuti, vuoi continuare?";
+
+"Modify Marker" = "Modifica marcatore";
+"Go to Previous Marker" = "Vai a Indicatore precedente";
+"Go to Next Marker" = "Vai a Indicatore successivo";
+"Delete All Markers" = "Elimina tutti i marcatori";
+"Delete Marker" = "Elimina indicatore";
+"Name:" = "Nome:";
+"Time:" = "Tempo:";
+"Comments:" = "Commenti:";
+"Marker Color:" = "Colore dell'indicatore:";
+//重复"Volume" = "Volume";
+
+"Show Properties" = "Mostra proprietà";
+"Cut" = "Taglia";
+"Copy" = "Copia";
+"Paste" = "Incolla";
+//重复"Split" = "Dividi";
+"Trim Start to Playhead" = "Inizio Ritaglio su Testina";
+"Trim End to Playhead" = "Fine Ritaglio su Testina";
+"Crop and Zoom" = "Punta e zooma";
+"Rotate 90° CW" = "Ruota di 90 ° in senso orario";
+"Roate 90° CCW" = "Ruota di 90 ° in senso antiorario";
+"Speed and Duration" = "Velocità e durata";
+"Add Freeze Frame" = "Aggiungi Fermo immagine";
+"Adjust Audio" = "Regola audio";
+"Detach Audio" = "Scollega audio";
+"Mute" = "Silezioso";
+//"Color Correction" = "Correzione del colore";
+//重复"Green Screen" = "Schermo verde";
+"Copy Effects" = "Copia effetti";
+"Paste Effects" = "Incolla effetti";
+"Delete Effects" = "Elimina effetti";
+//"Crop and Zoom"
+"Duration" = "Durata";
+"Advanced Edit" = "Modifica avanzata";
+
+"1. Drop Main Video here to form your story" = "1. Rilascia qui il video principale per creare la tua storia";
+"2. Drop Overlay Video or Titles above your main story" = "2. Trascina Video Titoli o Sovrapposizioni sopra la tua storia principale";
+"3. Drop Background music here" = "3. Rilascia la musica di sottofondo qui";
+
+/******menu*****/
+"View" = "Vista";
+"Go to" = "Vai a";
+"Tools" = "Strumenti";
+"Zoom Timeline" = "Zoom della Timeline";
+
+/****document******/
+"Do you want to save changes to this project before creating new project." = "Vuoi Salva le modifiche a questo progetto prima di creare un nuovo progetto?";
+"Do you want to save changes to this project before open a project." = "Vuoi Salva le modifiche a questo progetto prima di aprire un progetto?";
+"If you don't save, your changes will be lost" = "Se non salvi, le tue modifiche andranno perse.";
+"Save" = "Salva";
+"Don't Save" = "Non Salvare";
+"Open" = "Apri";
+"Open Recent" = "Apri i recenti";
+"Clear Menu" = "Cancella menu";
+"Open document failed!" = "Impossibile aprire il file di progetto!";
+"Save document failed!" = "Impossibile aprire il file di progetto!";
+"Application abnormal, you need to exit the restart Application" = "Spiacenti, si è verificato un errore, prova a chiudere l'applicazione e riavviare";
+"Recover unsaved project" = "Recupera progetto non salvato";
+"Video Editor did not close properly last time, would you like to recover the last unsaved project?" = "È stato rilevato un backup automatico di un progetto precedente. Vorresti usare questo file di backup?";
+"Open project..." = "Progetto aperto...";
+"Save project..." = "Salva il progetto...";
+
+"Locate missing files" = "Trova i file mancanti";
+"Some file(s) in your project folder can't be found. please select the file from the list below and locate them one by one:" = "Alcuni file nel tuo file di progetto sono stati spostati o mancanti, seleziona il file dall'elenco seguente e riposizionali uno per uno:";
+"Ignore All" = "Ignora tutto";
+"Locate" = "Individua";
+"File name" = "Nome del file";
+"Original path" = "Percorso originale";
+"Matched file" = "File abbinato";
+"Project Settings" = "Impostazioni del progetto";
+"Resolution:" = "Risoluzione:";
+"This video does not match the document settings. Change document settings to match the video's settings?" = "La risoluzione o la frequenza fotogrammi del supporto non corrispondono alle impostazioni correnti del progetto. Vuoi cambiare le impostazioni del tuo progetto in modo che corrispondano?";
+"Keep exiting settings" = "Non cambiare";
+"Change document settings" = "Abbina ai media";
+"Always ask" = "Chiedi sempre";
+"Oops! The project file was created with a previous version and might be problematic, please re-open it with Filmora version 8." = "Oops! Il file di progetto è stato creato con una versione precedente e potrebbe essere problematico, per favore riaprilo con Filmora versione 8.";
+
+/*****crop/pan&zoom*****/
+//重复"Crop" = "Spunta";
+"Pan and Zoom" = "Pan e Zoom";
+"Ratio:" = "Rapporto:";
+"Original Ratio" = "Rapporto originale";
+//重复"Custom" = "Personalizza";
+"Start" = "Inizio";
+"End" = "Fine";
+
+/******guide window******/
+"Create New Project" = "Crea un nuovo progetto";
+"Open exsiting Project" = "Apri il progetto esistente";
+"Get Started" = "Per Iniziare";
+"Project Library" = "Libreria di progetto";
+//重复"Open" = "Apri";
+
+/***Record Audio/Webcam*****/
+//重复"Record Audio" = "Registra audio";
+"Mute Project" = "Silenzia Progetto";
+"Device:" = "Dispositivo:";
+"Video Device:" = "Dispositivo video:";
+"Audio Device:" = "Dispositivo audio:";
+//重复"Resolution:" = "Risoluzione:";
+"Live Recording..." = "Registrazione dal vivo ...";
+"Record Webcam" = "Registra WebCam";
+"Install Computer Audio Drive" = "Installa il driver audio del computer";
+"It is required to install an audio drive in order to record system audio" = "È necessario installare un driver audio per registrare l'audio del sistema";
+"Install computer audio drive successful!" = "Il driver audio è ora installato correttamente";
+"Install computer audio drive failed!" = "Impossibile installare il driver audio!";
+
+/***About window*****/
+"About" = "Di";
+"Special Thanks to our Lead Videographer Dan Bergh.\nDan， We have smiled every day at work because of you. Your jokes， quirks， and larger-than-life personality have brought us endless joy. Filmora has thrived because of your skills and professionalism. The entire team here at Wondershare is grateful to you for both your creative vision and your unshakable enthusiasm. Keep up the good fighting. Our thoughts and prayers are with you.\nYour friends on Team Filmora thank you.\n\nAnd the whole team that build this product:\nProduct Management:\nSummer Qin, Jack Wu, Cole Vineyard, Desmond Ye, Sherwin Lee, Ricky Cheung, Connor Zhai, Bruce, Ellen Zhou\nProgramming Team:\nWang Xiaoyan, Zhu Jian, Zhong Chen, Li Xiaopeng, Mu Xueqiang, Ran Jun, Xiao Shanlin, Wang Youxiang, Gao Hongmin, Chen Min, Ruan Shengqiang, Li Yong, Zou Peng, Chen Yi, Zhao Song\nQuality Engineering:\nCici Chen, Huang Jing, Wang Hao, Zhao Yulong\nUI Design:\nShaan Jahagirdar, Koko Li\nVideo/Effect Design:\nKevin Cho, Felix Wong, Alexandra Marriott, Nick Li, Trevor Komori\nProduct Marketing:\nLuna Que, Annie Feng, Sunny, Weiwei, Emilia, Chloe, Meng, Echo, Irene, Eric, William, Pedro Diniz, Lisa, Sophia, Horan, Zoey, Sandra Huang, Erica Lam, Daniel Kim, Katie Nohr, Elliot Chan, Jannelle Rillorta, Lennart Pohle, Ileana Anciano, Jonathan Hoarau, Tania, Roy, Davidson Yeap, Mariam Khan, Guilherme Veloso, Masagi Fukuda" = "Gestione Prodotto:\nSummer Qin, Jack Wu, Cole Vineyard, Desmond Ye, Sherwin Lee, Ricky Cheung, Connor Zhai, Bruce, Ellen Zhou\nTeam di programmazione:\nWang Xiaoyan, Zhu Jian, Zhong Chen, Li Xiaopeng, Mu Xueqiang, Ran Jun, Xiao Shanlin, Wang Youxiang, Gao Hongmin, Chen Min, Ruan Shengqiang, Li Yong, Zou Peng, Chen Yi, Zhao Song\nIngegneria della qualità:\nCici Chen, Huang Jing, Wang Hao, Zhao Yulong\nProgettazione UI:\nShaan Jahagirdar, Koko Li\nVideo / Effetti:\nKevin Cho, Felix Wong, Alexandra Marriott, Nick Li, Trevor Komori\nMarketing:\nLuna Que, Annie Feng, Sunny, Weiwei, Emilia, Chloe, Meng, Echo, Irene, Eric, William, Pedro Diniz, Lisa, Sophia, Horan, Zoey, Sandra Huang, Erica Lam, Daniel Kim, Katie Nohr, Elliot Chan, Jannelle Rillorta, Lennart Pohle, Ileana Anciano, Jonathan Hoarau, Tania, Roy, Davidson Yeap, Mariam Khan, Guilherme Veloso, Masagi Fukuda";
+"Special Thanks to our Lead Videographer Dan Bergh." = "Un ringraziamento speciale al nostro capo videografo Dan Bergh.";
+"Product Management:" = "Gestione del prodotto:";
+"Programming Team:" = "Team di programmazione:";
+"Quality Engineering:" = "Ingegneria di qualità:";
+"UI Design:" = "UI Design:";
+"Video/Effect Design:" = "Video / Effect Design:";
+"Product Marketing:" = "Marketing di prodotto:";
+"Video editing simplified" = "Editing video semplificato";
+
+/***Video Property*****/
+"Transform" = "Trasforma";
+"Rotate:" = "Ruota:";
+"Flip:" = "Flip:";
+"Scale:" = "Scala:";
+"Position:" = "Posizione:";
+"Composition" = "composizione";
+"Blending Mode:" = "Modalità di fusione:";
+//"Normal"
+"Darken" = "Scuro";
+"Multiply" = "Moltiplica";
+"ColorBurn" = "Brucia Colore";
+"LinearBurn" = "Bruciatura lineare";
+"Screen" = "Schermo";
+"ColorDodge" = "Scherma colore";
+"LinearDodge" = "Schermatura lineare";
+"Overlay" = "Sovrapposizione";
+"SoftLight" = "Luce soffusa";
+"HardLight" = "Luce forte";
+"VividLight" = "Luce vivida";
+"LinearLight" = "Luce lineare";
+"PinLight" = "Luce appuntita";
+"HardMix" = "Hard Mix";
+"Difference" = "Differenza";
+"Exclusion" = "Esclusione";
+"Lighten" = "Alleggerire";
+"Opacity:" = "Opacità:";
+"Lens Correction" = "Correzione delle lenti";
+"Select Model to defish:" = "Seleziona il modello da correggere:";
+"Select a Profile" = "Seleziona un profilo";
+"Select a Resolution" = "Seleziona una risoluzione";
+"Adjust Level:" = "Regola il livello:";
+"Chroma Key(Green Screen)" = "Chroma Key (Schermo verde)";
+"Select Color:" = "Seleziona colore:";
+"Tolerence:" = "Tolleranza:";
+"Offset:" = "Compensa:";
+"Border thinkness:" = "Spessore del bordo:";
+"Feather:" = "Feather del bordo:";
+"Alpha Channel:" = "Canale alfa:";
+"Stabilization" = "Stabilizzazione";
+"Analyze" = "Analizza";
+"Smooth level:" = "Livello regolare:";
+/***Color Property*****/
+"White Balance" = "Bilanciamento del bianco";
+//重复"Select Color:" = "Seleziona colore:";
+"Temprature:" = "Temperatura:";
+"Tint:" = "Tinta:";
+"Tone" = "Tono";
+"Contrast:" = "Contrasto:";
+"Saturation:" = "Saturazione:";
+"Brightness:" = "Luminosità:";
+"3D LUT" = "LUT 3D";
+"3D Lut:" = "LUT 3D:";
+"None" = "Nessuna";
+"Load New LUT" = "Carica nuovo LUT";
+/***Audio Property*****/
+"FadeIn:" = "Dissolvenza in entrata:";
+"FadeOut:" = "Dissolvenza in uscita:";
+"Pitch:" = "Intonazione:";
+"Equalizer:" = "Equalizzatore:";
+"Denoise:" = "Denoise:";
+"Remove Background noise" = "Rimuovi il rumore di fondo";
+"Weak" = "Debole";
+"Mid" = "Medio";
+"Strong" = "Forte";
+"Volume:" = "Volume:";
+"Classic" = "Classico";
+"Dance" = "Danza";
+"Low Bass" = "Pochi bassi";
+"Sparkle" = "Sparkle";
+"Pop" = "Pop";
+"Rock'n'Roll" = "Rock'n'Roll";
+"Soft" = "Soft";
+"Techno" = "Techno";
+"Hard Rock" = "Hard rock";
+"Ska" = "Ska";
+"Country" = "Country";
+"Acoustic" = "Acustico";
+"Folk" = "Folk";
+"Blues" = "Blues";
+/***Transtion Property*****/
+"Transition Universal" = "Transizione universale";
+"Duration:" = "Durata:";
+"Apply to all transitions" = "Applica a tutte le transizioni";
+"Transition Mode:" = "Modalità di transizione:";
+"Overlap" = "Sovrapposizione";
+"Prefix" = "Prefisso";
+"Postfix" = "Suffisso";
+"Transition %@ Special" = "Transizione %@ Speciale";
+"There is no parameter for this Filter" = "Non ci sono parametri per questo filtro";
+/*** Filter Edit Params*****/
+"mode %d" = "modalità %d";
+"Circular" = "Circolare";
+"Linear" = "Lineare";
+//重复"There is no parameter for this Filter" = "Non ci sono parametri per questo filtro";
+/***Import wnd Controller*****/
+"Failed in Loading files." = "Impossibile caricare i file.";
+"Loading file..." = "Caricamento file ...";
+"Copying files" = "Copia di file";
+"Copying file..." = "Copia del file ...";
+"Loading files" = "Caricamento dei file";
+"4K resolution video files are not supported in trial version due to macOS's limitaion.\n" = "I file video con risoluzione 4K non sono supportati nella versione di prova a causa del limite di macOS.\n";
+"Show details" = "Mostra dettagli";
+"For more information, please click here to contact our support team." = "Per maggiori informazioni, clicca qui per contattare il nostro team di supporto.";
+//Speed Adjust
+"Speed:" = "Velocità:";
+//重复"Duration:" = "Durata:";
+"Reverse:" = "Inverti:";
+"Play video clip in reverse" = "Velocità inversa";
+"Ripple:" = "Ondulazione:";
+"Keep Ripple" = "Modifica Ondulazione";
+"Custom speed" = "Velocità personalizzata";
+"Slow" = "Lento";
+"Fast" = "Veloce";
+//重复"Normal" = "Normale";
+//重复"Freeze Frame" = "Blocca fotogramma";
+"Reverse" = "Inverti";
+"Replay" = "Replay";
+"Add Speed Point" = "Aggiungi punto di velocità";
+"Clear Speed Point" = "Cancella punto di velocità";
+"Custom Freeze frame Duration" = "Durata del fermo immagine personalizzata";
+
+//资源区
+
+"Photo" = "Foto";
+"Audio" = "Audio";
+"None" = "Nessuno";
+"All" = "Tutti";
+"YES" = "SÌ";
+"NO" = "NO";
+"List View" = "Visualizzazione elenco";
+"Large Thumbnail View" = "Vista Miniatura Ampia";
+"Middle Thumbnail View" = "Vista Miniatura Centrale";
+"Small Thumbnail View" = "Vista Miniatura Piccola";
+"Name" = "Nome";
+//重复"Duration" = "Durata";
+"Type" = "Genere";
+"Date Created" = "Data di creazione";
+"Category" = "Categoria";
+"Ascending" = "Ascendente";
+"Descending" = "Discendente";
+"Camera Name" = "Nome della videocamera";
+//重复"View" = "Vista";
+"Sort By" = "Ordina per";
+"Group By" = "Raggruppa per";
+//重复"Hide media folder list" = "Nascondi l'elenco delle cartelle multimediali";
+"Display media folder list" = "Visualizza l'elenco delle cartelle multimediali";
+"Large Thumbnail" = "Miniatura grande";
+"Small Thumbnail" = "Miniatura piccola";
+"Folder" = "Cartella";
+"Sample Videos" = "Video di esempio";
+"Sample Colors" = "Colori di esempio";
+"Project Media" = "Media di progetto";
+"My Projects" = "I miei progetti";
+"Import Media Files" = "Importa file multimediali";
+"Import Media Folder" = "Importa cartella multimediale";
+"Import from Camera or Phone" = "Importa da fotocamera o telefono";
+"Import with Instant Cutter Tool" = "Importa con lo strumento Taglierina istantanea";
+"Download Media from Facebook" = "Scarica Media da Facebook";
+"Download Photos from Instagram" = "Scarica le foto da Instagram";
+"Download Photos from Flickr" = "Scarica le foto da Flickr";
+"Create Adjustment Layer" = "Crea livello di regolazione";
+"Create Color Matte" = "Crea colore opaco";
+"Record from WebCam" = "Registra da WebCam";
+"Record Voiceover" = "Registra la voce fuori campo";
+"Record PC Screen" = "Registra schermo PC";
+//重复"Play" = "Riproduci";
+"Insert" = "Inserisci";
+"Overwrite" = "Sovrascrivi";
+"Append(add to the end)" = "Aggiungi";
+"Add to new track" = "Aggiungi alla nuova traccia";
+"Create Proxy file" = "Crea un file proxy";
+"Cancel Create Proxy file" = "Annulla proxy";
+"Relink Media" = "Ricollega Media";
+"Rename" = "Rinomina";
+//重复"Delete" = "Elimina";
+"Reveal in Finder" = "Rivela nel Finder";
+"Scene Detection" = "Rilevamento scena";
+"Audio Track" = "Traccia audio";
+"Properties" = "Proprietà";
+"Warning:" = "Avvertimento:";
+"Warning" = "Avvertimento";
+"Folder name already exits, please choose a new name" = "Questo nome è in uso, si prega di scegliere un nuovo nome.";
+"Your selection is used on at least one timeline. Are you sure you want to remove it from your project?" = "Uno o più clip selezionate sono state aggiunte alla timeline. Cancellandole dalla libreria le cancellerai anche dal progetto. Vuoi continuare?";
+//重复"Folder" = "Cartella";
+//"Add a new folder"
+//重复"Delete folder" = "Elimina cartella";
+"Filter" = "Filtro";
+"Sort" = "Ordina";
+"Record" = "Registra";
+"Import" = "Importa";
+"less than 1 min" = "meno di 1 minuto";
+"1 ~ 5 min" = "1 ~ 5 minuti";
+"5 ~ 30 min" = "5 ~ 30 minuti";
+"30 ~ 60 min" = "30 ~ 60 min";
+"more than 60 min" = "più di 60 minuti";
+"Apply" = "Applica";
+"Apply to All" = "Applica a tutto";
+"APPLY TO ALL" = "Applica a tutto";
+"Download" = "Scarica";
+"Download All" = "Scarica tutto";
+"Random to All" = "Casuale a tutti";
+"Add to Favorite" = "Aggiungi ai favoriti";
+"Remove from favorite" = "Rimuovi dai preferiti";
+"FAVORITE" = "PREFERITO";
+"Start Time" = "Ora di inizio";
+"End Time" = "Ora di Fine";
+"Titles" = "Titoli";
+"Transitions" = "Transizioni";
+
+//
+//重复"Name:" = "Nome:";
+//重复"Name" = "Nome";
+"Location:" = "Posizione:";
+"Location" = "Posizione";
+"File Size:" = "Dimensione del file:";
+//重复"Duration:" = "Durata:";
+//重复"Duration" = "Durata";
+"Date Created:" = "Data di creazione:";
+//重复"Date Created" = "Data di creazione";
+"Codec:" = "Codec:";
+//重复"Resolution:" = "Risoluzione:";
+"Resolution" = "Risoluzione";
+"FrameRate:" = "Frequenza dei fotogrammi:";
+"Frame Rate:" = "Frequenza dei fotogrammi:";
+"Frame Rate" = "Frequenza dei fotogrammi";
+"Aspect Ratio:" = "Proporzioni:";
+"Bit Rate:" = "Bit Rate:";
+"Camera Maker:" = "Macchina fotografica:";
+"Camera Model:" = "Modello di fotocamera:";
+"Exposure Time:" = "Tempo di esposizione:";
+//重复"Alpha Channel:" = "Canale alfa:";
+"Channel:" = "Canale:";
+"Sample Rate:" = "Frequenza di campionamento:";
+"Sample Rate" = "Frequenza di campionamento";
+//重复"Bit Rate:" = "Bit Rate:";
+"Property" = "Proprietà";
+"Used" = "Usato";
+"Media Type" = "Tipo di supporto";
+//重复"Date Created" = "Data di creazione";
+"Favorite" = "Preferito";
+//重复"Category" = "Categoria";
+//"Sign in" = "Accedi";
+"The video you ara loading is in high quality, do you wish to create proxy file to accelerate editingprocess?" = "Per prestazioni di editing più veloci, puoi lavorare con copie proxy più piccole. Durante l'esportazione, i progetti eseguiranno il rendering con i supporti originali con qualità massima. Puoi anche reimpostarlo in seguito in \"Preferenze\".";
+//重复"Always ask" = "Chiedi sempre";
+
+//Export
+"Title" = "Titolo";
+"My Video" = "Il mio video";
+"My Audio" = "mio audio";
+"Export" = "Esporta";
+"Uploading is failed maybe due to network.For more information, please click here to contact our support team." = "Il caricamento non è riuscito a causa della rete. Per ulteriori informazioni, fai clic qui per contattare il nostro team di supporto.";
+"Oops, authorization expired, please re-authorize your account to continue the uploading." = "Spiacenti, autorizzazione scaduta, re-autorizza il tuo account per continuare il caricamento.";
+"Oops! There is an error to start your upload, you don’t have enough free space with your Vimeo account, please check your account status or try again later;" = "Oops! C'è un errore nell'avvio del caricamento, non hai abbastanza spazio libero con il tuo account Vimeo, controlla lo stato del tuo account o riprova più tardi;";
+"Oops! There is an error to start your upload, you can only upload 1 HD video per week with a Basic account, please check your account status or try again later;" = "Oops! Si è verificato un errore durante l'avvio del caricamento, puoi caricare solo 1 video HD a settimana con un account Basic, controlla lo stato del tuo account o riprova più tardi;";
+"Oops! There is an error to start your upload, you can only upload 10 video per day with a Basic account, please check your account status or try again later;" = "Oops! Si è verificato un errore durante l'avvio del caricamento, puoi caricare solo 10 video al giorno con un account di base, controlla lo stato del tuo account o riprova più tardi;";
+"Oops! This video length is longer than 15 mins,normal account should increse limit after upload to YouTube." = "Oops! La durata di questo video è superiore a 15 minuti, l'account normale dovrebbe aumentare il limite dopo il caricamento su YouTube.";
+"Oops!  Failed to upload this video as Facebook limits the video length to 20 min and video size to 1GB; It is recommended to export your video to computer, and then upload it manually." = "Oops! Impossibile caricare questo video perché Facebook limita la durata del video a 20 minuti e la dimensione del video a 1 GB; Si consiglia di esportare il video sul computer e quindi caricarlo manualmente.";
+"Warning" = "Avvertenza";
+//重复"Pause" = "Pausa";
+"Find in Target" = "Trova in Target";
+"Resume" = "Riprendi";
+"Step: Bruning to Dic,please wait a moment." = "Passaggio: Masterizzazione su disco, attendi per un po'...";
+"Step: make iSO %.2f%%" = "Passaggio: Crea DVD ISO% .2f%%";
+"Step: upload %d" = "Passaggio: carica %d";
+"Step: Copying folder Please Wait..." = "Passaggio: Attendi Copia della cartella...";
+"Step: Making ISO Please Wait..." = "Passaggio: Realizzare DVD ISO, Aspetta ...";
+"Step: Converting %d%%" = "Passaggio: Conversione di %d%%";
+"Step: Faild" = "Passaggio: non riuscito";
+"Step: Updating..." = "Passaggio: Aggiornamento ...";
+"Please select your country, Filmora will choose the right TV Standard for you automatically." = "Seleziona il tuo Paese, Filmora sceglierà automaticamente lo standard TV giusto per te.";
+"Select Music" = "Seleziona musica";
+"EXPORT" = "ESPORTA";
+"Others..." = "Altri...";
+"Good" = "Buona";
+"SETTING" = "IMPOSTAZIONI";
+"Better" = "Meglio";
+"Best" = "Migliore";
+"Please connect optical driver!" = "Si prega di collegare il driver ottico!";
+"CREATE MENU" = "CREA MENU";
+
+"Public" = "Pubblico";
+"public" = "Pubblico";
+"private" = "Privato";
+"Anyone" = "Chiunque";
+"anybody" = "Nessuno";
+"Only Me" = "Solo io";
+"contacts" = "Contatti";
+"Sigin out" = "Disconnessione";
+//"sigin in"
+//重复"Custom" = "Personalizza";
+
+//播放器
+//重复"View" = "Vista";
+//重复"Go to" = "Vai a";
+"Full" = "Pieno";
+"Playback Quality" = "Qualità di riproduzione";
+"Fit" = "Adatta";
+"Safe Zone" = "Zone di sicurezza";
+//重复"View" = "Vista";
+//重复"Playback Quality" = "Qualità di riproduzione";
+"Zoom Level" = "Livello di zoom";
+//重复"Safe Zone" = "Zone di sicurezza";
+//重复"View" = "Vista";
+//重复"Playback Quality" = "Qualità di riproduzione";
+//重复"Zoom Level" = "Livello di zoom";
+//重复"Safe Zone" = "Zone di sicurezza";
+"Use Original Media When Pause" = "Quando si interrompe usa file originale";
+
+//高级调色
+"Histogram" = "Istogramma";
+//重复"White Balance" = "Bilanciamento del bianco";
+//重复"3D LUT" = "LUT 3D";
+"Color" = "Colore";
+"Light" = "Luce";
+"HSL" = "HSL";
+"Vignette" = "Vignette";
+"Temperature" = "Temperatura";
+"Tint" = "Tinta";
+"Exposure" = "Esposizione";
+"Brightness" = "Luminosità";
+"Contrast" = "Contrasto";
+"Saturation" = "Saturazione";
+"Vibrance" = "Vibrance";
+"Highlights" = "Sottolineature";
+"Shadows" = "Ombre";
+"Whites" = "Bianchi";
+"Blacks" = "Neri";
+"Amount" = "Quantità";
+"Size" = "Dimensione";
+"Roundness" = "Rotondità";
+"Feather" = "Feather";
+//重复"Exposure" = "Esposizione";
+"Highlight" = "Evidenzia";
+"Red" = "Rosso";
+"Orange" = "Arancione";
+"Yellow" = "Giallo";
+"Green" = "Verde";
+"Magenta" = "Magenta";
+"Purple" = "Viola";
+"Blue" = "Blu";
+"Cyan" = "Ciano";
+"Hue" = "Colore";
+//重复"Saturation" = "Saturazione";
+"Luminance" = "Luminanza";
+"Name your own color preset, it will be saved in the \"Custom\" category in Preset" = "Assegna un nome alla tua preimpostazione colore personalizzata. Verrà salvato nella categoria Personalizzata in Impostazioni predefinite.";
+"A preset with the name already exists. Replace it will overwrite the current preset." = "Questo nome è già in uso. Sostituisci il preset esistente?";
+"Add to favorite" = "Aggiungi ai preferiti";
+//重复"Remove from favorite" = "Rimuovi dai preferiti";
+"Delete custom preset" = "Elimina le preimpostazioni personalizzate";
+//重复"Delete" = "Elimina";
+"Adjust" = "Regola";
+"Preset" = "Predefinito";
+"Save as Preset" = "Salva come predefinito";
+"Reset All" = "Resetta tutto";
+//重复"OK" = "OK";
+"Advanced Color Tuning" = "Correzione avanzata del colore";
+"Disable Comparison" = "Disabilita Confronto";
+"Split View-Left/Right" = "Dividi Vista-sinistra/destra";
+"Split View-Top/Bottom" = "Dividi Vista-sopra/sotto";
+"Side by Side View" = "Vista affiancata";
+//重复"Save as Preset" = "Salva come predefinito";
+"Compare Before/After" = "Confronta prima / dopo";
+"Show Original" = "Mostra originale";
+
+//蒙太奇
+//重复"Delete" = "Elimina";
+"Start time:" = "Ora di inizio:";
+"End time:" = "Ora di Fine:";
+"Size:" = "Dimensione:";
+"Zoom:" = "Zoom:";
+"Color:" = "Colore:";
+"Border" = "Bordo";
+"Rotate" = "Ruota";
+//重复"OK" = "OK";
+"Media" = "Media";
+//重复"Video" = "Video";
+//重复"Color" = "Colore";
+"Drag video or image onto the drop zone to create your split screen video." = "Trascina il video o l'immagine nella zona di rilascio per creare il video dello schermo diviso.";
+
+//社交资源下载
+"Download Media from %@" = "Scarica media da %@";
+"SIGN IN" = "REGISTRATI";
+"SIGN OUT" = "DISCONNESSIONE";
+"Save to:" = "Salva come:";
+//重复"Cancel" = "Annulla";
+"Files selected: %d file(s)" = "File selezionati: %d file ";
+
+//Audio Mixter
+"Stereo" = "Stereo";
+"Surround" = "Surround";
+"Master" = "Master";
+"-60" = "-∞";
+
+//title edit
+"SAVE AS PRESET" = "SALVA COME PRESET";
+"ADVANCED" = "AVANZATE";
+"Top Left" = "In alto a sinistra";
+"Top Center" = "In alto al centro";
+"Top Right" = "In alto a destra";
+"Center Left" = "Centro sinistra";
+"Center" = "Centro";
+"Center Right" = "Centro destra";
+"Bottom Left" = "In basso a sinistra";
+"Bottom Center" = "Centro inferiore";
+"Bottom Right" = "In basso a destra";
+"Freedom" = "Libertà";
+"Font" = "Carattere";
+"Settings" = "Impostazioni";
+//重复"Transform" = "Trasforma";
+"Composition" = "Composizione";
+"Align:" = "Allinea:";
+"Text Spacing:" = "Spaziatura del testo:";
+"Line Spacing:" = "Interlinea:";
+//重复"Position:" = "Posizione:";
+"Text layer:" = "Livello di testo:";
+"Bold" = "Grassetto";
+"Italic" = "Italic";
+"Align Left" = "Allinea a sinistra";
+"Align Center" = "Allinea al centro";
+"Align Right" = "Allinea a destra";
+"Align Justified" = "Giustifica";
+
+//advance title edit
+"Title Inspector" = "Analizza Titolo";
+"Add Text Box" = "Aggiungi casella di testo";
+"Add Shape" = "Aggiungi forma";
+"Add Photo" = "Aggiungi foto";
+"Preset" = "Preset";
+"Customize" = "Personalizza";
+"Animation" = "Animazione";
+"Move to Front" = "Sposta in primo piano";
+"Move Forward One" = "Vai avanti di uno";
+"Move Back One" = "Vai indietro di uno";
+"Move to Back" = "Sposta indietro";
+"Color Fill" = "Colore di riempimento";
+"Gradient Fill" = "Riempimento sfumato";
+"Image Fill" = "Immagine di riempimento";
+"Parameter:" = "Parametro:";
+"Blur:" = "Blur:";
+"Type:" = "Genere:";
+//重复"Color:" = "Colore:";
+"Opaciity:" = "Opacità:";
+"Angle:" = "Angolo:";
+"Effect:" = "Effetto:";
+//重复"Size:" = "Dimensione:";
+//文案缺失"Alpha Channel" = "";
+"Distance:" = "Distanza:";
+"Input text" = "Testo di input";
+"Text Fill" = "Riempimento di testo";
+"Text Border" = "Bordo di testo";
+"Text Shadow" = "Ombra di testo";
+"Shape Fill" = "Shape Fill";
+"Shape Border" = "Bordo forma";
+//重复"Save as Preset" = "Salva come predefinito";
+"Name your own text preset, it will be saved in the \"%@\" category in %@" = "Assegna un nome al predefinito di testo personalizzato, verrà salvato nella categoria \" %@ \" in %@";
+"Text/Credit" = "Testo / credito";
+"A preset with the name already exists. Replace it will overwrite the current preset." = "Questo nome è già in uso. Sostituirlo sovrascriverà il preset corrente.";
+"Replace" = "Sostituire";
+"A preset with the name already exists. Please choose a new name." = "Il nome è già in uso. Si prega di scegliere un nuovo nome.";
+
+//////mediabrower
+"Import from Device" = "Importa dal dispositivo";
+//重复"All" = "Tutti";
+"Picture" = "Immagine";
+"LivePhoto" = "Foto in diretta";
+//"Others..."
+"Change" = "Modifica";
+"Import from:" = "Importa da:";
+"No device detected" = "Nessun dispositivo rilevato";
+"Save to:" = "Salva:";
+"IMPORT" = "IMPORTA";
+//重复"CANCEL" = "ANNULLA";
+//重复"Files selected: %d file(s)" = "File selezionati: %d file ";
+"Check All" = "Seleziona tutto";
+"Date" = "Data";
+//重复"Size" = "Dimensione";
+//重复"Name" = "Nome";
+/////VEOnlineResourceWindowController
+"Downloading" = "Download in corso";
+"Downloading online content (%d%) ..." = "Download i contenuti online ( %d%) ...";
+//////VEPacksManagerWindowController
+"Delete Selected" = "Elimina selezionato";
+//重复"Cancel" = "Annulla";
+"Delete unused effect pack can save disk space, would you want to delete some?" = "Elimina pacchetti effetti inutilizzati per liberare spazio su disco, puoi scaricarli nuovamente in seguito da Effects Store.";
+
+//WSID
+"Choose a Plan" = "Scegli un Piano";
+"Message Center" = "Centro messaggi";
+"Mark as Read" = "Segna come letto";
+"Account Information" = "Informazioni account";
+"Offline Activation" = "Attivazione Offline";
+"Login" = "Login";
+"Logout" = "Logout";
+"Create Account" = "Crea Account";
+"Login to Continue" = "Fai il login per continuare";
+"You need a Wondershare ID to continue your current action. Please log in or create one for free." = "È necessario un ID Wondershare per continuare la tua azione attuale. Effettua il login o creane uno gratuitamente.";
+"Expires after:" = "Scade dopo:";
+"upgrade" = "Aggiorna";
+"Free Plan" = "Piano gratuito";
+"Annual Plan" = "Piano Annuale";
+"Lifetime Plan" = "Piano Vita";
+"Extend My License" = "Estendi la mia licenza";
+"Change Password" = "Cambia Password";
+"Unlimited" = "Illimitata";
+"Unlimited with watermark" = "Illimitata con filigrana";
+"Register Your Software" = "Registra il tuo Software";
+"Licensed e-mail:" = "Concesso in licenza e-mail:";
+"Registration Code:" = "Codice di registrazione:";
+"Your copy of software is not activated and the outputted video will be added a watermark." = "La tua copia del software non è attivata e il video in output avrà una filigrana.";
+"Buy a License to remove the limitation to enjoy all the benefits of Video Editor and product lifetime support." = "Acquista una Licenza per rimuovere la limitazione per godere a vita di tutti i vantaggi del Video Editor e del supporto del prodotto.";
+"Buy Now" = "Acquista Ora";
+"Evaluate" = "Trial";
+"Register" = "Registra";
+"Trial Version" = "Versione di prova";
+"Registered Version" = "Versione registrata";
+"Registration info is invalid." = "Informazioni di registrazione non è valido.";
+"Note: if you have any problem with the registration code and the software, please visit: Support Center" = "Nota: se hai qualche problema con il software e il codice di registrazione, si prega di visitare:";
+"Was your payment processed successfully?" = "Il tuo pagamento è stato elaborato correttamente?";
+"If you have paid successfully, please refresh your payment status. The payment status may not be refreshed timely due to network delay, you can also refresh your status again in \"Activate\"" = "Se il pagamento è andato a buon fine, aggiorna lo stato del tuo pagamento. Lo stato del pagamento potrebbe non essere aggiornato tempestivamente a causa del ritardo della rete, puoi anche aggiornare di nuovo lo stato in \"Activate\"";
+"No activation status update, please refresh later." = "Nessun aggiornamento dello stato di attivazione, si prega di aggiornare più tardi.";
+"Refresh Now" = "Aggiorna ora";
+"Your activation status may not be refreshed timely under certain circumstances，you can have a try of refresh manually." = "Il tuo stato di attivazione potrebbe non essere aggiornato tempestivamente in determinate circostanze, puoi provare ad aggiornarlo manualmente.";
+"Password Reset Succeeded!" = "Password resettata correttamente!";
+"Status:" = "Stato:";
+"Expiration Date" = "Data di scadenza";
+"Active" = "Attiva";
+"Unable to connect" = "Impossibile connettersi";
+"Your computer seems to be offline, causing a connection error. Please check your connection and try again." = "Il tuo computer sembra essere offline, causando un errore di connessione. Controlla la tua connessione e riprova.";
+
+//偏好设置
+"Never" = "Mai";
+"Every Day" = "Every Day";
+"Every Week" = "Ogni settimana";
+"Every Month" = "Ogni mese";
+"Arrange Objects" = "Gestisci oggetti";
+
+
+//////补充
+"Purchase" = "Acquista";
+
+//crop/pan&zoom
+"Swap the Start and End areas" = "Scambia le aree Inizio e Fine";
+
+//import
+"There isn't enough space for importing, please delete unnecessary files to free enough space." = "Non c'è abbastanza spazio sul disco, libera spazio su disco e riprova.";
+
+//"Sign In" = "Registrati";
+"Recent Project will be shown here" = "Progetti recenti";
+
+//播放器补充
+//重复"Playhead Position" = "Posizione della testina";
+//重复"Mark In" = "Segna";
+//重复"Mark Out" = "Non Segnare";
+//重复"Previous Frame" = "Fotogramma precedente";
+//重复"Play" = "Riproduci";
+//重复"Pause" = "Pausa";
+//重复"Stop" = "Stop";
+//重复"Next Frame" = "Fotogramma successivo";
+//重复"Snapshot" = "Istantanea";
+//重复"Volume" = "Volume";
+//重复"Full Screen" = "A schermo intero";
+//重复"Exit Full Screen" = "Esci dalla modalità schermo intero";
+"Preview quality and display settings" = "Qualità di anteprima e impostazioni di visualizzazione";
+//重复"View" = "Vista";
+"Play/Pause" = "Riproduci/Pausa";
+"Play Full Screen" = "Riproduci a schermo intero";
+"Previous Edit" = "Modifica precedente";
+"Next Edit" = "Modifica successiva";
+//重复"Go to" = "Vai a";
+"Previous Second" = "Secondo precedente";
+"Next Second" = "Secondo successivo";
+"Previous Marker" = "Indicatore precedente";
+"Next Marker" = "Indicatore successivo";
+"Beginning" = "Inizio del progetto";
+"End" = "Fine del progetto";
+//重复"Zoom Timeline" = "Zoom della Timeline";
+"Zoom In Timeline" = "Zoom avanti";
+"Zoom Out Timeline" = "Zoom indietro";
+"Zoom to Fit Timeline" = "Zoom per adattare";
+"Enable Canvas Snapping" = "Abilita il Canvas Snapping";
+"Enter Full Screen" = "Entra a schermo intero";
+
+//高级调色补充
+"A preset with the name already exists. Please choose a new name." = "Questo nome è già in uso. Si prega di scegliere un nuovo nome.";
+"Before" = "Prima";
+"After" = "Dopo";
+"Are you sure you want to delete this LUT file?" = "Sei sicuro di voler eliminare questo file LUT?";
+"You can load your own LUT files later." = "Puoi caricare i tuoi file LUT in seguito.";
+"Yes" = "Si";
+"No" = "No";
+"is in an unsupported format and cannot be loaded." = "è in un formato non supportato e non può essere caricato.";
+//重复"None" = "Nessuno";
+"Load New LUT..." = "Carica nuovo LUT ...";
+"All Presets" = "Tutti i preset";
+//重复"Favorite" = "Preferito";
+//重复"Custom" = "Personalizza";
+//重复"3D LUT" = "LUT 3D";
+//重复"Undo" = "Annulla";
+//重复"Redo" = "Rifai";
+"My Color Preset" = "Il mio predefinito 1";
+
+//社交资源补充
+//重复"Check All" = "Seleziona tutto";
+"Quit" = "Esci";
+
+//长度设置对话框
+"Duration Settings" = "Impostazioni di durata";
+"Ok" = "Fatto";
+//重复"Cancel" = "Annulla";
+"Input Duration:" = "Durata dell'input:";
+
+//motion设置
+"Motion" = "Movimento";
+//重复"Apply" = "Applica";
+"Random to all clips on current track" = "Casuale a tutti";
+"Apply to all clips on current track" = "Applica a tutto";
+
+//资源区
+"Image" = "Immagine";
+"Text" = "Testo";
+"Effects" = "Effetti";
+"Elements" = "Elementi";
+"Split Screen" = "Schermo Diviso";
+"Import Media Files Here" = "Importa file multimediali qui";
+//文案缺失"Click here to import media." = "";
+"Drag to the timeline to apply" = "Trascina sulla timeline per l'aggiunta";
+"OpenPreferences" = "Preferenze";
+"Preferences" = "Preferenze";
+"General" = "Generale";
+"Folder Path" = "Cartelle";
+"Editing" = "Modifica";
+//重复"Save" = "Salva";
+"Performance" = "Prestazione";
+"Output" = "Uscita";
+"Open the Output Folder after exporting video." = "Apri la cartella di output dopo l'esportazione del video.";
+"Play alert sound after conversion." = "Riproduci il suono di avviso dopo la conversione.";
+"Miscellaneous:" = "Varie:";
+"Check for update:" = "Controlla automaticamente gli aggiornamenti:";
+"Reset all dialog warnings:" = "Reimposta tutti gli avvisi del programma:";
+"Message Center:" = "Centro messaggi:";
+"Don't show messages automatically" = "Non mostrare i messaggi automaticamente";
+"Folders:" = "Cartelle:";
+"Snapshot files folder:" = "Cartella dei file di istantanee:";
+"Upload files folder:" = "Carica la cartella dei file:";
+"Effect Packs:" = "Pacchetti effetti:";
+"Install Effect Pack to:" = "Pacchetti effetti:";
+"Effect Packs takes up: %.1f MB" = "I Pacchetti Effetto occupano: %.1f MB";
+"Manage" = "Gestisci";
+"Default Durations:" = "Durata predefinita:";
+"Photo Duration:" = "Durata della foto:";
+"Transition Duration:" = "Durata della transizione:";
+"Effect Duration:" = "Durata dell'effetto:";
+"Freeze Frame Duration:" = "Durata Fermo immagine:";
+"Photo Placement:" = "Posizionamento fotografico:";
+//重复"Fit" = "Adatta";
+"Crop to Fit" = "Ritaglia per adattare";
+"Pan & Zoom" = "Pan & Zoom";
+"Save:" = "Salva:";
+"Automatically backup projects, every" = "Salva automaticamente i progetti, tutti";
+"min" = "min";
+"GPU" = "GPU";
+"Enable GPU Accelaration" = "Abilita l'accelerazione hardware per il rendering e la riproduzione di video";
+"Proxy:" = "Proxy:";
+"Automatically create Proxy when resolution higher than:" = "Crea automaticamente i proxy quando la risoluzione dei media è superiore a:";
+"Proxy file folder:" = "Posizione del proxy:";
+"Automatically delete Proxy when closing a project file" = "Elimina automaticamente i proxy quando un progetto viene chiuso.";
+"Clean" = "Pulisci";
+
+//顶部菜单
+"About WSVEOnline" = "Informazioni su WSVEOnline";
+"Preferences…" = "Preferenze ...";
+"Order" = "Ordine";
+"Activate" = "Attiva";
+"Check for Updates..." = "Controlla gli aggiornamenti...";
+"Services" = "Servizi";
+"Hide WSVEOnline" = "Nascondi WSVEOnline";
+"Hide Others" = "Nascondi gli altri";
+"Show All" = "Mostra tutto";
+"Quit WSVEOnline" = "Esci da WSVEOnline";
+"File" = "File";
+"New" = "Nuovo progetto";
+"Open…" = "Apri Progetto";
+"Close" = "Chiudi";
+"Save…" = "Salva il progetto…";
+"Save As…" = "Salva progetto come ...";
+"Archive Project" = "Archivia Progetto";
+"Download Media" = "Scarica Media";
+"Record Media" = "Registra i media";
+"Project Setting" = "Impostazioni del progetto";
+"Ripple Delete" = "Cancella Ondulazione";
+"Select All" = "Seleziona tutto";
+"Deselect All" = "Deseleziona tutto";
+//重复"Tools" = "Strumenti";
+//重复"Show Properties" = "Mostra proprietà";
+"Rotate 90 CW" = "Ruota di 90° in senso orario";
+"Rotate 90 CCW" = "Ruota di 90° in senso antiorario";
+"Create Video..." = "Crea video ...";
+"Export to Device..." = "Esporta nel dispositivo ...";
+"Upload to Youtube..." = "Carica su YouTube ...";
+"Upload to Vimeo..." = "Carica su Vimeo ...";
+"Burn DVD..." = "Masterizza DVD ...";
+"Window" = "Finestra";
+"Minimize" = "Minimizza";
+"Zoom" = "Zoom";
+"Bring All to Front" = "Porta tutto in primo piano";
+"Help" = "Aiuto";
+"Online Help" = "Aiuto online";
+"Product FAQ" = "Domande frequenti sul prodotto";
+"Support Center" = "Centro di supporto";
+"Offline Activation" = "Attivazione offline";
+"About Wondershare ID" = "Informazioni su Wondershare ID";
+"Fetch Log" = "Trova Log";
+"New Feature Request" = "Nuova richiesta di funzionalità";
+"Filmora YouTube" = "Wondershare YouTube";
+"Filmora Facebook" = "Facebook di Wondershare";
+"Filmora Twitter" = "Twitter di Wondershare";
+
+//时间线
+"Enable Timeline Snap" = "Abilita snapshot della timeline";
+"Default" = "Predefinito";
+
+//输出
+//"Sign In"
+//"Sign Out" = "Disconnetti";
+"You can update this video to YouTube" = "Puoi caricare questo video su YouTube";
+"The file has been successfully uploaded to Vimeo." = "Il file è stato caricato con successo su Vimeo.";
+"The file has been successfully uploaded to YouTube." = "Il file è stato caricato con successo su YouTube.";
+//重复"You can update this video to YouTube" = "Puoi caricare questo video su YouTube";
+//重复"Anyone" = "Chiunque";
+"People I fellow on viemo" = "Persone che segui su Vimeo";
+"Only me" = "Solo io";
+"DVD" = "DVD";
+"DVD Folder" = "Cartella DVD";
+"Template" = "Modello";
+"Create Menu" = "Crea menu";
+"No Music" = "Nessuna musica";
+"My DVD" = "Il mio DVD";
+"Burn to:" = "Masterizza su:";
+"TV Standard:" = "Standard TV:";
+//重复"Aspect Ratio:" = "Proporzioni:";
+"DVD Lable:" = "Etichetta DVD:";
+"Burn Device:" = "Masterizza dispositivo:";
+//重复"Please connect optical driver!" = "Si prega di collegare il driver ottico!";
+"Disc Type:" = "Tipo di disco:";
+"Capacity:" = "Capacità:";
+"Category:" = "Categoria:";
+"Title:" = "Titolo:";
+"Tags:" = "Tag:";
+"Privacy:" = "Privacy:";
+//重复"Public" = "Pubblico";
+"Private" = "Privato";
+//重复"Custom" = "Personalizza";
+"Do Nothing" = "Non fare niente";
+"Sound Reminder" = "Promemoria audio";
+"Put Computer to Sleep" = "Metti il computer in stato di Sleep";
+"Shut Down My Computer" = "Spegni il mio computer";
+"Creating Movie ..." = "Creazione di film ...";
+"Step: Mission Complete!" = "Passo: missione completata!";
+"Find in target" = "Trova nell'obiettivo";
+"Congratulations!" = "Congratulazioni!";
+"Pan" = "Pan";
+"Volume Fader" = "Volume Fader";
+"Master Track" = "Traccia Principale";
+"Level Meter" = "Misuratore di livello";
+"Buy License" = "Acquista Licenza";
+"Create With Wondershare Filmora" = "Creato con Wondershare Filmora";
+
+//Media browser补充
+"Downloading video content (%d%) ..." = "Download di contenuti video ( %d%) ...";
+"Downloading %@ content (%d%) ..." = "Download di %@ content ( %d%) ...";
+"The output directory could not be found. Please update it and try again." = "La directory di output non è stata trovata. Si prega di aggiornarlo e riprovare.";
+//重复"Motion" = "Movimento";
+//重复"Select a Profile" = "Seleziona un profilo";
+//重复"Default" = "Predefinito";
+"Auto" = "Auto";
+//重复"Load New LUT..." = "Carica nuovo LUT ...";
+
+//marker edit window
+"Marker Editor" = "Modifica indicatore";
+
+// Export & detect 补充
+"Format" = "Formato";
+"Device" = "Dispositivo";
+"YouTube" = "YouTube";
+"Vimeo" = "Vimeo";
+//重复"DVD" = "DVD";
+"Output Descriptions" = "Descrizioni di output";
+"DVD Descriptions" = "Descrizioni DVD";
+"Quality" = "Qualità";
+"Encoder:" = "Codificatore:";
+"Detect" = "Rileva";
+"Loading scenes to Timeline" = "Caricamento di scene sulla timeline";
+"Buy License" = "Acquista la licenza";
+
+//document
+"This project file was saved from an older version of Filmora and must be converted. The original project file will not be changed." = "Questo file di progetto è stato salvato da una versione precedente di Filmora e deve essere convertito. Il file di progetto originale non verrà modificato.";
+"Convert document failed!" = "Impossibile convertire il file di progetto!";
+
+"There is no enough space on the disk, please free up some disk space and try again." = "Non c'è abbastanza spazio sul disco, libera spazio su disco e riprova.";
+"Task is still in progress, are you sure to cancel it?" = "L'attività è ancora in corso, sei sicuro di cancellarla?";
+"RateAppstore" = "macappstore://itunes.apple.com/app/id447570101?mt=12";
+
+"Missing Effects" = "Effetti mancanti";
+"This project file uses effect packs that are currently unavailable on your computer. You can open Effect Store to re-download below effect packs or click \"Ignore\" to continue open the project file without the missing effects." = "Questo file di progetto utilizza dei pacchetti effetto che al momento non sono disponibili sul tuo computer. È possibile aprire l'Effect Store per scaricare nuovamente i pacchetti effetto qui sotto o fare clic su \"Ignora\" per continuare ad aprire il file di progetto senza gli effetti mancanti.";
+"Ignore" = "Ignora";
+"Relocate" = "Rilocalizzare";
+"Open Effect Store" = "Apri l'Effects Store";
+"Effect Pack Name" = "Nome del pacchetto effetti";
+"Export to file or send to Filmora for more edits:" = "Esporta su file o invia a Filmora per ulteriori modifiche:";
+"Progress" = "Progresso";
+"Burning is successful! Would you like to burn more DVDs?" = "La masterizzazione ha avuto successo! Vorresti masterizzare altri DVD?";
+"No, thanks" = "No grazie";
+"More" = "Altro";
+"Sign out" = "Esci";
+"My Profile" = "Il mio Profilo";
+"My Favorites" = "I miei Preferiti";
+"My Effects" = "I miei Effetti";
+//"Sign in" = "Registrati";
+"Filmora Effects Store" = "Negozio degli Effetti di Filmora";
+"Download more effects from Filmora Resource Center" = "Scarica altri effetti da Filmora centro risorse";
+//滤镜参数
+"alpha" = "Alfa";
+"Percent" = "Percentuale";
+"amount" = "Quantità";
+"PhaseIncrement" = "Incremento di fase";
+"ZoomRate" = "Percentuale di Zoom";
+"Source_Width" = "Larghezza del sorgente";
+"BG_Color" = "Colore di sfondo";
+"BG_Luminance" = "Luminanza di sfondo";
+"BG_Blur_Level" = "Feather di Sfondo";
+//重复"Size" = "Dimensione";
+"Blur" = "Feather";
+"Opacity" = "Opacità";
+//重复"Start" = "Inizio";
+//重复"End" = "Fine";
+"Gradient Direction" = "Direzione dei gradienti";
+"Direction" = "Direzione";
+"Radius" = "Raggio";
+"strength" = "Forza";
+"Frequency" = "Frequenza";
+"Pos_X" = "Posizione X";
+"Pos_Y" = "Posizione Y";
+"Rot_Z" = "Posizione Z";
+"RGB_Separate" = "RGB Separato";
+"Motion_Blur" = "Sfocatura di movimento";
+"Fade" = "Dissolvenza";
+"left" = "Sinistra";
+"right" = "Destra";
+"top" = "Sopra";
+"bottom" = "Sotto";
+"autoZoom" = "Zoom";
+"blurEdges" = "Feather del bordo";
+"Mode" = "Modalità";
+"BlockSize" = "Misura del blocco";
+"Amplitude" = "Ampiezza";
+"aPercent" = "Percentuale";
+"Presets" = "Preselezioni";
+"radius" = "Raggio";
+"posX" = "Posizione X";
+"posY" = "Posizione Y";
+"Frosted_Level" = "Livello smerigliato";
+"DecolorPosX" = "Decolora Posizione X";
+"DecolorPosY" = "Decolora Posizione Y";
+"Block_size" = "Misura del blocco";
+//重复"Hue" = "Colore";
+"path" = "Percorso";
+"blurStrength" = "Sfocatura";
+"invertMask" = "Inverti maschera";
+//重复"Type" = "Genere";
+"Intensity" = "Intensità";
+"decolorPosX" = "Decolora Posizione X";
+"decolorPosY" = "Decolora Posizione Y";
+"percent" = "Percentuale";
+"Colorful" = "Colorato";
+"SquareSize" = "Dimensione quadrato";
+"Desity" = "Densità";
+"Height" = "Altezza";
+"swing" = "Oscillazione";
+"frequency" = "Frequenza";
+"Warp_Level" = "Livello Distorsione";
+"Scales_Level" = "Livello delle scale";
+"nDistance" = "Distanza";
+"nBlur" = "Sfocatura";
+"nAlpha" = "Opacità";
+"dwValue" = "Colore";
+"uDirect" = "Direzione";
+"m_dRCol" = "Rosso";
+"m_dGCol" = "Verde";
+"m_dBCol" = "Blu";
+"m_bSrcLeft" = "Scambio sorgente";
+"m_bSplit" = "Abilita";
+"centerX" = "Centro X";
+"centerY" = "Centro Y";
+"intensity" = "Intensità";
+"size" = "Dimensione";
+"rotation" = "Rotazione";
+"bright" = "Luminosità";
+"emboss" = "Rilievo";
+"steps" = "Passi";
+"Level" = "Livello";
+"xPos" = "Posizione X";
+"yPos" = "Posizione Y";
+"Scale Width" = "Scala X";
+"Scale Height" = "Scala Y";
+"Position" = "Posizione";
+"borderH" = "Altezza del bordo";
+
+//高级调色9月25补充
+"Load LUT" = "Carica LUT";
+"Film/TV" = "Film";
+"Film" = "Film";
+"Common" = "Comune";
+
+//输出新补充
+"You can upload this video to YouTube" = "Puoi caricare questo video su YouTube";
+"You can upload this video to Vimeo" = "Puoi caricare questo video su Vimeo";
+//重复"Task is still in progress, are you sure to cancel it?" = "L'attività è ancora in corso, sei sicuro di cancellarla?";
+"Disc space is not enough. Please insert a disc with larger space, or adjust the video quality, or delete some files." = "Lo spazio sul disco non è sufficiente. Inserisci un disco con spazio maggiore o regola la qualità del video o elimina alcuni file.";
+"Disc is not blank. Please insert a blank one." = "Il disco non è vuoto. Si prega di inserirne uno vuoto.";
+"have no enough free space" = "non hai abbastanza spazio libero";
+
+"Pause Recording" = "Metti in pausa la registrazione";
+"Resume Recording" = "Riprendi la registrazione";
+"Description:" = "Descrizione:";
+
+"DVDMedia" = "mediaDVD";
+//重复"DVD Folder" = "Cartella DVD";
+"ISO" = "ISO";
+
+"Shut down" = "Spegnimento";
+"If you do nothing, the computer will shut down automatically in %d seconds." = "Se non fai nulla, il computer si spegnerà automaticamente in %d secondi.";
+"Are you sure you want to shut down your computer now?" = "Sei sicuro di voler spegnere il tuo computer ora?";
+
+"Step: make menu %d%%" = "Step: crea menu %d%%";
+"Setting" = "Impostazione";
+
+"Nothing configurable" = "Niente da configurare";
+"There is no parameter for this object, select a text box in the Previewer to continue." = "Non vi è alcun parametro per le immagini, seleziona una casella di testo nell'anteprima per continuare.";
+
+
+//新补充
+"Search" = "Ricerca";
+"Video Info:" = "Informazioni video:";
+"Audio Info:" = "Informazioni audio:";
+"Image Info:" = "Informazioni sull'immagine:";
+
+"Creating proxy file is necessary for smooth playback, do you wish to create proxy file for this clip?" = "La creazione di file proxy è necessaria per una riproduzione fluida, vuoi creare un file proxy per questa clip?";
+
+"Show Audio Indicator" = "Mostra indicatore audio";
+"Hide Audio Indicator" = "Nascondi indicatore audio";
+"Viewable by:" = "Visualizzabile da:";
+"Music Trak" = "Traccia musicale";
+"Video Trak" = "Traccia Video";
+"Destination:" = "Destinazione:";
+
+"Click to Apply" = "Fare clic su Applica per";
+
+//
+"Freeze" = "Fermo immagine";
+"No Animation" = "Nessuna animazione";
+"No Motion" = "Nessuna animazione";
+"Type Writer" = "Digita Writer";
+"Wavy Style" = "Stile ondulato";
+"Rich Tick" = "Rich Tick";
+"Random" = "Casuale";
+"Random 2" = "Casuale 2";
+"String Blur" = "Sfocatura dei bordi";
+"Cinema Style" = "Modalità Cinema";
+"Doomo" = "Doomo";
+"Up Insert" = "Inserisci sopra";
+"Down Insert" = "Inserisci sotto";
+"Up Dir Insert" = "Inserisci Dir sopra";
+"Left Dir Insert" = "Inserisci Dir sinistra";
+"Right Dir Insert" = "Inserisci Dir destra";
+"Down Dir Insert" = "Inserisci Dir sotto";
+"Up Roll" = "Ruota sopra";
+"Down Roll" = "Ruota in basso";
+"Left Roll" = "Ruota a sinistra";
+"Right Roll" = "Ruota a destra";
+"Drop1" = "Rilascia";
+"Pixelate" = "Pixelate";
+"Pinwheel" = "Girandola";
+"Erase" = "Cancellare";
+"Crosszoom" = "Crosszoom";
+"Doorway" = "Portone";
+"Roll clockwise" = "Ruota in senso orario";
+"Round zoom out" = "Zoom indietro";
+"Twrl" = "Twrl";
+"LinearWipe" = "LinearWipe";
+"Push" = "Spingi";
+"SkewRight" = "SkewRight";
+"Evaporate" = "Evapora";
+"Boom!" = "Boom!";
+"Bounce to zoom in 1" = "Salta per ingrandire 1";
+"Bounce to zoom in 2" = "Salta per ingrandire 2";
+"Bounce to zoom out 1" = "Salta per lo zoom indietro 1";
+"Clockwise rotate to zoom in 1" = "Ruota in senso orario per ingrandire 1";
+"Clockwise rotate to zoom in 2" = "Ruota in senso orario per ingrandire 2";
+"Clockwise rotate" = "Ruota in senso orario";
+"Counter clockwise rotate" = "Ruota in senso antiorario";
+"Down Up 1" = "Down Up 1";
+"Down Up 2" = "Down Up 2";
+"Fade Slide 1" = "Dissolvenza diapositiva 1";
+"Fade Slide 2" = "Dissolvenza diapositiva 2";
+"Fade Slide 3" = "Dissolvenza diapositiva 3";
+"Fade Slide 4" = "Dissolvenza diapositiva 4";
+"Fade Zoom In" = "Fade Zoom In";
+"Fade Zoom Out" = "Fade Zoom Out";
+//重复"Fade" = "Dissolvenza";
+"Flip Down1" = "Gira Down1";
+"Flip Down2" = "Gira Down2";
+"Flip Up1" = "Gira Up1";
+"Flip Up2" = "Gira Up1";
+"Fly to zoom in" = "Vola per ingrandire";
+"Grow Shrink" = "Grow Shrink";
+"Move to bottom" = "Sposta in basso";
+"Move to left" = "Sposta a sinistra";
+"Move to lower left" = "Sposta in basso a sinistra";
+"Move to lower right" = "Sposta in basso a destra";
+"Move to right" = "Spostati a destra";
+"Move to top" = "Sposta in alto";
+"Move to upper left" = "Sposta in alto a sinistra";
+"Move to upper right and zoom in" = "Sposta in alto a destra e ingrandisci";
+"Move to upper right" = "Sposta in alto a destra";
+"Photo Spin 3" = "Photo Spin 3";
+"Photo Spin 4" = "Photo Spin 4";
+"Rotate to zoom in 1" = "Ruota per ingrandire 1";
+"Rotate to zoom in 2" = "Ruota per ingrandire 2";
+"Spin 1" = "Spin 1";
+"Spin 2" = "Spin 2";
+"Spin 3" = "Spin 3";
+"Spin 4" = "Spin 4";
+"Stretch in and zoom in 1" = "Allungare e ingrandire 1";
+"Stretch in and zoom in 2" = "Allungare e ingrandire 2";
+"Stretch to left" = "Allunga a sinistra";
+"Stretch to right" = "Allunga a destra";
+"To the Left 1" = "A sinistra 1";
+"To the Left 2" = "A sinistra 2";
+"To the Right 1" = "A destra 1";
+"To the Right 2" = "A destra 2";
+"Up Down 1" = "Su-Giu 2";
+"Up Down 2" = "Su-Giu 2";
+"Wham!" = "Wham!";
+"Zoom in 1" = "Zoom avanti 1";
+"Zoom in 2" = "Zoom avanti 2";
+"Zoom in 3" = "Zoom avanti 3";
+"Zoom in and out" = "Zoom avanti e indietro";
+"Zoom in to the bottom" = "Zoom avanti in basso";
+"Zoom in to the left" = "Zoom avanti a sinistra";
+"Zoom in to the right" = "Zoom avanti a destra";
+"Zoom in to the top" = "Aumenta lo zoom in alto";
+"Zoom out 1" = "Zoom indietro 1";
+"Zoom out 2" = "Zoom indietro 2";
+"Zoom out 3" = "Zoom indietro 3";
+"Zoom out to the right" = "Zoom indietro a destra";
+"Drop" = "Rilascia";
+"Expansion" = "Espansione";
+"Fly in and Fade out" = "Vola dentro e dissolvi";
+"Fly in and Fly out" = "Vola dentro e vola fuori";
+"Stretch in and zoom in" = "Allungare e ingrandire";
+"Tiny zoom" = "Piccolo zoom";
+"Zoom in" = "Zoom avanti";
+"Zoom out" = "Zoom indietro";
+"Text style 1" = "Stile del testo 1";
+"Text style 2" = "Stile del testo 2";
+"Text style 3" = "Stile del testo 3";
+"Text style 4" = "Stile del testo 4";
+"Text style 5" = "Stile del testo 5";
+"Text style 6" = "Stile del testo 6";
+"Text style 7" = "Stile del testo 7";
+"Text style 8" = "Stile del testo 8";
+"Text style 9" = "Stile del testo 9";
+"Text style 10" = "Stile del testo 10";
+"Text style 11" = "Stile del testo 11";
+"Text style 12" = "Stile del testo 12";
+"Text style 13" = "Stile del testo 13";
+"Text style 14" = "Stile del testo 14";
+"Text style 15" = "Stile del testo 15";
+"Text style 16" = "Stile del testo 16";
+"Text style 17" = "Stile del testo 17";
+"Text style 18" = "Stile del testo 18";
+"Text style 19" = "Stile del testo 19";
+"Text style 20" = "Stile del testo 20";
+"Text style 21" = "Stile del testo 21";
+"Text style 22" = "Stile del testo 22";
+"Text style 23" = "Stile del testo 23";
+
+//水印
+"This package is not valid! It may be has been damaged, please reinstall the program!" = "Questo pacchetto non è valido! Potrebbe essere stato danneggiato, reinstalla il programma!";
+"Media Mismatch" = "Mancata corrispondenza media";
+"The selected file’s duration is different from the clip you used in project and may cause issues, please reselect another file with the same duration." = "La durata del file selezionato è diversa dalla clip utilizzata nel progetto e potrebbe causare problemi, quindi selezionare nuovamente un altro file con la stessa durata.";
+"Oops, the selected file’s duration must be the same as the clip you used in project." = "Spiacenti, la durata del file selezionato deve essere la stessa del clip utilizzato nel progetto.";
+
+//重复"Show Audio Indicator" = "Mostra indicatore audio";
+//重复"Hide Audio Indicator" = "Nascondi indicatore audio";
+//重复"Viewable by:" = "Visualizzabile da:";
+//重复"Music Trak" = "Traccia musicale";
+//重复"Video Trak" = "Traccia Video";
+//重复"Destination:" = "Destinazione:";
+
+"No write privilege for the target directory, please specify a new directory." = "Nessun privilegio di scrittura per la directory di destinazione, si prega di specificare una nuova directory.";
+
+
+"Show Speed Control" = "Mostra controllo della velocità";
+"Can't find the file, please make sure the filename and path are not changed:" = "Impossibile trovare il file, assicurarsi che il nome del file e il percorso non siano cambiati:";
+
+"No disc.Please insert a blank one." = "Nessun disco. Si prega di inserire uno vuoto.";
+"Customize Equalizer" = "Personalizza equalizzatore";
+
+"Countdown1" = "Conto alla rovescia1";
+"Countdown2" = "Conto alla rovescia2";
+"Countdown3" = "Conto alla rovescia3";
+"Countdown4" = "Conto alla rovescia4";
+"Countdown5" = "Conto alla rovescia5";
+"Countdown6" = "Conto alla rovescia6";
+"Countdown7" = "Conto alla rovescia7";
+"Countdown8" = "Conto alla rovescia8";
+"Countdown9" = "Conto alla rovescia9";
+"Black" = "Nero";
+//重复"Blue" = "Blu";
+//重复"Green" = "Verde";
+"Grey" = "Grigio";
+//重复"Orange" = "Arancione";
+//重复"Red" = "Rosso";
+"White" = "Bianco";
+"Checkerboard" = "Checkerboard";
+
+"Gradient1" = "Gradiente1";
+"Gradient2" = "Gradiente2";
+"Gradient3" = "Gradiente3";
+"Gradient4" = "Gradiente4";
+"Gradient5" = "Gradiente5";
+"Gradient6" = "Gradiente6";
+"Gradient7" = "Gradiente7";
+
+//重复"No write privilege for the target directory, please specify a new directory." = "Nessun privilegio di scrittura per la directory di destinazione, si prega di specificare una nuova directory.";
+//重复"Show Audio Indicator" = "Mostra indicatore audio";
+//重复"Hide Audio Indicator" = "Nascondi indicatore audio";
+//重复"Viewable by:" = "Visualizzabile da:";
+//重复"Music Trak" = "Traccia musicale";
+//重复"Video Trak" = "Traccia Video";
+//重复"Destination:" = "Destinazione:";
+//重复"No disc.Please insert a blank one." = "Nessun disco. Si prega di inserire uno vuoto.";
+//重复"Customize Equalizer" = "Personalizza equalizzatore";
+//new
+"This app requires camera access to record video." = "Questa app richiede l'accesso alla videocamera per registrare video.";
+"This app requires microphone access to record audio." = "Questa app richiede l'accesso al microfono per registrare l'audio.";
+"This app needs to send Apple Events to control iTunes." = "Questa app deve inviare Apple Event per controllare iTunes.";
+"Filmora does not have access to your Camera and Microphone. " = "Filmora non ha accesso alla tua videocamera e al tuo microfono. ";
+"Filmora does not have access to your screen recording." = "Filmora non ha accesso alla tua registrazione dello schermo.";
+"To allow access, open System Preferences, click on Security & Privacy and adjust the Privacy settings there." = "Per consentire l'accesso, apri le Preferenze di Sistema, fai clic su Sicurezza e Privacy e regola le impostazioni sulla Privacy.";
+"Drop Shadow" = "Ombra esterna";
+
+
+//文案缺失"This app is running from a read-only disc image." = "";
+//文案缺失"Problem might occur when running in disc image. It is recommended that you finished app installation by moving app to your Applications Folder." = "";
+
+
+"16:9 (Widescreen)" = "16:9 (Widescreen)";
+"1:1 (Instagram)" = "1:1 (Instagram)";
+"9:16 (Portrait)" = "9:16 (Ritratto)";
+"4:3 (Standard)" = "4:3 (Standard)";
+"21:9 (Cinema)" = "21:9 (Cinema)";
+
+"Select Project Aspect Ratio" = "Seleziona Rapporto aspetto progetto";
+
+"Change Project Aspect Ratio" = "Cambia l'aspetto del progetto";
+
+"All Effects" = "Tutti gli effetti";
+
+//9.1
+"Auto Enhance" = "Miglioramento automatico";
+//重复"Amount" = "Quantità";
+"High Quality (Full)" = "Alta qualità (completa)";
+"Better Quality (1/2)" = "Migliore qualità (1/2)";
+"Medium Quality (1/4)" = "Qualità media (1/4)";
+"Low Quality (1/8)" = "Bassa qualità (1/8)";
+
+"Filmstock" = "Filmstock";
+"Open Filmstock" = "Visita Filmstock";
+
+// 9.1.3
+"Enable hardware acceleration for video decoding" = "Abilita l'accelerazione hardware per la decodifica video";
+"Enable hardware acceleration for video encoding" = "Abilita l'accelerazione hardware per la codifica video";
+"The state of GPU rendering and hardware decoding has been changed and will take effect after rebooting the program." = "Lo stato del rendering della GPU e la decodifica di hardware sono stati modificati ed entreranno in vigore dopo il riavvio del Filmora.";
+"Name your custom text settings. They will be saved under the \"Custom\" category in your Titles library." = "Assegna un nome alle tue impostazioni di testo personalizzate. Verranno salvati nella categoria \"Personalizzato\" nella libreria Titoli.";
+"Save as Custom" = "Salva come personalizzato";
+"SAVE AS CUSTOM" = "Salva come personalizzato";
+//9.2.0
+"Render Preview" = "Anteprima di rendering";
+"Rendering files" = "Rendering di file";
+"Creating preview render for smooth playback" = "Creazione di rendering di anteprima per una riproduzione fluida";
+"Rendering frame %d of %lld" = "Rendering del fotogramma %d di %lld";
+"Rendering frames: %lld of %lld" = "Rendering del fotogramma %d di %lld";
+"Estimated Time Left: %@" = "Tempo rimanente stimato: %@";
+"Success! Your video has been created." = "Il video è stato creato con successo!";
+"Click this \"Render Preview\" button for smooth playback. You can delete unused render files to free up disk space by going to 'File' > 'Preferences' and finding the option in the 'Performance' tab." = "Fai clic sul pulsante \"Anteprima rendering\" per una riproduzione fluida. Vai alla scheda \"Prestazioni\" nell'applicazione \"Preferenze\" per eliminare i file di rendering inutilizzati per risparmiare spazio su disco, se necessario.";
+"File name should not begin with a dot \".\"" = "Nomi che iniziano con un punto \".\" sono riservati al sistema.";
+"If you use dot \".\" at the beginning of your file's name the file will be hidden." = "Se decidi di andare avanti e utilizzare un nome che inizia con un punto, il file verrà nascosto.";
+"Use \".\"" = "Uso \".\"";
+"Oops! You aren't subscribed to a Filmstock plan through this Wondershare ID." = "Oops! Il tuo account ID Wondershare non ha un abbonamento Filmstock valido.";
+"Delete Preview Render Files" = "Elimina i file di rendering di anteprima";
+"Tutorials" = "Tutorial";
+"Give Feedback" = "Feedback";
+"Preview Render:" = "Rendering di anteprima:";
+"Background render" = "Sfondo render";
+"Start after" = "Inizia dopo";
+"Seconds" = "secondi";
+"Preview Render files folder:" = "Cartella dei file di Anteprima rendering:";
+"Automatically delete render files when closing a project file" = "Elimina automaticamente i file di rendering quando si chiude un file di progetto";
+"Delete render files" = "Elimina i file di rendering";
+"Are you sure you want to delete all render files?" = "Sei sicuro di voler rimuovere tutti i file di rendering?";
+"Auto Ripple" = "Ripple automatico";
+"Auto Ripple On" = "Ripple automatico attivo";
+"Auto Ripple Off" = "Ripple automatico disattivato";
+//"Keyboard shortcuts"
+//重复"Project Media" = "Media di progetto";
+"Shared Media" = "Media condivisi";
+//重复"Split Screen" = "Schermo Diviso";
+"Advanced Split Screen Edit" = "Modifica split screen avanzato";
+//重复"Media" = "Media";
+//重复"Volume:" = "Volume:";
+"Pan:" = "Pan:";
+"Error! Low disk space" = "Errore! Poco spazio sul disco";
+"Error! Render folder is full" = "Errore! La cartella di rendering è piena";
+"Insert Mode:" = "Modalità di inserimento:";
+"Split selected track only and insert" = "Dividi solo la traccia selezionata e inserisci";
+"Split all tracks and insert" = "Dividi tutte le tracce e inserisci";
+"The file name(s) would be too long for the destination folder. You can shorten the file name and try again, or try a location that has a shorter path." = "Il nome del/i file sarebbe troppo lungo per la cartella di destinazione. Puoi abbreviare il nome del file e riprovare oppure provare una posizione con un percorso più breve.";
+"There is not enough disk space. Free up disk space and try again." = "Non c'è abbastanza spazio sul disco. Libera spazio su disco, quindi riprova.";
+"The Split Screen clip has been modified. Do you want to save the changes?" = "La clip dello Split Screen è stata modificata, vuoi salvare le modifiche?";
+//重复"Folder" = "Cartella";
+"Import media here to use it in multiple projects." = "Importa i media usati di frequente qui per utilizzarli nei progetti";
+"The file name(s) would be too long for the destination folder. Try a location that has a shorter path." = "Il nome del file sarebbe troppo lungo per la cartella di destinazione. Puoi provare una posizione che ha un percorso più breve.";
+"Drag a video or image onto the drop zone in previewer to create your split screen clip. Click the \"Advanced\" button to trim each sub clip." = "Trascina il video o l'immagine nell'area di rilascio nell'anteprima per creare la clip di Split Screen. Fai clic sul pulsante \"Avanzate\" per tagliare ciascuna parte di clip.";
+"Add to Split Screen" = "Aggiungi a Split Screen";
+//9.2.0 缺失
+"Import Frequently Used Media Here to Use Across Projects" = "Importa Qui i Media Usati Frequentemente Usali in Diversi Progetti";
+
+"Confirm your order information" = "Confermare le informazioni sull'ordine";
+"Confirm" = "Conferma";
+"Email" = "Email";
+"Order number" = "Numero d'ordine";
+"Product name" = "Nome del prodotto";
+"Telephone number" = "Numero di telefono";
+"Are you sure you want to remove all render files?" = "Sei sicuro di voler eliminare  tutti i  file di rendering?";
+"Are you sure you want to remove all proxy files?" = "Sei sicuro di voler eliminare tutti i file proxy?";
+"There is not enough free disk space to complete preview render, please free up some disk space and try again." = "Lo spazio disponibile su disco è insufficiente per completare il rendering di anteprima. Si prega di liberare spazio su disco poi riprovare. ";
+
+"Individual Plan" = "Piano Individuale";
+"Business Plan" = "Piano Aziendale";
+"Academic Plan" = "Piano Studentesco";
+"Manage My Account" = "Gestire il Mio Conto";
+"Nothing configurable, please click a split screen section in Previewer to continue editing." = "Nulla di configurabile. Fare clic su una sezione dello schermo diviso nell'Anteprima per continuare la modifica";
+"Fit Split Screen Duration on main Timeline" = "Imposta la Durata dello Schermo Diviso sulla Linea Temporale principale";
+
+"Split Screen 1" = "Schermo Diviso 1";
+"Shared Media" = "Media Preferiti";
+//重复"Import Frequently Used Media Here to Use Across Projects" = "Importa Qui i Media Usati Frequentemente Usali in Diversi Progetti";
+"Confirm your order information" = "Conferma le informazioni del tuo ordine";
+"Confirm" = "Confermare";
+//"Email" = "Email";
+//重复"Order number" = "Numero d'ordine";
+//重复"Product name" = "Nome del prodotto";
+//重复"Telephone number" = "Numero di telefono";
+//重复"Are you sure you want to remove all render files?" = "Sei sicuro di voler eliminare  tutti i  file di rendering?";
+//重复"Are you sure you want to remove all proxy files?" = "Sei sicuro di voler eliminare tutti i file proxy?";
+//重复"There is not enough free disk space to complete preview render, please free up some disk space and try again." = "Lo spazio disponibile su disco è insufficiente per completare il rendering di anteprima. Si prega di liberare spazio su disco poi riprovare. ";
+//重复"Confirm your order information" = "Conferma le informazioni del tuo ordine";
+//重复"Confirm" = "Confermare";
+//重复//"Email" = "Email";
+//重复"Order number" = "Numero d'ordine";
+//重复"Product name" = "Nome del prodotto";
+//重复"Telephone number" = "Numero di telefono";
+//重复"Are you sure you want to remove all render files?" = "Sei sicuro di voler eliminare  tutti i  file di rendering?";
+//重复"Are you sure you want to remove all proxy files?" = "Sei sicuro di voler eliminare tutti i file proxy?";
+
+
+"Advanced" = "Avanzate";
+"Render Timeline" = "Anteprima di rendering";
+//文案缺失"The upload has failed, but the video has been saved to your hard disk. Please sign in your YouTube account again if necessary and upload the file again." = "";
+//文案缺失"Open File Location" = "";
+
+"Untitled" = "Senza titolo";
+"Split Screen Duration" = "Durata di Schermo Diviso";
+"Enable Split Screen Animation" = "Abilita animazione di Schermo Diviso";
+
+"Preparing..." = "Preparando...";
+"Creating..." = "Creando...";
+"Make TSFolder..." = "Creare CartellaTS...";
+"Copy TSFolder..." = "Copiare CartellaTS...";
+"Make DVDMedia..." = "Creare DVDMedia...";
+"Make ISO..." = "Creare ISO...";
+"Copy ISO..." = "Copiare ISO...";
+"Burning..." = "Masterizzazione...";
+"Uploading..." = "Caricamento...";
+"Create DVD Menu" = "Crea menu DVD";
+
+"Invalid characters in DVD name! \"*./[]\\:\";|=\", as well as Japanese and Chinese characters are not allowed!" = "Caratteri non validi nel nome del file! \"*./[]\\:\";|=\", Così come i caratteri Giapponesi e Cinesi non sono ammessi!";
+
+"How kinds of videos you are planning to make?\nWe will provide relative resources/effects based on your opinion in the futher. (Max. 3 choices)" = "Che tipo di video vuoi realizzare? La tua risposta ci aiuterà a decidere quale tipo di effetti consigliarti in futuro. (Max. 3 scelte)";
+"Submit" = "Sottoscrivi";
+"Skip" = "Avanti";
+"Follow us for more tutorials." = "Seguici per scoprire più tutorial";
+//9.2.5
+//文案缺失"Video Tutorials" = "";
+"Learn Filmora" = "Impara Filmora";
+"Quick Tour" = "Avvio rapido";
+"Hi, thanks for choosing Filmora. We made this quick start tour to help you jump in and make amazing videos. It'll only take 1 minute!" = "Ciao, grazie per aver scelto Filmora. Abbiamo realizzato un tour di avvio rapido per aiutarti a realizzare video fantastici. Ci vorrà solo 1 minuto!";
+"1/5 Import Media" = "1/5 Importa Media";
+"Import video clips, images, and audio files." = "Importa clip video, immagini e file audio. ";
+"NEXT" = "SEGUENTE";
+"2/5 Add Resources to Project" = "2/5 Aggiungi risorse al progetto";
+"Add Resources to Project" = "Aggiungi risorse al progetto";
+"Just drag and drop! Add clips, titles, transitions, effects, and more to the timeline easily." = "Basta trascinare e rilasciare! Aggiungi facilmente clip, titoli, transizioni, effetti e altro alla timeline.";
+"3/5 Manage Clips on Timeline" = "3/5 Gestisci clip sulla timeline";
+"Manage Clips on Timeline" = "Gestisci clip sulla timeline";
+"Split clips using the 'scissors' tool. Drag clips to move them to different tracks." = "Dividi le clip usando lo strumento 'forbici'. Trascina i clip per spostarli su tracce diverse.";
+"4/5 Preview Your Project" = "4/5 Anteprima del progetto";
+"Preview Your Project" = "Anteprima del progetto";
+"Drag the playhead to where you want to start watching and click the 'Play' button." = "Trascina l'indicatore di riproduzione nel punto in cui desideri iniziare a guardare e fai clic sul pulsante 'Riproduci'.";
+"5/5 Export and Share" = "5/5 Esporta e condividi";
+"Export and Share" = "Esporta e condividi";
+"Export your video to your computer or share it on social media." = "Esporta il tuo video sul tuo computer o condividilo sui social media.";
+"Finish" = "Finire";
+"Click here to watch video tutorials, read our user guide, and more." = "Fai clic qui per guardare tutorial video, leggere la nostra guida per l'utente e altro ancora.";
+"START A NEW VIDEO" = "Inizia un nuovo video";
+"STAY IN THIS PORJECT" = "Resta in questo progetto";
+"Well Done!" = "molto bene";
+"You finished the Quick Start guide! Now you can keep playing with this sample project, or you can start a brand new creation that’s all your own." = "Hai finito la nostra guida di avvio rapido! Complimenti! Ora puoi iniziare la tua creazione o saperne di più su Filmora.";
+"Are you sure you want to quit the Quick Start tour? It's only 1 minute long and you learn a lot." = "Sei sicuro di voler uscire dal tour Quick Start? È lungo solo 1 minuto e ti servirà per sfruttare al massimo il nostro programma.";
+"Continue" = "Continua";
+"Quit the tour" = "Esci dal tour";
+"Click here to import your own pictures, videos, or audio" = "Fai clic qui per importare immagini, video e audio personalizzati.";
+"When you're finished, click 'Export' to export your video." = "Al termine, fai clic su Esporta per 'esportare' il tuo video.";
+//文案缺失"1 minute" = "";
+//文案缺失"Drag and drop" = "";
+//文案缺失"Drag" = "";
+//文案缺失"space" = "";
+"Filmora Quick Start" = "Filmora Avvio rapido";
+"1 Learning the Interface" = "1 Imparare ad utilizzare l'interfaccia";
+"2 Creating a Project" = "2 Creazione di un progetto";
+"3 Importing Media" = "3 Importare un media";
+"4 Editing Basics" = "4 Nozioni di base sulla modifica";
+"5 Exporting Media" = "5 Esportare un media";
+"6 Performance and Preferences" = "6 Prestazioni e preferenze";
+"7 Using the Timeline" = "7 Utilizzo della linea temporale";
+"8 Editing Audio" = "8 Modifica audio";
+"9 Color Correction" = "9 Correzione del colore";
+"10 Text and Titles" = "10 testo e titoli";
+"11 Transitions" = "11 transizioni";
+"12 Effects" = "12 effetti";
+"13 Auto Ripple" = "13 Ondulazione automatica";
+"Quick Start Guide" = "Guida di avvio rapido";
+
+//9.2.9
+"REGISTER" = "Registra";
+"Forget password?" = "Password dimenticata?";
+//重复//"Email" = "Email";
+"Please input your email" = "Inserisci la tua e-mail";
+"Password" = "Password";
+"Confirm Password" = "Password";
+"Please enter a vaild email" = "Si prega di inserire una email vailda";
+"Please enter a password" = "Si prega di inserire una password";
+"Enter a combination of at least six numbersletters & symbols." = "Si prega di inserire una password lunga 6-16.";
+"The password you\ve entered is incorrect." = "La password che hai inserito non è corretta.";
+"Something wrong please try again!" = "Si è verificato un errore per favore riprova!";
+"Login successfully" = "Login riuscito";
+"Success" = "Successo";
+"Error" = "Errore";
+"In Process" = "Processo in Corso";
+"Create an Account" = "Crea Account";
+"or login with" = "o accedi con";
+"Create Account Successfully!" = "Creazione Account Riuscita!";
+"Log in to your Wondershare ID" = "Accedi al tuo ID Wondershare";
+"Create your Wondershare ID" = "Crea il tuo ID Wondershare";
+"Already have an account?" = "Hai già un account?";
+"Sign in here" = "Accedi qui";
+"Not a member?" = "Non un membro?";
+//重复"OK" = "OK";
+"Back to Log In" = "Torna al login";
+"Next Step" = "Passaggio successivo";
+"Reset Password" = "Reimposta la password";
+"New Password" = "Nuova Password";
+"Please confirm your password" = "Si prega di confermare la tua password";
+"Please wait for follow-up actions!" = "Si prega di attendere per le azioni di follow-up!";
+"Didn't receive an email?" = "Non hai ricevuto un codice?";
+"Click here to" = "Clicca qui per";
+"resend" = "invia nuovamente";
+"Forgot your password?" = "Hai dimenticato la password?";
+"Enter your email address" = "crivi il tuo indirizzo qui";
+"For your account security please enter your verification code below. We sent your verification code to" = "Per la sicurezza del tuo account si prega di inserire il codice di verifica qui di seguito. Abbiamo inviato il tuo codice di verifica a";
+"Enter verification code" = "Inserisci il Codice di Verifica";
+"By creating this account you are agreeing to our" = "Creando questo account sei d\accordo con i nostri";
+"Privacy Policy" = "Informativa sulla privacy";
+"EULA" = "EULA";
+"First Name" = "Nome";
+"Last Name" = "Cognome";
+"Please enter a valid first name." = "Il nome non può essere vuoto";
+"Please enter a valid last name." = "Il cognome non può essere vuoto";
+
+"Active Device Limit" = "Litmite di dispisitivi attivi";
+"Empower Your Imagination" = "Eprimi la tua immaginazione";
+"Log In on this Device" = "Sei loggato con questo device";
+"Do Not Log In" = "Non inziare la sessione";
+"You are currently signed in as %@ on %d other devices. Your device limit is %d" = "Sei correttamente loggato come %@ con %d altri device. Il tuo limite di device è di %d.";
+"If you log in on this device using this account you will be logged out on the following device:%@" = "Se vuoi continuare la sessione con questo dispositivo uscirai dal seguente terminale:%@";
+"Loading..." = "Caricando…";
+"Try Again" = "Riprova";
+"Page Did Not Load" = "La pagina non si carica";
+"The page could not be loaded. Please try one of the following solutions:\n1. Check your network settings and, if there's no problem, try again.\n2. Disable or change the settings on your firewall and try again." = "Impossibile caricare la pagina. Prova una delle seguenti soluzioni:\n1. Controlla le impostazioni di rete e se non ci sono problemi, riprova.\n2. Disabilitare o modificare le impostazioni sul firewall e riprovare.";
+
+"Network connection failed" = "Connessione di rete fallita";
+
+"We noticed that you added some footage into the project.Do you want to export your video?" = "Abbiamo notato che hai aggiunto alcune riprese al progetto. Vuoi esportare il tuo video?";
+
+"Project Library Window at Startup:" = "Finestra Libreria progetti all'avvio:";
+"Show this window when Filmora launches" = "Mostra questa finestra all'avvio di Filmora";
+"Show Startup window when Filmora launches" = "Mostra questa finestra di Starup all'avvio di Filmora";
+
+//Old Project conversion
+"If the conversion fails, you can still use your original version of Filmora to open the project file." = "Se la conversione fallisce, puoi comunque utilizzare la versione originale di Filmora per aprire il file di progetto.";
+"Failed to convert the project file" = "Impossibile convertire il file di progetto";
+"Please use your original version of Filmora to open the project file." = "Si prega di utilizzare la versione originale di Filmora per aprire il file di progetto.";
+"Contact our Customer Support if you don't have your original version any more." = "Contattare l'assistenza clienti se non si dispone più della versione originale.";
+
+
+//9.2.11
+"Help Center" = "Centro assistenza";
+
+//9.3.0
+
+"Follow this tutorial to get up to speed." = "Segui questo tutorial per aggiornare.";
+
+"Match to Media" = "Abbina ai media";
+"Keep Project Settings" = "Mantieni impostazioni progetto";
+
+"You have exceeded the character limit; please use multiple text boxes." = "Il limite di caratteri è stato superato; Si prega di utilizzare diverse caselle di testo.";
+
+"Do you want to keep the split clips as a group?" = "Vuoi mantenere le clip divise in un gruppo?";
+"Keep Group" = "Mantieni gruppo";
+"Ungroup" = "Separa";
+
+//
+"Straight Alpha" = "Alfa Dritto";
+"Premultiplied Alpha" = "Alfa Premoltiplicato";
+"Ignore Alpha" = "Ignora Alfa";
+//
+"Click to split" = "Fai clic per dividere";
+"Drag to move playhead" = "Trascina per spostare l'indicatore di riproduzione";
+//节拍检测
+"Beat Detection" = "Rilevazione del ritmo";
+"Beat Options" = "Opzioni di ritmo";
+"Highlight every" = "Evidenzia ogni";
+"Highlight offset" = "Evidenzia compensare";
+"Beats" = "Ritmi";
+"Mark highlight beats only" = "Segna solo i ritmi evidenziati";
+"Beats analyzed. Drag and drop the music to the timeline to see beat markers." = "Ritmi analizzati. Trascina e rilascia la musica sulla timeline per vedere gli indicatori di ritmo.";
+"Filmora is installing beat detection plugins. Please wait." = "Filmora sta installando plugin per il rilevamento del ritmo. Aspetta per favore.";
+"beat detection completed" = "rilevamento del battito completato";
+"beat detected failed" = "il battito non è stato rilevato";
+"Request time out, Please check your network connection." = "Richiedi timeout, controlla la connessione di rete.";
+"Click here to manually install the plugin." = "Fai clic qui per installare manualmente il plug-in.";
+
+"Color Enhancement" = "Ottimizzazione del colore";
+"Threshold" = "Soglia";
+"Value" = "Valore";
+
+"Frames" = "Fotogramma";
+//9.3.2
+"Included " = "Incluso";
+"You don't have any Favorites. Click 'Favorite' while hovering over a resource to add an item to this folder. " = "Non hai niente Preferiti. Fai clic su 'Preferiti' quando passi con il mouse su una risorsa e aggingerà alla cartella.";
+"Find even more video effects, music, stock footage, and images on Filmstock." = "Trova ancora più effetti video, musica, filmati e immagini su Filmstock.";
+"Visit Filmstock" = "Visita Filmstock";
+"Loading..." = "Caricamento in corso...";
+"Your One-Stop Shop for Royalty-Free Video Effects, Audio, and Stock Media." = "Il tuo negozio di One-Stop offre effetti video, audio e supporti stock esenti da royalty.";
+"You're not connected to the internet" = "Non sei connesso a Internet";
+"You need internet access to visit Filmstock. Please check your connection and try again." = "È necessario l'accesso a Internet per visitare Filmstock. Verifica la connessione e riprova per favore.";
+//重复"Try Again" = "Riprova";
+"Access more effects! Try Filmstock free for %@ days." = "Accedi a più effetti! Prova Filmstock gratuitamente per %@ giorni.";
+"Access more effects! Try" = "Accedi a più effetti! Prova";
+"free for %@ days." = "gratuitamente per %@ giorni.";
+"Start Free Trial" = "Inizia la prova gratuita";
+"I agree to the Terms and Conditions." = "Accetto i Termini e i Condizioni.";
+"I agree to" = "Accetto";
+"the Terms and Conditions" = "i Termini e i Condizioni.";
+"Free Trial of Filmstock" = "Prova Gratuita di Filmstock";
+"1. You'll get the Free Trial for %@ days." = "1. Otterrai la Prova Gratuita per %@ giorni.";
+"For your trial period you'll be able to use both Standard and Premium video effects and other resources recommended here for free." = "Per il periodo di prova potrai utilizzare effetti video Standard e Premium e altre risorse consigliate qui gratuitamente.";
+"When your trial ends you can choose to purchase a Filmstock plan to continue using these resources." = "Al termine del periodo di prova, puoi scegliere di acquistare un piano Filmstock per continuare a utilizzare queste risorse.";
+"Got It" = "Prendi";
+"Congrats! Your free trial will last from %@ to %@." = "Complimenti! La tua prova gratuita del piano Premium di Filmstock durerà dal %@ al %@.";
+"from %@ to %@" = "da %@ a %@";
+"Free Trial" = "Prova Gratuita";
+"%@ Days Left" = "%@ Giorni Rimasti";
+"Sorry, your free trial has ended. To continue using Filmstock resources please purchase a subscription." = "Siamo spiacenti, la tua prova gratuita è terminata. Per continuare a utilizzare le risorse di Filmstock, acquista un abbonamento per favore.";
+"Subscribe" = "Sottoscrivi";
+"Refresh My Account" = "Aggiorna il Mio Account";
+"You are subscribed to the Filmstock Standard Plan. If you need to try the effects from the Premium Plan, please upgrade your account." = "Sei iscritto al Piano Standard di Filmstock. Se devi provare gli effetti del Piano Premium, aggiorna il tuo account.";
+"You are subscribed to the Filmstock Premium Plan. All the recommended effects below can be used." = "Sei iscritto al Piano Premium di Filmstock. Tutti gli effetti consigliati di seguito possono essere utilizzati.";
+"Subscribe to Premium Plan" = "Iscriviti al piano Premium";
+"A video preview of the effects in this pack." = "Un Anteprima video degli effetti in questo pacchetto.";
+"Downloading..." = "Download in corso ...";
+"Cancel Download" = "Annulla Download";
+"Find effects downloaded from Filmstock here." = "Trova gli effetti scaricati da Filmstock qui.";
+"Free plan" = "Gratuito";
+"Standard plan" = "Piano standard";
+"Premium plan" = "Piano Premium";
+"StIll have problems, please click here." = "Hanno problemi ancora, fai clic qui.";
+"click here" = "Fai clic qui";
+"Favorite" = "Favoriti";
+"upgrade_Link" = "aggiorna";
+"Login Required" = "Accesso richiesto";
+"Filmstokcs need login and register" = "Hai bisogno di un ID Wondershare per continuare. Effettua il login o crea un account gratuitamente.";
+"Wondershare ID provides you an easy way to activate your software access Filmora Effect Store and Filmora.io community." = "Wondershare ID ti offre un modo semplice per attivare il tuo accesso al software Filmora Effect Store e alla community di Filmora.io.";
+
+//9.3.5
+"Get More Effects from Filmstock" = "Ottieni Più Effetti dal Filmstock";
+"Try Filmstock free for %d days" = "Prova Filmstock gratis per %d giorni";
+
+//1.2 unlogin users
+"Activate Filmora" = "Attiva Filmora";
+"Wondershare Filmora (UNACTIVATED)" = "Wondershare Filmora (NON ATTIVATO)";
+"Sign in with your Wondershare ID to activate Filmora" = "Accedi con il tuo ID Wondershare per attivare Filmora";
+"Enter the email you used to place the order" = "Inserisci l'e-mail che hai lasciato prima";
+"Enter your password" = "Inserisci la tua password";
+"Forget password" = "Hai dimenticato la password?";
+"Sign in to Activate Filmora Now" = "Accedi per Attivare Filmora Ora";
+"OR" = "O";
+"If you have a license code, or have other trouble to activate Filmora, click here to troubleshoot." = "Se disponi di un codice di licenza, clicca qui per attivare Filmora per favore.";
+"If you're having trouble activating Filmora, click here to troubleshoot." = "In caso di problemi con l'attivazione di Filmora, clicca qui per la risoluzione dei problemi.";
+"click here" = "clicca qui";
+
+//1.3 login users
+"You are signed in with the Wondershare ID (%@) and are using the free plan of Filmora." = "Hai effettuato l'accesso con l'ID Wondershare  (%@) e stai utilizzando il piano gratuito di Filmora.";
+"If you have purchased a plan, click here to refresh your activation status." = "Se hai acquistato un piano, clicca qui per aggiornare lo stato di attivazione.";
+"Please make sure you‘re using the same OS platform you purchased it for." = "Ti prego di verificare che hai utilizzato la stessa piattaforma OS per cui l'hai acquistata.";
+
+"Wondershare Filmora (ACTIVATED)" = "Wondershare Filmora (ATTIVATO)";
+"Your Wondershare ID (%@) has been activated sucessfully." = "Il tuo Wondershare ID  (%@) è stato attivato con successo.";
+"Wondershare ID" = "ID Wondershare";
+"Lifetime Plan/Annualy Plan/Monthly Plan/Quaterly Plan" = "Piano a Vita / Piano Annuale / Piano Mensile / Piano Quaterly";
+"Expires" = "Scade";
+"Your license has been activated successfully." = "La tua licenza è stata attivata con successo.";
+"You are signed in with the Wondershare ID (%@) .We are refreshing your account info now. It may take a few seconds." = "Hai effettuato l'accesso con l'ID Wondershare (%@). Stiamo aggiornando le informazioni del tuo account ora. Potrebbero essere necessari alcuni secondi.";
+"You are signed in with the Wondershare ID (%@) and are using the free plan of Filmora." = "Hai effettuato l'accesso con l'ID Wondershare (%@) e stai utilizzando il piano gratuito di Filmora.";
+"It looks like this Wondershare ID has been deactivated on this device, please re-login on this device or double check the activation status in Account Center." = "Per favore assicurati di utilizzare lo stesso account ID Wondershare e la piattaforma del sistema operativo per cui l'hai acquistato.";
+"There is no Wondershare ID associated with that email address. Make sure to use the email address you used to place the order. You can find it in your confirmation email." = "Non esiste un ID Wondershare associato a quell'indirizzo e-mail. Assicurati di utilizzare l'indirizzo email che hai utilizzato per effettuare l'ordine. Puoi trovarlo nella tua email di conferma.";
+"The password you've entered is incorrect. Click Forget password to reset your password." = "Password non corretta. Se hai dimenticato la password, clicca qui per reimpostarla.";
+"Enter the email address you used to purchase your license and the activation code you received in your confirmation email. Or click here to retrieve your license code." = "Inserisci l'indirizzo e-mail che hai utilizzato per acquistare la licenza e il codice di registrazione che hai ricevuto nell'e-mail di conferma. Oppure clicca qui per recuperare il codice di licenza.";
+"Licensed e-mail" = "E-mail con licenza";
+"Activation code" = "Codice di registrazione";
+"FREE TRIAL" = "PROVA GRATUITA";
+"Activate Filmora Now" = "Attiva Filmora Ora";
+"If you have purchased a plan, click here to refresh your authorization." = "Se hai acquistato un piano, clicca qui per aggiornare l'autorizzazione.";
+"We are refreshing your account info now. It may take a few seconds." = "Stiamo aggiornando le informazioni del tuo account ora. Potrebbe costare alcuni secondi.";
+"Still unactivated? Please check that you're using the same OS platform you purchased it for. For more troubleshooting, click here." = "Inattivo ancora? Verifica che hai utilizzato la stessa piattaforma OS per cui l'hai acquistata. Per ulteriori informazioni sulla risoluzione dei problemi, fai clic qui.";
+"click here2" = "fai clic qui";
+
+//9.5
+"Split Button" = "Pulsante Dividi";
+"Show the split button on timeline playhead" = "Mostra il pulsante di divisione sulla testina della sequenza temporale";
+"Unlisted" = "Non quotati";
+"Select all clips with the same color mark" = "Seleziona tutte le clip con lo stesso segno di colore";
+"Close Gap" = "Chiudi gap";
+
+// 9.5 任务部分
+"1. Videos about daily life are popular on YouTube." = "1. I video che mostrano la vita quotidiana vanno alla grande, su YouTube!";
+"2. When using a green screen make sure your space is well lit." = "2. Quando usi la funzione Schermo Verde, assicurati che la stanza sia ben illuminata.";
+"3. 'Magic hours' for video lighting: right after sunrise and right before it sets." = "3. Le \"ore magiche\" per l'illuminazione dei video: subito dopo l'alba e appena prima del tramonto.";
+"4. Invent your own challenge video and you could go viral." = "4. Prova a inventare delle nuove challenge video; potresti diventare virale!";
+"5. Clap to create a waveform spike for easy audio syncing." = "5. Batti le mani per creare un picco nella forma d'onda e agevolare la sincronizzazione dell'audio.";
+"6. The internet loves animals. Could your pet be the next big star?" = "6. Internet va matto per gli animali. Chissà, forse il tuo potrà diventare la prossima star della rete!";
+"7. Use text in Facebook videos - 85% of them are watched without sound." = "7. Aggiungi del testo ai video Facebook - l'85% di questi video viene guardato senza audio!";
+"8. When shooting outdoors, keep the sun behind you." = "8. Quando fai riprese all'esterno, assicurati che il sole sia alle tue spalle.";
+"9. Add clips to Shared Media to access them in future projects. " = "9. Aggiungi le clip a Media Condivisi per poterle usare facilmente nei progetti futuri.";
+"10. Create a video intro that shows off your personality." = "10. Fai in modo che le intro dei tuoi video comunichino la tua personalità.";
+"11. Fade down your background music while someone's talking." = "11. Sfuma la musica di sfondo quando c'è qualcuno che parla.";
+"12. Use timeline markers to label your clips and stay organized." = "12. Utilizza gli indicatori della timeline per aggiungere etichette alle clip e facilitare l'organizzazione.";
+"13. You can record voiceovers inside Filmora." = "13. Filmora permette anche di registrare la voce fuori campo.";
+"14. Mark beats with Beat Detection and edit to your music." = "14. Contrassegna i beat con la funzione Rilevazione Beat e modifica la tua musica.";
+"15.Build \"social proof\" with a testimonial video" = "15. Genera \"social proof\" realizzando video testimonianze.";
+"16.Introduce the team with a company video." = "16. Presenta il tuo team con un video aziendale.";
+"17. Create a music video for your fire audio track." = "17. Crea un video musicale che accompagni le tue tracce audio migliori.";
+"Redo" = "Ripeti";
+"Redo last action." = "Ripeti l'ultima azione.";
+//重复"Undo" = "Annulla";
+"Undo last action." = "Annulla l'ultima azione.";
+//重复"Delete" = "Elimina";
+"Delete selected media on timeline." = "Elimina il contenuto multimediale selezionato dalla timeline.";
+//重复"Split" = "Dividi";
+"Split selected media at playhead location." = "Dividi il contenuto multimediale selezionato nel punto in cui è collocato l'indicatore di riproduzione.";
+"Crop" = "Ritaglia";
+"Choose a smaller section of your image to keep." = "Seleziona la porzione di contenuto da preservare.";
+"Speed" = "Velocità";
+"Adjust the speed of your media or play it backwards." = "Regola la velocità del contenuto multimediale o riproducilo al contrario.";
+"Advanced Color Tuning" = "Regolazione Avanzata del Colore ";
+"Change the aesthetic of your media by adjusting settings like white balance, saturation, and contrast or by applying 3D LUTs." = "Modifica l'aspetto dei tuoi contenuti multimediali regolando impostazioni quali bilanciamento dei bianchi, saturazione e contrasto, oppure applicando delle LUT 3D.";
+"Click for more help." = "Clicca qui per saperne di più.";
+"Green Screen" = "Schermo Verde";
+"Change your background or create special effects." = "Modifica lo sfondo o crea effetti speciali. ";
+//重复"Click for more help." = "Clicca qui per saperne di più.";
+//重复"Edit" = "Modifica";
+"Find additional editing options like opacity, rotation, motion, and more. " = "Accedi ad opzioni di modifica aggiuntive, tra cui opacità, rotazione, movimento, ecc.";
+//重复"Click for more help." = "Clicca qui per saperne di più.";
+//重复"Duration" = "Durata";
+"Extend or reduce the duration of your media. This may change the speed." = "Incrementa o riduci la durata di un contenuto multimediale. Può influenzare la velocità di riproduzione.";
+"Right-click and visit Beat Search by previewing the music. The following music can be added to the timeline for further editing." = "Correggi l'illuminazione, stilizza i colori oppure dona ai tuoi video un'estetica completamente nuova.";
+"No Effects" = "Nessun Effetto";
+"1. Click to split your selected clip. " = "1. Clicca per dividere la clip selezionata.";
+"2. Click, hold, and drag to move the playhead." = "2. Clicca, tieni premuto e trascina per spostare l'indicatore di riproduzione.";
+"Right click on the song thumbnail to access Beat Detection. Then add the song to the timeline the beats will be marked for easy editing." = "Clicca con il tasto destro sulla miniatura della canzone per accedere alla funzione Rilevamento Beat. Aggiungi la canzone alla timeline. I beat risulteranno contrassegnati per agevolare la modifica.";
+"Click here for tutorials." = "Clicca qui per i video tutorial.";
+//"Click here to complete missions and earn rewards." = "Clicca qui per completare missioni e ottenere ricompense.";
+//"You'll also find video tutorials and creative ideas!" = "Troverai anche video tutorial e tante idee creative!";
+//重复"Get Started" = "Per Iniziare";
+"Advanced Challenge" = "Missioni Avanzate";
+"Help Center" = "Centro di Supporto";
+"Welcome! Complete the missions below to get familiar with Filmora. Do them all to earn a reward!" = "Benvenuto/a! Completa le missioni a seguire per acquisire familiarità con Filmora. Completale tutte per ottenere una ricompensa!";
+"Import Media 9.5" = "Importa File Multimediali";
+"Split a Clip" = "Dividi una Clip";
+//"Crop a Clip" = "Ritaglia una Clip";
+"Add Video Effects" = "Aggiungi gli Effetti di video";
+//"Try the Speed Controls" = "Prova i Controlli di Velocità";
+"Export Your Video" = "Esporta il Video";
+"When you're done, click here to access your prize." = "Al termine, clicca qui per accedere alla tua ricompensa.";
+"Claim Your Reward" = "Riscatta la Tua Ricompensa";
+"Drag a video clip, image, or audio file from your computer and drop it into Project Media" = "Trascina una clip video, un'immagine o un file audio dal computer a I Miei Progetti.";
+"Done! Next" = "Fatto! Avanti";
+"Learn More" = "Maggiori Informazioni";
+"Click and drag to move the playhead. Then, click the scissors to split your clip." = "Clicca e trascina per spostare l'indicatore di riproduzione, poi clicca sulle forbici per dividere la clip.";
+"Crop a Clip" = "Ritaglia una Clip";
+"Click on the 'Crop' icon and then adjust the green box around your clip." = "Clicca sull'icona \"Ritaglia\" e regola le dimensioni del riquadro verde che circonda la clip.";
+"Add a Transition" = "Aggiungi una Transizione";
+"Go to Transitions and drag any transition so it's sitting between two clips." = "Vai su Transizioni e trascina una transizione in modo da posizionarla tra due clip.";
+"Back" = "Indietro";
+"Add an Effect" = "Aggiungi un Effetto";
+"Go to Effects and choose a filter or overlay. Drag it onto a clip, or into the space above it." = "Vai su Effetti e seleziona un filtro o una sovrapposizione, quindi trascinalo/a sulla clip o nello spazio tra due clip.";
+"Add an Element" = "Aggiungi un Elemento";
+"Go to Elements and choose a motion graphic you like. Drag it into your timeline above a clip." = "Vai su Elementi e seleziona la grafica animata che preferisci, quindi trascinala sulla timeline, sopra una clip.";
+"Try the Speed Controls" = "Prova i Controlli di Velocità";
+"With a clip selected, click on the speed gauge icon. You'll see options to make your clip 100 times faster or slower." = "Dopo aver selezionato una clip, clicca sull'icona dell'indicatore di velocità. Potrai accedere a opzioni per rendere la clip 100 volte più veloce o più lenta.";
+"Click Export. Then, name your video and choose where to save it. Click Export in the window." = "Clicca su Esporta, quindi dai un nome al video e scegli dove salvarlo. Clicca nuovamente su Esporta per completare la missione! ";
+"When your video is done exporting, your mission will be complete!" = "Al termine dell'esportazione del video, la tua missione sarà completata!";
+
+"Congrats!" = "Congratulazioni!";
+"For completing the Get Started missions, you've earned a free video effect pack! " = "La ricompensa per aver completato le missioni Per Iniziare è un pacchetto di effetti video gratuito.";
+//"*One prize per account." = "*Una ricompensa per account.";
+"Claim Your Prize" = "Riscatta la Ricompensa";
+"You've Earned a FREE Effect Pack! " = "Hai Vinto un Pacchetto di Effetti GRATUITO!";
+"*This offer is exclusive to users who completed the related tasks. " = "*È un'offerta esclusiva per gli utenti che hanno completato le missioni.";
+//重复//"*One prize per account." = "*Una ricompensa per account.";
+"Choose Your FREE Effect Pack" = "Seleziona il Tuo Pacchetto di Effetti GRATUITO";
+"Your Audience Awaits!" = "Il Tuo Pubblico Ti Aspetta";
+"Get Filmora and start creating." = "Acquista Filmora e Inizia Subito a Creare";
+"Filmora Lifetime plan" = "Piano a Vita di Filmora";
+"All features" = "Tutte le Funzioni";
+"Free updates" = "Aggiornamenti Gratuiti";
+"No watermark" = "Assenza di Filigrana";
+"Free Tech Support" = "Supporto Tecnico Gratuito";
+"Windows" = "Windows";
+"macOS" = "macOS";
+//重复"Buy Now" = "Acquista Ora";
+"Sorry, it looks like you've already claimed your free pack. You can download it from your account center." = "Siamo spiacenti, ma sembra che tu abbia già riscattato il pacchetto gratuito. Puoi scaricarlo dal Centro Account.";
+"Take Me There" = "Vai al Centro Account";
+"Sorry, it looks like you haven't earned this reward. In order to claim your free pack, download Filmora and complete the related tasks." = "Siamo spiacenti, ma sembra che tu non abbia ottenuto questa ricompensa. Per riscattare il pacchetto gratuito, scarica Filmora e completa le missioni.";
+"Download Free Trial" = "Scarica la Prova Gratuita";
+"Awesome! " = "Fantastico!";
+"Now download your free pack." = "Adesso puoi scaricare il tuo pacchetto gratuito.";
+//重复"Download" = "Scarica";
+"You already purchased this pack. Please choose a different pack." = "Hai già acquistato questo pacchetto. Scegline uno diverso.";
+"Do more with Filmora! Complete the missions below to learn more about the program and earn a reward." = "Fai molto di più, con Filmora! Completa le missioni a seguire per approfondire la conoscenza del programma e ottenere una ricompensa.";
+"Try the Green Screen Tool" = "Prova lo Strumento Schermo Verde";
+"Add Movement with Pan and Zoom" = "Aggiungi Movimento con la Funzione Pan e Zoom";
+//"Use a Split Screen Preset" = "Usa un Preset di Split Screen";
+//"Try Advanced Text Editing" = "Prova la Modifica Avanzata del Testo";
+//"Do Some Color Correction" = "Esegui la Correzione del Colore";
+"Use a Keyboard Shortcut" = "Utilizza le Scorciatoie di Tastiera";
+//重复"Try the Green Screen Tool" = "Prova lo Strumento Schermo Verde";
+"Add a video with green in it to your timeline and double click on it. Then, check the box next to Chroma Key. The green will be keyed out." = "Aggiungi un video con schermo verde alla timeline e cliccaci su per due volte, quindi spunta la casella accanto a Chiave Cromatica. Il verde sarà reso trasparente.";
+
+"Add Movement with Pan & Zoom" = "Aggiungi Movimento con la Funzione Pan e Zoom";
+"Select a clip in the timeline and click the 'crop' icon in the toolbar. Then, click into the Pan & Zoom tab. Set a start and end frame to create movement." = "Seleziona una clip sulla timeline e clicca sull'icona \"Ritaglia\" dalla barra degli strumenti. Clicca sulla scheda Pan e Zoom, quindi imposta i fotogrammi di inizio e di fine per creare il movimento.";
+
+"Use a Split Screen Preset" = "Usa un Preset di Split Screen";
+"Go to the split screen tab and drag any preset into your timeline. Then, drag video clips or images into the drop zones in the Preview panel. " = "Vai alla scheda Split Screen e trascina uno dei preset sulla timeline, quindi trascina le clip video o le immagini nella zona di rilascio del pannello di Anteprima.";
+
+"Try Advanced Text Editing" = "Prova la Modifica Avanzata del Testo";
+"From the Titles tab drag any text effect into the timeline, double click on it, and choose Advanced. In the Advanced Text Editing window you can make a variety of changes. " = "Clicca due volte su una clip presente sulla timeline, quindi vai alla scheda Colore e clicca su Avanzate per accedere alle opzioni per la correzione del colore.";
+
+"Do Some Color Correction" = "Esegui la Correzione del Colore";
+"Double click on a clip in your timeline, then go into the Color tab and click Advanced to see all the color tuning options." = "Clicca due volte su una clip presente sulla timeline, quindi vai alla scheda Colore e clicca su Avanzate per accedere alle opzioni per la correzione del colore.";
+
+//重复"Use a Keyboard Shortcut" = "Utilizza le Scorciatoie di Tastiera";
+"Go to Help > Keyboard Shortcuts to see a list of the shortcuts available and try one out. Learning these will save you a lot of time." = "Vai a Aiuto > Tasti Rapidi per visualizzare l'elenco delle scorciatoie di tastiera disponibili e provarne una. Memorizzare i tasti rapidi ti consentirà di risparmiare un sacco di tempo.";
+"Congrats on finishing the missions!" = "Hai completato tutte le missioni. Complimenti!";
+"Search the Filmora User Guide" = "Cerca Nella Guida Utente di Filmora";
+"SEARCH" = "CERCA";
+"Popular topics:" = "Argomenti Popolari";
+"Activate Filmora  " = "Attiva Filmora";
+"Download free video effects" = "Scarica effetti video gratis";
+"Remove watermark" = "Rimuovi la filigrana";
+"Quick Start Tour" = "Guida di Avvio Rapido";
+"Learn Filmora's basic workflow in 5 steps." = "Impara le fondamenta del flusso lavorativo di Filmora in 5 passaggi.";
+"Essential Editing Tutorials" = "Tutorial per il Montaggio Base";
+"Advanced Editing Tutorials" = "Tutorial per il Montaggio Avanzato";
+"Get Creative" = "Esprimi la Tua Creatività";
+"More Video Tutorials" = "Altri Video Tutorial";
+"User Guide" = "Guida Utente";
+"Basic Editing" = "Montaggio Base";
+"Add Effects" = "Aggiungi Effetti";
+"Advanced Editing" = "Montaggio Avanzato";
+"Export & Share" = "Esporta e Condividi";
+"See More Topics >>" = "Altri Argomenti >>";
+"FAQs" = "Domande Frequenti";
+"How can I activate my Filmora license?" = "Come faccio ad attivare la licenza di Filmora?";
+"What is Filmstock?" = "Cos'è Filmstock?";
+"How do I download all built-in effects?" = "Come faccio a scaricare gli effetti integrati?";
+"Limitations of the free trial." = "I limiti della versione gratuita";
+"How do I edit green screen videos with Filmora?" = "Come faccio a modificare i video con schermo verde usando Filmora?";
+"How do I create a thumbnail for my video?" = "Come faccio a creare un thumbnail per il mio video?";
+"How can I get plain text (no animation) in Filmora?" = "Come faccio ad aggiungere testo semplice (senza animazioni) con Filmora?";
+"How can I add a watermark or logo to my video?" = "Come faccio ad aggiungere una filigrana o un logo ai miei video?";
+"Get inspired by Filmora users like you!" = "Lasciati ispirare da altri utenti di Filmora!";
+"Travel" = "Viaggi";
+"Family & Love" = "Famiglia e Amore";
+//重复"Music" = "Musica";
+"Gaming" = "Videogiochi";
+"More Categories" = "Altre Categorie";
+"Editing Video Footage" = "Modifica dei Video";
+"Editing Audio Clips" = "Modifica dell'Audio";
+"Editing Images" = "Modifica delle Immagini";
+"Add Filters, Transitions, Sound Effects, and more" = "Aggiunta di Filtri, Transizioni, Effetti Sonori e molto altro";
+"Advanced Color Tuning" = "Regolazione Avanzata del Colore";
+"Pan & Zoom" = "Pan e Zoom";
+"Play videos backwards" = "Riproduzione Inversa";
+"See More" = "Altro";
+"Complete missions inside Filmora to earn a reward!" = "Completa le missioni di Filmora per ottenere una ricompensa!";
+"Earn a Prize" = "Ottieni un Premio";
+"See what's possible with Filmora!" = "Scopri il potenziale di Filmora!";
+"Get Creative Now" = "Esprimi la Tua Creatività";
+"Get More Royalty-Free Music" = "Ottieni Più Musica Royalty-Free";
+//"Try it Free" = "Provalo Gratis";
+"Get More Creative Titles" = "Ottieni Più Titoli Creativi";
+//重复//"Try it Free" = "Provalo Gratis";
+"Get More Transitions" = "Ottieni Più Transizioni";
+//重复//"Try it Free" = "Provalo Gratis";
+"Get More Filters and Overlays" = "Ottieni Più Filtri e Overlay";
+//重复//"Try it Free" = "Provalo Gratis";
+"Get More Motion Elements" = "Ottieni Più Elementi di Movimento";
+"Try it Free" = "Provalo GRATIS";
+//"Get More Royalty-Free Music."
+"Try Filmstock free for 7 days." = "Prova Filmstock gratis per 7 giorni.";
+"START FREE TRIAL" = "INIZIA LA PROVA GRATUITA";
+"I agree to the Terms and Conditions" = "Accetto i Termini e le Condizioni";
+"1. The free trial lasts 7 days." = "1. La prova gratuita dura 7 giorni.";
+"2. For your trial period you'll have access to a specific selection of resources from Filmstock." = "2. Per tutta la durata del periodo di prova, avrai accesso a una selezione specifica di risorse di Filmstock.";
+"3. When your trial ends you can choose to purchase a Filmstock plan if you want to continue using these resources." = "3. Al termine del periodo di prova, potrai scegliere di acquistare un piano per Filmstock per continuare a utilizzare le risorse messe a disposizione.";
+"Visit Filmstock." = "Visita Filmstock.";
+"Get More Creative Titles for FREE" = "Ottieni Più Titoli Creativi GRATIS";
+"Get More Transitions for FREE" = "Ottieni Più Transizioni GRATIS";
+"Get More Filters and Overlays for FREE" = "Ottieni Più Filtri e Sovrapposizioni GRATIS";
+"Get More Motion Elements for FREE" = "Ottieni Più Elementi di Movimento GRATIS";
+"Can you answer 2 quick questions?" = "Ti andrebbe di rispondere a un paio di domande?";
+"We noticed that you closed Filmora without trying it. Please let us know what we could have better. " = "Abbiamo notato che hai chiuso Filmora senza neppure provarlo. Per favore, facci sapere cosa ritieni che dovremmo migliorare.";
+"Your feedback will help us improve our products. Thank you!" = "Il tuo feedback ci aiuterà a incrementare la qualità dei nostri prodotti. Grazie!";
+"1. Why did you close Filmora without creating a video? (Check all that apply)" = "1. Perché hai chiuso Filmora senza neppure aver creato un video? (Seleziona tutte le voci pertinenti)";
+"I don't have any footage yet." = "Non ho ancora filmati da utilizzare.";
+"The interface looks too complicated." = "L'interfaccia sembra troppo complessa.";
+"I don't know how to import footage." = "Non so come importare i filmati.";
+"I don't know how to start making a video." = "Non so come iniziare a creare un video.";
+"The software crashed." = "Il software è crashato.";
+" It is not a free software." = "Il software non è gratuito.";
+"The software cannot run on my computer." = "Il software non funziona bene sul mio computer.";
+"I'm busy. I'll try again later." = "Ho avuto da fare. Lo proverò in futuro.";
+"I am not in the mood to make a video" = "Non ho voglia di creare un video.";
+"Other (please specifiy)" = "Altro (specificare)";
+"2. Please leave your email address. We might contact you for more information." = "2. Per cortesia, digita il tuo indirizzo email. Potremmo contattarti per chiederti maggiori informazioni sulla tua esperienza.";
+"Filmora Video Tutorials to Help you Get Started!" = "Video Tutorial di Filmora per Aiutarti a Cominciare!";
+"FREE Stock Videos, Audio, and Video Effects" = "Video, Audio ed Effetti Video di Stock GRATUITI";
+"Videos" = "Video";
+//"Audio" = "Audio";
+"Video Effects" = "Effetti Video";
+"Discover More" = "Altro";
+"You've Earned 7 Days of the Filmstock Standard Plan" = "Hai guadagnato piano standard di Filmstock per  7 giorni";
+"*This offer is exclusive to users who completed the related tasks. " = "* Questa offerta è esclusiva per gli utenti che hanno completato le attività correlate.";
+"*One prize per account." = "* Un premio per account.";
+//"Claim Your Reward" = "Richiedi la tua Ricompensa";
+"Why Choose Filmstock?" = "Perché scegliere Filmstock?";
+"Unlimited Downloads" = "Download illimitati";
+"Download anything in the Standard Library including Filmora effects, After Effects templates, stock video, and more." = "Scarica qualsiasi cosa nella Libreria standard inclusi effetti Filmora, modelli di After Effects, video d'archivio e altro.";
+"Royalty-Free License" = "Licenza Esente da Royalty";
+"Use anything from Filmstock in any kind of project, personal or commercial." = "Usa qualsiasi cosa di Filmstock in qualsiasi tipo di progetto, personale o commerciale.";
+"Constantly Growing" = "In Costante Crescita";
+"More of the resources you need are added every week." = "Ogni settimana vengono aggiunte più risorse di cui hai bisogno.";
+"Unique Media" = "Media Unici";
+"Filmstock provides a wide selection of media assets including video effects you won't find anywhere else." = "Filmstock offre un'ampia selezione di risorse multimediali tra cui effetti video che non troverai da nessun'altra parte.";
+"Featured Assets" = "Attività in Primo Piano";
+"Filmora Effects Packs" = "Pacchetti di Effetti Filmora";
+//重复"Videos" = "Video";
+//"Audio"
+"Images" = "Immagini";
+"Explore More" = "Scopri di Più";
+"Success! You've Activated 7 Days Filmstock Standard Plan!" = "Successo! Hai Attivato il Piano Standard Filmstock di 7 Giorni!";
+"Explore Filmstock Now" = "Scopri Filmstock Ora";
+"Opps! You’ve already redeemed this reward. You can purchase a plan to continue using Filmstock assets. " = "Opps! Hai già riscattato questa ricompensa. È possibile acquistare un piano per continuare a utilizzare le risorse di Filmstock.";
+"Subscribe Now" = "Iscriviti Ora";
+
+// 9.5之外部分
+"Lower playback quality to improve playback performance" = "Riduzione della qualità di riproduzione per migliorare la performance di riproduzione";
+"Vertical" = "Verticale";
+"Horizontal" = "Orizzontale";
+"Edge Processing:" = "Elaborazione dei Bordi:";
+"Reflect" = "Rifletti";
+"Extend" = "Espendi";
+"Tile" = "Piastrella";
+"Include Trimmed Frames" = "Cornici Tagliate Incluse";
+
+// WSID3.0
+"Login to your Wondershare ID" = "Accedi con tuo ID Wondershare";
+"Email address" = "Email Indirizzo";
+"Use a email address instead" = "Utilizza email intirizzo per sostituire";
+"Use a mobile phone instead" = "Utilizza cellulare per sostituire";
+//重复"or login with" = "o accedi con";
+//"NEXT"
+"Set Password" = "Imposta Password";
+"Don't have a Wondershare ID?" = "Non hai ID Wondershare?";
+"Create account" = "Crea account";
+"Verify your identity" = "Verifica tua identità";
+"To confirm your identity we'll send you a verification code to" = "Per confermare tua identità ti inviamo codice di vertifi a ";
+//重复"Continue" = "Continua";
+"Skip" = "Salta";
+"Sign in to a different account" = "Registra con un altro account";
+"SIGN IN" = "REGISTRA";
+"Keep me signed in" = "Mantienimi connesso";
+"Forget your password?" = "Dimentichi tuo password?";
+"login success" = "Accedi con successo";
+"Enter the code sent to" = "Inserisci il codice inviato a";
+"Verify Code" = "Verifica Codice";
+"Create a Wondershare ID" = "Crea un ID Wondershare";
+"Or, link this account to your current Wondershare ID." = "Oppure, collega questo account al tuo attuale ID Wondershare.";
+"Back to sign in" = "Ritorna a sign in";
+"We found a Wondershare ID linked with this email. Please log in." = "Abbiamo trovato un ID Wondershare collegato a questa email.Accedi, per favore.";
+"Please enter your email" = "Inserisce tuo email, per favore";
+"Please enter your mobile phone" = "Inserisci il tuo numero di telefono";
+"Enter your password" = "Inserisci password";
+"Create Password" = "Crea Password";
+//重复"First Name" = "Nome";
+//重复"Last Name" = "Cognome";
+"Country" = "Nazione";
+"Create Account" = "Crea account";
+"Connect & Create Account" = "Connetti e crea account";
+"Create account with email" = "Crea account con email";
+"Create account with Mobile Phone" = "Crea account con Cellulare";
+"By clicking Create account, I agree that I have read and accepted the" = "Facendo clic su Crea account, accetto di aver letto e accettato <a href = 'htt";
+"Click to create an account, it means that you have read and agree to Wondershare's license policy and privacy policy" = "Fare clic per creare un account, significa che hai letto e accetti la politica di licenza e la politica sulla privacy di Wondershare";
+"Sign in with Email address" = "Registra con indirizzo Email";
+"New Password" = "Nuovo Password";
+"Please confirm your password" = "Conferma tuo password";
+"Success! New password set." = "Riuscito! Nuova password impostata.";
+//重复"Password" = "Password";
+"This account doesn't exist. Enter a different account or" = "Questo account non esiste. Inserisci un altro account o";
+"create a new one." = "create un nuovo.";
+//重复"Error" = "Errore";
+"Success!" = "Con Successo!";
+"Oops, there's no page here." = "Oops, non c'è nessuna pagina qui.";
+"BACK TO HOME PAGE" = "RITORNA A PAGINA INIZIALE ";
+"Didn't receive a code?" = "Non hai ricevuto i codici?";
+"Please wait for the message to arrive. You can also check your spam folder or" = "Attendi l'arrivo del messaggio. Puoi anche controllare la cartella dello spam o";
+"resend the code" = "rimanda il codice";
+"Account does not exist." = "Account non esiste.";
+"Account created successfully!" = "Crea account con successo!";
+"Verification code sent." = "Codice di verifica inviato.";
+"Login via SMS verification code" = "Accedi tra SMS verifica codice";
+"Please enter the displayed code" = "Inserisci il codice visualizzato";
+"Get new code" = "Ottieni nuovo codice";
+//重复"Confirm" = "Conferma";
+"Login with SMS verification code" = "Accedi con SMS verifica codice";
+"Login with account and password" = "Accedi con account e password";
+"Enter verification code" = "Inserisce codice di verifica";
+"Please enter SMS verification code, a SMS has been sent to" = "Inserisce codice di verifica, a SMS già inviato";
+"Phone number/email" = "Numero di telefono/email";
+"Scan the QR code to sign in" = "Scansiona il codice QR per accedere";
+"Connecting account failed" = "Connessione account riuscita";
+"Connecting account successfully" = "Connessione account non riuscita";
+"Your Wondershare Account has been connected to another social account, please go back and log in directly." = "Il tuo account Wondershare è connesso con altro account sociale,torni indietro e accedere direttamente ";
+"Account already exists" = "Account già esiste";
+"The account already has a Wondershare account, please enter the verification code to complete the binding and login" = "Il account ha ancora creato un account Wondershare, inserisci il codice di verifica per completare collegamento e accedere";
+"The mobile phone number has not yet created a Wondershare account, please enter the verification code to complete the binding and login" = "Questo numero di telefono non ha ancora creato un account Wondershare, inserisci il codice di verifica per completare collegamento e accedere";
+"Use account password binding" = "Usa  password dell'account associato";
+"Bind and log in" = "Collega e accedi";
+"Bind and register" = "Collega e registri";
+"Create a Wondershare ID Or, link this account to your current Wondershare ID." = "Crea un ID Wondershare Oppure, collega questo account al tuo ID Wondershare attuale.";
+"waiting..." = "aspetta...";
+"We opened a new browser tab, you can log in in the new tab" = "Abbiamo aprire una scheda del browser nuovo, puoi accedere";
+"You should complete the authentication in your browser. After completing this step, you will automatically continue from here." = "Devi completare l'autenticazione nel tuo browser. Dopo aver completato questo passaggio, continuerai automaticamente da qui.";
+"Restart" = "Riavvia";
+"You can now close this browser tab and return to the application." = "Puoi chiudere questa scheda del browser ora e tornare all'applicazione.";
+"Sorry, we could not sign you in" = "Spiacenti, non sei riuscito ad accedere.";
+"Please go back and try again" = "Per favore riprova.";
+"Go Back" = "Ritorno";
+"Repeat submit" = "Ripeti per consegnare.";
+"register ip required" = "È richiesto un IP registrato";
+
+// Color Match
+"Comparison View" = "Visualizzazione Comparativa";
+//重复"Level" = "Livello";
+"Reference" = "Riferimento";
+"Current" = "Attuale";
+"Select a frame to match to." = "Seleziona una cornice a cui abbinare.";
+"Match" = "Abbina";
+"Match the selection's color to the reference frame." = "Abbina il colore della selezione al piano di riferimento.";
+"Matching…" = "Corrispondenza…";
+//文案缺失"Color Match" = "";
+"Previous Clip" = "Clip Precedente";
+"Next Clip" = "Clip Successiva";
+
+// Keyboard Shortcuts
+"Search keyboard shortcuts" = "Cerca scorciatoie da tastiera";
+"No results." = "Nessun risultato.";
+//文案缺失"Conflicting Shortcuts" = "";
+//文案缺失"The \"Ctrl+C\" shortcut is already assigned to the \"Copy\" command. Do you wish to replace it?" = "";
+//文案缺失"Cannot Set Shortcut" = "";
+//文案缺失"Notall keys can be used in shortcuts." = "";
+//重复"Confirm" = "Conferma";
+"Restore Defaults" = "Ripristina le Impostazioni Predifinite";
+"Add" = "Aggiungi";
+"Add Shortcut" = "Aggiungi Scorciatoia";
+"Keyboard Shortcuts" = "Scorciatoie di Tastiera";
+"Marker" = "Indicatore";
+"Miscellaneous" = "Miscellaneo";
+"Red Marker" = "Indicatore Rosso";
+"Orange Marker" = "Indicatore Arancione";
+"Yellow Marker" = "Indicatore Giallo";
+"Green Marker" = "Indicatore Verde";
+"Cyan Marker" = "Indicatore Ciano";
+"Blue Marker" = "Indicatore Blu";
+"Purple Marker" = "Indicatore Viola";
+"Grey Marker" = "Indicatore Grigio";
+//"Add Keyframe"
+"Previous Keyframe" = "Keyframe Precedente";
+"Next Keyframe" = "Keyframe Successivo";
+//"Motion Tracking"
+//"Color Match"
+"Previous Frame / Move Left" = "Fotogramma Precedente / Sposta a Sinistra";
+"Next Frame / Move Right" = "Fotogramma Successivo / Sposta a Destra";
+"Previous Edit Point/ Move Up" = "Punto di Modifica Precedente / Sposta in Alto";
+"Next Edit Point/ Move Down" = "Punto di Modifica Successivo / Sposta in Basso";
+//"Add a New Folder"
+
+// Text
+//"Plain Text"
+//"Basic 1"
+//"Basic 2"
+//"Basic 3"
+//"Basic 4"
+
+// Filmora X: KeyFrame
+// KeyFrame
+//重复"Animation" = "Animazione";
+//"Preset"
+//"Customize"
+"Preset Animation" = "Animazione Preimpostata";
+"Preset Motions" = "Movimenti Preimpostati";
+//"Reset"
+//"Add"
+//"Delete"
+//"Rotate"
+"Scale" = "Scala";
+//"Position"
+//"Opacity"
+"Edit Keyframe" = "Modifica Fotogramma Chiave";
+"Delete Keyframe" = "Elimina Fotogramma Chiave";
+"Clear All Keyframes" = "Cancella Tutti i Fotogrammi Chiave";
+"Add Animation" = "Aggiungi Animazione";
+//"Apply"
+"Preset Motions and Keyframe Animations cannot be used at the same time." = "I movimenti preimpostati e le animazioni dei fotogrammi chiave non possono essere utilizzati allo stesso tempo.";
+"Drag or double-click to apply." = "Trascina o fai doppio clic per applicare.";
+"Double-click to apply." = "clique duas vezes para aplicar.";
+"The new animation will replace the previous animation." = "La nuova animazione sostituirà l'animazione precedente.";
+"Slide Up" = "Scorri verso l'alto";
+"Slide Right" = "Scorri a destra";
+//重复"Pause" = "Pausa";
+"Fade In" = "Dissolvenza in Entrata";
+"Fade Out" = "Dissolvenza";
+"Zoom In" = "Ingrandisci";
+"Zoom Out" = "Rimpicciolisci";
+"Vortex In" = "Vortex In";
+"Vortex Out" = "Vortex Out";
+
+// Audio Ducking
+"Ducking" = "Ducking";
+"Lower the volume of other clips" = "Abbassa il volume delle altre clip";
+"The clips you have selected have different values set." = "I clip selezionati hanno diversi valori impostati.";
+"Not all of the selected clips are enabled." = "Non tutte le clip selezionate sono abilitate.";
+//"Audio ducking has not been turned on. Please try again."
+"Something went wrong. Please try again." = "Qualcosa è andato storto. Riprova.";
+
+// Motion Tracking
+"Motion Tracking" = "Monitoraggio di Movimento";
+"Start Tracking" = "Inizia il Monitoraggio";
+//"Reset"
+//"Hide Target Box"
+//"Show Target Box"
+"Import from computer." = "Importa dal computer";
+"The target inside the tracking box must be visible 100% of the time it is being tracked." = "Il target all'interno della casella di tracciamento deve essere visibile il 100% delle volte in cui viene tracciato.";
+"In order to apply motion tracking, the flip effect on this clip will be undone. Do you want to continue?" = "Per applicare il monitoraggio del movimento, l'effetto di capovolgimento su questa clip verrà annullato. Vuoi continuare?";
+"In order to apply motion tracking any keyframing, animations, or pan & zoom motions will be removed. Do you want to continue?" = "Per applicare il monitoraggio del movimento, qualsiasi fotogramma chiave, animazioni o movimenti di panoramica e zoom verranno rimossi. Vuoi continuare?";
+"Unchecking the box next to Motion Tracking will clear all motion tracking data. Do you want to continue?" = "Deselezionando la casella accanto a Monitoraggio del Movimento verranno cancellati tutti i dati di rilevamento del movimento. Vuoi continuare?";
+"Resetting will clear all of the current motion tracking data. Do you want to continue?" = "Il ripristino cancellerà tutti i dati di tracciamento del movimento correnti. Vuoi continuare?";
+"Don't show this again" = "Non mostrarlo più";
+"During the rendering process all other operations are temporarily unavailable." = "Durante il processo di rendering tutte le altre operazioni sono temporaneamente non disponibili.";
+"Please move the playhead to the selected clip to begin motion tracking." = "Sposta la testina di riproduzione sulla clip selezionata per iniziare il monitoraggio del movimento.";
+"Please move the playhead to earlier in the clip so there is room to apply motion tracking." = "Sposta la testina di riproduzione all'inizio del clip in modo che ci sia spazio per applicare il tracciamento del movimento.";
+//工程文档补充
+"Select a folder to exact file from archived project" = "Seleziona una cartella per estrarre il file dal progetto archiviato";
+"The remaining disk space is:" = "Lo spazio rimanente sul disco è:";
+
+// v9.4
+"Account" = "account";
+"Get Started with Filmora" = "Inizia con Filmora";
+"Main Benefits" = "Vantaggio Principale";
+"Free Trial Version" = "Versione di Prova Gratuita";
+"Activated Version" = "Versione Attivata";
+"All Features" = "Tutte le Caratteristiche";
+"Export and share video without a watermark" = "Esporta e condividi video senza filigrana";
+"Free technical support" = "Supporto tecnico gratuito";
+//重复"Free Trial" = "Prova Gratuita";
+"If you already purchased Filmora, click here to activate!" = "Se hai già acquistato Filmora, clicca qui per attivare!";
+"Welcome back!" = "Ben tornato!";
+"Are you enjoying the free trial of Filmora?" = "Ti piace la prova gratuita di Filmora?";
+"Continue Free Trial" = "Continua la Prova Gratuita";
+//文案缺失"Welcome back" = "";
+"You’re signed in with the Wondershare ID %@." = "Hai effettuato l'accesso con ID Wondershare %@.";
+"Buy now to export videos without a watermark!" = "Acquista ora per esportare video senza filigrana!";
+"If you already purchased Filmora, click here to refresh your activation status!" = "Se hai già acquistato Filmora, clicca qui per aggiornare lo stato di attivazione!";
+//重复"Login" = "Login";
+"Purchase Filmora to export without a watermark" = "Acquista Filmora per esportare video senza filigrana";
+//重复"Free Trial Version" = "Versione di Prova Gratuita";
+"Full Version" = "Versione Completa";
+"Videos exported from the free trial will include a watermark." = "I video esportati nella versione di prova gratuita sono filigranati.";
+"Log in to Export with Watermark" = "Accedi per Esportare con Filigrana";
+"Contact us." = "Contattaci.";
+"Questions? Contact us." = "Domande? Contattaci.";
+"Purchase Filmora to export without a watermark." = "Acquista Filmora per esportare video senza filigrana.";
+"Click here to log in and export without a watermark." = "Clicca qui per accedere ed esportare video senza filigrana.";
+"Already purchased? Click here to log in and export without a watermark." = "Già acquistato? Clicca qui per accedere ed esportare video senza filigrana.";
+"Export with Watermark" = "Esporta con Filigrana";
+"Click here to refresh your activation status." = "Clicca qui per aggiornare lo stato di attivazione.";
+"Already purchased? Click here to refresh your activation status." = "Già acquistato? Clicca qui per aggiornare lo stato di attivazione.";
+"If you already purchased Filmora, please log in to your Wondershare ID to activate the software." = "Se hai già acquistato Filmora, accedi al tuo ID Wondershare per attivare il software.";
+"If you haven't yet, click here to buy Filmora." = "Se non l'hai ancora acquistato, clicca qui per acquistare Filmora.";
+//重复"Cancel" = "Annulla";
+"Log In" = "Log In";
+"If you have purchased Filmora, you can now export without a watermark!" = "Se hai acquistato Filmora, ora puoi esportare video senza filigrana!";
+"click here to buy Filmora." = "clicca qui per acquistare Filmora.";
+//重复"Cancel" = "Annulla";
+//重复"Export" = "Esporta";
+"Activation failed. Here are some reasons this might have happened:" = "Attivazione fallita. Ecco alcuni motivi per cui potrebbe essere successo:";
+"1. You could be experiencing a network delay. Wait a minute or two, then click 'Try Again'." = "1. È possibile che si verifichi un ritardo della rete. Attendere un minuto, quindi clicca su \"Riprova\".";
+"2. You could be logged into a Wondershare ID different from the one you used to make your purchase. You are currently signed in as: %@. " = "2. Potresti aver effettuato l'accesso a un ID Wondershare diverso da quello utilizzato per effettuare l'acquisto. Attualmente sei connesso come: %@.";
+"Click here to log out. Then, log in with the Wondershare ID associated with your license. " = "Clicca qui per uscire. Poi, accedi con l'ID Wondershare associato alla tua licenza. ";
+"Click here to log out." = "Clicca qui per uscire.";
+//重复"Try Again" = "Riprova";
+"You are logged out. Please relogin to activate." = "Sei disconnesso. Accedi nuovamente per attivare per favore.";
+// youtube 分享时的分类选择列表
+"Film & Animation" = "Film e animazione";
+"Autos & Vehicles" = "Auto e motori";
+//重复"Music" = "Musica";
+"Pets & Animals" = "Animali";
+"Sports" = "Sport";
+"Travel & Events" = "Viaggi ed eventi";
+//重复"Gaming" = "Videogiochi";
+"People & Blogs" = "Persone e blog";
+"Comedy" = "Umorismo";
+"Entertainment" = "Intrattenimento";
+"News & Politics" = "Notizie e politica";
+"Howto & Style" = "Fai da te e stile";
+"Education" = "Istruzione";
+"Science & Technology" = "Scienze e tecnologie";
+"Nonprofits & Activism" = "Non profit e attivismo";
+
+// 等补充部分
+//文案缺失"There is a problem with the current network and server connection, please check and try again" = "";
+//文案缺失"Terms of Use" = "";
+//文案缺失"By clicking Create account, I agree that I have read and accepted the Terms of Use and Privacy Policy" = "";
+// 前面已经定义，需要给翻译："It looks like this Wondershare ID has been deactivated on this device, please re-login on this device or double check the activation status in Account Center."
+// 前面已经定义，需要给翻译："If you have a license code, or have other trouble to activate Filmora, click here to troubleshoot.
+//文案缺失"Please enter your correct email address." = "";
+//文案缺失"User Interface" = "";
+
+"Appearance" = "Aspetto";
+"Dark Mode" = "Modalità Scura";
+"Light Mode" = "Modalità Luce";
+"System Default" = "Default del sistema";
+
+//Filmora.6.1
+"Watermaked" = "Filigranato";
+"Upgrade plan" = "Piano di aggiornamento";
+"Watermarked" = "Filigranato";
+"Your export video will include a watermark because you have choose a free plan." = "Il tuo video esportato includerà una filigrana perché hai scelto un piano gratuito.";
+"Upgrade to remove watermarks." = "Esegui l'upgrade per rimuovere le filigrane.";
+"Purchase Filmora to export without a watermark" = "Acquista Filmora per esportare senza filigrana";
+"Premium Includes" = "Premium possiede";
+"Go upgrade" = "Vai all'aggiornamento";
+"Contact us" = "Contattaci";
+"Already purchased?" = "Già acquistato?";
+"This video editor is easy for anyone to learn, even if they’ve never edited video before." = "Padroneggiare questo video editor è una passeggiata per chiunque, persino per chi non ha mai montato video prima dora.";
+"4K Support" = "Supporto 4K";
+"All Text  Styles" = "Tutti gli Stili di Testo";
+"285+Filters" = "285 + Filtri";
+"More Share" = "Condividi di più";
+"Tech Support" = "Supporto Tecnico";
+"Music Tools" = "Strumenti Musicali";
+"The file name cannot contain any emoji characters." = "Il nome del file non può contenere caratteri emoji.";
+
+//以下为 比english多出的部分
+/* ************************************************************ */
+/* About Window strings */
+/* *******common******* */
+/* ****Folder operation**** */
+/* *******Tooltips******* */
+/* ***timeline*** */
+/* *****menu**** */
+/* ***document***** */
+/* ****crop/pan&zoom**** */
+/* *****guide window***** */
+/* **Record Audio/Webcam**** */
+/* **About window**** */
+/* **Video Property**** */
+/* **Color Property**** */
+/* **Audio Property**** */
+/* **Transtion Property**** */
+/* ** Filter Edit Params**** */
+/* **Import wnd Controller**** */
+"sigin in" = "Registrati";
+"Feedback" = "Feedback";
+"RateAppstore" = "macappstore:https://itunes.apple.com/it/app/filmora-video-editor/id447570101?mt=12";
+"Sign out" = "Disconnessione";
+"My Profile" = "Il mio profilo";
+"My Favorites" = "I miei preferiti";
+"My Effects" = "I miei effetti";
+"Warning. Wondershare ID account different" = "Oops, l'account ID di Wondershare che hai usato per scaricare gli Effect Pack sul sito di Filmstock è diverso dall'account che hai effettuato l'accesso all'interno dell'applicazione Filmora, effettua il login con lo stesso account o contatta l'assistenza clienti per ricevere ulteriore assistenza.";
+"The movie has been created successfully!" = "Il filmato è stato creato con successo!";
+"Keyboard shortcuts" = "Tasti rapidi";
+"Media condividi" = "Media Frequentemente Usati";
+"Want to learn more? Click here to find more tutorials." = "Vuoi saperne di più? Fai clic qui per trovare altri tutorial.";
+"most popular" = "I più popolari";
+"Do you want to save this project before starting a new one?" = "Vuoi salvare questo progetto prima di avviarne uno nuovo?";
+"Got it!" = "Fatto!";
+"Quick Start" = "Avvio rapido";
+//"Split a Clip" = "Dividi una Clip";
+//"Export Your Video" = "Esporta il Video";
+"Get More Royalty-Free Music." = "Ottieni Più Musica Royalty-Free";
+//"Welcome back" = "Bentornato";
+"NEXT" = "Avanti";
+//"Color Matc" = "Corrispondenza di colore";
+"Conflicting ShortcutsThe \"Ctrl+C\" shortcut is already assigned to the \"Copy\" command. Do you wish to replace it?" = "Scorciatoie in conflittoLa scorciatoia \"Ctrl + C\" è già assegnata al comando \"Copia\". Vuoi sostituirlo?";
+"Cannot Set ShortcutNot all keys can be used in shortcuts." = "Impossibile impostare la scorciatoiaNon tutti i tasti possono essere utilizzati nelle scorciatoie.";
+//"Add Keyfram" = "Aggiungi Keyframe";
+//"Motion Trackin" = "Monitoraggio di Movimento";
+//"Color Matc" = "Corrispondenza di Colori";
+"Add a New Folder" = "Aggiungi Una Nuova Cartella";
+// Appearance Switch换肤相关，win端特有
+//"Set the appearance that matches your computer settings" = "Imposta l'aspetto che corrisponde alle impostazioni del tuo computer.";
+//"Plain Tex" = "Testo Normale";
+//"Basic " = "Base 1";
+//"Basic " = "Base 2";
+//"Basic " = "Base 3";
+//"Basic " = "Base 4";
+//"Prese" = "Preset";
+//"Customiz" = "Personalizza";
+//"Rese" = "Ripristina";
+//"Ad" = "Aggiungi";
+//"Delet" = "Elimina";
+//"Rotat" = "Ruota";
+//"Positio" = "Posizione";
+//"Opacit" = "Opacità";
+//"Appl" = "Applica";
+//文案缺失"Add from local" = "";
+//文案缺失"The current timeline cursor is not on cilp and motion tracking rendering cannot be performed." = "";
+//文案缺失"The current timeline cursor cannot perform motion tracking rendering on the last frame of cilp." = "";
+//"Audio ducking has not been turned on. Please try again" = "Il ducking audio non è stato attivato. Riprova.";
+//"Hide Target Bo" = "Nascondi Target Box";
+//"Show Target Bo" = "Dimostra Target Box";
+//9.6.1
