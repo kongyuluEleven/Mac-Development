@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01</key>
+	<string>Jan</string>
+	<key>02</key>
+	<string>Feb</string>
+	<key>03</key>
+	<string>Mar</string>
+	<key>04</key>
+	<string>Apr</string>
+	<key>05</key>
+	<string>May</string>
+	<key>06</key>
+	<string>Jun</string>
+	<key>07</key>
+	<string>Jul</string>
+	<key>08</key>
+	<string>Aug</string>
+	<key>09</key>
+	<string>Sept</string>
+	<key>10</key>
+	<string>Oct</string>
+	<key>11</key>
+	<string>Nov</string>
+	<key>12</key>
+	<string>Dec</string>
+	<key>200</key>
+	<string>成功に処理した</string>
+	<key>202</key>
+	<string>操作が失敗しました</string>
+	<key>403</key>
+	<string>権限がない</string>
+	<key>41000</key>
+	<string>パラメーターが無効だ</string>
+</dict>
+</plist>

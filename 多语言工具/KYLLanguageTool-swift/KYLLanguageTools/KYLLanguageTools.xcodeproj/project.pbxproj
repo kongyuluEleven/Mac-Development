@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54CBAB7E25B7B1C400915582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB7D25B7B1C400915582 /* AppDelegate.swift */; };
+		54CBAB8025B7B1C400915582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB7F25B7B1C400915582 /* ViewController.swift */; };
+		54CBAB8325B7B1C400915582 /* KYLLanguageTools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB8125B7B1C400915582 /* KYLLanguageTools.xcdatamodeld */; };
+		54CBAB8525B7B1C700915582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CBAB8425B7B1C700915582 /* Assets.xcassets */; };
+		54CBAB8825B7B1C700915582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CBAB8625B7B1C700915582 /* Main.storyboard */; };
+		54CBAB9425B7B1C700915582 /* KYLLanguageToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB9325B7B1C700915582 /* KYLLanguageToolsTests.swift */; };
+		54CBAB9F25B7B1C700915582 /* KYLLanguageToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB9E25B7B1C700915582 /* KYLLanguageToolsUITests.swift */; };
+		54CBABEF25B7B68600915582 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABB225B7B68600915582 /* unzip.c */; };
+		54CBABF025B7B68600915582 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABB325B7B68600915582 /* zip.c */; };
+		54CBABF125B7B68600915582 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABB425B7B68600915582 /* ioapi.c */; };
+		54CBABF225B7B68600915582 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABB525B7B68600915582 /* mztools.c */; };
+		54CBABF325B7B68600915582 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABBD25B7B68600915582 /* SSZipArchive.m */; };
+		54CBABF425B7B68600915582 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABC025B7B68600915582 /* aeskey.c */; };
+		54CBABF525B7B68600915582 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABC125B7B68600915582 /* hmac.c */; };
+		54CBABF625B7B68600915582 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABC425B7B68600915582 /* aescrypt.c */; };
+		54CBABF725B7B68600915582 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABC525B7B68600915582 /* fileenc.c */; };
+		54CBABF825B7B68600915582 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABC825B7B68600915582 /* sha1.c */; };
+		54CBABF925B7B68600915582 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABCD25B7B68600915582 /* prng.c */; };
+		54CBABFA25B7B68600915582 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABCF25B7B68600915582 /* pwd2key.c */; };
+		54CBABFB25B7B68600915582 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABD025B7B68600915582 /* aestab.c */; };
+		54CBABFC25B7B68600915582 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABD325B7B68600915582 /* entropy.c */; };
+		54CBABFD25B7B68600915582 /* main11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABD625B7B68600915582 /* main11.cpp */; };
+		54CBABFE25B7B68600915582 /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABD825B7B68600915582 /* XlsReader.cpp */; };
+		54CBABFF25B7B68600915582 /* DHxlsReaderIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABE325B7B68600915582 /* DHxlsReaderIOS.m */; };
+		54CBAC0025B7B68600915582 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABE725B7B68600915582 /* DHcell.m */; };
+		54CBAC0125B7B68600915582 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABEA25B7B68600915582 /* xls.c */; };
+		54CBAC0225B7B68600915582 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABEB25B7B68600915582 /* xlstool.c */; };
+		54CBAC0325B7B68600915582 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABEC25B7B68600915582 /* ole.c */; };
+		54CBAC0425B7B68600915582 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABED25B7B68600915582 /* xls2csv.c */; };
+		54CBAC0525B7B68600915582 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CBABEE25B7B68600915582 /* getopt.c */; };
+		54CBAC1E25B7B8C500915582 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CBAC1D25B7B8C500915582 /* libz.tbd */; };
+		54CBAC2325B7B8CF00915582 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CBAC2225B7B8CF00915582 /* libiconv.2.tbd */; };
+		54CBAC3E25B7B9E100915582 /* KPythonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3B25B7B9E100915582 /* KPythonTool.m */; };
+		54CBAC3F25B7B9E100915582 /* KPythonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3C25B7B9E100915582 /* KPythonManager.m */; };
+		54CBAC4025B7B9E100915582 /* KLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3D25B7B9E100915582 /* KLanguageTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54CBAB9025B7B1C700915582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54CBAB7225B7B1C400915582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54CBAB7925B7B1C400915582;
+			remoteInfo = KYLLanguageTools;
+		};
+		54CBAB9B25B7B1C700915582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54CBAB7225B7B1C400915582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54CBAB7925B7B1C400915582;
+			remoteInfo = KYLLanguageTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54CBAB7A25B7B1C400915582 /* KYLLanguageTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLLanguageTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CBAB7D25B7B1C400915582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54CBAB7F25B7B1C400915582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54CBAB8225B7B1C400915582 /* KYLLanguageTools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KYLLanguageTools.xcdatamodel; sourceTree = "<group>"; };
+		54CBAB8425B7B1C700915582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54CBAB8725B7B1C700915582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54CBAB8925B7B1C700915582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CBAB8A25B7B1C700915582 /* KYLLanguageTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYLLanguageTools.entitlements; sourceTree = "<group>"; };
+		54CBAB8F25B7B1C700915582 /* KYLLanguageToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYLLanguageToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CBAB9325B7B1C700915582 /* KYLLanguageToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLLanguageToolsTests.swift; sourceTree = "<group>"; };
+		54CBAB9525B7B1C700915582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CBAB9A25B7B1C700915582 /* KYLLanguageToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYLLanguageToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CBAB9E25B7B1C700915582 /* KYLLanguageToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLLanguageToolsUITests.swift; sourceTree = "<group>"; };
+		54CBABA025B7B1C700915582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CBABB225B7B68600915582 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		54CBABB325B7B68600915582 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		54CBABB425B7B68600915582 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		54CBABB525B7B68600915582 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		54CBABB625B7B68600915582 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		54CBABB725B7B68600915582 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		54CBABB825B7B68600915582 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		54CBABB925B7B68600915582 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		54CBABBA25B7B68600915582 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		54CBABBB25B7B68600915582 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		54CBABBC25B7B68600915582 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		54CBABBD25B7B68600915582 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		54CBABBF25B7B68600915582 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		54CBABC025B7B68600915582 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		54CBABC125B7B68600915582 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		54CBABC225B7B68600915582 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		54CBABC325B7B68600915582 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		54CBABC425B7B68600915582 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		54CBABC525B7B68600915582 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		54CBABC625B7B68600915582 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		54CBABC725B7B68600915582 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		54CBABC825B7B68600915582 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		54CBABC925B7B68600915582 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		54CBABCA25B7B68600915582 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		54CBABCB25B7B68600915582 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		54CBABCC25B7B68600915582 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		54CBABCD25B7B68600915582 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		54CBABCE25B7B68600915582 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		54CBABCF25B7B68600915582 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		54CBABD025B7B68600915582 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		54CBABD125B7B68600915582 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		54CBABD225B7B68600915582 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		54CBABD325B7B68600915582 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		54CBABD625B7B68600915582 /* main11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main11.cpp; sourceTree = "<group>"; };
+		54CBABD725B7B68600915582 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		54CBABD825B7B68600915582 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		54CBABD925B7B68600915582 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		54CBABDB25B7B68600915582 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		54CBABDC25B7B68600915582 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		54CBABDD25B7B68600915582 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		54CBABDE25B7B68600915582 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		54CBABDF25B7B68600915582 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		54CBABE025B7B68600915582 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		54CBABE125B7B68600915582 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		54CBABE325B7B68600915582 /* DHxlsReaderIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReaderIOS.m; sourceTree = "<group>"; };
+		54CBABE425B7B68600915582 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
+		54CBABE525B7B68600915582 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		54CBABE625B7B68600915582 /* DHxlsReaderIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReaderIOS.h; sourceTree = "<group>"; };
+		54CBABE725B7B68600915582 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		54CBABE825B7B68600915582 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		54CBABEA25B7B68600915582 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		54CBABEB25B7B68600915582 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		54CBABEC25B7B68600915582 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		54CBABED25B7B68600915582 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		54CBABEE25B7B68600915582 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		54CBAC1525B7B84000915582 /* KYLLanguageTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KYLLanguageTools-Prefix.pch"; sourceTree = "<group>"; };
+		54CBAC1D25B7B8C500915582 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		54CBAC2225B7B8CF00915582 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		54CBAC3825B7B9E000915582 /* KLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLanguageTool.h; sourceTree = "<group>"; };
+		54CBAC3925B7B9E100915582 /* KPythonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPythonTool.h; sourceTree = "<group>"; };
+		54CBAC3A25B7B9E100915582 /* KPythonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPythonManager.h; sourceTree = "<group>"; };
+		54CBAC3B25B7B9E100915582 /* KPythonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPythonTool.m; sourceTree = "<group>"; };
+		54CBAC3C25B7B9E100915582 /* KPythonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPythonManager.m; sourceTree = "<group>"; };
+		54CBAC3D25B7B9E100915582 /* KLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLanguageTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54CBAB7725B7B1C400915582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBAC2325B7B8CF00915582 /* libiconv.2.tbd in Frameworks */,
+				54CBAC1E25B7B8C500915582 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB8C25B7B1C700915582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB9725B7B1C700915582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54CBAB7125B7B1C400915582 = {
+			isa = PBXGroup;
+			children = (
+				54CBAB7C25B7B1C400915582 /* KYLLanguageTools */,
+				54CBAB9225B7B1C700915582 /* KYLLanguageToolsTests */,
+				54CBAB9D25B7B1C700915582 /* KYLLanguageToolsUITests */,
+				54CBAB7B25B7B1C400915582 /* Products */,
+				54CBAC1C25B7B8C500915582 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54CBAB7B25B7B1C400915582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAB7A25B7B1C400915582 /* KYLLanguageTools.app */,
+				54CBAB8F25B7B1C700915582 /* KYLLanguageToolsTests.xctest */,
+				54CBAB9A25B7B1C700915582 /* KYLLanguageToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54CBAB7C25B7B1C400915582 /* KYLLanguageTools */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC2725B7B90C00915582 /* Src */,
+				54CBABAF25B7B65300915582 /* Toos */,
+				54CBAB7D25B7B1C400915582 /* AppDelegate.swift */,
+				54CBAB7F25B7B1C400915582 /* ViewController.swift */,
+				54CBAB8425B7B1C700915582 /* Assets.xcassets */,
+				54CBAB8625B7B1C700915582 /* Main.storyboard */,
+				54CBAB8925B7B1C700915582 /* Info.plist */,
+				54CBAC1525B7B84000915582 /* KYLLanguageTools-Prefix.pch */,
+				54CBAB8A25B7B1C700915582 /* KYLLanguageTools.entitlements */,
+				54CBAB8125B7B1C400915582 /* KYLLanguageTools.xcdatamodeld */,
+			);
+			path = KYLLanguageTools;
+			sourceTree = "<group>";
+		};
+		54CBAB9225B7B1C700915582 /* KYLLanguageToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAB9325B7B1C700915582 /* KYLLanguageToolsTests.swift */,
+				54CBAB9525B7B1C700915582 /* Info.plist */,
+			);
+			path = KYLLanguageToolsTests;
+			sourceTree = "<group>";
+		};
+		54CBAB9D25B7B1C700915582 /* KYLLanguageToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAB9E25B7B1C700915582 /* KYLLanguageToolsUITests.swift */,
+				54CBABA025B7B1C700915582 /* Info.plist */,
+			);
+			path = KYLLanguageToolsUITests;
+			sourceTree = "<group>";
+		};
+		54CBABAF25B7B65300915582 /* Toos */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABD425B7B68600915582 /* DHxlsReader */,
+				54CBABB025B7B68600915582 /* SSZipArchive */,
+			);
+			path = Toos;
+			sourceTree = "<group>";
+		};
+		54CBABB025B7B68600915582 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABB125B7B68600915582 /* minizip */,
+				54CBABBB25B7B68600915582 /* SSZipArchive.h */,
+				54CBABBC25B7B68600915582 /* Common.h */,
+				54CBABBD25B7B68600915582 /* SSZipArchive.m */,
+				54CBABBE25B7B68600915582 /* aes */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		54CBABB125B7B68600915582 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABB225B7B68600915582 /* unzip.c */,
+				54CBABB325B7B68600915582 /* zip.c */,
+				54CBABB425B7B68600915582 /* ioapi.c */,
+				54CBABB525B7B68600915582 /* mztools.c */,
+				54CBABB625B7B68600915582 /* crypt.h */,
+				54CBABB725B7B68600915582 /* zip.h */,
+				54CBABB825B7B68600915582 /* unzip.h */,
+				54CBABB925B7B68600915582 /* mztools.h */,
+				54CBABBA25B7B68600915582 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		54CBABBE25B7B68600915582 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABBF25B7B68600915582 /* prng.h */,
+				54CBABC025B7B68600915582 /* aeskey.c */,
+				54CBABC125B7B68600915582 /* hmac.c */,
+				54CBABC225B7B68600915582 /* aestab.h */,
+				54CBABC325B7B68600915582 /* pwd2key.h */,
+				54CBABC425B7B68600915582 /* aescrypt.c */,
+				54CBABC525B7B68600915582 /* fileenc.c */,
+				54CBABC625B7B68600915582 /* aesopt.h */,
+				54CBABC725B7B68600915582 /* aes_via_ace.h */,
+				54CBABC825B7B68600915582 /* sha1.c */,
+				54CBABC925B7B68600915582 /* brg_types.h */,
+				54CBABCA25B7B68600915582 /* entropy.h */,
+				54CBABCB25B7B68600915582 /* hmac.h */,
+				54CBABCC25B7B68600915582 /* brg_endian.h */,
+				54CBABCD25B7B68600915582 /* prng.c */,
+				54CBABCE25B7B68600915582 /* aes.h */,
+				54CBABCF25B7B68600915582 /* pwd2key.c */,
+				54CBABD025B7B68600915582 /* aestab.c */,
+				54CBABD125B7B68600915582 /* sha1.h */,
+				54CBABD225B7B68600915582 /* fileenc.h */,
+				54CBABD325B7B68600915582 /* entropy.c */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		54CBABD425B7B68600915582 /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABD525B7B68600915582 /* cplusplus */,
+				54CBABD925B7B68600915582 /* config.h */,
+				54CBABDA25B7B68600915582 /* libxls */,
+				54CBABE225B7B68600915582 /* DHxlsReaderIOS */,
+				54CBABE925B7B68600915582 /* src */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		54CBABD525B7B68600915582 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABD625B7B68600915582 /* main11.cpp */,
+				54CBABD725B7B68600915582 /* XlsReader.h */,
+				54CBABD825B7B68600915582 /* XlsReader.cpp */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		54CBABDA25B7B68600915582 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABDB25B7B68600915582 /* xlstypes.h */,
+				54CBABDC25B7B68600915582 /* xlsstruct.h */,
+				54CBABDD25B7B68600915582 /* brdb.c.h */,
+				54CBABDE25B7B68600915582 /* xlstool.h */,
+				54CBABDF25B7B68600915582 /* xls.h */,
+				54CBABE025B7B68600915582 /* ole.h */,
+				54CBABE125B7B68600915582 /* brdb.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		54CBABE225B7B68600915582 /* DHxlsReaderIOS */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABE325B7B68600915582 /* DHxlsReaderIOS.m */,
+				54CBABE425B7B68600915582 /* DHxlsReaderIOS-Prefix.pch */,
+				54CBABE525B7B68600915582 /* DHcell.h */,
+				54CBABE625B7B68600915582 /* DHxlsReaderIOS.h */,
+				54CBABE725B7B68600915582 /* DHcell.m */,
+				54CBABE825B7B68600915582 /* DHcell-Private.h */,
+			);
+			path = DHxlsReaderIOS;
+			sourceTree = "<group>";
+		};
+		54CBABE925B7B68600915582 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				54CBABEA25B7B68600915582 /* xls.c */,
+				54CBABEB25B7B68600915582 /* xlstool.c */,
+				54CBABEC25B7B68600915582 /* ole.c */,
+				54CBABED25B7B68600915582 /* xls2csv.c */,
+				54CBABEE25B7B68600915582 /* getopt.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		54CBAC1C25B7B8C500915582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC2225B7B8CF00915582 /* libiconv.2.tbd */,
+				54CBAC1D25B7B8C500915582 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54CBAC2725B7B90C00915582 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC4425B7BA1A00915582 /* swift */,
+				54CBAC2825B7B9A300915582 /* oc */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		54CBAC2825B7B9A300915582 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC3825B7B9E000915582 /* KLanguageTool.h */,
+				54CBAC3D25B7B9E100915582 /* KLanguageTool.m */,
+				54CBAC3A25B7B9E100915582 /* KPythonManager.h */,
+				54CBAC3C25B7B9E100915582 /* KPythonManager.m */,
+				54CBAC3925B7B9E100915582 /* KPythonTool.h */,
+				54CBAC3B25B7B9E100915582 /* KPythonTool.m */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
+		54CBAC4425B7BA1A00915582 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54CBAB7925B7B1C400915582 /* KYLLanguageTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CBABA325B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageTools" */;
+			buildPhases = (
+				54CBAB7625B7B1C400915582 /* Sources */,
+				54CBAB7725B7B1C400915582 /* Frameworks */,
+				54CBAB7825B7B1C400915582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYLLanguageTools;
+			productName = KYLLanguageTools;
+			productReference = 54CBAB7A25B7B1C400915582 /* KYLLanguageTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54CBAB8E25B7B1C700915582 /* KYLLanguageToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CBABA625B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageToolsTests" */;
+			buildPhases = (
+				54CBAB8B25B7B1C700915582 /* Sources */,
+				54CBAB8C25B7B1C700915582 /* Frameworks */,
+				54CBAB8D25B7B1C700915582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54CBAB9125B7B1C700915582 /* PBXTargetDependency */,
+			);
+			name = KYLLanguageToolsTests;
+			productName = KYLLanguageToolsTests;
+			productReference = 54CBAB8F25B7B1C700915582 /* KYLLanguageToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54CBAB9925B7B1C700915582 /* KYLLanguageToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CBABA925B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageToolsUITests" */;
+			buildPhases = (
+				54CBAB9625B7B1C700915582 /* Sources */,
+				54CBAB9725B7B1C700915582 /* Frameworks */,
+				54CBAB9825B7B1C700915582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54CBAB9C25B7B1C700915582 /* PBXTargetDependency */,
+			);
+			name = KYLLanguageToolsUITests;
+			productName = KYLLanguageToolsUITests;
+			productReference = 54CBAB9A25B7B1C700915582 /* KYLLanguageToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54CBAB7225B7B1C400915582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					54CBAB7925B7B1C400915582 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					54CBAB8E25B7B1C700915582 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 54CBAB7925B7B1C400915582;
+					};
+					54CBAB9925B7B1C700915582 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 54CBAB7925B7B1C400915582;
+					};
+				};
+			};
+			buildConfigurationList = 54CBAB7525B7B1C400915582 /* Build configuration list for PBXProject "KYLLanguageTools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54CBAB7125B7B1C400915582;
+			productRefGroup = 54CBAB7B25B7B1C400915582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54CBAB7925B7B1C400915582 /* KYLLanguageTools */,
+				54CBAB8E25B7B1C700915582 /* KYLLanguageToolsTests */,
+				54CBAB9925B7B1C700915582 /* KYLLanguageToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54CBAB7825B7B1C400915582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBAB8525B7B1C700915582 /* Assets.xcassets in Resources */,
+				54CBAB8825B7B1C700915582 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB8D25B7B1C700915582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB9825B7B1C700915582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54CBAB7625B7B1C400915582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBABFE25B7B68600915582 /* XlsReader.cpp in Sources */,
+				54CBABF825B7B68600915582 /* sha1.c in Sources */,
+				54CBABFA25B7B68600915582 /* pwd2key.c in Sources */,
+				54CBABFC25B7B68600915582 /* entropy.c in Sources */,
+				54CBABF725B7B68600915582 /* fileenc.c in Sources */,
+				54CBABF525B7B68600915582 /* hmac.c in Sources */,
+				54CBAC4025B7B9E100915582 /* KLanguageTool.m in Sources */,
+				54CBAC0325B7B68600915582 /* ole.c in Sources */,
+				54CBAC0425B7B68600915582 /* xls2csv.c in Sources */,
+				54CBABF125B7B68600915582 /* ioapi.c in Sources */,
+				54CBAB8025B7B1C400915582 /* ViewController.swift in Sources */,
+				54CBABFF25B7B68600915582 /* DHxlsReaderIOS.m in Sources */,
+				54CBAC3F25B7B9E100915582 /* KPythonManager.m in Sources */,
+				54CBAC0225B7B68600915582 /* xlstool.c in Sources */,
+				54CBAB7E25B7B1C400915582 /* AppDelegate.swift in Sources */,
+				54CBABF625B7B68600915582 /* aescrypt.c in Sources */,
+				54CBAC0125B7B68600915582 /* xls.c in Sources */,
+				54CBABEF25B7B68600915582 /* unzip.c in Sources */,
+				54CBABFB25B7B68600915582 /* aestab.c in Sources */,
+				54CBABF325B7B68600915582 /* SSZipArchive.m in Sources */,
+				54CBABFD25B7B68600915582 /* main11.cpp in Sources */,
+				54CBABF225B7B68600915582 /* mztools.c in Sources */,
+				54CBABF425B7B68600915582 /* aeskey.c in Sources */,
+				54CBAC0025B7B68600915582 /* DHcell.m in Sources */,
+				54CBAC3E25B7B9E100915582 /* KPythonTool.m in Sources */,
+				54CBABF025B7B68600915582 /* zip.c in Sources */,
+				54CBABF925B7B68600915582 /* prng.c in Sources */,
+				54CBAC0525B7B68600915582 /* getopt.c in Sources */,
+				54CBAB8325B7B1C400915582 /* KYLLanguageTools.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB8B25B7B1C700915582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBAB9425B7B1C700915582 /* KYLLanguageToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54CBAB9625B7B1C700915582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CBAB9F25B7B1C700915582 /* KYLLanguageToolsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54CBAB9125B7B1C700915582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54CBAB7925B7B1C400915582 /* KYLLanguageTools */;
+			targetProxy = 54CBAB9025B7B1C700915582 /* PBXContainerItemProxy */;
+		};
+		54CBAB9C25B7B1C700915582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54CBAB7925B7B1C400915582 /* KYLLanguageTools */;
+			targetProxy = 54CBAB9B25B7B1C700915582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54CBAB8625B7B1C700915582 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54CBAB8725B7B1C700915582 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54CBABA125B7B1C700915582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54CBABA225B7B1C700915582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54CBABA425B7B1C700915582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KYLLanguageTools/KYLLanguageTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = "KYLLanguageTools/KYLLanguageTools-Prefix.pch";
+				INFOPLIST_FILE = KYLLanguageTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54CBABA525B7B1C700915582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KYLLanguageTools/KYLLanguageTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = "KYLLanguageTools/KYLLanguageTools-Prefix.pch";
+				INFOPLIST_FILE = KYLLanguageTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		54CBABA725B7B1C700915582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KYLLanguageToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYLLanguageTools.app/Contents/MacOS/KYLLanguageTools";
+			};
+			name = Debug;
+		};
+		54CBABA825B7B1C700915582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KYLLanguageToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYLLanguageTools.app/Contents/MacOS/KYLLanguageTools";
+			};
+			name = Release;
+		};
+		54CBABAA25B7B1C700915582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KYLLanguageToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KYLLanguageTools;
+			};
+			name = Debug;
+		};
+		54CBABAB25B7B1C700915582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YZC2T44ZDX;
+				INFOPLIST_FILE = KYLLanguageToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KYLLanguageTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54CBAB7525B7B1C400915582 /* Build configuration list for PBXProject "KYLLanguageTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CBABA125B7B1C700915582 /* Debug */,
+				54CBABA225B7B1C700915582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CBABA325B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CBABA425B7B1C700915582 /* Debug */,
+				54CBABA525B7B1C700915582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CBABA625B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CBABA725B7B1C700915582 /* Debug */,
+				54CBABA825B7B1C700915582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54CBABA925B7B1C700915582 /* Build configuration list for PBXNativeTarget "KYLLanguageToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CBABAA25B7B1C700915582 /* Debug */,
+				54CBABAB25B7B1C700915582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54CBAB8125B7B1C400915582 /* KYLLanguageTools.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54CBAB8225B7B1C400915582 /* KYLLanguageTools.xcdatamodel */,
+			);
+			currentVersion = 54CBAB8225B7B1C400915582 /* KYLLanguageTools.xcdatamodel */;
+			path = KYLLanguageTools.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54CBAB7225B7B1C400915582 /* Project object */;
+}
