@@ -42,6 +42,11 @@
 		54CBAC3E25B7B9E100915582 /* KPythonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3B25B7B9E100915582 /* KPythonTool.m */; };
 		54CBAC3F25B7B9E100915582 /* KPythonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3C25B7B9E100915582 /* KPythonManager.m */; };
 		54CBAC4025B7B9E100915582 /* KLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3D25B7B9E100915582 /* KLanguageTool.m */; };
+		54CBAC5525B7CFE300915582 /* KLanguageToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */; };
+		54CBAC7325B806D700915582 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC7225B806D700915582 /* String+File.swift */; };
+		54CBAC8025B8096300915582 /* String+filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC7F25B8096300915582 /* String+filter.swift */; };
+		54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */; };
+		54CBAC9125B80BF300915582 /* String+compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9025B80BF300915582 /* String+compare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +145,12 @@
 		54CBAC3B25B7B9E100915582 /* KPythonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPythonTool.m; sourceTree = "<group>"; };
 		54CBAC3C25B7B9E100915582 /* KPythonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPythonManager.m; sourceTree = "<group>"; };
 		54CBAC3D25B7B9E100915582 /* KLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLanguageTool.m; sourceTree = "<group>"; };
+		54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageToolManager.swift; sourceTree = "<group>"; };
+		54CBAC5A25B7D23B00915582 /* localizableExcel.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = localizableExcel.xls; sourceTree = "<group>"; };
+		54CBAC7225B806D700915582 /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		54CBAC7F25B8096300915582 /* String+filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+filter.swift"; sourceTree = "<group>"; };
+		54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUserConfigInfo.swift; sourceTree = "<group>"; };
+		54CBAC9025B80BF300915582 /* String+compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+compare.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +204,7 @@
 		54CBAB7C25B7B1C400915582 /* KYLLanguageTools */ = {
 			isa = PBXGroup;
 			children = (
+				54CBAC5925B7D21800915582 /* res */,
 				54CBAC2725B7B90C00915582 /* Src */,
 				54CBABAF25B7B65300915582 /* Toos */,
 				54CBAB7D25B7B1C400915582 /* AppDelegate.swift */,
@@ -363,6 +375,9 @@
 		54CBAC2725B7B90C00915582 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				54CBAC8725B80B9300915582 /* Model */,
+				54CBAC6E25B8049C00915582 /* Extension */,
+				54CBAC5025B7C64400915582 /* UI */,
 				54CBAC4425B7BA1A00915582 /* swift */,
 				54CBAC2825B7B9A300915582 /* oc */,
 			);
@@ -385,8 +400,42 @@
 		54CBAC4425B7BA1A00915582 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */,
 			);
 			path = swift;
+			sourceTree = "<group>";
+		};
+		54CBAC5025B7C64400915582 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		54CBAC5925B7D21800915582 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC5A25B7D23B00915582 /* localizableExcel.xls */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		54CBAC6E25B8049C00915582 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC7225B806D700915582 /* String+File.swift */,
+				54CBAC7F25B8096300915582 /* String+filter.swift */,
+				54CBAC9025B80BF300915582 /* String+compare.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		54CBAC8725B80B9300915582 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,13 +589,18 @@
 				54CBABF325B7B68600915582 /* SSZipArchive.m in Sources */,
 				54CBABFD25B7B68600915582 /* main11.cpp in Sources */,
 				54CBABF225B7B68600915582 /* mztools.c in Sources */,
+				54CBAC8025B8096300915582 /* String+filter.swift in Sources */,
 				54CBABF425B7B68600915582 /* aeskey.c in Sources */,
 				54CBAC0025B7B68600915582 /* DHcell.m in Sources */,
+				54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */,
+				54CBAC9125B80BF300915582 /* String+compare.swift in Sources */,
 				54CBAC3E25B7B9E100915582 /* KPythonTool.m in Sources */,
+				54CBAC5525B7CFE300915582 /* KLanguageToolManager.swift in Sources */,
 				54CBABF025B7B68600915582 /* zip.c in Sources */,
 				54CBABF925B7B68600915582 /* prng.c in Sources */,
 				54CBAC0525B7B68600915582 /* getopt.c in Sources */,
 				54CBAB8325B7B1C400915582 /* KYLLanguageTools.xcdatamodeld in Sources */,
+				54CBAC7325B806D700915582 /* String+File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

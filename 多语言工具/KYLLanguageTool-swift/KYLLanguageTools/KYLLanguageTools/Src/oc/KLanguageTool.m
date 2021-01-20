@@ -19,7 +19,7 @@
 }
 
 - (void)createDefaultFile {
-    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"多语言例子.xls"];
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"localizableExcel.xls"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     [self downDefaultFile:data];
 }
