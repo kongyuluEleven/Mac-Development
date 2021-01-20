@@ -271,6 +271,20 @@ public extension String {
         return openPannel.urls.first?.absoluteString.replacingOccurrences(of: "file://", with: "") ?? ""
     }
     
+    /// 弹窗授权框返回用户选择的文件路径
+    /// - Parameter fileType: 文件类型
+    /// - Returns: 返回用户选择的文件路径
+    static func getFile(fileTypes:[String]) -> String {
+        let openPannel = NSOpenPanel()
+        openPannel.allowedFileTypes = fileTypes
+        openPannel.canChooseFiles = true
+        openPannel.canChooseDirectories = false
+        guard openPannel.runModal().rawValue == NSApplication.ModalResponse.OK.rawValue else {
+            return ""
+        }
+        return openPannel.urls.first?.absoluteString.replacingOccurrences(of: "file://", with: "") ?? ""
+    }
+    
 }
 
 #endif

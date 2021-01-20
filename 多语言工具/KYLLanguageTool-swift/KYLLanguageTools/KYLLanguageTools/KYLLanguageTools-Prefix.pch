@@ -10,6 +10,4 @@
 
 #ifdef __OBJC__
 #import <Foundation/Foundation.h>
-#import "KLanguageTool.h"
-#import "KPythonManager.h"
 #endif

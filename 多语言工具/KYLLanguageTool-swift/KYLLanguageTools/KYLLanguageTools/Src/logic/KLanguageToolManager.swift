@@ -9,18 +9,21 @@ import Cocoa
 
 
 final class KLanguageToolManager: NSObject {
-    
     static let shared = KLanguageToolManager()
-
-    //private var excelTool:KLanguageTool = KLanguageTool()
 }
 
 extension KLanguageToolManager {
-    private func exportExcelToStringFile(filePath:String) {
-    
+   public func exportExcelToStringFile(filePath:String) {
+        if filePath.isSuffix(type: "csv") {
+            
+        } else if filePath.isSuffix(type: "xls") {
+            if KExcelTool.share().exportExcelToStringFile(filePath: filePath) {
+                debugPrint("导出成功:filePath=\(filePath)")
+            }
+        }
     }
     
-    private func inputStringToDefaultExcelFile() {
-        
+    public func inputStringToDefaultExcelFile() {
+        KExcelTool.share().inputStringToDefaultExcelFile()
     }
 }

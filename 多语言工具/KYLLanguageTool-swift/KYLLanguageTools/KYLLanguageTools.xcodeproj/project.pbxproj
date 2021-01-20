@@ -43,14 +43,34 @@
 		54CBAC3F25B7B9E100915582 /* KPythonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3C25B7B9E100915582 /* KPythonManager.m */; };
 		54CBAC4025B7B9E100915582 /* KLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC3D25B7B9E100915582 /* KLanguageTool.m */; };
 		54CBAC5525B7CFE300915582 /* KLanguageToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */; };
-		54CBAC7325B806D700915582 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC7225B806D700915582 /* String+File.swift */; };
-		54CBAC8025B8096300915582 /* String+filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC7F25B8096300915582 /* String+filter.swift */; };
 		54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */; };
-		54CBAC9125B80BF300915582 /* String+compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9025B80BF300915582 /* String+compare.swift */; };
 		54CBAC9B25B8184400915582 /* KLanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9A25B8184400915582 /* KLanguageInfo.swift */; };
 		54CBACA025B8194D00915582 /* KCSVItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9F25B8194D00915582 /* KCSVItem.swift */; };
 		54CBACA825B81A1900915582 /* KCSVTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBACA725B81A1900915582 /* KCSVTool.swift */; };
 		54CBACAD25B81A2D00915582 /* KExcelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBACAC25B81A2D00915582 /* KExcelTool.swift */; };
+		54CBAD4625B83FDA00915582 /* NSEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3025B83FD900915582 /* NSEdgeInsets+Extension.swift */; };
+		54CBAD4725B83FDA00915582 /* NSView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3125B83FD900915582 /* NSView+Layer.swift */; };
+		54CBAD4825B83FDA00915582 /* NSView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3225B83FD900915582 /* NSView+Layout.swift */; };
+		54CBAD4925B83FDA00915582 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3325B83FD900915582 /* CGFloat+Extension.swift */; };
+		54CBAD4A25B83FDA00915582 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3425B83FD900915582 /* String+File.swift */; };
+		54CBAD4B25B83FDA00915582 /* NSNotification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3525B83FD900915582 /* NSNotification+Extension.swift */; };
+		54CBAD4C25B83FDA00915582 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3625B83FD900915582 /* CGRect+Extension.swift */; };
+		54CBAD4D25B83FDA00915582 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3725B83FD900915582 /* NSAttributedString+Extension.swift */; };
+		54CBAD4E25B83FDA00915582 /* NSAppearance+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3825B83FD900915582 /* NSAppearance+Extension.swift */; };
+		54CBAD4F25B83FDA00915582 /* NSAlert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3925B83FD900915582 /* NSAlert+Extension.swift */; };
+		54CBAD5025B83FDA00915582 /* String+filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3A25B83FD900915582 /* String+filter.swift */; };
+		54CBAD5125B83FDA00915582 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3B25B83FDA00915582 /* DispatchQueue+Extension.swift */; };
+		54CBAD5225B83FDA00915582 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3C25B83FDA00915582 /* Dictionary+Extension.swift */; };
+		54CBAD5325B83FDA00915582 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3D25B83FDA00915582 /* CGSize+Extension.swift */; };
+		54CBAD5425B83FDA00915582 /* NSView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3E25B83FDA00915582 /* NSView+Animation.swift */; };
+		54CBAD5525B83FDA00915582 /* NSView+BaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD3F25B83FDA00915582 /* NSView+BaseExtension.swift */; };
+		54CBAD5625B83FDA00915582 /* NSView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4025B83FDA00915582 /* NSView+Frame.swift */; };
+		54CBAD5725B83FDA00915582 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4125B83FDA00915582 /* CGPoint+Extension.swift */; };
+		54CBAD5825B83FDA00915582 /* String+compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4225B83FDA00915582 /* String+compare.swift */; };
+		54CBAD5925B83FDA00915582 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4325B83FDA00915582 /* NSObject+Extension.swift */; };
+		54CBAD5A25B83FDA00915582 /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4425B83FDA00915582 /* Locale+Extension.swift */; };
+		54CBAD5B25B83FDA00915582 /* FileManger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4525B83FDA00915582 /* FileManger+Extension.swift */; };
+		54CBAD6025B8403B00915582 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD5F25B8403B00915582 /* Array+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,14 +171,35 @@
 		54CBAC3D25B7B9E100915582 /* KLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLanguageTool.m; sourceTree = "<group>"; };
 		54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageToolManager.swift; sourceTree = "<group>"; };
 		54CBAC5A25B7D23B00915582 /* localizableExcel.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = localizableExcel.xls; sourceTree = "<group>"; };
-		54CBAC7225B806D700915582 /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
-		54CBAC7F25B8096300915582 /* String+filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+filter.swift"; sourceTree = "<group>"; };
 		54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUserConfigInfo.swift; sourceTree = "<group>"; };
-		54CBAC9025B80BF300915582 /* String+compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+compare.swift"; sourceTree = "<group>"; };
 		54CBAC9A25B8184400915582 /* KLanguageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageInfo.swift; sourceTree = "<group>"; };
 		54CBAC9F25B8194D00915582 /* KCSVItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSVItem.swift; sourceTree = "<group>"; };
 		54CBACA725B81A1900915582 /* KCSVTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSVTool.swift; sourceTree = "<group>"; };
 		54CBACAC25B81A2D00915582 /* KExcelTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KExcelTool.swift; sourceTree = "<group>"; };
+		54CBACB725B8304700915582 /* KYLLanguageTools-OC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KYLLanguageTools-OC-Bridging-Header.h"; sourceTree = "<group>"; };
+		54CBAD3025B83FD900915582 /* NSEdgeInsets+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3125B83FD900915582 /* NSView+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Layer.swift"; sourceTree = "<group>"; };
+		54CBAD3225B83FD900915582 /* NSView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Layout.swift"; sourceTree = "<group>"; };
+		54CBAD3325B83FD900915582 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3425B83FD900915582 /* String+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		54CBAD3525B83FD900915582 /* NSNotification+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3625B83FD900915582 /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3725B83FD900915582 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3825B83FD900915582 /* NSAppearance+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAppearance+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3925B83FD900915582 /* NSAlert+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAlert+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3A25B83FD900915582 /* String+filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+filter.swift"; sourceTree = "<group>"; };
+		54CBAD3B25B83FDA00915582 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3C25B83FDA00915582 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3D25B83FDA00915582 /* CGSize+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD3E25B83FDA00915582 /* NSView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Animation.swift"; sourceTree = "<group>"; };
+		54CBAD3F25B83FDA00915582 /* NSView+BaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+BaseExtension.swift"; sourceTree = "<group>"; };
+		54CBAD4025B83FDA00915582 /* NSView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Frame.swift"; sourceTree = "<group>"; };
+		54CBAD4125B83FDA00915582 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD4225B83FDA00915582 /* String+compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+compare.swift"; sourceTree = "<group>"; };
+		54CBAD4325B83FDA00915582 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD4425B83FDA00915582 /* Locale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD4525B83FDA00915582 /* FileManger+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManger+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD5F25B8403B00915582 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +264,7 @@
 				54CBAC1525B7B84000915582 /* KYLLanguageTools-Prefix.pch */,
 				54CBAB8A25B7B1C700915582 /* KYLLanguageTools.entitlements */,
 				54CBAB8125B7B1C400915582 /* KYLLanguageTools.xcdatamodeld */,
+				54CBACB725B8304700915582 /* KYLLanguageTools-OC-Bridging-Header.h */,
 			);
 			path = KYLLanguageTools;
 			sourceTree = "<group>";
@@ -433,9 +475,29 @@
 		54CBAC6E25B8049C00915582 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				54CBAC7225B806D700915582 /* String+File.swift */,
-				54CBAC7F25B8096300915582 /* String+filter.swift */,
-				54CBAC9025B80BF300915582 /* String+compare.swift */,
+				54CBAD5F25B8403B00915582 /* Array+Extension.swift */,
+				54CBAD3325B83FD900915582 /* CGFloat+Extension.swift */,
+				54CBAD4125B83FDA00915582 /* CGPoint+Extension.swift */,
+				54CBAD3625B83FD900915582 /* CGRect+Extension.swift */,
+				54CBAD3D25B83FDA00915582 /* CGSize+Extension.swift */,
+				54CBAD3C25B83FDA00915582 /* Dictionary+Extension.swift */,
+				54CBAD3B25B83FDA00915582 /* DispatchQueue+Extension.swift */,
+				54CBAD4525B83FDA00915582 /* FileManger+Extension.swift */,
+				54CBAD4425B83FDA00915582 /* Locale+Extension.swift */,
+				54CBAD3925B83FD900915582 /* NSAlert+Extension.swift */,
+				54CBAD3825B83FD900915582 /* NSAppearance+Extension.swift */,
+				54CBAD3725B83FD900915582 /* NSAttributedString+Extension.swift */,
+				54CBAD3025B83FD900915582 /* NSEdgeInsets+Extension.swift */,
+				54CBAD3525B83FD900915582 /* NSNotification+Extension.swift */,
+				54CBAD4325B83FDA00915582 /* NSObject+Extension.swift */,
+				54CBAD3E25B83FDA00915582 /* NSView+Animation.swift */,
+				54CBAD3F25B83FDA00915582 /* NSView+BaseExtension.swift */,
+				54CBAD4025B83FDA00915582 /* NSView+Frame.swift */,
+				54CBAD3125B83FD900915582 /* NSView+Layer.swift */,
+				54CBAD3225B83FD900915582 /* NSView+Layout.swift */,
+				54CBAD4225B83FDA00915582 /* String+compare.swift */,
+				54CBAD3425B83FD900915582 /* String+File.swift */,
+				54CBAD3A25B83FD900915582 /* String+filter.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -580,43 +642,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				54CBABFE25B7B68600915582 /* XlsReader.cpp in Sources */,
+				54CBAD6025B8403B00915582 /* Array+Extension.swift in Sources */,
+				54CBAD4825B83FDA00915582 /* NSView+Layout.swift in Sources */,
+				54CBAD4925B83FDA00915582 /* CGFloat+Extension.swift in Sources */,
 				54CBABF825B7B68600915582 /* sha1.c in Sources */,
+				54CBAD5325B83FDA00915582 /* CGSize+Extension.swift in Sources */,
 				54CBABFA25B7B68600915582 /* pwd2key.c in Sources */,
 				54CBABFC25B7B68600915582 /* entropy.c in Sources */,
 				54CBABF725B7B68600915582 /* fileenc.c in Sources */,
 				54CBABF525B7B68600915582 /* hmac.c in Sources */,
 				54CBAC4025B7B9E100915582 /* KLanguageTool.m in Sources */,
+				54CBAD4C25B83FDA00915582 /* CGRect+Extension.swift in Sources */,
+				54CBAD5625B83FDA00915582 /* NSView+Frame.swift in Sources */,
 				54CBAC0325B7B68600915582 /* ole.c in Sources */,
+				54CBAD5425B83FDA00915582 /* NSView+Animation.swift in Sources */,
 				54CBAC0425B7B68600915582 /* xls2csv.c in Sources */,
+				54CBAD5925B83FDA00915582 /* NSObject+Extension.swift in Sources */,
+				54CBAD4E25B83FDA00915582 /* NSAppearance+Extension.swift in Sources */,
+				54CBAD5A25B83FDA00915582 /* Locale+Extension.swift in Sources */,
 				54CBABF125B7B68600915582 /* ioapi.c in Sources */,
 				54CBAB8025B7B1C400915582 /* ViewController.swift in Sources */,
+				54CBAD4625B83FDA00915582 /* NSEdgeInsets+Extension.swift in Sources */,
+				54CBAD4A25B83FDA00915582 /* String+File.swift in Sources */,
 				54CBABFF25B7B68600915582 /* DHxlsReaderIOS.m in Sources */,
+				54CBAD5B25B83FDA00915582 /* FileManger+Extension.swift in Sources */,
 				54CBAC3F25B7B9E100915582 /* KPythonManager.m in Sources */,
 				54CBAC0225B7B68600915582 /* xlstool.c in Sources */,
 				54CBAB7E25B7B1C400915582 /* AppDelegate.swift in Sources */,
 				54CBABF625B7B68600915582 /* aescrypt.c in Sources */,
 				54CBAC0125B7B68600915582 /* xls.c in Sources */,
+				54CBAD5725B83FDA00915582 /* CGPoint+Extension.swift in Sources */,
 				54CBABEF25B7B68600915582 /* unzip.c in Sources */,
 				54CBABFB25B7B68600915582 /* aestab.c in Sources */,
+				54CBAD4B25B83FDA00915582 /* NSNotification+Extension.swift in Sources */,
 				54CBABF325B7B68600915582 /* SSZipArchive.m in Sources */,
 				54CBABFD25B7B68600915582 /* main11.cpp in Sources */,
+				54CBAD5025B83FDA00915582 /* String+filter.swift in Sources */,
 				54CBABF225B7B68600915582 /* mztools.c in Sources */,
 				54CBAC9B25B8184400915582 /* KLanguageInfo.swift in Sources */,
 				54CBACA025B8194D00915582 /* KCSVItem.swift in Sources */,
-				54CBAC8025B8096300915582 /* String+filter.swift in Sources */,
 				54CBACA825B81A1900915582 /* KCSVTool.swift in Sources */,
+				54CBAD5125B83FDA00915582 /* DispatchQueue+Extension.swift in Sources */,
+				54CBAD5525B83FDA00915582 /* NSView+BaseExtension.swift in Sources */,
+				54CBAD4F25B83FDA00915582 /* NSAlert+Extension.swift in Sources */,
+				54CBAD5825B83FDA00915582 /* String+compare.swift in Sources */,
+				54CBAD5225B83FDA00915582 /* Dictionary+Extension.swift in Sources */,
 				54CBABF425B7B68600915582 /* aeskey.c in Sources */,
 				54CBACAD25B81A2D00915582 /* KExcelTool.swift in Sources */,
 				54CBAC0025B7B68600915582 /* DHcell.m in Sources */,
 				54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */,
-				54CBAC9125B80BF300915582 /* String+compare.swift in Sources */,
 				54CBAC3E25B7B9E100915582 /* KPythonTool.m in Sources */,
 				54CBAC5525B7CFE300915582 /* KLanguageToolManager.swift in Sources */,
 				54CBABF025B7B68600915582 /* zip.c in Sources */,
 				54CBABF925B7B68600915582 /* prng.c in Sources */,
 				54CBAC0525B7B68600915582 /* getopt.c in Sources */,
+				54CBAD4725B83FDA00915582 /* NSView+Layer.swift in Sources */,
+				54CBAD4D25B83FDA00915582 /* NSAttributedString+Extension.swift in Sources */,
 				54CBAB8325B7B1C400915582 /* KYLLanguageTools.xcdatamodeld in Sources */,
-				54CBAC7325B806D700915582 /* String+File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +878,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KYLLanguageTools/KYLLanguageTools-OC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -818,6 +901,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KYLLanguageTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KYLLanguageTools/KYLLanguageTools-OC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

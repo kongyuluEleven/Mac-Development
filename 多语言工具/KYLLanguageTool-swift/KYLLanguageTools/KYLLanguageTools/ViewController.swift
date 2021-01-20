@@ -63,17 +63,38 @@ class ViewController: NSViewController {
     /// 点击选择Excel文件
     /// - Parameter sender: 消息发送者
     @IBAction func btnExcelClicked(_ sender: Any) {
+        /* 读取 CSV 文件并赋值到文本框里面 */
+        self.xlsTextField.stringValue = String.getFile(fileTypes: ["xls","csv"])
     }
     
     
     /// 点击选择LocalString文件
     /// - Parameter sender: 消息发送者
     @IBAction func btnStringClicked(_ sender: Any) {
+        self.stringTextField.stringValue = String.getDirectory() ?? ""
     }
     
     /// 点击开始
     /// - Parameter sender: 消息发送者
     @IBAction func btnStartClicked(_ sender: Any) {
+        let filePath = self.xlsTextField.stringValue
+        guard !filePath.isEmpty else {
+            debugPrint("路径为空")
+            let _ = NSAlert(message: "路径为空").runModal()
+            return
+        }
+    
+        if !filePath.isSuffix(type: "xls"), !filePath.isSuffix(type: "csv") {
+            debugPrint("格式不对")
+            let _ = NSAlert(message: "格式不对").runModal()
+            return
+        }
+        
+        if isExcelToString {
+            KLanguageToolManager.shared.exportExcelToStringFile(filePath: filePath)
+        } else {
+            KLanguageToolManager.shared.inputStringToDefaultExcelFile()
+        }
     }
     
     /// 点击导出未添加的key
