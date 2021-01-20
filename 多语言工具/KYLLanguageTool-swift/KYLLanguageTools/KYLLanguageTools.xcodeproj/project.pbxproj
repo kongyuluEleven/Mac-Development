@@ -47,6 +47,10 @@
 		54CBAC8025B8096300915582 /* String+filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC7F25B8096300915582 /* String+filter.swift */; };
 		54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */; };
 		54CBAC9125B80BF300915582 /* String+compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9025B80BF300915582 /* String+compare.swift */; };
+		54CBAC9B25B8184400915582 /* KLanguageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9A25B8184400915582 /* KLanguageInfo.swift */; };
+		54CBACA025B8194D00915582 /* KCSVItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAC9F25B8194D00915582 /* KCSVItem.swift */; };
+		54CBACA825B81A1900915582 /* KCSVTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBACA725B81A1900915582 /* KCSVTool.swift */; };
+		54CBACAD25B81A2D00915582 /* KExcelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBACAC25B81A2D00915582 /* KExcelTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,10 @@
 		54CBAC7F25B8096300915582 /* String+filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+filter.swift"; sourceTree = "<group>"; };
 		54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUserConfigInfo.swift; sourceTree = "<group>"; };
 		54CBAC9025B80BF300915582 /* String+compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+compare.swift"; sourceTree = "<group>"; };
+		54CBAC9A25B8184400915582 /* KLanguageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLanguageInfo.swift; sourceTree = "<group>"; };
+		54CBAC9F25B8194D00915582 /* KCSVItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSVItem.swift; sourceTree = "<group>"; };
+		54CBACA725B81A1900915582 /* KCSVTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSVTool.swift; sourceTree = "<group>"; };
+		54CBACAC25B81A2D00915582 /* KExcelTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KExcelTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,7 +386,7 @@
 				54CBAC8725B80B9300915582 /* Model */,
 				54CBAC6E25B8049C00915582 /* Extension */,
 				54CBAC5025B7C64400915582 /* UI */,
-				54CBAC4425B7BA1A00915582 /* swift */,
+				54CBAC4425B7BA1A00915582 /* logic */,
 				54CBAC2825B7B9A300915582 /* oc */,
 			);
 			path = Src;
@@ -397,12 +405,14 @@
 			path = oc;
 			sourceTree = "<group>";
 		};
-		54CBAC4425B7BA1A00915582 /* swift */ = {
+		54CBAC4425B7BA1A00915582 /* logic */ = {
 			isa = PBXGroup;
 			children = (
 				54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */,
+				54CBACA725B81A1900915582 /* KCSVTool.swift */,
+				54CBACAC25B81A2D00915582 /* KExcelTool.swift */,
 			);
-			path = swift;
+			path = logic;
 			sourceTree = "<group>";
 		};
 		54CBAC5025B7C64400915582 /* UI */ = {
@@ -434,6 +444,8 @@
 			isa = PBXGroup;
 			children = (
 				54CBAC8825B80BD000915582 /* KUserConfigInfo.swift */,
+				54CBAC9A25B8184400915582 /* KLanguageInfo.swift */,
+				54CBAC9F25B8194D00915582 /* KCSVItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -589,8 +601,12 @@
 				54CBABF325B7B68600915582 /* SSZipArchive.m in Sources */,
 				54CBABFD25B7B68600915582 /* main11.cpp in Sources */,
 				54CBABF225B7B68600915582 /* mztools.c in Sources */,
+				54CBAC9B25B8184400915582 /* KLanguageInfo.swift in Sources */,
+				54CBACA025B8194D00915582 /* KCSVItem.swift in Sources */,
 				54CBAC8025B8096300915582 /* String+filter.swift in Sources */,
+				54CBACA825B81A1900915582 /* KCSVTool.swift in Sources */,
 				54CBABF425B7B68600915582 /* aeskey.c in Sources */,
+				54CBACAD25B81A2D00915582 /* KExcelTool.swift in Sources */,
 				54CBAC0025B7B68600915582 /* DHcell.m in Sources */,
 				54CBAC8925B80BD000915582 /* KUserConfigInfo.swift in Sources */,
 				54CBAC9125B80BF300915582 /* String+compare.swift in Sources */,

@@ -217,20 +217,17 @@ public extension String {
     
     
     /// 判断一个文件后缀是不是指定的后缀
-    ///
-    /// - Parameters:
-    ///   - typeName: 指定的后缀名称
-    ///   - filePath: 文件的路径
+    /// - Parameter type: 指定的后缀名称
     /// - Returns: 如果 true 代表是我们指定后缀的文件 false 代表不是
-    static func isSuffixType(typeName:String, filePath:String) -> Bool {
-        let pathList = filePath.components(separatedBy: ".")
+    func isSuffix(type:String) -> Bool {
+        let pathList = self.components(separatedBy: ".")
         guard pathList.count > 1 else {
             return false
         }
         guard let lastPath = pathList.last else {
             return false
         }
-        guard lastPath == typeName else {
+        guard lastPath == type else {
             return false
         }
         return true
