@@ -10,6 +10,15 @@ import Cocoa
 class ViewController: NSViewController {
     
     
+    /// 列表视图
+    @IBOutlet weak var tableView: NSTableView! {
+        didSet {
+            // 如果 TableView 已经初始化则 添加 Cell 双击事件
+            self.tableView.target = self
+            self.tableView.doubleAction = #selector(self.pushDetail)
+        }
+    }
+    
     /// excel文件路径输入框
     @IBOutlet weak var xlsTextField: NSTextField!
     
@@ -64,7 +73,7 @@ class ViewController: NSViewController {
     /// - Parameter sender: 消息发送者
     @IBAction func btnExcelClicked(_ sender: Any) {
         /* 读取 CSV 文件并赋值到文本框里面 */
-        self.xlsTextField.stringValue = String.getFile(fileTypes: ["xls","csv"])
+        self.xlsTextField.stringValue = String.getFile(fileTypes: ["xls","csv","number"])
     }
     
     
@@ -84,7 +93,7 @@ class ViewController: NSViewController {
             return
         }
     
-        if !filePath.isSuffix(type: "xls"), !filePath.isSuffix(type: "csv") {
+        if !filePath.isSuffix(type: "xls"), !filePath.isSuffix(type: "csv"), !filePath.isSuffix(type: "number") {
             debugPrint("格式不对")
             let _ = NSAlert(message: "格式不对").runModal()
             return
@@ -146,5 +155,25 @@ extension ViewController {
 //MARK: - 逻辑处理
 extension ViewController {
     
+}
+
+
+//MARK: - 代理
+extension ViewController {
+    /// 跳转到语言详情
+    @objc func pushDetail() {
+        guard self.stringTextField.stringValue.count > 0 else {
+            NSAlert(message: "必须选择Strings文件").runModal()
+            return
+        }
+        guard tableView.selectedRow >= 0 else {
+            return
+        }
+//        guard let controller = self.storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "LanguageValueController")) as? LanguageValueController else {
+//            return
+//        }
+//        controller.item = csvParse.items[tableView.selectedRow]
+//        self.presentViewControllerAsModalWindow(controller)
+    }
 }
 

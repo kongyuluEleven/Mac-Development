@@ -14,10 +14,14 @@ final class KLanguageToolManager: NSObject {
 
 extension KLanguageToolManager {
    public func exportExcelToStringFile(filePath:String) {
-        if filePath.isSuffix(type: "csv") {
+        if filePath.isSuffix(type: "csv") || filePath.isSuffix(type: "number") {
+            if KCSVToolManager.manager.parse(filePath: filePath) {
+                debugPrint("导出成功:filePath=\(filePath)")
+            }
+            KCSVToolManager.manager.printAllParseResult()
             
         } else if filePath.isSuffix(type: "xls") {
-            if KExcelTool.share().exportExcelToStringFile(filePath: filePath) {
+            if KExcelToolManager.manager.exportExcelToStringFile(filePath: filePath) {
                 debugPrint("导出成功:filePath=\(filePath)")
             }
         }

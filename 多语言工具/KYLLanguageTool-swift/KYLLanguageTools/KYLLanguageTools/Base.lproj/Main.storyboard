@@ -906,6 +906,7 @@
                         <outlet property="radioExcelToString" destination="KmJ-tV-yjk" id="Mvn-Fr-AIN"/>
                         <outlet property="radioStringToExcel" destination="pj3-qg-SUK" id="SQ5-4u-as5"/>
                         <outlet property="stringTextField" destination="1Di-EZ-ffq" id="Z6l-6r-IxJ"/>
+                        <outlet property="tableView" destination="LDc-G9-k05" id="Hdn-fY-Oa8"/>
                         <outlet property="xlsTextField" destination="sBc-Zx-4qn" id="K0L-p3-FRa"/>
                     </connections>
                 </viewController>

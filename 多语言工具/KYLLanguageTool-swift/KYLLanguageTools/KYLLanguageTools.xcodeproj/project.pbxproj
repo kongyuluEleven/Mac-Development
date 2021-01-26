@@ -71,6 +71,8 @@
 		54CBAD5A25B83FDA00915582 /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4425B83FDA00915582 /* Locale+Extension.swift */; };
 		54CBAD5B25B83FDA00915582 /* FileManger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD4525B83FDA00915582 /* FileManger+Extension.swift */; };
 		54CBAD6025B8403B00915582 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD5F25B8403B00915582 /* Array+Extension.swift */; };
+		54CBAD6E25B84EB900915582 /* KFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD6D25B84EB900915582 /* KFileTool.swift */; };
+		54CBAD7325B8505700915582 /* KCSVLocalizedStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAD7225B8505700915582 /* KCSVLocalizedStringTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +202,8 @@
 		54CBAD4425B83FDA00915582 /* Locale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
 		54CBAD4525B83FDA00915582 /* FileManger+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManger+Extension.swift"; sourceTree = "<group>"; };
 		54CBAD5F25B8403B00915582 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		54CBAD6D25B84EB900915582 /* KFileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFileTool.swift; sourceTree = "<group>"; };
+		54CBAD7225B8505700915582 /* KCSVLocalizedStringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSVLocalizedStringTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +457,8 @@
 				54CBAC5425B7CFE300915582 /* KLanguageToolManager.swift */,
 				54CBACA725B81A1900915582 /* KCSVTool.swift */,
 				54CBACAC25B81A2D00915582 /* KExcelTool.swift */,
+				54CBAD6D25B84EB900915582 /* KFileTool.swift */,
+				54CBAD7225B8505700915582 /* KCSVLocalizedStringTool.swift */,
 			);
 			path = logic;
 			sourceTree = "<group>";
@@ -656,6 +662,7 @@
 				54CBAD5625B83FDA00915582 /* NSView+Frame.swift in Sources */,
 				54CBAC0325B7B68600915582 /* ole.c in Sources */,
 				54CBAD5425B83FDA00915582 /* NSView+Animation.swift in Sources */,
+				54CBAD7325B8505700915582 /* KCSVLocalizedStringTool.swift in Sources */,
 				54CBAC0425B7B68600915582 /* xls2csv.c in Sources */,
 				54CBAD5925B83FDA00915582 /* NSObject+Extension.swift in Sources */,
 				54CBAD4E25B83FDA00915582 /* NSAppearance+Extension.swift in Sources */,
@@ -671,6 +678,7 @@
 				54CBAB7E25B7B1C400915582 /* AppDelegate.swift in Sources */,
 				54CBABF625B7B68600915582 /* aescrypt.c in Sources */,
 				54CBAC0125B7B68600915582 /* xls.c in Sources */,
+				54CBAD6E25B84EB900915582 /* KFileTool.swift in Sources */,
 				54CBAD5725B83FDA00915582 /* CGPoint+Extension.swift in Sources */,
 				54CBABEF25B7B68600915582 /* unzip.c in Sources */,
 				54CBABFB25B7B68600915582 /* aestab.c in Sources */,

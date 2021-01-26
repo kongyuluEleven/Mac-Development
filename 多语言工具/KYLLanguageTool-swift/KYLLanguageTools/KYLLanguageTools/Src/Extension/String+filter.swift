@@ -102,3 +102,24 @@ public extension String {
         return count
     }
 }
+
+
+// MARK: - 字符串查找
+public extension String {
+    
+    /// 用于 查找 双引号 “。。。” 中间的字符串
+    /// - Returns: 返回一个二元组，$0：查找出来的字符串    $1：代表查询剩余的字符串
+    func findMatchAndRemain() -> (match:String?, remain:String) {
+        //1. 先替换字符串中的\"防止字符串"的干扰
+        var remain = self.replacingOccurrences(of: "\\\"", with: "{R}")
+        
+        //2. 如果查找的字符串不存在，则直接返回
+        guard let range = remain.range(of: "\"") else {
+            return (nil, remain)
+        }
+        
+        //3. 获取首个“ 之后的字符串
+        //remain = remain.substring(from: <#T##Index#>)
+        return (nil, "")
+    }
+}
