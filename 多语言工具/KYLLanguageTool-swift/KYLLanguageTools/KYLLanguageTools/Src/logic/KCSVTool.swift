@@ -169,15 +169,81 @@ extension KCSVTool {
     }
     
     public func exportCVSToString(cvsFilePath:String, savePath:String) -> Bool {
+        
+        guard let srcpath = export(cvsFilePath: cvsFilePath) else {
+            print("export(cvsFilePath:)失败")
+            return false
+        }
+        
+        //压缩文件
+//        let zipPath = srcpath.appendingPathComponent("KLanguage.zip")
+//
+//        if !SSZipArchive.createZipFile(atPath: zipPath, withContentsOfDirectory: srcpath) {
+//            print("压缩文件失败:zipPath=\(zipPath), srcpath=\(srcpath)")
+//            return false
+//        }
+        
+        //移动文件到目标
+        let filemanger = FileManager.default
+        do {
+            //let srcPath = savePath.deleteLastPathComponent()
+            try filemanger.moveItem(atPath: srcpath, toPath: savePath)
+            //try filemanger.copyItem(atPath: srcpath, toPath: savePath)
+            
+        } catch let error {
+            print("移动文件失败. savePath=\(savePath),error=\(error)")
+            return false
+        }
+        
+        //删除临时目录
+        
+        return true
+    }
+    
+    
+    public func exportCVS(cvsFilePath:String, saveZipName:String) -> Bool {
+        
+        guard let srcPath = export(cvsFilePath: cvsFilePath) else {
+            print("export(cvsFilePath:)失败")
+            return false
+        }
+        //压缩文件
+        let zipPath = srcPath.appendingPathComponent(saveZipName)
+        
+        if !SSZipArchive.createZipFile(atPath: zipPath, withContentsOfDirectory: srcPath) {
+            print("压缩文件失败:zipPath=\(zipPath), srcPath=\(srcPath)")
+            return false
+        }
+
+        guard let path = getSelectPath(exportFileName: saveZipName) else {
+            print("没有选择路径")
+            return false
+        }
+        
+        //删除临时文件
+        do {
+            let fileManager = FileManager.default
+            try fileManager.moveItem(atPath: zipPath, toPath: path)
+            try fileManager.removeItem(atPath: zipPath)
+            try fileManager.removeItem(atPath: srcPath)
+        } catch let error {
+            print("移除文件失败:\(error)")
+        }
+        
+        
+        return true
+    }
+    
+    public func export(cvsFilePath:String) -> String? {
         //1. 解析cvs文件到缓存
-        guard parse(filePath: cvsFilePath) else {return false}
+        guard parse(filePath: cvsFilePath) else {return nil}
         
         //2. 处理缓存
         
         //3. 保存缓存文件到LocalizationString文件
         guard let tempPath = getTempDataPath() else {
             print("临时目录不存在")
-            return false
+            return nil
         }
 
         //加锁
@@ -186,19 +252,36 @@ extension KCSVTool {
             lock.unlock()
         }
         
+        var savePath:String? = tempPath
+        //写入文件
         _tempItems.forEach { (item) in
             let languageName = item.name
             let languageContents = item.list
             
             //根据语言创建一个多语言文件
             let dir = "\(tempPath)/\(languageName)"
+            if !dir.isExistFile() {
+                do {
+                    try FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true, attributes: nil)
+                } catch let error {
+                    print("文件路径创建失败：error=\(error)")
+                    savePath = nil
+                }
+            }
+            //let filePath = dir.appendingPathComponent("Localizable.txt")
             let filePath = dir.appendingPathComponent("Localizable.strings")
-            
             //将languageContents 创建为一个组装好的string
-            
+            let contentList = languageContents.map { " \"\($0.key)\" = \"\($0.value)\" ;" }
+            let content = contentList.joined(separator: "\n")
+            do {
+                try content.write(toFile: filePath, atomically: true, encoding: .utf8)
+            } catch let error {
+                print("写入文件失败. filePath=\(filePath),error=\(error)")
+                savePath = nil
+            }
         }
         
-        return false
+        return savePath
     }
 }
 
@@ -213,7 +296,7 @@ extension KCSVTool {
         
         let filemanger = FileManager.default
         
-        if !filemanger.fileExists(atPath: tempDataPath), tempDataPath.isDirectory() {
+        if !filemanger.fileExists(atPath: tempDataPath) {
             //不存在路径，则创建
             do {
                 try filemanger.createDirectory(atPath: tempDataPath, withIntermediateDirectories: true, attributes: nil)
@@ -226,10 +309,19 @@ extension KCSVTool {
     }
     
     func tempSavePath() -> String {
-        return NSHomeDirectory() + "/Documents"
+//        var  path :String? = nil
+//        do {
+//            try path = FileManager.default.createTemporaryDirectory().path
+//        } catch let error {
+//            print("创建临时目录失败,error=\(error)")
+//        }
+//        //NSHomeDirectory() + "/Documents"
+//        return path ?? KFileTool.appSupportPath
+        
+        return NSHomeDirectory().appending("/Downloads")
     }
     
-    func save(fileData:Data, to exportFileName:String) -> Bool {
+   public func save(fileData:Data, to exportFileName:String) -> Bool {
         var saveRet = false
         let savePanel = NSSavePanel()
         savePanel.title = "保存文件"
@@ -256,6 +348,28 @@ extension KCSVTool {
         }
         
         return saveRet
+    }
+    
+   public func getSelectPath(exportFileName:String) -> String? {
+        var savePath:String? = nil
+        let savePanel = NSSavePanel()
+        savePanel.title = "保存文件"
+        savePanel.message = "选择文件保存地址"
+        savePanel.directoryURL =  URL (fileURLWithPath: NSHomeDirectory().appending("/Desktop"))
+        savePanel.nameFieldStringValue = exportFileName
+        savePanel.allowsOtherFileTypes = true
+        savePanel.isExtensionHidden = false
+        savePanel.canCreateDirectories = true
+        //savePanel.allowedFileTypes = ["zip"]
+        savePanel.begin { (result) in
+            if result == .OK {
+                if let path = savePanel.url?.path {
+                    savePath = path
+                }
+            }
+        }
+        
+        return savePath
     }
     
     

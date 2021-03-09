@@ -11,5 +11,7 @@
 
 #import "KLanguageTool.h"
 #import "KPythonManager.h"
+#import "SSZipArchive.h"
+#import "DHxlsReaderIOS.h"
 
 #endif /* KYLLanguageTools_OC_Bridging_Header_h */

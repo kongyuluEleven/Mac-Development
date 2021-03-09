@@ -100,7 +100,26 @@ class ViewController: NSViewController {
         }
         
         if isExcelToString {
-            KLanguageToolManager.shared.exportExcelToStringFile(filePath: filePath)
+            if filePath.isSuffix(type: "csv") || filePath.isSuffix(type: "number") {
+                
+                let savePath = stringTextField.stringValue
+                
+                guard !savePath.isEmpty else {
+                    let _ = NSAlert(message: "请确保LocationString文件保存的路径正确").runModal()
+                    return
+                }
+                
+                if KCSVToolManager.manager.exportCVSToString(cvsFilePath: filePath, savePath: savePath) {
+                    debugPrint("导出成功:filePath=\(filePath)")
+                }
+                
+                
+            } else if filePath.isSuffix(type: "xls") {
+                if KExcelToolManager.manager.exportExcelToStringFile(filePath: filePath) {
+                    debugPrint("导出成功:filePath=\(filePath)")
+                }
+            }
+            
         } else {
             KLanguageToolManager.shared.inputStringToDefaultExcelFile()
         }

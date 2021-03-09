@@ -13,6 +13,11 @@ class KFileTool {
 
 //MARK: - 文件路径选择
 extension KFileTool {
+    
+    static var appSupportPath:String  {
+        return NSHomeDirectory().appendingFormat("/Library/Application Support/%@", Bundle.main.appName)
+    }
+    
     static func openPanel(fileType:String = "") -> String? {
         return self.openPanel(panel: { (pannel) in
             pannel.allowedFileTypes = fileType.count > 0 ? [fileType] : []

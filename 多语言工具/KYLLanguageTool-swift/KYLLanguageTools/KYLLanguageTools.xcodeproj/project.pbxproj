@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54135F2E25C02E250034DC25 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54135F2D25C02E250034DC25 /* Bundle+Extension.swift */; };
 		54CBAB7E25B7B1C400915582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB7D25B7B1C400915582 /* AppDelegate.swift */; };
 		54CBAB8025B7B1C400915582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB7F25B7B1C400915582 /* ViewController.swift */; };
 		54CBAB8325B7B1C400915582 /* KYLLanguageTools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54CBAB8125B7B1C400915582 /* KYLLanguageTools.xcdatamodeld */; };
@@ -93,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54135F2D25C02E250034DC25 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		54CBAB7A25B7B1C400915582 /* KYLLanguageTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLLanguageTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CBAB7D25B7B1C400915582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54CBAB7F25B7B1C400915582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 		54CBAC6E25B8049C00915582 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				54135F2D25C02E250034DC25 /* Bundle+Extension.swift */,
 				54CBAD5F25B8403B00915582 /* Array+Extension.swift */,
 				54CBAD3325B83FD900915582 /* CGFloat+Extension.swift */,
 				54CBAD4125B83FDA00915582 /* CGPoint+Extension.swift */,
@@ -679,6 +682,7 @@
 				54CBABF625B7B68600915582 /* aescrypt.c in Sources */,
 				54CBAC0125B7B68600915582 /* xls.c in Sources */,
 				54CBAD6E25B84EB900915582 /* KFileTool.swift in Sources */,
+				54135F2E25C02E250034DC25 /* Bundle+Extension.swift in Sources */,
 				54CBAD5725B83FDA00915582 /* CGPoint+Extension.swift in Sources */,
 				54CBABEF25B7B68600915582 /* unzip.c in Sources */,
 				54CBABFB25B7B68600915582 /* aestab.c in Sources */,

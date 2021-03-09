@@ -15,10 +15,11 @@ final class KLanguageToolManager: NSObject {
 extension KLanguageToolManager {
    public func exportExcelToStringFile(filePath:String) {
         if filePath.isSuffix(type: "csv") || filePath.isSuffix(type: "number") {
-            if KCSVToolManager.manager.parse(filePath: filePath) {
+            
+            if KCSVToolManager.manager.exportCVS(cvsFilePath: filePath, saveZipName: "KLanguage.zip") {
                 debugPrint("导出成功:filePath=\(filePath)")
             }
-            KCSVToolManager.manager.printAllParseResult()
+            
             
         } else if filePath.isSuffix(type: "xls") {
             if KExcelToolManager.manager.exportExcelToStringFile(filePath: filePath) {
