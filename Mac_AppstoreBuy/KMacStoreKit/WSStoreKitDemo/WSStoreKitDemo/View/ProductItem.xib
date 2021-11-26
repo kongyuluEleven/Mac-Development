@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ProductItem" customModule="WSStoreKitDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="buyButton" destination="oc8-2R-nux" id="sus-EE-zKm"/>
+                <outlet property="buyDateLabel" destination="gAd-Ae-jou" id="BwC-0h-sh0"/>
+                <outlet property="detailLabel" destination="DmH-q4-6WJ" id="h3z-vB-pec"/>
+                <outlet property="expiredDateLabel" destination="oJ4-fI-65O" id="oXd-Oe-Raq"/>
+                <outlet property="priceLabel" destination="lNR-jy-rQD" id="3ek-wj-oYQ"/>
+                <outlet property="titleLabel" destination="S4j-b2-lxD" id="Djn-tQ-8e9"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="ProductItemView" customModule="WSStoreKitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView id="vWN-xv-J4g" userLabel="view">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="280"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-b2-lxD">
+                            <rect key="frame" x="18" y="250" width="232" height="30"/>
+                            <textFieldCell key="cell" lineBreakMode="charWrapping" alignment="center" title="商品名称" id="fjT-FA-tLM">
+                                <font key="font" size="22" name="PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-2R-nux" customClass="CustomButton" customModule="WSStoreKitDemo" customModuleProvider="target">
+                            <rect key="frame" x="50" y="79" width="168" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="tci-57-9IA"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" title="购买" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ni3-ZU-llG">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didClickBuyButton:" target="-2" id="jci-AY-OKf"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DmH-q4-6WJ">
+                            <rect key="frame" x="18" y="219" width="232" height="21"/>
+                            <textFieldCell key="cell" selectable="YES" enabled="NO" alignment="center" title="商品描述" id="mpw-i8-NGj">
+                                <font key="font" size="15" name="PingFangSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OGl-5J-QzE">
+                            <rect key="frame" x="18" y="154" width="78" height="20"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="购买时间" id="s3x-g5-SW0">
+                                <font key="font" size="14" name="PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hj8-zh-paw">
+                            <rect key="frame" x="18" y="129" width="78" height="20"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="过期时间" id="krV-9E-fge">
+                                <font key="font" size="14" name="PingFangSC-Regular"/>
+                                <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gAd-Ae-jou">
+                            <rect key="frame" x="102" y="154" width="148" height="20"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="_ _ _ _/_ _/_ _/_ _:_ _" id="giN-Os-5w1">
+                                <font key="font" size="14" name="PingFangSC-Light"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oJ4-fI-65O">
+                            <rect key="frame" x="102" y="129" width="148" height="20"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="_ _ _ _/_ _/_ _/_ _:_ _" id="8fl-O0-ZWH">
+                                <font key="font" size="14" name="PingFangSC-Light"/>
+                                <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lNR-jy-rQD">
+                            <rect key="frame" x="18" y="189" width="232" height="20"/>
+                            <textFieldCell key="cell" lineBreakMode="charWrapping" selectable="YES" enabled="NO" alignment="center" title="商品价格" id="SyK-Js-Pos">
+                                <font key="font" size="14" name="PingFangSC-Medium"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="S4j-b2-lxD" secondAttribute="trailing" constant="20" id="2Zy-Ba-b17"/>
+                        <constraint firstItem="oc8-2R-nux" firstAttribute="top" secondItem="Hj8-zh-paw" secondAttribute="bottom" constant="20" id="DNU-c4-QvG"/>
+                        <constraint firstItem="gAd-Ae-jou" firstAttribute="centerY" secondItem="OGl-5J-QzE" secondAttribute="centerY" id="JDT-bI-SHR"/>
+                        <constraint firstItem="lNR-jy-rQD" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="20" id="NAo-ir-yBu"/>
+                        <constraint firstItem="DmH-q4-6WJ" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="20" id="TzV-7w-Vqb"/>
+                        <constraint firstAttribute="trailing" secondItem="lNR-jy-rQD" secondAttribute="trailing" constant="20" id="V3b-Di-9W4"/>
+                        <constraint firstAttribute="trailing" secondItem="oc8-2R-nux" secondAttribute="trailing" constant="50" id="VLH-ou-UT2"/>
+                        <constraint firstItem="OGl-5J-QzE" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="20" id="VgG-nx-cIW"/>
+                        <constraint firstItem="Hj8-zh-paw" firstAttribute="top" secondItem="OGl-5J-QzE" secondAttribute="bottom" constant="5" id="VyG-EX-akW"/>
+                        <constraint firstAttribute="trailing" secondItem="gAd-Ae-jou" secondAttribute="trailing" constant="20" id="Wq7-LY-8uT"/>
+                        <constraint firstItem="Hj8-zh-paw" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="20" id="WxT-VT-wtl"/>
+                        <constraint firstItem="lNR-jy-rQD" firstAttribute="top" secondItem="DmH-q4-6WJ" secondAttribute="bottom" constant="10" id="XhZ-e7-wYC"/>
+                        <constraint firstItem="DmH-q4-6WJ" firstAttribute="top" secondItem="S4j-b2-lxD" secondAttribute="bottom" constant="10" id="arX-1c-1mT"/>
+                        <constraint firstItem="oJ4-fI-65O" firstAttribute="centerY" secondItem="Hj8-zh-paw" secondAttribute="centerY" id="ble-Mh-1jU"/>
+                        <constraint firstItem="oc8-2R-nux" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="50" id="eTO-DE-H6h"/>
+                        <constraint firstItem="oJ4-fI-65O" firstAttribute="leading" secondItem="Hj8-zh-paw" secondAttribute="trailing" constant="10" id="f5y-2X-9UI"/>
+                        <constraint firstItem="S4j-b2-lxD" firstAttribute="top" secondItem="vWN-xv-J4g" secondAttribute="top" id="h6S-Gg-B3x"/>
+                        <constraint firstItem="Hj8-zh-paw" firstAttribute="trailing" secondItem="OGl-5J-QzE" secondAttribute="trailing" id="hKt-Sb-Scr"/>
+                        <constraint firstItem="S4j-b2-lxD" firstAttribute="leading" secondItem="vWN-xv-J4g" secondAttribute="leading" constant="20" id="mEL-Np-rmg"/>
+                        <constraint firstAttribute="trailing" secondItem="oJ4-fI-65O" secondAttribute="trailing" constant="20" id="pD9-e8-fb3"/>
+                        <constraint firstAttribute="trailing" secondItem="DmH-q4-6WJ" secondAttribute="trailing" constant="20" id="pwb-RX-Oja"/>
+                        <constraint firstItem="gAd-Ae-jou" firstAttribute="leading" secondItem="OGl-5J-QzE" secondAttribute="trailing" constant="10" id="sWq-iN-RhN"/>
+                        <constraint firstItem="OGl-5J-QzE" firstAttribute="top" secondItem="lNR-jy-rQD" secondAttribute="bottom" constant="15" id="xKr-zh-n9c"/>
+                        <constraint firstItem="OGl-5J-QzE" firstAttribute="trailing" secondItem="vWN-xv-J4g" secondAttribute="centerX" constant="-40" id="ync-Qg-35v"/>
+                    </constraints>
+                    <accessibility identifier="ProductItem"/>
+                </customView>
+            </subviews>
+            <point key="canvasLocation" x="13" y="191"/>
+        </customView>
+    </objects>
+</document>

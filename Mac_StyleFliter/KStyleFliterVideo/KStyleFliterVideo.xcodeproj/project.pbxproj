@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54FFC3742750E32600F00518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3732750E32600F00518 /* AppDelegate.swift */; };
+		54FFC3762750E32600F00518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3752750E32600F00518 /* ViewController.swift */; };
+		54FFC3792750E32600F00518 /* KStyleFliterVideo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3772750E32600F00518 /* KStyleFliterVideo.xcdatamodeld */; };
+		54FFC37B2750E33400F00518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FFC37A2750E33400F00518 /* Assets.xcassets */; };
+		54FFC37E2750E33400F00518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FFC37C2750E33400F00518 /* Main.storyboard */; };
+		54FFC3892750E33600F00518 /* KStyleFliterVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3882750E33600F00518 /* KStyleFliterVideoTests.swift */; };
+		54FFC3932750E33600F00518 /* KStyleFliterVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3922750E33600F00518 /* KStyleFliterVideoUITests.swift */; };
+		54FFC3952750E33600F00518 /* KStyleFliterVideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC3942750E33600F00518 /* KStyleFliterVideoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54FFC3852750E33600F00518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54FFC3682750E32600F00518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54FFC36F2750E32600F00518;
+			remoteInfo = KStyleFliterVideo;
+		};
+		54FFC38F2750E33600F00518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54FFC3682750E32600F00518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54FFC36F2750E32600F00518;
+			remoteInfo = KStyleFliterVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54FFC3702750E32600F00518 /* KStyleFliterVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KStyleFliterVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FFC3732750E32600F00518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54FFC3752750E32600F00518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54FFC3782750E32600F00518 /* KStyleFliterVideo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KStyleFliterVideo.xcdatamodel; sourceTree = "<group>"; };
+		54FFC37A2750E33400F00518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54FFC37D2750E33400F00518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54FFC37F2750E33400F00518 /* KStyleFliterVideo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KStyleFliterVideo.entitlements; sourceTree = "<group>"; };
+		54FFC3842750E33600F00518 /* KStyleFliterVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KStyleFliterVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FFC3882750E33600F00518 /* KStyleFliterVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KStyleFliterVideoTests.swift; sourceTree = "<group>"; };
+		54FFC38E2750E33600F00518 /* KStyleFliterVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KStyleFliterVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FFC3922750E33600F00518 /* KStyleFliterVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KStyleFliterVideoUITests.swift; sourceTree = "<group>"; };
+		54FFC3942750E33600F00518 /* KStyleFliterVideoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KStyleFliterVideoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54FFC36D2750E32600F00518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC3812750E33600F00518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC38B2750E33600F00518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54FFC3672750E32600F00518 = {
+			isa = PBXGroup;
+			children = (
+				54FFC3722750E32600F00518 /* KStyleFliterVideo */,
+				54FFC3872750E33600F00518 /* KStyleFliterVideoTests */,
+				54FFC3912750E33600F00518 /* KStyleFliterVideoUITests */,
+				54FFC3712750E32600F00518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54FFC3712750E32600F00518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC3702750E32600F00518 /* KStyleFliterVideo.app */,
+				54FFC3842750E33600F00518 /* KStyleFliterVideoTests.xctest */,
+				54FFC38E2750E33600F00518 /* KStyleFliterVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54FFC3722750E32600F00518 /* KStyleFliterVideo */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC3732750E32600F00518 /* AppDelegate.swift */,
+				54FFC3752750E32600F00518 /* ViewController.swift */,
+				54FFC37A2750E33400F00518 /* Assets.xcassets */,
+				54FFC37C2750E33400F00518 /* Main.storyboard */,
+				54FFC37F2750E33400F00518 /* KStyleFliterVideo.entitlements */,
+				54FFC3772750E32600F00518 /* KStyleFliterVideo.xcdatamodeld */,
+			);
+			path = KStyleFliterVideo;
+			sourceTree = "<group>";
+		};
+		54FFC3872750E33600F00518 /* KStyleFliterVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC3882750E33600F00518 /* KStyleFliterVideoTests.swift */,
+			);
+			path = KStyleFliterVideoTests;
+			sourceTree = "<group>";
+		};
+		54FFC3912750E33600F00518 /* KStyleFliterVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC3922750E33600F00518 /* KStyleFliterVideoUITests.swift */,
+				54FFC3942750E33600F00518 /* KStyleFliterVideoUITestsLaunchTests.swift */,
+			);
+			path = KStyleFliterVideoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54FFC36F2750E32600F00518 /* KStyleFliterVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FFC3982750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideo" */;
+			buildPhases = (
+				54FFC36C2750E32600F00518 /* Sources */,
+				54FFC36D2750E32600F00518 /* Frameworks */,
+				54FFC36E2750E32600F00518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KStyleFliterVideo;
+			productName = KStyleFliterVideo;
+			productReference = 54FFC3702750E32600F00518 /* KStyleFliterVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54FFC3832750E33600F00518 /* KStyleFliterVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FFC39B2750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideoTests" */;
+			buildPhases = (
+				54FFC3802750E33600F00518 /* Sources */,
+				54FFC3812750E33600F00518 /* Frameworks */,
+				54FFC3822750E33600F00518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54FFC3862750E33600F00518 /* PBXTargetDependency */,
+			);
+			name = KStyleFliterVideoTests;
+			productName = KStyleFliterVideoTests;
+			productReference = 54FFC3842750E33600F00518 /* KStyleFliterVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54FFC38D2750E33600F00518 /* KStyleFliterVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FFC39E2750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideoUITests" */;
+			buildPhases = (
+				54FFC38A2750E33600F00518 /* Sources */,
+				54FFC38B2750E33600F00518 /* Frameworks */,
+				54FFC38C2750E33600F00518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54FFC3902750E33600F00518 /* PBXTargetDependency */,
+			);
+			name = KStyleFliterVideoUITests;
+			productName = KStyleFliterVideoUITests;
+			productReference = 54FFC38E2750E33600F00518 /* KStyleFliterVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54FFC3682750E32600F00518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					54FFC36F2750E32600F00518 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					54FFC3832750E33600F00518 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 54FFC36F2750E32600F00518;
+					};
+					54FFC38D2750E33600F00518 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 54FFC36F2750E32600F00518;
+					};
+				};
+			};
+			buildConfigurationList = 54FFC36B2750E32600F00518 /* Build configuration list for PBXProject "KStyleFliterVideo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54FFC3672750E32600F00518;
+			productRefGroup = 54FFC3712750E32600F00518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54FFC36F2750E32600F00518 /* KStyleFliterVideo */,
+				54FFC3832750E33600F00518 /* KStyleFliterVideoTests */,
+				54FFC38D2750E33600F00518 /* KStyleFliterVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54FFC36E2750E32600F00518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FFC37B2750E33400F00518 /* Assets.xcassets in Resources */,
+				54FFC37E2750E33400F00518 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC3822750E33600F00518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC38C2750E33600F00518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54FFC36C2750E32600F00518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FFC3762750E32600F00518 /* ViewController.swift in Sources */,
+				54FFC3792750E32600F00518 /* KStyleFliterVideo.xcdatamodeld in Sources */,
+				54FFC3742750E32600F00518 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC3802750E33600F00518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FFC3892750E33600F00518 /* KStyleFliterVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FFC38A2750E33600F00518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FFC3952750E33600F00518 /* KStyleFliterVideoUITestsLaunchTests.swift in Sources */,
+				54FFC3932750E33600F00518 /* KStyleFliterVideoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54FFC3862750E33600F00518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54FFC36F2750E32600F00518 /* KStyleFliterVideo */;
+			targetProxy = 54FFC3852750E33600F00518 /* PBXContainerItemProxy */;
+		};
+		54FFC3902750E33600F00518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54FFC36F2750E32600F00518 /* KStyleFliterVideo */;
+			targetProxy = 54FFC38F2750E33600F00518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54FFC37C2750E33400F00518 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54FFC37D2750E33400F00518 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54FFC3962750E33600F00518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54FFC3972750E33600F00518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54FFC3992750E33600F00518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KStyleFliterVideo/KStyleFliterVideo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54FFC39A2750E33600F00518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KStyleFliterVideo/KStyleFliterVideo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		54FFC39C2750E33600F00518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KStyleFliterVideo.app/Contents/MacOS/KStyleFliterVideo";
+			};
+			name = Debug;
+		};
+		54FFC39D2750E33600F00518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KStyleFliterVideo.app/Contents/MacOS/KStyleFliterVideo";
+			};
+			name = Release;
+		};
+		54FFC39F2750E33600F00518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KStyleFliterVideo;
+			};
+			name = Debug;
+		};
+		54FFC3A02750E33600F00518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondershare.sandboxdemo.KStyleFliterVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KStyleFliterVideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54FFC36B2750E32600F00518 /* Build configuration list for PBXProject "KStyleFliterVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FFC3962750E33600F00518 /* Debug */,
+				54FFC3972750E33600F00518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FFC3982750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FFC3992750E33600F00518 /* Debug */,
+				54FFC39A2750E33600F00518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FFC39B2750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FFC39C2750E33600F00518 /* Debug */,
+				54FFC39D2750E33600F00518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FFC39E2750E33600F00518 /* Build configuration list for PBXNativeTarget "KStyleFliterVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FFC39F2750E33600F00518 /* Debug */,
+				54FFC3A02750E33600F00518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54FFC3772750E32600F00518 /* KStyleFliterVideo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54FFC3782750E32600F00518 /* KStyleFliterVideo.xcdatamodel */,
+			);
+			currentVersion = 54FFC3782750E32600F00518 /* KStyleFliterVideo.xcdatamodel */;
+			path = KStyleFliterVideo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54FFC3682750E32600F00518 /* Project object */;
+}
