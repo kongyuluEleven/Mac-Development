@@ -298,26 +298,26 @@ private var themeAssociationKey: UInt8 = 1
 private var tabbarAssociationKey: UInt8 = 2
 
 
-fileprivate extension NSView {
-
-    /// 返回匹配指定类的第一个子视图。
-    @objc func deepSubview(withClassName className: String) -> NSView? {
-
-        // 搜索级别以下(查看子视图)
-        for subview: NSView in self.subviews where subview.className == className {
-            return subview
-        }
-
-        // 搜索更深
-        for subview: NSView in self.subviews {
-            if let foundView = subview.deepSubview(withClassName: className) {
-                return foundView
-            }
-        }
-
-        return nil
-    }
-
-}
+//fileprivate extension NSView {
+//
+//    /// 返回匹配指定类的第一个子视图。
+//    @objc func deepSubview(withClassName className: String) -> NSView? {
+//
+//        // 搜索级别以下(查看子视图)
+//        for subview: NSView in self.subviews where subview.className == className {
+//            return subview
+//        }
+//
+//        // 搜索更深
+//        for subview: NSView in self.subviews {
+//            if let foundView = subview.deepSubview(withClassName: className) {
+//                return foundView
+//            }
+//        }
+//
+//        return nil
+//    }
+//
+//}
 
 #endif
