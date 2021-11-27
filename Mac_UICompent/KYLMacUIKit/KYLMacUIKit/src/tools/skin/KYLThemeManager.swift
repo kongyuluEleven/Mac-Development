@@ -564,18 +564,18 @@ extension KYLThemeManager {
 }
 
 
-fileprivate extension Thread {
-    /// 确保代码块在主线程上执行
-    @objc class func onMain(block: @escaping () -> Void) {
-        if Thread.isMainThread {
-            block()
-        } else {
-            DispatchQueue.main.async {
-                block()
-            }
-        }
-    }
-}
+//fileprivate extension Thread {
+//    /// 确保代码块在主线程上执行
+//    @objc class func onMain(block: @escaping () -> Void) {
+//        if Thread.isMainThread {
+//            block()
+//        } else {
+//            DispatchQueue.main.async {
+//                block()
+//            }
+//        }
+//    }
+//}
 
 ////MARK: - 运行时方法交换
 //fileprivate extension NSObject {
