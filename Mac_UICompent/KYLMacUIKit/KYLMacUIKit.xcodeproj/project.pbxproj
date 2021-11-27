@@ -31,6 +31,10 @@
 		54FFC5C02751B9AE00F00518 /* NSWindow+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5BF2751B9AE00F00518 /* NSWindow+Theme.swift */; };
 		54FFC5C22751B9BB00F00518 /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5C12751B9BB00F00518 /* NSColor+Theme.swift */; };
 		54FFC5C42751B9C800F00518 /* NSDictionary+UserTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5C32751B9C800F00518 /* NSDictionary+UserTheme.swift */; };
+		54FFC5CB2751D91A00F00518 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5CA2751D91A00F00518 /* CGRect+Extension.swift */; };
+		54FFC5CD2751D92A00F00518 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5CC2751D92A00F00518 /* CGSize+Extension.swift */; };
+		54FFC5CF2751D94100F00518 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5CE2751D94100F00518 /* CGPoint+Extension.swift */; };
+		54FFC5D12751D95300F00518 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5D02751D95300F00518 /* CGFloat+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		54FFC5BF2751B9AE00F00518 /* NSWindow+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Theme.swift"; sourceTree = "<group>"; };
 		54FFC5C12751B9BB00F00518 /* NSColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
 		54FFC5C32751B9C800F00518 /* NSDictionary+UserTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDictionary+UserTheme.swift"; sourceTree = "<group>"; };
+		54FFC5CA2751D91A00F00518 /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		54FFC5CC2751D92A00F00518 /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		54FFC5CE2751D94100F00518 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		54FFC5D02751D95300F00518 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,11 @@
 		54FFC59B2751B5BA00F00518 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				54FFC5C92751D8F100F00518 /* CoreGraphics */,
+				54FFC5C82751D8E000F00518 /* AppKit */,
+				54FFC5C72751D8D300F00518 /* Foundation */,
+				54FFC5C62751D8C400F00518 /* SwiftStdlib */,
+				54FFC5C52751D89500F00518 /* QuartzCore */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -191,6 +204,45 @@
 				54FFC5A52751B6CA00F00518 /* KYLSequrityscopedURLs.swift */,
 			);
 			path = sandbox;
+			sourceTree = "<group>";
+		};
+		54FFC5C52751D89500F00518 /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		54FFC5C62751D8C400F00518 /* SwiftStdlib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftStdlib;
+			sourceTree = "<group>";
+		};
+		54FFC5C72751D8D300F00518 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		54FFC5C82751D8E000F00518 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
+		54FFC5C92751D8F100F00518 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC5CA2751D91A00F00518 /* CGRect+Extension.swift */,
+				54FFC5CC2751D92A00F00518 /* CGSize+Extension.swift */,
+				54FFC5CE2751D94100F00518 /* CGPoint+Extension.swift */,
+				54FFC5D02751D95300F00518 /* CGFloat+Extension.swift */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,14 +358,18 @@
 				54FFC5A42751B6B500F00518 /* KYLPermissionManager.swift in Sources */,
 				54FFC5A02751B68C00F00518 /* KYLBookmarksManager.swift in Sources */,
 				54FFC5BA2751B97000F00518 /* KYLCommon.swift in Sources */,
+				54FFC5D12751D95300F00518 /* CGFloat+Extension.swift in Sources */,
 				54FFC5A22751B6A000F00518 /* KYLOpenPanelBuilder.swift in Sources */,
+				54FFC5CB2751D91A00F00518 /* CGRect+Extension.swift in Sources */,
 				54FFC5B02751B90A00F00518 /* KYLSystemTheme.swift in Sources */,
 				54FFC5B42751B93900F00518 /* KYLThemeColor.swift in Sources */,
 				54FFC5C42751B9C800F00518 /* NSDictionary+UserTheme.swift in Sources */,
+				54FFC5CD2751D92A00F00518 /* CGSize+Extension.swift in Sources */,
 				54FFC5BE2751B99F00F00518 /* NotificationName+Theme.swift in Sources */,
 				54FFC5C22751B9BB00F00518 /* NSColor+Theme.swift in Sources */,
 				54FFC5A82751B8BB00F00518 /* KYLThemeManager.swift in Sources */,
 				54FFC5AA2751B8CF00F00518 /* KYLTheme.swift in Sources */,
+				54FFC5CF2751D94100F00518 /* CGPoint+Extension.swift in Sources */,
 				54FFC5BC2751B98800F00518 /* KYLThemeManager+objc.swift in Sources */,
 				54FFC5B22751B92400F00518 /* KYLUserTheme.swift in Sources */,
 				54FFC59A2751B43500F00518 /* KYLTabView.swift in Sources */,
