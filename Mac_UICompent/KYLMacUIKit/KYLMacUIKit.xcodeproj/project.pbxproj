@@ -11,6 +11,26 @@
 		54FFC58827511DA900F00518 /* KYLMacUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FFC57D27511DA900F00518 /* KYLMacUIKit.framework */; };
 		54FFC58D27511DA900F00518 /* KYLMacUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC58C27511DA900F00518 /* KYLMacUIKitTests.swift */; };
 		54FFC58E27511DA900F00518 /* KYLMacUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FFC58027511DA900F00518 /* KYLMacUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FFC59A2751B43500F00518 /* KYLTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5992751B43500F00518 /* KYLTabView.swift */; };
+		54FFC5A02751B68C00F00518 /* KYLBookmarksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC59F2751B68C00F00518 /* KYLBookmarksManager.swift */; };
+		54FFC5A22751B6A000F00518 /* KYLOpenPanelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5A12751B6A000F00518 /* KYLOpenPanelBuilder.swift */; };
+		54FFC5A42751B6B500F00518 /* KYLPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5A32751B6B500F00518 /* KYLPermissionManager.swift */; };
+		54FFC5A62751B6CA00F00518 /* KYLSequrityscopedURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5A52751B6CA00F00518 /* KYLSequrityscopedURLs.swift */; };
+		54FFC5A82751B8BB00F00518 /* KYLThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5A72751B8BB00F00518 /* KYLThemeManager.swift */; };
+		54FFC5AA2751B8CF00F00518 /* KYLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5A92751B8CF00F00518 /* KYLTheme.swift */; };
+		54FFC5AC2751B8E400F00518 /* KYLLightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5AB2751B8E400F00518 /* KYLLightTheme.swift */; };
+		54FFC5AE2751B8F700F00518 /* kYLDarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5AD2751B8F700F00518 /* kYLDarkTheme.swift */; };
+		54FFC5B02751B90A00F00518 /* KYLSystemTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5AF2751B90A00F00518 /* KYLSystemTheme.swift */; };
+		54FFC5B22751B92400F00518 /* KYLUserTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5B12751B92400F00518 /* KYLUserTheme.swift */; };
+		54FFC5B42751B93900F00518 /* KYLThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5B32751B93900F00518 /* KYLThemeColor.swift */; };
+		54FFC5B62751B94B00F00518 /* KYLThemeGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5B52751B94B00F00518 /* KYLThemeGradient.swift */; };
+		54FFC5B82751B95D00F00518 /* KYLThemeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5B72751B95D00F00518 /* KYLThemeImage.swift */; };
+		54FFC5BA2751B97000F00518 /* KYLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5B92751B97000F00518 /* KYLCommon.swift */; };
+		54FFC5BC2751B98800F00518 /* KYLThemeManager+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5BB2751B98800F00518 /* KYLThemeManager+objc.swift */; };
+		54FFC5BE2751B99F00F00518 /* NotificationName+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5BD2751B99F00F00518 /* NotificationName+Theme.swift */; };
+		54FFC5C02751B9AE00F00518 /* NSWindow+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5BF2751B9AE00F00518 /* NSWindow+Theme.swift */; };
+		54FFC5C22751B9BB00F00518 /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5C12751B9BB00F00518 /* NSColor+Theme.swift */; };
+		54FFC5C42751B9C800F00518 /* NSDictionary+UserTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FFC5C32751B9C800F00518 /* NSDictionary+UserTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +49,26 @@
 		54FFC58127511DA900F00518 /* KYLMacUIKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KYLMacUIKit.docc; sourceTree = "<group>"; };
 		54FFC58727511DA900F00518 /* KYLMacUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYLMacUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FFC58C27511DA900F00518 /* KYLMacUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMacUIKitTests.swift; sourceTree = "<group>"; };
+		54FFC5992751B43500F00518 /* KYLTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTabView.swift; sourceTree = "<group>"; };
+		54FFC59F2751B68C00F00518 /* KYLBookmarksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLBookmarksManager.swift; sourceTree = "<group>"; };
+		54FFC5A12751B6A000F00518 /* KYLOpenPanelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLOpenPanelBuilder.swift; sourceTree = "<group>"; };
+		54FFC5A32751B6B500F00518 /* KYLPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLPermissionManager.swift; sourceTree = "<group>"; };
+		54FFC5A52751B6CA00F00518 /* KYLSequrityscopedURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLSequrityscopedURLs.swift; sourceTree = "<group>"; };
+		54FFC5A72751B8BB00F00518 /* KYLThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLThemeManager.swift; sourceTree = "<group>"; };
+		54FFC5A92751B8CF00F00518 /* KYLTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTheme.swift; sourceTree = "<group>"; };
+		54FFC5AB2751B8E400F00518 /* KYLLightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLLightTheme.swift; sourceTree = "<group>"; };
+		54FFC5AD2751B8F700F00518 /* kYLDarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kYLDarkTheme.swift; sourceTree = "<group>"; };
+		54FFC5AF2751B90A00F00518 /* KYLSystemTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLSystemTheme.swift; sourceTree = "<group>"; };
+		54FFC5B12751B92400F00518 /* KYLUserTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLUserTheme.swift; sourceTree = "<group>"; };
+		54FFC5B32751B93900F00518 /* KYLThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLThemeColor.swift; sourceTree = "<group>"; };
+		54FFC5B52751B94B00F00518 /* KYLThemeGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLThemeGradient.swift; sourceTree = "<group>"; };
+		54FFC5B72751B95D00F00518 /* KYLThemeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLThemeImage.swift; sourceTree = "<group>"; };
+		54FFC5B92751B97000F00518 /* KYLCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLCommon.swift; sourceTree = "<group>"; };
+		54FFC5BB2751B98800F00518 /* KYLThemeManager+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KYLThemeManager+objc.swift"; sourceTree = "<group>"; };
+		54FFC5BD2751B99F00F00518 /* NotificationName+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Theme.swift"; sourceTree = "<group>"; };
+		54FFC5BF2751B9AE00F00518 /* NSWindow+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Theme.swift"; sourceTree = "<group>"; };
+		54FFC5C12751B9BB00F00518 /* NSColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
+		54FFC5C32751B9C800F00518 /* NSDictionary+UserTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDictionary+UserTheme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +111,7 @@
 		54FFC57F27511DA900F00518 /* KYLMacUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				54FFC5972751B3FA00F00518 /* src */,
 				54FFC58027511DA900F00518 /* KYLMacUIKit.h */,
 				54FFC58127511DA900F00518 /* KYLMacUIKit.docc */,
 			);
@@ -83,6 +124,73 @@
 				54FFC58C27511DA900F00518 /* KYLMacUIKitTests.swift */,
 			);
 			path = KYLMacUIKitTests;
+			sourceTree = "<group>";
+		};
+		54FFC5972751B3FA00F00518 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC59C2751B62500F00518 /* tools */,
+				54FFC59B2751B5BA00F00518 /* extension */,
+				54FFC5982751B40800F00518 /* core */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		54FFC5982751B40800F00518 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC5992751B43500F00518 /* KYLTabView.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		54FFC59B2751B5BA00F00518 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		54FFC59C2751B62500F00518 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC59E2751B64300F00518 /* sandbox */,
+				54FFC59D2751B63500F00518 /* skin */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		54FFC59D2751B63500F00518 /* skin */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC5A72751B8BB00F00518 /* KYLThemeManager.swift */,
+				54FFC5A92751B8CF00F00518 /* KYLTheme.swift */,
+				54FFC5AB2751B8E400F00518 /* KYLLightTheme.swift */,
+				54FFC5AD2751B8F700F00518 /* kYLDarkTheme.swift */,
+				54FFC5AF2751B90A00F00518 /* KYLSystemTheme.swift */,
+				54FFC5B12751B92400F00518 /* KYLUserTheme.swift */,
+				54FFC5B32751B93900F00518 /* KYLThemeColor.swift */,
+				54FFC5B52751B94B00F00518 /* KYLThemeGradient.swift */,
+				54FFC5B72751B95D00F00518 /* KYLThemeImage.swift */,
+				54FFC5B92751B97000F00518 /* KYLCommon.swift */,
+				54FFC5BB2751B98800F00518 /* KYLThemeManager+objc.swift */,
+				54FFC5BD2751B99F00F00518 /* NotificationName+Theme.swift */,
+				54FFC5BF2751B9AE00F00518 /* NSWindow+Theme.swift */,
+				54FFC5C12751B9BB00F00518 /* NSColor+Theme.swift */,
+				54FFC5C32751B9C800F00518 /* NSDictionary+UserTheme.swift */,
+			);
+			path = skin;
+			sourceTree = "<group>";
+		};
+		54FFC59E2751B64300F00518 /* sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				54FFC59F2751B68C00F00518 /* KYLBookmarksManager.swift */,
+				54FFC5A12751B6A000F00518 /* KYLOpenPanelBuilder.swift */,
+				54FFC5A32751B6B500F00518 /* KYLPermissionManager.swift */,
+				54FFC5A52751B6CA00F00518 /* KYLSequrityscopedURLs.swift */,
+			);
+			path = sandbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +302,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FFC5AE2751B8F700F00518 /* kYLDarkTheme.swift in Sources */,
+				54FFC5A42751B6B500F00518 /* KYLPermissionManager.swift in Sources */,
+				54FFC5A02751B68C00F00518 /* KYLBookmarksManager.swift in Sources */,
+				54FFC5BA2751B97000F00518 /* KYLCommon.swift in Sources */,
+				54FFC5A22751B6A000F00518 /* KYLOpenPanelBuilder.swift in Sources */,
+				54FFC5B02751B90A00F00518 /* KYLSystemTheme.swift in Sources */,
+				54FFC5B42751B93900F00518 /* KYLThemeColor.swift in Sources */,
+				54FFC5C42751B9C800F00518 /* NSDictionary+UserTheme.swift in Sources */,
+				54FFC5BE2751B99F00F00518 /* NotificationName+Theme.swift in Sources */,
+				54FFC5C22751B9BB00F00518 /* NSColor+Theme.swift in Sources */,
+				54FFC5A82751B8BB00F00518 /* KYLThemeManager.swift in Sources */,
+				54FFC5AA2751B8CF00F00518 /* KYLTheme.swift in Sources */,
+				54FFC5BC2751B98800F00518 /* KYLThemeManager+objc.swift in Sources */,
+				54FFC5B22751B92400F00518 /* KYLUserTheme.swift in Sources */,
+				54FFC59A2751B43500F00518 /* KYLTabView.swift in Sources */,
+				54FFC5B62751B94B00F00518 /* KYLThemeGradient.swift in Sources */,
+				54FFC5A62751B6CA00F00518 /* KYLSequrityscopedURLs.swift in Sources */,
+				54FFC5B82751B95D00F00518 /* KYLThemeImage.swift in Sources */,
+				54FFC5C02751B9AE00F00518 /* NSWindow+Theme.swift in Sources */,
 				54FFC58227511DA900F00518 /* KYLMacUIKit.docc in Sources */,
+				54FFC5AC2751B8E400F00518 /* KYLLightTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +523,7 @@
 		54FFC59527511DA900F00518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -415,6 +544,7 @@
 		54FFC59627511DA900F00518 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
