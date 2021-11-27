@@ -210,49 +210,49 @@ extension NSDictionary {
 
 }
 
-fileprivate extension String {
-
-    /// 使用下标与Int得到字符作为字符
-    subscript (i: Int) -> Character {
-        return self[self.index(self.startIndex, offsetBy: i)]
-    }
-
-    /// 使用下标与Int得到字符作为字符串
-    subscript (i: Int) -> String {
-        return String(self[i] as Character)
-    }
-
-    /// 用来获得子字符串Range<Int>而不是Range<Index>
-    subscript (r: Range<Int>) -> String {
-        let start = self.index(self.startIndex, offsetBy: r.lowerBound)
-        let end = self.index(self.startIndex, offsetBy: r.upperBound)
-
-        return String(self[start...end])
-    }
-
-    /// 用来获取带有NSRange的子字符串
-    func substring(withNSRange: NSRange) -> String {
-        guard withNSRange.location < self.count else { return "" }
-        let start = self.index(self.startIndex, offsetBy: withNSRange.location)
-        let end = self.index(start, offsetBy: withNSRange.length)
-        let range = Range<String.Index>(uncheckedBounds: (lower: start, upper: end))
-        return String(self[range])
-    }
-
-    /// 用NSRange替换字符
-    func wsReplacingCharacters(inNSRange: NSRange, with: String) -> String {
-        replacingCharacters(inNSRange: inNSRange, with: with)
-    }
-    
-    /// Convenience function to replace characters with NSRange.
-    func replacingCharacters(inNSRange: NSRange, with: String) -> String {
-        guard inNSRange.location < self.count else { return "" }
-        let start = self.index(self.startIndex, offsetBy: inNSRange.location)
-        let end = self.index(start, offsetBy: inNSRange.length)
-        let range = Range<String.Index>(uncheckedBounds: (lower: start, upper: end))
-        return self.replacingCharacters(in: range, with: with)
-    }
-
-}
+//fileprivate extension String {
+//
+//    /// 使用下标与Int得到字符作为字符
+//    subscript (i: Int) -> Character {
+//        return self[self.index(self.startIndex, offsetBy: i)]
+//    }
+//
+//    /// 使用下标与Int得到字符作为字符串
+//    subscript (i: Int) -> String {
+//        return String(self[i] as Character)
+//    }
+//
+//    /// 用来获得子字符串Range<Int>而不是Range<Index>
+//    subscript (r: Range<Int>) -> String {
+//        let start = self.index(self.startIndex, offsetBy: r.lowerBound)
+//        let end = self.index(self.startIndex, offsetBy: r.upperBound)
+//
+//        return String(self[start...end])
+//    }
+//
+//    /// 用来获取带有NSRange的子字符串
+//    func substring(withNSRange: NSRange) -> String {
+//        guard withNSRange.location < self.count else { return "" }
+//        let start = self.index(self.startIndex, offsetBy: withNSRange.location)
+//        let end = self.index(start, offsetBy: withNSRange.length)
+//        let range = Range<String.Index>(uncheckedBounds: (lower: start, upper: end))
+//        return String(self[range])
+//    }
+//
+//    /// 用NSRange替换字符
+//    func wsReplacingCharacters(inNSRange: NSRange, with: String) -> String {
+//        replacingCharacters(inNSRange: inNSRange, with: with)
+//    }
+//    
+//    /// Convenience function to replace characters with NSRange.
+//    func replacingCharacters(inNSRange: NSRange, with: String) -> String {
+//        guard inNSRange.location < self.count else { return "" }
+//        let start = self.index(self.startIndex, offsetBy: inNSRange.location)
+//        let end = self.index(start, offsetBy: inNSRange.length)
+//        let range = Range<String.Index>(uncheckedBounds: (lower: start, upper: end))
+//        return self.replacingCharacters(in: range, with: with)
+//    }
+//
+//}
 
 #endif
